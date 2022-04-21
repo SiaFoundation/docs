@@ -22,8 +22,6 @@ Not only is your data safe on Sia, but you can feel confident that Sia isn't goi
 
 Sia has an incredible ecosystem with renters, hosts, miners, and a teeming developer community building on Sia and the level 2 layer above Sia called Skynet.
 
-
-
 ## What Sia does
 
 When a file gets uploaded to Sia, it gets split up, encrypted, and sent all over the world. Renters upload files, hosts store those files, and everything is automated. Once you upload your files, the network ensures that they're always accessible to you by copying them multiple times. And they're never accessible to hosts because they only receive pieces of whole files that are already encrypted.
@@ -35,10 +33,6 @@ Sia’s core goal is to bring decentralization to data storage. We want you to b
 ## Who makes Sia?
 
 Sia was conceived at HackMIT in 2013 by David Vorick and Luke Champine. Over time, the crew has grown into the US and EU-based Nebulous team, the core developers of Sia.
-
-## Community contribution
-
-While there is a distinct development and operations team, dozens of individuals have contributed to the core code or apps built on top of the network. Check out our [Contributor's Guide](https://gitlab.com/NebulousLabs/Sia/blob/master/CONTRIBUTING.md) if you're interested in writing code for Sia and further decentralizing the project!
 
 ## **Renting on Sia**
 
@@ -74,6 +68,10 @@ Sia has a few important terms that you'll want to get familiar with. These will 
 * **Contracts:** Formed between renter and host, contracts determine how much data is being stored, for how long, and at what price. These are automatically tracked and completed by the software and blockchain.
 * **Siacoins:** The cryptocurrency that powers Sia.
 * **Siafunds:** A secondary, revenue-sharing token on the network that grants the holder Siacoins for every completed contract.
+
+## Community contribution
+
+While there is a distinct development and operations team, dozens of individuals have contributed to the core code or apps built on top of the network. Check out our [Contributor's Guide](https://gitlab.com/NebulousLabs/Sia/blob/master/CONTRIBUTING.md) if you're interested in writing code for Sia and further decentralizing the project!
 
 ## **Quick Resources**
 

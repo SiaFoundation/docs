@@ -14,11 +14,11 @@ At the end of a contract, the amount reserved is then dispersed to all Siafund h
 
 ## How to store Siafunds
 
-Siafunds are stored in your wallet, right next to your Siacoins.
+Siafunds are [stored in your wallet](../../../your-sia-wallet/wallet-overview.md), right next to your Siacoins.
 
 ![](../../../.gitbook/assets/siafunds-close.png)
 
-They are also sent to and received at normal Siacoin addresses, and can be restored with your Siacoin balance as long as you have your Sia seed.
+They are also sent to and received at normal Siacoin addresses, and can be restored with your Siacoin balance as long as you have your [Sia seed](../../../your-sia-wallet/wallet-setup/the-importance-of-your-seed.md).
 
 ## Why Siafunds?
 
@@ -28,10 +28,16 @@ We created Siafunds in order to sustainably fund the development of the Sia netw
 
 ## Tokenized securities vs utility tokens
 
-Siafunds were designated as securities by the SEC back in 2018. Utility tokens primarily derive their value from use on a blockchain platform, like Siacoins. Siafunds, by contrast, derive their value from the present and future value of the Sia storage network.
+[Siafunds were designated as securities by the SEC back in 2018](../sec-settlement-faq/does-this-mean-siafunds-are-securities.md). Utility tokens primarily derive their value from use on a blockchain platform, like Siacoin. Siafunds, by contrast, derive their value from the present and future value of the Sia storage network.
 
 ## How many Siafunds are there?
 
 The maximum number of Siafunds that will ever be issued is 10,000, all of which were generated upon the launch of the Sia software in 2015. Because the number of Siafunds issued is fixed, as the number, size, and value of the contracts on the Sia network increase, the amount of revenue per Siafund increases proportionally.
 
-Nebulous, Inc. originally owned all 10,000, but over the years have conducted multiple Siafund sales to fund development. As of April 2019, Nebulous holds about 8,600, and the rest have been issues to third parties.
+Nebulous labs, which is now Skynet Labs, originally owned all 10,000. However over the years there have been multiple Siafund sales to fund on going development of the Sia network and Skynet. As of April 21, 2022, Skynet Labs currently holds 8,576 Siafunds. The rest have been issued to third parties or sold to the public.
+
+The Sia Foundation does not hold any Siafunds. All further development costs will be covered by the network subsidy granted to them during the 2021 hard fork.
+
+{% hint style="info" %}
+Nebulous Labs was rebranded as Skynet Labs during the [2021 hard fork](../hard-fork/navigating-the-2021-sia-hardfork.md) which created the Sia Foundation.
+{% endhint %}

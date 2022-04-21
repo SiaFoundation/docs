@@ -1,6 +1,6 @@
 # What are Siafunds?
 
-You know all about Siacoins, the utility token used for automatically fulfilling Sia's smart contracts. But what about Siafunds - the other token on the Sia network?
+[You know all about Siacoin](../siacoin/what-are-siacoins.md), the utility token used for automatically fulfilling Sia's smart contracts. But what about Siafunds - the other token on the Sia network?
 
 Siafunds are tokens used for revenue sharing on the Sia network; a 3.9% fee from every storage-related transaction on Sia is distributed to the holders of Siafunds. The Sia core team currently holds approximately 85% of all Siafunds.
 

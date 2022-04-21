@@ -53,7 +53,11 @@ Then click **Show Sia Data.**
 
 Once you find the `/sia` folder:
 
+<<<<<<< HEAD:get-started-with-sia/frequently-asked-questions/sia-ui-faqs/how-to-perform-a-clean-install-in-sia-ui.md
 ![](<../../../.gitbook/assets/fork-3 (1) (2) (2).png>)
+=======
+![](../../.gitbook/assets/fork-3%20%281%29%20%282%29%20%282%29%20%282%29.png)
+>>>>>>> main:your-sia-wallet/sia-ui-faqs/how-to-perform-a-clean-install-in-sia-ui.md
 
 Delete it.
 

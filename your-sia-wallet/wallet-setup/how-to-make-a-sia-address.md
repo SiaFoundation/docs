@@ -22,4 +22,9 @@ Clicking **Generate New Address** again will move the Latest Address down a step
 
 Once you receive Siacoins, you'll see a history in the **Transactions** tab. You'll see 0/6, then 1/6, and so on. This indicates how many blocks have passed since the transaction has been processed. At six confirmations, we deem the transaction to be fully confirmed and will show a green checkmark.
 
+<<<<<<< HEAD:your-sia-wallet/wallet-setup/how-to-make-a-sia-address.md
 ![](<../../.gitbook/assets/address-4 (1) (2) (2) (1).png>)
+=======
+![](../.gitbook/assets/address-4%20%281%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
+
+>>>>>>> main:your-sia-wallet/how-to-make-a-sia-address.md

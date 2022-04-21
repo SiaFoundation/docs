@@ -10,9 +10,15 @@ Even if you set a custom password, you still need to keep your seed safe. Learn 
 
 ## Things you'll need
 
+<<<<<<< HEAD:your-sia-wallet/wallet-setup/how-do-i-change-my-sia-wallet-password.md
 Sia-UI, downloaded and installed. \<link>
 
 Your Sia-UI wallet set up. \<link>
+=======
+Sia-UI, [downloaded and installed](sia-ui-faqs/how-to-download-and-install-sia-ui.md).
+
+Your Sia-UI wallet [set up](sia-ui-faqs/how-to-make-a-new-wallet-in-sia-ui.md).
+>>>>>>> main:your-sia-wallet/how-do-i-change-my-sia-wallet-password.md
 
 ## Using a custom password
 

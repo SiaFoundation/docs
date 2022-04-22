@@ -1,26 +1,28 @@
 # How do I change my Sia wallet password?
 
-## Your seed vs a custom password
+## How do I change my Sia wallet password?
+
+### Your seed vs a custom password
 
 By default, your 29 word Sia seed is your Sia-UI wallet password. But you can also set a custom password to unlock your wallet, and there are pros and cons to each. Let's take a look.
 
 {% hint style="warning" %}
-Even if you set a custom password, you still need to keep your seed safe. Learn about [the importance of your seed.](the-importance-of-your-seed.md)
+Even if you set a custom password, you still need to keep your seed safe. Learn about [the importance of your seed.](../../the-importance-of-your-seed.md)
 {% endhint %}
 
-## Things you'll need
+### Things you'll need
 
-<<<<<<< HEAD:your-sia-wallet/wallet-setup/how-do-i-change-my-sia-wallet-password.md
-Sia-UI, downloaded and installed. \<link>
+<<<<<<< HEAD:your-sia-wallet/wallet-setup/how-do-i-change-my-sia-wallet-password.md Sia-UI, downloaded and installed. \<link>
 
-Your Sia-UI wallet set up. \<link>
-=======
-Sia-UI, [downloaded and installed](sia-ui-faqs/how-to-download-and-install-sia-ui.md).
+## Your Sia-UI wallet set up. \<link>
 
-Your Sia-UI wallet [set up](sia-ui-faqs/how-to-make-a-new-wallet-in-sia-ui.md).
->>>>>>> main:your-sia-wallet/how-do-i-change-my-sia-wallet-password.md
+Sia-UI, [downloaded and installed](../sia-ui-faqs/how-to-download-and-install-sia-ui.md).
 
-## Using a custom password
+Your Sia-UI wallet [set up](../sia-ui-faqs/how-to-make-a-new-wallet-in-sia-ui.md).
+
+> > > > > > > main:your-sia-wallet/how-do-i-change-my-sia-wallet-password.md
+
+### Using a custom password
 
 This means you set your wallet password to a totally custom phrase of any length.
 
@@ -37,7 +39,7 @@ This means you set your wallet password to a totally custom phrase of any length
 * It might make accessing your wallet easier for those who have physical or remote access to your computer.
 {% endhint %}
 
-## Using your seed as your password
+### Using your seed as your password
 
 {% hint style="success" %}
 **Advantages**
@@ -53,18 +55,18 @@ Disadvantages
 * Typing in 29 words every time you want to access your wallet might not be tolerable for you.
 {% endhint %}
 
-## Setting a custom password
+### Setting a custom password
 
 Go to the Wallet tab in Sia-UI.
 
-![](../../.gitbook/assets/send-1.png)
+![](../../../.gitbook/assets/send-1.png)
 
 Click **More** in the upper right corner.
 
-![](<../../.gitbook/assets/wallet-2 (2) (3).png>)
+![](<../../../.gitbook/assets/wallet-2 (2) (3).png>)
 
 Click **Change Password.** Sia-UI will ask for your current password. For current password, enter whatever you're using to unlock your wallet now. You can then enter your custom password.
 
-![](../../.gitbook/assets/password-2.png)
+![](../../../.gitbook/assets/password-2.png)
 
 That's it! You've changed your Sia-UI password.

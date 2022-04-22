@@ -23,6 +23,6 @@ Additionally, if you've updated to 1.4.0 or later, you can access your Sia walle
 
 ![](<../../../.gitbook/assets/wallet-2 (2) (3) (2).png>)
 
-Learn more about the [importance of your seed](../the-importance-of-your-seed.md)**.**
+Learn more about the [importance of your seed](../../the-importance-of-your-seed.md)**.**
 
 How do I [delete my current wallet and start over](delete-your-seed-and-make-a-new-one.md)?

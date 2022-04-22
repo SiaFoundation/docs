@@ -48,7 +48,7 @@ Near the upper right corner, you'll see a button that says `More`. Click on this
 
 **View Seed** shows you your seed in case you need to see it again.
 
-**Change Password** lets you set a custom password for your wallet, instead of using your Sia seed. [Learn about the pros and cons of a custom password.](wallet-setup/how-do-i-change-my-sia-wallet-password.md)
+**Change Password** lets you set a custom password for your wallet, instead of using your Sia seed. [Learn about the pros and cons of a custom password.](wallet-setup/sia-ui/how-do-i-change-my-sia-wallet-password.md)
 
 ## Be careful
 

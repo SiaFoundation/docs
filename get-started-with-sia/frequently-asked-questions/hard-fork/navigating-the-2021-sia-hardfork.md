@@ -62,9 +62,9 @@ Siacoin holders should [upgrade to v1.5.4](https://sia.tech/get-started) by Febr
 If you don't upgrade in time, you will brick your `consensus.db` file. This is the file that syncs the blockchain to your computer, and you will have to completely re-sync it. **You never lose your coins. Once you update to the new chain, your coins will be available to you again.**
 {% endhint %}
 
-[Learn how to download and install Sia-UI](../sia-ui-faqs/how-to-download-and-install-sia-ui.md)
+[Learn how to download and install Sia-UI](../../../your-sia-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md)
 
-[Learn how to create a new wallet in Sia-UI](../sia-ui-faqs/how-to-make-a-new-wallet-in-sia-ui.md)
+[Learn how to create a new wallet in Sia-UI](../../../your-sia-wallet/wallet-setup/sia-ui/how-to-make-a-new-wallet-in-sia-ui.md)
 
 [Download siac from our site (for advanced users)](http://sia.tech/get-started)
 

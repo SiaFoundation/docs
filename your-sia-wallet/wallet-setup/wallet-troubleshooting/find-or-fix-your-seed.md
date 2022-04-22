@@ -10,7 +10,7 @@ You might use a custom password to access Sia. If you do, you don't often type y
 
 Unlock your wallet and open the Terminal. Type `wallet seeds`.
 
-Your seed will be displayed. [Make sure you store your seed safely.](../the-importance-of-your-seed.md)
+Your seed will be displayed. [Make sure you store your seed safely.](../../the-importance-of-your-seed.md)
 
 ## Use siac utils
 
@@ -45,13 +45,12 @@ You'll be asked to provide your partial seed, and Sia will get to work. It may t
 
 #### Success
 
-* Found valid seed! The missing word was &lt;word&gt;.
+* Found valid seed! The missing word was \<word>.
 
 Sia will then print the entire correct seed for you to store safely.
 
 #### Failure
 
 * No valid seed - _the utility was unable to find your missing word_
-* Expected 27 or 28 words in partial seed, got &lt;n&gt; - _the partial seed you provided was missing more than one word_
+* Expected 27 or 28 words in partial seed, got \<n> - _the partial seed you provided was missing more than one word_
 * Couldn't read seed - _the partial seed you provided was invalid in other ways_
-

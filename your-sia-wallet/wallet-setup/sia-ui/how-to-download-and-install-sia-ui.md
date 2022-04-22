@@ -1,4 +1,4 @@
-# How to download and install Sia-UI
+# How do I install the Sia-UI?
 
 Learn how to install Sia-UI on Windows, Linux, or MacOS.
 
@@ -11,15 +11,21 @@ Learn how to install Sia-UI on Windows, Linux, or MacOS.
 _As of April 21, 2022, the Sia blockchain is \~34 GB in size. This will only get larger, so make sure to allocate enough space to account for future growth._
 {% endhint %}
 
-### Find the right download for you <a href="#find_the_right_download_for_you" id="find_the_right_download_for_you"></a>
+## Download the Sia-UI <a href="#find_the_right_download_for_you" id="find_the_right_download_for_you"></a>
 
-Go to [our downloads page](http://sia.tech/get-started). You'll see two options, Sia-UI and Sia Daemon. Sia-UI is our user-friendly app, while Sia Daemon is for users comfortable with command-line interfaces. Download Sia-UI for your operating system by clicking the correct OS name.
+[Go to our downloads page](https://sia.tech/get-started). You'll see two options, Sia-UI and Sia Daemon. The Sia-UI is our user-friendly app, while the [Sia Daemon](../sia-daemon/) is for users comfortable with command-line interfaces. Download the Sia-UI that's right for your operating system.
 
-![](../../../.gitbook/assets/install-1.png)
+![](../../../.gitbook/assets/get-started-download.png)
 
-Now either continue straight through to installing on [Windows or Linux](how-to-download-and-install-sia-ui.md#installation-windows-and-linux), or skip ahead to install on [MacOS](how-to-download-and-install-sia-ui.md#installation-macos).
+Once you have downloaded the correct version of the Sia-UI, you can move on to installing it for your system.
 
-## Installation: Windows and Linux
+* [Windows](how-to-download-and-install-sia-ui.md#installation-windows)
+* [macOS](how-to-download-and-install-sia-ui.md#installation-macos)
+* [Linux](how-to-download-and-install-sia-ui.md#installation-linux)
+
+
+
+## Installation: Windows
 
 The process for Windows and Linux is very similar. The result of your download will be an `.exe` or Linux executable file. Double click it.
 
@@ -41,7 +47,7 @@ Depending on your installed security software, you may also see a warning regard
 
 Sia-UI is now ready to go!
 
-[First time installing? Set up a wallet.](how-to-make-a-new-wallet-in-sia-ui.md)
+First time installing? [Set up a wallet](how-to-make-a-new-wallet-in-sia-ui.md).
 
 ## Installation: macOS
 
@@ -85,4 +91,8 @@ You might see one more message letting you know that Sia-UI is from an unidentif
 
 Sia-UI is now ready to go!
 
-[First time installing? Set up a wallet.](how-to-make-a-new-wallet-in-sia-ui.md)
+## Installation: Linux
+
+First time installing? [Set up a wallet](how-to-make-a-new-wallet-in-sia-ui.md).
+
+Sia-UI is now ready to go!

@@ -1,4 +1,4 @@
-# How to restore a wallet from a seed in Sia-UI
+# How do I restore a wallet from a seed using the Sia-UI?
 
 If you already have a Sia seed with a balance of Siacoins, you can recover and use your Siacoins at any time by using Sia-UI on your computer.
 
@@ -12,12 +12,12 @@ If you already have a Sia seed with a balance of Siacoins, you can recover and u
 ## Restore from a seed
 
 {% hint style="info" %}
-Restoring from your seed does not restore a custom password. After following this process, you'll use your Sia seed to log in to your wallet until you [set a custom password.](../../../your-sia-wallet/wallet-setup/how-do-i-change-my-sia-wallet-password.md)
+Restoring from your seed does not restore a custom password. After following this process, you'll use your Sia seed to log in to your wallet until you [set a custom password.](how-do-i-change-my-sia-wallet-password.md)
 {% endhint %}
 
 Go to the Wallet tab. If there's not another wallet setup already, you'll see two options: Create new wallet and Restore from seed. Click **Restore from seed.**
 
-![](<../../../.gitbook/assets/restore-1 (2) (2).png>)
+![](../../../.gitbook/assets/restore-1%20\(2\)%20\(2\).png)
 
 If the blockchain isn't fully synched, you'll receive a message telling you to wait. Sia-UI needs to be fully synced because it needs to scan the blockchain for all your transactions.
 

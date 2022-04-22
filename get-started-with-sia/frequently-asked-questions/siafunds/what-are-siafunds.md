@@ -18,7 +18,7 @@ Siafunds are [stored in your wallet](../../../your-sia-wallet/wallet-overview.md
 
 ![](../../../.gitbook/assets/siafunds-close.png)
 
-They are also sent to and received at normal Siacoin addresses, and can be restored with your Siacoin balance as long as you have your [Sia seed](../../../your-sia-wallet/wallet-setup/the-importance-of-your-seed.md).
+They are also sent to and received at normal Siacoin addresses, and can be restored with your Siacoin balance as long as you have your [Sia seed](../../../your-sia-wallet/the-importance-of-your-seed.md).
 
 ## Why Siafunds?
 

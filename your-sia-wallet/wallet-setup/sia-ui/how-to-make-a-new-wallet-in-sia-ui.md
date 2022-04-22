@@ -1,4 +1,4 @@
-# How to make a new wallet in Sia-UI
+# How do I make a wallet using the Sia-UI?
 
 Learn how to make a new wallet in Sia-UI. This set of instructions assumes that you are setting up a new wallet in Sia-UI for the first time. If you need to restore an existing wallet, [learn how here.](how-to-restore-a-wallet-from-a-seed-in-sia-ui.md)
 
@@ -31,7 +31,7 @@ You need to keep your seed safe. Safe means a lot of things to different people 
 **Theft:** If someone steals your seed, they can easily steal your Siacoin balance.
 {% endhint %}
 
-Ready for a deep dive? [Learn more about the importance of your seed.](../../../your-sia-wallet/wallet-setup/the-importance-of-your-seed.md)
+Ready for a deep dive? [Learn more about the importance of your seed.](../../the-importance-of-your-seed.md)
 
 Once you've stored your seed, click **Next.**
 
@@ -59,4 +59,4 @@ Your wallet is ready! Go to the Wallet tab to check it out.
 
 Your wallet shows you how many Siacoins you currently have, as well as three views: Transactions, Send, and Receive.
 
-[Learn about your Siacoin wallet.](../../../your-sia-wallet/wallet-overview.md)
+[Learn about your Siacoin wallet.](../../wallet-overview.md)

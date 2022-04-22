@@ -16,8 +16,6 @@ wget -q https://sia.tech/releases/Sia-v1.5.7-linux-amd64.zip
 unzip Sia-v1.5.7-linux-amd64.zip
 ```
 
-
-
 Next move the extracted Sia binaries to `/usr/local/bin/`.
 
 ```
@@ -37,13 +35,13 @@ sudo fdisk -l
 This will give you the following printout.
 
 ```
-Device         Boot  Start       End   Sectors   Size Id Type 
-/dev/mmcblk0p1 *      2048    526335    524288   256M  c W95 FAT32 (LBA) 
-/dev/mmcblk0p2      526336 250347486 249821151 119.1G 83 Linux 
+Device         Boot  Start       End   Sectors   Size Id Type 
+/dev/mmcblk0p1 *      2048    526335    524288   256M  c W95 FAT32 (LBA) 
+/dev/mmcblk0p2      526336 250347486 249821151 119.1G 83 Linux 
 
 
 Disk /dev/sda: 5.47 TiB, 6001175125504 bytes, 11721045167 sectors 
-Disk model: Expansion Desk   
+Disk model: Expansion Desk   
 Units: sectors of 1 * 512 = 512 bytes 
 Sector size (logical/physical): 512 bytes / 4096 bytes 
 I/O size (minimum/optimal): 4096 bytes / 4096 bytes 
@@ -51,8 +49,8 @@ Disklabel type: gpt
 Disk identifier: 95C65D62-CA73-934A-9C4B-030C5FF0321F 
 
 
-Device     Start         End     Sectors  Size Type 
-/dev/sda1   2048 11721045133 11721043086  5.5T Linux filesystem
+Device     Start         End     Sectors  Size Type 
+/dev/sda1   2048 11721045133 11721043086  5.5T Linux filesystem
 ```
 
 {% hint style="info" %}
@@ -75,8 +73,6 @@ sudo mkdir -p /media/SiaStorage01
 
 Now that you have located the path to your storage drive and have created your mount point, you can begin configuring the system services needed to automatically boot your host on startup.
 
-
-
 To begin, create a bash script to mount your storage drives.
 
 ```
@@ -98,8 +94,6 @@ _If you have any other drives you would like to mount at start up, you can add t
 Save the file to disk using `ctrl+o`
 
 Exit the text editor using `ctrl+x`
-
-
 
 Next create a systemd script to run your bash script at startup.
 
@@ -128,8 +122,6 @@ WantedBy=multi-user.target
 Save the file to disk using `ctrl+o`
 
 Exit the text editor using `ctrl+x`
-
-
 
 Now you will need to create a systemd script to run `siad` and login automatically at start up.
 
@@ -163,8 +155,6 @@ Save the file to disk using `ctrl+o`
 
 Exit the text editor using `ctrl+x`
 
-&#x20;
-
 To finish, run your new services and enable them to run at start up.
 
 ```
@@ -197,8 +187,6 @@ siac wallet init -p
 _Write down your recovery keys and keep them somewhere safe. If you loose these you will not be able to recover your Siacoin._
 {% endhint %}
 
-
-
 Once created you'll then need to unlock the wallet using the seed phrase you wrote down.
 
 ```
@@ -215,8 +203,6 @@ Generate a new wallet
 siac wallet address
 ```
 
-
-
 Now that you have an address, you can send Siacoin to fund your wallet.
 
 {% hint style="info" %}
@@ -229,7 +215,7 @@ _It is recommended to have about 1000 Siacoin per TB._
 
 
 
-### Step 8: Configure Pricing
+### Step 8: Host Settings
 
 Set your minimum storage price.
 
@@ -241,8 +227,6 @@ _Filebase will only make contracts with hosts that have a storage price of 150SC
 siac host config minstorageprice 150SC
 ```
 
-
-
 Set your collateral.
 
 {% hint style="info" %}
@@ -253,16 +237,12 @@ _Your collateral should be two times your storage price. So if your storage pric
 siac host config collateral 300SC
 ```
 
-
-
 Set your bandwidth fees.
 
 ```
 siac host config mindownloadbandwidthprice 250SC
 siac host config minuploadbandwidthprice 50SC
 ```
-
-
 
 Set your max contract length.
 
@@ -273,8 +253,6 @@ siac host config maxduration 12w
 {% hint style="info" %}
 _The recommended minimum contract length is 12 weeks._
 {% endhint %}
-
-
 
 To see more configuration settings use the following
 
@@ -301,6 +279,22 @@ Once you have completed syncing to the blockchain The only thing left, is for yo
 ```
 siac host announce
 ```
+
+#### If you signed up for a DDNS service
+
+You need to announce your host using your DDNS hostname in order for it to work. You can also announce a specific IP address.
+
+```
+host announce example.ddns.net:9982
+```
+
+{% hint style="danger" %}
+_Make sure to include_ `:9982` _as this specifies which port renters can contact you through and is the default for Sia._
+{% endhint %}
+
+{% hint style="info" %}
+Announcing your host is a transaction that will appear in your Transaction list in your wallet.
+{% endhint %}
 
 
 

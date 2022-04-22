@@ -114,10 +114,10 @@
       * [Host Manager](hosting/host-setup/advanced/monitoring/host-manager.md)
       * [Dashboard](hosting/host-setup/advanced/monitoring/dashboard.md)
       * [CLI](hosting/host-setup/advanced/monitoring/cli.md)
-      * [Troubleshooting](hosting/host-setup/advanced/monitoring/troubleshooting.md)
     * [Wake on Power](hosting/host-setup/advanced/wake-on-power.md)
     * [Storage Location](hosting/host-setup/advanced/storage-location.md)
     * [Migrating a Host](hosting/host-setup/advanced/migrating-a-host.md)
+  * [Troubleshooting](hosting/host-setup/troubleshooting.md)
 
 ## Mining
 

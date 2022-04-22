@@ -4,17 +4,19 @@ description: This section takes you through setting up a host using the SiaUI.
 
 # SiaUI
 
-## The Process
-
 ### Step 1: Download and Install the SiaUI
 
-Download and install the [**SiaUI**](https://sia.tech/get-started) for your system.
+Download and install the [**SiaUI**](../../your-sia-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md#find\_the\_right\_download\_for\_you) for your system.
+
+
 
 ### Step 2: Create your wallet
 
 Once installed create a new wallet and allow it to sync to the blockchain. If you already have a existing wallet that you would like to use, you may do so by typing in your seed phrase.
 
 _**Note:** On a SSD syncing to the blockchain can take a day or more. Therefore it is not recommended to install Sia on a HDD as syncing will take much longer._
+
+
 
 ### Step 3: Configure your host
 
@@ -33,6 +35,8 @@ Here are some quick values you can use to get started:
 * 4096000 is 4 TB
 * 10240000 is 10 TB
 * 102400000 is 100 TB
+
+
 
 ### Step 4: Host Settings
 
@@ -72,11 +76,13 @@ This can only be changed in siac, or using the Terminal in Sia-UI with the comma
 {% endtab %}
 {% endtabs %}
 
-## Announce your host
+
+
+### Step 5: Announce your host
 
 Click the slider at the top of the Host window next to the Announce Host button so it appears green. This will turn on your host for accepting new storage contracts from renters. Then, unless you used DDNS in a previous step, click **Announce Host** to the Sia network so that renters can find you.
 
-### If you signed up for a DDNS service
+#### If you signed up for a DDNS service
 
 You need to announce your host using your DDNS hostname in order for it to work. You can also announce a specific IP address. Click on the **Terminal** `>` icon at the top of the Sia-UI window, and type:
 
@@ -90,7 +96,9 @@ Announcing your host is a transaction that will appear in your Transaction list 
 
 Read on for some additional important things to take care of to get the most out of your host.
 
-## Auto-unlock your Sia wallet (Optional)
+
+
+### Auto-unlock your Sia wallet (Optional)
 
 What happens if your computer shuts down and you're not there to turn it back on? Setting your computer to automatically reboot, start Sia, and unlock your wallet can get you back up and running to minimize downtime.
 

@@ -4,9 +4,11 @@ description: This section takes you through setting up a host using Linux CLI
 
 # Linux CLI
 
-## The process
-
 ### Step 1: Install Sia binaries
+
+{% hint style="warning" %}
+_If you would like to use a different user account make sure to create it now before downloading and installing._
+{% endhint %}
 
 Download and extract the latest Sia Daemon Linux binaries from [https://sia.tech/get-started](https://sia.tech/get-started).
 
@@ -54,7 +56,7 @@ Device     Start         End     Sectors  Size Type
 ```
 
 {% hint style="info" %}
-_For this guide I will be using the external HDD connected via USB listed as_ `/dev/sda`
+_For this guide we will be using the 5.5TiB storage drive listed as_ `/dev/sda`
 {% endhint %}
 
 
@@ -183,7 +185,7 @@ siac host folder add /media/SiaStorage01 5TB
 siac wallet init -p 
 ```
 
-{% hint style="info" %}
+{% hint style="danger" %}
 _Write down your recovery keys and keep them somewhere safe. If you loose these you will not be able to recover your Siacoin._
 {% endhint %}
 
@@ -197,7 +199,7 @@ siac wallet unlock
 
 ### Step 7: Fund your wallet
 
-Generate a new wallet
+Generate a new wallet.
 
 ```
 siac wallet address
@@ -220,7 +222,7 @@ _It is recommended to have about 1000 Siacoin per TB._
 Set your minimum storage price.
 
 {% hint style="info" %}
-_Filebase will only make contracts with hosts that have a storage price of 150SC or higher. Also Skynet Labs will not make contracts with hosts that have a storage price of 300SC or higher._
+_Filebase will only make contracts with hosts that have a storage price of 150SC or higher. Also Skynet Labs will not make contracts with hosts that have a storage price of 300SC or higher. Set your prices accordingly._
 {% endhint %}
 
 ```
@@ -229,7 +231,7 @@ siac host config minstorageprice 150SC
 
 Set your collateral.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 _Your collateral should be two times your storage price. So if your storage price is set to 150SC, your collateral should be set to 300SC_
 {% endhint %}
 
@@ -246,15 +248,15 @@ siac host config minuploadbandwidthprice 50SC
 
 Set your max contract length.
 
+{% hint style="warning" %}
+_The recommended minimum contract length is 12 weeks. Default is 26 weeks._
+{% endhint %}
+
 ```
 siac host config maxduration 12w
 ```
 
-{% hint style="info" %}
-_The recommended minimum contract length is 12 weeks._
-{% endhint %}
-
-To see more configuration settings use the following
+To see more configuration settings use the following.
 
 ```
 siac host config -h
@@ -264,7 +266,11 @@ siac host config -h
 
 ### Step 9: Bootstrapping
 
-Before you can begin hosting, you will need to wait for your host to be fully synced with the blockchain. You can use _**`siac`**_ to monitor the progress.
+{% hint style="danger" %}
+_Before you can begin hosting, you will need to wait for your host to be fully synced with the blockchain._
+{% endhint %}
+
+To monitor your bootstrap progress use the following.
 
 ```
 siac consensus
@@ -300,7 +306,7 @@ Announcing your host is a transaction that will appear in your Transaction list 
 
 ### Step 11: Retire
 
-{% hint style="info" %}
+{% hint style="danger" %}
 _Before retiring your host, you will first need to stop accepting contract and allow any current contracts to expire. Once all your remaining contracts have expired, you can then shut down your host without any loss of data or collateral._
 {% endhint %}
 

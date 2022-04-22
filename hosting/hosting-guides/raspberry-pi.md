@@ -10,11 +10,15 @@ description: This section takes you through setting up a host on a Raspbery Pi 4
 
 Download and install the latest version of Raspberry PI Imager from [**raspberrypi.org/software/**](https://www.raspberrypi.org/software/)**.**
 
+
+
 ### Step 2: Download and install Ubuntu
 
 Using the Raspberry PI Imager software download and install Ubuntu 20.04 LTS onto your Raspberry PI SD card.
 
 **Choose OS >> Other general purpose OS >> Ubuntu >> Ubuntu 20.04 LTS**
+
+
 
 ### Step 3: First boot
 
@@ -53,8 +57,6 @@ cd ~
 wget -q https://sia.tech/releases/Sia-v1.5.7-linux-arm64.zip
 unzip Sia-v1.5.7-linux-arm64.zip
 ```
-
-
 
 Next move the extracted Sia binaries to _`/usr/local/bin/`_.
 
@@ -116,16 +118,16 @@ To locate the storage drive you would like to use for your renters data.
 sudo fdisk -l
 ```
 
-This will give  you the following printout.
+This will give you the following printout.
 
 ```
-Device         Boot  Start       End   Sectors   Size Id Type 
-/dev/mmcblk0p1 *      2048    526335    524288   256M  c W95 FAT32 (LBA) 
-/dev/mmcblk0p2      526336 250347486 249821151 119.1G 83 Linux 
+Device         Boot  Start       End   Sectors   Size Id Type 
+/dev/mmcblk0p1 *      2048    526335    524288   256M  c W95 FAT32 (LBA) 
+/dev/mmcblk0p2      526336 250347486 249821151 119.1G 83 Linux 
 
 
 Disk /dev/sda: 5.47 TiB, 6001175125504 bytes, 11721045167 sectors 
-Disk model: Expansion Desk   
+Disk model: Expansion Desk   
 Units: sectors of 1 * 512 = 512 bytes 
 Sector size (logical/physical): 512 bytes / 4096 bytes 
 I/O size (minimum/optimal): 4096 bytes / 4096 bytes 
@@ -133,9 +135,8 @@ Disklabel type: gpt
 Disk identifier: 95C65D62-CA73-934A-9C4B-030C5FF0321F 
 
 
-Device     Start         End     Sectors  Size Type 
-/dev/sda1   2048 11721045133 11721043086  5.5T Linux filesystem
-
+Device     Start         End     Sectors  Size Type 
+/dev/sda1   2048 11721045133 11721043086  5.5T Linux filesystem
 ```
 
 
@@ -164,8 +165,6 @@ Save the file to disk using _**`ctrl+o`**_
 
 Exit the text editor using _**`ctrl+x`**_
 
-
-
 Next create a systemd script to mount your storage drives automatically on boot.
 
 ```
@@ -193,8 +192,6 @@ WantedBy=multi-user.target
 Save the file to disk using _**`ctrl+o`**_
 
 Exit the text editor using _**`ctrl+x`**_
-
-
 
 Next create a systemd script to start up your sia host and login automatically.
 
@@ -228,7 +225,7 @@ Save the file to disk using _**`ctrl+o`**_
 
 Exit the text editor using _**`ctrl+x`**_
 
-&#x20;
+
 
 ### Step 12: Add your storage folder
 
@@ -250,8 +247,6 @@ _Filebase will only make contracts with hosts that have a storage price of 150SC
 siac host config minstorageprice 150SC
 ```
 
-
-
 Set your collateral.
 
 {% hint style="info" %}
@@ -262,16 +257,12 @@ _Your collateral should be two times your storage price. So if your storage pric
 siac host config collateral 300SC
 ```
 
-
-
 Set your bandwidth fees.
 
 ```
 siac host config mindownloadbandwidthprice 250SC
 siac host config minuploadbandwidthprice 50SC
 ```
-
-
 
 Set your max contract length.
 
@@ -283,23 +274,35 @@ _The recommended minimum contract length is 12 weeks._
 siac host config maxduration 12w
 ```
 
-
-
 To see more configuration settings use the following
 
 ```
 siac host config -h
 ```
 
-
-
 ### Step 14: Announce your host!
 
-Now all that is left, is for you to announce your host to the network and you're done!
+Once you have completed syncing to the blockchain The only thing left, is for you to announce your host to the network.
 
 ```
 siac host announce
 ```
+
+#### If you signed up for a DDNS service
+
+You need to announce your host using your DDNS hostname in order for it to work. You can also announce a specific IP address.
+
+```
+host announce example.ddns.net:9982
+```
+
+{% hint style="danger" %}
+_Make sure to include_ `:9982` _as this specifies which port renters can contact you through and is the default for Sia._
+{% endhint %}
+
+{% hint style="info" %}
+Announcing your host is a transaction that will appear in your Transaction list in your wallet.
+{% endhint %}
 
 
 

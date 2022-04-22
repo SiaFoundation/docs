@@ -15,7 +15,6 @@
   * [Renting](get-started-with-sia/frequently-asked-questions/renting/README.md)
     * [Is my data secure?](get-started-with-sia/frequently-asked-questions/renting/is-my-data-secure.md)
   * [Hosting](get-started-with-sia/frequently-asked-questions/hosting-faq/README.md)
-    * [How do I see advanced host stats?](get-started-with-sia/frequently-asked-questions/hosting-faq/how-do-i-see-advanced-host-stats.md)
     * [Can I run my host on two different computers at the same time?](get-started-with-sia/frequently-asked-questions/hosting-faq/can-i-run-my-host-on-two-different-computers-at-the-same-time.md)
     * [What happens if my Sia wallet locks?](get-started-with-sia/frequently-asked-questions/hosting-faq/what-happens-if-my-sia-wallet-locks.md)
     * [What happens if my host computer shuts off?](get-started-with-sia/frequently-asked-questions/hosting-faq/what-happens-if-my-host-computer-shuts-off.md)
@@ -116,7 +115,9 @@
       * [Dashboard](hosting/host-setup/advanced/monitoring/dashboard.md)
       * [CLI](hosting/host-setup/advanced/monitoring/cli.md)
       * [Troubleshooting](hosting/host-setup/advanced/monitoring/troubleshooting.md)
-    * [Wake on power](hosting/host-setup/advanced/wake-on-power.md)
+    * [Wake on Power](hosting/host-setup/advanced/wake-on-power.md)
+    * [Storage Location](hosting/host-setup/advanced/storage-location.md)
+    * [Migrating a Host](hosting/host-setup/advanced/migrating-a-host.md)
 
 ## Mining
 

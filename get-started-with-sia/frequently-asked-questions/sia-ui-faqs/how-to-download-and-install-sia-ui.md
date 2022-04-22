@@ -4,8 +4,12 @@ Learn how to install Sia-UI on Windows, Linux, or MacOS.
 
 ## Things You'll Need
 
-* A desktop or notebook computer with a decent amount of available storage space. As of January 2021, you need about 24 GB for the Sia blockchain to download. This file will only get larger, so allocate some space to be able to grow with Sia.
+* A desktop or notebook computer with a decent amount of available storage space.
 * A basic knowledge of your computer's file structure.
+
+{% hint style="info" %}
+_As of April 21, 2022, the Sia blockchain is \~34 GB in size. This will only get larger, so make sure to allocate enough space to account for future growth._
+{% endhint %}
 
 ### Find the right download for you <a href="#find_the_right_download_for_you" id="find_the_right_download_for_you"></a>
 

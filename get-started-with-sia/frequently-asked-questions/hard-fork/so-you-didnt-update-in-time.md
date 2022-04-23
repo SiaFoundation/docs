@@ -8,7 +8,7 @@ description: ...and now you have to resync your Sia wallet.
 
 On February 3rd, 2021 at block 298,000, [the Sia network hardforked](navigating-the-2021-sia-hardfork.md) to implement the Sia Foundation: a new non-profit entity that builds and supports distributed cloud storage infrastructure, with a specific focus on the Sia storage platform.
 
-It's a great thing! But here you are, and you didn't update in time. Maybe you never even updated from the 2018 fork! You can't rent storage space, host, or send SC to friends or exchanges. For most people who updated ahead of time, it was a simple matter of [downloading the latest version and installing it](../../../your-sia-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md).
+It's a great thing! But here you are, and you didn't update in time. Maybe you never even updated from the 2018 fork! You can't rent storage space, host, or send Siacoin to friends or exchanges. For most people who updated ahead of time, it was a simple matter of [downloading the latest version and installing it](../../../your-sia-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md#find\_the\_right\_download\_for\_you).
 
 Not you though, something went (or is going) wrong. It might be that:
 
@@ -36,4 +36,4 @@ The most effective way to resync is to perform a clean install. The process requ
 After restoring Sia from your seed and resyncing, it might take your balance up to an hour to re-appear in the wallet as Sia performs more actions in the background.
 {% endhint %}
 
-It's a bit of a long process, mostly because Sia will re-download the consensus blockchain file. But resyncing is something you'll need to do anyway, and a clean install works 100% of the time. Use [this guide](../../../your-sia-wallet/wallet-setup/sia-ui/how-to-perform-a-clean-install-in-sia-ui.md) for a detailed walkthrough of these steps.
+It's a bit of a long process, mostly because Sia will re-download the consensus blockchain file. But resyncing is something you'll need to do anyway, and a clean install works 100% of the time. Use [this guide](../../../your-sia-wallet/wallet-setup/sia-ui/how-to-perform-a-clean-install-in-sia-ui.md) for a detailed walk-through of these steps.

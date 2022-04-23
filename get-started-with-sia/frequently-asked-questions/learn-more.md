@@ -2,29 +2,26 @@
 
 Sia has great resources and a thriving community that loves to help others.
 
-[Sia Website](https://sia.tech/)
+[Sia Website](https://sia.tech)
 
 [Sia 101 Infographic](https://siastats.info/sia101)
 
-[Support Center](http://support.sia.tech/)
+[Support Center](http://support.sia.tech)
 
-[Sia Wiki](https://siawiki.tech/)
+[Sia Wiki](https://siawiki.tech)
 
-[SiaStats](http://siastats.info/)
+[SiaStats](http://siastats.info)
 
 ## Community and Social
 
-[Sia Blog](https://blog.sia.tech/)
+[Sia Blog](https://blog.sia.tech)
 
-[The new Sia forums](https://forum.sia.tech/)
+[The new Sia forums](https://forum.sia.tech)
 
-[Discord \(share the link!\)](https://discord.gg/sia)
+[Discord (share the link!)](https://discord.gg/sia)
 
-[Twitter \(Skynet Labs\)](https://twitter.com/SkynetLabs)
-
-[Twitter \(Sia Foundation\)](https://twitter.com/Sia__Foundation)
+[Twitter (Sia Foundation)](https://twitter.com/Sia\_\_Foundation)
 
 [Reddit](https://reddit.com/r/siacoin)
 
 [GitLab](https://gitlab.com/nebulouslabs)
-

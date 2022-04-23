@@ -13,7 +13,7 @@ _As of April 21, 2022, the Sia blockchain is \~34 GB in size. This will only get
 
 ## Download the Sia-UI <a href="#find_the_right_download_for_you" id="find_the_right_download_for_you"></a>
 
-[Go to our downloads page](https://sia.tech/get-started). You'll see two options, Sia-UI and Sia Daemon. The Sia-UI is our user-friendly app, while the [Sia Daemon](../sia-daemon/) is for users comfortable with command-line interfaces. Download the Sia-UI that's right for your operating system.
+[Go to our downloads page](https://sia.tech/get-started). You'll see two options, Sia-UI and Sia Daemon. The Sia-UI is our user-friendly app, while the Sia Daemon is for users comfortable with command-line interfaces. Download the Sia-UI that's right for your operating system.
 
 ![](../../../.gitbook/assets/get-started-download.png)
 
@@ -21,9 +21,6 @@ Once you have downloaded the correct version of the Sia-UI, you can move on to i
 
 * [Windows](how-to-download-and-install-sia-ui.md#installation-windows)
 * [macOS](how-to-download-and-install-sia-ui.md#installation-macos)
-* [Linux](how-to-download-and-install-sia-ui.md#installation-linux)
-
-
 
 ## Installation: Windows
 
@@ -88,11 +85,5 @@ The next screen will open to the General tab, which is exactly where you need to
 You might see one more message letting you know that Sia-UI is from an unidentified developer. Click **Open.**
 
 ![](../../../.gitbook/assets/install-13.png)
-
-Sia-UI is now ready to go!
-
-## Installation: Linux
-
-First time installing? [Set up a wallet](how-to-make-a-new-wallet-in-sia-ui.md).
 
 Sia-UI is now ready to go!

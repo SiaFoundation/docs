@@ -6,7 +6,7 @@ If you already have a Sia seed with a balance of Siacoins, you can recover and u
 
 * A desktop or notebook computer with a decent amount of available storage space. As of January 2021, you need 24 GB for the Sia blockchain to download. This file will only get larger, so allocate some space to be able to grow with Sia.
 * Your Sia seed.
-* Sia-UI installed. [Don't have Sia-UI yet?](http://sia.tech/get-started)
+* Sia-UI installed. [Don't have Sia-UI yet?](how-to-download-and-install-sia-ui.md#find\_the\_right\_download\_for\_you)
 * The Sia blockchain fully synced to Sia-UI. Syncing can take hours on an SSD, and days on a traditional HDD.
 
 ## Restore from a seed

@@ -77,6 +77,7 @@
     * [How to automatically restart and unlock Sia](your-sia-wallet/wallet-setup/for-advanced-users/how-to-automatically-restart-and-unlock-sia.md)
     * [How to set an environment variable](your-sia-wallet/wallet-setup/for-advanced-users/how-to-set-an-environment-variable.md)
     * [Using the Sia Ledger Nano S app](your-sia-wallet/wallet-setup/for-advanced-users/using-the-sia-ledger-nano-s-app.md)
+    * [Using the Sia Ledger Nano app with Sia Central](your-sia-wallet/wallet-setup/for-advanced-users/using-the-sia-ledger-nano-app-with-sia-central.md)
   * [Troubleshooting](your-sia-wallet/wallet-setup/wallet-troubleshooting/README.md)
     * [Delete your seed and make a new one](your-sia-wallet/wallet-setup/wallet-troubleshooting/delete-your-seed-and-make-a-new-one.md)
     * [Find or fix your seed](your-sia-wallet/wallet-setup/wallet-troubleshooting/find-or-fix-your-seed.md)

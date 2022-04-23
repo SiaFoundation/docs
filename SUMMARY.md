@@ -108,8 +108,6 @@
     * [Metadata Backup](hosting/host-setup/advanced/metadata-backup.md)
     * [Dynamic DNS (Optional)](hosting/host-setup/advanced/dynamic-dns-optional.md)
     * [Monitoring](hosting/host-setup/advanced/monitoring/README.md)
-      * [Host Manager](hosting/host-setup/advanced/monitoring/host-manager.md)
-      * [Dashboard](hosting/host-setup/advanced/monitoring/dashboard.md)
       * [CLI](hosting/host-setup/advanced/monitoring/cli.md)
     * [Wake on Power](hosting/host-setup/advanced/wake-on-power.md)
     * [Storage Location](hosting/host-setup/advanced/storage-location.md)

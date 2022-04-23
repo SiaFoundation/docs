@@ -22,7 +22,11 @@ _**Note:** On a SSD syncing to the blockchain can take a day or more. Therefore 
 
 Once you have the SiaUI installed, open Sia and click on the **Host** tab on the left. This is where you can configure your host settings. The first thing you do is tell Sia where your storage folder is. This is a location on the storage device you want to use for hosting.
 
+![](../../.gitbook/assets/host-start.jpg)
+
 Click **Add a folder**, then select a location. You can choose a drive (like D:\\) to use an entire empty drive or partition, or you can pick a specific folder on a drive. Sia will create one large file in the location you select that allocates the amount of storage you choose.
+
+![](../../.gitbook/assets/host-add-folder.jpg)
 
 Tell Sia how much space you want to allocate to hosting, in megabytes. Entering a value lower than 32 GB will provide a warning since as a host you're graded on having a lot of available storage. Set at least 4 TB if you can. You can type in a value if you want to set a value higher than what the slider allows.
 
@@ -39,6 +43,8 @@ Here are some quick values you can use to get started:
 
 
 ### Step 4: Host Settings
+
+![](../../.gitbook/assets/host-settings.jpg)
 
 {% tabs %}
 {% tab title="Max Duration" %}
@@ -82,6 +88,8 @@ This can only be changed in siac, or using the Terminal in Sia-UI with the comma
 
 Click the slider at the top of the Host window next to the Announce Host button so it appears green. This will turn on your host for accepting new storage contracts from renters. Then, unless you used DDNS in a previous step, click **Announce Host** to the Sia network so that renters can find you.
 
+![](../../.gitbook/assets/host-announce.jpg)
+
 #### If you signed up for a DDNS service
 
 You need to announce your host using your DDNS hostname in order for it to work. You can also announce a specific IP address. Click on the **Terminal** `>` icon at the top of the Sia-UI window, and type:
@@ -106,8 +114,4 @@ _Before retiring your host, you will first need to stop accepting contract and a
 
 To stop accepting contracts, simply turn off the announce button at the top right of the Sia-UI hosting page.
 
-### Auto-unlock your Sia wallet (Optional)
-
-What happens if your computer shuts down and you're not there to turn it back on? Setting your computer to automatically reboot, start Sia, and unlock your wallet can get you back up and running to minimize downtime.
-
-Read this page to set it up.
+![](../../.gitbook/assets/host-announce.jpg)

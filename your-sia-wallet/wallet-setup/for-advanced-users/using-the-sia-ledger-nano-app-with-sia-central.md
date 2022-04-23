@@ -113,6 +113,8 @@ After you have imported your addresses click the **Done** button at the bottom. 
 
 After the initial setup is complete you can send Siacoin to your wallet. Select your wallet from the list on the right, then click the _Receive_ button right under the balance.
 
+![](../../../.gitbook/assets/lite-wallet-ledger-receive.png)
+
 Before sending Siacoin to an address it is important to manually verify that it belongs to your wallet.
 
 1. Connect your Ledger Nano, unlock it, and open the Sia app.
@@ -123,27 +125,51 @@ Before sending Siacoin to an address it is important to manually verify that it 
 
 After verifying the address you can send Siacoin to this address. If this is the first time you have sent Siacoin to a hardware wallet, try with a small amount first to make sure everything is setup correctly. When you receive Siacoin it will be marked as an unconfirmed transaction for 10 minutes to an hour. You will have to wait for at least one confirmation before you can spend your Siacoin.
 
+![](../../../.gitbook/assets/lite-wallet-ledger-receive-unconfirmed.png)
+
 ## Checking balance <a href="#checking_balance" id="checking_balance"></a>
 
 Your balance and your last 500 transactions can be displayed at any time by selecting the wallet from the list on the left of the dashboard. You do not need your Ledger to view your balance. Just to verify addresses or send transactions.
+
+![](../../../.gitbook/assets/lite-wallet-ledger-confirmed-balance.png)
 
 ## Sending Siacoin <a href="#sending_siacoin" id="sending_siacoin"></a>
 
 To send a transaction you will need your device. Select your wallet from the list on the left; then click **Send**. A dialog will pop up allowing you to input the recipient's address and the amount of Siacoin to send them. You can enter the amount in your display currency, or Siacoin.
 
+![](../../../.gitbook/assets/lite-wallet-ledger-send-setup.png)
+
 Once you have entered the address and amount, click the **Send** button. You will now need to verify the transaction and sign it with your device.
 
-1. Connect your Ledger device, unlock it, and open the Sia app.
-2. Press the green **Connect** button; the **Sign** button should enable.
-3. Click the green **Sign** button.
-4. You will now need to confirm the transaction details on your device.
-5. Verify that the "SC Output #1", displayed on your device, matches your intended recipient. To confirm on the device: scroll to page 2 by pressing the right button, then press both buttons at the same time.
-6. Next the send amount will be displayed; verify it matches the amount you wish to send. Then confirm by pressing both buttons at the same time.
-7. Verify that "Miner Fee #1" matches the amount displayed on the screen. Confirm by pressing both buttons at the same time.
-8. After confirming the transaction details are correct, sign the transaction. Press the right button once; the device should now say "Approve". Press both buttons at the same time to confirm the signature.
-9. In the lite wallet, the **Send** button should appear. To broadcast your transaction and send your Siacoin, press **Send**. The amount will be deducted from your balance and sent to your recipient.
+![](../../../.gitbook/assets/lite-wallet-ledger-send-sign.png)
+
+Connect your Ledger device, unlock it, and open the Sia app.
+
+Press the green **Connect** button; the **Sign** button should enable.
+
+![](../../../.gitbook/assets/lite-wallet-ledger-send-pair.png)
+
+Click the green **Sign** button.
+
+You will now need to confirm the transaction details on your device.
+
+![](../../../.gitbook/assets/nanox-send-confirm.png)
+
+Verify that the "SC Output #1", displayed on your device, matches your intended recipient. To confirm on the device: scroll to page 2 by pressing the right button, then press both buttons at the same time.
+
+Next the send amount will be displayed; verify it matches the amount you wish to send. Then confirm by pressing both buttons at the same time.
+
+Verify that "Miner Fee #1" matches the amount displayed on the screen. Confirm by pressing both buttons at the same time.
+
+After confirming the transaction details are correct, sign the transaction. Press the right button once; the device should now say "Approve". Press both buttons at the same time to confirm the signature.
+
+In the lite wallet, the **Send** button should appear. To broadcast your transaction and send your Siacoin, press **Send**. The amount will be deducted from your balance and sent to your recipient.
+
+![](../../../.gitbook/assets/lite-wallet-ledger-send-confirm.png)
 
 If the transaction broadcast successfully, you should now have a new unconfirmed transaction in your transaction list deducting the amount + the transaction fee. Your recipient will have to wait between 10 minutes to an hour for the transaction to be confirmed. Depending on how many UTXOs are in your wallet; you may have to wait for at least one confirmation before being able to send another transaction.
+
+![](../../../.gitbook/assets/lite-wallet-ledger-unconfirmed-send.png)
 
 ## Additional help
 

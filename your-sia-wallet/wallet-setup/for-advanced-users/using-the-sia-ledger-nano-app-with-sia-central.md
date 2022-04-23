@@ -53,34 +53,61 @@ At this point, you're ready to install apps on your Ledger device. Remember to s
 
 _Now we'll install the Sia app onto your Ledger hardware wallet._
 
-1. Open the **Manager** in Ledger Live.
-2. Connect and unlock your Ledger device via USB. You will be prompted on the device to allow the manager.
-3. Search for Sia in the app catalog.
-4. Click the **Install** button. Your device will display **Processing...**
-5. When the main menu reappears, the Sia app has been successfully installed.
+Open the **Manager** in Ledger Live.
+
+![](../../../.gitbook/assets/nanox-manager.png)
+
+Connect and unlock your Ledger device via USB. You will be prompted on the device to allow the manager.
+
+Search for Sia in the app catalog.
+
+![](../../../.gitbook/assets/nanox-sia.png)
+
+Click the **Install** button. Your device will display **Processing...**
+
+When the main menu reappears, the Sia app has been successfully installed.
 
 ## Wallet Setup
 
 Sia Central's web wallet is a lite, non-custodial wallet that allows you to send and receive Siacoin without downloading the blockchain. After the Ledger wallet is imported, your balance can be viewed almost immediately.
 
-1. Access the wallet at https://wallet.siacentral.com
-2. If you have never used the wallet before you will be prompted to set a password. This password is used to encrypt your data and is required to unlock your wallets in the future.
-3. Create a new wallet
-4. Click **Ledger Wallet** to add a new Ledger wallet.
+Access the wallet at https://wallet.siacentral.com
+
+If you have never used the wallet before you will be prompted to set a password. This password is used to encrypt your data and is required to unlock your wallets in the future.
+
+![](../../../.gitbook/assets/lite-wallet-set-password.png)
+
+Create a new wallet
+
+![](../../../.gitbook/assets/lite-wallet-create-ledger.png)
+
+Click **Ledger Wallet** to add a new Ledger wallet.
 
 You will now need to connect your device and import an address to send Siacoins to. When connecting you can choose either USB or Bluetooth depending on your browser's support.&#x20;
 
-1. Connect and unlock your device, then open the Sia app.
-2. Click the green **Connect** button in the wallet. The status should change to "Connected".
+![](../../../.gitbook/assets/lite-wallet-import-connect.png)
+
+Connect and unlock your device, then open the Sia app.
+
+Click the green **Connect** button in the wallet. The status should change to "Connected".
 
 {% hint style="info" %}
 If you have never connected your device to this computer before, you may need to confirm the pairing on the device.
 {% endhint %}
 
-1. Click the **Add Address** button. Confirm that you want to generate the address on your device by pressing the right button once, the screen should now read "Approve"; then press both buttons together to confirm.
-2. The address is now imported, verify that the address in the box matches the address displayed on the device. If you have used this device before your balance will update.
-3. Optionally, you can add additional addresses by clicking the **Add Address** button again and confirming on the device.
-4. After you have imported your addresses click the **Done** button at the bottom. You will now have a new wallet in your dashboard.
+![](../../../.gitbook/assets/lite-wallet-import-pair.png)
+
+Click the **Add Address** button. Confirm that you want to generate the address on your device by pressing the right button once, the screen should now read "Approve"; then press both buttons together to confirm.
+
+![](../../../.gitbook/assets/nanox-generate-address.png)
+
+The address is now imported, verify that the address in the box matches the address displayed on the device. If you have used this device before your balance will update.
+
+Optionally, you can add additional addresses by clicking the **Add Address** button again and confirming on the device.
+
+After you have imported your addresses click the **Done** button at the bottom. You will now have a new wallet in your dashboard.
+
+![](../../../.gitbook/assets/lite-wallet-balance-ledger.png)
 
 ## Receiving Siacoin <a href="#receiving_siacoin" id="receiving_siacoin"></a>
 

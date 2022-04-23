@@ -1,5 +1,7 @@
 # Should I backup my Sia host metadata?
 
-The Sia client maintains additional information on your contracts as a host and your renters' files in an internal location. This information is known as host metadata and is required in order to provide your renters with access to their data on the Sia cloud storage network. Without it, it's like losing renter data - you'd have no way to know which data belongs to who in your host storage folders.
+Yes, the Sia host metadata is how the Sia client keeps track of your contracts and the location of a renters files on your disk. Without this metadata, there is no way to provide your renters access to their data - it is forever lost.
 
-See more about backing up in [How to host on Sia](broken-reference).
+{% hint style="info" %}
+_To learn more about backing up your host metadata,_ [_click here_](../../../hosting/host-setup/advanced/metadata-backup.md)_._
+{% endhint %}

@@ -98,7 +98,7 @@ Read on for some additional important things to take care of to get the most out
 
 
 
-### Step 11: Retire
+### Step 6: Retire
 
 {% hint style="danger" %}
 _Before retiring your host, you will first need to stop accepting contract and allow any current contracts to expire. Once all your remaining contracts have expired, you can then shut down your host without any loss of data or collateral._

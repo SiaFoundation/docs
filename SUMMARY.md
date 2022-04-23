@@ -94,7 +94,6 @@
     * [Managing your files](renting/renter-setup/sia-ui/managing-your-files.md)
     * [How to rent storage on Sia](renting/renter-setup/sia-ui/how-to-rent-storage-on-sia.md)
     * [How to back up and restore your files](renting/renter-setup/sia-ui/how-to-back-up-your-files.md)
-  * [Linux CLI](renting/renter-setup/linux-cli.md)
   * [Troubleshooting](renting/renter-setup/renter-troubleshooting.md)
 
 ## Hosting

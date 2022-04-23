@@ -7,7 +7,7 @@ When your files are on Sia, they're on the most private, secure network in the w
 File backups are meant to be used to restore files in a brand new instance of Sia, but can also be accessed in your current Sia node.
 
 {% hint style="info" %}
-Your contracts need to be active, which means Sia isn't totally fire-and-forget just yet. You still need to boot Sia up every few weeks to renew your allowance and contracts.
+_Your contracts need to be active, which means Sia isn't totally fire-and-forget just yet. You still need to boot Sia up every few weeks to renew your allowance and contracts._
 {% endhint %}
 
 ## Back up your files in Sia-UI
@@ -56,4 +56,4 @@ Wait for the scan to complete. Sia might find your backups right away, but it mi
 
 Sia has found your backups. Click **Restore** next to the one you want. Feel free to close this window, or reopen it to check back - your files will begin to appear in the file manager in Sia over the next few minutes.
 
-There's one last step - check your allowance to make sure it's set. Sia needs your allowance to be able to spend your Siacoins on contracts and download bandwidth to get your files back. Once that's done, you're good to go!
+There's one last step - check your allowance to make sure it's set. Sia needs your allowance to be able to spend your Siacoin on contracts and download bandwidth to get your files back. Once that's done, you're good to go!

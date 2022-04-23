@@ -6,10 +6,10 @@
 
 * Sia installed on your computer
 * A Sia wallet set up
-* Siacoins, the cryptocurrency used to buy and sell storage
+* Siacoin, the cryptocurrency used to buy and sell storage
 
 {% hint style="warning" %}
-This process generates a new wallet with a new Sia seed. This is not recommended if you currently have Siacoins in your wallet, unless you've already forgotten your Sia seed. Any Siacoins in your current wallet will no longer be accessible unless you have your previous seed and restore from it.
+This process generates a new wallet with a new Sia seed. This is not recommended if you currently have Siacoin in your wallet, unless you've already forgotten your Sia seed. Any Siacoin in your current wallet will no longer be accessible unless you have your previous seed and restore from it.
 {% endhint %}
 
 ## Deleting your wallet and starting over

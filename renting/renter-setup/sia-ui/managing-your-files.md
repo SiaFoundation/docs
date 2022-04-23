@@ -7,7 +7,7 @@ description: >-
 # Managing your files
 
 {% hint style="info" %}
-As with any file storage or backup solution, Sia should not be your sole location for critical files.
+_As with any file storage or backup solution, Sia should not be your sole location for critical files._
 {% endhint %}
 
 ## Uploading
@@ -17,12 +17,12 @@ Uploading happens in Sia-UI or your preferred command-line interface. Sia-UI has
 When you begin to upload a file to Sia, it has to get processed on your machine to allow for maximum redundancy and security on the network. It is first split into manageable chunks. Each chunk is then run through a process that creates 30 pieces, each of which gets encrypted before being sent to a different host. Only 10 of the 30 pieces are needed to reconstruct a chunk, but no host ever sees more than one. This means, for each part of your original file, 20 hosts could drop from the network and your data will still be safe and secure.
 
 {% hint style="info" %}
-For the more technical readers, here is what happens behind the scenes:
+_For the more technical readers, here is what happens behind the scenes:_
 
-* Files are chunked into 40MB chunks \(if a file is smaller, it is padded to 40MB so that data looks identical as it moves across networks\)
-* Each chunk is then erasure-coded using [Reed-Solomon](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction) encoding. After processing, each chunk has 30 unique 4MB pieces associated with it.
-* Each piece is then encrypted using [Threefish](https://en.wikipedia.org/wiki/Threefish) and uploaded to a distinct host.
-* Because Reed-Solomon encoding is done with 10 data shards and 20 parity shards, any 10 pieces are sufficient for rebuilding the file.
+* _Files are chunked into 40MB chunks (if a file is smaller, it is padded to 40MB so that data looks identical as it moves across networks)_
+* _Each chunk is then erasure-coded using_ [_Reed-Solomon_](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon\_error\_correction) _encoding. After processing, each chunk has 30 unique 4MB pieces associated with it._
+* _Each piece is then encrypted using_ [_Threefish_](https://en.wikipedia.org/wiki/Threefish) _and uploaded to a distinct host._
+* _Because Reed-Solomon encoding is done with 10 data shards and 20 parity shards, any 10 pieces are sufficient for rebuilding the file._
 {% endhint %}
 
 That's a lot of details but just know: you don't have to do anything, or even see that this process happens.
@@ -45,7 +45,7 @@ Sia can only check when it's active though, so be sure to open Sia periodically 
 
 ## Downloading
 
-Downloading files happens right through the app as well. There's a small download icon next to each file in your list. Downloading requires Siacoins since you pay for the bandwidth you use.
+Downloading files happens right through the app as well. There's a small download icon next to each file in your list. Downloading requires Siacoin since you pay for the bandwidth you use.
 
 ### Maintaining Data _\*\*_
 
@@ -53,7 +53,6 @@ In order to make sure that your data is always available, there's a couple of im
 
 * **Refreshing your allowance** - About six weeks after your contracts are created, your allowance attempts to refill itself. Sia will never spend more than your allowance, so it needs to be refilled to facilitate contract renewals and downloads through the rest of the contract period. _**!** The allowance will refill automatically when you open Sia._
 * **Renewing your contracts** - Your storage contracts will renew automatically at the end of the contract period. By default, Sia will attempt to renew your contract within about 1 month of the contract expiration date. If you started renting at the beginning of January, your 3-month contracts would expire around the end of March. Sia would attempt to renew them around the beginning of March. _**!** Your contracts renew automatically when you open Sia._
-* **Boosting file health** - File health and redundancy are also boosted if needed, as described above. 
+* **Boosting file health** - File health and redundancy are also boosted if needed, as described above.
 
 **Sia needs to be running with your wallet unlocked for these things to occur**, so as a renter, it's a good idea to open Sia **at least once a month** and let it run overnight to take care of miscellaneous housekeeping tasks such as these. If you simply upload files and then never open Sia again, your allowance and your contracts will eventually expire and your files will be immediately deleted once your contracts are no longer valid.
-

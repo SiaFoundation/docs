@@ -21,8 +21,8 @@ Not meeting these requirements can have a range of effects: you may be unable to
   * CPU: Sia does not require special CPU considerations
   * RAM: 8 GB recommended
   * SSD: 40 GB recommended (keep an eye on your consensus size!)
-  * Create a Sia wallet
-  * [Get Siacoins](../get-started-with-sia/frequently-asked-questions/siacoin/how-to-buy-siacoins.md)
+  * [Create a Sia wallet](../your-sia-wallet/wallet-setup/sia-ui/how-to-make-a-new-wallet-in-sia-ui.md#create-a-new-wallet)
+  * [Get Siacoin](../get-started-with-sia/frequently-asked-questions/siacoin/how-to-buy-siacoins.md)
 * **Storage space:** Spare hard drive space to rent out, ideally greater than 4 TB.
 
 ## Pricing
@@ -32,7 +32,7 @@ As a host, you set your own prices. There's a lot of specific price points you c
 * **Storage Price:** The base price for your storage, per TB/month.
 * **Contract Fees:** A small, one-time fee per contract to cover network transaction costs.
 * **Upload/Download Bandwidth Price:** Your price for upload or download bandwidth to and from your host, per TB.
-* **Collateral:** How many Siacoins you're willing to lose if you don't fulfill the rental contract, per TB.
+* **Collateral:** How many Siacoin you're willing to lose if you don't fulfill the rental contract, per TB.
 
 ## **About Contracts**
 
@@ -46,7 +46,7 @@ As a host, you're part of a marketplace where you compete with other hosts for r
 
 As a host, you earn Siacoin for the storage space that you sell. But in order to create additional incentive for hosts to be good hosts and sustain a reliable network, you also put up collateral.
 
-* **Collateral** – An amount of Siacoins that you're willing to lose if you aren't a good host.
+* **Collateral** – An amount of Siacoin that you're willing to lose if you aren't a good host.
 
 Having collateral incentivizes hosts to be online and to keep their renter data intact. Hosts that go offline or lose data lose their collateral, and hosts that stay online and keep data safe get their collateral back.
 
@@ -93,7 +93,7 @@ There are a number of other pricing factors you have to take into consideration 
 {% endtab %}
 
 {% tab title="Collateral" %}
-This is how many Siacoins you're willing to lose if you don't fulfill the rental contract, per TB. It's a guarantee to your renters that you will be online through the storage contract, and that you'll have their data intact at the end of the contract. As a host, this is why you need Siacoins to start hosting. If you go offline for too long or lose renter data, you risk losing your collateral.
+This is how many Siacoin you're willing to lose if you don't fulfill the rental contract, per TB. It's a guarantee to your renters that you will be online through the storage contract, and that you'll have their data intact at the end of the contract. As a host, this is why you need Siacoin to start hosting. If you go offline for too long or lose renter data, you risk losing your collateral.
 
 You should normally set your collateral to around **2-3x your base storage price** as a starting point in order to maximize your host score in this area. For example, if you've priced your storage at 50 SC/TB, you should set your collateral at 100-150 SC/TB.
 
@@ -166,7 +166,7 @@ Once you've started hosting, you'll probably want to keep an eye on your host sc
     * 1 nS = 0.000,000,001 SC
     * 1 H = 1e-24 SC _(The smallest currency unit of Siacoin)_
 
-    __
+    \_\_
 * **Duration Units:**
   * 1 block (b) = \~10 minutes
   * 1 hour (h) = \~6 blocks

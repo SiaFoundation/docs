@@ -13,7 +13,7 @@ But the only thing that you need to set when you start uploading is your **Allow
 ## The process
 
 {% hint style="info" %}
-These instructions walk you through how to upload files in Sia-UI.
+_These instructions walk you through how to upload files in Sia-UI._
 {% endhint %}
 
 Go to the Files tab in Sia-UI. Click **Setup Allowance**.

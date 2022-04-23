@@ -20,7 +20,7 @@ Data cannot be de-platformed. Files can not be hacked.
 
 Not only is your data safe on Sia, but you can feel confident that Sia isn't going anywhere. Sia has been in development for six years and has been live for five. The Sia software has been downloaded over a million times, and thousands of TB have been uploaded to the network since its inception. If the Sia dev team quit tomorrow, the network can autonomously run forever.
 
-Sia has an incredible ecosystem with renters, hosts, miners, and a teeming developer community building on Sia and the level 2 layer above Sia called Skynet.
+Sia has an incredible ecosystem with renters, hosts, miners, and a teeming developer community building on Sia. Sia is also host to a every growing ecosystem of layer 2 solutions such as Skynet, Filebase, Arzen, Storewise, and Opacity.&#x20;
 
 ## What Sia does
 

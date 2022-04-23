@@ -4,7 +4,7 @@
 
 When a blockchain hardforks, a new version of the blockchain is created while the old is left behind. This typically happens at a certain block height.
 
-For example, [Sia is forking](navigating-the-2021-sia-hardfork.md) around February 3rd, 2021. When Sia forks, it will occur at block 298,000 and means that we now have a new chain that the Sia team will be supporting. There's also the non-fork chain that can be maintained by a separate group if they want. Here's a visual representation of the upcoming Sia fork.
+For example, Sia's last hard fork was around February 3rd, 2021, occuring at block 298,000. This hard fork resulted in a new chain that is maintained by the Sia Foundation. There's also the non-fork chain that can be maintained by a separate group if they want. Here's a visual representation of the upcoming Sia fork.
 
 ![](../../../.gitbook/assets/sia-fork-path-2021.png)
 
@@ -14,15 +14,17 @@ Frequently, after a fork, users of a blockchain don't update right away. This me
 
 The same is true for Sia. If you have not updated to 1.5.4 or later, but send coins to someone who has updated, the transaction won't be received on the other end. It will look like those coins have disappeared.
 
-Since all exchanges that trade Siacoin will update to 1.5.4 or later, sending coins to an exchange from a pre-1.5.4 wallet will result in the apparent loss of those coins.
+Since all exchanges that trade Siacoin have updated to 1.5.4 or later, sending coins to an exchange from a pre-1.5.4 wallet will result in the apparent loss of those coins.
 
 ## Your coins are safe
 
-**You have not lost your coins.** At least, not your main network Siacoins. Since you were on the old chain when you sent them to a 1.5.4 wallet, you sent and lost your old chain coins – the coins that would have been spendable on forks of Sia.
+**You have not lost your coins.** At least, not your main network Siacoin. Since you were on the old chain when you sent them to a 1.5.4 wallet, you sent and lost your old chain coins – the coins that would have been spendable on forks of Sia.
 
-**Once you update to 1.5.4 or later, your coins will reappear.** Any coins held in your official Sia wallet as of block 297,999, just before the hardfork, will be accessible in your wallet once you update Sia and sync the new version of the blockchain.
+**Once you update to 1.5.4 or later, your coins will reappear.** Any coins held in your official Sia wallet as of block 297,999, just before the hard fork, will be accessible in your wallet once you update Sia and sync the new version of the blockchain.
 
-[Download the latest version of Sia now.](http://sia.tech/get-started)
+{% hint style="info" %}
+_The latest release of Sia is 1.5.7. If you have not already upgraded,_ [_you can do so here_](../../../your-sia-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md#find\_the\_right\_download\_for\_you)_._
+{% endhint %}
 
 Now that you're updated, to sync the new version of the Sia blockchain you first need to delete the old one. Quit Sia.
 
@@ -30,13 +32,13 @@ If you're on 1.3.7 or earlier, you can easily find these folders by clicking **S
 
 If you're on 1.4.0 or later, use the Info button at the top of Sia.
 
-![](<../../../.gitbook/assets/fork-2 (1) (3) (3).png>)
+![](<../../../.gitbook/assets/fork-2 (1) (3) (3) (3) (1).png>)
 
 Then click **Open Data Folder.**
 
 Once you find the /sia folder:
 
-![](<../../../.gitbook/assets/fork-3 (1) (2) (2) (1).png>)
+![](<../../../.gitbook/assets/fork-3 (1) (2) (2) (2) (1).png>)
 
 delete the `consensus` and `transactionpool` folders. Reopen Sia to let it sync the correct version of the blockchain.
 

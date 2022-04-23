@@ -98,6 +98,14 @@ Read on for some additional important things to take care of to get the most out
 
 
 
+### Step 11: Retire
+
+{% hint style="danger" %}
+_Before retiring your host, you will first need to stop accepting contract and allow any current contracts to expire. Once all your remaining contracts have expired, you can then shut down your host without any loss of data or collateral._
+{% endhint %}
+
+To stop accepting contracts, simply turn off the announce button at the top right of the Sia-UI hosting page.
+
 ### Auto-unlock your Sia wallet (Optional)
 
 What happens if your computer shuts down and you're not there to turn it back on? Setting your computer to automatically reboot, start Sia, and unlock your wallet can get you back up and running to minimize downtime.

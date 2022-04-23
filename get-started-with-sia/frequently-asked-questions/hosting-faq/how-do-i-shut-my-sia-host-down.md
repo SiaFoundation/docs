@@ -4,7 +4,7 @@ To shutdown your host you must first stop accepting contracts. However, this wil
 
 To find out how to stop accepting contracts for your host, select your installation type from below:
 
-* Sia-UI
+* [Sia-UI](../../../hosting/hosting-guides/siaui.md#step-6-retire)
 * [Linux CLI](../../../hosting/hosting-guides/linux-cli.md#step-11-retire)
 * [Raspberry Pi](../../../hosting/hosting-guides/raspberry-pi.md#step-15-retire-your-host)
 

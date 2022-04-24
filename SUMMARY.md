@@ -114,6 +114,7 @@
     * [Wake on Power](hosting/host-setup/advanced/wake-on-power.md)
     * [Storage Location](hosting/host-setup/advanced/storage-location.md)
     * [Migrating a Host](hosting/host-setup/advanced/migrating-a-host.md)
+    * [Formatting Storage](hosting/host-setup/advanced/formatting-storage.md)
   * [Troubleshooting](hosting/host-setup/troubleshooting.md)
 
 ## Mining

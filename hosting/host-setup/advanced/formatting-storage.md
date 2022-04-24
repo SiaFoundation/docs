@@ -10,7 +10,7 @@ Choose your hosts operating system from below:
 
 ## Linux CLI
 
-### Step 1: Locate device
+### Step 1: Locate Device
 
 To begin, locate the storage you would like to format.
 
@@ -49,7 +49,7 @@ _This guide has been written assuming that you are intending to reformat the ent
 
 
 
-### Step 2: Delete partitions
+### Step 2: Delete Partitions
 
 Once you have the location of your device, use `gdisk` to remove any existing partitions.
 
@@ -92,7 +92,7 @@ Do you want to proceed? (Y/N): Y
 
 
 
-### Step 3: Create new partition
+### Step 3: Create New Partition
 
 Now that you have removed any existing partitions, you will need to create a new one.
 

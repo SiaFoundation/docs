@@ -160,53 +160,9 @@ sudo mount -a
 
 ### Step 7: Configure Services
 
-To begin create a new bash script to mount the external drives that will be storing your renter data.
+In order for your host to automatically start up on reboot, you will need to create a new system service.
 
-```
-sudo nano /usr/local/bin/sia-auto-mount.sh
-```
-
-Once the text editor loads, copy and paste the following.
-
-```
-#!/bin/bash
-
-sudo mount /dev/sda1 /media/SiaStorage01
-```
-
-Save the file to disk using _**`ctrl+o`**_
-
-Exit the text editor using _**`ctrl+x`**_
-
-Next create a systemd script to mount your storage drives automatically on boot.
-
-```
-sudo nano /etc/systemd/system/sia-auto-mount.service
-```
-
-Once the text editor loads, copy and paste the following.
-
-```
-[Unit]
-Description=Mount Sia renter data storage drives
-After=systemd-user-sessions.service network-online.target
-
-[Service]
-User=root
-Type=forking
-ExecStart=/usr/local/bin/sia-auto-mount.sh
-Restart=always
-RestartSec=15
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Save the file to disk using _**`ctrl+o`**_
-
-Exit the text editor using _**`ctrl+x`**_
-
-Next create a systemd script to start up your sia host and login automatically.
+To begin, you will need to create a systemd script to run `siad` and login automatically at start up.
 
 ```
 sudo nano /etc/systemd/system/siad.service
@@ -216,7 +172,7 @@ Once the text editor loads, copy and paste the following.
 
 ```
 [Unit]
-Description=siad
+Description=Sia Daemon System Service
 After=network.target sia-storage-mount.service
 
 [Service]
@@ -240,19 +196,24 @@ Exit the text editor using _**`ctrl+x`**_
 
 
 
-### Step 8: Add your storage folder
+To finish, run your new services and enable them to run at start up.
 
 ```
-siac host folder add /media/SiaStorage01 1TB
+sudo systemctl start siad
+sudo systemctl enable siad
 ```
 
 
 
-### Step 9: Create a wallet
+### Step 8: Create a wallet
 
 ```
 siac wallet init -p 
 ```
+
+{% hint style="warning" %}
+Make sure to go back and replace the [Environment variable in the service script you created in Step 3](raspberry-pi.md#step-7-configure-services). You will need to replace `walletseedphrase` with your new seed.
+{% endhint %}
 
 {% hint style="danger" %}
 _Write down your recovery keys and keep them somewhere safe. If you loose these you will not be able to recover your Siacoin._
@@ -266,7 +227,7 @@ siac wallet unlock
 
 
 
-### Step 10: Fund your wallet
+### Step 9: Fund your wallet
 
 Generate a new wallet
 
@@ -286,7 +247,7 @@ _It is recommended to have about 1000 Siacoin per TB._
 
 
 
-### Step 11: Host Settings
+### Step 10: Host Settings
 
 Set your minimum storage price.
 
@@ -333,7 +294,7 @@ siac host config -h
 
 
 
-### Step 12: Bootstrapping
+### Step 11: Bootstrapping
 
 {% hint style="danger" %}
 _Before you can begin hosting, you will need to wait for your host to be fully synced with the blockchain._
@@ -347,7 +308,7 @@ siac consensus
 
 
 
-### Step 13: Announce your host!
+### Step 12: Announce your host!
 
 Once you have completed syncing to the blockchain The only thing left, is for you to announce your host to the network.
 
@@ -373,7 +334,7 @@ Announcing your host is a transaction that will appear in your Transaction list 
 
 
 
-### Step 14: Retire your host
+### Step 13: Retire your host
 
 {% hint style="danger" %}
 _Before retiring your host, you will first need to stop accepting contract and allow any current contracts to expire. Once all your remaining contracts have expired, you can then shut down your host without any loss of data or collateral._

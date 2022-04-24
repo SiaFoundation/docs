@@ -64,15 +64,17 @@ sudo mv -t /usr/local/bin Sia-v1.5.7-linux-arm64/siad Sia-v1.5.7-linux-arm64/sia
 
 
 
-### Step 6: Locate your storage drive
+### Step 6: Configure Storage
 
-To locate the storage drive you would like to use for your renters data.
+Since you are using external drives, you will need to configure them to be mounted at boot.
+
+To begin, locate the storage drive you would like to use for your renters data.
 
 ```
 sudo fdisk -l
 ```
 
-This will give you the following printout.
+This will give a printout that looks similar to the following
 
 ```
 Device         Boot  Start       End   Sectors   Size Id Type 
@@ -97,17 +99,66 @@ Device     Start         End     Sectors  Size Type
 _For this guide we will be using the 5.5TiB storage drive listed as_ `/dev/sda`
 {% endhint %}
 
+{% hint style="danger" %}
+_This guide has been written assuming you have already formatted your storage device with the correct file system. If you have not done this already,_ [_please do so now_](../host-setup/advanced/formatting-storage.md#linux-cli)_._
+{% endhint %}
 
-
-### Step 7: Create a mount point
+Now you will also need to get the unique `UUID` for the device you'd like to use. To do this run the following.
 
 ```
-sudo mkdir /media/SiaStorage01
+sudo blkid
+```
+
+This will give you a print out similar to the following.
+
+```
+sudo blkid
+[sudo] password for sia: 
+/dev/sdb1: UUID="4c95307e-ecdf-4376-bf6b-1ad006e6144b" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="Linux filesystem" PARTUUID="33f86d9c-8f52-4202-9bf9-4c83c76239e4"
+```
+
+Once you have your devices `UUID`, you'll then need to create a new mount point.
+
+```
+sudo mkdir -p /mnt/SiaStorage01
+```
+
+Now all that is left is to update the `/etc/fstab` with your new mount point so it can be mounted on boot.
+
+To do this first open up your `fstab` in a text editor.
+
+```
+sudo nano /etc/fstab
+```
+
+Once the editor loads you will need to add the following on a new line at the bottom of the file.
+
+* UUID: The device UUID of the drive which should be mounted
+* mount-point: The directory where the contents of the drive can be accessed from
+* fs-type: The type of the file system
+* options: Various mounting options, we use defaults which should be fine in most cases. Read more in what mount options can be used [here](https://en.wikipedia.org/wiki/Fstab).
+* dump: Number telling the system how often the drive should be backed up.
+* pass: Number indicated in which order (and if) fsck should check your device at boot 0 to avoid checking 1 if this is the root file system 2 if this is any other device.
+
+```
+UUID="4c95307e-ecdf-4376-bf6b-1ad006e6144b" /mnt/SiaStorage01 ext4 defaults 0 0
+```
+
+Save the file to disk using `ctrl+o`
+
+Exit the text editor using `ctrl+x`
+
+
+
+You can now verify it is working correctly by mounting the drive using the following.
+
+```
+sudo mount -a
 ```
 
 
 
-### Step 8: Configure Services
+### Step 7: Configure Services
 
 To begin create a new bash script to mount the external drives that will be storing your renter data.
 
@@ -189,7 +240,7 @@ Exit the text editor using _**`ctrl+x`**_
 
 
 
-### Step 9: Add your storage folder
+### Step 8: Add your storage folder
 
 ```
 siac host folder add /media/SiaStorage01 1TB
@@ -197,7 +248,7 @@ siac host folder add /media/SiaStorage01 1TB
 
 
 
-### Step 10: Create a wallet
+### Step 9: Create a wallet
 
 ```
 siac wallet init -p 
@@ -215,7 +266,7 @@ siac wallet unlock
 
 
 
-### Step 11: Fund your wallet
+### Step 10: Fund your wallet
 
 Generate a new wallet
 
@@ -235,7 +286,7 @@ _It is recommended to have about 1000 Siacoin per TB._
 
 
 
-### Step 12: Host Settings
+### Step 11: Host Settings
 
 Set your minimum storage price.
 
@@ -282,7 +333,7 @@ siac host config -h
 
 
 
-### Step 13: Bootstrapping
+### Step 12: Bootstrapping
 
 {% hint style="danger" %}
 _Before you can begin hosting, you will need to wait for your host to be fully synced with the blockchain._
@@ -296,7 +347,7 @@ siac consensus
 
 
 
-### Step 14: Announce your host!
+### Step 13: Announce your host!
 
 Once you have completed syncing to the blockchain The only thing left, is for you to announce your host to the network.
 
@@ -322,7 +373,7 @@ Announcing your host is a transaction that will appear in your Transaction list 
 
 
 
-### Step 15: Retire your host
+### Step 14: Retire your host
 
 {% hint style="danger" %}
 _Before retiring your host, you will first need to stop accepting contract and allow any current contracts to expire. Once all your remaining contracts have expired, you can then shut down your host without any loss of data or collateral._

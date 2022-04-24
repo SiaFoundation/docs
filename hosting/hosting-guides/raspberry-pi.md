@@ -16,7 +16,7 @@ Using the Raspberry PI Imager software download and install Ubuntu 20.04 LTS ont
 
 **Choose OS >> Other general purpose OS >> Ubuntu >> Ubuntu 20.04 LTS**
 
-
+![](../../.gitbook/assets/Rpi-Ubuntu-Install.png)
 
 ### Step 3: First boot
 

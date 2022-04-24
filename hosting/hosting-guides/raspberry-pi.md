@@ -120,7 +120,7 @@ sudo blkid
 Once you have your devices `UUID`, you'll then need to create a new mount point.
 
 ```
-sudo mkdir -p /mnt/SiaStorage01
+sudo mkdir /mnt/SiaStorage01
 ```
 
 Now all that is left is to update the `/etc/fstab` with your new mount point so it can be mounted on boot.

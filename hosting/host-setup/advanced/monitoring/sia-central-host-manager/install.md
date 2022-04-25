@@ -18,13 +18,13 @@ From the list download the version best suited for your operating system.
 
 ![](../../../../../.gitbook/assets/github-download.png)
 
-{% hint style="info" %}
-_Are you wanting to use the Host Manager from a remote device? Follow the_ [_Remote Management_](remote-management.md) _guide instead._
-{% endhint %}
-
 
 
 ## Step 2: Configure Host Manager
+
+{% hint style="info" %}
+_Are you wanting to use the Host Manager from a remote device? Follow the_ [_Remote Management_](remote-management.md) _guide instead._
+{% endhint %}
 
 Launch Host Manager. Once loaded click "Get Started".
 

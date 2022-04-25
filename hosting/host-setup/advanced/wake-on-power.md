@@ -18,4 +18,4 @@ Both Windows and Linux systems require you to enable AC Power Recovery through y
 
 ### macOS
 
-To set up your Mac to boot up when power is restored, [follow this guide](https://www.wikihow.com/Make-Your-Mac-Restart-Automatically-After-a-Power-Failure).
+To set up your Mac to boot when power is restored, [follow this guide](https://www.wikihow.com/Make-Your-Mac-Restart-Automatically-After-a-Power-Failure).

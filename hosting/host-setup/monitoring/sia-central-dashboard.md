@@ -2,13 +2,13 @@
 description: A web dashboard for monitoring your host via Sia Central's Dashboard.
 ---
 
-# Dashboard
+# Sia Central: Dashboard
 
 ## Download Dashboard
 
 Go to [https://github.com/siacentral/sia-host-dashboard/releases](https://github.com/siacentral/sia-host-dashboard/releases) and find the latest version of Dashboard for your system.
 
-![](../../../../.gitbook/assets/dashboard-download-latest.png)
+![](../../../.gitbook/assets/dashboard-download-latest.png)
 
 ## Install Dashboard
 

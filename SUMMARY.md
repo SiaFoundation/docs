@@ -119,10 +119,10 @@
       * [glances](hosting/host-setup/monitoring/cli/glances.md)
       * [nload](hosting/host-setup/monitoring/cli/nload.md)
       * [vnstat](hosting/host-setup/monitoring/cli/vnstat.md)
+    * [Sia Central: Dashboard](hosting/host-setup/monitoring/sia-central-dashboard.md)
     * [Sia Central: Host Manager](hosting/host-setup/monitoring/sia-central-host-manager/README.md)
       * [Install](hosting/host-setup/monitoring/sia-central-host-manager/install.md)
       * [Remote Management](hosting/host-setup/monitoring/sia-central-host-manager/remote-management.md)
-    * [Sia Central: Dashboard](hosting/host-setup/monitoring/sia-central-dashboard.md)
   * [Troubleshooting](hosting/host-setup/troubleshooting.md)
 
 ## Mining

@@ -33,20 +33,20 @@ $ ssh -f user@siahost -L 9980:localhost:9980 -N
 
 Launch Host Manager. Once loaded make sure "Show Advanced" has been selected and click "Get Started".
 
-![](../../../../../.gitbook/assets/host-manager-start.png)
+![](../../../../.gitbook/assets/host-manager-start.png)
 
 Next you will be asked if you would like to link Host Manager to a SiaUI. Select "No Thanks".
 
-![](../../../../../.gitbook/assets/host-manager-link-ui.png)
+![](../../../../.gitbook/assets/host-manager-link-ui.png)
 
 Next you will be asked to specify a path to your Sia data. Leave the input blank and click "Next".
 
-![](<../../../../../.gitbook/assets/host-manager-data-path (1).png>)
+![](<../../../../.gitbook/assets/host-manager-data-path (1).png>)
 
 Next you will be prompted to configure your Daemon settings. If your host was installed using the default ports you can leave everything blank and skip to your "API Password" at the bottom of the list. Enter the API password you retrieved during Step 2 and click "Next".
 
-![](../../../../../.gitbook/assets/host-manager-daemon-settings.png)
+![](../../../../.gitbook/assets/host-manager-daemon-settings.png)
 
 Congratulations, you have now successfully connected Host Manager to your host.
 
-![](../../../../../.gitbook/assets/host-manager-complete.png)
+![](../../../../.gitbook/assets/host-manager-complete.png)

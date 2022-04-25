@@ -2,6 +2,6 @@
 description: Manage your host using Sia Centrals Host Manager.
 ---
 
-# Host Manager
+# Sia Central: Host Manager
 
 ##

@@ -8,7 +8,7 @@ Choose your hosts operating system from below:
 
 * [Linux](formatting-storage.md#linux-cli)
 
-## Linux CLI
+## Linux Command Line
 
 ### Step 1: Locate Device
 

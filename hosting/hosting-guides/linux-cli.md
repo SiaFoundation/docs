@@ -2,7 +2,7 @@
 description: This section takes you through setting up a host using Linux CLI
 ---
 
-# Linux CLI
+# Linux Command Line
 
 ### Step 1: Install Sia binaries
 
@@ -118,6 +118,8 @@ You can now verify it is working correctly by mounting the drive using the follo
 sudo mount -a
 ```
 
+
+
 ### Step 3: Configure Services
 
 In order for your host to automatically start up on reboot, you will need to create a new system service.
@@ -133,7 +135,7 @@ Once the text editor loads, copy and paste the following.
 ```
 [Unit]
 Description=Sia Daemon System Service
-After=network.target sia-storage-mount.service
+After=network.target
 
 [Service]
 Type=simple

@@ -173,7 +173,7 @@ Once the text editor loads, copy and paste the following.
 ```
 [Unit]
 Description=Sia Daemon System Service
-After=network.target sia-storage-mount.service
+After=network.target
 
 [Service]
 Type=simple

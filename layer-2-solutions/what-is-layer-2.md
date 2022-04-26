@@ -20,7 +20,4 @@ Unrelenting in its commitment to decentralization, the Sia network offers a leve
 
 ## What kind of layer 2 can be developed?
 
-Anything! The Sia network does not discriminate in what it can be used for. From secure and private offsite data backups, to internet protocols which works to lay the foundation of web 3. If you are needing a storage solution that is secure, reliable and completely decentralized. The Sia network is the perfect solution.
-
-
-
+Anything! The Sia network does not discriminate in what it can be used for. From secure and private offsite data backups, to internet protocols which works to lay the foundation of Web 3. If you are needing a storage solution that is secure, reliable and completely decentralized. The Sia network is the perfect solution.

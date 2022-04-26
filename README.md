@@ -66,8 +66,8 @@ Sia has a few important terms that you'll want to get familiar with. These will 
 * **Renter:** Someone who uploads files to the network.
 * **Host:** Someone who lends their storage space so others can upload files to the network.
 * **Contracts:** Formed between renter and host, contracts determine how much data is being stored, for how long, and at what price. These are automatically tracked and completed by the software and blockchain.
-* **Siacoins:** The cryptocurrency that powers Sia.
-* **Siafunds:** A secondary, revenue-sharing token on the network that grants the holder Siacoins for every completed contract.
+* **Siacoin:** The cryptocurrency that powers Sia.
+* **Siafunds:** A secondary, revenue-sharing token on the network that grants the holder Siacoin for every completed contract.
 
 ## Community contribution
 

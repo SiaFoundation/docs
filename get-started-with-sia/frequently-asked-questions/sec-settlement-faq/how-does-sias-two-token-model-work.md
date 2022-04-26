@@ -1,8 +1,8 @@
 # How does Sia's two-token model work?
 
-Sia uses two tokens, **Siacoins** and **Siafunds**.
+Sia uses two tokens, **Siacoin** and **Siafunds**.
 
-Siacoins are used for utility; renters buy storage space on the Sia network with Siacoins and hosts are paid in Siacoins for selling their storage space. Hosts also post collateral in Siacoins, and miners mine Siacoins via Proof-of-Work.
+Siacoin is used for utility; renters buy storage space on the Sia network with Siacoin and hosts are paid in Siacoin for selling their storage space. Hosts also post collateral in Siacoin, and miners mine Siacoin via Proof-of-Work.
 
 Siafunds are used for **revenue sharing**; a 3.9% fee from every storage-related transaction on the Sia network is distributed to the holders of Siafunds tokens.
 

@@ -1,6 +1,6 @@
-# How to send Siacoins
+# How to send Siacoin
 
-Whether you're sending Siacoins to an exchange or a friend, it's easy and can be done right from the app.
+Whether you're sending Siacoin to an exchange or a friend, it's easy and can be done right from the app.
 
 Go to the Wallet in Sia-UI. If you're asked to unlock the wallet, use either your seed or a custom password if you've set one.
 
@@ -8,12 +8,12 @@ Go to the Wallet in Sia-UI. If you're asked to unlock the wallet, use either you
 
 ## Setup your transaction
 
-Click on the `Send` tab. Enter the recipient's wallet address and the amount of Siacoins you want to send. Make sure that you've entered a Siacoin wallet address, and that you've entered it correctly.
+Click on the `Send` tab. Enter the recipient's wallet address and the amount of Siacoin you want to send. Make sure that you've entered a Siacoin wallet address, and that you've entered it correctly.
 
 ![](../../../.gitbook/assets/send-2.png)
 
 {% hint style="warning" %}
-Siacoins sent to mistyped addresses, or addresses of other types of cryptocurrency can not be retrieved.
+Siacoin sent to mistyped addresses, or addresses of other types of cryptocurrency can not be retrieved.
 {% endhint %}
 
 Click **Generate Transaction.**

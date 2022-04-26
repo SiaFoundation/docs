@@ -14,7 +14,7 @@ At the end of a contract, the amount reserved is then dispersed to all Siafund h
 
 ## How to store Siafunds
 
-Siafunds are [stored in your wallet](../../../your-sia-wallet/wallet-overview.md), right next to your Siacoins.
+Siafunds are [stored in your wallet](../../../your-sia-wallet/wallet-overview.md), right next to your Siacoin.
 
 ![](../../../.gitbook/assets/siafunds-close.png)
 

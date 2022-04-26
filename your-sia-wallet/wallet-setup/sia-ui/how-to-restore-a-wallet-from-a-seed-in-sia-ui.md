@@ -1,6 +1,6 @@
 # How do I restore a wallet from a seed using the Sia-UI?
 
-If you already have a Sia seed with a balance of Siacoins, you can recover and use your Siacoins at any time by using Sia-UI on your computer.
+If you already have a Sia seed with a balance of Siacoin, you can recover and use your Siacoin at any time by using Sia-UI on your computer.
 
 ## Things You'll Need
 

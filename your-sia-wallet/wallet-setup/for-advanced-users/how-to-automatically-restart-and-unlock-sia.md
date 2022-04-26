@@ -10,7 +10,7 @@ An environment variable is just a piece of information that is specific to your 
 
 [How do I set an environment variable?](how-to-set-an-environment-variable.md)
 
-Environment variables are accessible by any program on your computer. If you still use your Sia seed to unlock your wallet instead of a custom password, you should change this before entering your Sia seed into the environment variable. Someone with access to your seed can easily steal your Siacoins and access your files. Learn how to set a custom password.
+Environment variables are accessible by any program on your computer. If you still use your Sia seed to unlock your wallet instead of a custom password, you should change this before entering your Sia seed into the environment variable. Someone with access to your seed can easily steal your Siacoin and access your files. Learn how to set a custom password.
 
 ## Set your user to automatically login on startup
 

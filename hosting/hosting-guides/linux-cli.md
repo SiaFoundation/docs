@@ -204,7 +204,7 @@ siac wallet address
 Now that you have an address, you can send Siacoin to fund your wallet.
 
 {% hint style="info" %}
-_You can fund your wallet before your host has finished syncing to the blockchain. But you will not be able to see your funds until you have fully synced._
+_You can fund your wallet before your host has finished syncing to the block chain. But you will not be able to see your funds until you have fully synced._
 {% endhint %}
 
 {% hint style="info" %}
@@ -263,7 +263,7 @@ siac host config -h
 ### Step 7: Bootstrapping
 
 {% hint style="danger" %}
-_Before you can begin hosting, you will need to wait for your host to be fully synced with the blockchain._
+_Before you can begin hosting, you will need to wait for your host to be fully synced with the block chain._
 {% endhint %}
 
 To monitor your bootstrap progress use the following.
@@ -276,7 +276,7 @@ siac consensus
 
 ### Step 8: Announce
 
-Once you have completed syncing to the blockchain The only thing left, is for you to announce your host to the network.
+Once you have completed syncing to the block chain The only thing left, is for you to announce your host to the network.
 
 ```
 siac host announce

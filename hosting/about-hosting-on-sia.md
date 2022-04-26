@@ -8,13 +8,13 @@ description: >-
 
 **Hosting** means you are contributing your excess storage space to the Sia network. You're helping to keep data where it belongs – safely in the hands of those who uploaded it, the **renters**.
 
-You also earn Siacoins, the cryptocurrency that powers the Sia network. Siacoins can be used to purchase your own storage space, or converted to other cryptocurrency or fiat on crypto exchanges.
+You also earn Siacoin, the cryptocurrency that powers the Sia network. Siacoin can be used to purchase your own storage space, or converted to other cryptocurrency or fiat on crypto exchanges.
 
 Hosts are a critical part of the ecosystem. You are contributing to the decentralized network that is the heart of Sia. Hosting is also more technical a process than renting, and while anyone can fairly easily set it up, there's a lot you'll want to know to maximize your setup.
 
 ## Things you'll need
 
-Not meeting these requirements can have a range of effects: you may be unable to host, you may not receive any storage contracts from renters, or you may even risk losing your own Siacoins as a penalty. Hosting is a serious commitment. If you're going to do it, do it right.
+Not meeting these requirements can have a range of effects: you may be unable to host, you may not receive any storage contracts from renters, or you may even risk losing your own Siacoin as a penalty. Hosting is a serious commitment. If you're going to do it, do it right.
 
 * **A reliable and stable setup:** You need a computer, internet connection, and electricity that you can trust. Hosts are required to be online nearly 100% of the time or face financial penalties.
 * **Sia Prerequisites:** Make sure your computer meets the Sia requirements
@@ -38,7 +38,7 @@ As a host, you set your own prices. There's a lot of specific price points you c
 
 Storage contracts are one of the most important features of the Sia network. They are what allow the entire Sia ecosystem to work in a trustless way – they form blockchain-enforced contracts between you and the people who rent your storage space that are automatically fulfilled.
 
-## Earn Siacoins
+## Earn Siacoin
 
 As a host, you're part of a marketplace where you compete with other hosts for renter contracts. Competition should drive prices down, and demand should drive prices up. The goal is a market where people can upload their data with maximum security, minimum cost, and at fair rates that provide revenue to the hosts.
 
@@ -166,7 +166,7 @@ Once you've started hosting, you'll probably want to keep an eye on your host sc
     * 1 nS = 0.000,000,001 SC
     * 1 H = 1e-24 SC _(The smallest currency unit of Siacoin)_
 
-    \_\_
+    __
 * **Duration Units:**
   * 1 block (b) = \~10 minutes
   * 1 hour (h) = \~6 blocks

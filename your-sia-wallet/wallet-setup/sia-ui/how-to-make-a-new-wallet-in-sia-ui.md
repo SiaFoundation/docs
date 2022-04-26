@@ -10,7 +10,7 @@ A secure physical and digital way to safely store a long string of words.
 
 ## Create a new wallet
 
-When you first boot up Sia-UI, you'll be prompted to create a Siacoin wallet. A wallet lets you store Siacoins and is required to be able to upload files to the decentralized network, or rent out your storage space and earn more Siacoins.
+When you first boot up Sia-UI, you'll be prompted to create a Siacoin wallet. A wallet lets you store Siacoin and is required to be able to upload files to the decentralized network, or rent out your storage space and earn more Siacoin.
 
 After starting Sia, you'll see this screen. Click **Create new wallet.**
 
@@ -57,6 +57,6 @@ Your wallet is ready! Go to the Wallet tab to check it out.
 
 ![](../../../.gitbook/assets/send-1.png)
 
-Your wallet shows you how many Siacoins you currently have, as well as three views: Transactions, Send, and Receive.
+Your wallet shows you how much Siacoin you currently have, as well as three views: Transactions, Send, and Receive.
 
 [Learn about your Siacoin wallet.](../../wallet-overview.md)

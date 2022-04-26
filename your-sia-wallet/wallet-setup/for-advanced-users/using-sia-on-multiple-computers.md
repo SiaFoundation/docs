@@ -1,6 +1,6 @@
 # Using Sia on multiple computers
 
-Using Sia on multiple computers can be an effective way to manage your Sia life. You can have one instance of Sia be your long-term Siacoin storage. While some users hold Siacoins, rent, and host under a single seed/single install, it's truly safest to have a separate seed and instance of Sia for each use case.
+Using Sia on multiple computers can be an effective way to manage your Sia life. You can have one instance of Sia be your long-term Siacoin storage. While some users hold Siacoin, rent, and host under a single seed/single install, it's truly safest to have a separate seed and instance of Sia for each use case.
 
 ## Using the same seed on multiple computers
 
@@ -11,4 +11,3 @@ In part, it comes down to address generation and syncing that data between the c
 Two wallets can become out of sync and show different balances, and new transactions could be denied by the blockchain.
 
 When using multiple computers with Sia, your best and safest bet is to have a different seed for each Sia.
-

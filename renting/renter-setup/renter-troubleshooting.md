@@ -1,4 +1,4 @@
-# Renter troubleshooting
+# Troubleshooting
 
 There are some common issues that you might encounter when uploading files to Sia, mostly related to stuck or stalling uploads. There are some easy solutions for these issues, as long as you have the right info. We’ll detail what to look for and possible solutions in this document.
 
@@ -24,9 +24,9 @@ Renter:
   Contracts:       52
 ```
 
-You can use this info to make sure that your wallet is unlocked, that you have enough Siacoins, and check important renter info like your number of files, amount of data stored, and minimum redundancy.
+You can use this info to make sure that your wallet is unlocked, that you have enough Siacoin, and check important renter info like your number of files, amount of data stored, and minimum redundancy.
 
-If your wallet is locked, you can’t spend Siacoins. This means you can’t form contracts or renew your allowance. This alone can grind your Sia renting to a standstill.
+If your wallet is locked, you can’t spend Siacoin. This means you can’t form contracts or renew your allowance. This alone can grind your Sia renting to a standstill.
 
 If you don’t have enough contracts, Sia won’t be able to maintain your data on the network. Contracts should usually be right around 50. If you have too few, your allowance settings might be too strict. Try raising the amount you’re willing to spend on storage and confirm the number of hosts in your allowance settings as this controls the number of contracts.
 
@@ -80,9 +80,9 @@ Spending:
     Release Block:    0
 ```
 
-You can use this to see if your allowance is large enough to accommodate the amount of storage you’re trying to rent. This might clue you in that you need to raise your allowance or add more Siacoins to your wallet if you don’t have enough to set a proper allowance.
+You can use this to see if your allowance is large enough to accommodate the amount of storage you’re trying to rent. This might clue you in that you need to raise your allowance or add more Siacoin to your wallet if you don’t have enough to set a proper allowance.
 
-Specifically, look at your Unspent Unallocated amount. If this is reporting very low amounts of Siacoins then the allowance needs to be increased because all the other funds have been locked up.
+Specifically, look at your Unspent Unallocated amount. If this is reporting very low amounts of Siacoin then the allowance needs to be increased because all the other funds have been locked up.
 
 Use the command `siac renter contracts`. This will print a long list of your contracts, but importantly will allow you to see your number of active contracts and the total amount of data stored.
 
@@ -152,17 +152,16 @@ cat siad/renter/siafiles/.siadir | python -m json.tool
 }
 ```
 
-Here is the aggregate metadata of your filesystem that the repair loop is going to use. If `aggregatehealth` is &lt;= 0.25 then your system is healthy, if it is &gt; 0.25 then it should be repairing.
+Here is the aggregate metadata of your filesystem that the repair loop is going to use. If `aggregatehealth` is <= 0.25 then your system is healthy, if it is > 0.25 then it should be repairing.
 
 If there is a large number of `aggregatenumstuckchunks` then slow uploads could be because all the work is relying on the stuck loop. In this case, you can try `siac renter unstuckall` to try and unmark those stuck chunks and allow for the repair loop to pick them up again.
 
 Big things that you want to check for:
 
 * Is your wallet unlocked?
-* Does your allowance have Siacoins in it?
+* Does your allowance have Siacoin in it?
 * Is your allowance large enough?
 * Do you have enough active contracts?
 * Do you have enough total contracts?
 
 Reference the [renter README](https://gitlab.com/NebulousLabs/Sia/blob/master/modules/renter/README.md) to get an understanding of how the upload should be happening to then understand if the logs in renter.log make sense or indicate an error.
-

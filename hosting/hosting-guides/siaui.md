@@ -52,13 +52,13 @@ Measured in weeks, Max Duration determines the longest contract you'll accept. T
 {% endtab %}
 
 {% tab title="Collateral Per TB/Month" %}
-Collateral is the amount of Siacoins you're willing to lose if you end up not fulfilling your end of the contract, which is to store the renter's data for the contract length while being online.
+Collateral is the amount of Siacoin you're willing to lose if you end up not fulfilling your end of the contract, which is to store the renter's data for the contract length while being online.
 
 Putting up more collateral improves trust by showing you're willing to lose more money than another host. Setting this amount at 2-3 times your storage price is a good idea to maximize your host score while not losing too much money if your host does indeed go down.
 {% endtab %}
 
 {% tab title="Storage Per TB/Month" %}
-The biggest factor in your host score, this number is how many Siacoins you are charging for 1 TB each month. The less you charge, the more positively it affects your host score. The more you charge, the more money you make. Find your balance between profitability and competitive pricing.
+The biggest factor in your host score, this number is how much Siacoin you are charging for 1 TB each month. The less you charge, the more positively it affects your host score. The more you charge, the more money you make. Find your balance between profitability and competitive pricing.
 {% endtab %}
 
 {% tab title="Download Per TB" %}

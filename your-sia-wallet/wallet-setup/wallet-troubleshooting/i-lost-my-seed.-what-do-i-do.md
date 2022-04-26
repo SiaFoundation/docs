@@ -1,6 +1,6 @@
 # I lost my seed. What do I do?
 
-Your Sia seed grants full access to your wallet and balance of Siacoins. For various security reasons, the Sia team does not and is not able to have access to any user's seeds. We cannot recover your seed for you.
+Your Sia seed grants full access to your wallet and balance of Siacoin. For various security reasons, the Sia team does not and is not able to have access to any user's seeds. We cannot recover your seed for you.
 
 {% hint style="danger" %}
 **Losing your seed means permanently losing access to your coins.**

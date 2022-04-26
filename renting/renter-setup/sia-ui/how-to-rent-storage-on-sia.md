@@ -8,7 +8,7 @@ But the only thing that you need to set when you start uploading is your **Allow
 
 * Sia installed on your computer
 * A Sia wallet set up
-* Siacoins, the cryptocurrency used to buy and sell storage
+* Siacoin, the cryptocurrency used to buy and sell storage
 
 ## The process
 

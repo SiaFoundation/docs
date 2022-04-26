@@ -83,7 +83,7 @@ Create a new wallet
 
 Click **Ledger Wallet** to add a new Ledger wallet.
 
-You will now need to connect your device and import an address to send Siacoins to. When connecting you can choose either USB or Bluetooth depending on your browser's support.&#x20;
+You will now need to connect your device and import an address to send Siacoin to. When connecting you can choose either USB or Bluetooth depending on your browser's support.&#x20;
 
 ![](../../../.gitbook/assets/lite-wallet-import-connect.png)
 

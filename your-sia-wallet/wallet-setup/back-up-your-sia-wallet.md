@@ -12,7 +12,7 @@ When you first create your wallet in Sia, you are presented with your Sia seed â
 
 * Itâ€™s 29 words... most of the time. There's a small chance you'll get a 28-word seed.
 * It's generated when you first make your Siacoin wallet.
-* As long as you have a copy of your 29-word seed, you can recover your Siacoins and your uploaded files, as long as you've backed up your metadata. Learn how to load a wallet from a seed (WIP).
+* As long as you have a copy of your 29-word seed, you can recover your Siacoin and your uploaded files, as long as you've backed up your metadata. Learn how to load a wallet from a seed (WIP).
 
 ## Backing up your Sia wallet
 

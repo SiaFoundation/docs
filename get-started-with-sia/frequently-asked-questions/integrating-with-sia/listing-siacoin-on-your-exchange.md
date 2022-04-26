@@ -20,7 +20,7 @@ _If you would like to download and install the latest Sia wallet,_ [_you can do 
 * **RAM:** +8 GB recommended
 * **SSD:** +40 GB recommended (keep an eye on your consensus size!)
 
-As of April 21, 2022, the blockchain was \~34 GB, and you’ll need to download an entire copy to properly run your wallet. The blockchain grows by about 1 GB every two months.
+As of April 21, 2022, the block chain was \~34 GB, and you’ll need to download an entire copy to properly run your wallet. The blockchain grows by about 1 GB every two months.
 
 No special libraries are required for installation.
 
@@ -80,7 +80,7 @@ If your exchange requires any fee to list a coin, you can go ahead and skip us. 
 
 ## Community Votes
 
-We don't participate in any type of community voting. Community votes typically come in two forms – those that are free and easy to manipulate or those that require paid votes and are still possible to manipulate. We'll never ask our community to participate in either in the future and urge all exchanges to add projects and tokens that they feel will benefit their users and the blockchain space.
+We don't participate in any type of community voting. Community votes typically come in two forms – those that are free and easy to manipulate or those that require paid votes and are still possible to manipulate. We'll never ask our community to participate in either in the future and urge all exchanges to add projects and tokens that they feel will benefit their users and the block chain space.
 
 ## A legal opinion
 

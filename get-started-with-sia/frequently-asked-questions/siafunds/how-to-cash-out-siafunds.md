@@ -1,16 +1,16 @@
 # How to cash out Siafunds
 
-As Sia network usage increases, Siafunds will accrue Siacoins over time. [Learn more about Siafunds.](what-are-siafunds.md)
+As Sia network usage increases, Siafunds will accrue Siacoin over time. [Learn more about Siafunds.](what-are-siafunds.md)
 
-If you're a Siafund owner, you have the option of cashing out these accrued Siacoins at any point by sending your Siafunds to a Sia address you own. This can be the same wallet the Siafunds are currently in, or a different wallet you control.
+If you're a Siafund owner, you have the option of cashing out this accrued Siacoin at any point by sending your Siafunds to a Sia address you own. This can be the same wallet the Siafunds are currently in, or a different wallet you control.
 
 {% hint style="info" %}
 You **do not** lose the Siafunds in this process. You'll always retain control over them unless you send them to someone else or a bad address.
 {% endhint %}
 
-## How many Siacoins has my Siafund earned?
+## How much Siacoin has my Siafund earned?
 
-Sia automatically keeps track of how many Siacoins your Siafunds have accrued, and we have an easy way to check that balance.
+Sia automatically keeps track of how much Siacoin your Siafunds have accrued, and we have an easy way to check that balance.
 
 In any tab of Sia-UI, click on the Terminal button at the top. It's the third button, and looks like a right-facing arrow in a box: `>`
 
@@ -20,7 +20,7 @@ Type a single word command into the interface that pops up: `wallet`
 
 ![](../../../.gitbook/assets/siafunds-cashout-2.png)
 
-You'll be presented with a recap of your wallet: how many Siacoins you have, how many Siafunds you have, and how many Siacoins your Siafunds have earned, listed as `Siafund Claims`.
+You'll be presented with a recap of your wallet: how much Siacoin you have, how many Siafunds you have, and how much Siacoin your Siafunds have earned, listed as `Siafund Claims`.
 
 ## Generate a Sia address
 
@@ -28,7 +28,7 @@ Go to the Wallet tab of Sia, and click **Receive.**
 
 Click **Generate New Address** to create a new Sia address.
 
-![](<../../../.gitbook/assets/address-2 (2) (2) (1).png>)
+![](../../../.gitbook/assets/address-2%20\(2\)%20\(2\)%20\(1\).png)
 
 Copy and paste this manually, or use the `Copy` button to the right to make sure you get the full address without any extra spaces.
 
@@ -66,6 +66,10 @@ And you'll see a small tag appear under your balance to let you know the transac
 
 If you're using siac, the process is the same. Just initiate a transaction and send your Siafunds to a wallet address you control. You can use this command:
 
-`siac wallet send siafunds <amount> <destination address (must be your own)>`
+`siac wallet send siafunds <amount> <destination address>`
 
-to take the accrued Siacoins and put them in your wallet. The Siafunds will still be on your wallet because you sent them to your own address.
+{% hint style="danger" %}
+_The destination address must be your own!_
+{% endhint %}
+
+to take the accrued Siacoin and put it in your wallet. The Siafunds will still be on your wallet because you sent them to your own address.

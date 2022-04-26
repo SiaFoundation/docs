@@ -2,7 +2,7 @@
 
 ## How to perform a clean install in Sia-UI
 
-Sia-UI is great for storing Siacoins, uploading data to the Sia network, or lending hard drive space for others to use.
+Sia-UI is great for storing Siacoin, uploading data to the Sia network, or lending hard drive space for others to use.
 
 It’s possible that you might have to perform a **clean install** of Sia-UI if you run into a problem that can’t be solved by other means.
 
@@ -11,7 +11,7 @@ During a clean install, two primary things are deleted:
 * The Sia data folders
 * The Sia-UI application, in certain circumstances
 
-But don’t worry, restoring your balance of Siacoins is easy as long as you have your original wallet seed.
+But don’t worry, restoring your balance of Siacoin is easy as long as you have your original wallet seed.
 
 {% hint style="warning" %}
 Performing a clean install will remove all your renting and hosting info as well. So if you've uploaded data to Sia or are hosting other's files, this will eliminate those contracts and should be used as a last resort. If you're not comfortable doing this, [contact support](mailto:hello@sia.tech) or [visit our Discord](https://discord.gg/sia) and we might be able to guide you through a specific fix.
@@ -19,7 +19,7 @@ Performing a clean install will remove all your renting and hosting info as well
 
 ### Your Sia wallet seed
 
-When you first generated your wallet, you were given [a 29-word seed](../../the-importance-of-your-seed.md). This seed is the master key for your Sia wallet and your Siacoin balance. Your Siacoins are always safe as long as you, and only you, have your seed.
+When you first generated your wallet, you were given [a 29-word seed](../../the-importance-of-your-seed.md). This seed is the master key for your Sia wallet and your Siacoin balance. Your Siacoin is always safe as long as you, and only you, have your seed.
 
 The seed is required for this process, so make sure you have it handy. We’ll use it towards the end of the document.
 

@@ -1,6 +1,6 @@
 # What is Siacoin?
 
-Siacoin is the utility tokens that powers the Sia network. Everything you do on the network requires Siacoins, whether you want to rent, host, hold, or trade.
+Siacoin is the utility tokens that powers the Sia network. Everything you do on the network requires Siacoin, whether you want to rent, host, hold, or trade.
 
 Although Siacoin can be used in lots of ways, it serves a single purpose – to facilitate network operations. When you upload a file to Sia, you are paying for that storage in Siacoin. If you're a host and you're storing other people's data, you get paid in Siacoin. If you own Siafunds, your share of Sia network growth is paid out in, you guessed it, Siacoin.
 

@@ -44,7 +44,7 @@ This means you set your wallet password to a totally custom phrase of any length
 {% hint style="danger" %}
 Disadvantages
 
-* Typing your seed in repeatedly makes you vulnerable to keylogging. Keylogging is when your keyboard input is recorded using malware or a physical device and then sent to a malicious party. If someone gets your seed, they can easily steal your Siacoins.
+* Typing your seed in repeatedly makes you vulnerable to keylogging. Keylogging is when your keyboard input is recorded using malware or a physical device and then sent to a malicious party. If someone gets your seed, they can easily steal your Siacoin.
 * Typing in 29 words every time you want to access your wallet might not be tolerable for you.
 {% endhint %}
 

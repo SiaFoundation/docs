@@ -1,10 +1,10 @@
 # Wallet overview
 
-Sia-UI and `siac` are the best places to store your Siacoins. They're also the only official apps made by the developers of the Sia network.
+Sia-UI and `siac` are the best places to store your Siacoin. They're also the only official apps made by the developers of the Sia network.
 
 [Download Sia.](http://sia.tech/get-started)
 
-Sia-UI allows you to store Siacoins in a secure wallet, or rent or sell storage space on the Sia network. `siac` is a command-line client for Sia, and is only recommended for advanced users.
+Sia-UI allows you to store Siacoin in a secure wallet, or rent or sell storage space on the Sia network. `siac` is a command-line client for Sia, and is only recommended for advanced users.
 
 Your wallet gives you access to see your balance and transaction history, and the ability to send or receive Siacoin to any other Sia user.
 
@@ -12,7 +12,7 @@ Here's what a typical Sia-UI wallet looks like.
 
 ![](../.gitbook/assets/send-1.png)
 
-Your **balance** is at the top. This is the current amount of Siacoins in your wallet, and can fluctuate quite a bit depending on how you use Sia. If you own any Siafunds, they show up next to this.
+Your **balance** is at the top. This is the current amount of Siacoin in your wallet, and can fluctuate quite a bit depending on how you use Sia. If you own any Siafunds, they show up next to this.
 
 ## The Transactions tab
 
@@ -22,7 +22,7 @@ Every transaction is broken into a few categories - the Amount, Transaction ID, 
 
 {% tabs %}
 {% tab title="Amount" %}
-The amount of Siacoins entering or leaving your wallet.
+The amount of Siacoin entering or leaving your wallet.
 {% endtab %}
 
 {% tab title="Transaction ID" %}
@@ -52,4 +52,4 @@ Near the upper right corner, you'll see a button that says `More`. Click on this
 
 ## Be careful
 
-There are plenty of scams in the cryptocurrency space. Make sure the only software wallet you use to store your Siacoin is the official app downloaded from that link above or [our GitLab page.](https://gitlab.com/NebulousLabs/Sia-UI/tags) There are some other great recommendations you can get from [our community](https://discord.gg/sia), but we can't guarantee that any other software wallet will safely store your Siacoins.
+There are plenty of scams in the cryptocurrency space. Make sure the only software wallet you use to store your Siacoin is the official app downloaded from that link above or [our GitLab page.](https://gitlab.com/NebulousLabs/Sia-UI/tags) There are some other great recommendations you can get from [our community](https://discord.gg/sia), but we can't guarantee that any other software wallet will safely store your Siacoin.

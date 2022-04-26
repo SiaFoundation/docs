@@ -67,9 +67,9 @@ logout
 
 Make sure to write down this password, you will need it later on.
 
-### Step 3: Create `ssh` tunnel to host API port
+### Step 3: Create a SSH tunnel to host API port
 
-Next you will need to establish a `ssh` tunnel to the API Port of your Sia Host machine.
+Next you will need to establish a SSH tunnel to the API Port of your Sia Host machine.
 
 ```
 $ ssh -f user@siahost -L 9980:localhost:9980 -N

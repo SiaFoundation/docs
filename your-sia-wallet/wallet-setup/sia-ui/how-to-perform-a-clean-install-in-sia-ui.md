@@ -93,7 +93,7 @@ When you open Sia-UI, choose **Restore from seed**. [Learn how to do that here](
 After restoring Sia from your seed and resyncing, it might take your balance up to an hour to re-appear in the wallet as Sia performs more actions in the background.
 {% endhint %}
 
-Sia-UI will then scan the block chain for any Siacoin associated with your seed. This may take a while, but once it’s done your Wallet will show your previous Siacoin balance.
+Sia-UI will then scan the blockchain for any Siacoin associated with your seed. This may take a while, but once it’s done your Wallet will show your previous Siacoin balance.
 
 ### Questions?
 

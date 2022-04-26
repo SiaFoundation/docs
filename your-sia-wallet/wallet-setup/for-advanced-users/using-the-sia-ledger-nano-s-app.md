@@ -107,10 +107,10 @@ Windows, macOS, and Linux are all supported.
 _There's a handful of commands you can use to interact with your siac wallet, but first, you'll need to create and unlock your wallet._
 
 {% hint style="info" %}
-The block chain should be synced, or these commands will return errors.
+The blockchain should be synced, or these commands will return errors.
 {% endhint %}
 
-`siac` Check the sync status of the Sia block chain
+`siac` Check the sync status of the Sia blockchain
 
 `siac wallet init` Create a new wallet. This will immediately provide you with your seed. Your seed is very important. Normally, you would use this seed to generate your Sia addresses, but in this case you'll be using the seed on the Ledger hardware wallet instead. Still, you will need this seed to unlock your wallet in the future, so make sure to write it down somewhere safe.
 

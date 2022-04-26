@@ -11,7 +11,7 @@ Siacoin is used for buying and selling storage space on the Sia network. We beli
 Siacoin is stored in a Sia wallet. Our two official apps are Sia-UI or siac (for command-line interfaces). Only one instance of Sia can run at a time, so you’ll need to install it on multiple machines or virtual environments if you’d like to run more than a single wallet.
 
 {% hint style="info" %}
-_If you would like to download and install the latest Sia wallet,_ [_you can do so here_](../../../your-sia-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md#find\_the\_right\_download\_for\_you)_._
+_If you would like to download and install the latest Sia wallet,_ [_you can do so here_](../../../your-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md#find\_the\_right\_download\_for\_you)_._
 {% endhint %}
 
 ## Technical Specifications for Sia

@@ -21,7 +21,7 @@ Not meeting these requirements can have a range of effects: you may be unable to
   * CPU: Sia does not require special CPU considerations
   * RAM: 8 GB recommended
   * SSD: 40 GB recommended (keep an eye on your consensus size!)
-  * [Create a Sia wallet](../your-sia-wallet/wallet-setup/sia-ui/how-to-make-a-new-wallet-in-sia-ui.md#create-a-new-wallet)
+  * [Create a Sia wallet](../your-wallet/wallet-setup/sia-ui/how-to-make-a-new-wallet-in-sia-ui.md#create-a-new-wallet)
   * [Get Siacoin](../get-started-with-sia/frequently-asked-questions/siacoin/how-to-buy-siacoins.md)
 * **Storage space:** Spare hard drive space to rent out, ideally greater than 4 TB.
 

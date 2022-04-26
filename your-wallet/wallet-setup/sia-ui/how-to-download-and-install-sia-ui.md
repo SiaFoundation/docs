@@ -1,6 +1,8 @@
-# How do I install the Sia-UI?
+---
+description: Learn how to install Sia-UI on Windows, Linux, or MacOS.
+---
 
-Learn how to install Sia-UI on Windows, Linux, or MacOS.
+# Installing the Sia-UI
 
 ## Things You'll Need
 

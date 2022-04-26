@@ -14,11 +14,11 @@ At the end of a contract, the amount reserved is then dispersed to all Siafund h
 
 ## How to store Siafunds
 
-Siafunds are [stored in your wallet](../../../your-sia-wallet/wallet-overview.md), right next to your Siacoin.
+Siafunds are [stored in your wallet](../../../your-wallet/wallet-overview.md), right next to your Siacoin.
 
 ![](../../../.gitbook/assets/siafunds-close.png)
 
-They are also sent to and received at normal Siacoin addresses, and can be restored with your Siacoin balance as long as you have your [Sia seed](../../../your-sia-wallet/the-importance-of-your-seed.md).
+They are also sent to and received at normal Siacoin addresses, and can be restored with your Siacoin balance as long as you have your [Sia seed](../../../your-wallet/the-importance-of-your-seed.md).
 
 ## Why Siafunds?
 

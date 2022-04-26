@@ -1,6 +1,8 @@
-# How do I make a wallet using the Sia-UI?
+# Creating a new wallet
 
-Learn how to make a new wallet in Sia-UI. This set of instructions assumes that you are setting up a new wallet in Sia-UI for the first time. If you need to restore an existing wallet, [learn how here.](how-to-restore-a-wallet-from-a-seed-in-sia-ui.md)
+{% hint style="info" %}
+_This guide assumes that you are setting up a new wallet in Sia-UI for the first time. If you need to restore an existing wallet,_ [_learn how here._](how-to-restore-a-wallet-from-a-seed-in-sia-ui.md)__
+{% endhint %}
 
 ## Things You'll Need
 
@@ -20,9 +22,9 @@ Next, you'll see your seed. Your seed is a string of (usually 29) words and is y
 
 ![](../../../.gitbook/assets/new-2.png)
 
-You need to keep your seed safe. Safe means a lot of things to different people – but because your entire Siacoin balance is controlled by your seed, keep both digital and physical copies. Everyone does different things, and everyone has a different risk tolerance. Knowing this, our recommendations are as follows.
+**You need to keep your seed safe!** Safe means a lot of things to different people – but because your entire Siacoin balance is controlled by your seed, keep both digital and physical copies. Everyone does different things, and everyone has a different risk tolerance. Knowing this, our recommendations are as follows.
 
-**Digitally:** Use a password or biometric (e.g. fingerprint) secured app like 1Password or LastPass.
+**Digitally:** Use a password or biometric (e.g. fingerprint) secured app like [1Password](https://1password.com) or [LastPass](https://www.lastpass.com).
 
 **Physically:** Keep a laminated paper copy stored in a locked safe.
 
@@ -31,7 +33,11 @@ _**Loss:** If you lose your seed, your Siacoin balance will be unrecoverable._\
 _**Theft:** If someone steals your seed, they can easily steal your Siacoin balance._
 {% endhint %}
 
-Ready for a deep dive? [Learn more about the importance of your seed.](../../the-importance-of-your-seed.md)
+{% hint style="info" %}
+_Ready for a deep dive?_ [_Learn more about the importance of your seed._](../../the-importance-of-your-seed.md)__
+{% endhint %}
+
+
 
 Once you've stored your seed, click **Next.**
 

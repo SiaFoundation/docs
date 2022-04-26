@@ -23,7 +23,7 @@ Since all exchanges that trade Siacoin have updated to 1.5.4 or later, sending c
 **Once you update to 1.5.4 or later, your coins will reappear.** Any coins held in your official Sia wallet as of block 297,999, just before the hard fork, will be accessible in your wallet once you update Sia and sync the new version of the blockchain.
 
 {% hint style="info" %}
-_The latest release of Sia is 1.5.7. If you have not already upgraded,_ [_you can do so here_](../../../your-sia-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md#find\_the\_right\_download\_for\_you)_._
+_The latest release of Sia is 1.5.7. If you have not already upgraded,_ [_you can do so here_](../../../your-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md#find\_the\_right\_download\_for\_you)_._
 {% endhint %}
 
 Now that you're updated, to sync the new version of the Sia blockchain you first need to delete the old one. Quit Sia.

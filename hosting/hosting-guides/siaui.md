@@ -6,7 +6,7 @@ description: This section takes you through setting up a host using the SiaUI.
 
 ### Step 1: Download and Install the SiaUI
 
-Download and install the [**SiaUI**](../../your-sia-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md#find\_the\_right\_download\_for\_you) for your system.
+Download and install the [**SiaUI**](../../your-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md#find\_the\_right\_download\_for\_you) for your system.
 
 
 

@@ -1,4 +1,4 @@
-# How to perform a clean install in Sia-UI
+# Clean install Sia-UI
 
 ## How to perform a clean install in Sia-UI
 
@@ -13,7 +13,7 @@ During a clean install, two primary things are deleted:
 
 But don’t worry, restoring your balance of Siacoin is easy as long as you have your original wallet seed.
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 _Performing a clean install will remove all your renting and hosting info as well. So if you've uploaded data to Sia or are hosting other's files, this will eliminate those contracts and should be used as a last resort. If you're not comfortable doing this,_ [_contact support_](mailto:hello@sia.tech) _or_ [_visit our Discord_](https://discord.gg/sia) _and we might be able to guide you through a specific fix._
 {% endhint %}
 

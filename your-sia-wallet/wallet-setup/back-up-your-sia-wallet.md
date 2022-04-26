@@ -17,7 +17,7 @@ When you first create your wallet in Sia, you are presented with your Sia seed â
 ## Backing up your Sia wallet
 
 {% hint style="info" %}
-Because your seed is so important, you should have physical and digital methods of storing it safely.
+_Because your seed is so important, you should have physical and digital methods of storing it safely._
 {% endhint %}
 
 * Store it the same way it's given to you: all lower-case letters, with a space between each word.

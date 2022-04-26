@@ -24,7 +24,7 @@ Using Sia with a Ledger hardware wallet requires a few things. You will need:
 * Familiarity with your computer's command-line interface (CLI).
 
 {% hint style="warning" %}
-The current process for using the Sia app is more easily followed by advanced users. If you're not comfortable using the command-line, you can use Sia Central's web wallet. We're working on integrating the Sia Ledger app with Sia-UI, our official GUI app, to make the process much simpler.
+_The current process for using the Sia app is more easily followed by advanced users. If you're not comfortable using the command-line, you can use Sia Central's web wallet. We're working on integrating the Sia Ledger app with Sia-UI, our official GUI app, to make the process much simpler._
 {% endhint %}
 
 ## Set up your device
@@ -93,7 +93,7 @@ _sialedger is the command-line program you'll use on your computer to talk to th
 * Download `sialedger` [here](https://gitlab.com/NebulousLabs/nanos-app-sia/-/releases/v0.4.3).
 
 {% hint style="info" %}
-Windows, macOS, and Linux are all supported.
+_Windows, macOS, and Linux are all supported._
 {% endhint %}
 
 * If you are on macOS, you may have to move sialedger to another folder (such as Applications) in order to run it.
@@ -107,7 +107,7 @@ Windows, macOS, and Linux are all supported.
 _There's a handful of commands you can use to interact with your siac wallet, but first, you'll need to create and unlock your wallet._
 
 {% hint style="info" %}
-The blockchain should be synced, or these commands will return errors.
+_The blockchain should be synced, or these commands will return errors._
 {% endhint %}
 
 `siac` Check the sync status of the Sia blockchain
@@ -127,7 +127,7 @@ _Now that your CLI and device are ready to go, let's generate an address._
 ![](../../../.gitbook/assets/ledger-8.jpg)
 
 {% hint style="danger" %}
-Make sure the key index on the device matches the key index you requested. A compromised computer could trick you by sending a different key index to the device.
+_Make sure the key index on the device matches the key index you requested. A compromised computer could trick you by sending a different key index to the device._
 {% endhint %}
 
 * The address will appear in the CLI and on the device screen. Compare these addresses to ensure that they match. You can use the left and right buttons on the device to scroll through the address.
@@ -137,7 +137,7 @@ Make sure the key index on the device matches the key index you requested. A com
 ![](../../../.gitbook/assets/ledger-10.png)
 
 {% hint style="danger" %}
-It is crucial that you verify every character in the address. A compromised computer could trick you by displaying a different address.
+_It is crucial that you verify every character in the address. A compromised computer could trick you by displaying a different address._
 {% endhint %}
 
 * Once you've verified the address, press both buttons to return to the main Sia app screen.

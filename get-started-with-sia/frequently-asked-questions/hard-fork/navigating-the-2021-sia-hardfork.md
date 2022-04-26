@@ -5,7 +5,7 @@ The Sia network has implemented a hardfork to implement the Sia Foundation: a ne
 The hardfork occured around 4 pm ET on February 3rd. Track the fork with this [great tool](https://siastats.info/fork) from SiaStats!
 
 {% hint style="warning" %}
-The hardfork requires v1.5.4 of Sia. It is necessary to spend coins, receive coins, rent, or host after the fork. Every user, exchange, mining pool, wallet, and integration should upgrade as soon as possible.
+_The hardfork requires v1.5.4 of Sia. It is necessary to spend coins, receive coins, rent, or host after the fork. Every user, exchange, mining pool, wallet, and integration should upgrade as soon as possible._
 {% endhint %}
 
 This guide is strictly practical. If you'd like to learn more about the Foundation's proposal and the discussion that led to its acceptance, check these links.
@@ -41,7 +41,7 @@ Nothing will change. You can check in with your mining pool to make sure they've
 Exchanges should [upgrade to v1.5.4](https://sia.tech/get-started) by February 1st at the latest. Due to the volume of users you serve, you should leave time for a proper upgrade. Once you do, your exchange will be able to support the fork once it takes effect.
 
 {% hint style="warning" %}
-Transactions created before the fork block but not confirmed yet will not be valid anymore after the fork block. We recommend that you pause withdrawals and don't send any transactions for the 6 hours leading up to the fork, and the 2 hours following the fork. This will prevent you from having your transactions become invalid.
+_Transactions created before the fork block but not confirmed yet will not be valid anymore after the fork block. We recommend that you pause withdrawals and don't send any transactions for the 6 hours leading up to the fork, and the 2 hours following the fork. This will prevent you from having your transactions become invalid._
 {% endhint %}
 
 Reference our [Sia API docs](https://sia.tech/docs/) if necessary. Updating your Sia wallet can be as simple as running `siac update`, or using the following API command, but only you know your Sia wallet setup.
@@ -59,7 +59,7 @@ First, one important thing. You'll have the exact same amount of Siacoin after t
 Siacoin holders should [upgrade to v1.5.4](https://sia.tech/get-started) by February 3rd. There are two versions of Sia: Sia-UI for most users, and siac for advanced users. When the hardfork hits at block 298,000, your updated 1.5.4 version of Sia will instantly give you access to the new chain, and all of your Siacoin will be available to you.
 
 {% hint style="warning" %}
-If you don't upgrade in time, you will brick your `consensus.db` file. This is the file that syncs the blockchain to your computer, and you will have to completely re-sync it. **You never lose your coins. Once you update to the new chain, your coins will be available to you again.**
+_If you don't upgrade in time, you will brick your `consensus.db` file. This is the file that syncs the blockchain to your computer, and you will have to completely re-sync it. **You never lose your coins. Once you update to the new chain, your coins will be available to you again.**_
 {% endhint %}
 
 [Learn how to download and install Sia-UI](../../../your-sia-wallet/wallet-setup/sia-ui/how-to-download-and-install-sia-ui.md)

@@ -91,7 +91,7 @@ You will now need to connect your device and import an address to send Siacoin t
 2. Click the green **Connect** button in the wallet. The status should change to "Connected".
 
 {% hint style="info" %}
-If you have never connected your device to this computer before, you may need to confirm the pairing on the device.
+_If you have never connected your device to this computer before, you may need to confirm the pairing on the device._
 {% endhint %}
 
 1. Click the **Add Address** button. Confirm that you want to generate the address on your device by pressing the right button once, the screen should now read "Approve"; then press both buttons together to confirm.
@@ -137,4 +137,4 @@ If the transaction broadcast successfully, you should now have a new unconfirmed
 
 ## Additional help
 
-If you're having trouble, we're here to help. [Email our official support](mailto:hello@sia.tech), or [join our Discord server](https://discord.gg/sia) and post in the #core-dev or #app-dev channels.
+If you're having trouble, we're here to help. [Email our official support](mailto:hello@sia.tech), or [join our Discord server](https://discord.gg/sia) and post in the `#core-dev` or `#app-dev` channels.

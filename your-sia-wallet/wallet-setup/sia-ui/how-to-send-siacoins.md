@@ -13,7 +13,7 @@ Click on the `Send` tab. Enter the recipient's wallet address and the amount of 
 ![](../../../.gitbook/assets/send-2.png)
 
 {% hint style="warning" %}
-Siacoin sent to mistyped addresses, or addresses of other types of cryptocurrency can not be retrieved.
+_Siacoin sent to mistyped addresses, or addresses of other types of cryptocurrency can not be retrieved._
 {% endhint %}
 
 Click **Generate Transaction.**
@@ -41,7 +41,7 @@ Once it's in a block, you can go back to your Transactions history to see its st
 ![](../../../.gitbook/assets/send-6.png)
 
 {% hint style="info" %}
-It might take a minute or two for the transaction to pop up in the Transactions list.
+_It might take a minute or two for the transaction to pop up in the Transactions list._
 {% endhint %}
 
 ## Did you know?

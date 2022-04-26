@@ -30,7 +30,7 @@ Keep a laminated paper copy stored in a locked safe or a bank safe deposit box.
 
 #### Digitally Safe
 
-Keep your seed in a password or biometric \(e.g. fingerprint\) secured app like 1Password or LastPass.
+Keep your seed in a password or biometric (e.g. fingerprint) secured app like 1Password or LastPass.
 
 ## Make sure it's right
 
@@ -45,13 +45,13 @@ Your seed is your private key to your Siacoin balance, and it can also be used t
 It would take modern technology trillions upon trillions of years to figure out a 20+ word phrase from scratch. This makes your seed a powerful deterrent against intruders if it doubles as your wallet password. But frequently typing your seed also makes you vulnerable to malicious software that might be installed on your computer. Let’s look at the pros and cons of each.
 
 {% hint style="success" %}
-**Pro:** Your seed is long. This offers great protection against someone trying to “brute force” it, or someone peeking over your shoulder as you type it.
+_**Pro:** Your seed is long. This offers great protection against someone trying to “brute force” it, or someone peeking over your shoulder as you type it._
 
-**Pro:** Since you'll be typing it in fairly often, you'll know it's correct.
+_**Pro:** Since you'll be typing it in fairly often, you'll know it's correct._
 {% endhint %}
 
 {% hint style="danger" %}
-**Con:** Typing your seed in repeatedly makes you vulnerable to keylogging. Keylogging is when your keyboard input is recorded using malware or a physical device and then sent to a malicious party. If someone gets your seed, they can easily steal your Siacoin, as we noted earlier.
+_**Con:** Typing your seed in repeatedly makes you vulnerable to keylogging. Keylogging is when your keyboard input is recorded using malware or a physical device and then sent to a malicious party. If someone gets your seed, they can easily steal your Siacoin, as we noted earlier._
 {% endhint %}
 
 ### Using a custom password
@@ -59,12 +59,11 @@ It would take modern technology trillions upon trillions of years to figure out 
 During wallet creation, you have an option to create a custom password for getting in and out of your wallet. You can also set this afterward at any point. This allows you to use something familiar instead of the wallet seed.
 
 {% hint style="success" %}
-**Pro:** You don’t have to type in a ton of words every time you want to unlock your wallet.
+_**Pro:** You don’t have to type in a ton of words every time you want to unlock your wallet._
 
-**Pro:** It reduces the exposure of your seed. If keylogging software were to steal your custom password, there’s nothing they can do with it unless the person also has access to your computer.
+_**Pro:** It reduces the exposure of your seed. If keylogging software were to steal your custom password, there’s nothing they can do with it unless the person also has access to your computer._
 {% endhint %}
 
 {% hint style="danger" %}
-**Con:** It might make accessing your wallet easier for those who have physical or remote access to your computer.
+_**Con:** It might make accessing your wallet easier for those who have physical or remote access to your computer._
 {% endhint %}
-

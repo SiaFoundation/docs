@@ -39,5 +39,5 @@ Nebulous labs, which is now Skynet Labs, originally owned all 10,000. However ov
 The Sia Foundation does not hold any Siafunds. All further development costs will be covered by the network subsidy granted to them during the 2021 hard fork.
 
 {% hint style="info" %}
-Nebulous Labs was rebranded as Skynet Labs during the [2021 hard fork](../hard-fork/navigating-the-2021-sia-hardfork.md) which created the Sia Foundation.
+_Nebulous Labs was rebranded as Skynet Labs during the_ [_2021 hard fork_](../hard-fork/navigating-the-2021-sia-hardfork.md) _which created the Sia Foundation._
 {% endhint %}

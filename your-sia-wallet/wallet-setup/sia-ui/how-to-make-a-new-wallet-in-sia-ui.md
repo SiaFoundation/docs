@@ -27,8 +27,8 @@ You need to keep your seed safe. Safe means a lot of things to different people 
 **Physically:** Keep a laminated paper copy stored in a locked safe.
 
 {% hint style="warning" %}
-**Loss:** If you lose your seed, your Siacoin balance will be unrecoverable.\
-**Theft:** If someone steals your seed, they can easily steal your Siacoin balance.
+_**Loss:** If you lose your seed, your Siacoin balance will be unrecoverable._\
+_**Theft:** If someone steals your seed, they can easily steal your Siacoin balance._
 {% endhint %}
 
 Ready for a deep dive? [Learn more about the importance of your seed.](../../the-importance-of-your-seed.md)

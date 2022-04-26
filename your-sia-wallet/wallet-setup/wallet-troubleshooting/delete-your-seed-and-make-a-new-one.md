@@ -9,7 +9,7 @@
 * Siacoin, the cryptocurrency used to buy and sell storage
 
 {% hint style="warning" %}
-This process generates a new wallet with a new Sia seed. This is not recommended if you currently have Siacoin in your wallet, unless you've already forgotten your Sia seed. Any Siacoin in your current wallet will no longer be accessible unless you have your previous seed and restore from it.
+_This process generates a new wallet with a new Sia seed. This is not recommended if you currently have Siacoin in your wallet, unless you've already forgotten your Sia seed. Any Siacoin in your current wallet will no longer be accessible unless you have your previous seed and restore from it._
 {% endhint %}
 
 ## Deleting your wallet and starting over
@@ -18,7 +18,7 @@ This process generates a new wallet with a new Sia seed. This is not recommended
 2. Type: `wallet init --force`
 
 {% hint style="warning" %}
-There are two dashes before the word `force`.
+_There are two dashes before the word `force`._
 {% endhint %}
 
 This will immediately erase your old wallet and create a new one. You will also see your new seed instantly in the Terminal window. [Make sure you safely store your new seed](../../the-importance-of-your-seed.md).

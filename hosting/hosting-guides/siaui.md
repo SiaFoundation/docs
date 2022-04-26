@@ -99,7 +99,7 @@ You need to announce your host using your DDNS hostname in order for it to work.
 substituting \[_ddns hostname or ip_] with your unique DDNS hostname that you received from your DDNS service or the IP you want to announce. Make sure to include `:9982` afterward and without a space, as this specifies which port renters can contact you through and is the default for Sia.
 
 {% hint style="info" %}
-Announcing your host is a transaction that will appear in your Transaction list in your wallet.
+_Announcing your host is a transaction that will appear in your Transaction list in your wallet._
 {% endhint %}
 
 Read on for some additional important things to take care of to get the most out of your host.

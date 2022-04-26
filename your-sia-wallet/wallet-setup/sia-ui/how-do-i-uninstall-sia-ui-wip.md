@@ -7,7 +7,7 @@ If you're done with Sia-UI, you can uninstall easily.
 There are two things you need to remove — the application, and the associated data folders.
 
 {% hint style="info" %}
-Deleting your data folders means Sia is gone - blockchain and everything. You can always [restore your wallet](how-to-restore-a-wallet-from-a-seed-in-sia-ui.md), though.
+_Deleting your data folders means Sia is gone - blockchain and everything. You can always_ [_restore your wallet_](how-to-restore-a-wallet-from-a-seed-in-sia-ui.md)_, though._
 {% endhint %}
 
 ## Windows

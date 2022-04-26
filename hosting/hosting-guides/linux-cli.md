@@ -178,7 +178,7 @@ siac wallet init -p
 ```
 
 {% hint style="warning" %}
-Make sure to go back and replace the [Environment variable in the service script you created in Step 3](linux-cli.md#step-3-configure-services). You will need to replace `walletseedphrase` with your new seed.
+_Make sure to go back and replace the_ [_Environment variable in the service script you created in Step 3_](linux-cli.md#step-3-configure-services)_. You will need to replace `walletseedphrase` with your new seed._
 {% endhint %}
 
 {% hint style="danger" %}
@@ -218,7 +218,7 @@ _It is recommended to have about 1000 Siacoin per TB._
 Set your minimum storage price.
 
 {% hint style="info" %}
-_Filebase will only make contracts with hosts that have a storage price of 150SC or higher. Also Skynet Labs will not make contracts with hosts that have a storage price of 300SC or higher. Set your prices accordingly._
+__[_Filebase_](../../layer-2-solutions/filebase/) _will only make contracts with hosts that have a storage price of 150SC or higher. Also_ [_Skynet Labs_](../../layer-2-solutions/skynet.md) _will not make contracts with hosts that have a storage price of 300SC or higher. Set your prices accordingly._
 {% endhint %}
 
 ```
@@ -295,7 +295,7 @@ _Make sure to include_ `:9982` _as this specifies which port renters can contact
 {% endhint %}
 
 {% hint style="info" %}
-Announcing your host is a transaction that will appear in your Transaction list in your wallet.
+_Announcing your host is a transaction that will appear in your Transaction list in your wallet._
 {% endhint %}
 
 

@@ -4,8 +4,8 @@
 
 The number one reason that users have issues getting their host running is port forwarding. By default, the host is on port `:9982`, but you should forward all ports from `:9981` to `:9984`. You can see if your host has forwarded its port from this website: [http://canyouseeme.org/](http://canyouseeme.org)
 
-{% hint style="warning" %}
-Be sure to not forward port 9980, as this can represent a security threat. You'll need to access your router's manual to learn how to set up port forwarding on your device.
+{% hint style="danger" %}
+_Be sure to not forward port 9980, as this can represent a security threat. You'll need to access your router's manual to learn how to set up port forwarding on your device._
 {% endhint %}
 
 ### What each port does

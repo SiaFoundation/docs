@@ -12,7 +12,7 @@ If you already have a Sia seed with a balance of Siacoin, you can recover and us
 ## Restore from a seed
 
 {% hint style="info" %}
-Restoring from your seed does not restore a custom password. After following this process, you'll use your Sia seed to log in to your wallet until you [set a custom password.](how-do-i-change-my-sia-wallet-password.md)
+_Restoring from your seed does not restore a custom password. After following this process, you'll use your Sia seed to log in to your wallet until you_ [_set a custom password._](how-do-i-change-my-sia-wallet-password.md)__
 {% endhint %}
 
 Go to the Wallet tab. If there's not another wallet setup already, you'll see two options: Create new wallet and Restore from seed. Click **Restore from seed.**
@@ -40,7 +40,7 @@ Give Sia a few minutes, it needs to do some work on your wallet.
 After it's done, you'll be taken to the Dashboard. Click back to the Wallet tab to find your balance.
 
 {% hint style="info" %}
-After restoring Sia from your seed and resyncing, it might take your balance up to an hour to re-appear in the wallet as Sia performs more actions in the background.
+_After restoring Sia from your seed and resyncing, it might take your balance up to an hour to re-appear in the wallet as Sia performs more actions in the background._
 {% endhint %}
 
 ![](../../../.gitbook/assets/send-1.png)

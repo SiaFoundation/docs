@@ -14,7 +14,7 @@ During a clean install, two primary things are deleted:
 But don’t worry, restoring your balance of Siacoin is easy as long as you have your original wallet seed.
 
 {% hint style="warning" %}
-Performing a clean install will remove all your renting and hosting info as well. So if you've uploaded data to Sia or are hosting other's files, this will eliminate those contracts and should be used as a last resort. If you're not comfortable doing this, [contact support](mailto:hello@sia.tech) or [visit our Discord](https://discord.gg/sia) and we might be able to guide you through a specific fix.
+_Performing a clean install will remove all your renting and hosting info as well. So if you've uploaded data to Sia or are hosting other's files, this will eliminate those contracts and should be used as a last resort. If you're not comfortable doing this,_ [_contact support_](mailto:hello@sia.tech) _or_ [_visit our Discord_](https://discord.gg/sia) _and we might be able to guide you through a specific fix._
 {% endhint %}
 
 ### Your Sia wallet seed
@@ -30,7 +30,7 @@ If you don’t have your seed, do not proceed with these steps.
 Sia stores its data in specific folders. This includes things like the entire blockchain and your wallet info. We need to delete these, but first we need to find them. There are two easy ways to locate the folders.
 
 {% hint style="warning" %}
-**Note:** Quit Sia before deleting the data folders.
+_**Note:** Quit Sia before deleting the data folders._
 {% endhint %}
 
 **Navigate directly to the location below, depending on your OS.**
@@ -64,7 +64,7 @@ Reboot your computer after deleting this folder.
 ### Deleting and re-downloading Sia-UI
 
 {% hint style="warning" %}
-While not required, deleting and re-downloading the application files will ensure you are on the latest version. If you're sure you're already [on the latest version](https://sia.tech/get-started), you can skip this step.
+_While not required, deleting and re-downloading the application files will ensure you are on the latest version. If you're sure you're already_ [_on the latest version_](https://sia.tech/get-started)_, you can skip this step._
 {% endhint %}
 
 #### **Prior to 1.4.0**
@@ -90,7 +90,7 @@ At this point, you’ve deleted the Sia data folders and made sure you’re upda
 When you open Sia-UI, choose **Restore from seed**. [Learn how to do that here](how-to-restore-a-wallet-from-a-seed-in-sia-ui.md) if you need help.
 
 {% hint style="info" %}
-After restoring Sia from your seed and resyncing, it might take your balance up to an hour to re-appear in the wallet as Sia performs more actions in the background.
+_After restoring Sia from your seed and resyncing, it might take your balance up to an hour to re-appear in the wallet as Sia performs more actions in the background._
 {% endhint %}
 
 Sia-UI will then scan the blockchain for any Siacoin associated with your seed. This may take a while, but once it’s done your Wallet will show your previous Siacoin balance.

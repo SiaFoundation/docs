@@ -1,3 +1,0 @@
-# Arzen
-
-## Coming soon.

@@ -133,5 +133,3 @@
 * [What is layer 2?](layer-2-solutions/what-is-layer-2.md)
 * [Skynet](layer-2-solutions/skynet.md)
 * [Filebase](layer-2-solutions/filebase.md)
-* [Arzen](layer-2-solutions/arzen.md)
-* [Pixel Drain](layer-2-solutions/pixel-drain.md)

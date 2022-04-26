@@ -1,3 +1,0 @@
-# Pixel Drain
-
-## Coming soon.

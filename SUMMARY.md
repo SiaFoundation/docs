@@ -129,3 +129,9 @@
 
 * [About mining on Sia](mining/about-mining-on-sia.md)
 * [Sia mining pools](mining/sia-mining-pools.md)
+
+## Layer 2 solutions
+
+* [What is layer 2?](layer-2-solutions/what-is-layer-2.md)
+* [Skynet](layer-2-solutions/skynet.md)
+* [Filebase](layer-2-solutions/filebase.md)

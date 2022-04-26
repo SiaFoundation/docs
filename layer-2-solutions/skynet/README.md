@@ -12,6 +12,15 @@ Skynet apps transform what’s possible on the web. Beyond protecting privacy, d
 
 
 
+## Explore Skynet
+
+Skynet itself is home to a quickly growing ecosystem of decentralized web apps. Complete with a global login system, user owned frontends, and cross app compatibility. Skynet has been designed as a replacement protocol to the world wide web. Enabling fully functional Web 3 applications to be built without the friction of needing to use or understand cryptocurrencies.
+
+Notable Skynet Applications:
+
+* Vup
+* Skysend
+
 ## Learn More
 
 * [Skynet Labs Website](https://skynetlabs.com)

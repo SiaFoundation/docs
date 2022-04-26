@@ -131,7 +131,7 @@
 ## Layer 2 solutions
 
 * [What is layer 2?](layer-2-solutions/what-is-layer-2.md)
-* [Skynet](layer-2-solutions/skynet/README.md)
+* [Skynet](layer-2-solutions/skynet.md)
   * [Vup](layer-2-solutions/skynet/vup.md)
   * [Rift](layer-2-solutions/skynet/rift.md)
   * [SkySend](layer-2-solutions/skynet/skysend.md)

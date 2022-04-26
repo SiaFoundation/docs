@@ -135,4 +135,6 @@
   * [Vup](layer-2-solutions/skynet/vup.md)
   * [Rift](layer-2-solutions/skynet/rift.md)
   * [SkySend](layer-2-solutions/skynet/skysend.md)
-* [Filebase](layer-2-solutions/filebase.md)
+* [Filebase](layer-2-solutions/filebase/README.md)
+  * [Arzen](layer-2-solutions/filebase/arzen.md)
+  * [IPFS](layer-2-solutions/filebase/ipfs.md)

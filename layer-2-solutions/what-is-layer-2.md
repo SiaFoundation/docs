@@ -8,8 +8,6 @@ While you would be correct in thinking that Sia is a cloud storage network, Sia 
 
 
 
-## Why build on the Sia network?
+## Why choose the Sia network?
 
-Unrelenting in its commitment to decentralization, the Sia network offers a level of redundancy and security that is unmatched by any other storage network. As of April 25, 2021, the Sia network spans nearly 30% of the globe. With over 700 individually operated hosts in 55+ countries, the Sia network is capable of ensuring that no one entity can ever hold your data hostage.
-
-Security, reliability and affordability
+Unrelenting in its commitment to decentralization, the Sia network offers a level of redundancy and security that is unmatched by any other storage network. As of April 25, 2021, [the Sia network spans nearly 30% of the globe](https://siastats.info/hosts\_network) with over 700 individually operated hosts in 50+ countries. Reassuring customers that by using the Sia network, no matter what, their data will always be available. Coupled with the speed, reliability, and affordability that no other decentralized network can offer. The Sia network is the number one choice for developers looking to build Web 3.

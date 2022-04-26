@@ -12,10 +12,8 @@ Skynet apps transform what’s possible on the web. Beyond protecting privacy, d
 
 
 
-## Learn More
+## Using Skynet
 
-* [Skynet Labs Website](https://skynetlabs.com)
-* [Skynet Labs Documentation](https://docs.skynetlabs.com)
-* [Skynet Labs Blogs](https://blog.sia.tech)
-* [Skynet Labs Discord](https://discord.gg/SkynetLabs)
-* [Skynet Labs Twitter](https://twitter.com/SkynetLabs)
+
+
+## Build on Skynet

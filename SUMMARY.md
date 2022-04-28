@@ -65,7 +65,7 @@
     * [Receiving Siacoin](your-wallet/wallet-setup/sia-ui/how-to-make-a-sia-address.md)
     * [Sending Siacoin](your-wallet/wallet-setup/sia-ui/how-to-send-siacoins.md)
     * [Restore your wallet from a seed](your-wallet/wallet-setup/sia-ui/how-to-restore-a-wallet-from-a-seed-in-sia-ui.md)
-    * [Change the Sia-UI password](your-wallet/wallet-setup/sia-ui/how-do-i-change-my-sia-wallet-password.md)
+    * [Change your Sia-UI password](your-wallet/wallet-setup/sia-ui/how-do-i-change-my-sia-wallet-password.md)
     * [Clean install Sia-UI](your-wallet/wallet-setup/sia-ui/how-to-perform-a-clean-install-in-sia-ui.md)
     * [Uninstall the Sia-UI](your-wallet/wallet-setup/sia-ui/how-do-i-uninstall-sia-ui-wip.md)
   * [Back up your Sia wallet](your-wallet/wallet-setup/back-up-your-sia-wallet.md)

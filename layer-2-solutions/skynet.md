@@ -31,6 +31,7 @@ Skynet itself is home to a quickly growing ecosystem of decentralized Web 3 appl
 ### Related Articles
 
 * [Introducing Skynet Labs](https://blog.sia.tech/introducing-skynet-labs-434c852cce07)
+* [Skynet](https://blog.sia.tech/skynet-bdf0209d6d34)
 * [A Deep Dive into Skynet](https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea)
 * [Skynet’s Approach to Building a Better Web3](https://blog.sia.tech/skynets-approach-to-building-a-better-web3-c2b10623d6dd)
 * [MySky: Your Home on the Global Operating System of the Future](https://blog.sia.tech/mysky-your-home-on-the-global-operating-system-of-the-future-5a288f89825c)

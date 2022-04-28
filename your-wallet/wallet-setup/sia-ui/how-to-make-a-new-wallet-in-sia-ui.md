@@ -6,19 +6,18 @@ _This guide assumes that you are setting up a new wallet in Sia-UI for the first
 
 ## Things You'll Need
 
-A desktop or notebook computer with Sia-UI installed. [Don't have Sia-UI yet?](http://sia.tech/get-started)
-
-A secure physical and digital way to safely store a long string of words.
+* A computer with [the Sia-UI installed](how-to-download-and-install-sia-ui.md).
+* A secure means of [storing your seed phrase](../back-up-your-sia-wallet.md).&#x20;
 
 ## Create a new wallet
 
-When you first boot up Sia-UI, you'll be prompted to create a Siacoin wallet. A wallet lets you store Siacoin and is required to be able to upload files to the decentralized network, or rent out your storage space and earn more Siacoin.
+When you first run the Sia-UI, you'll be prompted with two options. You can either create a new wallet or [restore a wallet from a seed](how-to-restore-a-wallet-from-a-seed-in-sia-ui.md). For this guide we will be creating a new wallet.
 
-After starting Sia, you'll see this screen. Click **Create new wallet.**
+Click **Create new wallet.**
 
 ![](<../../../.gitbook/assets/restore-1 (2) (2) (2).png>)
 
-Next, you'll see your seed. Your seed is a string of (usually 29) words and is your key to your Siacoin wallet. It's also how you can recover your funds - or in the future, your files - from another computer.
+Next, you'll be given your new seed phrase. Your seed is a string of (usually 29) words and is your key to your Siacoin wallet.
 
 ![](../../../.gitbook/assets/new-2.png)
 
@@ -28,7 +27,7 @@ Next, you'll see your seed. Your seed is a string of (usually 29) words and is y
 
 **Physically:** Keep a laminated paper copy stored in a locked safe.
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 _**Loss:** If you lose your seed, your Siacoin balance will be unrecoverable._\
 _**Theft:** If someone steals your seed, they can easily steal your Siacoin balance._
 {% endhint %}
@@ -41,7 +40,9 @@ _Ready for a deep dive?_ [_Learn more about the importance of your seed._](../..
 
 Once you've stored your seed, click **Next.**
 
-You'll then be asked to verify your seed. Sia-UI will ask you for a random selection of your 29 words to make sure you've copied them down correctly. Enter them in the appropriate blank spaces. You'll see each box outlined in green when you've entered them correctly, and you can go back to the previous screen if you need to double check. Click **Done.**
+You'll then be asked to verify your seed. The Sia-UI will ask you for a random selection of your 29 words to make sure you've copied them down correctly. Enter them in the appropriate blank spaces. You'll see each box outlined in green when you've entered them correctly, and you can go back to the previous screen if you need to double check.
+
+Click **Done.**
 
 ![](../../../.gitbook/assets/new-3.png)
 
@@ -59,10 +60,10 @@ When your block height is fully synced, you'll see **Synced** in the upper right
 
 ![](../../../.gitbook/assets/new-6.png)
 
-Your wallet is ready! Go to the Wallet tab to check it out.
+Your wallet is ready! Click on the Wallet tab to check it out.
 
 ![](../../../.gitbook/assets/send-1.png)
 
-Your wallet shows you how much Siacoin you currently have, as well as three views: Transactions, Send, and Receive.
+Once on the wallet screen you will be able to see your current balance, as well as send and receive siacoin.
 
-[Learn about your Siacoin wallet.](../../wallet-overview.md)
+Interested in what else your wallet can do? [Click here to learn more](../../wallet-overview.md).

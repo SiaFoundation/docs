@@ -43,7 +43,7 @@ When you upload files to Sia, you become a **renter**. You upload files to other
 * for a certain amount of money
 
 {% hint style="info" %}
-_Looking to rent storage on Sia?_ [_Learn here_](hosting/host-setup/)_._
+_Looking to rent storage on Sia?_ [_Learn here_](broken-reference)_._
 {% endhint %}
 
 ## Hosting on Sia
@@ -55,7 +55,7 @@ You also earn Siacoin, the cryptocurrency that powers the Sia network. Siacoin c
 Hosts are a critical part of the ecosystem. You are contributing to the decentralized network that is the heart of Sia.
 
 {% hint style="info" %}
-_Looking to start hosting on Sia?_ [_Learn here_](hosting/host-setup/)_._
+_Looking to start hosting on Sia?_ [_Learn here_](broken-reference)_._
 {% endhint %}
 
 ## **Glossary**

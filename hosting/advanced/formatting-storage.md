@@ -151,4 +151,4 @@ sudo mkfs.ext4 /dev/sda1
 
 
 
-Congratulations! [Your device is now ready to be added to your hosts storage](../../hosting-guides/linux-cli.md#step-2-configure-storage-optional).
+Congratulations! [Your device is now ready to be added to your hosts storage](linux-cli.md#step-2-configure-storage-optional).

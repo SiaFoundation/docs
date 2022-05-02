@@ -1,4 +1,4 @@
-# Storage Location
+# Change Storage Location
 
 The easiest way to do so is to add the new storage folder in the Host tab, wait for it to show as part of the "Total Storage", and then remove the old storage folder. Sia should move any stored data from the old folder to the new ones once you remove the old one, but this process might take a while depending on the size of the old folder and Sia will be unresponsive during the move.
 

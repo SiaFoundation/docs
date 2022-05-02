@@ -100,7 +100,7 @@ _For this guide we will be using the 5.5TiB storage drive listed as_ `/dev/sda`
 {% endhint %}
 
 {% hint style="danger" %}
-_This guide has been written assuming you have already formatted your storage device with the correct file system. If you have not done this already,_ [_please do so now_](formatting-storage.md#linux-cli)_._
+_This guide has been written assuming you have already formatted your storage device with the correct file system. If you have not done this already,_ [_please do so now_](../host-setup/advanced/formatting-storage.md#linux-cli)_._
 {% endhint %}
 
 Now you will also need to get the unique `UUID` for the device you'd like to use. To do this run the following.

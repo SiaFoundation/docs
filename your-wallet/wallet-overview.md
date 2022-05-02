@@ -5,7 +5,7 @@ The Sia-UI and `siac` are not only the most secure ways to store your Siacoin. T
 Your wallet also provides you with the tools needed to view your balance or transaction history, and to send or receive Siacoin.
 
 {% hint style="info" %}
-_`siac` is a_ [_command-line client_](../hosting/monitoring/cli/siac.md) _for Sia. It is only recommended for advanced users._
+_`siac` is a_ [_command-line client_](../hosting/host-setup/monitoring/cli/siac.md) _for Sia. It is only recommended for advanced users._
 {% endhint %}
 
 Here's what a typical Sia-UI wallet looks like.

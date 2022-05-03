@@ -147,3 +147,4 @@
 * [Filebase](layer-2-solutions/filebase/README.md)
   * [Arzen](layer-2-solutions/filebase/arzen.md)
   * [IPFS](layer-2-solutions/filebase/ipfs.md)
+  * [Nosible AI](layer-2-solutions/filebase/nosible-ai.md)

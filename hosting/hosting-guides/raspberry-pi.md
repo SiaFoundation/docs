@@ -190,6 +190,10 @@ WantedBy=multi-user.target
 Alias=siad.service
 ```
 
+{% hint style="warning" %}
+If you are installing under a different user other than `ubuntu` make sure to update the `ExecStart` and `User` variable with the correct username.
+{% endhint %}
+
 Save the file to disk using _**`ctrl+o`**_
 
 Exit the text editor using _**`ctrl+x`**_

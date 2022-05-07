@@ -15,6 +15,7 @@ Download and extract the latest Sia Daemon Linux binaries from [https://sia.tech
 ```
 cd ~
 wget -q https://sia.tech/releases/Sia-v1.5.7-linux-amd64.zip
+sudo apt install unzip
 unzip Sia-v1.5.7-linux-amd64.zip
 ```
 
@@ -153,7 +154,7 @@ Alias=siad.service
 ```
 
 {% hint style="warning" %}
-If you are installing under a different user other than `ubuntu` make sure to update the `ExecStart` and `User` variables with the correct username.
+If you are installing under a different user other than `ubuntu` make sure to update the `ExecStart` and `User` variable with the correct username.
 {% endhint %}
 
 Save the file to disk using `ctrl+o`

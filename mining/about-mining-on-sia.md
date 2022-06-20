@@ -8,13 +8,13 @@ description: >-
 
 ## Why Mine?
 
-When you mine on a cryptocurrency network, you are contributing computing power to help process and verify transactions on that network. On the Sia network, the blockchain contains not just Siacoin transactions, but also the smart file contracts between [renters](../renting/about-renting.md) and [hosts](../hosting/about-hosting-on-sia.md). Miners are the backbone of the network, verifying the integrity of the blockchain. On Sia, miners are rewarded with Siacoins for their service.
+When you mine on a cryptocurrency network, you are contributing computing power to help process and verify transactions on that network. On the Sia network, the blockchain contains not just Siacoin transactions, but also the smart file contracts between [renters](../renting/about-renting.md) and [hosts](../hosting/about-hosting-on-sia.md). Miners are the backbone of the network, verifying the integrity of the blockchain. On Sia, miners are rewarded with Siacoin for their service.
 
 ## The Block Reward
 
-The block reward is the miner's incentive to contribute their computing power and electricity cost to the network. When a block is successfully verified, or solved, an amount of Siacoins is paid out to those who mined the block.
+The block reward is the miner's incentive to contribute their computing power and electricity cost to the network. When a block is successfully verified, or solved, an amount of Siacoin is paid out to those who mined the block.
 
-When the Sia network launched, the block reward was 300,000 Siacoins. This decreases by one every block, with a floor at 30,000 – which was reached at block 270,000 \(300,000 - block height\).
+When the Sia network launched, the block reward was 300,000 Siacoin. This decreases by one every block, with a floor at 30,000 – which was reached at block 270,000 (300,000 - block height).
 
 ### Infinite Reward
 
@@ -41,4 +41,3 @@ Shortly after, the first ASICs were introduced into the Sia ecosystem. An ASIC, 
 Imagine you bought a computer whose only function was to search for and download pictures of red cars. A team of engineers could program it to very specifically search for red cars, download them, and put them in folders based on how many doors they had, or if they were light red or dark red. And it could ignore pictures of blue cars and yellow cars very easily. This is what an ASIC does for cryptocurrency mining.
 
 **Because of ASICs, GPU mining is now no longer profitable.**
-

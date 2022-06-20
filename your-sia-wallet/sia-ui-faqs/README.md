@@ -1,2 +1,0 @@
-# Sia-UI FAQs
-

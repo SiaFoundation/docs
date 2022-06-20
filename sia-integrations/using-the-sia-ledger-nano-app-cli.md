@@ -12,11 +12,11 @@ To send and receive Siacoin on a Ledger device we will be using Sia Central's we
 
 Using Sia with a Ledger hardware wallet requires a few things. You will need:
 
-* Your Ledger device
-* The Sia app installed on your device
-* v1.5.4 or later of `siac` and `siad` installed on your computer to connect to the Sia network
-* The `sialedger` app on your computer to talk to the Ledger device
-* Familiarity with your computer's command-line interface \(CLI\).
+* Your Ledger Nano S
+* The Sia app installed on your Nano S
+* v1.3.5 or later of `siac` and `siad` installed on your computer to connect to the Sia network
+* The `sialedger` app on your computer to talk to the Nano S
+* Familiarity with your computer's command-line interface (CLI).
 
 {% hint style="warning" %}
 The current process for using the Sia app is more easily followed by advanced users. If you're not comfortable using the command-line, you can use Sia Central's web wallet. We're working on integrating the Sia Ledger app with Sia-UI, our official GUI app, to make the process much simpler.
@@ -40,26 +40,26 @@ _Let's make sure your hardware wallet is ready to use._
 
 At this point, you're ready to install apps on your Ledger device. Remember to store your 24-word recovery phrase in a safe place, because you'll need it to recover your funds if your device is lost or damaged.
 
-### Install the Sia Ledger app <a id="install_the_sia_ledger_app"></a>
+### Install the Sia Ledger Nano S app <a href="#install_the_sia_ledger_nano_s_app" id="install_the_sia_ledger_nano_s_app"></a>
 
 _Now we'll install the Sia app onto your Ledger hardware wallet._
 
 1. Open the **Manager** in Ledger Live.
 
-![](../.gitbook/assets/ledger-1.png)
+![](../../../.gitbook/assets/ledger-1.png)
 
 * Click the gear icon in the upper right corner to access Settings. Then click the toggle switch to enable "Developer mode".
 
-![](../.gitbook/assets/ledger-2.png)
+![](../../../.gitbook/assets/ledger-2.png)
 
 * Connect and unlock your Ledger device. You may see a prompt on your device to allow the manager on your device. Allow this by pressing the right button on the device.
 * Search for Sia in the app catalog.
 
-![](../.gitbook/assets/ledger-3.png)
+![](../../../.gitbook/assets/ledger-3.png)
 
 * Click the **Install** button. Your device will display **Processing...**
 
-![](../.gitbook/assets/ledger-4.png)
+![](../../../.gitbook/assets/ledger-4.png)
 
 * When the main menu reappears, the Sia app has been successfully installed.
 
@@ -75,11 +75,11 @@ _Unlike most Ledger apps, the Sia app requires a "full node." That means you'll 
 * Use the Sia Daemon links on the right. This will download both `siac` and `siad` to your computer.
 * Open a CLI window and navigate to the directory that contains `siac` and `siad`. Run the `./siad`command to begin downloading the blockchain to your computer.
 
-![](../.gitbook/assets/ledger-5.png)
+![](../../../.gitbook/assets/ledger-5.png)
 
 * Wait for the blockchain to finish downloading. You can monitor its progress by running `./siac` in another CLI window.
 
-![](../.gitbook/assets/ledger-6.png)
+![](../../../.gitbook/assets/ledger-6.png)
 
 ## Install the sialedger app
 
@@ -91,11 +91,11 @@ _sialedger is the command-line program you'll use on your computer to talk to th
 Windows, macOS, and Linux are all supported.
 {% endhint %}
 
-* If you are on macOS, you may have to move sialedger to another folder \(such as Applications\) in order to run it.
+* If you are on macOS, you may have to move sialedger to another folder (such as Applications) in order to run it.
 * Open a CLI window and navigate to the directory that contains sialedger.
 * Run `./sialedger` to confirm that the program works. It should print the current version.
 
-![](../.gitbook/assets/ledger-7.png)
+![](../../../.gitbook/assets/ledger-7.png)
 
 ## Checking your wallet balance
 
@@ -119,7 +119,7 @@ _Now that your CLI and device are ready to go, let's generate an address._
 * Run `./sialedger addr 0` from the CLI to generate key 0. You can generate other keys by specifying a different key index.
 * Your device will ask you to confirm the address generation for key index 0. Confirm by pressing the right button.
 
-![](../.gitbook/assets/ledger-8.jpg)
+![](../../../.gitbook/assets/ledger-8.jpg)
 
 {% hint style="danger" %}
 Make sure the key index on the device matches the key index you requested. A compromised computer could trick you by sending a different key index to the device.
@@ -127,9 +127,9 @@ Make sure the key index on the device matches the key index you requested. A com
 
 * The address will appear in the CLI and on the device screen. Compare these addresses to ensure that they match. You can use the left and right buttons on the device to scroll through the address.
 
-![](../.gitbook/assets/ledger-9.jpg)
+![](../../../.gitbook/assets/ledger-9.jpg)
 
-![](../.gitbook/assets/ledger-10.png)
+![](../../../.gitbook/assets/ledger-10.png)
 
 {% hint style="danger" %}
 It is crucial that you verify every character in the address. A compromised computer could trick you by displaying a different address.
@@ -146,19 +146,19 @@ Once you've received siacoins at an address generated by your device, you can co
 There are three main parts to a transaction:
 
 1. You need an output to spend, for which you'll need that output's ID and the public key of the address that the output was sent to.
-2. You need to specify how to split up the value of the output. Typically, a portion of the output is sent to your intended recipient \(such as a friend\), another portion is paid to the miner, and the rest is returned to you.
-3. The transaction needs to be signed. Each output you spend needs a separate signature. We'll be using the Ledger device to sign the transaction.
+2. You need to specify how to split up the value of the output. Typically, a portion of the output is sent to your intended recipient (such as a friend), another portion is paid to the miner, and the rest is returned to you.
+3. The transaction needs to be signed. Each output you spend needs a separate signature. We'll be using the Ledger Nano S to sign the transaction.
 
 Start by collecting everything you need to construct the transaction:
 
-* Identify an output to spend. You can find outputs by searching [https://siastats.info/navigator](https://siastats.info/navigator) for an address you generated on your device. Make note of the Output ID field and its value.
-* Generate the public key of the address that owns the output. To do so, run `./sialedger pubkey n`   \(where n is the same key index you used to generate the address\). Confirm the pubkey generation on the device by pressing the right button.
+* Identify an output to spend. You can find outputs by searching [https://siastats.info/navigator](https://siastats.info/navigator) for an address you generated on your Nano S. Make note of the Output ID field and its value.
+* Generate the public key of the address that owns the output. To do so, run `./sialedger pubkey n` (where n is the same key index you used to generate the address). Confirm the pubkey generation on the Nano S by pressing the right button.
 
-![](../.gitbook/assets/ledger-11.jpg)
+![](../../../.gitbook/assets/ledger-11.jpg)
 
-![](../.gitbook/assets/ledger-12.png)
+![](../../../.gitbook/assets/ledger-12.png)
 
-![](../.gitbook/assets/ledger-13.jpg)
+![](../../../.gitbook/assets/ledger-13.jpg)
 
 * Identify which address you want to send siacoins to.
 * Choose a fee to pay to the miner.
@@ -212,11 +212,11 @@ Note: the following are example values and may not match the values seen in earl
 * The device will display each part of the transaction. Scroll with the left and right buttons, and proceed by pressing both buttons.
 * Once you have reviewed each part of the transaction, you will be asked to confirm that you want to sign the transaction. Press the right button to confirm.
 
-![](../.gitbook/assets/ledger-14.jpg)
+![](../../../.gitbook/assets/ledger-14.jpg)
 
 * The CLI will display the signature generated by the device.
 
-![](../.gitbook/assets/ledger-15.png)
+![](../../../.gitbook/assets/ledger-15.png)
 
 * Open the `txn.json` file and insert the signature near the end of the file, below `transactionsignatures` and above `parentid`:
 
@@ -235,5 +235,4 @@ The transaction is now valid. To broadcast it to the Sia network, simply move tx
 
 ## Get help
 
-If you're having trouble, we're here to help. [Email our official support](mailto:hello@sia.tech), or [join our Discord server](https://discord.gg/sia) and post in the \#core-dev or \#app-dev channels.
-
+If you're having trouble, we're here to help. [Email our official support](mailto:hello@sia.tech), or [join our Discord server](https://discord.gg/sia) and post in the #core-dev or #app-dev channels.

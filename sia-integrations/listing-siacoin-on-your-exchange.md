@@ -1,6 +1,6 @@
 # Listing Siacoin on your exchange
 
-Sia is one of the best projects in the blockchain space. Sia is open source, and we believe completely in the spirit of decentralization. As such, exchanges should strive to implement the best projects that will enhance their platforms with little involvement from the development team for that project.
+Sia is one of the best projekts in the blockchain space. Sia is open source, and we believe completely in the spirit of decentralization. As such, exchanges should strive to implement the best projects that will enhance their platforms with little involvement from the development team for that project.
 
 ## Some background on Siacoin
 
@@ -8,7 +8,7 @@ Siacoins are used for buying and selling storage space on the Sia network. We be
 
 ## Download Sia
 
-Siacoins are stored in a Sia wallet. Our two official apps are Sia-UI or siac \(for command-line interfaces\). Only one instance of Sia can run at a time, so you’ll need to install it on multiple machines or virtual environments if you’d like to run more than a single wallet.
+Siacoins are stored in a Sia wallet. Our two official apps are Sia-UI or siac (for command-line interfaces). Only one instance of Sia can run at a time, so you’ll need to install it on multiple machines or virtual environments if you’d like to run more than a single wallet.
 
 You can download the latest release [directly from Gitlab,](https://gitlab.com/NebulousLabs/Sia/tags) or [from our website](https://sia.tech/get-started).
 
@@ -18,7 +18,7 @@ Learn how to download and install Sia-UI.
 
 * **CPU:** Sia does not require special CPU considerations
 * **RAM:** 8 GB recommended
-* **SSD:** 40 GB recommended \(keep an eye on your consensus size!\)
+* **SSD:** 40 GB recommended (keep an eye on your consensus size!)
 
 As of January 2021, the blockchain is 24.25 GB, and you’ll need to download an entire copy to properly run your wallet. The blockchain grows by about 1 GB every two months.
 
@@ -42,7 +42,7 @@ In the meantime, here are some answers to questions we’ve received regarding w
 
 **TLS/SSL Availability.** TLS/SSL is not currently available.
 
-**Transaction Fee.** The transaction fee is automatically set, but you can always get an estimated range via the API [https://github.com/NebulousLabs/Sia/blob/master/](https://github.com/NebulousLabs/Sia/blob/master/) doc/API.md\#tpoolfee-get
+**Transaction Fee.** The transaction fee is automatically set, but you can always get an estimated range via the API [https://github.com/NebulousLabs/Sia/blob/master/](https://github.com/NebulousLabs/Sia/blob/master/) doc/API.md#tpoolfee-get
 
 **If the explorer returns incorrect info.** Instead of using the explorer, use the /consensus endpoints listed in the API documentation. These should get you the same info easily. We'll be working on the explorer soon.
 
@@ -50,27 +50,27 @@ In the meantime, here are some answers to questions we’ve received regarding w
 
 **Generating wallet addresses**
 
-[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md\#walletaddress-get](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md#walletaddress-get)
+[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md#walletaddress-get](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md#walletaddress-get)
 
 **Getting transactions for an address**
 
-[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/) API.md\#wallettransactionsaddr-get
+[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/) API.md#wallettransactionsaddr-get
 
 **Sending to an address or set of addresses**
 
-[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md\#walletsiacoins-post](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md#walletsiacoins-post)
+[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md#walletsiacoins-post](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md#walletsiacoins-post)
 
 **Unlocking the wallet**
 
-[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md\#walletunlock-post](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md#walletunlock-post)
+[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md#walletunlock-post](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/API.md#walletunlock-post)
 
 **Verifying an address**
 
-[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/) API.md\#walletverifyaddressaddr-get
+[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/) API.md#walletverifyaddressaddr-get
 
 **Changing the wallet password**
 
-[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/) API.md\#walletchangepassword—post
+[https://gitlab.com/NebulousLabs/Sia/blob/master/doc/](https://gitlab.com/NebulousLabs/Sia/blob/master/doc/) API.md#walletchangepassword—post
 
 ## A note about fees
 
@@ -89,4 +89,3 @@ If your exchange requires an opinion regarding Siacoin's status as it relates to
 ## Point of contact
 
 If you have any questions, [send an email to Steve](mailto:steve@sia.tech). He runs our support channels and will get you in contact with our dev team.
-

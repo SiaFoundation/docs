@@ -6,7 +6,7 @@ Nosible is an AI used by multi-billion-dollar asset managers to make data-driven
 
 ## Learn More
 
-* [Nosible AI Website](https://nosible.com)
+* [Nosible AI Website](https://nosible.com/)
 * [Nosible AI Twitter](https://twitter.com/NosibleAI)
 
 ### Related Articles

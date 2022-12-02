@@ -12,8 +12,8 @@ IPFS allows users to host and receive content in a manner similar to [Skynet](..
 
 ## Learn More
 
-* [IPFS Website](https://ipfs.io)
-* [IPFS Blog](https://blog.ipfs.io)
+* [IPFS Website](https://ipfs.io/)
+* [IPFS Blog](https://blog.ipfs.io/)
 * [IPFS Discord](https://discord.gg/nPVMTe5vmM)
 * [IPFS Twitter](http://twitter.com/ipfs)
 

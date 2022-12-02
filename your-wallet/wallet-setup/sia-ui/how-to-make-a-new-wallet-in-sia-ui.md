@@ -23,7 +23,7 @@ Next, you'll be given your new seed phrase. Your seed is a string of (usually 29
 
 **You need to keep your seed safe!** Safe means a lot of things to different people – but because your entire Siacoin balance is controlled by your seed, keep both digital and physical copies. Everyone does different things, and everyone has a different risk tolerance. Knowing this, our recommendations are as follows.
 
-**Digitally:** Use a password or biometric (e.g. fingerprint) secured app like [1Password](https://1password.com) or [LastPass](https://www.lastpass.com).
+**Digitally:** Use a password or biometric (e.g. fingerprint) secured app like [1Password](https://1password.com/) or [LastPass](https://www.lastpass.com/).
 
 **Physically:** Keep a laminated paper copy stored in a locked safe.
 

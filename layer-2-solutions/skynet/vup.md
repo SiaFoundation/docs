@@ -10,6 +10,6 @@ Vup is a fully decentralized, open-source, cloud storage application. Leveraging
 
 ## Learn More
 
-* [Vup Website](https://vup.app)
-* [Vup Documentation](https://docs.vup.app)
-* [Vup Discord](https://discord.vup.app)
+* [Vup Website](https://vup.app/)
+* [Vup Documentation](https://docs.vup.app/)
+* [Vup Discord](https://discord.vup.app/)

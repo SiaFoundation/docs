@@ -1,6 +1,6 @@
 # How to buy Siacoin
 
-Whether you want to [upload files](../../../renting/renter-setup/sia-ui/managing-your-files.md#uploading) to the decentralized cloud or [lend your extra storage space](../../../hosting/about-hosting-on-sia.md) to the network, you need Siacoin to use Sia. Siacoin can be [sent to you](../../../your-wallet/wallet-setup/sia-ui/how-to-make-a-sia-address.md) once you make a Sia address, or you can [mine them](broken-reference/). Otherwise, you’ll need to buy them.
+Whether you want to [upload files](../../../renting/siaui/managing-your-files.md#uploading) to the decentralized cloud or [lend your extra storage space](../../../hosting/about-hosting-on-sia.md) to the network, you need Siacoin to use Sia. Siacoin can be [sent to you](../../../your-wallet/wallet-setup/sia-ui/how-to-make-a-sia-address.md) once you make a Sia address, or you can [mine them](broken-reference/). Otherwise, you’ll need to buy them.
 
 Siacoin is available on a number of major exchanges like Binance, Bittrex, Kraken, Upbit, Poloniex, Huobi, OKex, and HitBTC. Get the full list [here](https://airtable.com/shrq4MSLNxinvnaR7).
 

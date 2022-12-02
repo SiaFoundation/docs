@@ -27,8 +27,8 @@ Filebase is rapidly growing as a leader in enterprise level cloud storage. By le
 
 ## Learn more
 
-* [Filebase Website](https://filebase.com)
-* [Filebase Documentation](https://docs.filebase.com)
+* [Filebase Website](https://filebase.com/)
+* [Filebase Documentation](https://docs.filebase.com/)
 * [Filebase Blog](https://filebase.com/blog)
 * [Filebase Discord](https://discord.gg/V5Yj6ZuGyR)
 * [Filebase Twitter](https://twitter.com/Filebase)

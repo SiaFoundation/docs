@@ -1,2 +1,0 @@
-# Renter Setup
-

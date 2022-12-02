@@ -10,5 +10,5 @@ SkySend is a open-source, fully decentralized web application that allows users 
 
 ## Learn More
 
-* [SkySend Website](https://skysend.hns.fileportal.org)
+* [SkySend Website](https://skysend.hns.fileportal.org/)
 * [SkySend GitHub](https://github.com/redsolver/skysend)

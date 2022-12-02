@@ -22,9 +22,9 @@ Skynet itself is home to a quickly growing ecosystem of decentralized Web 3 appl
 
 ## Learn More
 
-* [Skynet Labs Website](https://skynetlabs.com)
-* [Skynet Labs Documentation](https://docs.skynetlabs.com)
-* [Skynet Labs Blog](https://blog.sia.tech)
+* [Skynet Labs Website](https://skynetlabs.com/)
+* [Skynet Labs Documentation](https://docs.skynetlabs.com/)
+* [Skynet Labs Blog](https://blog.sia.tech/)
 * [Skynet Labs Discord](https://discord.gg/SkynetLabs)
 * [Skynet Labs Twitter](https://twitter.com/SkynetLabs)
 

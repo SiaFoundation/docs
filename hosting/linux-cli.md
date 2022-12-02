@@ -2,7 +2,7 @@
 description: This section takes you through setting up a host using Linux CLI
 ---
 
-# Linux CLI
+# Siad - Linux CLI
 
 ### Step 1: Install Sia binaries
 
@@ -63,7 +63,7 @@ _For this guide we will be using the 5.5TiB storage drive listed as_ `/dev/sda`
 {% endhint %}
 
 {% hint style="danger" %}
-_This guide has been written assuming you have already formatted your storage device with the correct file system. If you have not done this already,_ [_please do so now_](../host-setup/advanced/formatting-storage.md#linux-cli)_._
+_This guide has been written assuming you have already formatted your storage device with the correct file system. If you have not done this already,_ [_please do so now_](host-setup/advanced/formatting-storage.md#linux-cli)_._
 {% endhint %}
 
 Now you will also need to get the unique `UUID` for the device you'd like to use. To do this run the following.
@@ -219,7 +219,7 @@ _It is recommended to have about 1000 Siacoin per TB._
 Set your minimum storage price.
 
 {% hint style="info" %}
-__[_Filebase_](../../layer-2-solutions/filebase/) _will only make contracts with hosts that have a storage price of 150SC or higher. Also_ [_Skynet Labs_](../../layer-2-solutions/skynet.md) _will not make contracts with hosts that have a storage price of 300SC or higher. Set your prices accordingly._
+__[_Filebase_](../layer-2-solutions/filebase/) _will only make contracts with hosts that have a storage price of 150SC or higher. Also_ [_Skynet Labs_](../layer-2-solutions/skynet.md) _will not make contracts with hosts that have a storage price of 300SC or higher. Set your prices accordingly._
 {% endhint %}
 
 ```

@@ -14,18 +14,41 @@ In an effort to promote these goals, please use the following as guidelines when
 
 The official assets include our logo and wordmark in a variety of high-quality formats, as well as the built with Sia logo for third-party projects.
 
-* [Sia\_Logo.png](https://sia.tech/assets/Sia\_Logo.png)
-* [Sia\_Logo.svg](https://sia.tech/assets/Sia\_Logo.svg)
-* [Sia\_Wordmark.png](https://sia.tech/assets/Sia\_Wordmark.png)
-* [Sia\_Wordmark.png](https://sia.tech/assets/Sia\_Wordmark.png)
-* [built-with-Sia-color.png](https://sia.tech/assets/built-with-Sia-color.png)
-* [built-with-Sia-color.svg](https://sia.tech/assets/built-with-Sia-color.svg)
-* [built-with-Sia-mono.png](https://sia.tech/assets/built-with-Sia-mono.png)
-* [build-with-Sia-mono.svg](https://sia.tech/assets/built-with-Sia-mono.svg)
+<div>
+
+<figure><img src="https://sia.tech/assets/Sia_Logo.png" alt=""><figcaption><p>Sia_Logo.png</p></figcaption></figure>
+
+ 
+
+<figure><img src="https://sia.tech/assets/Sia_Logo.svg" alt=""><figcaption><p>Sia_Logo.svg</p></figcaption></figure>
+
+ 
+
+<figure><img src="https://sia.tech/assets/Sia_Wordmark.png" alt=""><figcaption><p>Sia_Wordmark.png</p></figcaption></figure>
+
+ 
+
+<figure><img src="https://sia.tech/assets/Sia_Wordmark.svg" alt=""><figcaption><p>Sia_Wordmark.svg</p></figcaption></figure>
+
+ 
+
+<figure><img src="https://sia.tech/assets/built-with-Sia-color.png" alt=""><figcaption><p>built-with-Sia-color.png</p></figcaption></figure>
+
+ 
+
+<figure><img src="https://sia.tech/assets/built-with-Sia-color.svg" alt=""><figcaption><p>built-with-Sia-color.svg</p></figcaption></figure>
+
+ 
+
+<figure><img src="https://sia.tech/assets/built-with-Sia-mono.png" alt=""><figcaption><p>built-with-Sia-mono.png</p></figcaption></figure>
+
+ 
+
+<figure><img src="https://sia.tech/assets/built-with-Sia-mono.svg" alt=""><figcaption><p>built-with-Sia-mono.svg</p></figcaption></figure>
+
+</div>
 
 ## `built with Sia`
-
-![](../.gitbook/assets/brand-1.png)
 
 If you are building a project featuring Sia, use the `built with Sia` logo to showcase your integration. You can drop this in the app, website, or anywhere else that makes sense.
 

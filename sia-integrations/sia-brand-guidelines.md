@@ -1,6 +1,6 @@
 # Brand guidelines for Sia in your project or site
 
-Community and third-party \(non-core\) projects are an essential part of the Sia ecosystem. They expand the use-cases for Sia, and improve the network with solutions we aren’t actively working on.
+Community and third-party (non-core) projects are an essential part of the Sia ecosystem. They expand the use-cases for Sia, and improve the network with solutions we aren’t actively working on.
 
 We want users to be able to distinguish between core and non-core projects for a number of reasons:
 
@@ -12,7 +12,16 @@ In an effort to promote these goals, please use the following as guidelines when
 
 ## Official Sia assets
 
-[Get them here](https://gitlab.com/NebulousLabs/Sia/-/tree/master/doc/assets/community/sia). It includes our logo and wordmark in a variety of high-quality formats, as well as the built with Sia logo for third-party projects.
+The official assets include our logo and wordmark in a variety of high-quality formats, as well as the built with Sia logo for third-party projects.
+
+* [Sia\_Logo.png](https://sia.tech/assets/Sia\_Logo.png)
+* [Sia\_Logo.svg](https://sia.tech/assets/Sia\_Logo.svg)
+* [Sia\_Wordmark.png](https://sia.tech/assets/Sia\_Wordmark.png)
+* [Sia\_Wordmark.png](https://sia.tech/assets/Sia\_Wordmark.png)
+* [built-with-Sia-color.png](https://sia.tech/assets/built-with-Sia-color.png)
+* [built-with-Sia-color.svg](https://sia.tech/assets/built-with-Sia-color.svg)
+* [built-with-Sia-mono.png](https://sia.tech/assets/built-with-Sia-mono.png)
+* [build-with-Sia-mono.svg](https://sia.tech/assets/built-with-Sia-mono.svg)
 
 ## `built with Sia`
 
@@ -58,4 +67,3 @@ If you use the exact Sia logo or wordmark in any way, like to represent the fact
 When designing your own logo, feel free to draw from our color palette or create your own.
 
 We can't wait to see what you build! Be sure you let us know in [Discord](https://discord.gg/sia).
-

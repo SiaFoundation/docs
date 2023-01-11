@@ -75,7 +75,7 @@ There are several free DDNS services available, such as [NoIP.com](https://www.n
 
 ## The Process
 
-The process described below is specific to Sia UI. If you prefer to set up your host using command line only, [here](https://sky-guide.hns.siasky.net/guides/sia/linux-hosting.html) is a guide for Ubuntu.
+The process described below is specific to Sia UI. If you prefer to set up your host using command line only, [here](https://skynet.guide/guides/sia/linux-hosting.html) is a guide for Ubuntu.
 
 Open Sia and click on the **Host** tab on the left. This is where you can configure your host settings. The first thing you do is tell Sia where your storage folder is. This is a location on the storage device you want to use for hosting.
 

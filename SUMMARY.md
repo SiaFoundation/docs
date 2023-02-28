@@ -52,8 +52,10 @@
 ## Hosting
 
 * [About hosting on Sia](hosting/about-hosting-on-sia.md)
-* [How to host on Sia](hosting/how-to-host-on-sia.md)
 * [Hosting FAQ](hosting/hosting-faq.md)
+  * [Setup Guides](hosting/setup-guides/README.md)
+    * [Sia-UI - GUI](hosting/setup-guides/sia-ui.md)
+    * [Linux - CLI](hosting/setup-guides/siad-linux.md)
 
 ## Mining
 

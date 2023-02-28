@@ -1,4 +1,4 @@
-# How to Host on Sia
+# Setting up a Host with Sia-UI
 
 This section takes you through how to actually set up a Sia host.
 
@@ -28,7 +28,7 @@ Here is how you can take advantage of ReFS:
 2.	Create an NTFS partition on your new drive \(if this is a new drive\).
 3.	Convert your NTFS partition into ReFS.
 
-![](../.gitbook/assets/host-refs.jpg)
+![](../../.gitbook/assets/host-refs.jpg)
 
 ## Disabling Automatic Updates \(Windows Only, Optional\)
 
@@ -79,17 +79,17 @@ The process described below is specific to Sia UI. If you prefer to set up your 
 
 Open Sia and click on the **Host** tab on the left. This is where you can configure your host settings. The first thing you do is tell Sia where your storage folder is. This is a location on the storage device you want to use for hosting.
 
-![](../.gitbook/assets/host-start.jpg)
+![](../../.gitbook/assets/host-start.jpg)
 
 Click **Add a folder**, then select a location. You can choose a drive \(like D:\\\\\) to use an entire empty drive or partition, or you can pick a specific folder on a drive. Sia will create one large file in the location you select that allocates the amount of storage you choose.
 
-![](../.gitbook/assets/host-add-folder.jpg)
+![](../../.gitbook/assets/host-add-folder.jpg)
 
 Tell Sia how much space you want to allocate to hosting, in megabytes. Entering a value lower than 32 GB will provide a warning since as a host you're graded on having a lot of available storage. Set at least 4 TB if you can. You can type in a value if you want to set a value higher than what the slider allows.
 
 ## Host Settings
 
-![](../.gitbook/assets/host-settings.jpg)
+![](../../.gitbook/assets/host-settings.jpg)
 
 ### Max Duration
 
@@ -185,7 +185,7 @@ If you want to specify a different location for the registry file \(default is i
 
 Click the slider at the top of the Host window next to the Announce Host button so it appears green. This will turn on your host for accepting new storage contracts from renters. Then, unless you used DDNS in a previous step, click **Announce Host** to the Sia network so that renters can find you.
 
-![](../.gitbook/assets/host-announce.jpg)
+![](../../.gitbook/assets/host-announce.jpg)
 
 ### If You Signed Up for a DDNS Service
 

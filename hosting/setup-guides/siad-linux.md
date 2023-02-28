@@ -1,10 +1,10 @@
 # Linux - CLI
 
-This is a technical guide to setting up a new host from scratch on Ubuntu server using only the terminal. To learn more about the basics of Sia hosting read our [hosting article](../introduction.html). This guide should be similar for any other Linux distributions.
+This is a technical guide to setting up a new host from scratch on Ubuntu server using only the terminal. To learn more about the basics of Sia hosting read our [hosting article](../about-hosting-on-sia.md). This guide should be similar for any other Linux distributions.
 
 ## Getting Sia
 
-Install the latest version of siad by going to the official website and downloading the latest zip file of Sia Daemon for your operating system from [https://sia.tech/get-started](https://sia.tech/get-started). This guide has been written for v1.5.9.
+Install the latest version of `siad` by going to the official website ([https://sia.tech/get-started](https://sia.tech/get-started)) and downloading the latest binary for your operating system. This guide has been written for v1.5.9.
 
 <figure><img src="../../.gitbook/assets/sia-website-siad-downloads.png" alt=""><figcaption></figcaption></figure>
 

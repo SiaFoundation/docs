@@ -16,29 +16,77 @@ Environment variables are accessible by any program on your computer. If you sti
 
 Everything we do here won't matter much if you physically need to reboot your machine after it loses power. At that point, you could just launch Sia again on your own. This setting will allow your computer to reboot automatically anytime its power is interrupted.
 
-[Windows and Linux](https://www.technewsworld.com/story/78930.html) \(done through your BIOS, complete with instructions for connecting to an APC for smooth power-downs and startups\)
-
-[Mac](https://www.wikihow.com/Make-Your-Mac-Restart-Automatically-After-a-Power-Failure) \(only applicable to certain models\)
+* [Windows and Linux](https://www.technewsworld.com/story/78930.html) (done through your BIOS, complete with instructions for connecting to an APC for smooth power-downs and startups)
+* [Mac](https://www.wikihow.com/Make-Your-Mac-Restart-Automatically-After-a-Power-Failure) (only applicable to certain models)
 
 ## Set your user to automatically login on startup
 
 Your computer needs to automatically log in to your user after it reboots. Follow these steps depending on your OS.
 
-[Windows](https://www.groovypost.com/howto/automatically-sign-in-windows-10/)
-
-[Mac](https://support.apple.com/en-us/HT201476)
-
-[Linux Ubuntu](https://help.ubuntu.com/stable/ubuntu-help/user-autologin.html.en), [other distros](http://www.linfo.org/automatic_login.html)
+* [Windows](https://www.groovypost.com/howto/automatically-sign-in-windows-10/)
+* [Mac](https://support.apple.com/en-us/HT201476)
+* [Linux - Ubuntu](https://help.ubuntu.com/stable/ubuntu-help/user-autologin.html.en)
+* [Linux - other distros](http://www.linfo.org/automatic\_login.html)
 
 ## Set Sia as a startup item
 
-Now that your computer will automatically login after startup, you need to make sure that Sia will launch on its own after that happens.
+Now that your computer will automatically login after startup, you need to make sure that Sia will launch on its own after that happens. Follow one of these options:
 
-[Windows](https://support.microsoft.com/en-us/help/4026268/windows-10-change-startup-apps)
+* Visit one of the following links to learn how to setup Sia as a startup item. Once all these steps are set, reboot your computer and verify that your account logs in, Sia starts, and your wallet unlocks automatically.
+  * &#x20;[Windows](https://support.microsoft.com/en-us/help/4026268/windows-10-change-startup-apps)
+  * [Mac](https://support.apple.com/kb/PH25590?locale=en\_US)
+  * [Linux - Ubuntu](https://www.howtoforge.com/tutorial/how-to-use-startup-applications-on-ubuntu/)
+  * [Linux - other distros](https://www.simplified.guide/linux/automatically-run-program-on-startup)
+* If you are using Linux Ubuntu and are comfortable with the command line, you can follow the systemd service setup guide featured in the next section.
 
-[Mac](https://support.apple.com/kb/PH25590?locale=en_US)
+### Creating a systemd service on Ubuntu
 
-[Linux Ubuntu](https://www.howtoforge.com/tutorial/how-to-use-startup-applications-on-ubuntu/), [other distros](https://www.simplified.guide/linux/automatically-run-program-on-startup)
+By creating a systemd file we can start Sia whenever the computer is booted instead of starting it manually. Run the following command to create a new systemd unit file:
 
-Once all these steps are set, reboot your computer and verify that your account logs in, Sia starts, and your wallet unlocks automatically.
+```sh
+$ sudo nano /etc/systemd/system/siad.service
+```
 
+Then, modify the following snippet to fit your host and then paste it into the file. You will want to change `asecurewalletpassword` to a more secure wallet password.
+
+```
+[Unit]
+Description=siad
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/siad -M gctwh -d /home/ubuntu/siad
+ExecStop=/usr/local/bin/siac stop
+Restart=always
+RestartSec=15
+User=ubuntu 
+Environment="SIA_WALLET_PASSWORD=asecurewalletpassword"
+LimitNOFILE=900000
+
+[Install]
+WantedBy=multi-user.target
+Alias=siad.service
+```
+
+```sh
+$ sudo systemctl start siad
+$ sudo systemctl enable siad
+```
+
+Your Sia node should now be running and accessible. You can try out a few commands to test it:
+
+```sh
+$ siac consensus
+Synced: No
+Height: 0
+Progress (estimated): 0.0%
+```
+
+```sh
+$ siac gateway
+Address: localhost:9981
+Active peers: 0
+Max download speed: 0
+Max upload speed: 0
+```

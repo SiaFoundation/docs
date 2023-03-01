@@ -10,7 +10,7 @@ Sia is a decentralized cloud storage platform secured by blockchain technology. 
 
 Your data is truly private and gets stored across the globe to eliminate any single point of failure and ensure the highest possible uptime. Since you hold the keys, you own your data. No outside company can access or control your files.
 
-Data cannot be de-platformed. Files can not be hacked.
+Data cannot be de-platformed. Files can not be hacked. Test
 
 ## Sia is here for good
 

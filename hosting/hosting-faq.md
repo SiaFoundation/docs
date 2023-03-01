@@ -57,7 +57,7 @@ Once you've switched off new contracts, you can track the progress of any curren
 
 The Sia client maintains additional information on your contracts as a host and your renters' files in an internal location. This information is known as host metadata and is required in order to provide your renters with access to their data on the Sia cloud storage network. Without it, it's like losing renter data - you'd have no way to know which data belongs to who in your host storage folders.
 
-See more about backing up in [How to host on Sia](broken-reference).
+See more about backing up in [Sia-UI hosting guide](sia-ui.md).
 
 ## **My public IP address is dynamic, and my Sia host goes Offline when it changes.**
 

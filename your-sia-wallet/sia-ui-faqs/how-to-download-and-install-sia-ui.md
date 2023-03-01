@@ -7,11 +7,11 @@ Learn how to install Sia-UI on Windows, Linux, or MacOS.
 * A desktop or notebook computer with a decent amount of available storage space. As of January 2021, you need about 24 GB for the Sia blockchain to download. This file will only get larger, so allocate some space to be able to grow with Sia.
 * A basic knowledge of your computer's file structure.
 
-### Find the right download for you <a id="find_the_right_download_for_you"></a>
+### Find the right download for you <a href="#find_the_right_download_for_you" id="find_the_right_download_for_you"></a>
 
-Go to [our downloads page](http://sia.tech/get-started). You'll see two options, Sia-UI and Sia Daemon. Sia-UI is our user-friendly app, while Sia Daemon is for users comfortable with command-line interfaces. Download Sia-UI for your operating system by clicking the correct OS name.
+Go to [our official downloads page](http://sia.tech/get-started). You'll see two options, Sia-UI and Sia Daemon. Sia-UI is our user-friendly app, while Sia Daemon is for users comfortable with command-line interfaces. Download Sia-UI for your operating system by clicking the correct OS name.
 
-![](../../.gitbook/assets/install-1.png)
+<figure><img src="../../.gitbook/assets/site-get-started.png" alt=""><figcaption></figcaption></figure>
 
 Now either continue straight through to installing on [Windows or Linux](how-to-download-and-install-sia-ui.md#installation-windows-and-linux), or skip ahead to install on [MacOS](how-to-download-and-install-sia-ui.md#installation-macos).
 
@@ -63,7 +63,7 @@ When you first attempt to open Sia-UI, you'll likely see a warning that you are 
 
 ![](../../.gitbook/assets/install-9.png)
 
-As of macOS 10.15 Catalina, you may be notified that Sia-UI may contain malicious software. **Sia-UI is safe to use**, but since it hasn't been pre-verified with Apple they give a warning to be extra safe. To install, either go to System Preferences &gt; Security and Privacy, and click Allow, or right-click the app icon and choose Open.
+As of macOS 10.15 Catalina, you may be notified that Sia-UI may contain malicious software. **Sia-UI is safe to use**, but since it hasn't been pre-verified with Apple they give a warning to be extra safe. To install, either go to System Preferences > Security and Privacy, and click Allow, or right-click the app icon and choose Open.
 
 ![](../../.gitbook/assets/install-10.png)
 
@@ -82,4 +82,3 @@ You might see one more message letting you know that Sia-UI is from an unidentif
 Sia-UI is now ready to go!
 
 [First time installing? Set up a wallet.](how-to-make-a-new-wallet-in-sia-ui.md)
-

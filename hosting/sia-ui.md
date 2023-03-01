@@ -1,4 +1,4 @@
-# Setting up a Host with Sia-UI
+# Hosting with the Sia-UI GUI
 
 This section takes you through how to actually set up a Sia host.
 
@@ -14,35 +14,35 @@ Not meeting these requirements can have a range of effects: you may be unable to
   * Create a Sia wallet
   * [Get Siacoins](../get-started-with-sia/how-to-buy-siacoins.md)
 * **Storage space:** Spare hard drive space to rent out, ideally greater than 4 TB. It doesn’t have to be an SSD: an HDD would do just fine and also be much cheaper.
-* **Sia software:** You can choose between Sia UI \(GUI\) and Sia Client, download it [here](https://sia.tech/get-started).
+* **Sia software:** You can choose between Sia UI (GUI) and the `siad` CLI, download either [here](https://sia.tech/get-started).
 
-## Preparing Your Storage Drive\(s\) \(Windows Only, Optional\)
+## Preparing Your Storage Drive(s) (Windows Only, Optional)
 
-The NTFS file system of Windows does not support sparse files, which causes downtime when adding large \(several TB\) storage folders. You can format your storage drive using ReFS before adding it to Sia to avoid this downtime.
+The NTFS file system of Windows does not support sparse files, which causes downtime when adding large (several TB) storage folders. You can format your storage drive using ReFS before adding it to Sia to avoid this downtime.
 
 Unfortunately, ReFS is not available on all Windows releases. It is currently available on Windows 10 Server, Windows 10 Enterprise, and Windows 10 Pro for Workstations. Of these, Windows 10 Pro for Workstations is the most available solution: it’s quite easy to upgrade from Windows 10 Pro.
 
 Here is how you can take advantage of ReFS:
 
-1.	Right-click on your Windows icon and select Disk Management.
-2.	Create an NTFS partition on your new drive \(if this is a new drive\).
-3.	Convert your NTFS partition into ReFS.
+1. Right-click on your Windows icon and select Disk Management.
+2. Create an NTFS partition on your new drive (if this is a new drive).
+3. Convert your NTFS partition into ReFS.
 
-![](../../.gitbook/assets/host-refs.jpg)
+![](../.gitbook/assets/host-refs.jpg)
 
-## Disabling Automatic Updates \(Windows Only, Optional\)
+## Disabling Automatic Updates (Windows Only, Optional)
 
 Windows updates often bring important security improvements, but if they happen when Windows wants it, and not you, it becomes a nightmare. Your PC can reboot without you knowing it, or the new software may decide that Sia is a virus and remove it. So, it is better to disable automatic updates.
 
 However, it’s not as easy as it sounds. You can stop the Windows Update service, but it will start again after a reboot. The solution is to edit the Group Policy.
 
-1.	Right-click on your **Windows** icon and select **Run**.
-2.	Enter `gpedit.msc` and click **OK**.
-3.	Go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update**.
-4.	Double-click on **Configure Automatic Updates** \(on the right-hand side\).
-5.	Click on **Disabled**, then **Apply**, then **OK**.
+1. Right-click on your **Windows** icon and select **Run**.
+2. Enter `gpedit.msc` and click **OK**.
+3. Go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update**.
+4. Double-click on **Configure Automatic Updates** (on the right-hand side).
+5. Click on **Disabled**, then **Apply**, then **OK**.
 
-## Forwarding Ports \(Required\)
+## Forwarding Ports (Required)
 
 Users number one issue when setting up a new host is port forwarding. To host, you should forward TCP ports `:9981` through `:9984`. You can see if your host has forwarded its port from this website: [http://canyouseeme.org/](http://canyouseeme.org/)
 
@@ -52,10 +52,10 @@ Do not forward port 9980, as this represents a security threat. You'll need to a
 
 ### What Each Port Does
 
-* :9981 \(consensus p2p network\)
-* :9982 \(renter-host-protocol-v2\)
-* :9983 \(rhp-v3\)
-* :9984 \(rhp-v3-websocket\)
+* :9981 (consensus p2p network)
+* :9982 (renter-host-protocol-v2)
+* :9983 (rhp-v3)
+* :9984 (rhp-v3-websocket)
 
 If your port is not forwarded, it's probably because your router does not support UPnP. Unfortunately, that means you need to go into the configuration yourself and do it manually. There are some great guides to help you here: [https://portforward.com/](https://portforward.com/)
 
@@ -63,11 +63,11 @@ Renters know to contact your host from the network address in the host announcem
 
 Finally, if you have a dynamic IP address, you should strongly consider setting up something like DynDNS, which allows you to announce a hostname and then manages the dynamic IP address issue for you.
 
-## Set Up Dynamic DNS \(DDNS\) \(Optional\)
+## Set Up Dynamic DNS (DDNS) (Optional)
 
-Most residential Internet services assign subscribers a dynamic public IP address which may change at a set duration, or when rebooting your Internet modem. This can be a problem because when running a service like a Sia host, renters find you by your public IP address. The host tracks your current IP address and automatically re-announces every time that the IP address changes. If you have manually set the host's net address \(which can be IPv4, IPv6, or a full hostname like `myhost.sia.tech`\), then the host will stop tracking your IP address and instead just use the one you have set manually.
+Most residential Internet services assign subscribers a dynamic public IP address which may change at a set duration, or when rebooting your Internet modem. This can be a problem because when running a service like a Sia host, renters find you by your public IP address. The host tracks your current IP address and automatically re-announces every time that the IP address changes. If you have manually set the host's net address (which can be IPv4, IPv6, or a full hostname like `myhost.sia.tech`), then the host will stop tracking your IP address and instead just use the one you have set manually.
 
-You can go a step further and mitigate this issue by signing up for a Dynamic DNS \(DDNS\) service. If you have a static public IP address, you don't need to worry about this step. If you're not sure whether or not you have a static IP address, it won't hurt to set up DDNS anyway.
+You can go a step further and mitigate this issue by signing up for a Dynamic DNS (DDNS) service. If you have a static public IP address, you don't need to worry about this step. If you're not sure whether or not you have a static IP address, it won't hurt to set up DDNS anyway.
 
 DDNS services work by assigning you a subdomain or URL, and having you run a small program or script on a device on your network - your Sia host computer will work fine. Some routers also have built-in DDNS support for certain DDNS services. When your public IP address changes, the DDNS client detects the change and updates your DDNS subdomain or URL with your new IP address. You can use your DDNS address to announce your Sia host, and renters will always be able to find you as long as you have DDNS set up and the IP update software running.
 
@@ -79,17 +79,17 @@ The process described below is specific to Sia UI. If you prefer to set up your 
 
 Open Sia and click on the **Host** tab on the left. This is where you can configure your host settings. The first thing you do is tell Sia where your storage folder is. This is a location on the storage device you want to use for hosting.
 
-![](../../.gitbook/assets/host-start.jpg)
+![](../.gitbook/assets/host-start.jpg)
 
-Click **Add a folder**, then select a location. You can choose a drive \(like D:\\\\\) to use an entire empty drive or partition, or you can pick a specific folder on a drive. Sia will create one large file in the location you select that allocates the amount of storage you choose.
+Click **Add a folder**, then select a location. You can choose a drive (like D:\\\\) to use an entire empty drive or partition, or you can pick a specific folder on a drive. Sia will create one large file in the location you select that allocates the amount of storage you choose.
 
-![](../../.gitbook/assets/host-add-folder.jpg)
+![](../.gitbook/assets/host-add-folder.jpg)
 
 Tell Sia how much space you want to allocate to hosting, in megabytes. Entering a value lower than 32 GB will provide a warning since as a host you're graded on having a lot of available storage. Set at least 4 TB if you can. You can type in a value if you want to set a value higher than what the slider allows.
 
 ## Host Settings
 
-![](../../.gitbook/assets/host-settings.jpg)
+![](../.gitbook/assets/host-settings.jpg)
 
 ### Max Duration
 
@@ -177,7 +177,7 @@ Registry settings can only be changed in `siac` or using the Terminal in Sia-UI.
 
 `host config registrysize 1GB`
 
-If you want to specify a different location for the registry file \(default is in your host folder\), you can use the command `host config customregistrypath <value>`, e.g.
+If you want to specify a different location for the registry file (default is in your host folder), you can use the command `host config customregistrypath <value>`, e.g.
 
 `host config customregistrypath “D:\\Sia”`
 
@@ -185,15 +185,15 @@ If you want to specify a different location for the registry file \(default is i
 
 Click the slider at the top of the Host window next to the Announce Host button so it appears green. This will turn on your host for accepting new storage contracts from renters. Then, unless you used DDNS in a previous step, click **Announce Host** to the Sia network so that renters can find you.
 
-![](../../.gitbook/assets/host-announce.jpg)
+![](../.gitbook/assets/host-announce.jpg)
 
 ### If You Signed Up for a DDNS Service
 
-You need to announce your host using your [DDNS hostname](how-to-host-on-sia.md#set-up-dynamic-dns-ddns-optional) in order for it to work. You can also announce a specific IP address. Click on the **Terminal** `>` icon at the top of the Sia-UI window, and type:
+You need to announce your host using your [DDNS hostname](setup-guides/how-to-host-on-sia.md#set-up-dynamic-dns-ddns-optional) in order for it to work. You can also announce a specific IP address. Click on the **Terminal** `>` icon at the top of the Sia-UI window, and type:
 
 `host announce [DDNS hostname or IP]:9982`
 
-substituting \[_DDNS hostname or IP_\] with your unique DDNS hostname that you received from your DDNS service or the IP you want to announce. Make sure to include `:9982` afterward and without a space, as this specifies which port renters can contact you through and is the default for Sia.
+substituting \[_DDNS hostname or IP_] with your unique DDNS hostname that you received from your DDNS service or the IP you want to announce. Make sure to include `:9982` afterward and without a space, as this specifies which port renters can contact you through and is the default for Sia.
 
 {% hint style="info" %}
 Announcing your host is a transaction that will appear in your Transaction list in your wallet.
@@ -201,30 +201,30 @@ Announcing your host is a transaction that will appear in your Transaction list 
 
 Read on for some additional important things to take care of to get the most out of your host.
 
-## Auto-Unlock Your Sia Wallet \(Optional\)
+## Auto-Unlock Your Sia Wallet (Optional)
 
 What happens if your computer shuts down and you're not there to turn it back on? Setting your computer to automatically reboot, start Sia, and unlock your wallet can get you back up and running to minimize downtime.
 
 Read [this page](../your-sia-wallet/for-advanced-users/how-to-automatically-restart-and-unlock-sia.md) to set it up.
 
-## Check Host Configuration \(Optional\)
+## Check Host Configuration (Optional)
 
 Once you are set up, you can be proactive about making sure everything is set up correctly. Use the [Sia Central Host Troubleshooter](https://troubleshoot.siacentral.com) to check your host configuration and make sure it can form contracts. Change your host address if necessary to your host's actual public IP or DDNS address.
 
 If Sia Central discovers issues when connecting to your host, wait an hour or two and try again - the announcement can take a little while to reach the Sia network.
 
-## Set Up Host Metadata Backups \(Recommended\)
+## Set Up Host Metadata Backups (Recommended)
 
 Sia keeps data pertaining to your hosting operation in two places:
 
-* The storage folders you're renting out, where uploaded renter data is stored 
-* Internal host metadata files that keep track of your contracts with renters and what's where in your storage folders 
+* The storage folders you're renting out, where uploaded renter data is stored
+* Internal host metadata files that keep track of your contracts with renters and what's where in your storage folders
 
 The first type of data, uploaded renter data, isn't very practical to back up unless you have additional hard drives lying around with a capacity equivalent to what you're selling on Sia. In that case, you'd be better off setting up a mirrored volume with multiple disks to prevent data loss if a drive fails.
 
-The second type of data, internal host metadata, is equally important. In rare instances, users have experienced data corruption if the host was not shut down gracefully \(i.e., a power outage or crash\). Without this metadata, your host cannot operate. It is equivalent to losing all of your renter's data on all storage folders, resulting in losing your risked collateral. For this reason, it is essential to store the host's metadata redundantly \(i.e., RAID1\) or regularly back it up. Even if you restore a copy of the metadata which is a few days old, you only stand to lose collateral for data uploaded to your host over those few days.
+The second type of data, internal host metadata, is equally important. In rare instances, users have experienced data corruption if the host was not shut down gracefully (i.e., a power outage or crash). Without this metadata, your host cannot operate. It is equivalent to losing all of your renter's data on all storage folders, resulting in losing your risked collateral. For this reason, it is essential to store the host's metadata redundantly (i.e., RAID1) or regularly back it up. Even if you restore a copy of the metadata which is a few days old, you only stand to lose collateral for data uploaded to your host over those few days.
 
-Host metadata is located in the `host` folder in Sia's internal data files, which can be found in the Sia-UI by clicking the **About \(i\) icon &gt; Open Data Folder** or in these locations:
+Host metadata is located in the `host` folder in Sia's internal data files, which can be found in the Sia-UI by clicking the **About (i) icon > Open Data Folder** or in these locations:
 
 * **Linux:** `$HOME/.config/Sia-UI/sia/`
 * **Mac:** `$HOME/Library/Application Support/Sia-UI/sia/`
@@ -234,7 +234,7 @@ It is recommended to set up a backup schedule to regularly back up your `host` f
 
 In addition, it is recommended to backup your `siamux` folder located in the same place as your `host` folder. This folder keeps your host’s public key, which uniquely identifies your host on Sia network. It’s sufficient to back this folder up just once.
 
-## Advanced Monitoring \(Optional\)
+## Advanced Monitoring (Optional)
 
 A detailed itemization of earned coins and expected revenues, together with more parameters and statistics, can be checked with the command `siac host -v` in the Terminal.
 
@@ -243,12 +243,12 @@ In the output of the command `siac host -v` you can see some strange units toget
 * **Currency units.** You already know SC, which equals to 1 Siacoin. Here are some other units which are used by Sia:
   * 1 MS = 1,000,000 SC
   * 1 KS = 1,000 SC
-  *	1 mS = 0.001 SC
-  *	1 uS = 0.000,001 SC
-  *	1 nS = 0.000,000,001 SC
-  *	1 H \(Hasting\) is the smallest currency unit in Sia and equals to 1E-24 SC
+  * 1 mS = 0.001 SC
+  * 1 uS = 0.000,001 SC
+  * 1 nS = 0.000,000,001 SC
+  * 1 H (Hasting) is the smallest currency unit in Sia and equals to 1E-24 SC
 * **Duration units**
-  * blocks \(b\)
-  *	hours \(h\); 1 hour is approximately 6 blocks
-  *	days \(d\); 1 day is 144 blocks
-  *	weeks \(w\); 1 week is 1008 blocks
+  * blocks (b)
+  * hours (h); 1 hour is approximately 6 blocks
+  * days (d); 1 day is 144 blocks
+  * weeks (w); 1 week is 1008 blocks

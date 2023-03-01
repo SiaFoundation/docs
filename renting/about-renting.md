@@ -56,7 +56,7 @@ Setting your allowance happens before uploading files, and Sia starts to automat
 
 ## **Uploading files**
 
-Uploading files is done using the Sia software which can be found on our [downloads](https://sia.tech/get-started) page.
+Uploading files is done using the Sia software which can be found on our [official downloads](https://sia.tech/get-started) page.
 
 * Sia UI, the Sia app built for casual users. [how-to-download-and-install-sia-ui.md](../your-sia-wallet/sia-ui-faqs/how-to-download-and-install-sia-ui.md "mention").
 * `siad`, the Sia daemon built for technical users who prefer to use a CLI (Command Line Interface).

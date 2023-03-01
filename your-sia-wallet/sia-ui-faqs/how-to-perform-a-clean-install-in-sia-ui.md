@@ -12,7 +12,7 @@ During a clean install, two primary things are deleted:
 But don’t worry, restoring your balance of Siacoins is easy as long as you have your original wallet seed.
 
 {% hint style="warning" %}
-Performing a clean install will remove all your renting and hosting info as well. So if you've uploaded data to Sia or are hosting other's files, this will eliminate those contracts and should be used as a last resort. If you're not comfortable doing this, [contact support](mailto:hello@sia.tech) or [visit our Discord](https://discord.gg/sia) and we might be able to guide you through a specific fix.
+Performing a clean install will remove all your renting and hosting info as well. So if you've uploaded data to Sia or are hosting other's files, this will eliminate those contracts and should be used as a last resort. If you're not comfortable doing this, contact our team on[ Discord](https://sia.tech/discord) and we might be able to guide you through a specific fix.
 {% endhint %}
 
 ## Your Sia wallet seed
@@ -81,7 +81,7 @@ On macOS, Sia-UI can be found in the Applications folder. Trash it.
 
 On Windows and Linux, you can run the uninstaller found with the Program file - `user/AppData/Local/Programs/Sia-UI/` on Windows.
 
-[Learn how to download and install Sia-UI\*\*.\*\*](how-to-download-and-install-sia-ui.md)\*\*\*\*
+[Learn how to download and install Sia-UI](how-to-download-and-install-sia-ui.md).
 
 ## Setting Sia-UI up again
 
@@ -97,4 +97,4 @@ Sia-UI will then scan the blockchain for any Siacoin associated with your seed. 
 
 ## Questions?
 
-If you have any issues with this process, let us know! Send an email to [hello@sia.tech](mailto:hello@sia.tech) and we’ll get back to you as soon as we can.
+If you're having trouble, we're here to help. Come talk to us on our [Discord](https://sia.tech/discord) and post in the `#help` channel.

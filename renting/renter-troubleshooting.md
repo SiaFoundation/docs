@@ -152,7 +152,7 @@ cat siad/renter/siafiles/.siadir | python -m json.tool
 }
 ```
 
-Here is the aggregate metadata of your filesystem that the repair loop is going to use. If `aggregatehealth` is &lt;= 0.25 then your system is healthy, if it is &gt; 0.25 then it should be repairing.
+Here is the aggregate metadata of your filesystem that the repair loop is going to use. If `aggregatehealth` is <= 0.25 then your system is healthy, if it is > 0.25 then it should be repairing.
 
 If there is a large number of `aggregatenumstuckchunks` then slow uploads could be because all the work is relying on the stuck loop. In this case, you can try `siac renter unstuckall` to try and unmark those stuck chunks and allow for the repair loop to pick them up again.
 
@@ -164,5 +164,4 @@ Big things that you want to check for:
 * Do you have enough active contracts?
 * Do you have enough total contracts?
 
-Reference the [renter README](https://gitlab.com/NebulousLabs/Sia/blob/master/modules/renter/README.md) to get an understanding of how the upload should be happening to then understand if the logs in renter.log make sense or indicate an error.
-
+Reference the [renter README](https://github.com/SiaFoundation/siad/blob/master/modules/renter/README.md) to get an understanding of how the upload should be happening to then understand if the logs in renter.log make sense or indicate an error.

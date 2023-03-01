@@ -8,15 +8,15 @@ While this site can be updated by our users, a community never suffers from havi
 
 ### Submit your edits!
 
-You can edit these docs by submitting a proposal in the [GitHub repo](https://github.com/NebulousLabs/Sia-Support-Docs). The simplest way is to click **Edit on GitHub** which appears in the upper right corner of every page.
+You can edit these docs by submitting a proposal in the [GitHub repo](https://github.com/SiaFoundation/docs). The simplest way is to click **Edit on GitHub** which appears in the upper right corner of every page.
 
-![](../.gitbook/assets/intro-1.png)
+<figure><img src="../.gitbook/assets/docs-edit-on-github.png" alt=""><figcaption><p>Edit on Github</p></figcaption></figure>
 
 You'll be taken to GitHub, which is a website that lets multiple people collaborate on code. The code, in this case, is our support document.
 
 Login or create a GitHub account, then click **Edit the file in your fork of this project**.
 
-![](../.gitbook/assets/intro-2.png)
+<figure><img src="../.gitbook/assets/github-fork.png" alt=""><figcaption></figcaption></figure>
 
 Because you're contributing, you're not directly editing the file. This helps prevent people from vandalizing the site. You're making a fork of the support docs, which is your own little version of them where can you make any edits you want.
 
@@ -30,6 +30,6 @@ This sends it to us. It won't be live right away – we have to review and appro
 
 Couldn’t find your answer here? Don’t worry, we have more support options for you.
 
-Join the #help channel in [the Sia Discord server.](https://discord.gg/sia) We have a huge community that loves helping users with their issues.
+Join the #help channel in [the Sia Discord server.](https://sia.tech/discord) We have a huge community that loves helping users with their issues.
 
 You can also [send us an email.](mailto:hello@sia.tech) We’ll respond as soon as we can.

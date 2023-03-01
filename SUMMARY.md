@@ -52,9 +52,8 @@
 ## Hosting
 
 * [About hosting on Sia](hosting/about-hosting-on-sia.md)
-* [Setup Guides](hosting/setup-guides/README.md)
-  * [Sia-UI - GUI](hosting/setup-guides/sia-ui.md)
-  * [Linux - CLI](hosting/setup-guides/siad-linux.md)
+* [Hosting with the Sia-UI GUI](hosting/sia-ui.md)
+* [Hosing with the siad CLI on Linux](hosting/siad-linux.md)
 * [Hosting FAQ](hosting/hosting-faq.md)
 
 ## Mining

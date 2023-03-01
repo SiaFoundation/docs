@@ -24,7 +24,7 @@ No special libraries are required for installation.
 
 ## Review our API documentation
 
-[Sia API docs](https://sia.tech/docs/)
+[Sia API docs](https://api.sia.tech)
 
 ## Setting up Sia
 

@@ -4,7 +4,7 @@
 
 When a blockchain hardforks, a new version of the blockchain is created while the old is left behind. This typically happens at a certain block height.
 
-For example, [Sia is forking](navigating-the-2021-sia-hardfork.md) around February 3rd, 2021. When Sia forks, it will occur at block 298,000 and means that we now have a new chain that the Sia team will be supporting. There's also the non-fork chain that can be maintained by a separate group if they want. Here's a visual representation of the upcoming Sia fork.
+For example, [Sia forked](navigating-the-2021-sia-hardfork.md) around February 3rd, 2021. The fork occurred at block 298,000 and means that we now have a new chain that the Sia team will be supporting. There's also the non-fork chain that could be maintained by a separate group if anyone wanted to. Here's a visual representation.
 
 ![](../.gitbook/assets/sia-fork-path-2021.png)
 

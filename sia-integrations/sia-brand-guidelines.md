@@ -89,4 +89,4 @@ If you use the exact Sia logo or wordmark in any way, like to represent the fact
 
 When designing your own logo, feel free to draw from our color palette or create your own.
 
-We can't wait to see what you build! Be sure you let us know in [Discord](https://discord.gg/sia).
+We can't wait to see what you build! Be sure you let us know in [Discord](https://sia.tech/discord).

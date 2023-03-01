@@ -53,53 +53,44 @@ At this point, you're ready to install apps on your Ledger device. Remember to s
 
 _Now we'll install the Sia app onto your Ledger hardware wallet._
 
-1. Open the **Manager** in Ledger Live.
+1.  Open the **Manager** in Ledger Live.
 
-![](../.gitbook/assets/nanox-manager.png)
+    ![Ledger manager](../.gitbook/assets/nanox-manager.png)
+2. Connect and unlock your Ledger device via USB. You will be prompted on the device to allow the manager.
+3.  Search for Sia in the app catalog.
 
-1. Connect and unlock your Ledger device via USB. You will be prompted on the device to allow the manager.
-2. Search for Sia in the app catalog.
-
-![](../.gitbook/assets/nanox-sia.png)
-
-1. Click the **Install** button. Your device will display **Processing...**
-2. When the main menu reappears, the Sia app has been successfully installed.
+    ![Ledger app catalog](../.gitbook/assets/nanox-sia.png)
+4. Click the **Install** button. Your device will display **Processing...**
+5. When the main menu reappears, the Sia app has been successfully installed.
 
 ## Wallet Setup
 
 Sia Central's web wallet is a lite, non-custodial wallet that allows you to send and receive Siacoin without downloading the blockchain. After the Ledger wallet is imported, your balance can be viewed almost immediately.
 
 1. Access the wallet at https://wallet.siacentral.com
-2. If you have never used the wallet before you will be prompted to set a password. This password is used to encrypt your data and is required to unlock your wallets in the future.
+2.  If you have never used the wallet before you will be prompted to set a password. This password is used to encrypt your data and is required to unlock your wallets in the future.
 
-![](../.gitbook/assets/lite-wallet-set-password.png)
+    ![Sia Central wallet](../.gitbook/assets/lite-wallet-set-password.png)
+3.  Create a new wallet
 
-1. Create a new wallet
+    ![Sia Central create Ledger wallet](../.gitbook/assets/lite-wallet-create-ledger.png)
+4.  Click **Ledger Wallet** to add a new Ledger wallet.
 
-![](../.gitbook/assets/lite-wallet-create-ledger.png)
+    You will now need to connect your device and import an address to send Siacoins to. When connecting you can choose either USB or Bluetooth depending on your browser's support.&#x20;
 
-1. Click **Ledger Wallet** to add a new Ledger wallet.
+    <figure><img src="../.gitbook/assets/lite-wallet-import-connect.png" alt=""><figcaption><p>Sia Central connect Ledger</p></figcaption></figure>
+5. Connect and unlock your device, then open the Sia app.
+6.  Click the green **Connect** button in the wallet. The status should change to "Connected". If you have never connected your device to this computer before, you may need to confirm the pairing on the device.
 
-You will now need to connect your device and import an address to send Siacoins to. When connecting you can choose either USB or Bluetooth depending on your browser's support. ![](../.gitbook/assets/lite-wallet-import-connect.png)
+    ![Sia Central connect Ledger pair](../.gitbook/assets/lite-wallet-import-pair.png)
+7.  Click the **Add Address** button. Confirm that you want to generate the address on your device by pressing the right button once, the screen should now read "Approve"; then press both buttons together to confirm.
 
-1. Connect and unlock your device, then open the Sia app.
-2. Click the green **Connect** button in the wallet. The status should change to "Connected".
+    ![Ledger generate address](../.gitbook/assets/nanox-generate-address.png)
+8. The address is now imported, verify that the address in the box matches the address displayed on the device. If you have used this device before your balance will update.
+9. Optionally, you can add additional addresses by clicking the **Add Address** button again and confirming on the device.
+10. After you have imported your addresses click the **Done** button at the bottom. You will now have a new wallet in your dashboard.
 
-{% hint style="info" %}
-If you have never connected your device to this computer before, you may need to confirm the pairing on the device.
-{% endhint %}
-
-![](../.gitbook/assets/lite-wallet-import-pair.png)
-
-1. Click the **Add Address** button. Confirm that you want to generate the address on your device by pressing the right button once, the screen should now read "Approve"; then press both buttons together to confirm.
-
-![](../.gitbook/assets/nanox-generate-address.png)
-
-1. The address is now imported, verify that the address in the box matches the address displayed on the device. If you have used this device before your balance will update.
-2. Optionally, you can add additional addresses by clicking the **Add Address** button again and confirming on the device.
-3. After you have imported your addresses click the **Done** button at the bottom. You will now have a new wallet in your dashboard.
-
-![](../.gitbook/assets/lite-wallet-balance-ledger.png)
+    ![Sia Central Ledger setup complete](../.gitbook/assets/lite-wallet-balance-ledger.png)
 
 ## Receiving Siacoin <a href="#receiving_siacoin" id="receiving_siacoin"></a>
 
@@ -136,27 +127,25 @@ Once you have entered the address and amount, click the **Send** button. You wil
 ![](../.gitbook/assets/lite-wallet-ledger-send-sign.png)
 
 1. Connect your Ledger device, unlock it, and open the Sia app.
-2. Press the green **Connect** button; the **Sign** button should enable.
+2.  Press the green **Connect** button; the **Sign** button should enable.
 
-![](../.gitbook/assets/lite-wallet-ledger-send-pair.png)
+    ![Sia Central connect Ledger](../.gitbook/assets/lite-wallet-ledger-send-pair.png)
+3. Click the green **Sign** button.
+4.  You will now need to confirm the transaction details on your device.
 
-1. Click the green **Sign** button.
-2. You will now need to confirm the transaction details on your device.
+    ![Confirm on Ledger device](../.gitbook/assets/nanox-send-confirm.png)
+5. Verify that the "SC Output #1", displayed on your device, matches your intended recipient. To confirm on the device: scroll to page 2 by pressing the right button, then press both buttons at the same time.
+6. Next the send amount will be displayed; verify it matches the amount you wish to send. Then confirm by pressing both buttons at the same time.
+7. Verify that "Miner Fee #1" matches the amount displayed on the screen. Confirm by pressing both buttons at the same time.
+8. After confirming the transaction details are correct, sign the transaction. Press the right button once; the device should now say "Approve". Press both buttons at the same time to confirm the signature.
+9.  In the lite wallet, the **Send** button should appear. To broadcast your transaction and send your Siacoin, press **Send**. The amount will be deducted from your balance and sent to your recipient.
 
-![](../.gitbook/assets/nanox-send-confirm.png)
-
-1. Verify that the "SC Output #1", displayed on your device, matches your intended recipient. To confirm on the device: scroll to page 2 by pressing the right button, then press both buttons at the same time.
-2. Next the send amount will be displayed; verify it matches the amount you wish to send. Then confirm by pressing both buttons at the same time.
-3. Verify that "Miner Fee #1" matches the amount displayed on the screen. Confirm by pressing both buttons at the same time.
-4. After confirming the transaction details are correct, sign the transaction. Press the right button once; the device should now say "Approve". Press both buttons at the same time to confirm the signature.
-5. In the lite wallet, the **Send** button should appear. To broadcast your transaction and send your Siacoin, press **Send**. The amount will be deducted from your balance and sent to your recipient.
-
-![](../.gitbook/assets/lite-wallet-ledger-send-confirm.png)
+    ![Sia Central send step](../.gitbook/assets/lite-wallet-ledger-send-confirm.png)
 
 If the transaction broadcast successfully, you should now have a new unconfirmed transaction in your transaction list deducting the amount + the transaction fee. Your recipient will have to wait between 10 minutes to an hour for the transaction to be confirmed. Depending on how many UTXOs are in your wallet; you may have to wait for at least one confirmation before being able to send another transaction.
 
-![](../.gitbook/assets/lite-wallet-ledger-unconfirmed-send.png)
+![Sia Central shows unconfirmed transaction](../.gitbook/assets/lite-wallet-ledger-unconfirmed-send.png)
 
 ## Additional help
 
-If you're having trouble, we're here to help. [Email our official support](mailto:hello@sia.tech), or [join our Discord server](https://discord.gg/sia) and post in the #core-dev or #app-dev channels.
+If you're having trouble, we're here to help. Come talk to us on our [Discord](https://sia.tech/discord) and post in the `#help` channel.

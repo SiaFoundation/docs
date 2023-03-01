@@ -8,7 +8,6 @@ Upon completion of its investigation, and as reflected in the settled order, the
 
 #### Links
 
-* [The Nebulous press release](https://sia.tech/settlement2019)
 * [Blog Post about Sia’s Two-Token Model](https://blog.sia.tech/the-ico-paradox-and-how-to-fix-it-3bfc61bc6eb8)
 * [SEC Settlement](https://www.sec.gov/litigation/admin/2019/33-10715.pdf)
 * [SEC Administrative Summary](https://www.sec.gov/enforce/33-10715-s)
@@ -120,4 +119,3 @@ Sianotes were sold for Bitcoin and issued on the NXT Asset Exchange.
 The SEC has designated Siafunds as securities according to United States laws. If you purchased Sianotes in the 2014 offering and exchanged them for Siafunds, we recommend that you research the applicable securities laws in your country.
 
 If you are based in the United States, you may be required to be an accredited investor to buy or sell Siafunds. We recommend consulting with an attorney.
-

@@ -1,12 +1,12 @@
-# Linux - CLI
+# Hosing with the siad CLI on Linux
 
-This is a technical guide to setting up a new host from scratch on Ubuntu server using only the terminal. To learn more about the basics of Sia hosting read our [hosting article](../about-hosting-on-sia.md). This guide should be similar for any other Linux distributions.
+This is a technical guide to setting up a new host from scratch on Ubuntu server using only the terminal. To learn more about the basics of Sia hosting read our [hosting article](about-hosting-on-sia.md). This guide should be similar for any other Linux distributions.
 
 ## Getting Sia
 
-Install the latest version of `siad` by going to the official website ([https://sia.tech/get-started](https://sia.tech/get-started)) and downloading the latest binary for your operating system. This guide has been written for v1.5.9.
+Install the latest version of `siad` by going to the [official website](https://sia.tech/get-started) and downloading the latest binary for your operating system. This guide has been written for v1.5.9.
 
-<figure><img src="../../.gitbook/assets/sia-website-siad-downloads.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/sia-website-siad-downloads.png" alt=""><figcaption></figcaption></figure>
 
 You can download the files and extract them using `wget` and `unzip`
 
@@ -86,7 +86,7 @@ sneeze toyed nerves soothe imbalance bite maps inquest obnoxious sovereign hydro
 Wallet encrypted with given password
 ```
 
-A new 29 word wallet seed will be generated. Save this seed somewhere secure, if something happens to your server you will need it to recover your Siacoin. [Secure Seed Management](../../guides/seed-management.html)
+A new 29 word wallet seed will be generated. Save this seed somewhere secure, if something happens to your server you will need it to recover your Siacoin. [Secure Seed Management](../guides/seed-management.html)
 
 You should now unlock your wallet with. In the future, when starting Sia your wallet will automatically unlock.
 
@@ -161,7 +161,7 @@ Now that you have setup your host, all that is left is to announce. Most hosts l
 $ siac host announce your.ip.or.netaddress:9982
 ```
 
-Announcements can take between 20 minutes to an hour to be confirmed. Once your announcement is confirmed you can check your host using [Sia Central's Host Troubleshooter](https://troubleshoot.siacentral.com) or [SiaStat's Host Monitor](https://siastats.info/hosts)
+Announcements can take between 20 minutes to an hour to be confirmed. Once your announcement is confirmed you can check your host using [Sia Central's Host Troubleshooter](https://troubleshoot.siacentral.com) or [SiaStat's Host Monitor](https://siastats.info/hosts).
 
 ## Using siac
 

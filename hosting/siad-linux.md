@@ -1,4 +1,4 @@
-# Hosing with the siad CLI on Linux
+# Hosting with the siad CLI on Linux
 
 This is a technical guide to setting up a new host from scratch on Ubuntu server using only the terminal. To learn more about the basics of Sia hosting read our [hosting article](about-hosting-on-sia.md). This guide should be similar for any other Linux distributions.
 

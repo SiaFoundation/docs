@@ -53,7 +53,7 @@
 
 * [About hosting on Sia](hosting/about-hosting-on-sia.md)
 * [Hosting with the Sia-UI GUI](hosting/sia-ui.md)
-* [Hosing with the siad CLI on Linux](hosting/siad-linux.md)
+* [Hosting with the siad CLI on Linux](hosting/siad-linux.md)
 * [Hosting FAQ](hosting/hosting-faq.md)
 
 ## Mining

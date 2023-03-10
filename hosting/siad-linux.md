@@ -86,7 +86,7 @@ sneeze toyed nerves soothe imbalance bite maps inquest obnoxious sovereign hydro
 Wallet encrypted with given password
 ```
 
-A new 29 word wallet seed will be generated. Save this seed somewhere secure, if something happens to your server you will need it to recover your Siacoin. [Secure Seed Management](../guides/seed-management.html)
+A new 29 word wallet seed will be generated. Save this seed somewhere secure, if something happens to your server you will need it to recover your Siacoin. [Secure Seed Management](../your-sia-wallet/the-importance-of-your-seed.md)
 
 You should now unlock your wallet with. In the future, when starting Sia your wallet will automatically unlock.
 

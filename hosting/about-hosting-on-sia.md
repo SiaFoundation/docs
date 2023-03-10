@@ -12,6 +12,8 @@ You also earn Siacoins, the cryptocurrency that powers the Sia network. Siacoins
 
 Hosts are a critical part of the ecosystem. You are contributing to the decentralized network that is the heart of Sia. Hosting is also more technical a process than renting, and while anyone can fairly easily set it up, there's a lot you'll want to know to maximize your setup.
 
+**Need more help?** [Join our Discord Community](https://sia.tech/discord) and connect with renters, hosts, and developers that'll be happy to assist!
+
 ## Pricing
 
 As a host, you set your own prices. There's a lot of specific price points you can control:

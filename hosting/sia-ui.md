@@ -1,20 +1,31 @@
 # Hosting with the Sia-UI GUI
 
-This section takes you through how to actually set up a Sia host.
+This section will provide you with everything you need to become a Sia host!
 
-## Things You'll Need
+## Getting Started
 
-Not meeting these requirements can have a range of effects: you may be unable to host, you may not receive any storage contracts from renters, or you may even risk losing your own Siacoins as a penalty. Hosting is a serious commitment. If you’re going to do it, do it right.
+Below is the *recommended* hardware for hosting, however, it is not a strict requirement. We have hosts offering storage on a wide variety of devices- from as low-power as a Raspberry Pi 4 all the way up to enterprise-grade server equipment.
 
-* **A reliable and stable setup:** You need a computer, Internet connection, and electricity that you can trust. Hosts are required to be online nearly 100% of the time or face financial penalties.
-* **Sia Prerequisites:** Make sure your computer meets the Sia requirements
-  * CPU: A minimum of a quad-core CPU is recommended. A weak CPU may become a bottleneck if your host becomes very popular with the renters, and they start uploading or downloading a lot of data to or from your host.
-  * RAM: 8 GB is a minimum, although your host will likely run out of memory under load; 16 GB, or more, is better.
-  * OS drive: An SSD with a minimum of 64 GB of free space is recommended. As of February 2022, the Sia blockchain was about 32 GB and constantly growing. You should avoid letting your OS drive run out of space to prevent corrupting your host's metadata.
-  * Create a Sia wallet
-  * [Get Siacoins](../get-started-with-sia/how-to-buy-siacoins.md)
-* **Storage space:** Spare hard drive space to rent out, ideally greater than 4 TB. It doesn’t have to be an SSD: an HDD would do just fine and also be much cheaper.
-* **Sia software:** You can choose between Sia UI (GUI) and the `siad` CLI, download either [here](https://sia.tech/get-started).
+Keep in mind that while sia may *run* on lower-end hardware, you may encounter bottlenecks that impact your host's ability to provide a valuable service and could reduce your overall host score. Hosting is a serious commitment, you should treat it like you are operating your own small business!
+
+### Hosting Recommendations
+A reliable and stable setup:
+* Internet: At least 100Mbps Upload and Download. Your host should be online as often as possible- as a host, you **are** a service provider, so you want to make sure your service is available 24/7.
+* Power: Not required, but *highly* recommended to purchase a [UPS](https://www.google.com/search?q=uninterruptible+power+supply) for your host and network setup. A power flicker that kicks your host offline is not only inconvenient but could also corrupt your system files and cost you collateral as well as your host score.
+* Computer: Your host should be on a stable system that does not often need to be restarted or unavailable. While you can host on a personal computer, we strongly recommend the system be dedicated only to hosting.
+* **Computer Component Recommendations:**
+  * CPU: A quad-core CPU at 3.2Gh or higher. The CPU is important as hosting requires many complex calculations which can bottleneck both upload and download speed.
+  * RAM: 8-16 GB or more. Various hosting processes can end up being memory-hungry.
+  * OS drive: At least 64 GB of free space on an SSD or HDD is recommended. As of April 2023, the Sia blockchain is about 42 GB on disk and constantly growing.
+  * Host Storage: A separate HDD or SSD for your host files. You can expand your host's storage at any point but the minimum we would recommend is at least 100GB, however, we think 1-2 TB is a good starting point for new hosts.
+* A secure Siacoin wallet to store coins in. We recommend storing most of your coins in a standard wallet and funding your host as needed. A Ledger Device, SiaCentral's "web wallet", Sia-UI, and the upcoming `walletd` app are all suitable for this. [Learn more about wallets](../your-sia-wallet/wallet-overview.md).
+* Some Siacoins to fund your host. About $30 USD should be plenty to get you started. Read more about [how to get Siacoins](../get-started-with-sia/how-to-buy-siacoins.md).
+* **Sia host software:** Either Sia-UI or `siad` can be used for hosting and can be downloaded from [sia.tech](https://sia.tech/get-started#core-software). In the future, `hostd` will be released [soon](https://sia.tech/software/hostd) and will be the best option by mid-2023.
+Additionally, [Host Manager](https://siacentral.com/host-manager/) is an excellent third-party tool for managing a Sia host which hooks into an already running host node.
+
+{% hint style="info" %}
+Previously, Sia used to penalize hosts for offering less than 4 TB of storage; this penalty was removed from the code base in 2019.
+{% endhint %} 
 
 ## Preparing Your Storage Drive(s) (Windows Only, Optional)
 

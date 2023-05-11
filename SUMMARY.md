@@ -48,6 +48,7 @@
 * [How to back up and restore your files](renting/how-to-back-up-your-files.md)
 * [Renter troubleshooting](renting/renter-troubleshooting.md)
 * [Is my data secure?](renting/is-my-data-secure.md)
+* [renterd Workshop](renting/renterd-workshop.md)
 
 ## Hosting
 

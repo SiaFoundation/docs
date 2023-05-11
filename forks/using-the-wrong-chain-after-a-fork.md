@@ -30,7 +30,7 @@ If you're on 1.3.7 or earlier, you can easily find these folders by clicking **S
 
 If you're on 1.4.0 or later, use the Info button at the top of Sia.
 
-![](<../.gitbook/assets/fork-2 (1) (3) (3) (3) (2) (1).png>)
+![](<../.gitbook/assets/fork-2 (1) (3) (3) (3) (2) (1) (1).png>)
 
 Then click **Open Data Folder.**
 

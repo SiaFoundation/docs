@@ -21,7 +21,7 @@ and your wallet's seed will be presented to you. Make sure you safely store it r
 
 Additionally, if you've updated to 1.4.0 or later, you can access your Sia wallet, click on More, and choose **View Seed.**
 
-![](<../../.gitbook/assets/wallet-2 (2) (3) (2) (1).png>)
+![](<../../.gitbook/assets/wallet-2 (2) (3) (2) (1) (1).png>)
 
 Learn more about the [importance of your seed](../the-importance-of-your-seed.md)**.**
 

@@ -55,7 +55,7 @@ Go to the Wallet tab in Sia-UI.
 
 Click **More** in the upper right corner.
 
-![](<../.gitbook/assets/wallet-2 (2) (3) (2).png>)
+![](<../.gitbook/assets/wallet-2 (2) (3) (2) (1).png>)
 
 Click **Change Password.** Sia-UI will ask for your current password. For current password, enter whatever you're using to unlock your wallet now. You can then enter your custom password.
 

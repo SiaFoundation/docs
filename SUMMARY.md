@@ -39,6 +39,8 @@
   * [How to bootstrap the Sia blockchain](your-sia-wallet/for-advanced-users/how-to-bootstrap-the-sia-blockchain.md)
   * [How to automatically restart and unlock Sia](your-sia-wallet/for-advanced-users/how-to-automatically-restart-and-unlock-sia.md)
   * [How to set an environment variable](your-sia-wallet/for-advanced-users/how-to-set-an-environment-variable.md)
+* [🚧 walletd](your-sia-wallet/walletd/README.md)
+  * [Wallet overview](your-sia-wallet/walletd/wallet-overview.md)
 
 ## Renting
 
@@ -48,7 +50,9 @@
 * [How to back up and restore your files](renting/how-to-back-up-your-files.md)
 * [Renter troubleshooting](renting/renter-troubleshooting.md)
 * [Is my data secure?](renting/is-my-data-secure.md)
-* [renterd Workshop](renting/renterd-workshop.md)
+* [🚧 renterd](renting/renterd/README.md)
+  * [About renting on Sia](renting/renterd/about-renting.md)
+  * [renterd Workshop](renting/renterd/renterd-workshop.md)
 
 ## Hosting
 
@@ -56,6 +60,8 @@
 * [Hosting with the Sia-UI GUI](hosting/sia-ui.md)
 * [Hosting with the siad CLI on Linux](hosting/siad-linux.md)
 * [Hosting FAQ](hosting/hosting-faq.md)
+* [🚧 hostd](hosting/hostd/README.md)
+  * [About hosting on Sia](hosting/hostd/about-hosting-on-sia.md)
 
 ## Mining
 

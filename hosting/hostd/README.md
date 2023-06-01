@@ -1,7 +1,5 @@
 ---
-description: >-
-  hostd based renter documentation that will eventually replace the existing
-  hosting section.
+description: hostd documentation that will eventually replace the existing hosting section.
 ---
 
 # 🚧 hostd

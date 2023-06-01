@@ -14,16 +14,16 @@ Get started hosting on Sia with the official [`hostd` software](https://sia.tech
 
 You also earn Siacoins, the cryptocurrency that powers the Sia network. Siacoins can be used to purchase your own storage space, or converted to other cryptocurrency or fiat on crypto exchanges.
 
-Hosts are a critical part of the ecosystem. You are contributing to the decentralized network that is the heart of Sia. Hosting is also more technical a process than renting, and while anyone can fairly easily set it up, there's a lot you'll want to know to maximize your setup.
+Hosts are a critical part of the ecosystem. You are contributing to the decentralized network that is the heart of Sia. Hosting is also a more technical process than renting, and while anyone can fairly easily set it up, there's a lot you'll want to know to maximize your setup.
 
 ## Pricing
 
-As a host, you set your own prices. There's a lot of specific price points you can control:
+As a host, you set your own prices. There are a lot of specific price points you can control:
 
 * **Storage Price:** The base price for your storage, per TB/month.
 * **Contract Fees:** A small, one-time fee per contract to cover network transaction costs.
 * **Upload/Download Bandwidth Price:** Your price for upload or download bandwidth to and from your host, per TB.
-* **Collateral:** How many Siacoins you're willing to lose if you don't fulfill the rental contract, per TB.
+* **Collateral:** How many Siacoins you're willing to lose if you don't fulfill the rental contract, per TB/month.
 
 ## **About Contracts**
 
@@ -35,9 +35,9 @@ As a host, you're part of a marketplace where you compete with other hosts for r
 
 ## Fees
 
-As a host, you earn Siacoin for the storage space that you sell. But in order to create additional incentive for hosts to be good hosts and sustain a reliable network, you also put up collateral.
+As a host, you earn Siacoin for the storage space that you sell. But in order to create additional incentives for hosts to be good and sustain a reliable network, you also put up collateral.
 
-* **Collateral** – An amount of Siacoins that you're willing to lose if you aren't a good host.
+* **Collateral** – An amount of Siacoins you're willing to lose if you aren't a good host.
 
 Having collateral incentivizes hosts to be online and to keep their renter data intact. Hosts that go offline or lose data lose their collateral, and hosts that stay online and keep data safe get their collateral back.
 
@@ -45,7 +45,7 @@ Having collateral incentivizes hosts to be online and to keep their renter data 
 
 One of the most important factors that determine how you'll fair as a host is your host score. This is based on a number of metrics – some that you can directly affect, some that improve or diminish over time based on your performance.
 
-Sia is a decentralized network - the code to evaluate these scoring metrics is contained within each renter's Sia instance. For that reason, each Sia renter you encounter builds their own host score for your host, so your host may be scored differently among different renters. Your host does not have one single overall score across the Sia network, but instead many scores with many renters based on the metrics described below. Any website or service showing your Sia host rank is showing that particular source's view of your host, which may be different from what a renter comes up with.
+Sia is a decentralized network - the code to evaluate these scoring metrics is contained within each renter's Sia instance. For that reason, each Sia renter you encounter builds their own host score for your host, so your host may be scored differently among different renters. Your host does not have one overall score across the Sia network, but many scores with many renters based on the metrics described below. Any website or service showing your Sia host rank is showing that particular source's view of your host, which may be different from what a renter comes up with.
 
 ### Specific Metrics
 

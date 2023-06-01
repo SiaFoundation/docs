@@ -62,6 +62,13 @@
 * [Hosting FAQ](hosting/hosting-faq.md)
 * [🚧 hostd](hosting/hostd/README.md)
   * [About hosting on Sia](hosting/hostd/about-hosting-on-sia.md)
+  * [Setup Guides](hosting/hostd/setup-guides/README.md)
+    * [Linux](hosting/hostd/setup-guides/linux.md)
+    * [macOS](hosting/hostd/setup-guides/macos.md)
+    * [Windows](hosting/hostd/setup-guides/windows.md)
+  * [Dynamic DNS](hosting/hostd/dynamic-dns/README.md)
+    * [DuckDNS](hosting/hostd/dynamic-dns/duckdns.md)
+    * [Cloudflare (Advanced)](hosting/hostd/dynamic-dns/cloudflare-advanced.md)
 
 ## Mining
 

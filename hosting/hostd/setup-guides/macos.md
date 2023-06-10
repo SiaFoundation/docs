@@ -77,10 +77,10 @@ In the same terminal you used to generate your recovery phrase, run the followin
 hostd --dir ~/hostd
 ```
 
-You will be asked to input a password and a wallet recovery phrase. The password is used to unlock the `hostd` UI, it should be something secure and easy to remember. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. These values are not stored anywhere; you will need to reenter them every time you start `hostd`.
+You will be asked to input a password and a wallet recovery phrase. The password is used to unlock the `hostd` UI, it should be something secure and easy to remember. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. These values are not stored anywhere; you will need to enter them every time you start `hostd`.
 
 {% hint style="info" %}
-You can also set the `HOSTD_WALLET_SEED` and `HOSTD_API_PASSWORD` environment variables so you do not have to reenter the values every time.
+You can also set the `HOSTD_SEED` and `HOSTD_API_PASSWORD` environment variables so you do not have to enter the values every time.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/hostd_setup_mac_run.png" alt=""><figcaption><p>start hostd</p></figcaption></figure>
@@ -145,7 +145,6 @@ Whichever method you choose, enter your address in the "Net Address" field follo
 
 * [Cloudflare](../dynamic-dns/cloudflare-advanced.md)
 * [DuckDNS](../dynamic-dns/duckdns.md)
-* [No-IP](broken-reference)
 
 #### Setup using public IP
 

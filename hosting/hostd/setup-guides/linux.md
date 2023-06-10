@@ -69,7 +69,7 @@ sudo nano /home/ubuntu/hostd.env
 Now, modify the file to add your wallet seed and API password. The password is used to unlock the `hostd` UI, it should be something secure and easy to remember. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step.
 
 ```
-HOSTD_WALLET_SEED=potato never rifle awake lunar during ocean eight dial gospel crazy response
+HOSTD_SEED=potato never rifle awake lunar during ocean eight dial gospel crazy response
 HOSTD_API_PASSWORD=sia is cool
 ```
 
@@ -184,7 +184,6 @@ Whichever method you choose, enter your address in the "Net Address" field follo
 
 * [Cloudflare](../dynamic-dns/cloudflare-advanced.md)
 * [DuckDNS](../dynamic-dns/duckdns.md)
-* [No-IP](broken-reference)
 
 #### Setup using public IP
 

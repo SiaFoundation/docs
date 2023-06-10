@@ -62,6 +62,10 @@ hostd.exe
 
 You will be asked to input a password and a wallet recovery phrase. The password is used to unlock the `hostd` UI, it should be something secure and easy to remember. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. These values are not stored anywhere; you will need to reenter them every time you start `hostd`.
 
+{% hint style="info" %}
+You can also set the `HOSTD_SEED` and `HOSTD_API_PASSWORD` environment variables so you do not have to reenter the values every time.
+{% endhint %}
+
 <figure><img src="../../../.gitbook/assets/hostd_setup_windows_startup.png" alt=""><figcaption><p>hostd startup message</p></figcaption></figure>
 
 After entering your password and recovery phrase, `hostd` will start. You can now access the `hostd` UI by opening a browser and going to `http://localhost:9980`. Enter your password to unlock `hostd`.
@@ -128,8 +132,8 @@ Whichever method you choose, enter your address in the "Net Address" field follo
 
 #### Setup using Dynamic DNS
 
-* Cloudflare (TODO)
-* DuckDNS (TODO)
+* [Cloudflare](../dynamic-dns/cloudflare-advanced.md)
+* [DuckDNS](../dynamic-dns/duckdns.md)
 
 #### Setup using public IP
 

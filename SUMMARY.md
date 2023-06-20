@@ -94,6 +94,15 @@
 * [Using the Sia Ledger Nano app with CLI](sia-integrations/using-the-sia-ledger-nano-app-cli.md)
 * [Brand guidelines for Sia in your project or site](sia-integrations/sia-brand-guidelines.md)
 
+## Testnet
+
+* [What is Zen?](testnet/what-is-zen.md)
+* [🚧 hostd](testnet/hostd/README.md)
+  * [Setup Guides](testnet/hostd/setup-guides/README.md)
+    * [Linux](testnet/hostd/setup-guides/linux.md)
+    * [macOS](testnet/hostd/setup-guides/macos.md)
+    * [Windows](testnet/hostd/setup-guides/windows.md)
+
 ## Forks
 
 * [Using the wrong chain after a fork](forks/using-the-wrong-chain-after-a-fork.md)

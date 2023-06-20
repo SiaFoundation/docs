@@ -8,7 +8,7 @@ description: Setup a new host on macOS
 hostd is still in development and considered unstable.
 {% endhint %}
 
-This guide will walk you through setting up a new `hostd` node on macOS. For this guide, we are using a Macbook Pro M1, but the steps should work with any other macOS device. At the end of this guide, you should have a working `hostd` node on the Sia network and be ready to accept contracts from renters.&#x20;
+This guide will walk you through setting up a new `hostd` node on macOS. For this guide, we are using a Macbook Pro M1, but the steps should work with any other macOS device. At the end of this guide, you should have a working `hostd` node on the Sia network and be ready to accept contracts from renters.
 
 ## Things you'll need
 
@@ -24,7 +24,7 @@ Below are the minimum requirements for hosting on Sia. If you do not meet these 
 `hostd` supports Intel-based Macs and Apple-Silicon Macs, using the M1 and M2 processors.
 
 {% hint style="info" %}
-This guide primarily uses the command line and assumes the user has sudo permissions.&#x20;
+This guide primarily uses the command line and assumes the user has sudo permissions.
 {% endhint %}
 
 ## Getting hostd
@@ -77,19 +77,19 @@ In the same terminal you used to generate your recovery phrase, run the followin
 hostd --dir ~/hostd
 ```
 
-You will be asked to input a password and a wallet recovery phrase. The password is used to unlock the `hostd` UI, it should be something secure and easy to remember. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. These values are not stored anywhere; you will need to reenter them every time you start `hostd`.
+You will be asked to input a password and a wallet recovery phrase. The password is used to unlock the `hostd` UI, it should be something secure and easy to remember. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. These values are not stored anywhere; you will need to enter them every time you start `hostd`.
 
 {% hint style="info" %}
-You can also set the `HOSTD_SEED` and `HOSTD_API_PASSWORD` environment variables so you do not have to reenter the values every time.
+You can also set the `HOSTD_ZEN_SEED` and `HOSTD_ZEN_API_PASSWORD` environment variables so you do not have to enter the values every time.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/hostd_setup_mac_run.png" alt=""><figcaption><p>start hostd</p></figcaption></figure>
 
-After entering your password and recovery phrase, `hostd` will start. You can now access the `hostd` UI by opening a browser and going to `http://localhost:9980`. Enter your password to unlock `hostd`.
+After entering your password and recovery phrase, `hostd` will start. You can now access the `hostd` UI by opening a browser and going to `http://localhost:9880`. Enter your password to unlock `hostd`.
 
-## Send Siacoin to your wallet
+## Send zSC to your wallet
 
-Before you can start hosting, you must send Siacoin to your wallet. Hosts must lock Siacoin as collateral to ensure they are financially incentivized to store data. Hosts also need Siacoin to submit storage proofs to the blockchain. Therefore, it is essential to always keep your wallet funded with Siacoin. If your wallet runs out of Siacoin, your host cannot submit storage proofs and you will lose collateral.
+Before you can start hosting, you must send zSC to your wallet. Hosts must lock zSC as collateral to ensure they are financially incentivized to store data. Hosts also need Siacoin to submit storage proofs to the blockchain. Therefore, it is essential to always keep your wallet funded with zSC. If your wallet runs out of zSC, your host cannot submit storage proofs and you will lose collateral.
 
 To send Siacoin to your `hostd` wallet, you must get the wallet's address which can be found on the "Wallet" page of the `hostd` UI.
 
@@ -97,13 +97,15 @@ To send Siacoin to your `hostd` wallet, you must get the wallet's address which 
 It is okay if your wallet is not synced at this point. You can still send funds to your wallet. However, they will not be available until the wallet is fully synced.
 {% endhint %}
 
-We recommend around $50 USD worth of Siacoin to start hosting. Hosts are constantly locking collateral; you may need more or less depending on how much data you store.
-
 1. Navigate to the "Wallet" page by clicking the "Wallet" icon in the sidebar
 2. Click the "Receive" button in the top right corner of the page
 3. Copy your wallet address by clicking the "Copy" button or scan the QR code with your phone
 
 <figure><img src="../../../.gitbook/assets/hostd_setup_mac_receive_addr.png" alt=""><figcaption><p>hostd wallet address</p></figcaption></figure>
+
+{% hint style="info" %}
+You can get zSC from the Zen faucet: [https://zen.sia.tech/faucet](https://zen.sia.tech/faucet)
+{% endhint %}
 
 ## Add storage
 
@@ -137,15 +139,14 @@ The first setting to configure is the "Accepting Contracts" setting. This settin
 
 The next setting to configure is your host's net address. This is the address that is published to the blockchain and used by renters to connect to your host. Some users use their public IP address, but we recommend setting up a domain. You can use a free service like DuckDNS or No-IP or purchase a custom domain from a registrar.
 
-Whichever method you choose, enter your address in the "Net Address" field followed by your host's RHP2 port, which defaults to `:9982`. For example, if your IP address is `199.111.78.80` you would enter `199.111.78.80:9982`. If your domain is `example.com`, you would enter `example.com:9982`.
+Whichever method you choose, enter your address in the "Net Address" field followed by your host's RHP2 port, which defaults to `:9882`. For example, if your IP address is `199.111.78.80` you would enter `199.111.78.80:9882`. If your domain is `example.com`, you would enter `example.com:9882`.
 
 <figure><img src="../../../.gitbook/assets/hostd_setup_windows_netaddress.png" alt=""><figcaption><p>Configure netaddress</p></figcaption></figure>
 
 #### Setup using Dynamic DNS
 
-* [Cloudflare](../dynamic-dns/cloudflare-advanced.md)
-* [DuckDNS](../dynamic-dns/duckdns.md)
-* [No-IP](broken-reference)
+* [Cloudflare](../../../hosting/hostd/dynamic-dns/cloudflare-advanced.md)
+* [DuckDNS](../../../hosting/hostd/dynamic-dns/duckdns.md)
 
 #### Setup using public IP
 
@@ -173,7 +174,7 @@ Once you are happy with your prices, click the "Save Changes" button in the top 
 
 ## Port forwarding
 
-If you have a firewall or router you will need to forward/open TCP ports 9981-9983. How to do so is outside of the scope of this guide, there are tutorials available for most routers/firewalls available on Google.
+If you have a firewall or router you will need to forward/open TCP ports 9881-9883. How to do so is outside of the scope of this guide, there are tutorials available for most routers/firewalls available on Google.
 
 ## Waiting for sync
 

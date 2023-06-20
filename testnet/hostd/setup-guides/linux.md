@@ -1,60 +1,42 @@
 ---
-description: Setup a new host on macOS
+description: Setup a new host on Linux
 ---
 
-# macOS
+# Linux
 
 {% hint style="danger" %}
 hostd is still in development and considered unstable.
 {% endhint %}
 
-This guide will walk you through setting up a new `hostd` node on macOS. For this guide, we are using a Macbook Pro M1, but the steps should work with any other macOS device. At the end of this guide, you should have a working `hostd` node on the Sia network and be ready to accept contracts from renters.&#x20;
+This guide will walk you through setting up a new `hostd` node on Linux. For this guide, we are using Ubuntu, but the steps should work with most Linux distros. At the end of this guide, you should have a working `hostd` node on the Sia network and be ready to accept contracts from renters.&#x20;
 
 ## Things you'll need
 
 Below are the minimum requirements for hosting on Sia. If you do not meet these requirements you may not receive contracts from renters or risk losing Siacoins as a penalty. Hosting is a commitment that requires some technical knowledge and a stable setup.
 
-* A Mac that supports macOS 12 (Monterey) or 13 (Ventura)
+* A Linux distro with `systemd` (Ubuntu, Debian, Fedora, Arch, etc)
 * A quad-core CPU
 * 8GB of RAM
 * An SSD with at least 100GB of free space.
 * Additional storage space to rent out
 * A stable internet connection
 
-`hostd` supports Intel-based Macs and Apple-Silicon Macs, using the M1 and M2 processors.
+`hostd` supports Linux/amd64 (most devices) and Linux/arm64 (Raspberry Pi, ROCKPro64, etc).
 
 {% hint style="info" %}
-This guide primarily uses the command line and assumes the user has sudo permissions.&#x20;
+This guide primarily uses the command line and assumes the user has sudo permissions. Desktop users can still open their favorite terminal and copy the commands.&#x20;
 {% endhint %}
 
 ## Getting hostd
 
 Download the latest version of `hostd` for your operating system and platform from the official website: [https://sia.tech/software/hostd](https://sia.tech/software/hostd).
 
-For this guide, we will download the `darwin/arm64` version and unzip the `hostd` binary to `/usr/local/bin`
-
-<figure><img src="../../../.gitbook/assets/hostd_setup_mac_downloads.png" alt=""><figcaption><p>macOS Downloads</p></figcaption></figure>
-
-Now that we have downloaded `hostd` we need to unzip it and move it to a more accessible location:
-
-1. Double-click on the downloaded `hostd` zip file to unzip it
-2. Click on the newly unzipped directory
-3. Right-click on the path at the bottom of the Finder window and click "Open in Terminal"
-
-<figure><img src="../../../.gitbook/assets/hostd_setup_mac_open_terminal.png" alt=""><figcaption><p>macOS open in terminal</p></figcaption></figure>
-
-In the opened terminal window we will move the `hostd` binary to `/usr/local/bin`. Run the following command and press enter.
+For this guide, we will download the Linux/amd64 version and unzip the `hostd` binary to `/usr/local/bin`
 
 ```
-sudo mv hostd /usr/local/bin 
-```
-
-<figure><img src="../../../.gitbook/assets/hostd_setup_mac_mv.png" alt=""><figcaption></figcaption></figure>
-
-Finally, we'll create a folder in our home drive to store `hostd`'s data. It is important to store `hostd`'s metadata on an SSD. You will need at least 80GB of space available. 50GB for the current blockchain and additional space for volume metadata.
-
-```
-mkdir ~/hostd
+unzip hostd_zen_linux_amd64.zip
+sudo mv -t /usr/local/bin hostd_linux_amd64/hostd
+rm -rf hostd_linux_amd64.zip 
 ```
 
 ## Creating a wallet
@@ -67,29 +49,86 @@ hostd seed
 
 After pressing enter, a new 12-word recovery phrase will be generated. Please write down this phrase and keep it in a safe place. You will need this phrase to recover your wallet. If you lose this phrase, you will lose access to your wallet and funds. You will also see the wallet's funding address. You can send Siacoin to this address to fund your host.
 
-<figure><img src="../../../.gitbook/assets/hostd_setup_mac_seed.png" alt=""><figcaption><p>generate recovery phrase</p></figcaption></figure>
-
-## Running hostd
-
-In the same terminal you used to generate your recovery phrase, run the following command to start `hostd:`
-
 ```
-hostd --dir ~/hostd
+hostd 5a7489b
+Network Mainnet
+Recovery Phrase: poet never rifle awake lunar during ocean eight dial gospel crazy response
+Address addr:333d10486632f11c4c5b907c2e45d31478522dec525649712697404b4253e92ea5a84227187d
 ```
 
-You will be asked to input a password and a wallet recovery phrase. The password is used to unlock the `hostd` UI, it should be something secure and easy to remember. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. These values are not stored anywhere; you will need to reenter them every time you start `hostd`.
+## Setting up a systemd service
 
-{% hint style="info" %}
-You can also set the `HOSTD_SEED` and `HOSTD_API_PASSWORD` environment variables so you do not have to reenter the values every time.
-{% endhint %}
+Now that you have a recovery phrase, we will create a `systemd` service to run `hostd` on startup.&#x20;
 
-<figure><img src="../../../.gitbook/assets/hostd_setup_mac_run.png" alt=""><figcaption><p>start hostd</p></figcaption></figure>
+First, create a new environment file. Where you store the file is up to you, but you will need to know the path later. For this guide, we will store it in our home directory `/home/ubuntu/hostd.env`
 
-After entering your password and recovery phrase, `hostd` will start. You can now access the `hostd` UI by opening a browser and going to `http://localhost:9980`. Enter your password to unlock `hostd`.
+```
+sudo nano /home/ubuntu/hostd.env
+```
 
-## Send Siacoin to your wallet
+Now, modify the file to add your wallet seed and API password. The password is used to unlock the `hostd` UI, it should be something secure and easy to remember. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step.
 
-Before you can start hosting, you must send Siacoin to your wallet. Hosts must lock Siacoin as collateral to ensure they are financially incentivized to store data. Hosts also need Siacoin to submit storage proofs to the blockchain. Therefore, it is essential to always keep your wallet funded with Siacoin. If your wallet runs out of Siacoin, your host cannot submit storage proofs and you will lose collateral.
+```
+HOSTD_ZEN_SEED=potato never rifle awake lunar during ocean eight dial gospel crazy response
+HOSTD_ZEN_API_PASSWORD=sia is cool
+```
+
+Next, we'll create the unit file to run `hostd`:
+
+```
+sudo nano /etc/systemd/system/hostd-zen.service
+```
+
+Modify the following snippet to fit your host and paste it into the file. You must change the `User`, `EnvironmentFile` and data directory to fit your setup.
+
+```
+[Unit]
+Description=hostd
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/hostd -dir /home/ubuntu/hostd -http :9880
+Restart=always
+RestartSec=15
+User=ubuntu
+EnvironmentFile=/home/ubuntu/hostd.env
+
+[Install]
+WantedBy=multi-user.target
+Alias=hostd.service
+```
+
+Save the file and exit. Now it is time to start the service
+
+```
+sudo systemctl enable hostd-zen
+sudo systemctl start hostd-zen
+```
+
+Your `hostd` service should now be running. You can check the status of the service by running the following command:
+
+```
+sudo systemctl status hostd
+```
+
+If the service was set up correctly it should say "active (running)."&#x20;
+
+### Accessing the UI
+
+For users with a desktop environment, you can open a browser to `http://localhost:9880` to access the `hostd` UI.
+
+If you do not have a desktop environment:
+
+1. Find your server's LAN IP using `ip addr`, `ifconfig`, etc.
+2. Switch to another computer in your LAN and open the browser&#x20;
+3. Type your LAN IP followed by `:9880` in the address bar (e.g. `http://192.168.1.50:9880`)
+
+<figure><img src="../../../.gitbook/assets/hostd_setup_login_ui.png" alt=""><figcaption><p>hostd login</p></figcaption></figure>
+
+## Send zSC to your wallet
+
+Before you can start hosting, you must send zSC to your wallet. Hosts must lock zSC as collateral to ensure they are financially incentivized to store data. Hosts also need Siacoin to submit storage proofs to the blockchain. Therefore, it is essential to always keep your wallet funded with zSC. If your wallet runs out of Siacoin, your host cannot submit storage proofs and you will lose collateral.
 
 To send Siacoin to your `hostd` wallet, you must get the wallet's address which can be found on the "Wallet" page of the `hostd` UI.
 
@@ -97,13 +136,15 @@ To send Siacoin to your `hostd` wallet, you must get the wallet's address which 
 It is okay if your wallet is not synced at this point. You can still send funds to your wallet. However, they will not be available until the wallet is fully synced.
 {% endhint %}
 
-We recommend around $50 USD worth of Siacoin to start hosting. Hosts are constantly locking collateral; you may need more or less depending on how much data you store.
-
 1. Navigate to the "Wallet" page by clicking the "Wallet" icon in the sidebar
 2. Click the "Receive" button in the top right corner of the page
 3. Copy your wallet address by clicking the "Copy" button or scan the QR code with your phone
 
-<figure><img src="../../../.gitbook/assets/hostd_setup_mac_receive_addr.png" alt=""><figcaption><p>hostd wallet address</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/hostd_setup_windows_wallet_receive.png" alt=""><figcaption><p>hostd wallet address</p></figcaption></figure>
+
+{% hint style="info" %}
+You can get zSC from the Zen Faucet [https://zen.sia.tech/faucet](https://zen.sia.tech/faucet)
+{% endhint %}
 
 ## Add storage
 
@@ -112,7 +153,7 @@ A "volume" is a location on disk where `hostd` will store uploaded data. A volum
 1. Click the "Volume" icon in the sidebar
 2. Click the "Create Volume" button to add your first storage volume.
 
-<figure><img src="../../../.gitbook/assets/hostd_setup_mac_create_volume.png" alt=""><figcaption><p>hostd create volume</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/hostd_setup_linux_create_volume.png" alt=""><figcaption><p>hostd create volume</p></figcaption></figure>
 
 1. Enter a name for the volume. We recommend something simple, like "hostdata.dat"
 2. Use the built-in browser to select a folder to store the volume file.
@@ -127,7 +168,7 @@ After clicking "Create," the volume will be displayed in the volumes list. Depen
 
 Now that you have a volume, you can configure your host. First, navigate to the "Configuration" page in the sidebar. This page contains all of the pricing and settings available to hosts.
 
-<figure><img src="../../../.gitbook/assets/hostd_setup_mac_volume_list.png" alt=""><figcaption><p>hostd configuration page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/hostd_setup_windows_configuration.png" alt=""><figcaption><p>hostd configuration page</p></figcaption></figure>
 
 ### Accepting contracts
 
@@ -137,14 +178,14 @@ The first setting to configure is the "Accepting Contracts" setting. This settin
 
 The next setting to configure is your host's net address. This is the address that is published to the blockchain and used by renters to connect to your host. Some users use their public IP address, but we recommend setting up a domain. You can use a free service like DuckDNS or No-IP or purchase a custom domain from a registrar.
 
-Whichever method you choose, enter your address in the "Net Address" field followed by your host's RHP2 port, which defaults to `:9982`. For example, if your IP address is `199.111.78.80` you would enter `199.111.78.80:9982`. If your domain is `example.com`, you would enter `example.com:9982`.
+Whichever method you choose, enter your address in the "Net Address" field followed by your host's RHP2 port, which defaults to `:9882`. For example, if your IP address is `199.111.78.80` you would enter `199.111.78.80:9882`. If your domain is `example.com`, you would enter `example.com:9882`.
 
 <figure><img src="../../../.gitbook/assets/hostd_setup_windows_netaddress.png" alt=""><figcaption><p>Configure netaddress</p></figcaption></figure>
 
 #### Setup using Dynamic DNS
 
-* [Cloudflare](../dynamic-dns/cloudflare-advanced.md)
-* [DuckDNS](../dynamic-dns/duckdns.md)
+* [Cloudflare](../../../hosting/hostd/dynamic-dns/cloudflare-advanced.md)
+* [DuckDNS](../../../hosting/hostd/dynamic-dns/duckdns.md)
 * [No-IP](broken-reference)
 
 #### Setup using public IP
@@ -173,13 +214,13 @@ Once you are happy with your prices, click the "Save Changes" button in the top 
 
 ## Port forwarding
 
-If you have a firewall or router you will need to forward/open TCP ports 9981-9983. How to do so is outside of the scope of this guide, there are tutorials available for most routers/firewalls available on Google.
+If you have a firewall or router you will need to forward/open TCP ports 9881-9883. How to do so is outside of the scope of this guide, there are tutorials available for most routers/firewalls available on Google.
 
 ## Waiting for sync
 
-Now that you have configured your host, you must wait for your host to finish syncing the blockchain. This can take several hours or even days depending on your hardware and internet connection. You can check the progress of the sync by mousing over the "Sia" logo at the top of the sidebar.
+Now that you have configured your host, you must wait for your host to finish syncing the blockchain. This can take several hours or even days depending on your hardware and internet connection. You can check the sync progress by mousing over the "Sia" logo at the top of the sidebar.
 
-<figure><img src="../../../.gitbook/assets/hostd_setup_mac_sync.png" alt=""><figcaption><p>check sync status</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/hostd_setup_windows_sync_status.png" alt=""><figcaption><p>check sync status</p></figcaption></figure>
 
 ## Announce your host
 
@@ -191,7 +232,7 @@ To announce your host:
 2. Click the "Announce" button in the top right corner of the page
 3. Click "Announce" in the dialog to confirm
 
-<figure><img src="../../../.gitbook/assets/hostd_setup_mac_announce.png" alt=""><figcaption><p>announce your host</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/hostd_setup_windows_announce.png" alt=""><figcaption><p>announce your host</p></figcaption></figure>
 
 After announcing, an "Unconfirmed" transaction will appear on the "Wallet" page. Once it is confirmed, your host will be visible on the network and renters will be able to form contracts with your host.
 

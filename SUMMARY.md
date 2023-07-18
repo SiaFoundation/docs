@@ -97,11 +97,6 @@
 ## Testnet
 
 * [What is Zen?](testnet/what-is-zen.md)
-* [🚧 hostd](testnet/hostd/README.md)
-  * [Setup Guides](testnet/hostd/setup-guides/README.md)
-    * [Linux](testnet/hostd/setup-guides/linux.md)
-    * [macOS](testnet/hostd/setup-guides/macos.md)
-    * [Windows](testnet/hostd/setup-guides/windows.md)
 
 ## Forks
 

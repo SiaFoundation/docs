@@ -8,7 +8,7 @@ description: Setup a new host on Linux
 hostd is still in development and considered unstable.
 {% endhint %}
 
-This guide will walk you through setting up a new `hostd` node on Linux. For this guide, we are using Ubuntu, but the steps should work with most Linux distros. At the end of this guide, you should have a working `hostd` node on the Sia network and be ready to accept contracts from renters.&#x20;
+This guide will walk you through setting up a new `hostd` node on Linux. For this guide, we are using Ubuntu, but the steps should work with most Linux distros. At the end of this guide, you should have a working `hostd` node on the Sia network and be ready to accept contracts from renters.
 
 ## Things you'll need
 
@@ -24,7 +24,7 @@ Below are the minimum requirements for hosting on Sia. If you do not meet these 
 `hostd` supports Linux/amd64 (most devices) and Linux/arm64 (Raspberry Pi, ROCKPro64, etc).
 
 {% hint style="info" %}
-This guide primarily uses the command line and assumes the user has sudo permissions. Desktop users can still open their favorite terminal and copy the commands.&#x20;
+This guide primarily uses the command line and assumes the user has sudo permissions. Desktop users can still open their favorite terminal and copy the commands.
 {% endhint %}
 
 ## Getting hostd
@@ -58,7 +58,7 @@ Address addr:333d10486632f11c4c5b907c2e45d31478522dec525649712697404b4253e92ea5a
 
 ## Setting up a systemd service
 
-Now that you have a recovery phrase, we will create a `systemd` service to run `hostd` on startup.&#x20;
+Now that you have a recovery phrase, we will create a `systemd` service to run `hostd` on startup.
 
 First, create a new environment file. Where you store the file is up to you, but you will need to know the path later. For this guide, we will store it in our home directory `/home/ubuntu/hostd.env`
 
@@ -68,10 +68,21 @@ sudo nano /home/ubuntu/hostd.env
 
 Now, modify the file to add your wallet seed and API password. The password is used to unlock the `hostd` UI, it should be something secure and easy to remember. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step.
 
+{% tabs %}
+{% tab title="Mainnet" %}
 ```
 HOSTD_SEED=potato never rifle awake lunar during ocean eight dial gospel crazy response
 HOSTD_API_PASSWORD=sia is cool
 ```
+{% endtab %}
+
+{% tab title="Testnet" %}
+```
+HOSTD_ZEN_SEED=potato never rifle awake lunar during ocean eight dial gospel crazy response
+HOSTD_ZEN_API_PASSWORD=sia is cool
+```
+{% endtab %}
+{% endtabs %}
 
 Next, we'll create the unit file to run `hostd`:
 
@@ -112,7 +123,7 @@ Your `hostd` service should now be running. You can check the status of the serv
 sudo systemctl status hostd
 ```
 
-If the service was set up correctly it should say "active (running)."&#x20;
+If the service was set up correctly it should say "active (running)."
 
 ### Accessing the UI
 
@@ -121,7 +132,7 @@ For users with a desktop environment, you can open a browser to `http://localhos
 If you do not have a desktop environment:
 
 1. Find your server's LAN IP using `ip addr`, `ifconfig`, etc.
-2. Switch to another computer in your LAN and open the browser&#x20;
+2. Switch to another computer in your LAN and open the browser
 3. Type your LAN IP followed by `:9980` in the address bar (e.g. `http://192.168.1.50:9980`)
 
 <figure><img src="../../../.gitbook/assets/hostd_setup_login_ui.png" alt=""><figcaption><p>hostd login</p></figcaption></figure>

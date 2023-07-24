@@ -4,10 +4,6 @@ description: Setup a new host on macOS
 
 # macOS
 
-{% hint style="danger" %}
-hostd is still in development and considered unstable.
-{% endhint %}
-
 This guide will walk you through setting up a new `hostd` node on macOS. For this guide, we are using a Macbook Pro M1, but the steps should work with any other macOS device. At the end of this guide, you should have a working `hostd` node on the Sia network and be ready to accept contracts from renters.&#x20;
 
 ## Things you'll need

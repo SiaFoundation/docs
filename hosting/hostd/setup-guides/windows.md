@@ -4,11 +4,7 @@ description: Setup a new host on Windows
 
 # Windows
 
-{% hint style="danger" %}
-hostd is still in development and considered unstable.
-{% endhint %}
-
-This guide will walk you through setting up a new `hostd` node on Windows. For this guide, we are using Windows 11, but the steps should also work with Windows 10. At the end of this guide, you should have a working `hostd` node on the Sia network and be ready to accept contracts from renters.&#x20;
+This guide will walk you through setting up a new `hostd` node on Windows. For this guide, we are using Windows 11, but the steps should also work with Windows 10. At the end of this guide, you should have a working `hostd` node on the Sia network and be ready to accept contracts from renters.
 
 ## Things you'll need
 

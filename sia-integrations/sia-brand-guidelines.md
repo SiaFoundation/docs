@@ -1,4 +1,4 @@
-# Brand guidelines for Sia in your project or site
+# 🚧 Brand guidelines for Sia in your project or site
 
 Community and third-party (non-core) projects are an essential part of the Sia ecosystem. They expand the use-cases for Sia, and improve the network with solutions we aren’t actively working on.
 

@@ -1,6 +1,6 @@
-# How to back up and restore your files
+# 🚧 Back up and restore your files
 
-Back in version 1.4.1 of Sia, we introduced seed-based file recovery. This feature lets you create a metadata snapshot of your current files, which is stored on the Sia network and linked to your seed. As long as your contracts are active, you can then use this backup to restore your files at any future date and from any \(preferably empty\) Sia node.
+Back in version 1.4.1 of Sia, we introduced seed-based file recovery. This feature lets you create a metadata snapshot of your current files, which is stored on the Sia network and linked to your seed. As long as your contracts are active, you can then use this backup to restore your files at any future date and from any (preferably empty) Sia node.
 
 When your files are on Sia, they're on the most private, secure network in the world. With seed-based file recovery, they're now also recoverable anywhere, anytime.
 
@@ -14,7 +14,7 @@ Your contracts need to be active, which means Sia isn't totally fire-and-forget 
 
 ### **Create your backup**
 
-After you've [uploaded files to Sia](how-to-rent-storage-on-sia.md), go to the Rent tab and click **More**. You've got two new options, Backup Files and Restore Files. Click **Backup Files**.
+After you've [uploaded files to Sia](broken-reference), go to the Rent tab and click **More**. You've got two new options, Backup Files and Restore Files. Click **Backup Files**.
 
 ![](../.gitbook/assets/backup-1.png)
 
@@ -57,4 +57,3 @@ Wait for the scan to complete. Sia might find your backups right away, but it mi
 Sia has found your backups. Click **Restore** next to the one you want. Feel free to close this window, or reopen it to check back - your files will begin to appear in the file manager in Sia over the next few minutes.
 
 There's one last step - check your allowance to make sure it's set. Sia needs your allowance to be able to spend your Siacoins on contracts and download bandwidth to get your files back. Once that's done, you're good to go!
-

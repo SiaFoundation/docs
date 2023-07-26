@@ -1,4 +1,4 @@
-# Renter troubleshooting
+# 🚧 Renter troubleshooting
 
 There are some common issues that you might encounter when uploading files to Sia, mostly related to stuck or stalling uploads. There are some easy solutions for these issues, as long as you have the right info. We’ll detail what to look for and possible solutions in this document.
 

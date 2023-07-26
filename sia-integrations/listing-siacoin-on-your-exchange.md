@@ -1,4 +1,4 @@
-# Listing Siacoin on your exchange
+# 🚧 Listing Siacoin on your exchange
 
 Sia is one of the best projects in the blockchain space. Sia is open source and completely decentralized. As such, exchanges should strive to implement the best projects that will enhance their platforms with as little involvement from the development team for that project as possible.
 

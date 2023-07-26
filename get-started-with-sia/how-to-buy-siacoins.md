@@ -39,4 +39,4 @@ Click **Buy Now**.
 
 ![](../.gitbook/assets/transak-widget-2.png)
 
-Then enter in your SC address [that you made](../your-sia-wallet/how-to-make-a-sia-address.md), and click **Buy Now** again to proceed through the transaction process.
+Then enter in your SC address [that you made](broken-reference), and click **Buy Now** again to proceed through the transaction process.

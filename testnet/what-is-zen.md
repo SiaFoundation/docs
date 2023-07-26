@@ -1,4 +1,4 @@
-# What is Zen?
+# 🚧 What is Zen?
 
 {% hint style="info" %}
 The Zen testnet is a dedicated test environment, and the zSC acquired or used on the testnet holds no real-world value.

@@ -14,7 +14,9 @@ Upon completion of its investigation, and as reflected in the settled order, the
 * [SEC Waiver](https://www.sec.gov/rules/other/2019/33-10716.pdf)
 * [Waiver Request Letter](https://www.sec.gov/divisions/corpfin/cf-noaction/2019/nebulous-093019-506.pdf)
 
-## How does Sia's two-token model work?
+<details>
+
+<summary>How does Sia's two-token model work?</summary>
 
 Sia uses two tokens, **Siacoins** and **Siafunds**.
 
@@ -26,7 +28,11 @@ We believe Sia’s two-token model creates an ideal ecosystem, where the Sia cor
 
 Interested in learning more? Read our [blog post](https://blog.sia.tech/the-ico-paradox-and-how-to-fix-it-3bfc61bc6eb8) about Sia’s two-token model and the problems with ICOs.
 
-## How does the settlement impact the Sia network?
+</details>
+
+<details>
+
+<summary>How does the settlement impact the Sia network?</summary>
 
 The Sia network is not impacted by the SEC settlement.
 
@@ -34,19 +40,31 @@ As reflected in the settlement, the SEC did not take any enforcement action with
 
 This means that after intense scrutiny and information gathering by the SEC, they decided to not modify, restrict, or suspend the Sia network in any way.
 
-## Does the settlement harm the Sia project?
+</details>
+
+<details>
+
+<summary>Does the settlement harm the Sia project?</summary>
 
 It does not. The SEC did not take any enforcement action with respect to the Siacoin token or any current activity on the Sia network. The SEC did not pursue any criminal action against Nebulous or Sia core developers.
 
 In fact, the cryptocurrency community may decide that the settlement strengthens the Sia project, as the SEC did not take any enforcement action with respect to the Siacoin token.
 
-## Did the Sia team knowingly sell unregistered securities in 2014?
+</details>
+
+<details>
+
+<summary>Did the Sia team knowingly sell unregistered securities in 2014?</summary>
 
 No, we did not. At the time of the 2014 offering, we were not aware that Sianotes or Siafunds may be considered securities by the SEC. This offering took place months before the Ethereum offering and years before the SEC issued any cryptocurrency-related guidance.
 
 Given that we properly registered our 2018 offering of Siafunds in the wake of the SEC’s 2017 guidance regarding digital assets, we are disappointed that the SEC chose to take action with respect to our relatively small 2014 offering.
 
-## Tell me about Siacoins before we dive deeper.
+</details>
+
+<details>
+
+<summary>Tell me about Siacoins before we dive deeper</summary>
 
 Siacoins are used for utility on the Sia network; renters buy storage space with Siacoins and hosts are paid in Siacoins for selling their storage space. Hosts also post collateral in Siacoins and miners mine Siacoins via Proof-of-Work.
 
@@ -56,27 +74,53 @@ Siacoins were never used for fundraising, and the Sia core team holds less than 
 
 Siacoins are mined via Proof-of-Work, and the Sia core team pre-mined less than 0.1% of the total Siacoin supply at launch.
 
-## Does this mean Siacoins are securities?
+</details>
+
+<details>
+
+<summary>Does this mean Siacoins are securities?</summary>
 
 The SEC thoroughly examined Siacoins during the course of their investigation. The SEC did not take any enforcement action with respect to the Siacoin token or any current activity on the Sia network, and the order does not require Nebulous to register the Siacoin token as a security with the SEC.
 
-## I don't see Siacoins mentioned in the settlement. Is the SEC aware of Siacoins?
+</details>
+
+<details>
+
+<summary>I don't see Siacoins mentioned in the settlement. Is the SEC aware of Siacoins?</summary>
 
 The SEC thoroughly examined Siacoins during the course of their investigation. The Sia core team briefed the SEC on how Siacoins have been used since the launch of Sia in 2015 – strictly for utility on the network, and never used for fundraising.
 
 During our conversations, the SEC displayed exceptional technical knowledge on all aspects of the network, including Siacoins.
 
-## I am an exchange that currently lists Siacoins. What does this settlement mean for me?
+</details>
+
+<details>
+
+<summary>I am an exchange that currently lists Siacoins. What does this settlement mean for me?</summary>
 
 Nothing! The SEC did not take any enforcement action with respect to the Siacoin token or any current activity on the Sia network, and the order does not require Nebulous to register the Siacoin token as a security with the SEC. The SEC was well informed of how Siacoins are created and used, including that they are traded on a number of exchanges around the world. We can provide any exchange a copy of a legal opinion regarding Siacoin's status as it relates to US securities law.
 
-## I hold or use Siacoins to rent cloud storage. What does this settlement mean for me?
+</details>
+
+<details>
+
+<summary>I hold or use Siacoins to rent cloud storage. What does this settlement mean for me?</summary>
 
 Nothing! The SEC did not take any enforcement action regarding Siacoins in their ruling, despite being well informed of how Siacoins are created and used. If you rent, you can still use Siacoins for their intended purpose – renting cloud storage space on the Sia network. If you hold Siacoins, you can still keep them in your wallet or trade them on any supported exchange.
 
-## I mine Siacoin. What does this settlement mean for me?
+</details>
+
+<details>
+
+<summary>I mine Siacoin. What does this settlement mean for me?</summary>
 
 Nothing! The SEC did not take any enforcement action regarding Siacoins in their ruling, despite being well informed of how Siacoins are created and used. Miners should feel comfortable continuing to mine Siacoins.
+
+</details>
+
+
+
+##
 
 ## Tell me more about Siafunds.
 

@@ -4,7 +4,11 @@ description: >-
   Later pages walk you through the specific process.
 ---
 
-# About renting on Sia
+# 🚧 About Renting on Sia
+
+{% hint style="info" %}
+Get started renting on Sia with the official [`renterd` software](https://sia.tech/software/renterd).
+{% endhint %}
 
 When you upload files on the Sia Storage Platform, you become a **renter**. You upload files to other users who have made their space available, called **hosts**. We use the term renter because Sia creates contracts with other hosts:
 
@@ -21,7 +25,7 @@ You store data on the network by:
 
 The Sia storage network uses a marketplace to find storage for your data. The cost of this storage, often referred to as **pricing**, is the market rate determined competitively by hosts and renters. If hosts find they can lower prices and win more data to store as a result, they'll do it. If renters are willing to pay more to store on high-quality hosts, those hosts might raise their prices.
 
-The price of storage is listed in Siacoins, the cryptocurrency used to buy and sell storage on the network. You'll need to \[get Siacoins] in order to upload files. The price of a Siacoin can vary just like the price of any cryptocurrency. This is usually stable for periods of time, but can sometimes have more significant shifts depending on the crypto trading markets.
+The price of storage is listed in Siacoins, the cryptocurrency used to buy and sell storage on the network. You'll need to [get Siacoins](https://sia.tech/community-ecosystem?software=exchanges#software) in order to upload files. The price of a Siacoin can vary just like the price of any cryptocurrency. This is usually stable for periods of time, but can sometimes have more significant shifts depending on the crypto trading markets.
 
 Fortunately, the price of Siacoin doesn't really affect the price of Sia storage. Hosts set their own prices, which creates a marketplace where the best and most reliable hosts are competing for the storage contracts of those who want to upload data. Pricing on the network usually works out to around **$2 per TB per month.** Using Sia becomes more cost-efficient as you upload more data and store it for longer periods of time.
 
@@ -33,7 +37,7 @@ Storage contracts are one of the most important features of the Sia network. The
 
 A host's job is to store the data, and they only get paid when they have proved they have done so. A renter's job is to pay the host, and they only pay for the data storage they use.
 
-Storage contracts last for three months by default and are automatically formed when you start uploading your files.
+By default storage contracts last for three months and are automatically formed when you start uploading your files.
 
 ## **Fees**
 
@@ -44,9 +48,11 @@ As a renter, you pay for the cost of renting storage space. There are also some 
 
 Because contract formation fees only happen once, and your initial upload will consume a lot of bandwidth, using Sia for longer periods of time results in lower average costs.
 
-## **Your Allowance**
+## **Autopilot and your Allowance**
 
-The first thing you'll do when you want to upload files to Sia is set an allowance. The allowance tells Sia how much money you're willing to spend on storage space, and makes sure more than this amount is not deducted from your wallet.
+By default the Sia rentering software `renterd` runs with a module called `autopilot` enabled. `autopilot` is the software agent that automatically forms contracts based on your configured parameters. The most important parameter is your "allowance", setting your allowance is the first thing you'll do when getting started with renting.
+
+The allowance tells Sia how much money you're willing to spend on storage space, and makes sure more than this amount is not deducted from your wallet.
 
 Most people just set their allowance and forget it, but it's a good idea to check in periodically. Setting your allowance too low might mean that Sia can't upload all your data, or might not be able to form the contracts with other hosts to begin with. You can change your allowance at any time in Sia.
 
@@ -56,7 +62,8 @@ Setting your allowance happens before uploading files, and Sia starts to automat
 
 ## **Uploading files**
 
-Uploading files is done using the Sia software which can be found on our [official downloads](https://sia.tech/get-started) page.
+Uploading files is done using the `renterd` Sia software either via API or its user-interface which is accessible via web browser.
 
-* Sia UI, the Sia app built for casual users. [how-to-download-and-install-sia-ui.md](../your-sia-wallet/sia-ui-faqs/how-to-download-and-install-sia-ui.md "mention").
-* `siad`, the Sia daemon built for technical users who prefer to use a CLI (Command Line Interface).
+## Software
+
+The `renterd` software is how you rent storage on Sia. Software downloads can be found on the [`renterd` page](https://sia.tech/software/renterd) of the official website.

@@ -8,9 +8,9 @@ While this site can be updated by our users, a community never suffers from havi
 
 ### Submit your edits!
 
-You can edit these docs by submitting a proposal in the [GitHub repo](https://github.com/SiaFoundation/docs). The simplest way is to click **Edit on GitHub** which appears in the upper right corner of every page.
+You can edit these docs by submitting a proposal in the [GitHub repo](https://github.com/SiaFoundation/docs). The simplest way is to click **Edit on GitHub** under the **ellipsis (...)** which appears in the upper right corner of every page.
 
-<figure><img src="../.gitbook/assets/docs-edit-on-github.png" alt=""><figcaption><p>Edit on Github</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Edit on Github.png" alt=""><figcaption><p>Edit on Github</p></figcaption></figure>
 
 You'll be taken to GitHub, which is a website that lets multiple people collaborate on code. The code, in this case, is our support document.
 

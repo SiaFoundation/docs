@@ -1,2 +1,0 @@
-# 🚧 Renting storage on Sia
-

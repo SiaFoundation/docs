@@ -1,58 +1,45 @@
----
-description: >-
-  There's some specific info you should know before you get your first file on
-  Sia.
----
+# Managing Files
 
-# 🚧 Managing your files
+## Maintaining Data
 
-{% hint style="info" %}
-As with any file storage or backup solution, Sia should not be your sole location for critical files.
+To ensure the constant availability of your data, there are a few crucial tasks you should perform periodically.&#x20;
+
+{% hint style="warning" %}
+`renterd` **MUST** be running with your wallet unlocked for these any actions to take place, therefore advisable to open it at least once a month and let it run overnight to perform various essential housekeeping tasks.&#x20;
+
+If you upload files and subsequently neglect to reopen `renterd`, your allowance and contracts will eventually expire, leading to the immediate deletion of your files once your contracts become invalid.
 {% endhint %}
 
-## Uploading
+### **Refreshing your allowance**
 
-Uploading happens in Sia-UI or your preferred command-line interface. Sia-UI has your standard file browser or drag-and-drop options, just like any other file storage application. There are special commands that you'll want to become familiar with when using the CLI version of Sia, which is called `siac`.
-
-When you begin to upload a file to Sia, it has to get processed on your machine to allow for maximum redundancy and security on the network. It is first split into manageable chunks. Each chunk is then run through a process that creates 30 pieces, each of which gets encrypted before being sent to a different host. Only 10 of the 30 pieces are needed to reconstruct a chunk, but no host ever sees more than one. This means, for each part of your original file, 20 hosts could drop from the network and your data will still be safe and secure.
+About six weeks after your contracts are created, your allowance attempts to refill itself. `renterd` will never spend more than your allowance, so it needs to be refilled to facilitate contract renewals and downloads through the rest of the contract period.&#x20;
 
 {% hint style="info" %}
-For the more technical readers, here is what happens behind the scenes:
-
-* Files are chunked into 40MB chunks (if a file is smaller, it is padded to 40MB so that data looks identical as it moves across networks)
-* Each chunk is then erasure-coded using [Reed-Solomon](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon\_error\_correction) encoding. After processing, each chunk has 30 unique 4MB pieces associated with it.
-* Each piece is then encrypted using [Threefish](https://en.wikipedia.org/wiki/Threefish) and uploaded to a distinct host.
-* Because Reed-Solomon encoding is done with 10 data shards and 20 parity shards, any 10 pieces are sufficient for rebuilding the file.
+The allowance will refill automatically when you open `renterd`.
 {% endhint %}
 
-That's a lot of details but just know: you don't have to do anything, or even see that this process happens.
+### **Renewing your contracts**
 
-## Limits on uploading\*
+Your storage contracts will renew automatically at the end of the contract period. By default, Sia will attempt to renew your contract within about one month of the contract expiration date.&#x20;
 
-\*These numbers will change over time.
+If you started renting at the beginning of January, your 3-month contracts would expire around the end of March. Sia would attempt to renew contracts around the beginning of March.&#x20;
 
-**Maximum total storage:** Sia can currently handle 35 TB of data in a single node, or installation of Sia.
+{% hint style="info" %}
+Your contracts renew automatically when you open `renterd`.
+{% endhint %}
 
-**File size:** The minimum file size on Sia is currently 40 MB. Uploading smaller files isn't a problem, but Sia will pad each of them out to 40 MB. Your 80 MB short video stays 80 MB. But your 8 MB photo and your 100 KB document each become 40 MB when uploaded.
+### **Boosting file health**
 
-This means that, if you're uploading many small files, you'll save a lot of money by zipping them up together before uploading. This minimum file size will be _significantly_ reduced in a future update.
+In `renterd`, the health of your files is quantified as a percentage, representing the quantity of available fragments that make up each file. Ideally, you should strive for a perfect health rating of 100%, indicating that all 30 file fragments are securely distributed among various hosts.
 
-## Health and Redundancy
+<figure><img src="../.gitbook/assets/renter_7.png" alt=""><figcaption><p>File health check in renterd</p></figcaption></figure>
 
-In Sia, you'll see the health of your files represented as a percentage. This refers to how many pieces of this file are available. You always want this to be 100%, which means that all 30 pieces of your file are stored on hosts. Sia is smart though – if a host goes offline, it will re-duplicate that piece on a new host the next time it checks.
+`renterd` incorporates an intelligent redundancy system that swiftly replicates any missing fragment onto a new host in case one becomes unavailable during its next active check.
 
-Sia can only check when it's active though, so be sure to open Sia periodically to refresh the health of your files.
+Health assessments can only be conducted if `renterd` when it's actively running. To ensure the ongoing integrity of your data, it's advisable to periodically launch and operate Sia, allowing it to refresh the health status of your files and sustain their redundancy at optimal levels.
 
 ## Downloading
 
-Downloading files happens right through the app as well. There's a small download icon next to each file in your list. Downloading requires Siacoins since you pay for the bandwidth you use.
+Downloading files occurs directly within the app as well. Each file in your list is accompanied by a small download icon. Downloading necessitates Siacoins because you are billed for the bandwidth consumed.
 
-### Maintaining Data _\*\*_
-
-In order to make sure that your data is always available, there's a couple of important tasks you should periodically perform.
-
-* **Refreshing your allowance** - About six weeks after your contracts are created, your allowance attempts to refill itself. Sia will never spend more than your allowance, so it needs to be refilled to facilitate contract renewals and downloads through the rest of the contract period. _**!** The allowance will refill automatically when you open Sia._
-* **Renewing your contracts** - Your storage contracts will renew automatically at the end of the contract period. By default, Sia will attempt to renew your contract within about 1 month of the contract expiration date. If you started renting at the beginning of January, your 3-month contracts would expire around the end of March. Sia would attempt to renew them around the beginning of March. _**!** Your contracts renew automatically when you open Sia._
-* **Boosting file health** - File health and redundancy are also boosted if needed, as described above.
-
-**Sia needs to be running with your wallet unlocked for these things to occur**, so as a renter, it's a good idea to open Sia **at least once a month** and let it run overnight to take care of miscellaneous housekeeping tasks such as these. If you simply upload files and then never open Sia again, your allowance and your contracts will eventually expire and your files will be immediately deleted once your contracts are no longer valid.
+<figure><img src="../.gitbook/assets/renterd_8.png" alt=""><figcaption><p>Downloading files in renterd</p></figcaption></figure>

@@ -1,10 +1,10 @@
-# Introduction to these docs
+# Introduction
 
 The goal of the Sia Docs is to be a comprehensive source of Sia information. Info in these docs has been taken from a number of sources, primarily the previous Sia Support Center and community-driven sites like the Sia Wiki, SiaStats, and SiaSetup. Thanks to these sites and the many others that have contributed to the Sia ecosystem over the years.
 
 Keeping docs up to date is no small task, and GitBook allows anyone in the community to submit an edit to a document, or even a completely new article on their own. While we still need to review and approve submissions, the pipeline to getting docs updated is significantly cleaner than it used to be.
 
-While this site can be updated by our users, a community never suffers from having too many resources. Where this site takes a targeted approach to on-boarding new users and getting them up and running, another site might take a more philosophical approach. Yet another might focus on metrics. There's nothing wrong with redundancy – the entire Sia network is based on it.
+While this site can be updated by our users, a community never suffers from having too many resources. Where this site takes a targeted approach to onboarding new users and getting them up and running, another site might take a more philosophical approach. Yet another might focus on metrics. There's nothing wrong with redundancy – the entire Sia network is based on it.
 
 ### Submit your edits!
 

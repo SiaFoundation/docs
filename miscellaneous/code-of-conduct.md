@@ -1,2 +1,0 @@
-# 🚧 Code of Conduct
-

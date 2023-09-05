@@ -1,0 +1,49 @@
+# Learn about Siafunds
+
+## What are Siafunds?
+
+You know all about Siacoins, the utility token used for automatically fulfilling Sia's smart contracts. But what about Siafunds - the other token on the Sia network?
+
+Siafunds are tokens used for revenue sharing on the Sia network; a 3.9% fee from every storage-related transaction on Sia is distributed to the holders of Siafunds. Approximately 1,400 Siafunds were distributed to investors via securities sales and the reamining \~86,000 Siafunds are held by Skynet Labs.
+
+When contracts are completed on the network, 3.9% of each funding source is reserved for Siafund holders. Funding sources for contracts are:
+
+* Renter fees for storage
+* Renter bandwidth costs
+* Host collateral
+
+At the end of a contract, the amount reserved is then dispersed to all Siafund holders equally.
+
+## How to store Siafunds
+
+Siafunds are stored in your wallet, right next to your Siacoins.
+
+![](../.gitbook/assets/siafunds-close.png)
+
+They are also sent to and received at normal Siacoin addresses, and can be restored with your Siacoin balance as long as you have your Sia seed.
+
+## Why Siafunds?
+
+We created Siafunds in order to sustainably fund the development of the Sia network.
+
+We created Siafunds in order to sustainably fund the development of the Sia network. Siafunds incentivize and enable us – and investors – to maintain and improve the Sia network by capturing a share of revenue as the network grows. As more users pay for storage, Siafund revenues increase and more resources can be devoted toward development of Sia-supported software.
+
+## Tokenized securities vs utility tokens
+
+Siafunds were designated as securities by the SEC back in 2018. Utility tokens primarily derive their value from use on a blockchain platform, like Siacoins. Siafunds, by contrast, derive their value from the present and future value of the Sia storage network.
+
+## How many Siafunds are there?
+
+The maximum number of Siafunds that will ever be issued is 10,000, all of which were generated upon the launch of the Sia software in 2015. Because the number of Siafunds issued is fixed, as the number, size, and value of the contracts on the Sia network increase, the amount of revenue per Siafund increases proportionally.
+
+Nebulous, Inc. originally owned all 10,000, but over the years have conducted multiple Siafund sales to fund development. In 2021 Nebulous rebranded to Skynet Labs and still holds about 8,600 Siafunds, the rest have been issued to third parties.
+
+## Where to buy Siafunds
+
+Siafunds aren't available on normal exchanges. The SEC has designated Siafunds as securities according to United States laws. **We recommend that you research the applicable securities laws in your country before buying or selling Siafunds.**
+
+If you are based in the United States, you may be required to be an accredited investor to buy or sell Siafunds. We recommend consulting with an attorney.
+
+We treat them like securities, and most exchanges aren't willing to follow the regulatory requirements necessary to trade in securities.
+
+There are however [Siafunds markets on Bisq](https://bisq.network/markets/?currency=sf\_btc), a decentralized exchange. You can also check the [Sia Discord server](https://sia.tech/discord) for the #siafunds channel, where over-the-counter trades are available through a trusted escrow.

@@ -63,7 +63,3 @@ Setting your allowance happens before uploading files, and Sia starts to automat
 ## **Uploading files**
 
 Uploading files is done using the `renterd` Sia software either via API or its user-interface which is accessible via web browser.
-
-## Software
-
-The `renterd` software is how you rent storage on Sia. Software downloads can be found on the [`renterd` page](https://sia.tech/software/renterd) of the official website.

@@ -2,25 +2,9 @@
 
 <details>
 
-<summary>How do I see advanced host stats?</summary>
-
-Type `host -v` to see complete stats. If you are in Sia-UI, open the Terminal with `>` at the top of the app.
-
-</details>
-
-<details>
-
 <summary>Can I run my host on two different computers at the same time?</summary>
 
 It is not recommended to keep the same wallet and installation running in two different computers while hosting, as it could lead to data loss and loss of Siacoins.
-
-</details>
-
-<details>
-
-<summary>What happens if my Sia wallet locks?</summary>
-
-Your host will appear as offline. Reference [this article](broken-reference) to keep it automatically unlocked.
 
 </details>
 
@@ -44,21 +28,19 @@ It may be easier to resize your old storage folders down incrementally after add
 
 <details>
 
-<summary>Why are there multiple small deductions taken from my wallet?</summary>
-
-If you don't use DDNS, you probably have a dynamic IP from your ISP that changes from time to time. When this happens, your Sia host re-announces itself and this becomes a transaction in your wallet.
-
-You also might see multiple transactions form as collateral gets tied up in contracts. This is totally normal.
-
-</details>
-
-<details>
-
 <summary>Should I backup my Sia host metadata?</summary>
 
 The Sia client maintains additional information on your contracts as a host and your renters' files in an internal location. This information is known as host metadata and is required in order to provide your renters with access to their data on the Sia cloud storage network. Without it, it's like losing renter data - you'd have no way to know which data belongs to who in your host storage folders.
 
 See more about backing up in [Sia-UI hosting guide](broken-reference).
+
+</details>
+
+<details>
+
+<summary>How do I set up port forwarding for TCP ports 9981-9983?</summary>
+
+To set up port forwarding for TCP ports 9981-9983, you'll need to access your firewall or router settings. While we can't provide specific instructions in this guide, you can find tutorials for configuring port forwarding on most routers and firewalls online.
 
 </details>
 
@@ -74,16 +56,6 @@ There are a number of free DDNS providers which can be found by searching for DD
 
 <details>
 
-<summary>Why is my Sia host becoming unresponsive for extended periods, ranging from several minutes to several hours?</summary>
-
-Your host can become unresponsive if you add or change storage directories - especially on Windows, as Windows preallocates files so adding a drive with several terabytes of space will take as long as it takes to write to the entire drive, which is usually about 2-3 hours per TB. Your host can also become unresponsive during initial startup if it has to process or rebuild certain internal data files, or if it is syncing because it hasn't been online for a while or because the consensus data was removed or bootstrapped.
-
-In Sia v1.4.x and v1.5.0, there is a known issue regarding hosts becoming unresponsive, causing [SiaStats Host Monitor](https://siastats.info/hosts) benchmark failures and other issues. The SiaStats benchmark failures usually mention an I/O timeout, and several failures may occur in a row. There's not much you can do about this issue currently, but the Sia team is aware of the issue and has attempted a fix for v1.5.1. As this version has just been released in November 2020, it may take a few months to see if the resolution is effective.
-
-</details>
-
-<details>
-
 <summary>How do I shut my Sia host down?</summary>
 
 You can stop accepting new contracts by turning off the green slider next to "Announce Host" in the Host tab. However, this only stops new contracts - you still need to finish out current contracts. Default host settings use a \~26-week contract length and renters use a default \~3-month length, so you should switch new contracts off at least 6 months prior to when you'd like to shut down your host. Otherwise, you may still have contracts active which you could lose collateral for if you take your host offline before they complete.
@@ -91,31 +63,4 @@ You can stop accepting new contracts by turning off the green slider next to "An
 Once you've switched off new contracts, you can track the progress of any current contracts by typing `host` into the Terminal `>` at the top of Sia-UI every week or so. Once all collateral is freed (no collateral shows as locked or risked), you can safely take your host offline. You can also use a tool like the [SiaStats Host Monitor](https://siastats.info/hosts) by searching for your host's IP address or domain name. While this service doesn't show contract details, once your host's used storage drops to zero all contracts should be completed.
 
 </details>
-
-## Can I move my Sia host to a new computer?
-
-{% hint style="warning" %}
-Moving your host isn't recommended. It's a tough process and doesn't have a 100% success rate. Doing so might break your host completely.
-{% endhint %}
-
-Both the installation folder and the Sia-UI folders are required to be transferred, on top of preserving the recovery seed.
-
-### Installation locations
-
-| Operating System | Data Directory                              |
-| ---------------- | ------------------------------------------- |
-| Linux            | `$HOME/.config/Sia-UI`                      |
-| Windows          | `Users\\appdata\roaming\Sia-UI\`            |
-| macOS            | `$HOME/Library/Application Support/Sia-UI/` |
-
-1. Install Sia on the new system, and start it once to generate the internal data files. Then close Sia completely (right-click the icon in the system tray and select **Quit**) - you don't need to wait for it to synchronize or set up your wallet.
-2. Open Sia's internal data files (**About (i) icon > Open Data Folder**) on the old host, then close Sia completely.
-3. Move the host storage folders and their contents from the old host to the new host. Obviously, this must be done such that the new storage locations are equal to or larger in size than the old storage locations in order to fit the data. Additionally, the hosting folders need to be accessible in the new machine in the exact same path. For instance, if the host was hosting files in a folder located on D:/Misc/Sia, the new computer will need to have a drive called “D:” and the hosting files placed exactly in /Misc/Sia. **This last requirement makes it impossible to transfer a host from the OS of one family to an OS of a different family** (for example, from Linux to Windows), as the drive routes are different.
-4. Move all of Sia's internal data files from the old host to the new host at the locations found above.
-5. In the internal data files on the new host, edit the `host\contractmanager\contractmanager.json` and `host\contractmanager\contractmanager.wal` files using a text editor, look for your old storage folder paths, and change them to your corresponding new storage folder paths.
-6. Start Sia on the new host.
-
-Sia may take a while to start while it tries to figure out the changes. It may display a message while it does, or it may just sit. Your wallet and host data should be transferred over, though, and hopefully, everything will be in order once Sia finishes loading and you unlock your wallet.
-
-
 

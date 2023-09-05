@@ -229,7 +229,7 @@ Once you are happy with your prices, click the "Save Changes" button in the top 
 
 ## Port forwarding
 
-If you have a firewall or router you will need to forward/open TCP ports 9981-9983. How to do so is outside of the scope of this guide, there are tutorials available for most routers/firewalls available on Google.
+If you have a firewall or router, you will need to forward/open TCP ports 9981-9983. How to do so is outside of the scope of this guide; there are tutorials available for most routers/firewalls available on Google.
 
 ## Waiting for sync
 

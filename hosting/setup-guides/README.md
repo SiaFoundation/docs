@@ -1,2 +1,2 @@
-# 🚧 Setup Guides
+# Setting up hostd
 

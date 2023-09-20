@@ -58,17 +58,17 @@ mkdir ~/walletd
 <pre class="language-sh"><code class="lang-sh"><strong>walletd --dir ~/walletd
 </strong></code></pre>
 
-You will be prompted input a `API password`. This password is chosen by you and can be anything you want it to be. It will be used to unlock the `walletd` UI via your browser, it should be something secure and easy to remember. This value are not stored anywhere; you will need to re-enter it every time you start `walletd`.
+You will be prompted to input a `API password`. This password is chosen by you and can be anything you want it to be. It will be used to unlock the `walletd` UI via your browser, should be something secure and easy to remember. This value is not stored anywhere; you will need to re-enter it every time you start `walletd`.
 
 {% hint style="info" %}
-You can also set the SIA`_API_PASSWORD` environment variables so you do not have to re-enter the values every time. Check out this \<article> to set this.
+You can also set the SIA`_API_PASSWORD` environment variables so you do not have to re-enter the values every time.
 {% endhint %}
 
 2. After entering your desired `API password`, `walletd` will start.&#x20;
 
 <figure><img src="../../.gitbook/assets/terminal 2.png" alt=""><figcaption><p>Starting walletd via macOS terminal</p></figcaption></figure>
 
-Your terminal will produce a two different values you may not be familiar with, so feel free to check the tabs below to see what each of them are and why they are important:
+Your terminal will produce two different values you may not be familiar with, so feel free to check the tabs below to see what each of them is and why they are important:
 
 {% tabs %}
 {% tab title="p2p" %}

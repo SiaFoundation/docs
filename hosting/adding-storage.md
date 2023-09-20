@@ -1,21 +1,30 @@
-# 🚧 Adding Storage
+---
+cover: ../.gitbook/assets/leaves.png
+coverY: 0
+---
 
-## Add storage
+# Adding Storage
 
-A "volume" is a location on disk where `hostd` will store uploaded data. A volume can be anywhere, including network drives and external drives. You can create multiple volumes to combine storage from multiple drives. To add a volume:
+When Hosting on Sia, you're required to allocate a location on your disk that `hostd` will store any uploaded data from renters. This is referred to as **volume**.&#x20;
 
-1. Click the "Volume" icon in the sidebar
-2. Click the "Create Volume" button to add your first storage volume.
+**Volume** can be located anywhere on the local or external drives, and you can create multiple volumes to combine storage from multiple drives.
 
-<figure><img src="../.gitbook/assets/hostd_setup_mac_create_volume.png" alt=""><figcaption><p>hostd create volume</p></figcaption></figure>
+## Creating volume
 
-1. Enter a name for the volume. We recommend something simple, like "hostdata.dat"
-2. Use the built-in browser to select a folder to store the volume file.
-3. Enter a maximum size for the volume. This is the maximum amount of data that can be stored in the volume.
-4. Click "Create" to add the volume to \`hostd\`
+Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](setup-guides/) guide otherwise choose from the sidebar **Volume**.
 
-After clicking "Create," the volume will be displayed in the volumes list. Depending on the size of the volume and the filesystem, it may take a while to fully provision the new volume. The progress will be displayed in the UI.
+Click on the **Create Volume** button in the top right-hand corner.
 
-<figure><img src="../.gitbook/assets/hostd_setup_linux_volume_list.png" alt=""><figcaption><p>hostd volume list</p></figcaption></figure>
+1. Enter a name for the volume. We recommend something simple, like _hostdata1.dat_ or _data1.dat._
+2. Now select a folder to store the volume file.
+3. Lastly, enter a maximum size for the volume. This is the maximum amount of data that can be stored in the volume.&#x20;
 
-###
+<figure><img src="../.gitbook/assets/adding_volume.png" alt=""><figcaption><p>Creating volume on hostd</p></figcaption></figure>
+
+4. Click **Create** to add the volume to `hostd`.
+
+### Checking the status
+
+After clicking **Create**, the volume will be displayed in the volumes list. Depending on the size of the volume and the filesystem, it may take a while to fully provision the new volume. The progress will be displayed in the UI.
+
+<figure><img src="../.gitbook/assets/creating volume list.png" alt=""><figcaption><p>hostd Volume list</p></figcaption></figure>

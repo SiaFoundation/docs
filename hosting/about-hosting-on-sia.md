@@ -2,13 +2,11 @@
 description: >-
   Learn about the concepts and terms you'll need to be familiar with to host on
   the Sia network.
+cover: ../.gitbook/assets/leaves.png
+coverY: 0
 ---
 
 # About Hosting on Sia
-
-{% hint style="info" %}
-Get started hosting on Sia with the official [`hostd` software](https://sia.tech/software/hostd).
-{% endhint %}
 
 **Hosting** means you are contributing your excess storage space to the Sia network. You're helping to keep data where it belongs – safely in the hands of those who uploaded it, the **renters**.
 
@@ -27,11 +25,14 @@ As a host, you set your own prices. There are a lot of specific price points you
 
 ## **About Contracts**
 
-Storage contracts are one of the most important features of the Sia network. They are what allow the entire Sia ecosystem to work in a trustless way – they form blockchain-enforced contracts between you and the people who rent your storage space that are automatically fulfilled.
+Storage contracts are one of the most important features of the Sia network. They are what allow the entire Sia ecosystem to work in a trustless way – they form blockchain-enforced contracts between you and the people who store your data that are automatically fulfilled when each party meets their obligation. In other words, they let you form contracts with people you don't know to store your data, and they can't steal your money.
+
+* **Renters** are tasked with paying the host, and they are charged solely for the data storage they utilize.
+* **Hosts** are responsible for data storage and receive compensation only after demonstrating successful storage.
 
 ## Earn Siacoins
 
-As a host, you're part of a marketplace where you compete with other hosts for renter contracts. Competition should drive prices down, and demand should drive prices up. The goal is a market where people can upload their data with maximum security, minimum cost, and at fair rates that provide revenue to the hosts.
+As a host, you're part of a marketplace where you compete with other hosts for storage contracts. Competition should drive prices down, and demand should drive prices up. The goal is a market where people can upload their data with maximum security, minimum cost, and at fair rates that provide revenue to the hosts.
 
 ## Fees
 
@@ -43,7 +44,7 @@ Having collateral incentivizes hosts to be online and to keep their renter data 
 
 ## Host Scoring
 
-One of the most important factors that determine how you'll fair as a host is your host score. This is based on a number of metrics – some that you can directly affect, some that improve or diminish over time based on your performance.
+One of the most important factors that determines success as a host is your score. This is based on a number of metrics – some that you can directly affect, some that improve or diminish over time based on your performance.
 
 Sia is a decentralized network - the code to evaluate these scoring metrics is contained within each renter's Sia instance. For that reason, each Sia renter you encounter builds their own host score for your host, so your host may be scored differently among different renters. Your host does not have one overall score across the Sia network, but many scores with many renters based on the metrics described below. Any website or service showing your Sia host rank is showing that particular source's view of your host, which may be different from what a renter comes up with.
 
@@ -51,12 +52,12 @@ Sia is a decentralized network - the code to evaluate these scoring metrics is c
 
 {% tabs %}
 {% tab title="Host Uptime" %}
-Host uptime is an incredibly important metric. You need to be online when people try to get their data, and since that might be anytime, you should be online all the time. You're allowed a small amount of downtime in order to address minor maintenance issues like restarting for updates, which amounts to approximately 14 hours per month.
+to Host uptime is an incredibly important metric. You need to be online when people try to get their data, and since that might be any time, you should be online all the time. You're allowed a small amount of downtime in order to address minor maintenance issues like restarting for updates, which amounts to approximately 14 hours per month.
 
 In general, you should plan for your hosting computer to be turned on and online 24/7. If you can't commit to this, you shouldn't try to host on the Sia network.
 
 {% hint style="danger" %}
-Warning: If you go offline for too long (less than 95% uptime) or lose renter data (by deleting it or experiencing a hardware failure), you can lose money by losing your collateral for active contracts. You can also become responsible for SiaFund fees for each contract.
+Warning: If you go offline for too long (less than 80% uptime) or lose renter data (by deleting it or experiencing a hardware failure), you can lose money by losing your collateral for active contracts. You can also become responsible for SiaFund fees for each contract.
 {% endhint %}
 
 Below are the exact amounts that your score will change based on your uptime percentage. Greater than 98% uptime results in no penalty, which is the 14 hours a month explained above (2% of 720 hours in a month = 14 hours).
@@ -142,10 +143,16 @@ Stay updated. Your host score drops if you're not running the latest version of 
 
 We have an incredible community building on Sia. Third-party sites can develop their own methods for scoring hosts based on various metrics. For example, SiaStats has developed a [Host Monitor](https://siastats.info/hosts) which evaluates hosts on pricing relative to other hosts, and even evaluates host performance regularly by forming contracts with every host it can in order to test bandwidth and latency. SiaStats even has great visualization for each host to make judging their metrics easier.
 
-These benchmarks are different from the core Sia protocol, but are still useful, and may be used to help monitor and improve your own host over time.
+These benchmarks are different from the core Sia protocol but are still useful, and may be used to help monitor and improve your own host over time.
 
 Once you've started hosting, you'll probably want to keep an eye on your host score and see how you might be able to improve your host ranking.
 
-## Software
 
-The `hostd` software is how you offer storage on Sia. Software downloads can be found on the [`hostd` page](https://sia.tech/software/hostd) of the official website.
+
+{% hint style="info" %}
+## **Getting Started with `hostd`**
+
+Contributing your storage space couldn't be any simpler by using Sia's `hostd` software!
+
+Get started hosting on Sia with the official [`hostd` software](https://sia.tech/software/hostd) and exploring our step-by-step [Setting up hostd ](setup-guides/)guide.
+{% endhint %}

@@ -22,7 +22,7 @@
 
 <summary>C</summary>
 
-**`Contracts`:** Formed between renter and host, contracts determine how much data is being stored, for how long, and at what price. These are automatically tracked and completed by the software and blockchain.
+**Contracts:** Formed between renter and host, contracts determine how much data is being stored, for how long, and at what price. These are automatically tracked and completed by the software and blockchain.
 
 
 
@@ -64,7 +64,7 @@
 
 <summary>H</summary>
 
-**`Host`:** Someone who lends their storage space so others can upload files to the network.
+**Host:** Someone who lends their storage space so others can upload files to the network.
 
 </details>
 

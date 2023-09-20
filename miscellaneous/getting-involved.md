@@ -1,11 +1,9 @@
+---
+cover: ../.gitbook/assets/header.jpeg
+coverY: 0
+---
+
 # Getting Involved
-
-## Learn more about Sia
-
-Sia provides an abundant array of valuable resources and excels in nurturing others' understanding of the Sia network.&#x20;
-
-* [SiaStats](http://siastats.info/) - Charts and metrics of the Sia network.
-* [Sia's API](https://api.sia.tech) - The Sia Storage Platform API documentation.
 
 ## Contribute to Sia
 
@@ -21,7 +19,7 @@ We have a wonderful community, and we hope you'll find your place there! Check t
 
 Join our socials to become a part of our thriving community, where you can actively engage with our ecosystem and fellow members while staying updated with the latest content, news, and developments!
 
-<div>
+<div data-full-width="false">
 
 <figure><img src="../.gitbook/assets/twiiter_social_icon.png" alt="" width="32"><figcaption><p><a href="https://twitter.com/Sia__Foundation">Twitter</a></p></figcaption></figure>
 

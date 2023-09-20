@@ -8,7 +8,7 @@ This guide will walk you through setting up `hostd` on macOS. At the end of this
 
 * **Installed Sia `hostd` software:** You should have successfully installed the Sia `hostd` software on your macOS system with the appropriate binary.
 * **Functional `hostd` Node:** Your hostd node will be fully functional and operational on the Sia network. It will be ready to engage in various network activities, including contract negotiation, storage provision, and transaction handling.
-* Created a `hostd` wallet: Have created a wallet with a Seed to access and manage your Sia network transactions and store your Siacoins in `hostd`.
+* Created a `hostd` wallet: Created a wallet with a Seed to access and manage your Sia network transactions and store your Siacoins in `hostd`.
 
 ## Pre-requisites
 
@@ -43,7 +43,7 @@ Remember to check which version to download to ensure it works correctly with yo
 
 <figure><img src="../../.gitbook/assets/host_1.png" alt=""><figcaption><p>macOS Download folder</p></figcaption></figure>
 
-2. Now that we have downloaded `hostd`, you may need unzip it and move it to a more accessible location:
+2. Now that we have downloaded `hostd`, you may need to unzip it and move it to a more accessible location:
    * Double-click on the downloaded `hostd` zip file to unzip it if it hasn't done so automatically.
    * Click on the newly unzipped directory.
    * Right-click on the path bar at the bottom of the Finder window and click "Open in Terminal".
@@ -77,7 +77,7 @@ hostd seed
 A new 12-word recovery phrase will be generated, so please copy and store it in a safe place as you will need this phrase to recover your wallet.&#x20;
 
 {% hint style="warning" %}
-If you lose this phrase, you will lose access to your wallet and funds. Find out [more](../../get-started-with-sia/the-importance-of-your-seed.md) about  the importance of your seed.
+If you lose this phrase, you will lose access to your wallet and funds. Find out more about [Your Sia Seed](../../get-started-with-sia/the-importance-of-your-seed.md) and why it is important.
 {% endhint %}
 
 You will also see the wallet's funding address. You can send Siacoin to this address to fund your host.
@@ -107,7 +107,7 @@ You can also set the `HOSTD_SEED` and `HOSTD_API_PASSWORD` environment variables
 
 <figure><img src="../../.gitbook/assets/host_4.png" alt=""><figcaption><p>Starting hostd</p></figcaption></figure>
 
-Your terminal will produce a range of different values you may not be familiar with, so feel free to check the tabs below to see what each of them are and why they are important:
+Your terminal will produce a range of different values you may not be familiar with, so feel free to check the tabs below to see what each of them is and why they are important:
 
 {% tabs %}
 {% tab title="p2p" %}
@@ -159,32 +159,6 @@ Enter your `API password` you created in the in the previous step to unlock `hos
 {% hint style="success" %}
 Congratulations on successfully setting up `hostd` and taking a significant step towards contributing your excess storage space to the Sia network.
 {% endhint %}
-
-## Waiting for sync
-
-Now that you have configured your host, you must wait for your host to finish syncing the blockchain. This can take several hours or even days depending on your hardware and internet connection. You can check the progress of the sync by mousing over the "Sia" logo at the top of the sidebar.
-
-<figure><img src="../../.gitbook/assets/hostd_setup_mac_sync.png" alt=""><figcaption><p>check sync status</p></figcaption></figure>
-
-## Announce your host
-
-Now that your host has finished syncing, you can announce your host to the network. This will publish your host's net address and public key to the blockchain so renters can connect to your host and form contracts. The announcement transaction costs a small amount of Siacoins, which will be deducted from your wallet.
-
-To announce your host:
-
-1. Click the "Configuration" icon in the sidebar
-2. Click the "Announce" button in the top right corner of the page
-3. Click "Announce" in the dialog to confirm
-
-<figure><img src="../../.gitbook/assets/hostd_setup_mac_announce.png" alt=""><figcaption><p>announce your host</p></figcaption></figure>
-
-After announcing, an "Unconfirmed" transaction will appear on the "Wallet" page. Once it is confirmed, your host will be visible on the network and renters will be able to form contracts with your host.
-
-<figure><img src="../../.gitbook/assets/hostd_setup_unconfirmed_transaction.png" alt=""><figcaption><p>unconfirmed announcement transaction</p></figcaption></figure>
-
-## Check your host's status
-
-Once the announcement is confirmed you can check if your host is visible on the network by going to [https://troubleshoot.siacentral.com](https://troubleshoot.siacentral.com/). Enter your host's net address and click "Check Host". This tool will connect to your host and notify you of any issues.
 
 ## Updating
 

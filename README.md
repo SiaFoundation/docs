@@ -1,53 +1,60 @@
 ---
-description: >-
-  Whether you're brand new to the Sia community or just need a refresher on the
-  basics, this article will get you up to speed.
+cover: .gitbook/assets/header.jpeg
+coverY: 0
 ---
 
-# Welcome to Sia!
+# Introduction
 
-Sia is a decentralized cloud storage platform secured by blockchain technology. The Sia storage network leverages underutilized hard drive capacity around the world to create a data storage marketplace that is more reliable and lower cost than traditional cloud storage providers. Sia has its own blockchain, and a utility token that powers it – the Siacoin.
+## Welcome to the Sia Docs!
 
-Your data is truly private and gets stored across the globe to eliminate any single point of failure and ensure the highest possible uptime. Since you hold the keys, you own your data. No outside company can access or control your files.
+The Sia Docs is your gateway to the remarkable world of decentralized cloud storage. Whether you're a tech-savvy enthusiast or someone who simply wants to explore the potential of the decentralization of cloud storage and data security, you've come to the right place!
 
-Data cannot be de-platformed. Files can not be hacked.
+Our documentation aims to provide a comprehensive source of information and serve as a beacon of knowledge for anyone interested in embracing the power of decentralized cloud storage.
 
-## Sia is here for good
+The information in these docs has been taken from a number of sources, primarily the previous Sia Support Center and community-driven sites like the [Sia Wiki](https://web.archive.org/web/20180921135627/https://siawiki.tech/index), [SiaStats](https://siastats.info), and [SiaSetup](https://siasetup.info), and we aim educate our communitiy with what Sia has to offer!
 
-Not only is your data safe on Sia, but you can feel confident that Sia isn't going anywhere. Sia has been in development for six years and has been live for five. The Sia software has been downloaded over a million times, and thousands of TB have been uploaded to the network since its inception. If the Sia dev team quit tomorrow, the network can autonomously run forever.
+## Submitting your edits
 
-Sia has a thriving community of renters, hosts, miners, data storage enthusiasts and an ecosystem of open source software and commercial data storage platforms. Discover the ecosystem on our [website's community and ecosystem page](https://sia.tech/community-ecosystem).
+Keeping our documentation current is a substantial undertaking, and with GitBook, we've opened the door for community members to actively contribute ideas. Whether you want to suggest edits to existing content or create entirely new articles, you have the power to do so.&#x20;
+
+{% hint style="warning" %}
+All submissions, undergo a review and approval process by a member of the team, which means your commit won't be merged immediately.
+{% endhint %}
+
+{% hint style="warning" %}
+You must have a GitHub account to submit an edit proposal. If you haven't already, please log in or create a GitHub account before you proceed.
+{% endhint %}
+
+1. To edit and submit a proposal via GitBook, click the **Page actions** (ellipsis) in the upper right corner of any page and click **Edit on GitHub**.
+
+<figure><img src=".gitbook/assets/introduction_1.png" alt=""><figcaption><p>Selecting the page actions, and edit on Github</p></figcaption></figure>
+
+After clicking **Edit on GitHub**, you'll be taken directly to the corresponding page on GitHub.
+
+2. Next, click **Edit the file** (pencil icon) to begin editing the markdown file.
+
+<figure><img src=".gitbook/assets/introduction_2.png" alt=""><figcaption><p>Editing the markdown file via Github</p></figcaption></figure>
+
+{% hint style="info" %}
+Simply toggle the **Preview** button to see how the Markdown will be formatted on the GitBook documentation.&#x20;
+{% endhint %}
+
+3. Once you make your changes/additions to the markdown, click the **Commit Changes** button in the top right corner. Remember to do the following:
+   * Select the **"Create a new branch for the commit and start a pull request"** option.
+   * Add a reasonable title for this commit change(s) in the commit message textbox.
+   * In the extended description section, provide A brief description of the changes/additions made in this commit. If possible provide any links to resources that help you with your decision to contribute.
+
+<figure><img src=".gitbook/assets/introduction_3.png" alt=""><figcaption><p>Committing changes and edits via Github</p></figcaption></figure>
+
+4. Once you're satisfied, click **Commit Changes** to submit your proposal&#x20;
+
+## Further assistance
+
+Couldn’t find your answer here in our documentation? Don’t worry, we have more support options for you.
+
+Join the `#help` channel in the [Sia Discord](https://discord.com/invite/sia) where we have a huge community that loves helping users with their issues.
+
+You can also [send us an email.](mailto:hello@sia.tech) We’ll respond as soon as we can.
 
 
 
-***
-
-<div>
-
-<figure><img src=".gitbook/assets/twiiter_social_icon.png" alt="" width="32"><figcaption><p><a href="https://twitter.com/Sia__Foundation">Twitter</a></p></figcaption></figure>
-
- 
-
-<figure><img src=".gitbook/assets/youtube_social_icon.png" alt="" width="32"><figcaption><p><a href="https://www.youtube.com/@SiaTVOfficial/playlists">Youtube</a></p></figcaption></figure>
-
- 
-
-<figure><img src=".gitbook/assets/discord_social_icon.png" alt="" width="32"><figcaption><p><a href="https://discord.com/invite/sia">Discord</a></p></figcaption></figure>
-
- 
-
-<figure><img src=".gitbook/assets/reddit_social_icon.png" alt="" width="32"><figcaption><p><a href="https://www.reddit.com/r/siacoin">Reddit</a></p></figcaption></figure>
-
- 
-
-<figure><img src=".gitbook/assets/287725_github_icon.png" alt="" width="32"><figcaption><p><a href="https://github.com/SiaFoundation">Github</a></p></figcaption></figure>
-
- 
-
-<figure><img src=".gitbook/assets/siaforum_social_icon.png" alt="" width="54"><figcaption><p><a href="https://forum.sia.tech">Forum</a></p></figcaption></figure>
-
- 
-
-<figure><img src=".gitbook/assets/medium_social_icon.png" alt="" width="32"><figcaption><p><a href="https://blog.sia.tech">Blog</a></p></figcaption></figure>
-
-</div>

@@ -1,37 +1,38 @@
-# 🚧 The importance of your seed
+---
+cover: ../.gitbook/assets/header.jpeg
+coverY: 0
+---
 
-Your Sia seed is your key to your Siacoin balance, and in the future, it will be the key to your files as well. It’s the most important piece of information in your Sia experience.
+# Your Sia Seed
 
-## About the seed
+Your Sia Seed holds the key to your Siacoin balance access to your files as well. It stands as the cornerstone of your Sia journey and the most important piece of information in your entire Sia experience.
 
-* It’s 29 words... most of the time. There's a small chance you'll get a 28-word seed.
-* It's generated when you first make your Siacoin wallet
-* It will also be your wallet password unless you set a custom password
-* If you have your correct seed, you can always recover your Siacoin balance.
+## About the Seed
 
-### Loss
+* Sia is using BIP 39 with 128 bits of entropy and is made up of 12 words to generate your Seed.
+* Your Seed is generated when you first create your Siacoin (SC) wallet in `renterd`, `hostd` or `walletd`.
+* You can always recover your Siacoin balance using your Sia Seed.
 
-If you lose your seed, your Siacoin balance will be permanently inaccessible. Because Sia is truly decentralized, the Sia dev team can’t access your seed at any time, for any reason.
+## Ways of keeping your Seed safe
 
-### Theft
+Ensuring the safety of your Sia seed is of utmost importance. It's crucial to follow the proper procedures for securely storing it. Just like any other valuable digital information, never rely on its safety unless you have multiple separate backups in place.
 
-If someone steals your seed, they can easily steal your Siacoin balance. Be wary of giving any untrusted third party your seed.
+* **Use a Hardware Wallet:** Hardware wallets are considered one of the most secure methods for storing seeds, as they are offline and less susceptible to hacking.
+* **Create a Paper Backup:** Write down your seed on paper and store it securely. Make multiple copies and keep them in different safe locations.
+* **Use a Strong Password:** Encrypt your seed with a strong, unique password and store it separately from the seed.
+* **Use a Biometric:** Keep your seed in a biometric secure app that relies on Opt into using unique physical identity verification.
+* **Memorize Your Seed:** If possible, memorize your seed. However, ensure it's something you can remember accurately without writing it down.
 
-### Keep it safe
+{% hint style="warning" %}
+A single incorrectly written word or mistyped letter renders the entire seed invalid, making it impossible to access your wallet or retrieve your Siacoins. Store it exactly as it was originally provided to you.
+{% endhint %}
 
-Because your seed is so important, you should have physical and digital methods of storing it safely. As with any piece of digital information that you care about, you shouldn't consider it safe unless you have multiple independent backups.
+{% hint style="danger" %}
+### Lost or Stolen
 
-* Store it the same way it's given to you: all lower-case letters, with a space between each word.
-* Make sure there is no space at the beginning or end of the seed.
+If you lose your seed, your Siacoin balance will become **permanently** inaccessible. Since Sia operates as a fully decentralized platform.
 
-#### Physically Safe
+**The Sia development team cannot access your seed under any circumstances.**
 
-Keep a laminated paper copy stored in a locked safe or a bank safety deposit box.
-
-#### Digitally Safe
-
-Keep your seed in a password or biometric (e.g., fingerprint) secured app like 1Password or LastPass.
-
-## Make sure it's correct
-
-Once you write it down, copy and paste it, or re-type it, ensure you've done so correctly. A single miswritten word or mistyped letter means the entire seed is incorrect and can no longer be used to unlock your wallet or recover your Siacoin.
+In the unfortunate event that someone steals your seed, they will have the ability to easily abscond with your Siacoin balance. Thus, exercise utmost caution when it comes to sharing your seed with any third party that you do not fully trust.
+{% endhint %}

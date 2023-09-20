@@ -1,65 +1,56 @@
 ---
 description: >-
-  This page talks about the basic and terms you need to know to start renting.
+  This page discusses the basics of renting and the terms you need to know.
   Later pages walk you through the specific process.
+cover: ../.gitbook/assets/jungle.png
+coverY: 0
 ---
 
-# 🚧 About Renting on Sia
+# About Renting on Sia
+
+**Renting** on Sia means you upload files on the Sia storage network to other users who have made their space available, called **hosts**. The term **renter** is used to describe an individual or entity that creates storage contracts with **hosts**:
+
+* To store a certain amount of data.
+* For a certain period of time.
+* For a certain amount of Siacoin.
+
+## The Marketplace
+
+\
+The Sia storage network is an open marketplace to connect consumers with providers for their data. The cost associated with this storage is competitively determined by hosts and renters within the market. If hosts discover that reducing prices allows them to secure more data for storage, they are inclined to do so. Similarly, if renters are willing to pay higher rates for storage with high-quality hosts, those hosts may opt to increase their prices.
+
+The price of storage is denominated in Siacoins (SC), and you will need Siacoins (SC) to form storage contracts and upload data. Hosts have the autonomy to establish their own prices, fostering a competitive marketplace where top-quality and dependable hosts vie for storage contracts from those seeking to store data. Typically, network pricing averages around **$3 per terabyte per month** including 3x redundancy.
 
 {% hint style="info" %}
-Get started renting on Sia with the official [`renterd` software](https://sia.tech/software/renterd).
+Siacoin (SC) is a utility token whose sole purpose is to fulfill contracts on the Sia network.
 {% endhint %}
-
-When you upload files on the Sia Storage Platform, you become a **renter**. You upload files to other users who have made their space available, called **hosts**. We use the term renter because Sia creates contracts with other hosts:
-
-* to store a certain amount of data (whatever you upload)
-* for a certain period of time (13 weeks by default, and it auto-renews)
-* for a certain amount of money (the market dictates the prices)
-
-You store data on the network by:
-
-* setting an allowance
-* uploading your files
-
-## The marketplace
-
-The Sia storage network uses a marketplace to find storage for your data. The cost of this storage, often referred to as **pricing**, is the market rate determined competitively by hosts and renters. If hosts find they can lower prices and win more data to store as a result, they'll do it. If renters are willing to pay more to store on high-quality hosts, those hosts might raise their prices.
-
-The price of storage is listed in Siacoins, the cryptocurrency used to buy and sell storage on the network. You'll need to [get Siacoins](https://sia.tech/community-ecosystem?software=exchanges#software) in order to upload files. The price of a Siacoin can vary just like the price of any cryptocurrency. This is usually stable for periods of time, but can sometimes have more significant shifts depending on the crypto trading markets.
-
-Fortunately, the price of Siacoin doesn't really affect the price of Sia storage. Hosts set their own prices, which creates a marketplace where the best and most reliable hosts are competing for the storage contracts of those who want to upload data. Pricing on the network usually works out to around **$2 per TB per month.** Using Sia becomes more cost-efficient as you upload more data and store it for longer periods of time.
-
-Siacoins are utility tokens and their sole purpose is to fulfill contracts on the Sia network.
 
 ## **About contracts**
 
-Storage contracts are one of the most important features of the Sia network. They are what allow the entire Sia ecosystem to work in a trustless way – they form blockchain-enforced contracts between you and the people who store your data that are automatically fulfilled when each party meets their obligation. In other words, they let you form contracts with people you don't know to store your data, and they can't steal your money.
+Storage contracts are one of the most important features of the Sia network. They are what allow the entire Sia ecosystem to work in a trustless way – they form blockchain-enforced agreements between you and your storage providers that are automatically resolved when each party meets their obligation. In other words, they let you form contracts with people you don't know to store your data.
 
-A host's job is to store the data, and they only get paid when they have proved they have done so. A renter's job is to pay the host, and they only pay for the data storage they use.
+* **Hosts** are responsible for data storage and receive compensation only after demonstrating successful storage for the agreed-upon period of time.
+* **Renters** are tasked with paying the host, and they are charged solely for the data storage they utilize.
 
-By default storage contracts last for three months and are automatically formed when you start uploading your files.
+By default, storage contracts last for three months and are automatically formed when you start uploading your files.
 
 ## **Fees**
 
-As a renter, you pay for the cost of renting storage space. There are also some other fees that you're responsible for.
+As a renter, you pay for the cost of renting storage space. There are also some other fees that you're responsible for such as:
 
-* **Contract Formation Fees** – Creating storage contracts on the blockchain requires a transaction, and there are very small fees associated with this. Contract formation fees are one-time per contract, and usually cost only a handful of Siacoins (a few cents).
+* **Contract Formation Fees** – Creating storage contracts on the blockchain requires a transaction, and there are very small fees associated with this. Contract formation fees are one-time per contract and usually cost only a handful of Siacoins (SC).
 * **Bandwidth Fees** – You pay for the bandwidth you use when you upload or download files. This can also include wear and tear fees set by the host to help pay for their physical storage devices.
-
-Because contract formation fees only happen once, and your initial upload will consume a lot of bandwidth, using Sia for longer periods of time results in lower average costs.
 
 ## **Autopilot and your Allowance**
 
-By default the Sia rentering software `renterd` runs with a module called `autopilot` enabled. `autopilot` is the software agent that automatically forms contracts based on your configured parameters. The most important parameter is your "allowance", setting your allowance is the first thing you'll do when getting started with renting.
+By default, the Sia rentering software `renterd` runs with a module called `autopilot` enabled. `autopilot` is the software agent that automatically forms contracts based on your configured parameters. The most important parameter is your "allowance", setting your allowance is the first thing you'll do when starting renting.
 
-The allowance tells Sia how much money you're willing to spend on storage space, and makes sure more than this amount is not deducted from your wallet.
-
-Most people just set their allowance and forget it, but it's a good idea to check in periodically. Setting your allowance too low might mean that Sia can't upload all your data, or might not be able to form the contracts with other hosts to begin with. You can change your allowance at any time in Sia.
-
-If your allowance is too high, you might end up overpaying for storage you could have had at a lower price.
+The allowance tells Sia how much Siacoin you're willing to spend on storage space, and makes sure more than this amount is not deducted from your wallet. Setting your allowance too low might mean that Sia can't upload all your data, or might not be able to form the contracts with enough hosts. You can raise or lower your allowance at any time.
 
 Setting your allowance happens before uploading files, and Sia starts to automatically form the contracts it needs with new hosts so that you can upload when you're ready. You might see multiple transactions hit your wallet right after setting your allowance – this is your Siacoins getting set aside with each host. Don't worry - you'll get whatever Siacoins that you don't spend back at the end of the contract. With Sia, you only ever pay for what you use.
 
-## **Uploading files**
+{% hint style="info" %}
+## **Getting Started with `renterd`**
 
-Uploading files is done using the `renterd` Sia software either via API or its user-interface which is accessible via web browser.
+Get started with renting on Sia by downloading the official [renterd software](https://sia.tech/rent) and exploring our step-by-step [Setting up renterd](setting-up-renterd/) guide.
+{% endhint %}

@@ -1,6 +1,11 @@
-# Managing Files
+---
+cover: ../.gitbook/assets/jungle.png
+coverY: 0
+---
 
-## Maintaining Data
+# Managing your Files
+
+## Maintaining your Data
 
 To ensure the constant availability of your data, there are a few crucial tasks you should perform periodically.&#x20;
 

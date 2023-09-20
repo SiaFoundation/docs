@@ -1,9 +1,9 @@
 # macOS
 
-This guide will walk you through setting up `renterd` on macOS. At the end of this guide, you should have the following:
+This guide will walk you through setting up `renterd` on macOS. At the end of this guide, you should have:
 
 * **Installed Sia `renterd` software:** Successfully installed the Sia `renterd` software on your macOS system with the appropriate binary.
-* **Created a `renterd` wallet**: Have created a wallet with a Seed to access and manage your Sia network transactions and store your Siacoins in `renterd`.
+* **Created a `renterd` wallet**: created a wallet with a Seed to store your Siacoins in `renterd`.
 
 ## Pre-requisites
 
@@ -13,7 +13,7 @@ This guide will walk you through setting up `renterd` on macOS. At the end of th
 
 ## Getting `renterd`
 
-1. Download the latest version of `renterd` for your operating system from the [official website](https://sia.tech/software/renterd). For the purpose of this guide, we'll be downloading the macOS version of `renterd` and unzip the binary to `/usr/local/bin`.
+1. Download the latest version of `renterd` for your operating system from the [official website](https://sia.tech/software/renterd). For the purpose of this guide, we'll be downloading the macOS version of `renterd`&#x20;
 
 {% hint style="warning" %}
 Remember to check which version to download to ensure it works correctly with your operating system. To do this click on the Apple icon in the top left corner of your toolbar, then click on “About This Mac.” If the processor/chips says:
@@ -58,38 +58,38 @@ renterd seed
 A new 12-word recovery phrase will be generated, so please copy and store it in a safe place as you will need this phrase to recover your wallet.&#x20;
 
 {% hint style="warning" %}
-If you lose this phrase, you will lose access to your wallet and funds. Find out [more](../../get-started-with-sia/the-importance-of-your-seed.md) about  the importance of your seed.
+If you lose this phrase, you will lose access to your wallet and funds. [Read more](../../get-started-with-sia/the-importance-of-your-seed.md) about the importance of your seed.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/renterd_3.png" alt=""><figcaption><p>Generating a recovery phrase</p></figcaption></figure>
 
 ## Running `renterd`
 
-1. In the same terminal, run the following command to start `hostd`:
+1. In the same terminal, run the following command to start `renterd`:
 
 ```bash
 renterd --dir ~/renterd
 ```
 
-You will be prompted input both:
+You will be prompted to input both:
 
 * `API password` - This password is chosen by you and can be anything you want it to be. It will be used to unlock the `renterd` UI via your browser, it should be something secure and easy to remember.
 * `wallet seed` - The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step.
 
-These values are not stored anywhere; and will be used requested every time you start `renterd`.
+These values are not stored anywhere; and will be requested every time you start `renterd`.
 
 {% hint style="info" %}
 You can also set the RENTERD`_SEED` and RENTERD`_API_PASSWORD` environment variables so you do not have to re-enter the values every time. Check out this \<article> to set this.
 {% endhint %}
 
-2. After entering your desired `API password` and the created `seed`, `hostd` will start.&#x20;
+2. After entering your desired `API password` and the created `seed`, `renterd` will start.&#x20;
 
 <figure><img src="../../.gitbook/assets/renterd_4.png" alt=""><figcaption><p>Starting renterd</p></figcaption></figure>
 
-Your terminal will produce a two different values you may not be familiar with, so feel free to check the tabs below to see what each of them are and why they are important:
+Your terminal will produce two different values you may not be familiar with, so feel free to check the tabs below to see what each of them are and why they are important:
 
 {% tabs %}
-{% tab title="p2p" %}
+{% tab title="api" %}
 **api (Application Programming Interface) Component:**
 
 * "api" refers to the application programming interface, which allows different software components to communicate and interact with each other.
@@ -104,7 +104,7 @@ Your terminal will produce a two different values you may not be familiar with, 
 3. &#x20;You can now access the `renterd` UI by opening a browser and going to `http://localhost:9980`.&#x20;
 
 {% hint style="warning" %}
-Remember to leave the terminal window open while `hostd` is running. If you close the command prompt window, `hostd`will stop.
+Remember to leave the terminal window open while `renterd` is running. If you close the command prompt window, `renterd` stop.
 {% endhint %}
 
 

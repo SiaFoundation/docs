@@ -1,12 +1,15 @@
+---
+cover: ../.gitbook/assets/mountain.png
+coverY: 0
+---
+
 # Transferring Siacoins
 
-## Sending Siacoins (SC)
+## Sending Siacoins
 
-Whether you're sending Siacoins to an exchange or a friend, it's easy and can be done right in `walletd`.
+Whether you're sending Siacoins (SC) to an exchange or a friend, it's easy and can be done right in `walletd`.
 
-Go to `walletd`. If you're asked to unlock the wallet, use either your seed or a custom password if you've set one. If you haven't got a wallet set up, visit our Setup Guide, otherwise choose from the **Dashboard** a wallet you wish send Siacoins from.&#x20;
-
-<figure><img src="../.gitbook/assets/sending_1.png" alt=""><figcaption><p>Wallet dashboard</p></figcaption></figure>
+Go to `walletd`. If you're asked to unlock the wallet, use either your seed or a custom password if you've set one. If you haven't got a wallet set up, visit our[ Setting up `walletd`](setting-up-walletd/) guide, otherwise choose from the **Dashboard** a wallet you wish to send Siacoins from.&#x20;
 
 ### Setup your transaction
 
@@ -44,17 +47,13 @@ By going to your **Dashboard**, and selecting the wallet you made the transactio
 It might take a minute or two for the transaction to pop up in the wallet's transactions list.
 {% endhint %}
 
-Once it's in a block, you can go back to check the status and see new transaction type of 'siacoin transfer'.
+Once it's in a block, you can go back to check the status and see a new transaction type of 'siacoin transfer'.
 
-<figure><img src="../.gitbook/assets/receiving_4.png" alt=""><figcaption><p>Successfully sending Siacoins via walletd</p></figcaption></figure>
+## Receiving Siacoins
 
-## Receiving Siacoins (SC)
+At some point, you'll need to receive Siacoins. You might be receiving them from an exchange wallet, another Sia wallet you own, or requesting Siacoins from a friend. No matter the reason, it's easy to \<generate> or retrieve your address in `walletd` to receive Siacoins.
 
-At some point, you'll need to receive Siacoins. You might be receiving them over from an exchange wallet, another Sia wallet you own, or requesting Siacoins from a friend. No matter the reason, it's easy to \<generate> or retrieve your address in `walletd` to receive Siacoins.
-
-Go to the `walletd`. If you're asked to unlock the wallet, use either your seed or a custom password if you've set one. If you haven't got a wallet set up, visit our \<Setup Guide>, otherwise choose from the **Dashboard** a wallet you wish receive Siacoins from.&#x20;
-
-<figure><img src="../.gitbook/assets/sending_1.png" alt=""><figcaption><p>Wallet dashboard</p></figcaption></figure>
+Go to the `walletd`. If you're asked to unlock the wallet, use either your seed or a custom password if you've set one. If you haven't got a wallet set up, visit our [Setting up walletd](setting-up-walletd/) guide, otherwise choose from the **Dashboard** a wallet you wish to receive Siacoins from.&#x20;
 
 Click on the **Addresses** in the top right corner and you'll be presented the wallet address.
 
@@ -62,9 +61,9 @@ Click on the **Addresses** in the top right corner and you'll be presented the w
 
 ### Sharing the address or QR
 
-Copy and paste this manually, or use the **Copy** button to the right to make sure you get the full address without any extra spaces, and provide this address to whom ever you're receiving the fund from.
+Copy and paste your address manually, or use the **Copy** button to the right to make sure you get the full address without any extra spaces, and provide this address to whomever you're receiving the fund from.
 
-You can also receive Siacoin, simply share your wallet address by displaying your QR code for others to scan.
+You can also receive Siacoins by sharing your QR code for others to scan too.
 
 <figure><img src="../.gitbook/assets/receieve_2.png" alt=""><figcaption><p>Getting the address and QR of your wallet</p></figcaption></figure>
 
@@ -74,6 +73,4 @@ By going to your **Dashboard**, and selecting the wallet you made the transactio
 It might take a minute or two for the transaction to pop up in the wallet's transactions list.
 {% endhint %}
 
-Once it's in a block, you can go back to check the status and see new transaction type of 'siacoin transfer'.
-
-<figure><img src="../.gitbook/assets/receiving_3 (1).png" alt=""><figcaption><p>Successful receiving Siacoin to walletd</p></figcaption></figure>
+Once it's in a block, you can go back to check the status and see a new transaction type of 'siacoin transfer'.

@@ -1,12 +1,15 @@
-# 📷 Transferring Siacoins
+---
+cover: ../.gitbook/assets/jungle.png
+coverY: 0
+---
 
-Whether you're sending Siacoins to an exchange or receiving from friend, `renterd` facilitate the transfer of Siacoins and easily achieved via the UI.
+# Transferring Siacoins
 
-## Sending Siacoins (SC)
+Whether you're sending Siacoins to an exchange or receiving from a friend, `renterd` facilitates the transfer of Siacoins (SC) and is easily achieved via the UI.
 
-Go to `renterd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up on `renterd`, visit our [Setting up renterd](setting-up-renterd/), otherwise choose from the **sidebar** a **Wallet**.
+## Sending Siacoins
 
-<figure><img src="../.gitbook/assets/renterd_9.png" alt=""><figcaption><p>renterd UI choosing "Wallet" from sidebar</p></figcaption></figure>
+Go to `renterd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `renterd`, visit our [Setting up `renterd`](setting-up-renterd/) guide otherwise choose from the **sidebar** a **Wallet**.
 
 ### Setup your transaction
 
@@ -22,7 +25,7 @@ Click **Generate Transaction.**
 
 ### Confirm your info
 
-Next, you need to confirm everything. You'll have a chance to double-check the currency, amount, and recipient address. The window will also show you estimated network fees.
+Next, you need to confirm everything. You'll have a chance to double-check the amount and recipient address. The window will also show you estimated network fees.
 
 <figure><img src="../.gitbook/assets/renterd_12.png" alt=""><figcaption><p>Confirming your transaction</p></figcaption></figure>
 
@@ -42,30 +45,24 @@ By looking at the transactions in the **Wallet** section of the UI, you can chec
 It might take a minute or two for the transaction to pop up in the wallet's transactions list.
 {% endhint %}
 
-Once it's in a block, you can go back to check the status and see new transaction type of 'siacoin transfer'.
+Once it's in a block, you can go back to check the status and see a new transaction type of **siacoin transfer**.
 
-\<image>
-
-## Receiving Siacoins (SC)
+## Receiving Siacoins
 
 Go to `renterd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up on `renterd`, visit our [Setting up renterd](setting-up-renterd/), otherwise choose from the **sidebar** a **Wallet**.
 
-<figure><img src="../.gitbook/assets/renterd_9.png" alt=""><figcaption><p>renterd UI choosing "Wallet" from sidebar</p></figcaption></figure>
-
 ### Sharing the address or QR
 
-Copy and paste this manually, or use the **Copy** button to the right to make sure you get the full address without any extra spaces, and provide this address to whom ever you're receiving the fund from.
+Copy and paste your address manually, or use the **Copy** button to the right to make sure you get the full address without any extra spaces, and provide this address to whomever you're receiving the funds from.
 
-You can also receive Siacoin, simply share your wallet address by displaying your QR code for others to scan.
+You can also receive Siacoins by sharing your QR code for others to scan too.
 
 <figure><img src="../.gitbook/assets/renterd_14.png" alt=""><figcaption><p>Getting the address and QR of your renterd wallet</p></figcaption></figure>
 
-By going to your **Dashboard**, and selecting the wallet you made the transaction with, you can check the transaction status. It's normal to 'Unknown' at the top of the list of transactions, it means the transaction is on its way but hasn't yet appeared in a block.
+By going to your **Dashboard**, and selecting the wallet you made the transaction with, you can check the transaction status. It's normal for unconfirmed transactions to say "Unknown." It means the transaction is on its way but hasn't yet appeared in a block.
 
 {% hint style="info" %}
 It might take a minute or two for the transaction to pop up in the wallet's transactions list.
 {% endhint %}
 
-Once it's in a block, you can go back to check the status and see new transaction type of 'siacoin transfer'.
-
-\<image>
+Once it's in a block, you can go back to check the status and see a new transaction type of **siacoin transfer**.

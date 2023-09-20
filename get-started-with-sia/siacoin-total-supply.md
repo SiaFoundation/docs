@@ -1,10 +1,15 @@
+---
+cover: ../.gitbook/assets/header.jpeg
+coverY: 0
+---
+
 # Siacoin Total Supply
 
 Siacoins are the utility token powering the Sia network and are intended to be used for the fulfillment of smart storage contracts on the decentralized network.
 
 ## So what's the total supply?
 
-**Unlimited** – there will never be a cap on the number of Siacoins generated. Humans produce so much data that it is effectively a limitless amount – and when Sia is the industry-standard storage layer of the Internet, the network will need lots of Siacoins to fulfill all those contracts. Additionally, the Proof of Burn mechanic (more on this later) functions to eliminate coins from the supply, so there needs to be a constant allowance of new Siacoins being created. As of March 23, 2021, about 47.3 billion coins have been created, but the number of new coins introduced will slow as each new block is produced. By 2022, there should be about 50 billion coins in circulation.
+**Unlimited** – there will never be a cap on the number of Siacoins generated. Humans produce so much data that it is effectively a limitless amount – and when Sia is the industry-standard storage layer of the Internet, the network will need lots of Siacoins to fulfill all those contracts. As of March 23, 2021, about 47.3 billion coins have been created, but the number of new coins introduced will slow as each new block is produced. By 2022, there should be about 50 billion coins in circulation.
 
 Additionally, if the block reward were to stop, miners would be disincentivized to continue providing their service to the network.
 

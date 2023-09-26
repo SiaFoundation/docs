@@ -1,6 +1,20 @@
 ---
-cover: ../.gitbook/assets/jungle.png
+cover: ../.gitbook/assets/nate-trickle.png
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Renting Storage
@@ -16,18 +30,18 @@ Uploading files on `renterd` is remarkably straightforward, making it accessible
 ## Uploading your files in renterd
 
 {% hint style="warning" %}
-Uploading files and data using `renterd` is a very straightforward process, assuming you have completed all the steps of the `renterd` setup guide. Visit the [renterd](setting-up-renterd/) guides to ensure everything is set up correctly before proceeding.
+Uploading files and data with `renterd` is a very straightforward process, assuming you have completed all the steps of the `renterd` setup guide. Visit the [renterd](setting-up-renterd/) guides to ensure everything is set up correctly before proceeding.
 {% endhint %}
 
 1. Access the `rentered` UI from your local host address. Enter your `API password` you created to unlock `renterd`.
 
 <figure><img src="../.gitbook/assets/renterd_5.png" alt=""><figcaption><p>renterd Login UI</p></figcaption></figure>
 
-2. Drag-and-drop files or in the top right corner, click the "Upload Files" button to begin uploading files. It's that simple!
+2. Drag-and-drop files, or click the Upload Files button in the top right corner to begin uploading files. It's that simple!
 
 <figure><img src="../.gitbook/assets/renterd_6.png" alt=""><figcaption><p>File upload UI</p></figcaption></figure>
 
-Once you've chosen the file(s) to upload, it will be classed as active upload, give it a few seconds.
+Once you've chosen the file(s) to upload, it will be classed as active upload; give it a few seconds.
 
 {% hint style="success" %}
 Congratulations on successfully uploading your file(s) using `renterd`! Your data is now securely stored on the Sia network, benefiting from the reliability and resilience of decentralized storage.
@@ -35,15 +49,15 @@ Congratulations on successfully uploading your file(s) using `renterd`! Your dat
 
 ## File processing&#x20;
 
-When you begin to upload a file to Sia, it undergoes processing on your local machine to ensure optimal redundancy and security within the network. Initially, the file is divided into manageable chunks. Subsequently, each chunk undergoes a procedure that generates 30 distinct pieces, each of which is encrypted before being dispatched to separate hosts. It's worth noting that only 10 out of the 30 pieces are required for reconstructing a chunk, and no single host ever has access to more than one piece.
+When you begin to upload a file to Sia, it undergoes processing on your local machine to ensure optimal redundancy and security within the network. Initially, the file is divided into manageable chunks. Subsequently, each chunk undergoes a procedure that generates 30 distinct pieces, each encrypted before being dispatched to separate hosts. It's worth noting that only 10 of the 30 pieces are required for reconstructing a chunk, and no single host can access more than one piece.
 
-This arrangement ensures that, for each section of your original file, up to 20 hosts could become disconnected from the network, yet your data would remain safe and secure.
+This arrangement ensures that up to 20 hosts could become disconnected from the network for each section of your original file, yet your data would remain safe and secure.
 
 {% hint style="info" %}
 For the more technical readers, here is what happens behind the scenes:
 
 * Files are chunked into 40MB chunks (if a file is smaller, it is padded to 40MB so that data looks identical as it moves across networks)
-* Each chunk is then erasure-coded using [Reed-Solomon](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon\_error\_correction) encoding. After processing, each chunk has 30 unique 4MB pieces associated with it.
+* Each chunk is then erasure-coded using [Reed-Solomon](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon\_error\_correction) encoding. After processing, each chunk has 30 unique 4MB pieces.
 * Each piece is then encrypted using [ChaCha20](https://en.wikipedia.org/wiki/ChaCha20-Poly1305) and uploaded to a distinct host.&#x20;
-* As Reed-Solomon encoding is done with 10 data shards and 20 parity shards, any 10 pieces are sufficient for rebuilding the file.
+* As Reed-Solomon encoding is done with 10 data and 20 parity shards, 10 pieces are sufficient for rebuilding the file.
 {% endhint %}

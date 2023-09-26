@@ -1,28 +1,45 @@
 ---
-cover: ../.gitbook/assets/mountain.png
-coverY: 0
+cover: ../.gitbook/assets/walletd.png
+coverY: 85.70716510903426
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
-# About walletd
+# Your Sia Wallet
 
-`walletd` is the best place for users within our network to manage and transact their Siacoins. It is the official wallet web application made by the developers of the Sia network.
+\
+The Sia Wallet is the official cryptocurrency wallet designed exclusively for Siacoins (SC). This secure and user-friendly platform allows you to store, send, receive, and manage your Siacoin holdings.
 
-* Safely send, receive, and store Siacoins and Siafunds.
-* Watch the blockchain for events relevant to particular addresses.
-* Monitor wallet balance and transactions
-* Supports Ledger hardware wallets
+While `renterd` and `hostd` have their respective Sia Wallets, it's important to highlight `walletd` as Sia's primary solution for securing your Siacoins. Developed by the creators of the Sia network, the Sia Foundation, `walletd` stands out by offering a secure storage solution that ensures exceptional control and accessibility. Moreover, `walletd` it is seamlessly integrated into the Sia network and ecosystem, making it the inclusive choice for managing your Siacoins.
 
-Watch our Wallet Overview video tour to see what the `walletd` user interface looks like!
+With `walletd`, you can securely store your Siacoins and initiate transactions. It provides a user-friendly interface accessible via a web browser and its command-line functionality. This wallet lets you check your balance, review transaction history, and conduct Siacoin transfers to and from other Sia users.
 
-\<Video tour of the UI>
+Utilizing `walletd` prioritizes user convenience and security within the network, offering an official web application as the ultimate hub for Siacoin management and transactions. Some key features include:
 
-Although `walletd` is launched via the command line it has a UI that can be accessed via a web browser.
+* Securely send, receive, and store Siacoins and Siafunds.
+* Stay informed by monitoring the blockchain for events relevant to specific addresses.
+* Easily track your wallet balance and transaction history.
+* Seamlessly integrate with Ledger hardware wallets.
 
+Whether you prefer the command-line interface's flexibility or the web-based interface's ease of use, `walletd` it ensures top-notch Siacoin management and security. Discover the best-in-class Siacoin management and protection with `walletd`, the official wallet solution developed by the creators of the Sia network.
 
+{% hint style="info" %}
+## **Getting Started with `walletd`**
 
-
-
-
+Start storing your Siacoins on Sia by downloading the official [`walletd` software](https://sia.tech/software/walletd) and exploring our step-by-step [Setting up walletd](setting-up-walletd/) guide.
+{% endhint %}
 
 
 

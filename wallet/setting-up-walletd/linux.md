@@ -1,4 +1,23 @@
-# 📸 Linux
+---
+cover: ../../.gitbook/assets/sia-banner-expanded-walletd.png
+coverY: 96.98442367601245
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
+# ✏ Linux
 
 This guide will walk you through setting up a `walletd` on Linux. At the end of this guide, you should have the following:
 

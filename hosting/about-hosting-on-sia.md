@@ -2,65 +2,74 @@
 description: >-
   Learn about the concepts and terms you'll need to be familiar with to host on
   the Sia network.
-cover: ../.gitbook/assets/leaves.png
-coverY: 0
+cover: ../.gitbook/assets/hostd (1).png
+coverY: 33.83177570093458
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # About Hosting on Sia
 
 **Hosting** means you are contributing your excess storage space to the Sia network. You're helping to keep data where it belongs – safely in the hands of those who uploaded it, the **renters**.
 
-You also earn Siacoins, the cryptocurrency that powers the Sia network. Siacoins can be used to purchase your own storage space, or converted to other cryptocurrency or fiat on crypto exchanges.
+You also earn Siacoins, the cryptocurrency that powers the Sia network. Siacoins can be used to purchase your storage space or converted to other cryptocurrencies or fiat on crypto exchanges.
 
-Hosts are a critical part of the ecosystem. You are contributing to the decentralized network that is the heart of Sia. Hosting is also a more technical process than renting, and while anyone can fairly easily set it up, there's a lot you'll want to know to maximize your setup.
+Hosts are a critical part of the ecosystem. You are contributing to the decentralized network that is the heart of Sia. Hosting is also a more technical process than renting, and while anyone can reasonably easily set it up, there's a lot you'll want to know to maximize your setup.
 
 ## Pricing
 
-As a host, you set your own prices. There are a lot of specific price points you can control:
+As a host, you set your prices. There are a lot of specific price points you can control:
 
-* **Storage Price:** The base price for your storage, per TB/month.
+* **Storage Price:** The base price for your storage per TB/month.
 * **Contract Fees:** A small, one-time fee per contract to cover network transaction costs.
-* **Upload/Download Bandwidth Price:** Your price for upload or download bandwidth to and from your host, per TB.
-* **Collateral:** How many Siacoins you're willing to lose if you don't fulfill the rental contract, per TB/month.
+* **Upload/Download Bandwidth Price:** Your price for upload or download bandwidth to and from your host per TB.
+* **Collateral:** The amount of Siacoins you will lose if you don't fulfill the rental contract per TB/month.
 
 ## **About Contracts**
 
-Storage contracts are one of the most important features of the Sia network. They are what allow the entire Sia ecosystem to work in a trustless way – they form blockchain-enforced contracts between you and the people who store your data that are automatically fulfilled when each party meets their obligation. In other words, they let you form contracts with people you don't know to store your data, and they can't steal your money.
-
-* **Renters** are tasked with paying the host, and they are charged solely for the data storage they utilize.
-* **Hosts** are responsible for data storage and receive compensation only after demonstrating successful storage.
+Storage contracts are one of the most essential features of the Sia network. They allow the entire Sia ecosystem to work trustless – they form blockchain-enforced contracts between you and the people who rent your storage space that are automatically fulfilled.
 
 ## Earn Siacoins
 
-As a host, you're part of a marketplace where you compete with other hosts for storage contracts. Competition should drive prices down, and demand should drive prices up. The goal is a market where people can upload their data with maximum security, minimum cost, and at fair rates that provide revenue to the hosts.
+As a host, you're part of a marketplace where you compete with other hosts for renter contracts. Competition should drive prices down, and demand should drive prices up. The goal is a market where people can upload their data with maximum security, minimum cost, and at fair rates that provide revenue to the hosts.
 
 ## Fees
 
-As a host, you earn Siacoin for the storage space that you sell. But in order to create additional incentives for hosts to be good and sustain a reliable network, you also put up collateral.
+As a host, you earn Siacoin for the storage space that you sell. But you also put up Collateral to create additional incentives for hosts to be good and sustain a reliable network.
 
-* **Collateral** – An amount of Siacoins you're willing to lose if you aren't a good host.
-
-Having collateral incentivizes hosts to be online and to keep their renter data intact. Hosts that go offline or lose data lose their collateral, and hosts that stay online and keep data safe get their collateral back.
+Having Collateral incentivizes hosts to be online and to keep their renter data intact. Hosts that go offline or lose data lose their Collateral, and hosts that stay online and keep data safe get their Collateral back.
 
 ## Host Scoring
 
-One of the most important factors that determines success as a host is your score. This is based on a number of metrics – some that you can directly affect, some that improve or diminish over time based on your performance.
+Your host score is one of the most critical factors determining how you'll fare as a host. This is based on several metrics – some that you can directly affect, some that improve or diminish over time based on your performance.
 
-Sia is a decentralized network - the code to evaluate these scoring metrics is contained within each renter's Sia instance. For that reason, each Sia renter you encounter builds their own host score for your host, so your host may be scored differently among different renters. Your host does not have one overall score across the Sia network, but many scores with many renters based on the metrics described below. Any website or service showing your Sia host rank is showing that particular source's view of your host, which may be different from what a renter comes up with.
+Sia is a decentralized network - the code to evaluate these scoring metrics is contained within each renter's Sia instance. For that reason, each Sia renter you encounter builds their host score for your host, so your host may be scored differently among different renters. Your host does not have one overall score across the Sia network but many scores with many renters based on the metrics described below. Any website or service showing your Sia host rank offers that particular source's view of your host, which may differ from what a renter comes up with.
 
 ### Specific Metrics
 
 {% tabs %}
 {% tab title="Host Uptime" %}
-to Host uptime is an incredibly important metric. You need to be online when people try to get their data, and since that might be any time, you should be online all the time. You're allowed a small amount of downtime in order to address minor maintenance issues like restarting for updates, which amounts to approximately 14 hours per month.
+Collateral to Host uptime is a vital metric. It would be best if you were online when people try to get their data, and since that might be any time, you should be online all the time. You're allowed negligible downtime to address minor maintenance issues like restarting for updates, which amouCollateralWe could include approximately 14 hours per month.
 
 In general, you should plan for your hosting computer to be turned on and online 24/7. If you can't commit to this, you shouldn't try to host on the Sia network.
 
 {% hint style="danger" %}
-Warning: If you go offline for too long (less than 80% uptime) or lose renter data (by deleting it or experiencing a hardware failure), you can lose money by losing your collateral for active contracts. You can also become responsible for SiaFund fees for each contract.
+Warning: If you go offline for too long (less than 80% uptime) or lose renter data (by deleting it or experiencing a hardware failure), you can lose money by losing your Collateral for active contracts. You can also become responsible for SiaFund fees for each contract.
 {% endhint %}
 
-Below are the exact amounts that your score will change based on your uptime percentage. Greater than 98% uptime results in no penalty, which is the 14 hours a month explained above (2% of 720 hours in a month = 14 hours).
+Below are the exact amounts your score will change based on your uptime percentage. Greater than 98% uptime results in no penalty, the 14 hours a month explained above (2% of 720 hours in a month = 14 hours).
 
 | Uptime | Score Multiplier | % Reduction in Score |
 | ------ | ---------------- | -------------------- |
@@ -71,7 +80,7 @@ Below are the exact amounts that your score will change based on your uptime per
 | 85%    | .16              | -85%                 |
 | 80%    | .03              | -97%                 |
 
-There are more values we could include in this table, but there's not much point. If you can't maintain a minimum of 95% uptime, don't host.
+We could include more values in this table, but there's not much point. If you can't maintain a minimum of 95% uptime, don't host.
 {% endtab %}
 
 {% tab title="Storage Pricing" %}
@@ -90,7 +99,7 @@ This is how many Siacoins you're willing to lose if you don't fulfill the rental
 You should normally set your collateral to around **2-3x your base storage price** as a starting point in order to maximize your host score in this area. For example, if you've priced your storage at 50 SC/TB, you should set your collateral at 100-150 SC/TB.
 
 * If you set your collateral **too low**, your host score will be reduced, because renters will have no reason to trust you as a host if you have little or nothing to lose by going offline.
-* If you set your collateral **too high**, this can also decrease your host score. Renters pay a fee based on a percentage of your collateral that goes towards [Siafunds](broken-reference) - if your collateral is set very high, the fee a renter pays as a result will be very high, which can decrease your host score.
+* If you set your collateral **too high**, this can also decrease your host score. Renters pay a fee based on a percentage of your collateral that goes towards [Siafunds](broken-reference) - if your collateral is set very high, the fee a renter pays, as a result, will be very high, which can decrease your host score.
 
 **Monitoring Your Collateral**
 
@@ -98,20 +107,20 @@ You can get information on your collateral by typing `host -v` into the Terminal
 
 * All of your current host settings, as well as details on contracts and expected revenue
 * **Locked Collateral** - this is the total collateral that's been reserved for contracts that have been created with your host. This amount has been removed from your wallet and is inaccessible to you.
-* **Risked Collateral** - this is collateral for data that has actually been uploaded to your host, so you stand to lose it if your host goes offline or loses the data. This amount is a subset of Locked Collateral.
-* **Lost Collateral** - this is collateral you've lost because you weren't online when a storage proof was due to be submitted, or because you lost a renter's data.
+* **Risked Collateral** - this is collateral for data that has been uploaded to your host, so you stand to lose it if your host goes offline or loses the data. This amount is a subset of Locked Collateral.
+* **Lost Collateral** is collateral you've lost because you weren't online when a storage proof was due to be submitted, or because you lost a renter's data.
 
-With this information, you can determine how much collateral has been tied up in the process of hosting, and make adjustments to your collateral settings accordingly if necessary.
+With this information, you can determine how much collateral has been tied up in the hosting process, and adjust your collateral settings accordingly if necessary.
 {% endtab %}
 
 {% tab title="Storage Remaining" %}
 The more free space you have, the more attractive you are to people who want to store things. It makes your host less likely to run out of space later. The host scoring system takes this into account.
 
-Again, each renter determines their score for your host. The more available space you have when a host forms contracts with you, the more reliable you look, and the higher this piece of the scoring will be.
+Again, each renter determines their score for your host. When a host forms contracts with you, the more available space you have, the more reliable you look, and the higher this piece of the scoring will be.
 {% endtab %}
 
 {% tab title="Host Age" %}
-History matters. The longer you've been around, the more reliable you look to host scoring. There's a penalty applied to new hosts. How to beat that penalty you ask? Keep your host online.
+History matters. The longer you've been around, the more reliable you look to host scoring. There's a penalty applied to new hosts. How do you beat that penalty, you ask? Keep your host online.
 
 Once you've been online for about twelve weeks, about half of the default contract length, your penalty disappears!
 
@@ -129,21 +138,21 @@ Once you've been online for about twelve weeks, about half of the default contra
 {% endtab %}
 
 {% tab title="Interaction Weight" %}
-Interaction weight is a metric measured between your host and each renter on the Sia network. For example, if a renter tries to contact your host and you're frequently offline or don't have your wallet unlocked (a pre-requisite to your host being online), your interaction score will decrease with that renter. Again, this score is unique for each renter you encounter - it will be different for each individual renter on the Sia network.
+Interaction weight is a metric measured between your host and each renter on the Sia network. For example, if a renter tries to contact your host and you're frequently offline or don't have your wallet unlocked (a prerequisite to your host being online), your interaction score will decrease with that renter. Again, this score is unique for each renter you encounter - it will be different for each renter on the Sia network.
 
 Keeping your host online and your wallet unlocked while hosting will keep this score as high as possible.
 {% endtab %}
 
 {% tab title="Version Adjustment" %}
-Stay updated. Your host score drops if you're not running the latest version of the Sia client. Sia is constantly under development, and bug fixes and new features are pushed out on a somewhat regular basis. If you're running an older version of the client, your renters may not be able to take advantage of all the latest features of Sia until you upgrade.
+Stay updated. Your host score drops if you're not running the latest version of the Sia client. Sia is constantly under development, and bug fixes and new features are pushed out somewhat regularly. If you're running an older version of the client, your renters may not be able to take advantage of all the latest features of Sia until you upgrade.
 {% endtab %}
 {% endtabs %}
 
 ## Third-Party Host Scoring
 
-We have an incredible community building on Sia. Third-party sites can develop their own methods for scoring hosts based on various metrics. For example, SiaStats has developed a [Host Monitor](https://siastats.info/hosts) which evaluates hosts on pricing relative to other hosts, and even evaluates host performance regularly by forming contracts with every host it can in order to test bandwidth and latency. SiaStats even has great visualization for each host to make judging their metrics easier.
+We have an incredible community building on Sia. Third-party sites can develop their methods for scoring hosts based on various metrics. For example, SiaStats has developed a [Host Monitor](https://siastats.info/hosts) which evaluates hosts on pricing relative to other hosts. It even regularly evaluates host performance by forming contracts with every host to test bandwidth and latency. SiaStats has great visualization for each host, making judging their metrics easier.
 
-These benchmarks are different from the core Sia protocol but are still useful, and may be used to help monitor and improve your own host over time.
+These benchmarks differ from the core Sia protocol but are still helpful and may be used to help monitor and improve your host over time.
 
 Once you've started hosting, you'll probably want to keep an eye on your host score and see how you might be able to improve your host ranking.
 
@@ -154,5 +163,6 @@ Once you've started hosting, you'll probably want to keep an eye on your host sc
 
 Contributing your storage space couldn't be any simpler by using Sia's `hostd` software!
 
-Get started hosting on Sia with the official [`hostd` software](https://sia.tech/software/hostd) and exploring our step-by-step [Setting up hostd ](setup-guides/)guide.
+Start hosting on Sia with the official [`hostd` software](https://sia.tech/software/hostd) and exploring our step-by-step [Setting up hostd ](setup-guides/)guide.
 {% endhint %}
+

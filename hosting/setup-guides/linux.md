@@ -1,6 +1,11 @@
 ---
 description: Setup a new host on Linux
+cover: ../../.gitbook/assets/sia-banner-expanded-hostd.png
+coverY: 96.98442367601245
 layout:
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:

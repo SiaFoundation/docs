@@ -1,218 +1,92 @@
-# 🚧 Glossary
+---
+cover: ../.gitbook/assets/steps.png
+coverY: 0
+---
 
+# ✏ Glossary
 
+## **A**
 
-<details>
+## **B**
 
-<summary>A</summary>
+**Blockchain**: The distributed ledger technology that underlies Sia and most cryptocurrencies.
 
+## C
 
+**Contract**: The agreement between a renter and a host for storage services.
 
-</details>
+**Consensus Mechanism**: The method by which network participants agree on the validity of transactions.
 
-<details>
+## D
 
-<summary>B</summary>
+**Decentralization**: The distribution of network components across multiple hosts and locations.
 
+## E
 
+**Encryption**: The process of securing data by converting it into a code.
 
-</details>
+## F
 
-<details>
+**File Recovery**: The process of retrieving stored data from the Sia network.
 
-<summary>C</summary>
+## G
 
-**Contracts:** Formed between renter and host, contracts determine how much data is being stored, for how long, and at what price. These are automatically tracked and completed by the software and blockchain.
+## H
 
+**Host**: A computer running the Sia software offers the network storage space.
 
+## I
 
-</details>
+## J
 
-<details>
+## K
 
-<summary>D</summary>
+## L
 
+## M
 
+**Mining**: The process of securing the Sia network and earning rewards.
 
-</details>
+## N
 
-<details>
+## O
 
-<summary>E</summary>
+## P
 
+**Proof of Storage (PoSt)**: A mechanism for hosts to prove they are storing renter data.
 
+**Proof of Work (PoW)**: A consensus algorithm in blockchain networks.
 
-</details>
+## Q
 
-<details>
+## R
 
-<summary>F</summary>
+**Renter**: A user who rents storage space from hosts on the Sia network.
 
+## S
 
+**Sia**: The decentralized cloud storage platform.
 
-</details>
+**Siacoin**: The native cryptocurrency used within the Sia network.
 
-<details>
+**Siafund**: A secondary cryptocurrency representing a stake in the Sia network.
 
-<summary>G</summary>
+**Smart Contract**: Self-executing contracts with the terms of the agreement directly written into code.
 
+## T
 
+**Transaction**: An action or event recorded on the Sia blockchain.
 
-</details>
+## U
 
-<details>
+## V
 
-<summary>H</summary>
+## W
 
-**Host:** Someone who lends their storage space so others can upload files to the network.
+**Wallet**: A software or hardware application for storing and managing Siacoins.
 
-</details>
+## X
 
-<details>
+## Y
 
-<summary>I</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>J</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>K</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>L</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>M</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>N</summary>
-
-**Node:** Your instance or installation of Sia.
-
-
-
-</details>
-
-<details>
-
-<summary>O</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>P</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>Q</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>R</summary>
-
-**`Renter`:** Someone who uploads files to the network.
-
-</details>
-
-<details>
-
-<summary>S</summary>
-
-**`Siacoins`:** The cryptocurrency that powers Sia. It's utility tokens used for transactions within the Sia network.
-
-**`Siafunds`:** A secondary, revenue-sharing token on the network that grants the holder Siacoins for every completed contract.
-
-</details>
-
-<details>
-
-<summary>T</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>U</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>V</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>W</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>X</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>Y</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>Z</summary>
-
-
-
-</details>
-
+## Z

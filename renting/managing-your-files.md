@@ -1,16 +1,30 @@
 ---
-cover: ../.gitbook/assets/jungle.png
+cover: ../.gitbook/assets/nate-path.png
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Managing your Files
 
 ## Maintaining your Data
 
-To ensure the constant availability of your data, there are a few crucial tasks you should perform periodically.&#x20;
+To ensure the constant availability of your data, you should perform a few crucial tasks periodically.&#x20;
 
 {% hint style="warning" %}
-`renterd` **MUST** be running with your wallet unlocked for these any actions to take place, therefore advisable to open it at least once a month and let it run overnight to perform various essential housekeeping tasks.&#x20;
+`renterd` **MUST** be running with your wallet unlocked for any actions to occur; therefore, it is advisable to open it at least once a month and let it run overnight to perform various essential housekeeping tasks.&#x20;
 
 If you upload files and subsequently neglect to reopen `renterd`, your allowance and contracts will eventually expire, leading to the immediate deletion of your files once your contracts become invalid.
 {% endhint %}
@@ -35,7 +49,7 @@ Your contracts renew automatically when you open `renterd`.
 
 ### **Boosting file health**
 
-In `renterd`, the health of your files is quantified as a percentage, representing the quantity of available fragments that make up each file. Ideally, you should strive for a perfect health rating of 100%, indicating that all 30 file fragments are securely distributed among various hosts.
+In `renterd`Your files' health is quantified as a percentage, representing the number of available fragments that comprise each file. Ideally, it would help if you strive for a perfect health rating of 100%, indicating that all 30 file fragments are securely distributed among various hosts.
 
 <figure><img src="../.gitbook/assets/renter_7.png" alt=""><figcaption><p>File health check in renterd</p></figcaption></figure>
 
@@ -45,6 +59,6 @@ Health assessments can only be conducted if `renterd` when it's actively running
 
 ## Downloading
 
-Downloading files occurs directly within the app as well. Each file in your list is accompanied by a small download icon. Downloading necessitates Siacoins because you are billed for the bandwidth consumed.
+Downloading files occurs directly within the app as well. A small download icon accompanies each file in your list. Downloading necessitates Siacoins because you are billed for the bandwidth consumed.
 
 <figure><img src="../.gitbook/assets/renterd_8.png" alt=""><figcaption><p>Downloading files in renterd</p></figcaption></figure>

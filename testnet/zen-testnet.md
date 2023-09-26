@@ -1,59 +1,53 @@
-# ✏ Zen Testnet
+---
+cover: ../.gitbook/assets/mountain (2).png
+coverY: 89.09034267912773
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
+# Zen Testnet
 
 The Sia Foundation has made a test environment available for users wishing to test hardforks, software developments, and integration within the Sia ecosystem via the Zen Testnet.
 
 The Zen Testnet offers a secure environment to experiment with `renterd`, `hostd`, and `walletd`and explore the capabilities of Siacoin without the risk of losing real Siacoins, but also with no real-world value.&#x20;
 
-{% hint style="warning" %}
-Please ensure that you have already downloaded the correct testnet binary for either`renterd`, `hostd` or `walletd` compatible with your operating system from our [official website](https://sia.tech).&#x20;
-{% endhint %}
+## Running testnet
 
-## Running testnet via terminal
-
-Running the Zen testnet for our Sia software is very similar to running it on the mainnet, however, we must specify the `-tags=testnet` flag in our terminal or console, to enable the test environment.&#x20;
-
-### macOS
-
-1. Open a terminal window and `path/to/the/<software>` folder. These folders will be called `renterd`, `hostd`, or `walletd` depending on which testnet you'd like to run.
-2. Run the following command, which `<software>` is replaced with either `renterd`, `hostd`, and `walletd` :
-
-```bash
-go run -tags=testnet ./cmd/<software>
-```
-
-3. You will be prompted to input a `API password`. This password is chosen by you and can be anything you want it to be. It will be used to unlock the Zen testnet UI via your browser.&#x20;
-
-{% hint style="info" %}
-If you haven't done so yet, refer to the **Creating a Wallet** setup guides in the previous sections of the documentation. You'll specifically need this for generating a seed for `renterd` or `hostd`.
-{% endhint %}
-
-### Windows
-
-
-
-### Linux
-
-
+Running the testnet version for our software is similar to running it on the mainnet and follows the exact instructions for setting up [renterd](../renting/setting-up-renterd/), [hostd](../hosting/setup-guides/) and [walletd](../wallet/setting-up-walletd/).
 
 {% hint style="warning" %}
-Remember to leave the terminal window open while `walletd` is running. If you close the command prompt window, `walletd`will stop.
+Please ensure that you have downloaded the **testnet** binary for either`renterd`, `hostd` or `walletd` compatible with your operating system from our [official website](https://sia.tech).&#x20;
 {% endhint %}
 
 ## Funding your testnet address
 
-With the availability of zSC, the [Zen testnet faucet](https://zen.siascan.com/faucet) provides a convenient way to acquire zSC by simply providing your Sia wallet's address.
+With the availability of zSC, the [Zen Testnet faucet](https://zen.siascan.com/faucet) provides a convenient way to acquire zSC by simply providing your Sia wallet's address.
 
-Once on the page, enter the generated Sia wallet address of either `renterd`, `hostd`, or `walletd` , then enter the amount of Siacoins (SC) you wish to fund that address with.&#x20;
+Once on the page, enter a Sia wallet address of either. `renterd`, `hostd`, or `walletd` , then enter the amount of Zen Siacoins (zSC) you wish to fund that address with.&#x20;
 
 <figure><img src="../.gitbook/assets/zen faucet funding.png" alt=""><figcaption><p>Zen Testnet Faucet funding</p></figcaption></figure>
 
 {% hint style="info" %}
-It might take a minute or two for your wallet to be funded and for the transaction to pop up in the wallet's transactions list.
+It might take a minute or two for your wallet to be funded and for the transaction to appear in its transactions list.
 {% endhint %}
 
-## Block Explorer
+## Block Explorer&#x20;
 
-Users also have access to the block explorer. With the block explorer, users can dive into the intricacies of the Siacoin network, track transactions, and monitor block confirmations, gaining valuable insights into the testnet's activity.
+Our web-based block explorer and analytics tool is tailored for the Sia network. This comprehensive platform offers users a wide range of insights into the intricacies of the Siacoin network.&#x20;
 
-\[[https://zen.sia.tech](https://zen.sia.tech/)].
+Visit [SiaScan Zen](https://zen.siascan.com), our block explorer, to gain valuable insights into the testnet's activity, view transaction history, and monitor block confirmations.&#x20;
+
+<figure><img src="../.gitbook/assets/siascan.png" alt=""><figcaption><p>Siascan Zen</p></figcaption></figure>
 

@@ -1,48 +1,44 @@
 ---
-cover: ../.gitbook/assets/header.jpeg
+cover: ../.gitbook/assets/nate-bridge.png
 coverY: 0
 ---
 
 # Siacoin Total Supply
 
-Siacoins are the utility token powering the Sia network and are intended to be used for the fulfillment of smart storage contracts on the decentralized network.
+The total supply of Siacoins (SC) is unlimited; there will never be a cap on the number of Siacoins generated. Humans produce an extensive amount of data, making it practically limitless. When Sia becomes the industry-standard storage layer of the internet, the network will require a significant quantity of Siacoins to fulfill all the associated contracts.&#x20;
 
-## So what's the total supply?
+As of March 23, 2021, approximately 47.3 billion coins have been created, with the new coin introduction slowing down as each new block is produced. By 2022, an estimated 50 billion coins should be in circulation.&#x20;
 
-**Unlimited** – there will never be a cap on the number of Siacoins generated. Humans produce so much data that it is effectively a limitless amount – and when Sia is the industry-standard storage layer of the Internet, the network will need lots of Siacoins to fulfill all those contracts. As of March 23, 2021, about 47.3 billion coins have been created, but the number of new coins introduced will slow as each new block is produced. By 2022, there should be about 50 billion coins in circulation.
+Additionally, miners would lose their incentive to continue providing services to the network if the block reward were to cease.
 
-Additionally, if the block reward were to stop, miners would be disincentivized to continue providing their service to the network.
+## Creation of new Siacoins
 
-## How are Siacoins created?
+New Siacoins are created through proof-of-work mining. Over 40 billion Siacoins are circulating, which will continue to increase. Sia is poised to become the foundational storage layer of the internet, necessitating billions of Siacoins to accommodate the petabytes and exabytes of data that will be stored on our platform.
 
-Siacoins are created only as block rewards during mining on the Sia Proof of Work blockchain.
+{% hint style="info" %}
+The number of Siacoins created for each block is 300,000 minus the height. This means a block with a block height of 200,000 has created 100,000 Siacoins. After a height of 270,000, the block reward won't get lower, and all blocks will have a reward of 30,000 Siacoins.
+{% endhint %}
 
-## Let's get a little more technical
+## Supply structure changes
 
-The number of Siacoins created each block is (300,000 - height). This means that a block with a block height of 200,000 created 100,000 Siacoins (300,000 - 200,000). After height 270,000, the block reward won't get lower and all blocks will have a reward of 30,000 Siacoins.
+Sia version 1.5.4 introduced a network hard fork, which, in turn, established the Sia Foundation—an emerging non-profit organization dedicated to supporting, developing, and promoting the Sia network. The Sia Foundation led to a minor alteration in the supply structure since it received continuous funding through a block subsidy of 30,000 Siacoins per block, disbursed every 4,380 blocks. Additionally, the hard fork included an initial offering of approximately 1.57 billion Siacoins to kickstart the Foundation's operations and finance its initial development and activities.
 
-By about July of 2020 when Sia hits the 270,000 block height, there will be about 44.55 billion (((300,000+30,000)/2)x270,000=44.55 billion) Siacoins available in the market. From there, there will be about 1.57 billion (30,000x144x365=1.5678 billion) Siacoins created from the mining every year, forever.
+Consequently, this resulted in a slight, temporary increase in the inflation schedule for a single year, with an uptick of a few percentage points, before swiftly returning to nearly pre-fork levels.
 
-## The Sia Foundation
+## Siacoin inflation
 
-In addition, Sia v1.5.4 introduced a network hardfork. The fork introduced the Sia Foundation, a new non-profit entity charged with supporting, developing, and promoting the Sia network. The Foundation changed the supply structure slightly as it is funded by an ongoing block subsidy of 30,000 Siacoins per block, paid out every 4,380 blocks. The hardfork also included an initial subsidy of approximately 1.57 billion Siacoins to help get the Foundation off the ground and fund initial development and activities.
+Inflation is an inherent feature of Siacoin designed to accommodate various factors that lead to the gradual reduction of coins in circulation. These factors include the Proof-of-Burn mechanism, lost coins, and unreimbursed collateral from unsuccessful hosting attempts. Over time, this inflation diminishes significantly, yet it plays a crucial role in safeguarding the network by offering block rewards to miners.
 
-This creates a small single-year spike in the inflation schedule of a few percentage points, but that quickly reduces back to nearly pre-fork levels.
-
-## Isn't too many coins a bad thing?
-
-Inflation is built-in with Siacoin to account for the many factors over time that will cause coins to disappear, such as the Proof of Burn mechanic, lost coins, and un-refunded collateral due to bad hosting. This inflation becomes very small over time, but still provides security to the network in the form of block rewards for the miners.
-
-|                          | % Growth in total Siacoins |
-| ------------------------ | -------------------------- |
-| Year 1                   | 90                         |
-| Year 2                   | 39                         |
-| Year 3                   | 21                         |
-| Year 4                   | 11.6                       |
-| Year 5                   | 4.6                        |
-| Year 6 (Foundation year) | 9.9                        |
-| Year 7                   | 6.3                        |
-| Year 8                   | 5.9                        |
-| Year 9                   | 5.6                        |
-| Year 10                  | 5.3                        |
-| Year 20                  | 2.3                        |
+| Year                | % Growth in total Siacoins |
+| ------------------- | -------------------------- |
+| 1                   | 90                         |
+| 2                   | 39                         |
+| 3                   | 21                         |
+| 4                   | 11.6                       |
+| 5                   | 4.6                        |
+| 6 (Foundation year) | 9.9                        |
+| 7                   | 6.3                        |
+| 8                   | 5.9                        |
+| 9                   | 5.6                        |
+| 10                  | 5.3                        |
+| 20                  | 2.3                        |

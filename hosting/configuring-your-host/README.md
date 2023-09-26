@@ -5,15 +5,15 @@ coverY: 0
 
 # Configuring your Host
 
-Setting up your host on Sia also involves configuring essential parameters such as storage, bandwidth, and other critical variables. These configurations are vital to maintaining the health of your host, ensuring it can effectively provide storage services to renters, and determining how much you earn from hosting.
+Setting up your host on Sia also involves configuring essential parameters such as storage, bandwidth, and other critical variables. These configurations are vital to maintaining your host's health, ensuring it can effectively provide storage services to renters, and determining how much you earn from hosting.
 
-Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](../setup-guides/) guide otherwise choose from the sidebar **Configuration**.
+Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](../setup-guides/) guide; otherwise, choose from the sidebar **Configuration**.
 
 ## Host
 
 ### Accepting contracts
 
-The **Accepting Contracts** setting determines whether your host will accept new contracts. Most hosts will always have this toggled on. However, if you want to exit the network, you can toggle this off to stop accepting new contracts. You will still be required to fulfill any existing contracts before fully shutting down your host.
+The **Accepting Contracts** setting determines whether your host will accept new contracts. Most hosts will always have this toggled on. However, if you want to exit the network, you can toggle this off to stop accepting new contracts. You must still fulfill any existing contracts before entirely shutting down your host.
 
 ### Address
 
@@ -33,19 +33,19 @@ For example:
 * If your domain is `example.com`, you would enter `example.com:9982`.
 
 {% hint style="warning" %}
-In the **DNS** section of the host configuration, remember to also enable your chosen **Dynamic DNS Provider** if you opted for this option.
+In the **DNS** section of the host configuration, remember also to enable your chosen Dynamic DNS Provider if you opted for this option.
 {% endhint %}
 
 ## Pricing
 
 The prices you select will determine how much you earn from hosting.
 
-When setting your prices, you are in direct competition with other hosts. This means that should your prices be excessively high, renters may opt for alternative hosts. Conversely, if your prices are exceedingly low, you may not generate sufficient earnings to offset your operational expenses.
+When setting your prices, you are in direct competition with other hosts. Should your prices be excessively high, renters may opt for alternative hosts. Conversely, if your prices are exceedingly low, you may not generate sufficient earnings to offset your operational expenses.
 
-Hosts are encouraged to explore a range of pricing options and make adjustments as needed to achieve the optimal balance between earnings and utilization. Nevertheless, we have provided the pricing recommendations table below for guidance.&#x20;
+Hosts are encouraged to explore various pricing options and adjust as needed to achieve the optimal balance between earnings and utilization. Nevertheless, we have provided the pricing recommendations table below for guidance.&#x20;
 
 {% hint style="warning" %}
-Please be aware that these recommendations are only suggestions, and you are free to modify your pricing at any time.
+Please be aware that these recommendations are only suggestions, and you can modify your pricing anytime.
 {% endhint %}
 
 | Variables                                    | Description                                                                               | Recommended Value                                |
@@ -64,12 +64,14 @@ Click the **Save Changes** button in the top right corner of the page.
 
 ## Waiting for sync
 
-Now that you have configured your host, you must wait for your host to finish syncing the blockchain. You can check the progress of the sync by mousing over the Sia logo at the top of the sidebar.
+Now that you have configured your host, you must wait for your host to finish syncing the blockchain. You can check the sync progress by mousing over the Sia logo at the top of the sidebar.
 
 <figure><img src="../../.gitbook/assets/hostd_sync.png" alt=""><figcaption><p>Checking the status of hostd syncing to the blockchain</p></figcaption></figure>
 
 {% hint style="info" %}
-Blockchain syncing can take several hours or even days depending on your hardware and internet connection. Make sure to have a stable internet connection to ensure your changes are made to your host.
+Blockchain syncing can take several hours or even days, depending on your hardware and internet connection. Make sure to have a stable internet connection to ensure your changes are made to your host.
 {% endhint %}
+
+
 
 [^1]: <mark style="color:red;">It's important to set this to limit the risk per contract</mark> &#x20;

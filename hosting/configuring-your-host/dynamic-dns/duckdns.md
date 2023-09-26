@@ -6,10 +6,6 @@ description: Learn how to setup dynamic DNS in hostd with DuckDNS
 
 DuckDNS is a free and reliable DDNS provider that offers a straightforward solution for associating a dynamic IP address with a domain name. It's important to note that DuckDNS only supports domains in the format of \`\*.duckdns.org\`. In this guide, we will walk you through the process of configuring DDNS in `hostd` using DuckDNS, enabling you to maintain uninterrupted connectivity to your storage provider, even with a dynamic IP address.&#x20;
 
-## Things you'll need
-
-* A running `hostd` node
-
 ## Create a DuckDNS domain
 
 First, open a browser and go to [https://duckdns.org](https://duckdns.org). Sign in using one of their supported logins (Twitter, GitHub, Google, etc). You will be taken to the account management page, where you can create a free domain.

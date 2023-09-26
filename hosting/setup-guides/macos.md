@@ -1,5 +1,21 @@
 ---
 description: Setup a new host on macOS
+cover: ../../.gitbook/assets/sia-banner-expanded-hostd.png
+coverY: 95.14953271028037
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # macOS
@@ -13,11 +29,11 @@ This guide will walk you through setting up `hostd` on macOS. At the end of this
 ## Pre-requisites
 
 * **Network Access:** `hostd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure that your macOS version is compatible with the walletd software. Check [releases](../../miscellaneous/releases.md) supported macOS versions.
+* **Operating System Compatibility:** Ensure your macOS version is compatible with the walletd software. Check [releases](../../miscellaneous/releases.md) supported macOS versions.
 * **System Updates:** Ensure that your macOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 {% hint style="warning" %}
-Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup as such:
+Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup as such
 
 * A Mac that supports macOS 12 (Monterey) or 13 (Ventura)
 * A quad-core CPU
@@ -32,24 +48,18 @@ This guide primarily uses the command line and assumes the user has sudo permiss
 
 ## Getting `hostd`
 
-1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/host). For the purpose of this guide, we'll be downloading the macOS version of `hostd` and unzip the binary to `/usr/local/bin`.
-
 {% hint style="warning" %}
-Remember to check which version to download to ensure it works correctly with your operating system. To do this click on the Apple icon in the top left corner of your toolbar, then click on “About This Mac.” If the processor/chips says:
+Remember to check which version to download to ensure it works correctly with your operating system. To do this, click on the Apple icon in the top left corner of your toolbar, then click **About This Mac**. If the processor/chips says:
 
 * **Intel** - `MacOS AMD64`
 * **M1 or M2** - `MacOS ARM64`
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/host_1.png" alt=""><figcaption><p>macOS Download folder</p></figcaption></figure>
-
+1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/host). For this guide, we'll be downloading the macOS version of `hostd` and unzip the binary to `/usr/local/bin`.
 2. Now that we have downloaded `hostd`, you may need to unzip it and move it to a more accessible location:
-   * Double-click on the downloaded `hostd` zip file to unzip it if it hasn't done so automatically.
+   * Double-click the downloaded `hostd` zip file to unzip it if it hasn't done so automatically.
    * Click on the newly unzipped directory.
-   * Right-click on the path bar at the bottom of the Finder window and click "Open in Terminal".
-
-<figure><img src="../../.gitbook/assets/option.png" alt="" width="271"><figcaption><p>Options after right-clicking </p></figcaption></figure>
-
+   * Right-click on the path bar at the bottom of the Finder window and click **Open in Terminal**.
 3. In the opened terminal window, move the `hostd` binary to `/usr/local/bin` by running the following command and press enter:
 
 ```bash
@@ -60,7 +70,7 @@ sudo mv hostd /usr/local/bin
 
 You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
 
-4. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `hostd` software. It is important to store `hostd`'s metadata on an SSD. You will need at least 80GB of space available. 50GB for the current blockchain and additional space for volume metadata. Run the following command to do so:
+4. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `hostd` software. It is essential to store `hostd`'s metadata on an SSD. You will need at least 80GB of space available. 50GB for the current blockchain and additional space for volume metadata. Run the following command to do so:
 
 ```bash
 mkdir ~/hostd
@@ -68,16 +78,16 @@ mkdir ~/hostd
 
 ## Creating a wallet
 
-1. `hostd` uses BIP-39 12-word recovery phrases. If you already have a 12-word seed, skip this step, otherwise run the following command to generate a new wallet recovery phrase:
+1. `hostd` uses BIP-39 12-word recovery phrases. If you already have a 12-word seed, skip this step and run the following command to generate a new wallet recovery phrase:
 
 ```bash
 hostd seed
 ```
 
-A new 12-word recovery phrase will be generated, so please copy and store it in a safe place as you will need this phrase to recover your wallet.&#x20;
+A new 12-word recovery phrase will be generated, so please copy and store it in a safe place, as you will need this phrase to recover your wallet.&#x20;
 
 {% hint style="warning" %}
-If you lose this phrase, you will lose access to your wallet and funds. Find out more about [Your Sia Seed](../../get-started-with-sia/the-importance-of-your-seed.md) and why it is important.
+If you lose this phrase, you will lose access to your wallet and funds. Find out more about [Your Sia Seed](../../get-started-with-sia/the-importance-of-your-seed.md) and why it is essential.
 {% endhint %}
 
 You will also see the wallet's funding address. You can send Siacoin to this address to fund your host.
@@ -86,35 +96,35 @@ You will also see the wallet's funding address. You can send Siacoin to this add
 
 ## Running `hostd`
 
-1. In the same terminal, run the following command to start `hostd`:
+1. Run the following in your terminal command to start `hostd`:
 
 ```bash
-hostd --dir ~/hostd
+hostd
 ```
 
-You will be prompted input both:
+You will be prompted to input both:
 
-* `API password` - This password is chosen by you and can be anything you want it to be. It will be used to unlock the `hostd` UI via your browser, it should be something secure and easy to remember.
+* `API password` - You choose this password, which can be anything you want. It will be used to unlock the `hostd` UI via your browser should be something secure and easy to remember.
 * `wallet seed` - The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step.
 
-These values are not stored anywhere; and will be used requested every time you start `hostd`.
+These values are not stored anywhere and will be used as requested every time you start `hostd`.
 
 {% hint style="info" %}
-You can also set the `HOSTD_SEED` and `HOSTD_API_PASSWORD` environment variables so you do not have to re-enter the values every time. Check out this \<guide> to set this.
+You can also set the `HOSTD_SEED` and `HOSTD_API_PASSWORD` environment variables so you do not have to re-enter the values every time.
 {% endhint %}
 
 2. After entering your desired `API password` and the created `wallet seed`, `hostd` will start.&#x20;
 
-<figure><img src="../../.gitbook/assets/host_4.png" alt=""><figcaption><p>Starting hostd</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hostd.png" alt=""><figcaption><p>Starting hostd</p></figcaption></figure>
 
-Your terminal will produce a range of different values you may not be familiar with, so feel free to check the tabs below to see what each of them is and why they are important:
+Your terminal will produce a range of different values you may not be familiar with, so feel free to check the tabs below to see what each of them is and why they are essential:
 
 {% tabs %}
 {% tab title="p2p" %}
 **p2p (Peer-to-Peer) Component:**
 
 * "p2p" refers to the communication between different nodes or devices without relying on a central server.
-* `Listening on 127.0.0.1:9981` means that the application's p2p component is currently set to listen for incoming network connections on the local loopback IP address `127.0.0.1` (also known as `localhost`) and the port `9981`. Localhost refers to the current machine itself.
+* `Listening on 127.0.0.1:9981` means that the application's p2p component is currently set to listen for incoming network connections on the local loopback IP address `127.0.0.1` (also known as `localhost`) and the port `9981`. Localhost refers to the current machine itself,
 {% endtab %}
 
 {% tab title="api" %}
@@ -162,11 +172,11 @@ Congratulations on successfully setting up `hostd` and taking a significant step
 
 ## Updating
 
-It is very important to keep your host up to date. New versions of hostd are released regularly and contain bug fixes and performance improvements.
+It is essential to keep your host up. New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
 
 To update:
 
-1. Download the latest version of hostd from [https://sia.tech/software/hostd](https://sia.tech/software/hostd)
+1. Download the latest version of `hostd` from [https://sia.tech/software/hostd](https://sia.tech/software/hostd)
 2. Stop the `hostd` service with the command `sudo systemctl stop hostd`
 3. Unzip and replace `hostd` in `/usr/local/bin` with the new version
 4. Restart `hostd` with `sudo systemctl start hostd`

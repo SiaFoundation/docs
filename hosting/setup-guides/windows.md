@@ -1,5 +1,21 @@
 ---
 description: Setup a new host on Windows
+cover: ../../.gitbook/assets/sia-banner-expanded-hostd.png
+coverY: 96.02180685358255
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # ✏ Windows
@@ -74,11 +90,11 @@ You must leave the command prompt window open while `hostd` is running. If you c
 
 ## Updating
 
-It is very important to keep your host up to date. New versions of hostd are released regularly and contain bug fixes and performance improvements.
+It is essential to keep your host up to date. New versions of `walletd` are released regularly and contain bug fixes and performance improvements.
 
 To update:
 
-1. Download the latest version of hostd from https://sia.tech/software/hostd
-2. Stop `hostd` in your command line by pressing `Ctrl+C`
-3. Replace `hostd.exe` with the new version
-4. Restart `hostd` in your command line
+1. Download the latest version of `hostd` from the [official website](https://sia.tech/software/renterd).
+2. Stop the `hostd` service with the command `sc stop hostd`.
+3. Unzip and replace `hostd` in `C:\Windows\System32` with the new version.
+4. Restart `hostd`.

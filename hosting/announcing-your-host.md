@@ -1,6 +1,20 @@
 ---
-cover: ../.gitbook/assets/leaves.png
+cover: ../.gitbook/assets/nate-path.png
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Announcing your Host
@@ -13,7 +27,7 @@ Announcing your host serves as the bridge between your fully prepared host and p
 An announcement transaction incurs a small fee in Siacoins (SC), which will be deducted from your wallet. Ensure your `hostd` wallet is funded by checking out [Transferring Siacoins](transferring-siacoins.md).
 {% endhint %}
 
-Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](setup-guides/) guide otherwise choose from the sidebar **Configuration**.
+Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](setup-guides/) guide; otherwise, choose from the sidebar **Configuration**.
 
 Click on the **Announce** button in the top right-hand corner.
 
@@ -22,12 +36,12 @@ Click on the **Announce** button in the top right-hand corner.
 Finally, check the announcement fee and click **Announce** in the dialog to confirm.
 
 {% hint style="success" %}
-Congratulation! Your host has now been successfully announced to the network and is now ready to be discovered by renters and establish contracts.
+Congratulation! Your host has been successfully announced to the network and is now ready to be discovered by renters and establish contracts.
 {% endhint %}
 
 ## Check your host's status
 
-Once the announcement is confirmed you can check if your host is visible on the network by going to [here](https://troubleshoot.siacentral.com).&#x20;
+Once the announcement is confirmed, you can check if your host is visible on the network by going [here](https://troubleshoot.siacentral.com).&#x20;
 
 <figure><img src="../.gitbook/assets/siacentral.png" alt=""><figcaption><p>SiaCentral Troubleshooter</p></figcaption></figure>
 

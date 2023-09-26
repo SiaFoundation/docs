@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Introduction](<README (1).md>)
 
 ## Get Started with Sia
 
@@ -41,8 +40,7 @@
 * [Your Sia Wallet](wallet/wallet-overview.md)
 * [Setting up walletd](wallet/setting-up-walletd/README.md)
   * [macOS](wallet/setting-up-walletd/macos.md)
-  * [📸 Windows](wallet/setting-up-walletd/windows.md)
-  * [Windows](wallet/setting-up-walletd/windows-1.md)
+  * [Windows](wallet/setting-up-walletd/windows.md)
   * [✏ Linux](wallet/setting-up-walletd/linux.md)
 * [Transferring Siacoins](wallet/transferring-siacoins.md)
 

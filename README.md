@@ -11,6 +11,8 @@ The Sia Docs is your gateway to the remarkable world of decentralized cloud stor
 
 Our documentation aims to provide a comprehensive source of information and serve as a beacon of knowledge for anyone interested in embracing the power of decentralized cloud storage.
 
+The information in these docs has been taken from a number of sources, primarily the previous Sia Support Center and community-driven sites like the [Sia Wiki](https://web.archive.org/web/20180921135627/https://siawiki.tech/index), [SiaStats](https://siastats.info), and [SiaSetup](https://siasetup.info), and we aim to educate our community with what Sia has to offer!
+
 ## Submitting your edits
 
 Keeping our documentation current is a substantial undertaking, and with GitBook, we've opened the door for community members to contribute ideas actively. Whether you want to suggest edits to existing content or create entirely new articles, you can do so.&#x20;

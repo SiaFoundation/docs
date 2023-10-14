@@ -29,8 +29,8 @@ Enter your address followed by your host's RHP2 port (which defaults to `:9982`)
 
 For example:
 
-* If your IP address is `199.111.78.80` you would enter `199.111.78.80:9982`.&#x20;
-* If your domain is `example.com`, you would enter `example.com:9982`.
+- If your IP address is `199.111.78.80` you would enter `199.111.78.80:9982`.&#x20;
+- If your domain is `example.com`, you would enter `example.com:9982`.
 
 {% hint style="warning" %}
 In the **DNS** section of the host configuration, remember also to enable your chosen Dynamic DNS Provider if you opted for this option.
@@ -52,11 +52,11 @@ Please be aware that these recommendations are only suggestions, and you can mod
 | -------------------------------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------ |
 | Storage price                                | The amount of Siacoins you charge per TB per month of storage.                            | **$1 USD per TB per month**                      |
 | Egress price                                 | The amount of Siacoins you charge per TB of data downloaded from your host.               | **>$5.00 USD per TB**                            |
-| **I**ngress price                            | The amount of Siacoins you charge per TB of data uploaded to your host                    | **Between $0.00 - $0.05 USD per TB**             |
+| Ingress price                                | The amount of Siacoins you charge per TB of data uploaded to your host                    | **Between $0.00 - $0.05 USD per TB**             |
 | Collateral Multiplier                        | The amount of Siacoins you lock per TB per month of storage                               | **2**                                            |
 | [Maximum collateral](#user-content-fn-1)[^1] | The maximum amount of Siacoins you will lock into a single contract for collateral.       | **(Storage Price \* Collateral Multiple) \* 10** |
 | Contract price                               | The base price to form or renew a contract with the host.                                 | **0.2 SC**                                       |
-| Base RPC price                               | The price to execute an RPC. Its added to any additional cossts from the RPC.             | **1 SC/Million**                                 |
+| Base RPC price                               | The price to execute an RPC. Its added to any additional costs from the RPC.              | **1 SC/Million**                                 |
 | Sector access price                          | The base price to read a sector from a disk. It's added to any other costs from the host. | **1 SC/Million**                                 |
 | Price table validity                         | The length of time a renter's registered price table remains valid.                       | **30 Minutes**                                   |
 
@@ -71,7 +71,5 @@ Now that you have configured your host, you must wait for your host to finish sy
 {% hint style="info" %}
 Blockchain syncing can take several hours or even days, depending on your hardware and internet connection. Make sure to have a stable internet connection to ensure your changes are made to your host.
 {% endhint %}
-
-
 
 [^1]: <mark style="color:red;">It's important to set this to limit the risk per contract</mark> &#x20;

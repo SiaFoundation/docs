@@ -1,6 +1,6 @@
 ---
 cover: ../../.gitbook/assets/sia-banner-expanded-renterd.png
-coverY: 96.98442367601245
+coverY: 145.2747620771895
 layout:
   cover:
     visible: true
@@ -21,13 +21,13 @@ layout:
 
 This guide will walk you through setting up `renterd` on macOS. At the end of this guide, you should have:
 
-* **Installed Sia `renterd` software:** Successfully installed the Sia `renterd` software on your macOS system with the appropriate binary.
-* **Created a `renterd` wallet**: created a wallet with a Seed to store your Siacoins in `renterd`.
+* Installed Sia `renterd` software
+* Created a `renterd` wallet
 
 ## Pre-requisites
 
 * **Network Access:** `renterd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your macOS version is compatible with the walletd software. Check [releases](../../miscellaneous/releases.md) supported by macOS versions.
+* **Operating System Compatibility:** Ensure your macOS version is compatible with the `renterd` software. Check [releases](../../miscellaneous/releases.md) supported by macOS versions.
 * **System Updates:** Ensure that your macOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 ## Getting `renterd`
@@ -50,9 +50,9 @@ Remember to check which version to download to ensure it works correctly with yo
 sudo mv renterd /usr/local/bin
 ```
 
-<figure><img src="../../.gitbook/assets/renterd_2.png" alt=""><figcaption><p>Moving renterd binary</p></figcaption></figure>
-
+{% hint style="info" %}
 You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
+{% endhint %}
 
 4. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `renterd` software.
 
@@ -122,6 +122,6 @@ It is essential to keep your renter up to date. New versions of `renterd` are re
 To update:
 
 1. Download the latest version of `renterd` from the [official website](https://sia.tech/software/renterd).
-2. Stop the `renterd` service with the command `sudo systemctl stop renterd`
+2. Stop the `renterd` service with `Cmd+C`.
 3. Unzip and replace `renterd` in `/usr/local/bin` with the new version
-4. Restart `renterd` with `sudo systemctl start renterd`
+4. Restart `renterd`.

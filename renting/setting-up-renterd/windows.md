@@ -1,6 +1,6 @@
 ---
 cover: ../../.gitbook/assets/sia-banner-expanded-renterd.png
-coverY: 95.85669781931465
+coverY: 145.56734029111456
 layout:
   cover:
     visible: true
@@ -21,13 +21,13 @@ layout:
 
 This guide will walk you through setting up `renterd` on Windows. At the end of this guide, you should have:
 
-* **Installed Sia `renterd` software:** Successfully installed the Sia `renterd` software on your Windows system with the appropriate binary.
-* **Created a `renterd` wallet**: created a wallet with a Seed to store your Siacoins in `renterd`.
+* Installed Sia `renterd` software
+* Created a `renterd` wallet
 
 ## Pre-requisites
 
 * **Network Access:** `renterd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your Windows version is compatible with the walletd software. Check [releases](../../miscellaneous/releases.md) supported by Windows versions.
+* **Operating System Compatibility:** Ensure your Windows version is compatible with the `renterd` software. Check [releases](../../miscellaneous/releases.md) supported by Windows versions.
 * **System Updates:** Ensure that your Windows is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 ## Getting `renterd`
@@ -36,20 +36,11 @@ This guide will walk you through setting up `renterd` on Windows. At the end of 
 You may need to run this step in administrative mode, so right-click Command Prompt and select **Run as administrator**.
 {% endhint %}
 
-1. Download the latest version of `renterd` for your operating system from the [official website](https://sia.tech/software/renterd). For this guide, we'll be downloading the Windows version of `renterd`&#x20;
-2. Now that we have downloaded `renterd`, you may need to unzip it and move it to a more accessible location:
+1. Download the latest version of `renterd` for your operating system from the [official website](https://sia.tech/software/renterd). For this guide, we'll be downloading the Windows version of `renterd` .
+2. Now that we have downloaded `renterd`, you may need to unzip it.
    * Right-click the downloaded `renterd` zip file and select **Extract All** to unzip it if it hasn't done so automatically. Select an accessible destination to extract the file.
    * Click on the newly unzipped directory.
-   * Open the Command Prompt
-3. In the Command Prompt, move the `renterd` binary to `C:\Windows\System32` by first typing `move`, copy and paste the path of  `renterd.exe` , and appending the location to where this is being moved. The command line should look something like this:
-
-```bash
-move "C:\path\to\your\unzipped\directory\renterd.exe" C:\Windows\System32
-```
-
-<figure><img src="../../.gitbook/assets/Moving renterd binary.png" alt=""><figcaption><p>Moving renterd binary</p></figcaption></figure>
-
-4. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `renterd` software.
+3. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `renterd` software. Open the Command Prompt and run the following command:
 
 ```bash
 mkdir C:\Users\<your_username>\renterd
@@ -73,7 +64,7 @@ If you lose this phrase, you will lose access to your wallet and funds. [Read mo
 
 ## Running `renterd`
 
-1. IRun the following in your terminal command to start `renterd`:
+1. IRun the following in your Command Prompt to start `renterd`:
 
 ```bash
  renterd
@@ -97,7 +88,7 @@ You can also set the RENTERD`_SEED` and RENTERD`_API_PASSWORD` environment varia
 3. &#x20;You can now access the `renterd` UI by opening a browser and going to `http://localhost:9980`.&#x20;
 
 {% hint style="warning" %}
-Remember to leave the terminal window open while `renterd` it is running. If you close the command prompt window, `renterd` stop.
+Remember to leave the Command Prompt open while `renterd` it is running. If you close the command prompt window, `renterd` stop.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/renterd Login UI.png" alt=""><figcaption><p>renterd Login UI</p></figcaption></figure>
@@ -115,6 +106,7 @@ It is essential to keep your host up to date. New versions of `renterd` are rele
 To update:
 
 1. Download the latest version of `renterd` from the [official website](https://sia.tech/software/renterd).
-2. Stop the `renterd` service with the command `sc stop renterd`.
-3. Unzip and replace `renterd` in `C:\Windows\System32` with the new version.
+2. Stop the `renterd` service with `Crtl+C`.
+3. Unzip and replace `renterd` with the new version.
 4. Restart `renterd`.
+

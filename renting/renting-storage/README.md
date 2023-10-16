@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/nate-trickle.png
+cover: ../../.gitbook/assets/nate-trickle.png
 coverY: 0
 layout:
   cover:
@@ -30,16 +30,16 @@ Uploading files on `renterd` is remarkably straightforward, making it accessible
 ## Uploading your files in renterd
 
 {% hint style="warning" %}
-Uploading files and data with `renterd` is a very straightforward process, assuming you have completed all the steps of the `renterd` setup guide. Visit the [renterd](setting-up-renterd/) guides to ensure everything is set up correctly before proceeding.
+Uploading files and data with `renterd` is a very straightforward process, assuming you have completed all the steps of the `renterd` setup guide. Visit the [renterd](../setting-up-renterd/) guides to ensure everything is set up correctly before proceeding.
 {% endhint %}
 
 1. Access the `rentered` UI from your local host address. Enter your `API password` you created to unlock `renterd`.
 
-<figure><img src="../.gitbook/assets/renterd_5.png" alt=""><figcaption><p>renterd Login UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/renterd_5.png" alt=""><figcaption><p>renterd Login UI</p></figcaption></figure>
 
 2. Drag-and-drop files, or click the Upload Files button in the top right corner to begin uploading files. It's that simple!
 
-<figure><img src="../.gitbook/assets/renterd_6.png" alt=""><figcaption><p>File upload UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/renterd_6.png" alt=""><figcaption><p>File upload UI</p></figcaption></figure>
 
 Once you've chosen the file(s) to upload, it will be classed as active upload; give it a few seconds.
 

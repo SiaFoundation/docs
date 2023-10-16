@@ -1,6 +1,6 @@
 ---
 cover: ../../.gitbook/assets/sia-banner-expanded-walletd.png
-coverY: 95.85669781931465
+coverY: 146.27749232642597
 layout:
   cover:
     visible: true
@@ -21,18 +21,14 @@ layout:
 
 This guide will walk you through setting up `walletd` on macOS. At the end of this guide, you should have the following:
 
-* **Installed Sia `walletd` software:** You should have successfully installed the Sia `walletd` software on your macOS system with the appropriate binary.
-* **Functional Sia Wallet:** You should have a functional Sia wallet set up and ready for transactional use in the Sia network.
+* Installed Sia `walletd` software
+* Functional Sia Wallet
 
 ## Pre-requisites
 
 * **Network Access:** `walletd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your macOS version is compatible with the walletd software. Check [releases](../../miscellaneous/releases.md) supported macOS versions.
+* **Operating System Compatibility:** Ensure your macOS version is compatible with the `walletd` software. Check [releases](../../miscellaneous/releases.md) supported macOS versions.
 * **System Updates:** Ensure that your macOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
-
-{% hint style="info" %}
-This guide primarily uses the command line and assumes the user has sudo permissions.
-{% endhint %}
 
 ## Getting `walletd`
 
@@ -43,8 +39,8 @@ Remember to check which version to download to ensure it works correctly with yo
 * **M1 or M2** - `MacOS ARM64`
 {% endhint %}
 
-1. Download the latest version of `walletd` for your operating system from the [official website](https://sia.tech/software/walletd). For this guide, we'll be downloading the macOS version of `walletd` and unzipping the binary to `/usr/local/bin`.
-2. Now that we have downloaded `walletd`, you may need to unzip it and move it to a more accessible location:
+1. Download the latest version of `walletd` for your operating system from the [official website](https://sia.tech/software/walletd). For this guide, we'll be downloading the macOS version of `walletd` .
+2. Now that we have downloaded `walletd`, you may need to unzip it.
    * Double-click the downloaded `walletd` zip file to unzip it if it hasn't done so automatically.
    * Click on the newly unzipped directory.
    * Right-click on the path bar at the bottom of the Finder window and click **Open in Terminal**.
@@ -54,11 +50,11 @@ Remember to check which version to download to ensure it works correctly with yo
 sudo mv walletd /usr/local/bin
 ```
 
-<figure><img src="../../.gitbook/assets/terminal 1.png" alt=""><figcaption><p>Moving walletd binary </p></figcaption></figure>
-
+{% hint style="info" %}
 You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
+{% endhint %}
 
-4. Finally, for good practice, create a folder on the home drive. This folder will be used to store software-related data, including information, configurations, logs, or any other relevant files. Run the following command to do so:
+4. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `walletd` software.
 
 ```sh
 mkdir ~/walletd
@@ -102,7 +98,7 @@ It is imperative to keep your host up to date. New versions of `walletd` are rel
 To update:
 
 1. Download the latest version of `walletd` from the [official website](https://sia.tech/software/walletd).
-2. Stop the `walletd` service with the command `sudo systemctl stop walletd`
-3. Unzip and replace `walletd` in `/usr/local/bin` with the new version
-4. Restart `walletd` with `sudo systemctl start walletd`
+2. Stop the `hostd` service with `Cmd+C`.
+3. Unzip and replace `hostd` in `/usr/local/bin` with the new version
+4. Restart `walletd`.
 

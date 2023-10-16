@@ -1,7 +1,7 @@
 ---
 description: Setup a new host on macOS
 cover: ../../.gitbook/assets/sia-banner-expanded-hostd.png
-coverY: 95.14953271028037
+coverY: 144.86017518208027
 layout:
   cover:
     visible: true
@@ -22,14 +22,14 @@ layout:
 
 This guide will walk you through setting up `hostd` on macOS. At the end of this guide, you should have the following:
 
-* **Installed Sia `hostd` software:** You should have successfully installed the Sia `hostd` software on your macOS system with the appropriate binary.
-* **Functional `hostd` Node:** Your hostd node will be fully functional and operational on the Sia network. It will be ready to engage in various network activities, including contract negotiation, storage provision, and transaction handling.
-* Created a `hostd` wallet: Created a wallet with a Seed to access and manage your Sia network transactions and store your Siacoins in `hostd`.
+* Installed Sia `hostd` software
+* Functional `hostd` Node
+* Created a `hostd` wallet
 
 ## Pre-requisites
 
 * **Network Access:** `hostd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your macOS version is compatible with the walletd software. Check [releases](../../miscellaneous/releases.md) supported macOS versions.
+* **Operating System Compatibility:** Ensure your macOS version is compatible with the `hostd` software. Check [releases](../../miscellaneous/releases.md) supported macOS versions.
 * **System Updates:** Ensure that your macOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 {% hint style="warning" %}
@@ -42,10 +42,6 @@ Your machine must meet the minimum requirements for hosting on Sia. Not meeting 
 * Additional storage space to rent out
 {% endhint %}
 
-{% hint style="info" %}
-This guide primarily uses the command line and assumes the user has sudo permissions.&#x20;
-{% endhint %}
-
 ## Getting `hostd`
 
 {% hint style="warning" %}
@@ -55,83 +51,66 @@ Remember to check which version to download to ensure it works correctly with yo
 * **M1 or M2** - `MacOS ARM64`
 {% endhint %}
 
-1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/host). For this guide, we'll be downloading the macOS version of `hostd` and unzip the binary to `/usr/local/bin`.
-2. Now that we have downloaded `hostd`, you may need to unzip it and move it to a more accessible location:
+1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/host). For this guide, we'll be downloading the macOS version of `hostd` .
+2. Now that we have downloaded `hostd`, you may need to unzip it.
    * Double-click the downloaded `hostd` zip file to unzip it if it hasn't done so automatically.
    * Click on the newly unzipped directory.
-   * Right-click on the path bar at the bottom of the Finder window and click **Open in Terminal**.
-3. In the opened terminal window, move the `hostd` binary to `/usr/local/bin` by running the following command and press enter:
-
-```bash
-sudo mv hostd /usr/local/bin
-```
-
-<figure><img src="../../.gitbook/assets/host_2.png" alt=""><figcaption><p>Moving hostd binary</p></figcaption></figure>
-
-You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
-
-4. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `hostd` software. It is essential to store `hostd`'s metadata on an SSD. You will need at least 80GB of space available. 50GB for the current blockchain and additional space for volume metadata. Run the following command to do so:
+3. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `hostd` software. It is essential to store `hostd`'s metadata on an SSD. You will need at least 80GB of space available. 50GB for the current blockchain and additional space for volume metadata. Run the following command to do so:
 
 ```bash
 mkdir ~/hostd
 ```
 
-## Creating a wallet
-
-1. `hostd` uses BIP-39 12-word recovery phrases. If you already have a 12-word seed, skip this step and run the following command to generate a new wallet recovery phrase:
-
-```bash
-hostd seed
-```
-
-A new 12-word recovery phrase will be generated, so please copy and store it in a safe place, as you will need this phrase to recover your wallet.&#x20;
-
-{% hint style="warning" %}
-If you lose this phrase, you will lose access to your wallet and funds. Find out more about [Your Sia Seed](../../get-started-with-sia/the-importance-of-your-seed.md) and why it is essential.
-{% endhint %}
-
-You will also see the wallet's funding address. You can send Siacoin to this address to fund your host.
-
-<figure><img src="../../.gitbook/assets/host_3.png" alt=""><figcaption><p>Generating a recovery phrase and wallet's funding address</p></figcaption></figure>
-
 ## Running `hostd`
 
-1. Run the following in your terminal command to start `hostd`:
+1. Click the `hostd` in the unzipped directory to start `hostd`.
 
-```bash
-hostd
-```
+{% hint style="warning" %}
+You may encounter a warning stating **Your security settings only allow installation of apps from the App Store and identified developers**.&#x20;
+
+To fix this issue, click on the Apple icon in the top left corner of your toolbar, then click **System Settings**. Once your System Settings is open, go to **Privacy & Security** and scroll down to the Security section. You will see a message **"hostd" was blocked from use because the identity of the developer cannot be confirmed.** This is a false positive.
+
+Click **Open Anyway** and authenticate access either by your password or fingerprint.
+{% endhint %}
 
 You will be prompted to input both:
 
-* `API password` - You choose this password, which can be anything you want. It will be used to unlock the `hostd` UI via your browser should be something secure and easy to remember.
-* `wallet seed` - The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step.
+* `password` - You choose this password, which can be anything you want. It will be used to unlock the `hostd` UI via your browser and API. This should be something easy to remember and at least 4 characters.
+* `seed phrase` - The seed phrase is the 12-word phrase. Type it carefully, with one space between each word, or copy and paste it.&#x20;
 
-These values are not stored anywhere and will be used as requested every time you start `hostd`.
+If you do not have a seed phrase, type **seed** to generate one. A new 12-word recovery phrase will be generated, so please copy and store it in a safe place, as you will need this phrase to recover your wallet.&#x20;
 
-{% hint style="info" %}
-You can also set the `HOSTD_SEED` and `HOSTD_API_PASSWORD` environment variables so you do not have to re-enter the values every time.
+These values are not stored anywhere and will be requested every time you start `hostd`.
+
+{% hint style="warning" %}
+If you lose this phrase, you will lose access to your wallet and funds. [Read more](../../get-started-with-sia/the-importance-of-your-seed.md) about the importance of your seed.
 {% endhint %}
 
-2. After entering your desired `API password` and the created `wallet seed`, `hostd` will start.&#x20;
+{% hint style="info" %}
+You can also set the HOSTD`_SEED` and HOSTD`_API_PASSWORD` environment variables so you do not have to re-enter the values every time.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/hostd.png" alt=""><figcaption><p>Starting hostd</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/running hostd and generating a seed mac.png" alt=""><figcaption><p>Running hostd and generating a seed</p></figcaption></figure>
+
+2. After entering your desired `password` and  `seed phrase`, `hostd` will start.
+
+<figure><img src="../../.gitbook/assets/starting hostd mac.png" alt=""><figcaption><p>Starting hostd</p></figcaption></figure>
 
 Your terminal will produce a range of different values you may not be familiar with, so feel free to check the tabs below to see what each of them is and why they are essential:
 
 {% tabs %}
-{% tab title="p2p" %}
-**p2p (Peer-to-Peer) Component:**
-
-* "p2p" refers to the communication between different nodes or devices without relying on a central server.
-* `Listening on 127.0.0.1:9981` means that the application's p2p component is currently set to listen for incoming network connections on the local loopback IP address `127.0.0.1` (also known as `localhost`) and the port `9981`. Localhost refers to the current machine itself,
-{% endtab %}
-
 {% tab title="api" %}
 **api (Application Programming Interface) Component:**
 
 * "api" refers to the application programming interface, which allows different software components to communicate and interact with each other.
 * `Listening on 127.0.0.1:9980` indicates that the application's API component is actively waiting for incoming connections on the local loopback IP address `127.0.0.1` and the port `9980.`
+{% endtab %}
+
+{% tab title="p2p" %}
+**p2p (Peer-to-Peer) Component:**
+
+* "p2p" refers to the communication between different nodes or devices without relying on a central server.
+* `Listening on 127.0.0.1:9981` means that the application's p2p component is currently set to listen for incoming network connections on the local loopback IP address `127.0.0.1` (also known as `localhost`) and the port `9981`. Localhost refers to the current machine itself,
 {% endtab %}
 
 {% tab title="rhp2" %}
@@ -141,10 +120,10 @@ Your terminal will produce a range of different values you may not be familiar w
 * Being configured to listen on `127.0.0.1:9982` signifies that the application's rhp2 component is presently configured to accept incoming network connections on the local loopback IP address `127.0.0.1` (also recognized as `localhost`) and the port `9982.`
 {% endtab %}
 
-{% tab title="rhp3 TCP" %}
-**rhp3 TCP (Remote Host Protocol - Version 3) over TCP:**&#x20;
+{% tab title="rhp3" %}
+**rhp3 (Remote Host Protocol - Version 3):**&#x20;
 
-* "rhp3 TCP" denotes the utilization of Remote Host Protocol - Version 3 over the Transmission Control Protocol (TCP). This protocol allows for remote hosts to communicate without relying on a centralized server.&#x20;
+* "rhp3" denotes using Remote Host Protocol - Version 3. This protocol allows remote hosts to communicate without relying on a centralized server.&#x20;
 * Listening on `127.0.0.1:9983` through TCP implies that the application's rhp3 component is actively awaiting incoming connections on the local loopback IP address `127.0.0.1` and the port `9983` using the TCP protocol.
 {% endtab %}
 
@@ -159,10 +138,10 @@ Your terminal will produce a range of different values you may not be familiar w
 3. You can now access the `hostd` UI by opening a browser and going to `http://localhost:9980`.&#x20;
 
 {% hint style="warning" %}
-Remember to leave the terminal window open while `hostd` is running. If you close the command prompt window, `hostd`will stop.
+Remember to leave the terminal window open while `hostd` is running. If you close the terminal window, `hostd`will stop.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/host_5.png" alt=""><figcaption><p>walletd Login UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/host_5.png" alt=""><figcaption><p>hostd Login UI</p></figcaption></figure>
 
 Enter your `API password` you created in the in the previous step to unlock `hostd`.
 
@@ -177,6 +156,7 @@ It is essential to keep your host up. New versions of `hostd` are released regul
 To update:
 
 1. Download the latest version of `hostd` from [https://sia.tech/software/hostd](https://sia.tech/software/hostd)
-2. Stop the `hostd` service with the command `sudo systemctl stop hostd`
+2. Stop the `hostd` service with `Cmd+C`.
 3. Unzip and replace `hostd` in `/usr/local/bin` with the new version
-4. Restart `hostd` with `sudo systemctl start hostd`
+4. Restart `hostd`.
+

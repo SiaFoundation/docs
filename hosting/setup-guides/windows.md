@@ -1,7 +1,7 @@
 ---
 description: Setup a new host on Windows
 cover: ../../.gitbook/assets/sia-banner-expanded-hostd.png
-coverY: 96.02180685358255
+coverY: 145.02229729007104
 layout:
   cover:
     visible: true
@@ -18,83 +18,98 @@ layout:
     visible: true
 ---
 
-# ✏ Windows
+# Windows
 
-This guide will walk you through setting up a new `hostd` node on Windows. For this guide, we are using Windows 11, but the steps should also work with Windows 10. At the end of this guide, you should have a working `hostd` node on the Sia network and be ready to accept contracts from renters.
+This guide will walk you through setting up `hostd` on Windows. At the end of this guide, you should have the following:
 
-## Things you'll need
+* Installed Sia `hostd` software
+* Functional `hostd` Node
+* Created a `hostd` wallet
 
-Below are the minimum requirements for hosting on Sia. If you do not meet these requirements you may not receive contracts from renters or risk losing Siacoins as a penalty. Hosting is a commitment that requires some technical knowledge and a stable setup.
+## Pre-requisites
 
-* Windows 10 or 11
-* A quad-core CPU
-* 8GB of RAM
-* An SSD with a minimum of 64GB of free space.
-* Additional storage space to rent out
-* A stable internet connection
-
-## Getting hostd
-
-Download the latest version of `hostd` for your operating system and platform from the official website: [https://sia.tech/software/hostd](https://sia.tech/software/hostd).
-
-For this guide, we will download the Windows version and unzip the `hostd` binary to `C:\hostd`
+* **Network Access:** `hostd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
+* **Operating System Compatibility:** Ensure your Windows version is compatible with the `hostd` software. Check [releases](../../miscellaneous/releases.md) supported by Windows versions.
+* **System Updates:** Ensure that your Windows is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 {% hint style="warning" %}
-Windows Defender may flag \``` hostd` `` as a virus. This is a false positive. You can add an exception to Windows Defender (read more here: [https://go.dev/doc/faq#virus](https://go.dev/doc/faq#virus))
+Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup as such:
+
+* A Mac that supports macOS 12 (Monterey) or 13 (Ventura)
+* A quad-core CPU
+* 8GB of RAM
+* An SSD with at least 100GB of free space.
+* Additional storage space to rent out
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/hostd_setup_windows_folder.png" alt=""><figcaption><p>hostd in the Windows file explorer</p></figcaption></figure>
-
-## Creating a wallet
-
-`hostd` uses BIP-39 12-word recovery phrases. It does not support legacy 28/29-word `siad` seeds. If you already have a 12-word seed, skip this step.
-
-1. Open Explorer and browse to the folder where you unzipped `hostd.exe` (in our case `C:\hostd`)
-2. Hold the SHIFT key and right-click in the folder, then click `Open command window here`
-
-<figure><img src="../../.gitbook/assets/hostd_setup_windows_open_command_window.png" alt=""><figcaption><p>Open command window on Windows</p></figcaption></figure>
-
-In the command prompt, run the following command to create a new wallet:
-
-```
-hostd.exe seed
-```
-
-<figure><img src="../../.gitbook/assets/hostd_setup_windows_cmd_seed.png" alt=""><figcaption><p>Generate a new recovery phrase</p></figcaption></figure>
-
-After pressing enter, a new 12-word recovery phrase will be generated. Please write down this phrase and keep it in a safe place. You will need this phrase to recover your wallet. If you lose this phrase, you will lose access to your wallet and funds. You will also see the wallet's funding address. You can send Siacoin to this address to fund your host.
-
-## Running hostd
-
-In the same command prompt window you used to generate your recovery phrase, run the following command to start `hostd:`
-
-```
-hostd.exe
-```
-
-You will be asked to input a password and a wallet recovery phrase. The password is used to unlock the `hostd` UI, it should be something secure and easy to remember. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. These values are not stored anywhere; you will need to reenter them every time you start `hostd`.
+## Getting `hostd`
 
 {% hint style="info" %}
-You can also set the `HOSTD_SEED` and `HOSTD_API_PASSWORD` environment variables so you do not have to reenter the values every time.
+You may need to run this step in administrative mode, so right-click **Command Prompt** and select **Run as administrator**.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/hostd_setup_windows_startup.png" alt=""><figcaption><p>hostd startup message</p></figcaption></figure>
+1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Windows version of `hostd` .
+2. Now that we have downloaded `hostd`, you may need to unzip it.
+   * Right-click the downloaded `hostd` zip file and select **Extract All** to unzip it if it hasn't done so automatically. Select an accessible destination to extract the file.
+   * Click on the newly unzipped directory.
+3. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `hostd` software. Open the **Command Prompt** and run the following command:
 
-After entering your password and recovery phrase, `hostd` will start. You can now access the `hostd` UI by opening a browser and going to `http://localhost:9980`. Enter your password to unlock `hostd`.
+```bash
+mkdir C:\Users\<your_username>\hostd
+```
+
+## Running `hostd`
+
+1. Right-click the `hostd.exe` in the unzipped directory, and select **Run as administrator** to start `hostd`.
+
+You will be prompted to input both:
+
+* `password` - You choose this password, which can be anything you want. It will be used to unlock the `hostd` UI via your browser and API. This should be something easy to remember and at least 4 characters.
+* `seed phrase` - The seed phrase is the 12-word phrase. Type it carefully, with one space between each word, or copy and paste it.&#x20;
+
+If you do not have a seed phrase, type **seed** to generate one. A new 12-word recovery phrase will be generated, so please copy and store it in a safe place, as you will need this phrase to recover your wallet.&#x20;
+
+These values are not stored anywhere and will be requested every time you start `hostd`.
+
+{% hint style="warning" %}
+If you lose this phrase, you will lose access to your wallet and funds. [Read more](../../get-started-with-sia/the-importance-of-your-seed.md) about the importance of your seed.
+{% endhint %}
 
 {% hint style="info" %}
-You must leave the command prompt window open while `hostd` is running. If you close the command prompt window, `hostd` will stop.
+You can also set the HOSTD`_SEED` and HOSTD`_API_PASSWORD` environment variables so you do not have to re-enter the values every time.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/hostd_setup_login_ui.png" alt=""><figcaption><p>hostd login</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/running hostd and generating a seed.png" alt=""><figcaption><p>Running hostd and generating a new seed</p></figcaption></figure>
+
+2. After entering your desired `password` and  `seed phrase`, `hostd` will start.&#x20;
+
+{% hint style="warning" %}
+Windows Defender may flag`hostd`as a virus. This is a false positive, and you can **Allow access.** You can also add an exception to Windows Defender and read more about it [here](https://go.dev/doc/faq#virus).
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/Starting hostd.png" alt=""><figcaption><p>Starting hostd</p></figcaption></figure>
+
+3. &#x20;You can now access the `hostd` UI by opening a browser and going to `http://localhost:9980`.&#x20;
+
+{% hint style="warning" %}
+Remember to leave the command prompt open while`hostd` it is running. If you close the command prompt window, `hostd` stop.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/hostd UI.png" alt=""><figcaption><p>hostd Login UI</p></figcaption></figure>
+
+Enter your `API password` you created in the previous step to unlock `hostd`.
+
+{% hint style="success" %}
+Congratulations on successfully setting up `hostd` and taking a significant step towards renting storage space on the Sia network.
+{% endhint %}
 
 ## Updating
 
-It is essential to keep your host up to date. New versions of `walletd` are released regularly and contain bug fixes and performance improvements.
+It is essential to keep your host up to date. New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
 
 To update:
 
-1. Download the latest version of `hostd` from the [official website](https://sia.tech/software/renterd).
-2. Stop the `hostd` service with the command `sc stop hostd`.
-3. Unzip and replace `hostd` in `C:\Windows\System32` with the new version.
+1. Download the latest version of `hostd` from the [official website](https://sia.tech/software/hostd).
+2. Stop the `hostd` service with `Crtl+C`.
+3. Unzip and replace `hostd` with the new version.
 4. Restart `hostd`.

@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/nate-path.png
+cover: ../../.gitbook/assets/nate-path.png
 coverY: 0
 layout:
   cover:
@@ -51,7 +51,7 @@ Your contracts renew automatically when you open `renterd`.
 
 In `renterd`Your files' health is quantified as a percentage, representing the number of available fragments that comprise each file. Ideally, it would help if you strive for a perfect health rating of 100%, indicating that all 30 file fragments are securely distributed among various hosts.
 
-<figure><img src="../.gitbook/assets/renter_7.png" alt=""><figcaption><p>File health check in renterd</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/renter_7.png" alt=""><figcaption><p>File health check in renterd</p></figcaption></figure>
 
 `renterd` incorporates an intelligent redundancy system that swiftly replicates any missing fragment onto a new host in case one becomes unavailable during its next active check.
 
@@ -61,4 +61,4 @@ Health assessments can only be conducted if `renterd` when it's actively running
 
 Downloading files occurs directly within the app as well. A small download icon accompanies each file in your list. Downloading necessitates Siacoins because you are billed for the bandwidth consumed.
 
-<figure><img src="../.gitbook/assets/renterd_8.png" alt=""><figcaption><p>Downloading files in renterd</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/renterd_8.png" alt=""><figcaption><p>Downloading files in renterd</p></figcaption></figure>

@@ -1,7 +1,3 @@
----
-description: Learn about the benefits of DDNS for hosts with dynamic IP addresses
----
-
 # Dynamic DNS
 
 Most ISPs assign dynamic IP addresses for their residential and small business accounts. Dynamic IPs can change over time. Dynamic IPs are more cost-effective, but they present a challenge for hosts which require consistent connectivity.

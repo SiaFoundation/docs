@@ -1,7 +1,4 @@
 ---
-description: >-
-  Learn about the concepts and terms you'll need to be familiar with to host on
-  the Sia network.
 cover: ../.gitbook/assets/hostd (1).png
 coverY: 33.83177570093458
 layout:
@@ -22,7 +19,7 @@ layout:
 
 # About Hosting on Sia
 
-**Hosting** means you are contributing your excess storage space to the Sia network. You're helping to keep data where it belongs – safely in the hands of those who uploaded it, the **renters**.
+**Hosting** on Sia means contributing your excess storage space to the Sia network. You're helping to keep data where it belongs – safely in the hands of those who uploaded it, the **renters**.
 
 You also earn Siacoins, the cryptocurrency that powers the Sia network. Siacoins can be used to purchase your storage space or converted to other cryptocurrencies or fiat on crypto exchanges.
 
@@ -39,7 +36,7 @@ As a host, you set your prices. There are a lot of specific price points you can
 
 ## **About Contracts**
 
-Storage contracts are one of the most essential features of the Sia network. They allow the entire Sia ecosystem to work trustless – they form blockchain-enforced contracts between you and the people who rent your storage space that are automatically fulfilled.
+Storage contracts are one of the most essential features of the Sia network. They allow the entire Sia ecosystem to work trustlessly – they form blockchain-enforced contracts between you and the people who rent your storage space that is automatically fulfilled.
 
 ## Earn Siacoins
 

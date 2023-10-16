@@ -19,34 +19,4 @@ We have a wonderful community, and we hope you'll find your place there! Check t
 
 Join our socials to become a part of our thriving community, where you can actively engage with our ecosystem and fellow members while staying updated with the latest content, news, and developments!
 
-<div data-full-width="false">
-
-<figure><img src="../.gitbook/assets/twiiter_social_icon.png" alt="" width="32"><figcaption><p><a href="https://twitter.com/Sia__Foundation">Twitter</a></p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/youtube_social_icon.png" alt="" width="32"><figcaption><p><a href="https://www.youtube.com/@SiaTVOfficial/playlists">Youtube</a></p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/discord_social_icon.png" alt="" width="32"><figcaption><p><a href="https://discord.com/invite/sia">Discord</a></p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/reddit_social_icon.png" alt="" width="32"><figcaption><p><a href="https://www.reddit.com/r/siacoin">Reddit</a></p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/287725_github_icon.png" alt="" width="32"><figcaption><p><a href="https://github.com/SiaFoundation">Github</a></p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/siaforum_social_icon.png" alt="" width="54"><figcaption><p><a href="https://forum.sia.tech">Forum</a></p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/medium_social_icon.png" alt="" width="32"><figcaption><p><a href="https://blog.sia.tech">Blog</a></p></figcaption></figure>
-
-</div>
-
 &#x20;

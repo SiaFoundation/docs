@@ -98,7 +98,7 @@ It is imperative to keep your host up to date. New versions of `walletd` are rel
 To update:
 
 1. Download the latest version of `walletd` from the [official website](https://sia.tech/software/walletd).
-2. Stop the `hostd` service with `Cmd+C`.
-3. Unzip and replace `hostd` in `/usr/local/bin` with the new version
+2. Stop the `walletd` service with `Cmd+C`.
+3. Unzip and replace `walletd` in `/usr/local/bin` with the new version
 4. Restart `walletd`.
 

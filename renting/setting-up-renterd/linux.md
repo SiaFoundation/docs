@@ -7,14 +7,14 @@ coverY: 145.56734029111456
 
 This guide will walk you through setting up `renterd` on Linux. At the end of this guide, you should have the following:
 
-* **Installed Sia `renterd` software:** Successfully installed the Sia `renterd` software on your Linux system with the appropriate binary.
-* **Created a `renterd` wallet**: Have created a wallet with a Seed to access and manage your Sia network transactions and store your Siacoins in `renterd`.
+* Installed Sia `renterd` software
+* Created a `renterd` wallet
 
 ## Pre-requisites
 
 * **Network Access:** `renterd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your Linux version is compatible with the walletd software. Check [releases](../../miscellaneous/releases.md) supported Linux versions.
-* **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
+* **Operating System Compatibility:** Ensure your Windows version is compatible with the `renterd` software. Check [releases](../../miscellaneous/releases.md) supported by Windows versions.
+* **System Updates:** Ensure that your Windows is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 ## Getting `renterd`
 
@@ -41,7 +41,7 @@ You'll be prompted to authorize this action by providing your system password. T
 3. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `renterd` software. Open the Terminal Emulator and run the following command:
 
 ```bash
-mkdir ~/walletd
+mkdir ~/renterd
 ```
 
 ## Creating a wallet

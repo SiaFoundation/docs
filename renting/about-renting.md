@@ -1,7 +1,4 @@
 ---
-description: >-
-  This page discusses the basics of renting and the terms you need to know.
-  Later pages walk you through the specific process.
 cover: ../.gitbook/assets/renterd.png
 coverY: 31.57632398753894
 layout:

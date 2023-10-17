@@ -11,7 +11,7 @@ Welcome to the Sia Docs, your gateway to the remarkable world of decentralized c
 
 Our documentation aims to provide a comprehensive source of information and serve as a beacon of knowledge for anyone interested in harnessing the power of decentralized cloud storage.
 
-The information in these docs has been taken from a number of sources, primarily the previous Sia Support Center and community-driven sites like the [Sia Wiki](https://web.archive.org/web/20180921135627/https://siawiki.tech/index), [SiaStats](https://siastats.info), and [SiaSetup](https://siasetup.info), nd we aim to educate our community about what Sia has to offer!
+The information in these docs has been taken from several sources, primarily the previous Sia Support Center and community-driven sites like the [Sia Wiki](https://web.archive.org/web/20180921135627/https://siawiki.tech/index), [SiaStats](https://siastats.info), and [SiaSetup](https://siasetup.info), and we aim to educate our community about what Sia has to offer!
 
 ## Submitting your edits
 
@@ -36,25 +36,22 @@ After clicking **Edit on GitHub**, you'll be taken directly to the corresponding
 <figure><img src=".gitbook/assets/introduction_2.png" alt=""><figcaption><p>Editing the markdown file via Github</p></figcaption></figure>
 
 {% hint style="info" %}
-Toggle the **Preview** button to see how the markdown will be formatted on the GitBook documentation.&#x20;
+Toggle the **Preview** button to see how the markdown will be formatted on the GitBook documentation.
 {% endhint %}
 
-3. Once you make your changes or additions to the markdown, click the **Commit Changes** button in the top right corner.. Remember to do the following:
+3. Once you make your changes or additions to the markdown, click the **Commit Changes** button in the top right corner. Remember to do the following:
    * Select the **Create a new branch for the commit, and start a pull request** option.
    * Add a reasonable title for this commit change(s) in the commit message textbox.
-   * In the extended description section, provide a brief description of the changes or additions made in this commit. If possible, include any links to resources that influenced your decision to contribute.
+   * In the extended description section, briefly describe the changes or additions made in this commit. Include any links to resources that influenced your decision to contribute, if possible.
 
 <figure><img src=".gitbook/assets/introduction_3.png" alt=""><figcaption><p>Committing changes and edits via Github</p></figcaption></figure>
 
-4. Once you're satisfied, click **Commit Changes** to submit your proposal&#x20;
+4. Once you're satisfied, click **Commit Changes** to submit your proposal
 
 {% hint style="info" %}
-## Further assistance
+### Further assistance
 
 If you can't find your answer here in our documentation, join the `#help` channel in the [Sia Discord](https://discord.com/invite/sia), where a vast community loves helping users with their issues.
 
 You can also [send us an email.](mailto:hello@sia.tech) We'll respond as soon as we can.
 {% endhint %}
-
-
-

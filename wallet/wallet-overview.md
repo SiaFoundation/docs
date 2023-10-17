@@ -24,8 +24,6 @@ The Sia Wallet is the official cryptocurrency wallet designed exclusively for Si
 
 While `renterd` and `hostd` have their respective Sia Wallets, it's important to highlight `walletd` as Sia's primary solution for securing your Siacoins. With `walletd` seamlessly integrated into the Sia network and ecosystem, it makes it the inclusive choice for managing your Siacoins.
 
-With `walletd`, you can securely store your Siacoins and initiate transactions. It provides a user-friendly interface accessible via a web browser and its command-line functionality. This wallet lets you check your balance, review transaction history, and conduct Siacoin transfers to and from other Sia users.
-
 Utilizing `walletd` prioritizes user convenience and security within the network, offering an official web application as the ultimate hub for Siacoin management and transactions. Some key features include:
 
 * Securely send, receive, and store Siacoins and Siafunds.
@@ -33,7 +31,7 @@ Utilizing `walletd` prioritizes user convenience and security within the network
 * Easily track your wallet balance and transaction history.
 * Seamlessly integrate with Ledger hardware wallets.
 
-Whether you prefer the command-line interface's flexibility or the web-based interface's ease of use, `walletd` it ensures top-notch Siacoin management and security. Discover the best-in-class Siacoin management and protection with `walletd`, the official wallet solution developed by the creators of the Sia network.
+Whether you prefer the command-line interface's flexibility or the web-based interface's ease of use, `walletd` ensures top-notch Siacoin management and security. Discover the best-in-class Siacoin management and protection with `walletd`, the official wallet solution developed by the creators of the Sia network.
 
 {% hint style="info" %}
 ## **Getting Started with `walletd`**

@@ -73,6 +73,8 @@ coverY: 0
 
 **Escrow**: A service that holds cryptocurrency or other assets in trust until specific conditions in a transaction are met.
 
+**Exabyte**: A unit of digital information storage capacity, equivalent to one quintillion bytes (1,024 petabytes or 1 billion gigabytes(GB))
+
 **Exchange Rate**: The value at which one cryptocurrency can be exchanged for another or traditional fiat currency.
 
 ## F
@@ -136,6 +138,8 @@ coverY: 0
 ## O
 
 ## P
+
+**Petabyte**: A unit of digital information storage capacity, equivalent to one quadrillion bytes (1,024 terabytes or 1 million gigabytes(GB))
 
 **Proof of Burn (PoB)**: A mechanism to burn coins so as to demonstrate commitment to the network and potentially earn the right to mine or validate transactions.
 

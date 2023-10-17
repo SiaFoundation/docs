@@ -21,6 +21,8 @@ coverY: 0
 
 ## B
 
+**Biometric**: Biometric refers to using unique physical or behavioral characteristics of an individual, such as fingerprints, facial features, or voice patterns, for authentication and identification purposes in security systems and access control. Biometric data is often used to enhance security and privacy.
+
 **Blockchain**: A blockchain is a distributed ledger that records all transactions and data on the Sia network.
 
 **Block Explorer**: A block explorer is a tool that allows users to view and search the Sia blockchain for transaction and block information.
@@ -68,6 +70,8 @@ coverY: 0
 **File Recovery Window**: The file recovery window is when renters can recover their data if a host goes offline.
 
 **Fork (Blockchain)**: A fork is a change in the protocol rules of a cryptocurrency, resulting in a divergence of the blockchain into two separate chains, such as a hard fork or soft fork.
+
+**Fragmentation**: Fragmentation refers to the process of data or information being divided into smaller parts or fragments, often for efficient storage, transmission, or processing.
 
 ## G
 

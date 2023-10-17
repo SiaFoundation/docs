@@ -7,18 +7,18 @@ coverY: 0
 
 ## Welcome to the Sia Docs!
 
-The Sia Docs is your gateway to the remarkable world of decentralized cloud storage. Whether you're a tech-savvy enthusiast or want to explore the potential of the decentralization of cloud storage and data security, you've come to the right place!
+Welcome to the Sia Docs, your gateway to the remarkable world of decentralized cloud storage. Whether you're a tech-savvy enthusiast or want to explore the potential of decentralizing cloud storage and enhancing data security, you've come to the right place!
 
-Our documentation aims to provide a comprehensive source of information and serve as a beacon of knowledge for anyone interested in embracing the power of decentralized cloud storage.
+Our documentation aims to provide a comprehensive source of information and serve as a beacon of knowledge for anyone interested in harnessing the power of decentralized cloud storage.
 
-The information in these docs has been taken from a number of sources, primarily the previous Sia Support Center and community-driven sites like the [Sia Wiki](https://web.archive.org/web/20180921135627/https://siawiki.tech/index), [SiaStats](https://siastats.info), and [SiaSetup](https://siasetup.info), and we aim to educate our community with what Sia has to offer!
+The information in these docs has been taken from a number of sources, primarily the previous Sia Support Center and community-driven sites like the [Sia Wiki](https://web.archive.org/web/20180921135627/https://siawiki.tech/index), [SiaStats](https://siastats.info), and [SiaSetup](https://siasetup.info), nd we aim to educate our community about what Sia has to offer!
 
 ## Submitting your edits
 
-Keeping our documentation current is a substantial undertaking, and with GitBook, we've opened the door for community members to contribute ideas actively. Whether you want to suggest edits to existing content or create entirely new articles, you can do so.&#x20;
+Keeping our documentation current is a substantial undertaking, and with GitBook, we've opened the door for community members to actively contribute their ideas. Whether you want to suggest edits to existing content or create entirely new articles, you can do so.
 
 {% hint style="warning" %}
-All submissions undergo a review and approval process by a member of the team, which means your commit won't be merged immediately.
+Please note that all submissions undergo a review and approval process by a member of the team, which means your commit won't be merged immediately.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -39,10 +39,10 @@ After clicking **Edit on GitHub**, you'll be taken directly to the corresponding
 Toggle the **Preview** button to see how the markdown will be formatted on the GitBook documentation.&#x20;
 {% endhint %}
 
-3. Once you make your changes/additions to the markdown, click the **Commit Changes** button in the top right corner. Remember to do the following:
+3. Once you make your changes or additions to the markdown, click the **Commit Changes** button in the top right corner.. Remember to do the following:
    * Select the **Create a new branch for the commit, and start a pull request** option.
    * Add a reasonable title for this commit change(s) in the commit message textbox.
-   * In the extended description section, provide A brief description of the changes/additions made in this commit. If possible, give any links to resources that help you decide to contribute.
+   * In the extended description section, provide a brief description of the changes or additions made in this commit. If possible, include any links to resources that influenced your decision to contribute.
 
 <figure><img src=".gitbook/assets/introduction_3.png" alt=""><figcaption><p>Committing changes and edits via Github</p></figcaption></figure>
 

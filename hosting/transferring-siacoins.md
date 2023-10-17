@@ -43,7 +43,7 @@ Next, you need to confirm everything. You'll have a chance to double-check the c
 
 <figure><img src="../.gitbook/assets/hostd r 1.png" alt=""><figcaption><p>Confirming your transaction</p></figcaption></figure>
 
-Click **Setup** to change something. If it's all good, click B**roadcast transaction**.
+Click **Setup** to change something. If it's all good, click **Broadcast transaction**.
 
 <figure><img src="../.gitbook/assets/hostd r 2.png" alt=""><figcaption><p>Confirmation of a successful transaction broadcasted</p></figcaption></figure>
 
@@ -65,8 +65,8 @@ Once it's in a block, you can check the status and see a new transaction type of
 
 Before you can start hosting, you must have Siacoins (SC) in your `hostd` wallet for the following:
 
-* Locking Siacoin as collateral to ensure they are financially incentivized to store data.&#x20;
-* You are submitting storage proofs to the blockchain. If your wallet runs out of Siacoin, your host cannot submit storage proofs, and you will lose collateral.
+- Locking Siacoin as collateral to ensure they are financially incentivized to store data.&#x20;
+- You are submitting storage proofs to the blockchain. If your wallet runs out of Siacoin, your host cannot submit storage proofs, and you will lose collateral.
 
 {% hint style="info" %}
 We recommend around **$50 worth of Siacoin** to start hosting. Hosts are constantly locking collateral; you may need more or less depending on how much data you store, you may need more or less.

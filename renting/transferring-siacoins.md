@@ -43,7 +43,7 @@ Next, you need to confirm everything. You'll have a chance to double-check the a
 
 <figure><img src="../.gitbook/assets/renterd_12.png" alt=""><figcaption><p>Confirming your transaction</p></figcaption></figure>
 
-Click **Setup** to change something. If it's all good, click B**roadcast transaction**.
+Click **Setup** to change something. If it's all good, click **Broadcast transaction**.
 
 <figure><img src="../.gitbook/assets/renterd_11.png" alt=""><figcaption><p>Confirmation of a successful transaction broadcasted</p></figcaption></figure>
 

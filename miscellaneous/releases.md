@@ -18,7 +18,7 @@ The **AMD64** architecture is a common name for the x86-64 architecture, and it 
 
 **Rent storage space on the Sia network**
 
-Lastest Veriosn: [v0.5.0-beta](https://github.com/SiaFoundation/renterd/releases/tag/v0.5.0)
+Latest version: [v0.5.0-beta](https://github.com/SiaFoundation/renterd/releases/tag/v0.5.0)
 
 * [Source code](https://github.com/SiaFoundation/renterd)
 * [Project Roadmap](https://github.com/orgs/SiaFoundation/projects/3)

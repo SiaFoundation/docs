@@ -20,7 +20,7 @@ Using Sia on a Ledger device requires a few things. You will need:
 
 The web wallet only supports Ledger wallets on some desktop browsers:
 
-|                | USB Suppport  | Bluetooth Support (Ledger Nano X only) |
+|                | USB Support  | Bluetooth Support (Ledger Nano X only) |
 | -------------- | ------------- | -------------------------------------- |
 | Chrome         | 89+           | 89+ (macOS and Windows only)           |
 | Microsoft Edge | 89+           | Not available                          |

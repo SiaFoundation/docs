@@ -1,6 +1,6 @@
 ---
-cover: ../../.gitbook/assets/sia-banner-expanded-walletd.png
-coverY: 147.4052181831238
+cover: https://sia.tech/assets/banners/sia-banner-expanded-walletd.png
+coverY: 0
 layout:
   cover:
     visible: true

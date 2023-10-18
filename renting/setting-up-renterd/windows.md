@@ -1,6 +1,6 @@
 ---
-cover: ../../.gitbook/assets/sia-banner-expanded-renterd.png
-coverY: 145.56734029111456
+cover: https://sia.tech/assets/banners/sia-banner-expanded-renterd.png
+coverY: 0
 layout:
   cover:
     visible: true

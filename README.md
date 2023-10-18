@@ -1,5 +1,5 @@
 ---
-cover: .gitbook/assets/header.jpeg
+cover: https://sia.tech/assets/previews/mountain.png
 coverY: 0
 ---
 

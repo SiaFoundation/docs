@@ -1,7 +1,7 @@
 ---
 description: Setup a new host on macOS
-cover: ../../.gitbook/assets/sia-banner-expanded-hostd.png
-coverY: 144.86017518208027
+cover: https://sia.tech/assets/banners/sia-banner-expanded-hostd.png
+coverY: 0
 layout:
   cover:
     visible: true

@@ -1,7 +1,7 @@
 ---
 description: Setup a new host on Windows
-cover: ../../.gitbook/assets/sia-banner-expanded-hostd.png
-coverY: 145.02229729007104
+cover: https://sia.tech/assets/banners/sia-banner-expanded-hostd.png
+coverY: 0
 layout:
   cover:
     visible: true
@@ -65,9 +65,9 @@ mkdir C:\Users\<your_username>\hostd
 You will be prompted to input both:
 
 * `password` - You choose this password, which can be anything you want. It will be used to unlock the `hostd` UI via your browser and API. This should be something easy to remember and at least 4 characters.
-* `seed phrase` - The seed phrase is the 12-word phrase. Type it carefully, with one space between each word, or copy and paste it.&#x20;
+* `seed phrase` - The seed phrase is the 12-word phrase. Type it carefully, with one space between each word, or copy and paste it.
 
-If you do not have a seed phrase, type **seed** to generate one. A new 12-word recovery phrase will be generated, so please copy and store it in a safe place, as you will need this phrase to recover your wallet.&#x20;
+If you do not have a seed phrase, type **seed** to generate one. A new 12-word recovery phrase will be generated, so please copy and store it in a safe place, as you will need this phrase to recover your wallet.
 
 These values are not stored anywhere and will be requested every time you start `hostd`.
 
@@ -81,7 +81,7 @@ You can also set the HOSTD`_SEED` and HOSTD`_API_PASSWORD` environment variables
 
 <figure><img src="../../.gitbook/assets/running hostd and generating a seed.png" alt=""><figcaption><p>Running hostd and generating a new seed</p></figcaption></figure>
 
-2. After entering your desired `password` and  `seed phrase`, `hostd` will start.&#x20;
+2. After entering your desired `password` and `seed phrase`, `hostd` will start.
 
 {% hint style="warning" %}
 Windows Defender may flag`hostd`as a virus. This is a false positive, and you can **Allow access.** You can also add an exception to Windows Defender and read more about it [here](https://go.dev/doc/faq#virus).
@@ -89,7 +89,7 @@ Windows Defender may flag`hostd`as a virus. This is a false positive, and you ca
 
 <figure><img src="../../.gitbook/assets/Starting hostd.png" alt=""><figcaption><p>Starting hostd</p></figcaption></figure>
 
-3. &#x20;You can now access the `hostd` UI by opening a browser and going to `http://localhost:9980`.&#x20;
+3. You can now access the `hostd` UI by opening a browser and going to `http://localhost:9980`.
 
 {% hint style="warning" %}
 Remember to leave the command prompt open while`hostd` it is running. If you close the command prompt window, `hostd` stop.

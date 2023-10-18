@@ -27,8 +27,8 @@ This guide will walk you through setting up `renterd` on Linux. At the end of th
 ## Pre-requisites
 
 * **Network Access:** `renterd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your Windows version is compatible with the `renterd` software. Check [releases](../../miscellaneous/releases.md) supported by Windows versions.
-* **System Updates:** Ensure that your Windows is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
+* **Operating System Compatibility:** Ensure your Linux version is compatible with the `renterd` software. Check [releases](../../miscellaneous/releases.md) supported by Linux versions.
+* **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 ## Getting `renterd`
 

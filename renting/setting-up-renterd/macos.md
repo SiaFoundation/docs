@@ -123,5 +123,5 @@ To update:
 
 1. Download the latest version of `renterd` from the [official website](https://sia.tech/software/renterd).
 2. Stop the `renterd` service with `Cmd+C`.
-3. Unzip and replace `renterd` in `/usr/local/bin` with the new version
+3. Unzip and replace `renterd` with the new version.
 4. Restart `renterd`.

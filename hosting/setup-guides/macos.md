@@ -157,6 +157,6 @@ To update:
 
 1. Download the latest version of `hostd` from [https://sia.tech/software/hostd](https://sia.tech/software/hostd)
 2. Stop the `hostd` service with `Cmd+C`.
-3. Unzip and replace `hostd` in `/usr/local/bin` with the new version
+3. Unzip and replace `hostd` with the new version
 4. Restart `hostd`.
 

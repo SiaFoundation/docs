@@ -99,6 +99,6 @@ To update:
 
 1. Download the latest version of `walletd` from the [official website](https://sia.tech/software/walletd).
 2. Stop the `walletd` service with `Cmd+C`.
-3. Unzip and replace `walletd` in `/usr/local/bin` with the new version
+3. Unzip and replace `walletd`  with the new version
 4. Restart `walletd`.
 

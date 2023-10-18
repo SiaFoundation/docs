@@ -29,8 +29,8 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 ## Pre-requisites
 
 * **Network Access:** `hostd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your macOS version is compatible with the `hostd` software. Check [releases](../../miscellaneous/releases.md) supported macOS versions.
-* **System Updates:** Ensure that your macOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
+* **Operating System Compatibility:** Ensure your Linux version is compatible with the `hostd` software. Check [releases](../../miscellaneous/releases.md) supported Linux versions.
+* **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 
 

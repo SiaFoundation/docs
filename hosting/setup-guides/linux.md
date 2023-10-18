@@ -64,12 +64,12 @@ rm -rf hostd_linux_arm64.zip
 
 3. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `hostd` software. Open the Terminal Emulator and run the following command:
 
-<pre class="language-bash"><code class="lang-bash"><strong>mkdir ~/walletd
+<pre class="language-bash"><code class="lang-bash"><strong>mkdir ~/hostd
 </strong></code></pre>
 
 ## Running `hostd`
 
-1. Click the `hostd.exe` in the unzipped directory to start `hostd`.
+\[Needs fixing]
 
 
 

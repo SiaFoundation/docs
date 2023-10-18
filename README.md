@@ -1,5 +1,5 @@
 ---
-cover: https://sia.tech/assets/previews/leaves.png
+cover: https://sia.tech/assets/previews/mountain.png
 coverY: 0
 layout:
   cover:
@@ -39,7 +39,7 @@ Please note that all submissions undergo a review and approval process by a memb
 You must have a GitHub account to submit an edit proposal. If you haven't already, please log in or create a GitHub account before you proceed.
 {% endhint %}
 
-1. To edit and submit a proposal via GitBook, click the **Page actions** (ellipsis) in the upper right corner of any page and click **Edit on GitHub**.
+1. To edit and submit a proposal via GitHub pull request, click the **Page actions** (ellipsis) in the upper right corner of any page and click **Edit on GitHub**.
 
 <figure><img src=".gitbook/assets/introduction_1.png" alt=""><figcaption><p>Selecting the page actions, and edit on Github</p></figcaption></figure>
 

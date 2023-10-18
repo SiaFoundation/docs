@@ -1,10 +1,10 @@
 ---
-cover: https://sia.tech/assets/banners/sia-banner-expanded-renterd.png
+cover: https://sia.tech/assets/previews/renterd.png
 coverY: 0
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:

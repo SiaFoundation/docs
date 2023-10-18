@@ -1,10 +1,10 @@
 ---
-cover: ../.gitbook/assets/mountain (2).png
-coverY: 89.09034267912773
+cover: https://sia.tech/assets/previews/mountain.png
+coverY: 0
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:

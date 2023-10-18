@@ -1,6 +1,20 @@
 ---
-cover: https://sia.tech/assets/banners/sia-banner-expanded-renterd.png
+cover: https://sia.tech/assets/previews/renterd.png
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Linux

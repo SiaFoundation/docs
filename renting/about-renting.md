@@ -1,10 +1,10 @@
 ---
-cover: ../.gitbook/assets/renterd.png
-coverY: 31.57632398753894
+cover: https://sia.tech/assets/previews/renterd.png
+coverY: 0
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:

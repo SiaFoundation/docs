@@ -1,6 +1,20 @@
 ---
-cover: ../.gitbook/assets/nate-bridge.png
+cover: https://sia.tech/assets/previews/nate-bridge.png
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Siacoin Total Supply

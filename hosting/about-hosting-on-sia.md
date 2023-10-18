@@ -1,10 +1,10 @@
 ---
-cover: ../.gitbook/assets/hostd (1).png
-coverY: 33.83177570093458
+cover: https://sia.tech/assets/previews/hostd.png
+coverY: 0
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:

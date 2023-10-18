@@ -1,10 +1,10 @@
 ---
-cover: https://sia.tech/assets/banners/sia-banner-expanded-walletd.png
+cover: https://sia.tech/assets/previews/walletd.png
 coverY: 0
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:

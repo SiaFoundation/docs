@@ -1,10 +1,10 @@
 ---
-cover: ../.gitbook/assets/walletd.png
-coverY: 85.70716510903426
+cover: https://sia.tech/assets/previews/walletd.png
+coverY: 0
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:

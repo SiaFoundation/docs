@@ -1,10 +1,10 @@
 ---
-cover: ../../.gitbook/assets/nate-path.png
+cover: https://sia.tech/assets/previews/jungle.png
 coverY: 0
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:

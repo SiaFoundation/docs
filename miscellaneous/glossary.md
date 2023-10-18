@@ -1,6 +1,20 @@
 ---
-cover: ../.gitbook/assets/steps.png
+cover: https://sia.tech/assets/previews/tree.png
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Glossary
@@ -19,7 +33,7 @@ coverY: 0
 
 **Atomic Swap**: Smart contract technology that enables the exchange of one cryptocurrency for another without intermediaries.
 
-**Autonomy**:  A degree of independence from decision-making authority that an entity, such as an individual or an organization, possesses in carrying out its actions and operations.
+**Autonomy**: A degree of independence from decision-making authority that an entity, such as an individual or an organization, possesses in carrying out its actions and operations.
 
 ## B
 
@@ -65,7 +79,7 @@ coverY: 0
 
 **De-platforming**: The act of removing or restricting access to a user, organization, or content from a platform or online service, often due to policy violations or public pressure.
 
-**Domain Name System (DNS)**: Decentralized naming system for computers, services, or any resource connected to the internet, translating user-friendly domain names into IP addresses 
+**Domain Name System (DNS)**: Decentralized naming system for computers, services, or any resource connected to the internet, translating user-friendly domain names into IP addresses
 
 ## E
 

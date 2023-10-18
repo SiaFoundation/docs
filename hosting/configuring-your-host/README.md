@@ -1,6 +1,20 @@
 ---
-cover: ../../.gitbook/assets/leaves.png
+cover: https://sia.tech/assets/previews/nate-snow.png
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Configuring your Host
@@ -17,20 +31,20 @@ The **Accepting Contracts** setting determines whether your host will accept new
 
 ### Address
 
-Setting the host's network **Address** is essential because it's published to the blockchain and used by renters to connect to your host. Some users use their public IP address, but we recommend setting up a domain.&#x20;
+Setting the host's network **Address** is essential because it's published to the blockchain and used by renters to connect to your host. Some users use their public IP address, but we recommend setting up a domain.
 
 {% hint style="info" %}
-You have several options for setting up Dynamic DNS. We recommend utilizing straightforward, no-cost services like [DuckDNS](dynamic-dns/duckdns.md) or [Cloudflare](dynamic-dns/cloudflare-advanced.md). Additionally, you can choose to purchase a custom domain from a registrar.&#x20;
+You have several options for setting up Dynamic DNS. We recommend utilizing straightforward, no-cost services like [DuckDNS](dynamic-dns/duckdns.md) or [Cloudflare](dynamic-dns/cloudflare-advanced.md). Additionally, you can choose to purchase a custom domain from a registrar.
 
 Alternatively, you can set up a public IP address by clicking [here](https://icanhazip.com), which will display the public IP address that you can then copy to your clipboard.
 {% endhint %}
 
-Enter your address followed by your host's RHP2 port (which defaults to `:9982`).&#x20;
+Enter your address followed by your host's RHP2 port (which defaults to `:9982`).
 
 For example:
 
-- If your IP address is `199.111.78.80` you would enter `199.111.78.80:9982`.&#x20;
-- If your domain is `example.com`, you would enter `example.com:9982`.
+* If your IP address is `199.111.78.80` you would enter `199.111.78.80:9982`.
+* If your domain is `example.com`, you would enter `example.com:9982`.
 
 {% hint style="warning" %}
 In the **DNS** section of the host configuration, remember also to enable your chosen Dynamic DNS Provider if you opted for this option.
@@ -42,7 +56,7 @@ The prices you select will determine how much you earn from hosting.
 
 When setting your prices, you are in direct competition with other hosts. Should your prices be excessively high, renters may opt for alternative hosts. Conversely, if your prices are exceedingly low, you may not generate sufficient earnings to offset your operational expenses.
 
-Hosts are encouraged to explore various pricing options and adjust as needed to achieve the optimal balance between earnings and utilization. Nevertheless, we have provided the pricing recommendations table below for guidance.&#x20;
+Hosts are encouraged to explore various pricing options and adjust as needed to achieve the optimal balance between earnings and utilization. Nevertheless, we have provided the pricing recommendations table below for guidance.
 
 {% hint style="warning" %}
 Please be aware that these recommendations are only suggestions, and you can modify your pricing anytime.
@@ -72,4 +86,4 @@ Now that you have configured your host, you must wait for your host to finish sy
 Blockchain syncing can take several hours or even days, depending on your hardware and internet connection. Make sure to have a stable internet connection to ensure your changes are made to your host.
 {% endhint %}
 
-[^1]: <mark style="color:red;">It's important to set this to limit the risk per contract</mark> &#x20;
+[^1]: <mark style="color:red;">It's important to set this to limit the risk per contract</mark>

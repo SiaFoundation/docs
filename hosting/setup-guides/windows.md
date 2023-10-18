@@ -35,7 +35,7 @@ This guide will walk you through setting up `hostd` on Windows. At the end of th
 {% hint style="warning" %}
 Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup as such:
 
-* A Mac that supports macOS 12 (Monterey) or 13 (Ventura)
+* Windows 10 or 11
 * A quad-core CPU
 * 8GB of RAM
 * An SSD with at least 100GB of free space.

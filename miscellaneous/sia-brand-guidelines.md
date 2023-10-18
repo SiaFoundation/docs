@@ -61,7 +61,7 @@ The logo can be similar but **must** be differentiated from the original Sia log
 
 ### Naming
 
-Sia's trademark name is pronounced _"sigh-uh, "_not _"see-ya."_
+Sia's trademark name is pronounced _"sigh-uh,_ not _"see-ya."_
 
 Using the **Sia** is accepted upon naming your project; however, with two restrictions:
 

@@ -150,6 +150,9 @@ EnvironmentFile=/home/ubuntu/hostd.env
 WantedBy=multi-user.target
 Alias=hostd.service
 ```
+{% hint style="warning" %}
+If you are installing `hostd` under a different username than `ubuntu`, make sure you update the `ExecStart`, `User`, and `EnvironmentFile` accordingly.
+{% endhint %}
 
 Save the file and exit. Now it is time to start the service
 

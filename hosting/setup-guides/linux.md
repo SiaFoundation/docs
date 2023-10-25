@@ -35,7 +35,7 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 
 
 {% hint style="warning" %}
-Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup as such
+Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup such as:
 
 * A Linux distro with `systemd` (Ubuntu, Debian, Fedora, Arch, etc)
 * A quad-core CPU
@@ -53,13 +53,20 @@ Remember to check which version to download to ensure it works correctly with yo
 * **aarch64** - `Linux ARM64`
 {% endhint %}
 
-1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Linux version of `hostd` .
+1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Linux version of `hostd`.
+```bash
+wget https://github.com/SiaFoundation/hostd/releases/download/v0.2.0/hostd_linux_amd64.zip
+```
+{% hint style="warning" %}
+If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, make sure to use the latest `hostd_linux_arm64.zip` binary.
+{% endhint %}
+
 2. Now that we have downloaded `hostd`, it's recommended to unzip the `hostd` binary to `/usr/local/bin`. Right-click the unzip file, select **Open Terminal Here** to open your Terminal Emulator, and run the following commands:
 
 ```bash
-unzip hostd_linux_arm64.zip
+unzip hostd_linux_amd64.zip
 sudo mv -t /usr/local/bin hostd
-rm -rf hostd_linux_arm64.zip 
+rm -rf hostd_linux_amd64.zip 
 ```
 
 3. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `hostd` software. Open the Terminal Emulator and run the following command:

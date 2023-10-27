@@ -76,7 +76,7 @@ You also have the option to craft a uniquely personalized name that reflects you
 
 Sia incorporates a variety of colors. When crafting your logo, please choose from our color palette or develop one that suits your vision.
 
-![Sia color pallette](../.gitbook/assets/brand-4.png)
+![Sia color palette](../.gitbook/assets/brand-4.png)
 
 Using the exact Sia logo or wordmark to represent your integration with Sia is accepted, but **must** remain the same colors.
 

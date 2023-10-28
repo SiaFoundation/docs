@@ -35,7 +35,7 @@ Please ensure that you have downloaded the **testnet** binary for either`renterd
 
 With the availability of zSC, the [Zen Testnet faucet](https://zen.siascan.com/faucet) provides a convenient way to acquire zSC by simply providing your Sia wallet's address.
 
-Once on the page, enter a Sia wallet address of either. `renterd`, `hostd`, or `walletd` , then enter the amount of Zen Siacoins (zSC) you wish to fund that address with.&#x20;
+Once on the page, enter a Sia wallet address of either  `renterd`, `hostd`, or `walletd` , then enter the amount of Zen Siacoins (zSC) you wish to fund that address with.&#x20;
 
 <figure><img src="../.gitbook/assets/zen faucet funding.png" alt=""><figcaption><p>Zen Testnet Faucet funding</p></figcaption></figure>
 

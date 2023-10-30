@@ -162,7 +162,7 @@ Start by collecting everything you need to construct the transaction:
 
 * Identify which address you want to send siacoins to.
 * Choose a fee to pay to the miner.
-* Generate a "return address" where you will receive the leftover portion of the output. Refer to [Receiving Siacoins](using-the-sia-ledger-nano-s-app.md#receiving-siacoins-using-the-ledger-nano-s) for how to do this.
+* Generate a "return address" where you will receive the leftover portion of the output. Refer to [Receiving Siacoins](using-the-sia-ledger-nano-s-app-wip.md#receiving-siacoins-using-the-ledger-nano-s) for how to do this.
 
 ## Building a transaction
 

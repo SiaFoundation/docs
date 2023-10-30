@@ -106,7 +106,7 @@ Before sending Siacoin to an address it is important to manually verify that it 
 4. Confirm that you want to generate the address on your device.
 5. Manually check that the address displayed on the device matches the address in the text box.
 
-After verifying the address you can send Siacoin to this address. If this is the first time you have sent Siacoin to a hardware wallet, try with a small amount first to make sure everything is setup correctly. When you receive Siacoin it will be marked as an unconfirmed transaction for 10 minutes to an hour. You will have to wait for at least one confirmation before you can spend your Siacoin.
+After verifying the address you can send Siacoin to this address. If this is the first time you have sent Siacoin to a hardware wallet, try with a small amount first to make sure everything is set up correctly. When you receive Siacoin it will be marked as an unconfirmed transaction for 10 minutes to an hour. You will have to wait for at least one confirmation before you can spend your Siacoin.
 
 ![](../.gitbook/assets/lite-wallet-ledger-receive-unconfirmed.png)
 

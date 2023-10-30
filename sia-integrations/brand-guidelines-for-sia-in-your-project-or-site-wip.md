@@ -35,7 +35,7 @@ You can also create a wonderfully custom name that represents you or your work. 
 
 ## Logo and Wordmark
 
-We’re a little more strict on this one. We own the trademark in the US for both the Sia logo and wordmark:
+We’re a little stricter on this one. We own the trademark in the US for both the Sia logo and wordmark:
 
 ![](../.gitbook/assets/brand-2.png)
 

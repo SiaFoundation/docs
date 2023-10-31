@@ -155,7 +155,7 @@ layout:
 
 **Petabyte**: A unit of digital information storage capacity, equivalent to one quadrillion bytes (1,024 terabytes or 1 million gigabytes(GB))
 
-**Proof of Burn (PoB)**: A mechanism to burn coins so as to demonstrate commitment to the network and potentially earn the right to mine or validate transactions.
+**Proof of Burn (PoB)**: A mechanism to burn coins to demonstrate commitment to the network and potentially earn the right to mine or validate transactions.
 
 **Proof of Storage (PoSt)**: A mechanism for hosts to prove they are storing renter data.
 

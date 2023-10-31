@@ -143,7 +143,7 @@ Remember to leave the terminal window open while `hostd` is running. If you clos
 
 <figure><img src="../../.gitbook/assets/host_5.png" alt=""><figcaption><p>hostd Login UI</p></figcaption></figure>
 
-Enter your `API password` you created in the in the previous step to unlock `hostd`.
+Enter your `API password` you created in the previous step to unlock `hostd`.
 
 {% hint style="success" %}
 Congratulations on successfully setting up `hostd` and taking a significant step towards contributing your excess storage space to the Sia network.

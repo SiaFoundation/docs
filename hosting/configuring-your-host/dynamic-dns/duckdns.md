@@ -1,5 +1,5 @@
 ---
-description: Learn how to setup dynamic DNS in hostd with DuckDNS
+description: Learn how to set up dynamic DNS in hostd with DuckDNS
 ---
 
 # DuckDNS

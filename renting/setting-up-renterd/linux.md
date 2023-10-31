@@ -105,7 +105,7 @@ Remember to leave the terminal window open while `renterd` it is running. If you
 
 <figure><img src="../../.gitbook/assets/renterd Login ui.png" alt=""><figcaption><p>renterd Login UI</p></figcaption></figure>
 
-Enter your `API password` you created in the in the previous step to unlock `renterd`.
+Enter your `API password` you created in the previous step to unlock `renterd`.
 
 {% hint style="success" %}
 Congratulations on successfully setting up `renterd` and taking a significant step towards renting storage space on the Sia network.

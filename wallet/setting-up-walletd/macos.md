@@ -85,7 +85,7 @@ Remember to leave the terminal window open while `walletd` is running. If you cl
 
 <figure><img src="../../.gitbook/assets/walletd_ui.png" alt=""><figcaption><p>walletd </p></figcaption></figure>
 
-Enter your `API password` you created in the in the previous step to unlock `walletd`.
+Enter your `API password` you created in the previous step to unlock `walletd`.
 
 {% hint style="success" %}
 Congratulations on successfully setting up `walletd` and taking a significant step towards securing your Siacoins.

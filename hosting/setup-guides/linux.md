@@ -55,7 +55,7 @@ Remember to check which version to download to ensure it works correctly with yo
 
 1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Linux version of `hostd`.
 ```console
-wget https://github.com/SiaFoundation/hostd/releases/download/v0.2.0/hostd_linux_amd64.zip
+wget -O hostd_linux_amd64.zip https://sia.tech/downloads/hostd/latest/linux_amd64
 ```
 {% hint style="warning" %}
 If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, make sure to use the latest `hostd_linux_arm64.zip` binary.

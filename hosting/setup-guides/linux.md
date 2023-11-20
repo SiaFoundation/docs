@@ -54,7 +54,7 @@ Remember to check which version to download to ensure it works correctly with yo
 {% endhint %}
 
 1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Linux version of `hostd`.
-```bash
+```
 wget https://github.com/SiaFoundation/hostd/releases/download/v0.2.0/hostd_linux_amd64.zip
 ```
 {% hint style="warning" %}
@@ -63,22 +63,11 @@ If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, mak
 
 2. Now that we have downloaded `hostd`, it's recommended to unzip the `hostd` binary to `/usr/local/bin`. Right-click the unzip file, select **Open Terminal Here** to open your Terminal Emulator, and run the following commands:
 
-```bash
+```
 unzip hostd_linux_amd64.zip
 sudo mv -t /usr/local/bin hostd
 rm -rf hostd_linux_amd64.zip 
 ```
-
-3. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `hostd` software. Open the Terminal Emulator and run the following command:
-
-<pre class="language-bash"><code class="lang-bash"><strong>mkdir ~/hostd
-</strong></code></pre>
-
-## Running `hostd`
-
-\[Needs fixing]
-
-
 
 ## Creating a wallet
 
@@ -99,62 +88,92 @@ Address addr:333d10486632f11c4c5b907c2e45d31478522dec525649712697404b4253e92ea5a
 
 ## Setting up a systemd service
 
-Now that you have a recovery phrase, we will create a `systemd` service to run `hostd` on startup.
+Now that you have a recovery phrase, we will create a new system user and `systemd` service to securely run `hostd` on startup.
 
-First, create a new environment file. Where you store the file is up to you, but you will need to know the path later. For this guide, we will store it in our home directory `/home/ubuntu/hostd.env`
+First, we will create a new system user with `useradd` and disable the creation of a home directory. This is a security precaution which will isolate `hostd` from any unauthorized access to our system. We will then use `usermod` to lock the account and prevent anyone from logging in under the account.
 
 ```
-sudo nano /home/ubuntu/hostd.env
+sudo useradd -M hostd
+sudo usermod -L hostd
 ```
 
-Now, modify the file to add your wallet seed and API password. The password is used to unlock the `hostd` UI, it should be something secure and easy to remember. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step.
+Now we will create a new folder under `/var/lib/` titled `hostd` and give our new system and set the approriate permissions. This folder will be utilized specifically to store data related to the `hostd` software. Open the Terminal Emulator and run the following commands:
+
+```
+sudo mkdir /var/lib/hostd
+sudo chown hostd:hostd /var/lib/hostd
+sudo chmod o-rwx /var/lib/hostd
+```
+
+Next, create a file name `hostd.yml` file under `/var/lib/hostd/`
+
+```
+sudo nano /var/lib/hostd/hostd.yml
+```
+
+Now, modify the file to add your wallet seed and API password. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. The password is used to unlock the `hostd` UI; it should be something secure and easy to remember.
+
+{% hint style="warning" %}
+The port `9980` is `hostd`'s default operating port and should not need to be changed unless you require a custom configuration for your network.
+{% endhint %}
 
 {% tabs %}
 {% tab title="Mainnet" %}
 ```
-HOSTD_SEED=potato never rifle awake lunar during ocean eight dial gospel crazy response
-HOSTD_API_PASSWORD=sia is cool
+recoveryPhrase: your seed phrase goes here
+http:
+  address: :9980
+  password: your_password
 ```
 {% endtab %}
 
 {% tab title="Testnet" %}
 ```
-HOSTD_ZEN_SEED=potato never rifle awake lunar during ocean eight dial gospel crazy response
-HOSTD_ZEN_API_PASSWORD=sia is cool
+recoveryPhrase: your seed phrase goes here
+http:
+  address: :9880
+  password: your_password
 ```
 {% endtab %}
 {% endtabs %}
 
-Next, we'll create the unit file to run `hostd`:
+Once you have added your recovery phrase and password save the file with `ctrl+s` and exit with `ctrl+x`.
+
+Next, we'll create a new system service to run `hostd` on startup:
 
 ```
 sudo nano /etc/systemd/system/hostd.service
 ```
 
-Modify the following snippet to fit your host and paste it into the file. You must change the `User`, `EnvironmentFile` and data directory to fit your setup.
+Once the editor loads, copy and paste the following into it.
 
-```
+```bash
 [Unit]
 Description=hostd
 After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/hostd -dir /home/ubuntu/hostd -http :9980
+ExecStart=/usr/local/bin/hostd -http :9980
+WorkingDirectory=/var/lib/hostd
 Restart=always
 RestartSec=15
-User=ubuntu
-EnvironmentFile=/home/ubuntu/hostd.env
+User=hostd
 
 [Install]
 WantedBy=multi-user.target
 Alias=hostd.service
 ```
+
+You can now save the file with `ctrl+s` and exit with `ctrl+x`.
+
 {% hint style="warning" %}
-If you are installing `hostd` under a different username than `ubuntu`, make sure you update the `ExecStart`, `User`, and `EnvironmentFile` accordingly.
+If you are planning on using the zen testnet, make sure to change the `-http` flag to port `:9880`
 {% endhint %}
 
-Save the file and exit. Now it is time to start the service
+## Running `hostd`
+
+Now it is time to start the service
 
 ```
 sudo systemctl enable hostd

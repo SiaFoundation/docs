@@ -54,7 +54,7 @@ Remember to check which version to download to ensure it works correctly with yo
 {% endhint %}
 
 1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Linux version of `hostd`.
-```
+```console
 wget https://github.com/SiaFoundation/hostd/releases/download/v0.2.0/hostd_linux_amd64.zip
 ```
 {% hint style="warning" %}
@@ -63,7 +63,7 @@ If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, mak
 
 2. Now that we have downloaded `hostd`, it's recommended to unzip the `hostd` binary to `/usr/local/bin`. Right-click the unzip file, select **Open Terminal Here** to open your Terminal Emulator, and run the following commands:
 
-```
+```console
 unzip hostd_linux_amd64.zip
 sudo mv -t /usr/local/bin hostd
 rm -rf hostd_linux_amd64.zip 
@@ -73,13 +73,13 @@ rm -rf hostd_linux_amd64.zip
 
 `hostd` uses BIP-39 12-word recovery phrases. It does not support legacy 28/29-word `siad` seeds. If you already have a 12-word seed, skip this step. Run the following command to generate a new wallet recovery phrase:
 
-```
+```console
 hostd seed
 ```
 
 After pressing enter, a new 12-word recovery phrase will be generated. Please write down this phrase and keep it in a safe place. You will need this phrase to recover your wallet. If you lose this phrase, you will lose access to your wallet and funds. You will also see the wallet's funding address. You can send Siacoin to this address to fund your host.
 
-```
+```console
 hostd 5a7489b
 Network Mainnet
 Recovery Phrase: poet never rifle awake lunar during ocean eight dial gospel crazy response
@@ -92,14 +92,14 @@ Now that you have a recovery phrase, we will create a new system user and `syste
 
 First, we will create a new system user with `useradd` and disable the creation of a home directory. This is a security precaution which will isolate `hostd` from any unauthorized access to our system. We will then use `usermod` to lock the account and prevent anyone from logging in under the account.
 
-```
+```console
 sudo useradd -M hostd
 sudo usermod -L hostd
 ```
 
 Now we will create a new folder under `/var/lib/` titled `hostd` and give our new system and set the approriate permissions. This folder will be utilized specifically to store data related to the `hostd` software. Open the Terminal Emulator and run the following commands:
 
-```
+```console
 sudo mkdir /var/lib/hostd
 sudo chown hostd:hostd /var/lib/hostd
 sudo chmod o-rwx /var/lib/hostd
@@ -107,7 +107,7 @@ sudo chmod o-rwx /var/lib/hostd
 
 Next, create a file name `hostd.yml` file under `/var/lib/hostd/`
 
-```
+```console
 sudo nano /var/lib/hostd/hostd.yml
 ```
 
@@ -119,7 +119,7 @@ The port `9980` is `hostd`'s default operating port and should not need to be ch
 
 {% tabs %}
 {% tab title="Mainnet" %}
-```
+```yml
 recoveryPhrase: your seed phrase goes here
 http:
   address: :9980
@@ -128,7 +128,7 @@ http:
 {% endtab %}
 
 {% tab title="Testnet" %}
-```
+```yml
 recoveryPhrase: your seed phrase goes here
 http:
   address: :9880
@@ -141,20 +141,20 @@ Once you have added your recovery phrase and password save the file with `ctrl+s
 
 Next, we'll create a new system service to run `hostd` on startup:
 
-```
+```console
 sudo nano /etc/systemd/system/hostd.service
 ```
 
 Once the editor loads, copy and paste the following into it.
 
-```bash
+```toml
 [Unit]
 Description=hostd
 After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/hostd -http :9980
+ExecStart=/usr/local/bin/hostd
 WorkingDirectory=/var/lib/hostd
 Restart=always
 RestartSec=15
@@ -175,14 +175,14 @@ If you are planning on using the zen testnet, make sure to change the `-http` fl
 
 Now it is time to start the service
 
-```
+```console
 sudo systemctl enable hostd
 sudo systemctl start hostd
 ```
 
 Your `hostd` service should now be running. You can check the status of the service by running the following command:
 
-```
+```console
 sudo systemctl status hostd
 ```
 

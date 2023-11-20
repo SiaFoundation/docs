@@ -97,7 +97,7 @@ sudo useradd -M hostd
 sudo usermod -L hostd
 ```
 
-Now we will create a new folder under `/var/lib/` titled `hostd` and give our new system and set the approriate permissions. This folder will be utilized specifically to store data related to the `hostd` software. Open the Terminal Emulator and run the following commands:
+Now we will create a new folder under `/var/lib/` titled `hostd` and give it the appropriate permissions. This folder will be utilized specifically to store data related to the `hostd` software. Open the Terminal Emulator and run the following commands:
 
 ```console
 sudo mkdir /var/lib/hostd

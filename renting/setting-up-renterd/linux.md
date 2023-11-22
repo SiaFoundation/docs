@@ -84,7 +84,7 @@ wget https://sia.tech/downloads/latest/renterd_zen_linux_arm64.zip
 {% endtab %}
 {% endtabs %}
 
-2. Now that we have downloaded `renterd_linux_amd64.zip`, we can unzip and extract the `renterd` binary to our `/usr/local/bin` directory.
+2. Now that we have downloaded `renterd`, we can unzip and extract the `renterd` binary to our `/usr/local/bin` directory.
 
 {% tabs %}
 {% tab title="AMD64" %}

@@ -30,6 +30,19 @@ This guide will walk you through setting up `renterd` on Linux. At the end of th
 * **Operating System Compatibility:** Ensure your Linux version is compatible with the `renterd` software. Check [releases](../../miscellaneous/releases.md) supported by Linux versions.
 * **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
+{% hint style="warning" %}
+Your machine must meet the minimum requirements for `renterd`. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data. A stable setup that meets the following specifications is recommended.
+
+* A Linux distro with `systemd` (Ubuntu, Debian, Fedora, Arch, etc)
+* A dual-core CPU
+* 16GB of RAM
+* An SSD with at least 128GB of free space.
+{% endhint %}
+
+{% hint style="info" %}
+To be safe, we have set the recommended minimum RAM requirement as 16GB. This is because `renterd` keeps full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. So while it is possible to run `renterd` with 8GB of RAM, you should only do so if you understand the risks.
+{% endhint %}
+
 ## Getting `renterd`
 
 {% hint style="warning" %}
@@ -40,15 +53,72 @@ Remember to check which version to download to ensure it works correctly with yo
 {% endhint %}
 
 1. Download the latest version of `renterd` for your operating system from the [official website](https://sia.tech/software/renterd). For this guide, we'll be downloading the Linux version of `renterd`. Open the Terminal Emulator and run the following command:
+
+{% hint style="warning" %}
+If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, or you intend to use the Zen Testnet. Make sure to download the correct binary for your system.
+{% endhint %}
+
+{% tabs %}
+{% tab title="AMD64" %}
 ```console
 wget https://sia.tech/downloads/latest/renterd_linux_amd64.zip
 ```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_linux_arm64.zip
+```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_zen_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_zen_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
+
 2. Now that we have downloaded `renterd_linux_amd64.zip`, we can unzip and extract the `renterd` binary to our `/usr/local/bin` directory.
+
+{% tabs %}
+{% tab title="AMD64" %}
 ```console
 unzip -j renterd_linux_amd64.zip renterd &&\
 sudo mv -t /usr/local/bin renterd &&\
 rm -fr renterd_linux_amd64.zip 
 ```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+unzip -j renterd_linux_arm64.zip renterd &&\
+sudo mv -t /usr/local/bin renterd &&\
+rm -fr renterd_linux_arm64.zip 
+```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+unzip -j renterd_zen_linux_amd64.zip renterd &&\
+sudo mv -t /usr/local/bin renterd &&\
+rm -fr renterd_zen_linux_amd64.zip 
+```
+{% endtab %}
+
+{% tab title="Zen ARM64" %}
+```console
+unzip -j renterd_zen_linux_arm64.zip renterd &&\
+sudo mv -t /usr/local/bin renterd &&\
+rm -fr renterd_zen_linux_arm64.zip 
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
@@ -184,7 +254,7 @@ If you are using the Zen Testnet, please note that the `renterd` web UI is acces
 
 <figure><img src="../../.gitbook/assets/renterd_ui.png" alt=""><figcaption><p>renterd Login UI</p></figcaption></figure>
 
-Enter your `API password` you created in the previous step to unlock `renterd`.
+Enter the `API password` you created in the previous step to unlock `renterd`.
 
 {% hint style="success" %}
 Congratulations on successfully setting up `renterd` and taking a significant step towards renting storage space on the Sia network.

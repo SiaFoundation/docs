@@ -32,8 +32,6 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 * **Operating System Compatibility:** Ensure your Linux version is compatible with the `hostd` software. Check [releases](../../miscellaneous/releases.md) supported Linux versions.
 * **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
-
-
 {% hint style="warning" %}
 Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup such as:
 
@@ -53,21 +51,71 @@ Remember to check which version to download to ensure it works correctly with yo
 * **aarch64** - `Linux ARM64`
 {% endhint %}
 
-1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Linux version of `hostd`.
-```console
-wget https://sia.tech/downloads/latest/hostd_linux_amd64.zip
-```
+1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Linux version of `hostd`. Open the Terminal Emulator and run the following command:
 {% hint style="warning" %}
-If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, make sure to use the latest `hostd_linux_arm64.zip` binary.
+If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, or you intend to use the Zen Testnet. Make sure to download the correct binary for your system.
 {% endhint %}
 
-2. Now that we have downloaded `hostd`, it's recommended to unzip the `hostd` binary to `/usr/local/bin`. Right-click the unzip file, select **Open Terminal Here** to open your Terminal Emulator, and run the following commands:
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_linux_amd64.zip
+```
+{% endtab %}
 
+{% tab title="ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_linux_arm64.zip
+```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_zen_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_zen_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
+
+2. Now that we have downloaded `hostd`, we can unzip and extract the `hostd` binary to our `/usr/local/bin` directory
+{% tabs %}
+{% tab title="AMD64" %}
 ```console
 unzip -j hostd_linux_amd64.zip hostd &&\
 sudo mv -t /usr/local/bin hostd &&\
 rm -rf hostd_linux_amd64.zip
 ```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+unzip -j hostd_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+unzip -j hostd_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="Zen ARM64" %}
+```console
+unzip -j hostd_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_linux_amd64.zip
+```
+{% endtab %}
+{% endtabs %}
 
 ## Creating a wallet
 

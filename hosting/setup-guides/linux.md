@@ -64,9 +64,9 @@ If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, mak
 2. Now that we have downloaded `hostd`, it's recommended to unzip the `hostd` binary to `/usr/local/bin`. Right-click the unzip file, select **Open Terminal Here** to open your Terminal Emulator, and run the following commands:
 
 ```console
-unzip hostd_linux_amd64.zip
-sudo mv -t /usr/local/bin hostd
-rm -rf hostd_linux_amd64.zip 
+unzip -j hostd_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_linux_amd64.zip
 ```
 
 ## Creating a wallet
@@ -90,18 +90,18 @@ Address addr:333d10486632f11c4c5b907c2e45d31478522dec525649712697404b4253e92ea5a
 
 Now that you have a recovery phrase, we will create a new system user and `systemd` service to securely run `hostd` on startup.
 
-First, we will create a new system user with `useradd` and disable the creation of a home directory. This is a security precaution which will isolate `hostd` from any unauthorized access to our system. We will then use `usermod` to lock the account and prevent anyone from logging in under the account.
+First, we will create a new system user with `useradd` and disable the creation of a home directory. This is a security precaution that will isolate `hostd` from any unauthorized access to our system. We will then use `usermod` to lock the account and prevent anyone from logging in under the account.
 
 ```console
-sudo useradd -M hostd
+sudo useradd -M hostd &&\
 sudo usermod -L hostd
 ```
 
 Now we will create a new folder under `/var/lib/` titled `hostd` and give it the appropriate permissions. This folder will be utilized specifically to store data related to the `hostd` software. Open the Terminal Emulator and run the following commands:
 
 ```console
-sudo mkdir /var/lib/hostd
-sudo chown hostd:hostd /var/lib/hostd
+sudo mkdir /var/lib/hostd &&\
+sudo chown hostd:hostd /var/lib/hostd &&\
 sudo chmod o-rwx /var/lib/hostd
 ```
 
@@ -176,7 +176,6 @@ If you are planning on using the zen testnet, make sure to change the `-http` fl
 Now it is time to start the service
 
 ```console
-sudo systemctl enable hostd
 sudo systemctl start hostd
 ```
 
@@ -186,7 +185,7 @@ Your `hostd` service should now be running. You can check the status of the serv
 sudo systemctl status hostd
 ```
 
-If the service was set up correctly it should say "active (running)."
+If the service was set up correctly, it should say "active (running)."
 
 ### Accessing the UI
 

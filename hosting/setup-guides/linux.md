@@ -18,7 +18,7 @@ layout:
     visible: true
 ---
 
-# 🔧 Linux
+# Linux
 
 This guide will walk you through setting up `hostd` on Linux. At the end of this guide, you should have the following:
 

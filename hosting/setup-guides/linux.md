@@ -312,10 +312,6 @@ Alias=hostd.service
 
 You can now save the file with `ctrl+s` and exit with `ctrl+x`.
 
-{% hint style="warning" %}
-If you are planning on using the zen testnet, make sure to change the `-http` flag to port `:9880`
-{% endhint %}
-
 ## Running `hostd`
 
 Now it is time to start the service

@@ -174,7 +174,7 @@ Device     Start         End     Sectors  Size Type
 ```
 
 {% hint style="info" %}
-For this guide we will be using the 5.5TiB storage drive listed as `/dev/sdb`
+For this guide, we will be using the 5.5TiB storage drive listed as `/dev/sdb`. Make sure you use the correct device for your system.
 {% endhint %}
 
 Now, you will also need to get the unique `UUID` and filesystem `TYPE` for the device you'd like to use. To do this run the following.

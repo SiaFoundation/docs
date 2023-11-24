@@ -134,6 +134,103 @@ Recovery Phrase: poet never rifle awake lunar during ocean eight dial gospel cra
 Address addr:333d10486632f11c4c5b907c2e45d31478522dec525649712697404b4253e92ea5a84227187d
 ```
 
+## Configure Storage Drives
+
+If you are storing your renter data on a separate storage device from your system, which is recommended, you will need to configure these drives to be mounted on boot.
+
+To begin, you will need to locate the storage drive you would like to use for your renter's data.
+
+```console
+sudo fdisk -l
+```
+
+This will give a printout that looks similar to the following
+
+```console
+Disk /dev/sda: 476.94 GiB, 512110190592 bytes, 1000215216 sectors
+Disk model: MTFDDAK512TDL-1A
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: FC9DFC63-D9B9-4418-98D3-B71A14D81DCC
+
+Device       Start        End   Sectors   Size Type
+/dev/sda1     2048       4095      2048     1M BIOS boot
+/dev/sda2     4096    4198399   4194304     2G Linux filesystem
+/dev/sda3  4198400 1000212479 996014080 474.9G Linux filesystem
+
+
+Disk /dev/sdb: 5.47 TiB, 6001175125504 bytes, 11721045167 sectors 
+Disk model: Expansion Desk   
+Units: sectors of 1 * 512 = 512 bytes 
+Sector size (logical/physical): 512 bytes / 4096 bytes 
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes 
+Disklabel type: gpt 
+Disk identifier: 95C65D62-CA73-934A-9C4B-030C5FF0321F 
+
+Device     Start         End     Sectors  Size Type 
+/dev/sdb1   2048 11721045133 11721043086  5.5T Linux filesystem
+```
+
+{% hint style="info" %}
+For this guide we will be using the 5.5TiB storage drive listed as `/dev/sdb`
+{% endhint %}
+
+Now, you will also need to get the unique `UUID` and filesystem `TYPE` for the device you'd like to use. To do this run the following.
+
+```console
+sudo blkid
+```
+
+This will give you a printout similar to the following. Make sure to write down your `UUID` and filesystem `TYPE`, as you will need to reference these later on.
+
+```console
+sudo blkid
+[sudo] password for sia: 
+/dev/sdb1: UUID="4c95307e-ecdf-4376-bf6b-1ad006e6144b" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="Linux filesystem" PARTUUID="33f86d9c-8f52-4202-9bf9-4c83c76239e4"
+```
+
+Once you have your device's `UUID` and filesystem `TYPE`, you will then need to create a new mount point.
+
+```console
+sudo mkdir /mnt/sia-drive-01
+```
+
+Now, all that is left is to update the `/etc/fstab` with your new mount point so it can be mounted on boot.
+
+To do this first open up your `fstab` in a text editor.
+
+```console
+sudo nano /etc/fstab
+```
+
+Once the editor loads, you will need to add the following on a new line at the bottom of the file.
+
+* **UUID:** The device UUID of the drive that should be mounted (Example: `4c95307e-ecdf-4376-bf6b-1ad006e6144b`)
+* **mount-point:** The directory where the contents of the drive can be accessed from (Example: `/mnt/sia-drive-01`)
+* **fs-type:** The type of the file system (Example: `ext4`)
+* **options:** Various mounting options, we use defaults which should be fine in most cases.
+* **dump:** Number telling the system how often the drive should be backed up.
+* **pass:** A number indicating the order in which the fsck program will check the devices for errors at boot time: `0` to avoid checking, `1` if this is the root file system, and `2` if this is any other device.
+
+{% hint style="info" %}
+`UUID`, `mount-point`, and `fs-type` are all required. If you are unsure what to use for `options`, `dump`, and `pass`. You can use `defaults 0 2` as shown in the example, or learn more about configuring your `fstab` [here](https://en.wikipedia.org/wiki/Fstab).
+{% endhint %}
+
+```console
+UUID="4c95307e-ecdf-4376-bf6b-1ad006e6144b" /mnt/sia-drive-01 ext4 defaults 0 2
+```
+
+Save the file to disk using `ctrl+s` and exit the text editor using `ctrl+x`.
+
+
+You can now verify it is working correctly by mounting the drive using the following.
+
+```console
+sudo mount -a
+```
+
 ## Setting up a systemd service
 
 Now that you have a recovery phrase, we will create a new system user and `systemd` service to securely run `hostd` on startup.

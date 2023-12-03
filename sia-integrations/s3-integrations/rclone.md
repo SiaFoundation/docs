@@ -38,7 +38,7 @@ This guide requires a working installation of `renterd`. If you have not already
 {% tab title="Windows" %}
 For the purpose of this guide, we will start by uploading a file to the Sia Network using the `renterd` Web UI. This will be used later to help us verify we have configured things properly.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/renterd-bucket.png" alt=""><figcaption><p>A file uploaded to the Sia Network using <code>renterd</code></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/rclone-s3-integration/renterd-bucket.png" alt=""><figcaption><p>A file uploaded to the Sia Network using <code>renterd</code></p></figcaption></figure>
 
 ***
 
@@ -70,7 +70,7 @@ If you are running `renterd` in a docker container, you will need to override th
 
 Press `windows key + R` to open the run dialog. Type in `powershell` and press `OK` to open a Terminal.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-win-01.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-win-01.png" alt="" width="375"><figcaption></figcaption></figure>
 
 Once the Terminal loads, run the following command to install `rclone`.
 
@@ -78,7 +78,7 @@ Once the Terminal loads, run the following command to install `rclone`.
 winget install Rclone.Rclone
 ```
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-win-02.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-win-02.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -260,21 +260,21 @@ On Windows, you can run `rclone mount` in the foreground only. The `--daemon` fl
 
 If you have configured everything properly, you should see a confirmation that `rclone` has successfully started.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-win-03.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-win-03.png" alt=""><figcaption></figcaption></figure>
 
 To confirm you have mounted your Sia storage correctly, you should see a new `X:` drive on your filesystem.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-win-04.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-win-04.png" alt=""><figcaption></figcaption></figure>
 
 You can now access your files on Sia directly from your File Explorer.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-win-05.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-win-05.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Mac OS" %}
 For the purpose of this guide, we will start by uploading a file to the Sia Network using the `renterd` Web UI. This will be used later to help us verify we have configured things properly.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/renterd-bucket.png" alt=""><figcaption><p>A file uploaded to the Sia Network using <code>renterd</code></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/renterd-bucket.png" alt=""><figcaption><p>A file uploaded to the Sia Network using <code>renterd</code></p></figcaption></figure>
 
 ***
 
@@ -306,7 +306,7 @@ If you are running `renterd` in a docker container, you will need to override th
 
 Press `CMD + Space` to open Spotlight search and open a `terminal`.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-macos-01.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-01.png" alt=""><figcaption></figcaption></figure>
 
 Once the Terminal loads, run the following command to install `rclone`.
 
@@ -316,7 +316,7 @@ sudo -v ; curl https://rclone.org/install.sh | sudo bash
 ```
 {% endcode %}
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-macos-02.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-02.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -490,7 +490,7 @@ Before you can use `rclone mount` on Mac OS, you will need to download and insta
 
 Start by creating an empty directory on your filesystem that we will use as the mount point. Once the mount is set up, this is where all the files will appear.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-macos-03.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-03.png" alt=""><figcaption></figcaption></figure>
 
 Next, we will mount our `renterd` remote using the folder we just created. Adding the `--daemon` flag allows `rclone` to maintain the mount point while running in the background.
 
@@ -498,13 +498,13 @@ Next, we will mount our `renterd` remote using the folder we just created. Addin
 rclone mount renterd:/default ~/renterd_files/ --vfs-cache-mode full --daemon
 ```
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-macos-04.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-04.png" alt=""><figcaption></figcaption></figure>
 
 To confirm you have mounted your Sia storage correctly, you should now be able to access your files using the `Finder` app.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-macos-05.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-05.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-macos-06.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-06.png" alt=""><figcaption></figcaption></figure>
 
 To later unmount the remote, you can use `umount` as follows.
 
@@ -516,7 +516,7 @@ umount ~/renterd_files/
 {% tab title="Linux" %}
 For the purpose of this guide, we will start by uploading a file to the Sia Network using the `renterd` Web UI. This will be used later to help us verify we have configured things properly.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/renterd-bucket.png" alt=""><figcaption><p>A file uploaded to the Sia Network using <code>renterd</code></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/renterd-bucket.png" alt=""><figcaption><p>A file uploaded to the Sia Network using <code>renterd</code></p></figcaption></figure>
 
 ***
 
@@ -555,7 +555,7 @@ Press `Ctrl + Alt + T` to open a new `Terminal` window and run the following com
 If you are unable to open a `Terminal` using the above method, try one of the other methods [listed here](https://www.geeksforgeeks.org/how-to-open-terminal-in-linux/).
 {% endhint %}
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-linux-01.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-linux-01.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -725,7 +725,7 @@ Now that `renterd` is running and `rclone` is configured with `renterd` as a rem
 
 Start by creating an empty directory on your filesystem that we will use as the mount point. Once the mount is set up, this is where all the files will appear.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-linux-02.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-linux-02.png" alt=""><figcaption></figcaption></figure>
 
 Next, we will mount our `renterd` remote using the folder we just created. Adding the `--daemon` flag allows `rclone` to maintain the mount point while running in the background.
 
@@ -733,13 +733,13 @@ Next, we will mount our `renterd` remote using the folder we just created. Addin
 rclone mount renterd:/default ~/renterd_files/ --vfs-cache-mode full --daemon
 ```
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-linux-03.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-linux-03.png" alt=""><figcaption></figcaption></figure>
 
 To confirm you have mounted your Sia storage correctly, you should now be able to access your files using the `Files` app. It should also appear as a mounted directory in your sidebar.
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-linux-04.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-linux-04.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/rclone-s3-integration/rclone-new-config-linux-05.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-linux-05.png" alt=""><figcaption></figcaption></figure>
 
 To later unmount the remote, you can use `fusermount` as follows.
 

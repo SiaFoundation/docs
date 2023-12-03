@@ -246,7 +246,9 @@ You have now successfully created a remote for `renterd`. You can now type in `q
 
 Now that `renterd` is running and `rclone` is configured with `renterd` as a remote, we can mount the `renterd` storage to the filesystem.
 
-To run `rclone mount` on Windows, you will first need to download and install [WinFsp](https://winfsp.dev/rel/).
+{% hint style="warning" %}
+Before you can use `rclone mount` on Windows, you will need to download and install [WinFsp](https://winfsp.dev/rel/).
+{% endhint %}
 
 Once you have installed `WinFsp`, you can then mount your `renterd` remote and assign it the drive letter `X:` using the following command.
 
@@ -488,7 +490,7 @@ Now that `renterd` is running and `rclone` is configured with `renterd` as a rem
 Before you can use `rclone mount` on Mac OS, you will need to download and install [MacFUSE](https://github.com/osxfuse/osxfuse/releases/latest).
 {% endhint %}
 
-Start by creating an empty directory on your filesystem that we will use as the mount point. Once the mount is set up, this is where all the files will appear.
+Once you have installed MacFUSE, you will then need to create an empty directory on your filesystem that we will use as the mount point. Once the mount is set up, this is where all the files will appear.
 
 <figure><img src="../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-03.png" alt=""><figcaption></figcaption></figure>
 

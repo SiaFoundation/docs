@@ -59,25 +59,25 @@ If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, or 
 {% tabs %}
 {% tab title="AMD64" %}
 ```console
-wget https://sia.tech/downloads/latest/renterd_linux_amd64.zip
+wget https://sia.tech/downloads/latest/hostd_linux_amd64.zip
 ```
 {% endtab %}
 
 {% tab title="ARM64" %}
 ```console
-wget https://sia.tech/downloads/latest/renterd_linux_arm64.zip
+wget https://sia.tech/downloads/latest/hostd_linux_arm64.zip
 ```
 {% endtab %}
 
 {% tab title="Zen AMD64" %}
 ```console
-wget https://sia.tech/downloads/latest/renterd_zen_linux_amd64.zip
+wget https://sia.tech/downloads/latest/hostd_zen_linux_amd64.zip
 ```
 {% endtab %}
 
-{% tab title="ARM64" %}
+{% tab title="Zen ARM64" %}
 ```console
-wget https://sia.tech/downloads/latest/renterd_zen_linux_arm64.zip
+wget https://sia.tech/downloads/latest/hostd_zen_linux_arm64.zip
 ```
 {% endtab %}
 {% endtabs %}
@@ -96,23 +96,23 @@ rm -rf hostd_linux_amd64.zip
 ```console
 unzip -j hostd_linux_amd64.zip hostd &&\
 sudo mv -t /usr/local/bin hostd &&\
-rm -rf hostd_linux_amd64.zip
+rm -rf hostd_linux_arm64.zip
 ```
 {% endtab %}
 
 {% tab title="Zen AMD64" %}
 ```console
-unzip -j hostd_linux_amd64.zip hostd &&\
+unzip -j hostd_zen_linux_amd64.zip hostd &&\
 sudo mv -t /usr/local/bin hostd &&\
-rm -rf hostd_linux_amd64.zip
+rm -rf hostd_zen_linux_amd64.zip
 ```
 {% endtab %}
 
 {% tab title="Zen ARM64" %}
 ```console
-unzip -j hostd_linux_amd64.zip hostd &&\
+unzip -j hostd_zen_linux_amd64.zip hostd &&\
 sudo mv -t /usr/local/bin hostd &&\
-rm -rf hostd_linux_amd64.zip
+rm -rf hostd_zen_linux_arm64.zip
 ```
 {% endtab %}
 {% endtabs %}
@@ -132,103 +132,6 @@ hostd 5a7489b
 Network Mainnet
 Recovery Phrase: poet never rifle awake lunar during ocean eight dial gospel crazy response
 Address addr:333d10486632f11c4c5b907c2e45d31478522dec525649712697404b4253e92ea5a84227187d
-```
-
-## Configure Storage Drives
-
-If you are storing your renter data on a separate storage device from your system, which is recommended, you will need to configure these drives to be mounted on boot.
-
-To begin, you will need to locate the storage drive you would like to use for your renter's data.
-
-```console
-sudo fdisk -l
-```
-
-This will give a printout that looks similar to the following
-
-```console
-Disk /dev/sda: 476.94 GiB, 512110190592 bytes, 1000215216 sectors
-Disk model: MTFDDAK512TDL-1A
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 4096 bytes
-I/O size (minimum/optimal): 4096 bytes / 4096 bytes
-Disklabel type: gpt
-Disk identifier: FC9DFC63-D9B9-4418-98D3-B71A14D81DCC
-
-Device       Start        End   Sectors   Size Type
-/dev/sda1     2048       4095      2048     1M BIOS boot
-/dev/sda2     4096    4198399   4194304     2G Linux filesystem
-/dev/sda3  4198400 1000212479 996014080 474.9G Linux filesystem
-
-
-Disk /dev/sdb: 5.47 TiB, 6001175125504 bytes, 11721045167 sectors 
-Disk model: Expansion Desk   
-Units: sectors of 1 * 512 = 512 bytes 
-Sector size (logical/physical): 512 bytes / 4096 bytes 
-I/O size (minimum/optimal): 4096 bytes / 4096 bytes 
-Disklabel type: gpt 
-Disk identifier: 95C65D62-CA73-934A-9C4B-030C5FF0321F 
-
-Device     Start         End     Sectors  Size Type 
-/dev/sdb1   2048 11721045133 11721043086  5.5T Linux filesystem
-```
-
-{% hint style="info" %}
-For this guide, we will be using the 5.5TiB storage drive listed as `/dev/sdb`. Make sure you use the correct device for your system.
-{% endhint %}
-
-Now, you will also need to get the unique `UUID` and filesystem `TYPE` for the device you'd like to use. To do this run the following.
-
-```console
-sudo blkid
-```
-
-This will give you a printout similar to the following. Make sure to write down your `UUID` and filesystem `TYPE`, as you will need to reference these later on.
-
-```console
-sudo blkid
-[sudo] password for sia: 
-/dev/sdb1: UUID="4c95307e-ecdf-4376-bf6b-1ad006e6144b" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="Linux filesystem" PARTUUID="33f86d9c-8f52-4202-9bf9-4c83c76239e4"
-```
-
-Once you have your device's `UUID` and filesystem `TYPE`, you will then need to create a new mount point.
-
-```console
-sudo mkdir /mnt/sia-drive-01
-```
-
-Now, all that is left is to update the `/etc/fstab` with your new mount point so it can be mounted on boot.
-
-To do this first open up your `fstab` in a text editor.
-
-```console
-sudo nano /etc/fstab
-```
-
-Once the editor loads, you will need to add the following on a new line at the bottom of the file.
-
-* **UUID:** The device UUID of the drive that should be mounted (Example: `4c95307e-ecdf-4376-bf6b-1ad006e6144b`)
-* **mount-point:** The directory where the contents of the drive can be accessed from (Example: `/mnt/sia-drive-01`)
-* **fs-type:** The type of the file system (Example: `ext4`)
-* **options:** Various mounting options, we use defaults which should be fine in most cases.
-* **dump:** Number telling the system how often the drive should be backed up.
-* **pass:** A number indicating the order in which the fsck program will check the devices for errors at boot time: `0` to avoid checking, `1` if this is the root file system, and `2` if this is any other device.
-
-{% hint style="info" %}
-`UUID`, `mount-point`, and `fs-type` are all required. If you are unsure what to use for `options`, `dump`, and `pass`. You can use `defaults 0 2` as shown in the example, or learn more about configuring your `fstab` [here](https://en.wikipedia.org/wiki/Fstab).
-{% endhint %}
-
-```console
-UUID="4c95307e-ecdf-4376-bf6b-1ad006e6144b" /mnt/sia-drive-01 ext4 defaults 0 2
-```
-
-Save the file to disk using `ctrl+s` and exit the text editor using `ctrl+x`.
-
-
-You can now verify it is working correctly by mounting the drive using the following.
-
-```console
-sudo mount -a
 ```
 
 ## Setting up a systemd service
@@ -258,16 +161,11 @@ sudo nano /var/lib/hostd/hostd.yml
 
 Now, modify the file to add your wallet seed and API password. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. The password is used to unlock the `hostd` UI; it should be something secure and easy to remember.
 
-{% hint style="warning" %}
-The port `9980` is `hostd`'s default operating port and should not need to be changed unless you require a custom configuration for your network.
-{% endhint %}
-
 {% tabs %}
 {% tab title="Mainnet" %}
 ```yml
 recoveryPhrase: your seed phrase goes here
 http:
-  address: :9980
   password: your_password
 ```
 {% endtab %}
@@ -276,13 +174,12 @@ http:
 ```yml
 recoveryPhrase: your seed phrase goes here
 http:
-  address: :9880
   password: your_password
 ```
 {% endtab %}
 {% endtabs %}
 
-Once you have added your recovery phrase and password save the file with `ctrl+s` and exit with `ctrl+x`.
+Once you have added your recovery phrase and password, save the file with `ctrl+s` and exit with `ctrl+x`.
 
 Next, we'll create a new system service to run `hostd` on startup:
 
@@ -311,6 +208,10 @@ Alias=hostd.service
 ```
 
 You can now save the file with `ctrl+s` and exit with `ctrl+x`.
+
+{% hint style="warning" %}
+If you are using external USB drives to store renter data, you will need to ensure that your drives are mounted during system boot. Not doing so could result in failed contracts and the loss of collateral.
+{% endhint %}
 
 ## Running `hostd`
 

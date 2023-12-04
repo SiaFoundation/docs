@@ -18,7 +18,7 @@ layout:
     visible: true
 ---
 
-# 🔧 Linux
+# Linux
 
 This guide will walk you through setting up `hostd` on Linux. At the end of this guide, you should have the following:
 
@@ -31,8 +31,6 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 * **Network Access:** `hostd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
 * **Operating System Compatibility:** Ensure your Linux version is compatible with the `hostd` software. Check [releases](../../miscellaneous/releases.md) supported Linux versions.
 * **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
-
-
 
 {% hint style="warning" %}
 Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup such as:
@@ -53,21 +51,71 @@ Remember to check which version to download to ensure it works correctly with yo
 * **aarch64** - `Linux ARM64`
 {% endhint %}
 
-1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Linux version of `hostd`.
+1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Linux version of `hostd`. Open the Terminal Emulator and run the following command:
+{% hint style="warning" %}
+If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, or you intend to use the Zen Testnet. Make sure to download the correct binary for your system.
+{% endhint %}
+
+{% tabs %}
+{% tab title="AMD64" %}
 ```console
 wget https://sia.tech/downloads/latest/hostd_linux_amd64.zip
 ```
-{% hint style="warning" %}
-If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, make sure to use the latest `hostd_linux_arm64.zip` binary.
-{% endhint %}
+{% endtab %}
 
-2. Now that we have downloaded `hostd`, it's recommended to unzip the `hostd` binary to `/usr/local/bin`. Right-click the unzip file, select **Open Terminal Here** to open your Terminal Emulator, and run the following commands:
+{% tab title="ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/hostd_linux_arm64.zip
+```
+{% endtab %}
 
+{% tab title="Zen AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/hostd_zen_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="Zen ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/hostd_zen_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
+
+2. Now that we have downloaded `hostd`, we can unzip and extract the `hostd` binary to our `/usr/local/bin` directory
+{% tabs %}
+{% tab title="AMD64" %}
 ```console
 unzip -j hostd_linux_amd64.zip hostd &&\
 sudo mv -t /usr/local/bin hostd &&\
 rm -rf hostd_linux_amd64.zip
 ```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+unzip -j hostd_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_linux_arm64.zip
+```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+unzip -j hostd_zen_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_zen_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="Zen ARM64" %}
+```console
+unzip -j hostd_zen_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_zen_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
 
 ## Creating a wallet
 
@@ -113,16 +161,11 @@ sudo nano /var/lib/hostd/hostd.yml
 
 Now, modify the file to add your wallet seed and API password. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. The password is used to unlock the `hostd` UI; it should be something secure and easy to remember.
 
-{% hint style="warning" %}
-The port `9980` is `hostd`'s default operating port and should not need to be changed unless you require a custom configuration for your network.
-{% endhint %}
-
 {% tabs %}
 {% tab title="Mainnet" %}
 ```yml
 recoveryPhrase: your seed phrase goes here
 http:
-  address: :9980
   password: your_password
 ```
 {% endtab %}
@@ -131,13 +174,12 @@ http:
 ```yml
 recoveryPhrase: your seed phrase goes here
 http:
-  address: :9880
   password: your_password
 ```
 {% endtab %}
 {% endtabs %}
 
-Once you have added your recovery phrase and password save the file with `ctrl+s` and exit with `ctrl+x`.
+Once you have added your recovery phrase and password, save the file with `ctrl+s` and exit with `ctrl+x`.
 
 Next, we'll create a new system service to run `hostd` on startup:
 
@@ -168,7 +210,7 @@ Alias=hostd.service
 You can now save the file with `ctrl+s` and exit with `ctrl+x`.
 
 {% hint style="warning" %}
-If you are planning on using the zen testnet, make sure to change the `-http` flag to port `:9880`
+If you are using external USB drives to store renter data, you will need to ensure that your drives are mounted during system boot. Not doing so could result in failed contracts and the loss of collateral.
 {% endhint %}
 
 ## Running `hostd`

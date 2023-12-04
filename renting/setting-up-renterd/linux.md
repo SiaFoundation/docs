@@ -37,9 +37,7 @@ Your machine must meet the minimum requirements for `renterd`. Not meeting these
 * A dual-core CPU
 * 16GB of RAM
 * An SSD with at least 128GB of free space.
-{% endhint %}
 
-{% hint style="info" %}
 To be safe, we have set the recommended minimum RAM requirement as 16GB. This is because `renterd` keeps full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. So while it is possible to run `renterd` with 8GB of RAM, you should only do so if you understand the risks.
 {% endhint %}
 
@@ -55,7 +53,7 @@ Remember to check which version to download to ensure it works correctly with yo
 1. Download the latest version of `renterd` for your operating system from the [official website](https://sia.tech/software/renterd). For this guide, we'll be downloading the Linux version of `renterd`. Open the Terminal Emulator and run the following command:
 
 {% hint style="warning" %}
-If you are installing `hostd` on a Raspberry Pi or other ARM64 architecture, or you intend to use the Zen Testnet. Make sure to download the correct binary for your system.
+If you are installing `renterd` on a Raspberry Pi or other ARM64 architecture, or you intend to use the Zen Testnet. Make sure to download the correct binary for your system.
 {% endhint %}
 
 {% tabs %}

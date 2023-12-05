@@ -136,7 +136,7 @@ A new 12-word recovery phrase will be generated, so please copy and store it in 
 If you lose this phrase, you will lose access to your wallet and funds. Find out more about [Your Sia Seed](../../get-started-with-sia/the-importance-of-your-seed.md) and why it is essential.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/renterd-seed.png" alt=""><figcaption><p>Generating a recovery phrase</p></figcaption></figure>
+![Generating a recovery phrase](../../.gitbook/assets/renterd-seed.png)
 
 ## Setting up a systemd service
 
@@ -242,7 +242,7 @@ sudo systemctl status renterd
 ```
 
 If the service was set up correctly, it should say "active (running)."
-<figure><img src="../../.gitbook/assets/renterd-success.png" alt=""><figcaption><p>Starting renterd</p></figcaption></figure>
+![Starting renterd](../../.gitbook/assets/renterd-success.png)
 
 3. You can now access the `renterd` web UI by opening a browser and going to `http://localhost:9980`.
 
@@ -250,7 +250,7 @@ If the service was set up correctly, it should say "active (running)."
 If you are using the Zen Testnet, please note that the `renterd` web UI is accessible at `https://localhost:9880`.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/renterd_ui.png" alt=""><figcaption><p>renterd Login UI</p></figcaption></figure>
+![renterd Login UI](../../.gitbook/assets/renterd_ui.png)
 
 Enter the `API password` you created in the previous step to unlock `renterd`.
 
@@ -264,7 +264,87 @@ New versions of `renterd` are released regularly and contain bug fixes and perfo
 
 To update:
 
-1. Download the latest version of `renterd` from the [official website](https://sia.tech/software/renterd).
-2. Stop the `renterd` service with `Crtl+C`.
+1. Download the latest version of `renterd`.
+
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_linux_arm64.zip
+```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_zen_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_zen_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
+
+2. Stop the `renterd` system service.
+```console
+sudo systemctl stop renterd
+```
 3. Unzip and replace `renterd` with the new version.
-4. Restart `renterd`.
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+unzip -j renterd_linux_amd64.zip renterd &&\
+sudo mv -t /usr/local/bin renterd &&\
+rm -fr renterd_linux_amd64.zip 
+```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+unzip -j renterd_linux_arm64.zip renterd &&\
+sudo mv -t /usr/local/bin renterd &&\
+rm -fr renterd_linux_arm64.zip 
+```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+unzip -j renterd_zen_linux_amd64.zip renterd &&\
+sudo mv -t /usr/local/bin renterd &&\
+rm -fr renterd_zen_linux_amd64.zip 
+```
+{% endtab %}
+
+{% tab title="Zen ARM64" %}
+```console
+unzip -j renterd_zen_linux_arm64.zip renterd &&\
+sudo mv -t /usr/local/bin renterd &&\
+rm -fr renterd_zen_linux_arm64.zip 
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
+{% endhint %}
+4. Restart the `renterd` system service.
+```console
+sudo systemctl start renterd
+```
+5. Verify the `renterd` service is running correctly.
+```console
+sudo systemctl status renterd
+```
+
+![Starting renterd](../../.gitbook/assets/renterd-success.png)
+
+{% hint style="success" %}
+Congratulations, you have successfully updated your version of `renterd`!
+{% endhint %}

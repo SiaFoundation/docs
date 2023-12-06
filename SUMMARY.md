@@ -26,7 +26,7 @@
 * [Setting up hostd](hosting/setup-guides/README.md)
   * [macOS](hosting/setup-guides/macos.md)
   * [Windows](hosting/setup-guides/windows.md)
-  * [🔧 Linux](hosting/setup-guides/linux.md)
+  * [Linux](hosting/setup-guides/linux.md)
 * [Transferring Siacoins](hosting/transferring-siacoins.md)
 * [Adding Storage](hosting/adding-storage.md)
 * [Configuring your Host](hosting/configuring-your-host/README.md)

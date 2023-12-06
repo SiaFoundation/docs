@@ -239,7 +239,7 @@ If you do not have a desktop environment:
 2. Switch to another computer in your LAN and open the browser
 3. Type your LAN IP followed by `:9980` in the address bar (e.g. `http://192.168.1.50:9980`)
 
-<figure><img src="../../.gitbook/assets/hostd_setup_login_ui.png" alt=""><figcaption><p>hostd login</p></figcaption></figure>
+![hostd login](../../.gitbook/assets/hostd_setup_login_ui.png)
 
 ## Updating
 
@@ -247,7 +247,84 @@ It is very important to keep your host up to date. New versions of `hostd` are r
 
 To update:
 
-1. Download the latest version of `hostd` from the [official website](https://sia.tech/software/hostd).
-2. Stop the `hostd` service with `Crtl+C`.
+1. Download the latest version of `hostd`.
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/hostd_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/hostd_linux_arm64.zip
+```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/hostd_zen_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="Zen ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/hostd_zen_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
+2. Stop the `hostd` system service.
+```console
+sudo systemctl stop hostd
+```
 3. Unzip and replace `hostd` with the new version.
-4. Restart `hostd`.
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+unzip -j hostd_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+unzip -j hostd_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_linux_arm64.zip
+```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+unzip -j hostd_zen_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_zen_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="Zen ARM64" %}
+```console
+unzip -j hostd_zen_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_zen_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
+{% endhint %}
+
+4. Restart the `hostd` system service.
+```console
+sudo systemctl start hostd
+```
+5. Verify the `hostd` service is running correctly.
+```console
+sudo systemctl status hostd
+```
+
+{% hint style="success" %}
+Congratulations, you have successfully updated your version of `hostd`!
+{% endhint %}

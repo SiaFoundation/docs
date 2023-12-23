@@ -12,10 +12,7 @@
 ## Renting
 
 * [About Renting on Sia](renting/about-renting.md)
-* [Setting up renterd](renting/setting-up-renterd/README.md)
-  * [macOS](renting/setting-up-renterd/macos.md)
-  * [Windows](renting/setting-up-renterd/windows.md)
-  * [Linux](renting/setting-up-renterd/linux.md)
+* [Setting up renterd](renting/setting-up-renterd.md)
 * [Transferring Siacoins](renting/transferring-siacoins.md)
 * [Renting Storage](renting/renting-storage/README.md)
   * [Managing your Files](renting/renting-storage/managing-your-files.md)

@@ -2,7 +2,7 @@
 
 ## Overview: Siafunds
 
-Siafunds serve as tokens utilized for revenue sharing within the Sia network, wherein a 3.9% fee from every storage-related transaction on the Sia platform is allocated to Siafund holders. Roughly 1,400 Siafunds were initially distributed to investors through securities sales, while Skynet Labs presently holds the remaining \~86,000 Siafunds.
+Siafunds serve as tokens utilized for revenue sharing within the Sia network, wherein a 3.9% fee from every storage-related transaction on the Sia platform is allocated to Siafund holders. Roughly 1,400 Siafunds were initially distributed to investors through securities sales, while Skynet Labs presently holds the remaining ~8,600 Siafunds.
 
 When contractually completed on the network, 3.9% of each funding source, including renter fees for storage, renter bandwidth costs, and host collateral, is earmarked for Siafund holders. The reserved amount is equitably dispersed upon contract completion among all Siafund holders.
 
@@ -12,7 +12,7 @@ The creation of Siafunds was driven by the goal of establishing a sustainable me
 
 Utility tokens, such as Siacoins, primarily gain value through their utilization on a blockchain platform. In contrast, Siafunds derive their value from both the current and anticipated worth of the Sia storage network.
 
-### Limited Supply &#x20;
+### Limited Supply
 
 The maximum number of Siafunds that will ever be issued is 10,000, and all of these were generated at the launch of the Sia software in 2015. Given that the quantity, size, and value of contracts on the Sia network are rising, the revenue per Siafund increases proportionally as the number of issued Siafunds remains constant.
 
@@ -26,7 +26,7 @@ Siafunds are typically unavailable on mainstream exchanges due to their classifi
 **We strongly advise researching the relevant securities regulations in your country before considering buying or selling Siafunds and seeking legal counsel for guidance in this matter.**
 {% endhint %}
 
-Siafunds markets are accessible on [Bisq](https://bisq.network/markets/?currency=sf\_btc),  a decentralized exchange. Moreover, you have the option to explore the `#siafunds` channel on the Sia [Discord](https://sia.tech/discord) server, where over-the-counter trades are facilitated with the assistance of a reliable escrow service.
+Siafunds are typically bought and sold through the `#siafunds` channel on the Sia [Discord](https://sia.tech/discord) server, where over-the-counter trades are safely facilitated with the assistance of [Embarcadero](https://blog.sia.tech/escrowless-siafund-swaps-da418ed50df0), an escrowless Siafund/Siacoin swap developed by the Foundation.
 
 ## How to store Siafunds
 

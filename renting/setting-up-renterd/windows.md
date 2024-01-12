@@ -28,18 +28,18 @@ This guide will walk you through setting up `renterd` on Windows. At the end of 
 
 To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
 
-#### **Network Access:**
-`renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
+* **Network Access:**
+  `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
 
-#### **Operating System Compatibility:**
-`renterd` is only compatible with Windows 64bit systems.
+* **Operating System Compatibility:**
+  `renterd` is only compatible with Windows 64bit systems.
 
-#### **Hardware Requirements:**
-A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
+* **Hardware Requirements:**
+  A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
 
-- A dual-core CPU
-- 16GB of RAM
-- An SSD with at least 128GB of free space.
+  - A dual-core CPU
+  - 16GB of RAM
+  - An SSD with at least 128GB of free space.
 
 {% hint style="warning" %}
 To ensure proper functionality, we are recommending 16GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.

@@ -59,15 +59,15 @@ Press `CMD + Space` to open Spotlight search and open a `terminal`.
 Once the Terminal loads, download and install `renterd` to your home folder.
 
 {% hint style="warning" %}
-Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Operating System Compatibility](#operating-system-compatibility-1) section of this guide for instructions.
+Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
 {% endhint %}
 
 {% tabs %}
 {% tab title="AMD64" %}
 ```console
 curl -O https://sia.tech/downloads/latest/renterd_darwin_amd64.zip
-mkdir renterd &&\
-unzip renterd_darwin_amd64.zip -d renterd &&\
+mkdir ~/renterd &&\
+unzip renterd_darwin_amd64.zip -d ~/renterd &&\
 rm -fr renterd_darwin_amd64.zip
 ```
 {% endtab %}
@@ -84,8 +84,8 @@ rm -fr renterd_darwin_arm64.zip
 {% tab title="Zen AMD64" %}
 ```console
 curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_amd64.zip
-mkdir renterd_zen &&\
-unzip renterd_zen_darwin_amd64.zip -d renterd_zen &&\
+mkdir ~/renterd_zen &&\
+unzip renterd_zen_darwin_amd64.zip -d ~/renterd_zen &&\
 rm -fr renterd_zen_darwin_amd64.zip
 ```
 {% endtab %}
@@ -214,14 +214,18 @@ To update:
 
 1. Stop `renterd` if it is running. This can be accomplished by pressing `ctrl+c` in the Terminal currently running `renterd`.
 
-2. Download and install the latest version of `renterd` for your system.
+2. Download and install the latest version of `renterd`.
+
+{% hint style="warning" %}
+Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
+{% endhint %}
 
 {% tabs %}
 {% tab title="AMD64" %}
 ```console
 curl -O https://sia.tech/downloads/latest/renterd_darwin_amd64.zip
-mkdir renterd &&\
-unzip renterd_darwin_amd64.zip -d renterd &&\
+mkdir ~/renterd &&\
+unzip renterd_darwin_amd64.zip -d ~/renterd &&\
 rm -fr renterd_darwin_amd64.zip
 ```
 {% endtab %}
@@ -238,8 +242,8 @@ rm -fr renterd_darwin_arm64.zip
 {% tab title="Zen AMD64" %}
 ```console
 curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_amd64.zip
-mkdir renterd_zen &&\
-unzip renterd_zen_darwin_amd64.zip -d renterd_zen &&\
+mkdir ~/renterd_zen &&\
+unzip renterd_zen_darwin_amd64.zip -d ~/renterd_zen &&\
 rm -fr renterd_zen_darwin_amd64.zip
 ```
 {% endtab %}

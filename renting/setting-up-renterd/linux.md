@@ -201,7 +201,7 @@ sudo nano /var/lib/renterd_zen/renterd.yml
 Now, modify the file to add your wallet seed and API password. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. The password is used to unlock the `renterd` web UI; it should be something secure and easy to remember.
 
 {% hint style="warning" %}
-`your_access_key` must be at least 16-characters long, and `your_private_key` must be at least 40-characters long.
+`your_access_key` can be anywhere from 16 to 128 characters long, and `your_private_key` must be exactly 40 characters long.
 {% endhint %}
 
 {% tabs %}

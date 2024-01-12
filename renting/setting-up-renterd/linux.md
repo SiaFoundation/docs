@@ -353,99 +353,99 @@ New versions of `renterd` are released regularly and contain bug fixes and perfo
 **To update:**
 
 1. Stop the `renterd` system service.
-    {% tabs %}
-    {% tab title="Main Net" %}
-    ```console
-    sudo systemctl stop renterd
-    ```
-    {% endtab %}
-    
-    {% tab title="Zen Test Net" %}
-    ```console
-    sudo systemctl stop renterd_zen
-    ```
-    {% endtab %}
-    {% endtabs %}
+{% tabs %}
+{% tab title="Main Net" %}
+```console
+sudo systemctl stop renterd
+```
+{% endtab %}
+
+{% tab title="Zen Test Net" %}
+```console
+sudo systemctl stop renterd_zen
+```
+{% endtab %}
+{% endtabs %}
 
 2. Download and install the latest version of `renterd`.
 
-    {% hint style="warning" %}
-    Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
-    {% endhint %}
-  
-    {% tabs %}
-    {% tab title="AMD64" %}
-    ```console
-    wget https://sia.tech/downloads/latest/renterd_linux_amd64.zip &&\
-    unzip -j renterd_linux_amd64.zip renterd &&\
-    sudo mv renterd /usr/local/bin/renterd &&\
-    rm -fr renterd_linux_amd64.zip
-    ```
-    {% endtab %}
-    
-    {% tab title="ARM64" %}
-    ```console
-    wget https://sia.tech/downloads/latest/renterd_linux_arm64.zip &&\
-    unzip -j renterd_linux_arm64.zip renterd &&\
-    sudo mv renterd /usr/local/bin/renterd &&\
-    rm -fr renterd_linux_arm64.zip
-    ```
-    {% endtab %}
-    
-    {% tab title="Zen AMD64" %}
-    ```console
-    wget https://sia.tech/downloads/latest/renterd_zen_linux_amd64.zip &&\
-    unzip -j renterd_zen_linux_amd64.zip renterd &&\
-    sudo mv renterd /usr/local/bin/renterd_zen &&\
-    rm -fr renterd_zen_linux_amd64.zip
-    ```
-    {% endtab %}
-    
-    {% tab title="Zen ARM64" %}
-    ```console
-    wget https://sia.tech/downloads/latest/renterd_zen_linux_arm64.zip &&\
-    unzip -j renterd_zen_linux_arm64.zip renterd &&\
-    sudo mv renterd /usr/local/bin/renterd_zen &&\
-    rm -fr renterd_zen_linux_arm64.zip
-    ```
-    {% endtab %}
-    {% endtabs %}
-  
-    {% hint style="info" %}
-    You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
-    {% endhint %}
+{% hint style="warning" %}
+Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
+{% endhint %}
+
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_linux_amd64.zip &&\
+unzip -j renterd_linux_amd64.zip renterd &&\
+sudo mv renterd /usr/local/bin/renterd &&\
+rm -fr renterd_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_linux_arm64.zip &&\
+unzip -j renterd_linux_arm64.zip renterd &&\
+sudo mv renterd /usr/local/bin/renterd &&\
+rm -fr renterd_linux_arm64.zip
+```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_zen_linux_amd64.zip &&\
+unzip -j renterd_zen_linux_amd64.zip renterd &&\
+sudo mv renterd /usr/local/bin/renterd_zen &&\
+rm -fr renterd_zen_linux_amd64.zip
+```
+{% endtab %}
+
+{% tab title="Zen ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/renterd_zen_linux_arm64.zip &&\
+unzip -j renterd_zen_linux_arm64.zip renterd &&\
+sudo mv renterd /usr/local/bin/renterd_zen &&\
+rm -fr renterd_zen_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
+{% endhint %}
 
 3. Restart the `renterd` system service.
-    {% tabs %}
-    {% tab title="Main Net" %}
-    ```console
-    sudo systemctl start renterd
-    ```
-    {% endtab %}
-    
-    {% tab title="Zen Test Net" %}
-    ```console
-    sudo systemctl start renterd_zen
-    ```
-    {% endtab %}
-    {% endtabs %}
+{% tabs %}
+{% tab title="Main Net" %}
+```console
+sudo systemctl start renterd
+```
+{% endtab %}
+
+{% tab title="Zen Test Net" %}
+```console
+sudo systemctl start renterd_zen
+```
+{% endtab %}
+{% endtabs %}
 
 4. Verify the `renterd` service is running correctly.
-    {% tabs %}
-    {% tab title="Main Net" %}
-    ```console
-    sudo systemctl status renterd
-    ```
-    {% endtab %}
-    
-    {% tab title="Zen Test Net" %}
-    ```console
-    sudo systemctl status renterd_zen
-    ```
-    {% endtab %}
-    {% endtabs %}
+{% tabs %}
+{% tab title="Main Net" %}
+```console
+sudo systemctl status renterd
+```
+{% endtab %}
 
-    ![Starting renterd](../../.gitbook/assets/renterd-success.png)
+{% tab title="Zen Test Net" %}
+```console
+sudo systemctl status renterd_zen
+```
+{% endtab %}
+{% endtabs %}
+
+![Starting renterd](../../.gitbook/assets/renterd-success.png)
 
 {% hint style="success" %}
 Congratulations, you have successfully updated your version of `renterd`!

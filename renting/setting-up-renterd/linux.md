@@ -24,6 +24,8 @@ This guide will walk you through setting up `renterd` on Linux. At the end of th
 * Installed Sia `renterd` software
 * Created a `renterd` wallet
 
+---
+
 ## Pre-requisites
 
 To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
@@ -45,6 +47,8 @@ To ensure you will not run into any issues with running `renterd` it is recommen
   {% hint style="warning" %}
   To ensure proper functionality, we are recommending 16GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
   {% endhint %}
+
+---
 
 ## Installing `renterd`
 
@@ -104,6 +108,8 @@ You’ll be prompted to authorize this action by providing your system password.
 
 ![](../../.gitbook/assets/renterd-install-screenshots/linux/01-renterd-download-and-install.png)
 
+---
+
 ## Creating a wallet
 
 `renterd` uses BIP-39 12-word recovery phrases. To generate a new wallet recovery phrase, run the following command:
@@ -127,6 +133,8 @@ A new 12-word recovery phrase will be generated. Make sure to store it in a safe
 {% endhint %}
 
 ![](../../.gitbook/assets/renterd-install-screenshots/linux/02-renterd-seed.png)
+
+---
 
 ## Setting up a system user
 
@@ -169,6 +177,8 @@ sudo chmod o-rwx /var/lib/renterd_zen
 ```
 {% endtab %}
 {% endtabs %}
+
+---
 
 ## Configure your `renterd.yml` file
 
@@ -229,6 +239,8 @@ s3:
 {% endtabs %}
 
 Once you have added your recovery phrase and password, save the file with `ctrl+s` and exit with `ctrl+x`.
+
+---
 
 ## Setting up a systemd service
 
@@ -294,6 +306,8 @@ Alias=renterd_zen.service
 
 You can now save the file with `ctrl+s` and exit with `ctrl+x`.
 
+---
+
 ## Running `renterd`
 
 Now it is time to start the service
@@ -345,6 +359,8 @@ Enter the API `password` you created in your `renterd.yml` to unlock the `renter
 {% hint style="success" %}
 Congratulations, you have successfully set up `renterd`.
 {% endhint %}
+
+---
 
 ## Updating
 

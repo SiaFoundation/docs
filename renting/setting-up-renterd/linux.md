@@ -42,9 +42,9 @@ To ensure you will not run into any issues with running `renterd` it is recommen
   - 16GB of RAM
   - An SSD with at least 128GB of free space.
 
-{% hint style="warning" %}
-To ensure proper functionality, we are recommending 16GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
-{% endhint %}
+  {% hint style="warning" %}
+  To ensure proper functionality, we are recommending 16GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
+  {% endhint %}
 
 ## Installing `renterd`
 

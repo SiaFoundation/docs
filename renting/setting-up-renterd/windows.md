@@ -73,7 +73,6 @@ Remove-Item -LiteralPath "$HOME\sia\renterd_zen\bin" -Recurse
 {% endtab %}
 {% endtabs %}
 
-
 {% hint style="warning" %}
 When you paste multi-line commands into PowerShell, you will be prompted with a warning. Make sure you have copied the entire command and click `Paste anyway` to proceed.
 {% endhint %}
@@ -101,8 +100,6 @@ cd $HOME\sia\renterd_zen\; `
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 {% hint style="warning" %}
 A new 12-word recovery phrase will be generated. Make sure to store it in a safe place, as you will need this phrase to recover your wallet.
@@ -194,8 +191,6 @@ cd $HOME\sia\renterd_zen; `
 {% endtab %}
 {% endtabs %}
 
-
-
 {% hint style="warning" %}
 Remember to leave the PowerShell open while `renterd` is running. If you close the command prompt window, `renterd` will stop.
 {% endhint %}
@@ -203,6 +198,10 @@ Remember to leave the PowerShell open while `renterd` is running. If you close t
 ![](../../.gitbook/assets/renterd-install-screenshots/windows/04-renterd-success.png)
 
 You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9980](http://localhost:9980/).
+
+{% hint style="warning" %}
+If you are running `renterd` on the Zen Test Net, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
+{% endhint %}
 
 ![](../../.gitbook/assets/renterd-install-screenshots/renterd-success.png)
 

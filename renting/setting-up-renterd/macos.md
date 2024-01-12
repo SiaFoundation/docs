@@ -210,7 +210,7 @@ Congratulations, you have successfully set up `renterd`.
 
 New versions of `renterd` are released regularly and contain bug fixes and performance improvements.
 
-To update:
+**To update:**
 
 1. Stop `renterd` if it is running. This can be accomplished by pressing `ctrl+c` in the Terminal currently running `renterd`.
 

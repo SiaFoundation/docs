@@ -148,6 +148,8 @@ nano ~/renterd_zen/renterd.yml
 
 Once the editor loads, enter the following and configure it as needed.
 
+{% tabs %}
+{% tab title="Main Net" %}
 ```yaml
 seed: your seed phrase goes here
 http:
@@ -161,6 +163,24 @@ s3:
   keypairsV4:
     your_access_key: your_private_key
 ```
+{% endtab %}
+
+{% tab title="Zen Test Net" %}
+```yaml
+seed: your seed phrase goes here
+http:
+  password: your_api_password
+autopilot:
+  heartbeat: 5m
+s3:
+  enabled: true
+  disableAuth: false
+  address: "localhost:9885"
+  keypairsV4:
+    your_access_key: your_private_key
+```
+{% endtab %}
+{% endtabs %}
 
 Make sure to add your wallet seed and create an API password. The recovery phrase is the 12-word seed phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. The password is used to unlock the `renterd` web UI; it should be something secure and easy to remember.
 

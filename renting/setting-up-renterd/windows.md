@@ -28,13 +28,13 @@ This guide will walk you through setting up `renterd` on Windows. At the end of 
 
 To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
 
-### **Network Access:**
+#### **Network Access:**
 `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
 
-### **Operating System Compatibility:**
+#### **Operating System Compatibility:**
 `renterd` is only compatible with Windows 64bit systems.
 
-### **Hardware Requirements:**
+#### **Hardware Requirements:**
 A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
 
 - A dual-core CPU

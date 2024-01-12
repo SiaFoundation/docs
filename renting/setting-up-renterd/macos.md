@@ -90,7 +90,7 @@ rm -fr renterd_zen_darwin_amd64.zip
 ```
 {% endtab %}
 
-{% tab title="ARM64" %}
+{% tab title="Zen ARM64" %}
 ```console
 curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_arm64.zip
 mkdir ~/renterd_zen &&\
@@ -130,7 +130,7 @@ A new 12-word recovery phrase will be generated. Make sure to store it in a safe
 
 ## Configure your `renterd.yml` file
 
-Under your `renterd` directory create a new text document named `renterd.yml`.
+Under your `renterd` directory, create a new text document named `renterd.yml`.
 
 {% tabs %}
 {% tab title="Main Net" %}
@@ -165,8 +165,7 @@ s3:
 Make sure to add your wallet seed and create an API password. The recovery phrase is the 12-word seed phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. The password is used to unlock the `renterd` web UI; it should be something secure and easy to remember.
 
 {% hint style="warning" %}
-`your_access_key` can be anywhere from 16 to 128 characters long.
-`your_private_key` must be exactly 40 characters long.
+`your_access_key` can be anywhere from 16 to 128 characters long, and `your_private_key` must be exactly 40 characters long.
 {% endhint %}
 
 Save your `renterd.yml` configuration using `ctrl-o` and close the editor with `ctrl-x`.
@@ -196,7 +195,7 @@ cd ~/renterd_zen &&\
 You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9980](http://localhost:9980/).
 
 {% hint style="warning" %}
-If you are running `renterd` on the Zen Test Net, you will need to access the web UI on port `9880`. [https://localhost:9880
+If you are running `renterd` on the Zen Test Net, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
 {% endhint %}
 
 ![](../../.gitbook/assets/renterd-install-screenshots/renterd-success.png)
@@ -245,7 +244,7 @@ rm -fr renterd_zen_darwin_amd64.zip
 ```
 {% endtab %}
 
-{% tab title="ARM64" %}
+{% tab title="Zen ARM64" %}
 ```console
 curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_arm64.zip
 mkdir ~/renterd_zen &&\

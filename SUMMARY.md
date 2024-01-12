@@ -12,7 +12,10 @@
 ## Renting
 
 * [About Renting on Sia](renting/about-renting.md)
-* [Setting up renterd](renting/setting-up-renterd.md)
+* [Setting up renterd](renting/setting-up-renterd/README.md)
+  * [Windows](renting/setting-up-renterd/windows.md)
+  * [MacOS](renting/setting-up-renterd/macos.md)
+  * [Linux](renting/setting-up-renterd/linux.md)
 * [Transferring Siacoins](renting/transferring-siacoins.md)
 * [Renting Storage](renting/renting-storage/README.md)
   * [Managing your Files](renting/renting-storage/managing-your-files.md)
@@ -21,8 +24,8 @@
 
 * [About Hosting on Sia](hosting/about-hosting-on-sia.md)
 * [Setting up hostd](hosting/setup-guides/README.md)
-  * [macOS](hosting/setup-guides/macos.md)
   * [Windows](hosting/setup-guides/windows.md)
+  * [MacOS](hosting/setup-guides/macos.md)
   * [Linux](hosting/setup-guides/linux.md)
 * [Transferring Siacoins](hosting/transferring-siacoins.md)
 * [Adding Storage](hosting/adding-storage.md)
@@ -36,8 +39,8 @@
 
 * [Your Sia Wallet](wallet/wallet-overview.md)
 * [Setting up walletd](wallet/setting-up-walletd/README.md)
-  * [macOS](wallet/setting-up-walletd/macos.md)
   * [Windows](wallet/setting-up-walletd/windows.md)
+  * [MacOS](wallet/setting-up-walletd/macos.md)
   * [Linux](wallet/setting-up-walletd/linux.md)
 * [Transferring Siacoins](wallet/transferring-siacoins.md)
 

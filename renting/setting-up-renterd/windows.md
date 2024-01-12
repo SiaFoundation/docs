@@ -53,12 +53,26 @@ Press `windows key + R` to open the run dialog. Type in `powershell` and press `
 
 Once the Terminal loads, run the following command to download and install the latest version of `renterd`.
 
+{% tabs %}
+{% tab title="Main Net" %}
 ```powershell
 wget https://sia.tech/downloads/latest/renterd_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_windows_amd64.zip"; `
 Expand-Archive "$HOME\Downloads\renterd_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd"; `
 Move-Item -Path "$HOME\sia\renterd\bin\renterd.exe" -Destination "$HOME\sia\renterd\renterd.exe" -Force; `
 Remove-Item -LiteralPath "$HOME\sia\renterd\bin" -Recurse
 ```
+{% endtab %}
+
+{% tab title="Zen Test Net" %}
+```powershell
+wget https://sia.tech/downloads/latest/renterd_zen_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_zen_windows_amd64.zip"; `
+Expand-Archive "$HOME\Downloads\renterd_zen_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd_zen"; `
+Move-Item -Path "$HOME\sia\renterd_zen\bin\renterd.exe" -Destination "$HOME\sia\renterd_zen\renterd.exe"; `
+Remove-Item -LiteralPath "$HOME\sia\renterd_zen\bin" -Force -Recurse
+```
+{% endtab %}
+{% endtabs %}
+
 
 {% hint style="warning" %}
 When you paste multi-line commands into PowerShell, you will be prompted with a warning. Make sure you have copied the entire command and click `Paste anyway` to proceed.
@@ -72,10 +86,23 @@ When you paste multi-line commands into PowerShell, you will be prompted with a 
 
 `renterd` uses BIP-39 12-word recovery phrases. To generate a new wallet recovery phrase, run the following command:
 
+{% tabs %}
+{% tab title="Main Net" %}
 ```powershell
 cd $HOME\sia\renterd\; `
 .\renterd.exe seed
 ```
+{% endtab %}
+
+{% tab title="Zen Test Net" %}
+```powershell
+cd $HOME\sia\renterd_zen\; `
+.\renterd.exe seed
+```
+{% endtab %}
+{% endtabs %}
+
+
 
 {% hint style="warning" %}
 A new 12-word recovery phrase will be generated. Make sure to store it in a safe place, as you will need this phrase to recover your wallet.
@@ -87,13 +114,26 @@ A new 12-word recovery phrase will be generated. Make sure to store it in a safe
 
 Under `$HOME\sia\renterd\bin` create a new text document named `renterd.yml`.
 
+{% tabs %}
+{% tab title="Main Net" %}
 ```powershell
 New-Item -Path "$HOME\sia\renterd" -Name "renterd.yml" -ItemType "file"; `
 Start-Process "C:\WINDOWS\system32\notepad.exe" "$HOME\sia\renterd\renterd.yml"
 ```
+{% endtab %}
+
+{% tab title="Zen Test Net" %}
+```powershell
+New-Item -Path "$HOME\sia\renterd_zen" -Name "renterd.yml" -ItemType "file"; `
+Start-Process "C:\WINDOWS\system32\notepad.exe" "$HOME\sia\renterd_zen\renterd.yml"
+```
+{% endtab %}
+{% endtabs %}
 
 Once Notepad loads, enter the following and configure it as needed.
 
+{% tabs %}
+{% tab title="Main Net" %}
 ```yaml
 seed: your seed phrase goes here
 http:
@@ -107,12 +147,29 @@ s3:
   keypairsV4:
     your_access_key: your_private_key
 ```
+{% endtab %}
+
+{% tab title="Zen Test Net" %}
+```yaml
+seed: your seed phrase goes here
+http:
+  password: your_api_password
+autopilot:
+  heartbeat: 5m
+s3:
+  enabled: true
+  disableAuth: false
+  address: "localhost:9885"
+  keypairsV4:
+    your_access_key: your_private_key
+```
+{% endtab %}
+{% endtabs %}
 
 Make sure to add your wallet seed and create an API password. The recovery phrase is the 12-word seed phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. The password is used to unlock the `renterd` web UI; it should be something secure and easy to remember.
 
 {% hint style="warning" %}
-`your_access_key` can be anywhere from 16 to 128 characters long
-`your_private_key` must be exactly 40 characters long.
+`your_access_key` can be anywhere from 16 to 128 characters long, and `your_private_key` must be exactly 40 characters long.
 {% endhint %}
 
 Save your `renterd.yml` configuration using `ctrl+s` and close Notepad.
@@ -121,10 +178,23 @@ Save your `renterd.yml` configuration using `ctrl+s` and close Notepad.
 
 Run the following command to start `renterd`.
 
+{% tabs %}
+{% tab title="Main Net" %}
 ```powershell
 cd $HOME\sia\renterd; `
 .\renterd.exe
 ```
+{% endtab %}
+
+{% tab title="Zen Test Net" %}
+```powershell
+cd $HOME\sia\renterd_zen; `
+.\renterd.exe
+```
+{% endtab %}
+{% endtabs %}
+
+
 
 {% hint style="warning" %}
 Remember to leave the PowerShell open while `renterd` is running. If you close the command prompt window, `renterd` will stop.
@@ -146,24 +216,48 @@ Congratulations, you have successfully set up `renterd`.
 
 New versions of `renterd` are released regularly and contain bug fixes and performance improvements.
 
-To update:
+**To update:**
 
 1. Stop `renterd` if it is running. This can be accomplished by pressing `ctrl+c` in the PowerShell currently running `renterd`.
 
 2. Download and install the latest version of `renterd`.
 
+{% tabs %}
+{% tab title="Main Net" %}
 ```powershell
 wget https://sia.tech/downloads/latest/renterd_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_windows_amd64.zip"; `
 Expand-Archive "$HOME\Downloads\renterd_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd"; `
 Move-Item -Path "$HOME\sia\renterd\bin\renterd.exe" -Destination "$HOME\sia\renterd\renterd.exe" -Force; `
 Remove-Item -LiteralPath "$HOME\sia\renterd\bin" -Recurse
 ```
+{% endtab %}
+
+{% tab title="Zen Test Net" %}
+```powershell
+wget https://sia.tech/downloads/latest/renterd_zen_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_zen_windows_amd64.zip"; `
+Expand-Archive "$HOME\Downloads\renterd_zen_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd_zen"; `
+Move-Item -Path "$HOME\sia\renterd_zen\bin\renterd.exe" -Destination "$HOME\sia\renterd_zen\renterd.exe"; `
+Remove-Item -LiteralPath "$HOME\sia\renterd_zen\bin" -Force -Recurse
+```
+{% endtab %}
+{% endtabs %}
 
 3. Restart the `renterd` system service.
+{% tabs %}
+{% tab title="Main Net" %}
 ```powershell
 cd $HOME\sia\renterd; `
 .\renterd.exe
 ```
+{% endtab %}
+
+{% tab title="Zen Test Net" %}
+```powershell
+cd $HOME\sia\renterd_zen; `
+.\renterd.exe
+```
+{% endtab %}
+{% endtabs %}
 
 ![Starting renterd](../../.gitbook/assets/renterd-install-screenshots/windows/04-renterd-success.png)
 

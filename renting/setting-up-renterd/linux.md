@@ -50,57 +50,57 @@ To ensure you will not run into any issues with running `renterd` it is recommen
 
 Open a Terminal using `Crtl + Alt + T`.
 
-{% hint style="info" %}
-If you cannot open a `Terminal` using the above method, try one of the other methods [listed here](https://www.geeksforgeeks.org/how-to-open-terminal-in-linux/).
-{% endhint %}
+  {% hint style="info" %}
+  If you cannot open a `Terminal` using the above method, try one of the other methods [listed here](https://www.geeksforgeeks.org/how-to-open-terminal-in-linux/).
+  {% endhint %}
 
 Once the Terminal loads, run one of the following commands to download and install the latest version of `renterd` to your `/usr/local/bin` directory.
 
-{% hint style="warning" %}
-Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
-{% endhint %}
+  {% hint style="warning" %}
+  Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
+  {% endhint %}
 
-{% tabs %}
-{% tab title="AMD64" %}
-```console
-wget https://sia.tech/downloads/latest/renterd_linux_amd64.zip &&\
-unzip -j renterd_linux_amd64.zip renterd &&\
-sudo mv renterd /usr/local/bin/renterd &&\
-rm -fr renterd_linux_amd64.zip
-```
-{% endtab %}
+  {% tabs %}
+  {% tab title="AMD64" %}
+  ```console
+  wget https://sia.tech/downloads/latest/renterd_linux_amd64.zip &&\
+  unzip -j renterd_linux_amd64.zip renterd &&\
+  sudo mv renterd /usr/local/bin/renterd &&\
+  rm -fr renterd_linux_amd64.zip
+  ```
+  {% endtab %}
+  
+  {% tab title="ARM64" %}
+  ```console
+  wget https://sia.tech/downloads/latest/renterd_linux_arm64.zip &&\
+  unzip -j renterd_linux_arm64.zip renterd &&\
+  sudo mv renterd /usr/local/bin/renterd &&\
+  rm -fr renterd_linux_arm64.zip
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen AMD64" %}
+  ```console
+  wget https://sia.tech/downloads/latest/renterd_zen_linux_amd64.zip &&\
+  unzip -j renterd_zen_linux_amd64.zip renterd &&\
+  sudo mv renterd /usr/local/bin/renterd_zen &&\
+  rm -fr renterd_zen_linux_amd64.zip
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen ARM64" %}
+  ```console
+  wget https://sia.tech/downloads/latest/renterd_zen_linux_arm64.zip &&\
+  unzip -j renterd_zen_linux_arm64.zip renterd &&\
+  sudo mv renterd /usr/local/bin/renterd_zen &&\
+  rm -fr renterd_zen_linux_arm64.zip
+  ```
+  {% endtab %}
+  {% endtabs %}
 
-{% tab title="ARM64" %}
-```console
-wget https://sia.tech/downloads/latest/renterd_linux_arm64.zip &&\
-unzip -j renterd_linux_arm64.zip renterd &&\
-sudo mv renterd /usr/local/bin/renterd &&\
-rm -fr renterd_linux_arm64.zip
-```
-{% endtab %}
-
-{% tab title="Zen AMD64" %}
-```console
-wget https://sia.tech/downloads/latest/renterd_zen_linux_amd64.zip &&\
-unzip -j renterd_zen_linux_amd64.zip renterd &&\
-sudo mv renterd /usr/local/bin/renterd_zen &&\
-rm -fr renterd_zen_linux_amd64.zip
-```
-{% endtab %}
-
-{% tab title="Zen ARM64" %}
-```console
-wget https://sia.tech/downloads/latest/renterd_zen_linux_arm64.zip &&\
-unzip -j renterd_zen_linux_arm64.zip renterd &&\
-sudo mv renterd /usr/local/bin/renterd_zen &&\
-rm -fr renterd_zen_linux_arm64.zip
-```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="info" %}
-You’ll be prompted to authorize this action by providing your system password. You will not see anything when you type this in. Press `Enter` once you have entered your password.
-{% endhint %}
+  {% hint style="info" %}
+  You’ll be prompted to authorize this action by providing your system password. You will not see anything when you type this in. Press `Enter` once you have entered your password.
+  {% endhint %}
 
 ![](../../.gitbook/assets/renterd-install-screenshots/linux/01-renterd-download-and-install.png)
 
@@ -108,23 +108,23 @@ You’ll be prompted to authorize this action by providing your system password.
 
 `renterd` uses BIP-39 12-word recovery phrases. To generate a new wallet recovery phrase, run the following command:
 
-{% tabs %}
-{% tab title="Main Net" %}
-```console
-renterd seed
-```
-{% endtab %}
-
-{% tab title="Zen Test Net" %}
-```console
-renterd_zen seed
-```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="warning" %}
-A new 12-word recovery phrase will be generated. Make sure to store it in a safe place, as you will need this phrase to recover your wallet.
-{% endhint %}
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```console
+  renterd seed
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```console
+  renterd_zen seed
+  ```
+  {% endtab %}
+  {% endtabs %}
+  
+  {% hint style="warning" %}
+  A new 12-word recovery phrase will be generated. Make sure to store it in a safe place, as you will need this phrase to recover your wallet.
+  {% endhint %}
 
 ![](../../.gitbook/assets/renterd-install-screenshots/linux/02-renterd-seed.png)
 
@@ -134,99 +134,99 @@ Now that you have a recovery phrase, we will create a new system user and `syste
 
 First, we will create a new system user with `useradd` and disable the creation of a home directory. This is a security precaution that will isolate `renterd` from any unauthorized access to our system. We will then use `usermod` to lock the account and prevent anyone from logging in under the account.
 
-{% tabs %}
-{% tab title="Main Net" %}
-```console
-sudo useradd -M renterd &&\
-sudo usermod -L renterd
-```
-{% endtab %}
-
-{% tab title="Zen Test Net" %}
-```console
-sudo useradd -M renterd_zen &&\
-sudo usermod -L renterd_zen
-```
-{% endtab %}
-{% endtabs %}
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```console
+  sudo useradd -M renterd &&\
+  sudo usermod -L renterd
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```console
+  sudo useradd -M renterd_zen &&\
+  sudo usermod -L renterd_zen
+  ```
+  {% endtab %}
+  {% endtabs %}
 
 Now, we will create a new folder under `/var/lib/` titled `renterd` and give it the appropriate permissions. This folder will be utilized specifically to store data related to the `renterd` software. Open the Terminal Emulator and run the following commands:
 
-{% tabs %}
-{% tab title="Main Net" %}
-```console
-sudo mkdir /var/lib/renterd &&\
-sudo chown renterd:renterd /var/lib/renterd &&\
-sudo chmod o-rwx /var/lib/renterd
-```
-{% endtab %}
-
-{% tab title="Zen Test Net" %}
-```console
-sudo mkdir /var/lib/renterd_zen &&\
-sudo chown renterd_zen:renterd_zen /var/lib/renterd_zen &&\
-sudo chmod o-rwx /var/lib/renterd_zen
-```
-{% endtab %}
-{% endtabs %}
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```console
+  sudo mkdir /var/lib/renterd &&\
+  sudo chown renterd:renterd /var/lib/renterd &&\
+  sudo chmod o-rwx /var/lib/renterd
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```console
+  sudo mkdir /var/lib/renterd_zen &&\
+  sudo chown renterd_zen:renterd_zen /var/lib/renterd_zen &&\
+  sudo chmod o-rwx /var/lib/renterd_zen
+  ```
+  {% endtab %}
+  {% endtabs %}
 
 ## Configure your `renterd.yml` file
 
 To begin, create a file name `renterd.yml` file under `/var/lib/renterd/`
 
-{% tabs %}
-{% tab title="Main Net" %}
-```console
-sudo nano /var/lib/renterd/renterd.yml
-```
-{% endtab %}
-
-{% tab title="Zen Test Net" %}
-```console
-sudo nano /var/lib/renterd_zen/renterd.yml
-```
-{% endtab %}
-{% endtabs %}
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```console
+  sudo nano /var/lib/renterd/renterd.yml
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```console
+  sudo nano /var/lib/renterd_zen/renterd.yml
+  ```
+  {% endtab %}
+  {% endtabs %}
 
 Now, modify the file to add your wallet seed and API password. The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. The password is used to unlock the `renterd` web UI; it should be something secure and easy to remember.
 
-{% hint style="warning" %}
-`your_access_key` must be at least 16-characters long, and `your_private_key` must be at least 40-characters long.
-{% endhint %}
-
-{% tabs %}
-{% tab title="Main Net" %}
-```yaml
-seed: your seed phrase goes here
-http:
-  password: your_api_password
-autopilot:
-  heartbeat: 5m
-s3:
-  enabled: true
-  disableAuth: false
-  address: "localhost:9985"
-  keypairsV4:
-    your_access_key: your_private_key
-```
-{% endtab %}
-
-{% tab title="Zen Test Net" %}
-```yaml
-seed: your seed phrase goes here
-http:
-  password: your_api_password
-autopilot:
-  heartbeat: 5m
-s3:
-  enabled: true
-  disableAuth: false
-  address: "localhost:9885"
-  keypairsV4:
-    your_access_key: your_private_key
-```
-{% endtab %}
-{% endtabs %}
+  {% hint style="warning" %}
+  `your_access_key` must be at least 16-characters long, and `your_private_key` must be at least 40-characters long.
+  {% endhint %}
+  
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```yaml
+  seed: your seed phrase goes here
+  http:
+    password: your_api_password
+  autopilot:
+    heartbeat: 5m
+  s3:
+    enabled: true
+    disableAuth: false
+    address: "localhost:9985"
+    keypairsV4:
+      your_access_key: your_private_key
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```yaml
+  seed: your seed phrase goes here
+  http:
+    password: your_api_password
+  autopilot:
+    heartbeat: 5m
+  s3:
+    enabled: true
+    disableAuth: false
+    address: "localhost:9885"
+    keypairsV4:
+      your_access_key: your_private_key
+  ```
+  {% endtab %}
+  {% endtabs %}
 
 Once you have added your recovery phrase and password, save the file with `ctrl+s` and exit with `ctrl+x`.
 
@@ -234,63 +234,63 @@ Once you have added your recovery phrase and password, save the file with `ctrl+
 
 Now we can create a new system service to run `renterd` on startup:
 
-{% tabs %}
-{% tab title="Main Net" %}
-```console
-sudo nano /etc/systemd/system/renterd.service
-```
-{% endtab %}
-
-{% tab title="Zen Test Net" %}
-```console
-sudo nano /etc/systemd/system/renterd_zen.service
-```
-{% endtab %}
-{% endtabs %}
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```console
+  sudo nano /etc/systemd/system/renterd.service
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```console
+  sudo nano /etc/systemd/system/renterd_zen.service
+  ```
+  {% endtab %}
+  {% endtabs %}
 
 Once the editor loads, copy and paste the following into it.
 
-{% tabs %}
-{% tab title="Main Net" %}
-```toml
-[Unit]
-Description=Sia renterd
-After=network.target
-
-[Service]
-Type=simple
-ExecStart=/usr/local/bin/renterd
-WorkingDirectory=/var/lib/renterd
-Restart=always
-RestartSec=15
-User=renterd
-
-[Install]
-WantedBy=multi-user.target
-Alias=renterd.service
-```
-{% endtab %}
-
-{% tab title="Zen Test Net" %}
-```toml
-[Unit]
-Description=Sia renterd (Zen Testnet)
-After=network.target
-
-[Service]
-Type=simple
-ExecStart=/usr/local/bin/renterd_zen
-WorkingDirectory=/var/lib/renterd_zen
-Restart=always
-RestartSec=15
-User=renterd_zen
-
-[Install]
-WantedBy=multi-user.target
-Alias=renterd_zen.service
-```
-{% endtab %}
-{% endtabs %}
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```toml
+  [Unit]
+  Description=Sia renterd
+  After=network.target
+  
+  [Service]
+  Type=simple
+  ExecStart=/usr/local/bin/renterd
+  WorkingDirectory=/var/lib/renterd
+  Restart=always
+  RestartSec=15
+  User=renterd
+  
+  [Install]
+  WantedBy=multi-user.target
+  Alias=renterd.service
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```toml
+  [Unit]
+  Description=Sia renterd (Zen Testnet)
+  After=network.target
+  
+  [Service]
+  Type=simple
+  ExecStart=/usr/local/bin/renterd_zen
+  WorkingDirectory=/var/lib/renterd_zen
+  Restart=always
+  RestartSec=15
+  User=renterd_zen
+  
+  [Install]
+  WantedBy=multi-user.target
+  Alias=renterd_zen.service
+  ```
+  {% endtab %}
+  {% endtabs %}
 
 You can now save the file with `ctrl+s` and exit with `ctrl+x`.
 
@@ -298,35 +298,35 @@ You can now save the file with `ctrl+s` and exit with `ctrl+x`.
 
 Now it is time to start the service
 
-{% tabs %}
-{% tab title="Main Net" %}
-```console
-sudo systemctl start renterd
-```
-{% endtab %}
-
-{% tab title="Zen Test Net" %}
-```console
-sudo systemctl start renterd_zen
-```
-{% endtab %}
-{% endtabs %}
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```console
+  sudo systemctl start renterd
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```console
+  sudo systemctl start renterd_zen
+  ```
+  {% endtab %}
+  {% endtabs %}
 
 Your `renterd` service should now be running. You can check the status of the service by running the following command:
-
-{% tabs %}
-{% tab title="Main Net" %}
-```console
-sudo systemctl status renterd
-```
-{% endtab %}
-
-{% tab title="Zen Test Net" %}
-```console
-sudo systemctl status renterd_zen
-```
-{% endtab %}
-{% endtabs %}
+  
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```console
+  sudo systemctl status renterd
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```console
+  sudo systemctl status renterd_zen
+  ```
+  {% endtab %}
+  {% endtabs %}
 
 If the service was set up correctly, it should say “active (running).”
 
@@ -334,9 +334,9 @@ If the service was set up correctly, it should say “active (running).”
 
 You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9880](http://localhost:9980/).
 
-{% hint style="warning" %}
-If you are running `renterd` on the Zen Test Net, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
-{% endhint %}
+  {% hint style="warning" %}
+  If you are running `renterd` on the Zen Test Net, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
+  {% endhint %}
 
 ![](../../.gitbook/assets/renterd-install-screenshots/renterd-success.png)
 
@@ -353,99 +353,99 @@ New versions of `renterd` are released regularly and contain bug fixes and perfo
 **To update:**
 
 1. Stop the `renterd` system service.
-{% tabs %}
-{% tab title="Main Net" %}
-```console
-sudo systemctl stop renterd
-```
-{% endtab %}
-
-{% tab title="Zen Test Net" %}
-```console
-sudo systemctl stop renterd_zen
-```
-{% endtab %}
-{% endtabs %}
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```console
+  sudo systemctl stop renterd
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```console
+  sudo systemctl stop renterd_zen
+  ```
+  {% endtab %}
+  {% endtabs %}
 
 2. Download and install the latest version of `renterd`.
 
-{% hint style="warning" %}
-Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
-{% endhint %}
+  {% hint style="warning" %}
+  Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
+  {% endhint %}
 
-{% tabs %}
-{% tab title="AMD64" %}
-```console
-wget https://sia.tech/downloads/latest/renterd_linux_amd64.zip &&\
-unzip -j renterd_linux_amd64.zip renterd &&\
-sudo mv renterd /usr/local/bin/renterd &&\
-rm -fr renterd_linux_amd64.zip
-```
-{% endtab %}
+  {% tabs %}
+  {% tab title="AMD64" %}
+  ```console
+  wget https://sia.tech/downloads/latest/renterd_linux_amd64.zip &&\
+  unzip -j renterd_linux_amd64.zip renterd &&\
+  sudo mv renterd /usr/local/bin/renterd &&\
+  rm -fr renterd_linux_amd64.zip
+  ```
+  {% endtab %}
+  
+  {% tab title="ARM64" %}
+  ```console
+  wget https://sia.tech/downloads/latest/renterd_linux_arm64.zip &&\
+  unzip -j renterd_linux_arm64.zip renterd &&\
+  sudo mv renterd /usr/local/bin/renterd &&\
+  rm -fr renterd_linux_arm64.zip
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen AMD64" %}
+  ```console
+  wget https://sia.tech/downloads/latest/renterd_zen_linux_amd64.zip &&\
+  unzip -j renterd_zen_linux_amd64.zip renterd &&\
+  sudo mv renterd /usr/local/bin/renterd_zen &&\
+  rm -fr renterd_zen_linux_amd64.zip
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen ARM64" %}
+  ```console
+  wget https://sia.tech/downloads/latest/renterd_zen_linux_arm64.zip &&\
+  unzip -j renterd_zen_linux_arm64.zip renterd &&\
+  sudo mv renterd /usr/local/bin/renterd_zen &&\
+  rm -fr renterd_zen_linux_arm64.zip
+  ```
+  {% endtab %}
+  {% endtabs %}
 
-{% tab title="ARM64" %}
-```console
-wget https://sia.tech/downloads/latest/renterd_linux_arm64.zip &&\
-unzip -j renterd_linux_arm64.zip renterd &&\
-sudo mv renterd /usr/local/bin/renterd &&\
-rm -fr renterd_linux_arm64.zip
-```
-{% endtab %}
-
-{% tab title="Zen AMD64" %}
-```console
-wget https://sia.tech/downloads/latest/renterd_zen_linux_amd64.zip &&\
-unzip -j renterd_zen_linux_amd64.zip renterd &&\
-sudo mv renterd /usr/local/bin/renterd_zen &&\
-rm -fr renterd_zen_linux_amd64.zip
-```
-{% endtab %}
-
-{% tab title="Zen ARM64" %}
-```console
-wget https://sia.tech/downloads/latest/renterd_zen_linux_arm64.zip &&\
-unzip -j renterd_zen_linux_arm64.zip renterd &&\
-sudo mv renterd /usr/local/bin/renterd_zen &&\
-rm -fr renterd_zen_linux_arm64.zip
-```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="info" %}
-You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
-{% endhint %}
+  {% hint style="info" %}
+  You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
+  {% endhint %}
 
 4. Restart the `renterd` system service.
-{% tabs %}
-{% tab title="Main Net" %}
-```console
-sudo systemctl start renterd
-```
-{% endtab %}
-
-{% tab title="Zen Test Net" %}
-```console
-sudo systemctl start renterd_zen
-```
-{% endtab %}
-{% endtabs %}
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```console
+  sudo systemctl start renterd
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```console
+  sudo systemctl start renterd_zen
+  ```
+  {% endtab %}
+  {% endtabs %}
 
 5. Verify the `renterd` service is running correctly.
-{% tabs %}
-{% tab title="Main Net" %}
-```console
-sudo systemctl status renterd
-```
-{% endtab %}
+  {% tabs %}
+  {% tab title="Main Net" %}
+  ```console
+  sudo systemctl status renterd
+  ```
+  {% endtab %}
+  
+  {% tab title="Zen Test Net" %}
+  ```console
+  sudo systemctl status renterd_zen
+  ```
+  {% endtab %}
+  {% endtabs %}
 
-{% tab title="Zen Test Net" %}
-```console
-sudo systemctl status renterd_zen
-```
-{% endtab %}
-{% endtabs %}
-
-![Starting renterd](../../.gitbook/assets/renterd-success.png)
+  ![Starting renterd](../../.gitbook/assets/renterd-success.png)
 
 {% hint style="success" %}
 Congratulations, you have successfully updated your version of `renterd`!

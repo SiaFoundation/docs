@@ -67,8 +67,8 @@ Remove-Item -LiteralPath "$HOME\sia\renterd\bin" -Recurse
 ```powershell
 wget https://sia.tech/downloads/latest/renterd_zen_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_zen_windows_amd64.zip"; `
 Expand-Archive "$HOME\Downloads\renterd_zen_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd_zen"; `
-Move-Item -Path "$HOME\sia\renterd_zen\bin\renterd.exe" -Destination "$HOME\sia\renterd_zen\renterd.exe"; `
-Remove-Item -LiteralPath "$HOME\sia\renterd_zen\bin" -Force -Recurse
+Move-Item -Path "$HOME\sia\renterd_zen\bin\renterd.exe" -Destination "$HOME\sia\renterd_zen\renterd.exe" -Force; `
+Remove-Item -LiteralPath "$HOME\sia\renterd_zen\bin" -Recurse
 ```
 {% endtab %}
 {% endtabs %}
@@ -236,8 +236,8 @@ Remove-Item -LiteralPath "$HOME\sia\renterd\bin" -Recurse
 ```powershell
 wget https://sia.tech/downloads/latest/renterd_zen_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_zen_windows_amd64.zip"; `
 Expand-Archive "$HOME\Downloads\renterd_zen_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd_zen"; `
-Move-Item -Path "$HOME\sia\renterd_zen\bin\renterd.exe" -Destination "$HOME\sia\renterd_zen\renterd.exe"; `
-Remove-Item -LiteralPath "$HOME\sia\renterd_zen\bin" -Force -Recurse
+Move-Item -Path "$HOME\sia\renterd_zen\bin\renterd.exe" -Destination "$HOME\sia\renterd_zen\renterd.exe" -Force; `
+Remove-Item -LiteralPath "$HOME\sia\renterd_zen\bin" -Recurse
 ```
 {% endtab %}
 {% endtabs %}

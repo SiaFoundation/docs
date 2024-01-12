@@ -24,6 +24,8 @@ This guide will walk you through setting up `renterd` on Windows. At the end of 
 * Installed Sia `renterd` software
 * Created a `renterd` wallet
 
+---
+
 ## Pre-requisites
 
 To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
@@ -44,6 +46,8 @@ To ensure you will not run into any issues with running `renterd` it is recommen
 {% hint style="warning" %}
 To ensure proper functionality, we are recommending 16GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
 {% endhint %}
+
+---
 
 ## Installing `renterd`
 
@@ -81,6 +85,8 @@ When you paste multi-line commands into PowerShell, you will be prompted with a 
 
 ![Installation of renterd completed successfully.](../../.gitbook/assets/renterd-install-screenshots/windows/02-renterd-download-and-install.png)
 
+---
+
 ## Creating a wallet
 
 `renterd` uses BIP-39 12-word recovery phrases. To generate a new wallet recovery phrase, run the following command:
@@ -106,6 +112,8 @@ A new 12-word recovery phrase will be generated. Make sure to store it in a safe
 {% endhint %}
 
 ![](../../.gitbook/assets/renterd-install-screenshots/windows/03-renterd-seed.png)
+
+---
 
 ## Configure your `renterd.yml` file
 
@@ -171,6 +179,8 @@ Make sure to add your wallet seed and create an API password. The recovery phras
 
 Save your `renterd.yml` configuration using `ctrl+s` and close Notepad.
 
+---
+
 ## Running `renterd`
 
 Run the following command to start `renterd`.
@@ -210,6 +220,8 @@ Enter the API `password` you created in your `renterd.yml` to unlock the `renter
 {% hint style="success" %}
 Congratulations, you have successfully set up `renterd`.
 {% endhint %}
+
+---
 
 ## Updating
 

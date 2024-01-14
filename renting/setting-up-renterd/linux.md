@@ -204,8 +204,6 @@ Now, modify the file to add your wallet seed and API password. The recovery phra
 `your_access_key` can be anywhere from 16 to 128 characters long, and `your_private_key` must be exactly 40 characters long.
 {% endhint %}
 
-{% tabs %}
-{% tab title="Mainnet" %}
 ```yaml
 seed: your seed phrase goes here
 http:
@@ -215,28 +213,9 @@ autopilot:
 s3:
   enabled: true
   disableAuth: false
-  address: "localhost:9985"
   keypairsV4:
     your_access_key: your_private_key
 ```
-{% endtab %}
-
-{% tab title="Zen Testnet" %}
-```yaml
-seed: your seed phrase goes here
-http:
-  password: your_api_password
-autopilot:
-  heartbeat: 5m
-s3:
-  enabled: true
-  disableAuth: false
-  address: "localhost:9885"
-  keypairsV4:
-    your_access_key: your_private_key
-```
-{% endtab %}
-{% endtabs %}
 
 Once you have added your recovery phrase and password, save the file with `ctrl+s` and exit with `ctrl+x`.
 

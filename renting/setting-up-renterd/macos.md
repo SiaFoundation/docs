@@ -113,14 +113,14 @@ rm -fr renterd_zen_darwin_arm64.zip
 `renterd` uses BIP-39 12-word recovery phrases. To generate a new wallet recovery phrase, navigate to the `renterd` directory and run `renterd seed`:
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 cd ~/renterd &&\
 renterd seed
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 cd ~/renterd_zen &&\
 renterd seed
@@ -141,13 +141,13 @@ A new 12-word recovery phrase will be generated. Make sure to store it in a safe
 Under your `renterd` directory, create a new text document named `renterd.yml`.
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 nano ~/renterd/renterd.yml
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 nano ~/renterd_zen/renterd.yml
 ```
@@ -157,7 +157,7 @@ nano ~/renterd_zen/renterd.yml
 Once the editor loads, enter the following and configure it as needed.
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```yaml
 seed: your seed phrase goes here
 http:
@@ -173,7 +173,7 @@ s3:
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```yaml
 seed: your seed phrase goes here
 http:
@@ -205,14 +205,14 @@ Save your `renterd.yml` configuration using `ctrl-o` and close the editor with `
 Run the following command to start `renterd`.
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 cd ~/renterd &&\
 ./renterd
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 cd ~/renterd_zen &&\
 ./renterd
@@ -225,7 +225,7 @@ cd ~/renterd_zen &&\
 You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9980](http://localhost:9980/).
 
 {% hint style="warning" %}
-If you are running `renterd` on the Zen Test Net, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
+If you are running `renterd` on the Zen Testnet, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
 {% endhint %}
 
 ![](../../.gitbook/assets/renterd-install-screenshots/renterd-success.png)
@@ -292,14 +292,14 @@ rm -fr renterd_zen_darwin_arm64.zip
 
 3. Restart the `renterd` system service.
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 cd ~/renterd &&\
 ./renterd
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 cd ~/renterd_zen &&\
 ./renterd

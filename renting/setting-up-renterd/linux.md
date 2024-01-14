@@ -115,13 +115,13 @@ You’ll be prompted to authorize this action by providing your system password.
 `renterd` uses BIP-39 12-word recovery phrases. To generate a new wallet recovery phrase, run the following command:
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 renterd seed
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 renterd_zen seed
 ```
@@ -143,14 +143,14 @@ Now that you have a recovery phrase, we will create a new system user and `syste
 First, we will create a new system user with `useradd` and disable the creation of a home directory. This is a security precaution that will isolate `renterd` from any unauthorized access to our system. We will then use `usermod` to lock the account and prevent anyone from logging in under the account.
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 sudo useradd -M renterd &&\
 sudo usermod -L renterd
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 sudo useradd -M renterd_zen &&\
 sudo usermod -L renterd_zen
@@ -161,7 +161,7 @@ sudo usermod -L renterd_zen
 Now, we will create a new folder under `/var/lib/` titled `renterd` and give it the appropriate permissions. This folder will be utilized specifically to store data related to the `renterd` software. Open the Terminal Emulator and run the following commands:
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 sudo mkdir /var/lib/renterd &&\
 sudo chown renterd:renterd /var/lib/renterd &&\
@@ -169,7 +169,7 @@ sudo chmod o-rwx /var/lib/renterd
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 sudo mkdir /var/lib/renterd_zen &&\
 sudo chown renterd_zen:renterd_zen /var/lib/renterd_zen &&\
@@ -185,13 +185,13 @@ sudo chmod o-rwx /var/lib/renterd_zen
 To begin, create a file name `renterd.yml` file under `/var/lib/renterd/`
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 sudo nano /var/lib/renterd/renterd.yml
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 sudo nano /var/lib/renterd_zen/renterd.yml
 ```
@@ -205,7 +205,7 @@ Now, modify the file to add your wallet seed and API password. The recovery phra
 {% endhint %}
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```yaml
 seed: your seed phrase goes here
 http:
@@ -221,7 +221,7 @@ s3:
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```yaml
 seed: your seed phrase goes here
 http:
@@ -247,13 +247,13 @@ Once you have added your recovery phrase and password, save the file with `ctrl+
 Now we can create a new system service to run `renterd` on startup:
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 sudo nano /etc/systemd/system/renterd.service
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 sudo nano /etc/systemd/system/renterd_zen.service
 ```
@@ -263,7 +263,7 @@ sudo nano /etc/systemd/system/renterd_zen.service
 Once the editor loads, copy and paste the following into it.
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```toml
 [Unit]
 Description=Sia renterd
@@ -283,7 +283,7 @@ Alias=renterd.service
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```toml
 [Unit]
 Description=Sia renterd (Zen Testnet)
@@ -313,13 +313,13 @@ You can now save the file with `ctrl+s` and exit with `ctrl+x`.
 Now it is time to start the service
 
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 sudo systemctl start renterd
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 sudo systemctl start renterd_zen
 ```
@@ -329,13 +329,13 @@ sudo systemctl start renterd_zen
 Your `renterd` service should now be running. You can check the status of the service by running the following command:
   
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 sudo systemctl status renterd
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 sudo systemctl status renterd_zen
 ```
@@ -349,7 +349,7 @@ If the service was set up correctly, it should say “active (running).”
 You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9880](http://localhost:9980/).
 
 {% hint style="warning" %}
-If you are running `renterd` on the Zen Test Net, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
+If you are running `renterd` on the Zen Testnet, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
 {% endhint %}
 
 ![](../../.gitbook/assets/renterd-install-screenshots/renterd-success.png)
@@ -370,13 +370,13 @@ New versions of `renterd` are released regularly and contain bug fixes and perfo
 
 1. Stop the `renterd` system service.
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 sudo systemctl stop renterd
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 sudo systemctl stop renterd_zen
 ```
@@ -433,13 +433,13 @@ You'll be prompted to authorize this action by providing your system password. T
 
 3. Restart the `renterd` system service.
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 sudo systemctl start renterd
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 sudo systemctl start renterd_zen
 ```
@@ -448,13 +448,13 @@ sudo systemctl start renterd_zen
 
 4. Verify the `renterd` service is running correctly.
 {% tabs %}
-{% tab title="Main Net" %}
+{% tab title="Mainnet" %}
 ```console
 sudo systemctl status renterd
 ```
 {% endtab %}
 
-{% tab title="Zen Test Net" %}
+{% tab title="Zen Testnet" %}
 ```console
 sudo systemctl status renterd_zen
 ```

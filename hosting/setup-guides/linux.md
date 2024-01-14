@@ -229,6 +229,11 @@ sudo systemctl status hostd
 
 If the service was set up correctly, it should say "active (running)."
 
+If you wish to have hostd start up on boot, you can "enable" the service by running the following command:
+```console
+sudo systemctl enable hostd
+```
+
 ### Accessing the UI
 
 For users with a desktop environment, you can open a browser to `http://localhost:9980` to access the `hostd` UI.

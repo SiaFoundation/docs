@@ -266,7 +266,7 @@ Once the editor loads, copy and paste the following into it.
 {% tab title="Mainnet" %}
 ```toml
 [Unit]
-Description=Sia renterd
+Description=renterd
 After=network.target
 
 [Service]
@@ -286,7 +286,7 @@ Alias=renterd.service
 {% tab title="Zen Testnet" %}
 ```toml
 [Unit]
-Description=Sia renterd (Zen Testnet)
+Description=renterd (Zen Testnet)
 After=network.target
 
 [Service]

@@ -350,7 +350,7 @@ If for some reason your `renterd` service will not start, use the command `journ
 
 ![](../../.gitbook/assets/renterd-install-screenshots/linux/03-renterd-success.png)
 
-You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9880](http://localhost:9980/).
+You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9980](http://localhost:9980/).
 
 {% hint style="warning" %}
 If you are running `renterd` on the Zen Testnet, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).

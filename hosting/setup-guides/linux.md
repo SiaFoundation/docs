@@ -218,8 +218,13 @@ If you are using external USB drives to store renter data, you will need to ensu
 Now it is time to start the service
 
 ```console
-sudo systemctl start hostd
+sudo systemctl start hostd &&\
+sudo systemctl enable hostd
 ```
+
+{% hint style="warning" %}
+On newer versions of Linux (Ubuntu 22.04+), `sudo systemctl enable hostd` may not be required as the service will automatically be enabled by default. If you get an error saying the service failed to be enabled due to the file already existing, it is okay to ignore.
+{% endhint %}
 
 Your `hostd` service should now be running. You can check the status of the service by running the following command:
 

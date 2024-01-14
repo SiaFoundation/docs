@@ -147,7 +147,7 @@ Stay updated. Your host score drops if you're not running the latest version of 
 
 ## Third-Party Host Scoring
 
-We have an incredible community building on Sia. Third-party sites can develop their methods for scoring hosts based on various metrics. For example, SiaStats has developed a [Host Monitor](https://siastats.info/hosts) which evaluates hosts on pricing relative to other hosts. It even regularly evaluates host performance by forming contracts with every host to test bandwidth and latency. SiaStats has great visualization for each host, making judging their metrics easier.
+We have an incredible community building on Sia. Third-party sites can develop their methods for scoring hosts based on various metrics. For example, Sia Central has developed a [Host Browser](https://hosts.siacentral.com/), which allows you to browse and compare hosts.
 
 These benchmarks differ from the core Sia protocol but are still helpful and may be used to help monitor and improve your host over time.
 

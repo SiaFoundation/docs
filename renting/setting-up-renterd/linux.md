@@ -344,6 +344,10 @@ sudo systemctl status renterd_zen
 
 If the service was set up correctly, it should say “active (running).”
 
+{% hint style="warning" %}
+If for some reason your `renterd` service will not start, use the command `journalctl -fu renterd` to view the console output for more information.
+{% endhint %}
+
 ![](../../.gitbook/assets/renterd-install-screenshots/linux/03-renterd-success.png)
 
 You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9880](http://localhost:9980/).
@@ -460,6 +464,10 @@ sudo systemctl status renterd_zen
 ```
 {% endtab %}
 {% endtabs %}
+
+{% hint style="warning" %}
+If, for some reason, the `renterd` service will not start, use the command `journalctl -fu renterd` to view the console output for more information.
+{% endhint %}
 
 ![Starting renterd](../../.gitbook/assets/renterd-success.png)
 

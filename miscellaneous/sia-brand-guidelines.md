@@ -56,7 +56,7 @@ Sia's trademark name is pronounced _"sigh-uh,_ not _"see-ya."_
 Using the term **Sia** is accepted naming your in your project; however, there are two restrictions:
 
 * Do not call your project solely **Sia**.
-* Do not name your project **Sia** and then append a term directly related to our business, such as **Cloud**, **Storage**, or **Backup,** or add a term that we already use like **renterd, hostd,** or **walletd.**
+* You may use the term Sia in your project, but do not append a term directly related to our business, such as **Cloud**, **Storage**, or **Backup,** or add a term that we already use like **renterd, hostd,** or **walletd.** The final name must be substantially different from current Foundation offerings.
 
 Some examples of this include **SiaStats**, **Siasync**, **SiaWiki**, and **Siamining**. These names provide a clear indication that the focus is on Sia while not treading into "The Foundation already makes that" territory.
 

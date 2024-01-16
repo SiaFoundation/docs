@@ -58,7 +58,7 @@ Using the term **Sia** is accepted naming your in your project; however, there a
 * Do not call your project solely **Sia**.
 * Do not name your project **Sia** and then append a term directly related to our business, such as **Cloud**, **Storage**, or **Backup,** or add a term that we already use like **renterd, hostd,** or **walletd.**
 
-Some examples of this include **SiaStats**, **Siasync**, **SiaWiki**, and **Siamining**. These names provide a clear indication that the focus is on **Sia**.
+Some examples of this include **SiaStats**, **Siasync**, **SiaWiki**, and **Siamining**. These names provide a clear indication that the focus is on Sia while not treading into "The Foundation already makes that" territory.
 
 You also have the option to craft a uniquely personalized name that reflects your identity or your creative efforts. Illustrative instances of such custom names include **Pixeldrain**, **Filebase**, and **Roadie**.
 

@@ -53,14 +53,20 @@ The logo can be similar but **must** be differentiated from the original Sia log
 
 Sia's trademark name is pronounced _"sigh-uh,_ not _"see-ya."_
 
-Using the term **Sia** is accepted naming your in your project; however, there are two restrictions:
+#### Trusted Projects
 
-* Do not call your project solely **Sia**.
+If you're an established project in the ecosystem, it's probably ok to use the term **Sia** in your project's name. Check with the team. However, there are two restrictions:
+
+* Do not call your project just "**Sia"**.
 * You may use the term Sia in your project, but do not append a term directly related to our business, such as **Cloud**, **Storage**, or **Backup,** or add a term that we already use like **renterd, hostd,** or **walletd.** The final name must be substantially different from current Foundation offerings.
 
-Some examples of this include **SiaStats**, **Siasync**, **SiaWiki**, and **Siamining**. These names provide a clear indication that the focus is on Sia while not treading into "The Foundation already makes that" territory.
+Some good examples of this include **SiaStats**, **Siasync**, **SiaWiki**, and **Siamining**. These names provide a clear indication that the focus is on Sia while not treading into "The Foundation already makes that" territory. They also are, or were at the time, widely used and trusted projects in the Sia community.
 
-You also have the option to craft a uniquely personalized name that reflects your identity or your creative efforts. Illustrative instances of such custom names include **Pixeldrain**, **Filebase**, and **Roadie**.
+#### New Projects
+
+If you're a brand new project, or part of the Sia Grants Program, we prefer that you don't use the term Sia in your project just yet. Wait to see if your project has longevity and resonates with the community first.
+
+Either way, you also have the option to craft a uniquely personalized name that reflects your identity or your creative efforts. Illustrative instances of such custom names include **Pixeldrain**, **Filebase**, and **Roadie**.
 
 {% hint style="info" %}
 We're eagerly anticipating what you'll create! If you have any uncertainties regarding our Sia branding guidelines, please don't hesitate to reach out via [Discord](https://sia.tech/discord) or [email](mailto:hello@sia.tech).

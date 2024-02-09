@@ -93,7 +93,7 @@ This will start an interactive configuration process. You will be asked to gener
 You will not see anything when you type in your seed phrase or unlock password. Press enter after typing each one.
 {% endhint %}
 
-![](../../../.gitbook/assets/hostd-install-screenshots/linux/debian/04-hostd-debian-config.png)
+![](../../../.gitbook/assets/hostd-install-screenshots/linux/debian/03-hostd-debian-config.png)
 
 ## Start `hostd`
 

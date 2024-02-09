@@ -27,7 +27,7 @@ Announcing your host serves as the bridge between your fully prepared host and p
 An announcement transaction incurs a small fee in Siacoins (SC), which will be deducted from your wallet. Ensure your `hostd` wallet is funded by checking out [Transferring Siacoins](transferring-siacoins.md).
 {% endhint %}
 
-Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](setup-guides/) guide; otherwise, choose from the sidebar **Configuration**.
+Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](setting-up-hostd/) guide; otherwise, choose from the sidebar **Configuration**.
 
 Click on the **Announce** button in the top right-hand corner.
 

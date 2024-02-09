@@ -160,6 +160,6 @@ Once you've started hosting, you'll probably want to keep an eye on your host sc
 
 Contributing your storage space couldn't be any simpler by using Sia's `hostd` software!
 
-Start hosting on Sia with the official [`hostd` software](https://sia.tech/software/hostd) and exploring our step-by-step [Setting up hostd ](setup-guides/)guide.
+Start hosting on Sia with the official [`hostd` software](https://sia.tech/software/hostd) and exploring our step-by-step [Setting up hostd ](setting-up-hostd/)guide.
 {% endhint %}
 

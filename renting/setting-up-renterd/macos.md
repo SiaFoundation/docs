@@ -17,111 +17,277 @@ layout:
     visible: true
 ---
 
-# macOS
+# MacOS
 
-This guide will walk you through setting up `renterd` on macOS. At the end of this guide, you should have:
+This guide will walk you through setting up `renterd` on MacOS. At the end of this guide, you should have:
 
 * Installed Sia `renterd` software
 * Created a `renterd` wallet
 
+---
+
 ## Pre-requisites
 
-* **Network Access:** `renterd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your macOS version is compatible with the `renterd` software. Check [releases](../../miscellaneous/releases.md) supported by macOS versions.
-* **System Updates:** Ensure that your macOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
+To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
 
-## Getting `renterd`
+* **Network Access:**
+  `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
+
+* **Operating System Compatibility:**
+  You will need to ensure you download the correct `renterd` binary for your version of MacOS. To do this, click on the Apple icon in the top left corner of your toolbar, then click "About This Mac". The processor/chips will read one of the following identifiers.
+
+  - **x86_64** — `MacOS AMD64`
+  - **M1, M2** — `MacOS ARM64`
+
+* **System Updates:** Ensure that your MacOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
+
+* **Hardware Requirements:**
+  A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
+
+  - A dual-core CPU
+  - 16GB of RAM
+  - An SSD with at least 128GB of free space.
 
 {% hint style="warning" %}
-Remember to check which version to download to ensure it works correctly with your operating system. To do this, click on the Apple icon in the top left corner of your toolbar, then click **About This Mac**. If the processor/chips says:
+To ensure proper functionality, we are recommending 16GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
+{% endhint%}
 
-* **Intel** - `MacOS AMD64`
-* **M1 or M2** - `MacOS ARM64`
+---
+
+## Installing `renterd`
+
+Press `CMD + Space` to open Spotlight search and open a `terminal`.
+
+![](../../.gitbook/assets/renterd-install-screenshots/macos/00-renterd-run-terminal.png)
+
+Once the Terminal loads, download and install `renterd` to your home folder.
+
+{% hint style="warning" %}
+Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
 {% endhint %}
 
-1. Download the latest version of `renterd` your operating system from the [official website](https://sia.tech/software/renterd). For this guide, we'll be downloading the macOS version of `renterd`&#x20;
-2. Now that we have downloaded `renterd`, you may need to unzip it and move it to a more accessible location:
-   * Double-click the downloaded `renterd` zip file to unzip it if it hasn't done so automatically.
-   * Click on the newly unzipped directory.
-   * Right-click on the path bar at the bottom of the Finder window and click **Open in Terminal**.
-3. In the opened terminal window, move the `renterd` binary to `/usr/local/bin` by running the following command and press enter:
-
-```bash
-sudo mv renterd /usr/local/bin
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+curl -O https://sia.tech/downloads/latest/renterd_darwin_amd64.zip
+mkdir ~/renterd &&\
+unzip renterd_darwin_amd64.zip -d ~/renterd &&\
+rm -fr renterd_darwin_amd64.zip
 ```
+{% endtab %}
 
-{% hint style="info" %}
-You'll be prompted to authorize this action by providing your system password. Type this in and press enter to continue.
-{% endhint %}
-
-4. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `renterd` software.
-
-```bash
-mkdir ~/renterd
+{% tab title="ARM64" %}
+```console
+curl -O https://sia.tech/downloads/latest/renterd_darwin_arm64.zip
+mkdir ~/renterd &&\
+unzip renterd_darwin_arm64.zip -d ~/renterd &&\
+rm -fr renterd_darwin_arm64.zip
 ```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_amd64.zip
+mkdir ~/renterd_zen &&\
+unzip renterd_zen_darwin_amd64.zip -d ~/renterd_zen &&\
+rm -fr renterd_zen_darwin_amd64.zip
+```
+{% endtab %}
+
+{% tab title="Zen ARM64" %}
+```console
+curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_arm64.zip
+mkdir ~/renterd_zen &&\
+unzip renterd_zen_darwin_arm64.zip -d ~/renterd_zen &&\
+rm -fr renterd_zen_darwin_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
+
+![](../../.gitbook/assets/renterd-install-screenshots/macos/01-renterd-download-and-install.png)
+
+---
 
 ## Creating a wallet
 
-1. `renterd` uses BIP-39 12-word recovery phrases. If you already have a 12-word seed, skip this step; run the following command to generate a new wallet recovery phrase:
+`renterd` uses BIP-39 12-word recovery phrases. To generate a new wallet recovery phrase, navigate to the `renterd` directory and run `renterd seed`:
 
-```bash
+{% tabs %}
+{% tab title="Mainnet" %}
+```console
+cd ~/renterd &&\
 renterd seed
 ```
+{% endtab %}
 
-A new 12-word recovery phrase will be generated, so please copy and store it in a safe place, as you will need this phrase to recover your wallet.&#x20;
+{% tab title="Zen Testnet" %}
+```console
+cd ~/renterd_zen &&\
+renterd seed
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
-If you lose this phrase, you will lose access to your wallet and funds. Find out more about [Your Sia Seed](../../get-started-with-sia/the-importance-of-your-seed.md) and why it is essential.
+A new 12-word recovery phrase will be generated. Make sure to store it in a safe place, as you will need this phrase to recover your wallet.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/renterd_3.png" alt=""><figcaption><p>Generating a recovery phrase</p></figcaption></figure>
+![](../../.gitbook/assets/renterd-install-screenshots/macos/02-renterd-seed.png)
+
+---
+
+## Configure your `renterd.yml` file
+
+Under your `renterd` directory, create a new text document named `renterd.yml`.
+
+{% tabs %}
+{% tab title="Mainnet" %}
+```console
+nano ~/renterd/renterd.yml
+```
+{% endtab %}
+
+{% tab title="Zen Testnet" %}
+```console
+nano ~/renterd_zen/renterd.yml
+```
+{% endtab %}
+{% endtabs %}
+
+Once the editor loads, enter the following and configure it as needed.
+
+```yaml
+seed: your seed phrase goes here
+http:
+  password: your_api_password
+autopilot:
+  heartbeat: 5m
+s3:
+  enabled: true
+  disableAuth: false
+  keypairsV4:
+    your_access_key: your_private_key
+```
+
+Make sure to add your wallet seed and create an API password. The recovery phrase is the 12-word seed phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. The password is used to unlock the `renterd` web UI; it should be something secure and easy to remember.
+
+{% hint style="warning" %}
+`your_access_key` can be anywhere from 16 to 128 characters long, and `your_private_key` must be exactly 40 characters long.
+{% endhint %}
+
+Save your `renterd.yml` configuration using `ctrl-o` and close the editor with `ctrl-x`.
+
+---
 
 ## Running `renterd`
 
-1. Run the following in your terminal command to start `renterd`:
+Run the following command to start `renterd`.
 
-```bash
- renterd
+{% tabs %}
+{% tab title="Mainnet" %}
+```console
+cd ~/renterd &&\
+./renterd
 ```
+{% endtab %}
 
-You will be prompted to input both:
+{% tab title="Zen Testnet" %}
+```console
+cd ~/renterd_zen &&\
+./renterd
+```
+{% endtab %}
+{% endtabs %}
 
-* `API password` - You choose this password, which can be anything you want. It will be used to unlock the `renterd` UI via your browser and should be something secure and easy to remember.
-* `wallet seed` - The recovery phrase is the 12-word phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step.
+![](../../.gitbook/assets/renterd-install-screenshots/macos/03-renterd-success.png)
 
-These values are not stored anywhere and will be requested every time you start `renterd`.
-
-{% hint style="info" %}
-You can also set the RENTERD`_SEED` and RENTERD`_API_PASSWORD` environment variables so you do not have to re-enter the values every time.
-{% endhint %}
-
-2. After entering your desired `API password` and the created `seed`, `renterd` will start.&#x20;
-
-<figure><img src="../../.gitbook/assets/starting renterd.png" alt=""><figcaption><p>Starting renterd</p></figcaption></figure>
-
-3. &#x20;You can now access the `renterd` UI by opening a browser and going to `http://localhost:9980`.&#x20;
+You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9980](http://localhost:9980/).
 
 {% hint style="warning" %}
-Remember to leave the terminal window open while `renterd` it is running. If you close the command prompt window, `renterd` stop.
+If you are running `renterd` on the Zen Testnet, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
 {% endhint %}
 
+![](../../.gitbook/assets/renterd-install-screenshots/renterd-success.png)
 
-
-<figure><img src="../../.gitbook/assets/renterd_5.png" alt=""><figcaption><p>renterd Login UI</p></figcaption></figure>
-
-Enter your `API password` you created in the previous step to unlock `renterd`.
+Enter the API `password` you created in your `renterd.yml` to unlock the `renterd` web UI.
 
 {% hint style="success" %}
-Congratulations on successfully setting up `renterd` and taking a significant step towards renting storage space on the Sia network.
+Congratulations, you have successfully set up `renterd`.
 {% endhint %}
+
+---
 
 ## Updating
 
-It is essential to keep your renter up to date. New versions of `renterd` are released regularly and contain bug fixes and performance improvements.
+New versions of `renterd` are released regularly and contain bug fixes and performance improvements.
 
-To update:
+**To update:**
 
-1. Download the latest version of `renterd` from the [official website](https://sia.tech/software/renterd).
-2. Stop the `renterd` service with `Cmd+C`.
-3. Unzip and replace `renterd` with the new version.
-4. Restart `renterd`.
+1. Stop `renterd` if it is running. This can be accomplished by pressing `ctrl+c` in the Terminal currently running `renterd`.
+
+2. Download and install the latest version of `renterd`.
+
+{% hint style="warning" %}
+Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
+{% endhint %}
+
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+curl -O https://sia.tech/downloads/latest/renterd_darwin_amd64.zip
+mkdir ~/renterd &&\
+unzip renterd_darwin_amd64.zip -d ~/renterd &&\
+rm -fr renterd_darwin_amd64.zip
+```
+{% endtab %}
+
+{% tab title="ARM64" %}
+```console
+curl -O https://sia.tech/downloads/latest/renterd_darwin_arm64.zip
+mkdir ~/renterd &&\
+unzip renterd_darwin_arm64.zip -d ~/renterd &&\
+rm -fr renterd_darwin_arm64.zip
+```
+{% endtab %}
+
+{% tab title="Zen AMD64" %}
+```console
+curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_amd64.zip
+mkdir ~/renterd_zen &&\
+unzip renterd_zen_darwin_amd64.zip -d ~/renterd_zen &&\
+rm -fr renterd_zen_darwin_amd64.zip
+```
+{% endtab %}
+
+{% tab title="Zen ARM64" %}
+```console
+curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_arm64.zip
+mkdir ~/renterd_zen &&\
+unzip renterd_zen_darwin_arm64.zip -d ~/renterd_zen &&\
+rm -fr renterd_zen_darwin_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
+
+3. Restart the `renterd` system service.
+{% tabs %}
+{% tab title="Mainnet" %}
+```console
+cd ~/renterd &&\
+./renterd
+```
+{% endtab %}
+
+{% tab title="Zen Testnet" %}
+```console
+cd ~/renterd_zen &&\
+./renterd
+```
+{% endtab %}
+{% endtabs %}
+
+![](../../.gitbook/assets/renterd-install-screenshots/macos/03-renterd-success.png)
+
+{% hint style="success" %}
+Congratulations, you have successfully updated your version of `renterd`!
+{% endhint %}

@@ -17,6 +17,8 @@ layout:
     visible: true
 ---
 
+**TODO: Install without apt**
+
 # Linux
 
 This guide will walk you through setting up `renterd` on Linux. At the end of this guide, you should have the following:
@@ -132,7 +134,7 @@ renterd_zen seed
 A new 12-word recovery phrase will be generated. Make sure to store it in a safe place, as you will need this phrase to recover your wallet.
 {% endhint %}
 
-![](../../.gitbook/assets/renterd-install-screenshots/linux/02-renterd-seed.png)
+![](../../.gitbook/assets/renterd-install-screenshots/linux/debian/01-renterd-debian-apt-install.png)
 
 ---
 

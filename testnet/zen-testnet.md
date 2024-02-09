@@ -25,7 +25,7 @@ The Zen Testnet offers a secure environment to experiment with `renterd`, `hostd
 
 ## Running testnet
 
-Running the testnet version for our software is similar to running it on the mainnet and follows the exact instructions for setting up [renterd](../renting/setting-up-renterd/), [hostd](../hosting/setup-guides/) and [walletd](../wallet/setting-up-walletd/).
+Running the testnet version for our software is similar to running it on the mainnet and follows the exact instructions for setting up [renterd](../renting/setting-up-renterd/), [hostd](../hosting/setting-up-hostd/) and [walletd](../wallet/setting-up-walletd/).
 
 {% hint style="warning" %}
 Please ensure that you have downloaded the **testnet** binary for either`renterd`, `hostd` or `walletd` compatible with your operating system from our [official website](https://sia.tech).&#x20;

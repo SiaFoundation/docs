@@ -23,7 +23,7 @@ Whether you're sending Siacoins to an exchange or receiving from a friend, `host
 
 ## Sending Siacoins
 
-Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](setup-guides/) guide; otherwise, choose from the sidebar **Wallet**.
+Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](setting-up-hostd/) guide; otherwise, choose from the sidebar **Wallet**.
 
 ### Setup your transaction
 
@@ -76,7 +76,7 @@ We recommend around **$50 worth of Siacoin** to start hosting. Hosts are constan
 You can still transfer funds to your wallet, but please note that they won't be accessible until the wallet is completely synced.
 {% endhint %}
 
-Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](setup-guides/)and choose from the **sidebar** a **Wallet**.
+Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](setting-up-hostd/)and choose from the **sidebar** a **Wallet**.
 
 ### Sharing the address or QR
 

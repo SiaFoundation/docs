@@ -1,5 +1,5 @@
 ---
-cover: https://sia.tech/assets/previews/renterd.png
+cover: https://sia.tech/assets/previews/hostd.png
 coverY: 0
 layout:
   cover:
@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# Linux
+# Ubuntu
 
 This guide will walk you through setting up `renterd` on Linux. At the end of this guide, you should have the following:
 
@@ -105,7 +105,7 @@ You will not see anything when you type in your seed phrase or unlock password. 
 Now that you have installed and configured `renterd`, you can start it by running the following command:
 
 ```sh
-sudo enable --now renterd
+sudo systemctl enable --now renterd
 ```
 
 ## Updating `renterd`

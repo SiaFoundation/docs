@@ -1,5 +1,5 @@
 ---
-cover: https://sia.tech/assets/previews/renterd.png
+cover: https://sia.tech/assets/previews/hostd.png
 coverY: 0
 layout:
   cover:

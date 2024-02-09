@@ -59,7 +59,7 @@ s3:
 Make sure to replace `your_renterd_access_key` and `your_renterd_secret_key` with unique passphrases. They can be anything you want but must be at least 40 characters in length, and your secret key should always be kept private. Keep these values on hand. You will need them for Step 3.
 
 {% hint style="warning" %}
-If you are running `renterd` in a docker container, you will need to override the address via docker: `command: -s3.address:9985`
+If you are running `renterd` in a docker container, you will need to override the address via docker: `command: -s3.address :9985`
 {% endhint %}
 
 

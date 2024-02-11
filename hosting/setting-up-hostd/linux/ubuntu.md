@@ -116,7 +116,7 @@ sudo apt upgrade hostd
 
 Now that you have `hostd` installed and running, you can start using it to store and retrieve data on the Sia network. You can access the web interface by navigating to `http://127.0.0.1:9980` in your web browser. If you installed `hostd` on a remote machine or a server, you will need to create an SSH tunnel to access the web interface.
 
-- [About Hosting on Sia](../about-hosting.md)
-- [Adding Storage to `hostd`](../adding-storage.md)
-- [Announcing Your Host to the Sia Network](../announcing-your-host.md)
-- [Transferring Siacoins to Your Host Wallet](../transferring-siacoins.md)
+- [About Hosting on Sia](../../about-hosting-on-sia.md)
+- [Adding Storage to `hostd`](../../adding-storage.md)
+- [Announcing Your Host to the Sia Network](../../announcing-your-host.md)
+- [Transferring Siacoins to Your Host Wallet](../../transferring-siacoins.md)

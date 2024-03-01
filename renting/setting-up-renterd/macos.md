@@ -63,7 +63,7 @@ Press `CMD + Space` to open Spotlight search and open a `terminal`.
 Once the Terminal loads, download and install `renterd` to your home folder.
 
 {% hint style="warning" %}
-Before installing `renterd` you will first need to have [Homebrew](https://brew.sh/) installed on your system.
+Before installing `renterd`, you will first need to have [Homebrew](https://brew.sh/) installed on your system.
 {% endhint %}
 
 ```console
@@ -72,7 +72,7 @@ brew install siafoundation/sia/renterd
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/01-renterd-brew-install.png)
 
-To confirm `renterd` has been installed correctly run the following:
+To confirm `renterd` has been installed correctly, run the following:
 
 ```console
 renterd version
@@ -83,7 +83,7 @@ renterd version
 
 ## Configure `renterd`
 
-Once you have `renterd` installed, you can now use the built in configuration wizard. Before doing this however, you will want to create a new folder which will contain all the runtime files used by `renterd`. We will create this in `~/Library/Application Support/`.
+Once you have `renterd` installed, you can now use the built in configuration wizard. Before doing this, however, you will want to create a new folder that will contain all the runtime files used by `renterd`. We will create this in `~/Library/Application Support/`.
 
 Use the following command to create this folder and run the configuration wizard.
 
@@ -102,15 +102,15 @@ Please note that for security reasons, yoou will not see anything when you type 
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/03-renterd-config-seed.png)
 
-Next you will be asked to create a new password. This password is used to access the `renterd` web UI.
+Next, you will be asked to create a new password. This password is used to access the `renterd` web UI.
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/04-renterd-admin-password.png)
 
-Once you have created your admin password, you will now be asked if you would like to configure your S3 settings. If you don't intend to use S3, you can skip this step by typing `no`. For the purpose of this guide we will configure our S3 settings by typing `yes`.
+Once you have created your admin password, you will now be asked if you would like to configure your S3 settings. If you don't intend to use S3, you can skip this step by typing `no`. For the purpose of this guide, we will configure our S3 settings by typing `yes`.
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/05-renterd-config-s3.png)
 
-Next you will be asked to configure which port you would like your S3 endpoint to run on. If there is a specific port you would like to use you can enter it now, or hit enter to keep the default port of `8080`.
+Next, you will be asked to configure which port you would like your S3 endpoint to run on. If there is a specific port you would like to use, you can enter it now or hit enter to keep the default port of `8080`.
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/06-renterd-config-s3-endpoint.png)
 
@@ -160,7 +160,7 @@ brew upgrade siafoundation/sia/renterd
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/11-renterd-upgrade.png)
 
-Once the upgrade has completed, run the following to confirm it has been upgraded successfully.
+Once the upgrade has been completed, run the following to confirm it has been upgraded successfully.
 
 ```console
 renterd version

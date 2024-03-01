@@ -17,9 +17,9 @@ layout:
     visible: true
 ---
 
-# MacOS
+# macOS
 
-This guide will walk you through setting up `renterd` on MacOS. At the end of this guide, you should have:
+This guide will walk you through setting up `renterd` on macOS. At the end of this guide, you should have:
 
 * Installed Sia `renterd` software
 * Created a `renterd` wallet
@@ -34,12 +34,12 @@ To ensure you will not run into any issues with running `renterd` it is recommen
   `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
 
 * **Operating System Compatibility:**
-  You will need to ensure you download the correct `renterd` binary for your version of MacOS. To do this, click on the Apple icon in the top left corner of your toolbar, then click "About This Mac". The processor/chips will read one of the following identifiers.
+  `renterd` is supported on the following macOS versions:
+  - macOS 12: Monterey (Star)
+  - macOS 13: Ventura (Rome)
+  - macOS 14: Sonoma (Sunburst)
 
-  - **x86_64** — `MacOS AMD64`
-  - **M1, M2** — `MacOS ARM64`
-
-* **System Updates:** Ensure that your MacOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
+* **System Updates:** Ensure that your macOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 * **Hardware Requirements:**
   A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
@@ -58,124 +58,63 @@ To ensure proper functionality, we are recommending 16GB RAM. This is because `r
 
 Press `CMD + Space` to open Spotlight search and open a `terminal`.
 
-![](../../.gitbook/assets/renterd-install-screenshots/macos/00-renterd-run-terminal.png)
-
-Once the Terminal loads, download and install `renterd` to your home folder.
+![](../../.gitbook/assets/renterd-install-screenshots/macos/00-renterd-open-terminal.png)
 
 {% hint style="warning" %}
-Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
+Before you install `renterd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to easily install and upgrade `renterd`.
 {% endhint %}
 
-{% tabs %}
-{% tab title="AMD64" %}
-```console
-curl -O https://sia.tech/downloads/latest/renterd_darwin_amd64.zip
-mkdir ~/renterd &&\
-unzip renterd_darwin_amd64.zip -d ~/renterd &&\
-rm -fr renterd_darwin_amd64.zip
-```
-{% endtab %}
+Once the Terminal loads, use `brew` to install `renterd`:
 
-{% tab title="ARM64" %}
 ```console
-curl -O https://sia.tech/downloads/latest/renterd_darwin_arm64.zip
-mkdir ~/renterd &&\
-unzip renterd_darwin_arm64.zip -d ~/renterd &&\
-rm -fr renterd_darwin_arm64.zip
+brew install siafoundation/sia/renterd
 ```
-{% endtab %}
 
-{% tab title="Zen AMD64" %}
+![](../../.gitbook/assets/renterd-install-screenshots/macos/01-renterd-brew-install.png)
+
+To confirm `renterd` has been installed, run the following:
+
 ```console
-curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_amd64.zip
-mkdir ~/renterd_zen &&\
-unzip renterd_zen_darwin_amd64.zip -d ~/renterd_zen &&\
-rm -fr renterd_zen_darwin_amd64.zip
+renterd version
 ```
-{% endtab %}
 
-{% tab title="Zen ARM64" %}
-```console
-curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_arm64.zip
-mkdir ~/renterd_zen &&\
-unzip renterd_zen_darwin_arm64.zip -d ~/renterd_zen &&\
-rm -fr renterd_zen_darwin_arm64.zip
-```
-{% endtab %}
-{% endtabs %}
-
-![](../../.gitbook/assets/renterd-install-screenshots/macos/01-renterd-download-and-install.png)
+![](../../.gitbook/assets/renterd-install-screenshots/macos/12-renterd-version.png)
 
 ---
 
-## Creating a wallet
+## Configuring `renterd`
 
-`renterd` uses BIP-39 12-word recovery phrases. To generate a new wallet recovery phrase, navigate to the `renterd` directory and run `renterd seed`:
+Now that you have `renterd` installed, you will need to create a seed phrase and admin password. To launch the built-in configuration wizard, run the following:
 
-{% tabs %}
-{% tab title="Mainnet" %}
 ```console
-cd ~/renterd &&\
-renterd seed
-```
-{% endtab %}
-
-{% tab title="Zen Testnet" %}
-```console
-cd ~/renterd_zen &&\
-renterd seed
-```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="warning" %}
-A new 12-word recovery phrase will be generated. Make sure to store it in a safe place, as you will need this phrase to recover your wallet.
-{% endhint %}
-
-![](../../.gitbook/assets/renterd-install-screenshots/macos/02-renterd-seed.png)
-
----
-
-## Configure your `renterd.yml` file
-
-Under your `renterd` directory, create a new text document named `renterd.yml`.
-
-{% tabs %}
-{% tab title="Mainnet" %}
-```console
-nano ~/renterd/renterd.yml
-```
-{% endtab %}
-
-{% tab title="Zen Testnet" %}
-```console
-nano ~/renterd_zen/renterd.yml
-```
-{% endtab %}
-{% endtabs %}
-
-Once the editor loads, enter the following and configure it as needed.
-
-```yaml
-seed: your seed phrase goes here
-http:
-  password: your_api_password
-autopilot:
-  heartbeat: 5m
-s3:
-  enabled: true
-  disableAuth: false
-  keypairsV4:
-    your_access_key: your_private_key
+mkdir ~/Library/Application\ Support/renterd
+cd ~/Library/Application\ Support/renterd
+renterd config
 ```
 
-Make sure to add your wallet seed and create an API password. The recovery phrase is the 12-word seed phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. The password is used to unlock the `renterd` web UI; it should be something secure and easy to remember.
+Once the configuration wizard loads, you will first be asked to enter a seed phrase. If you do not already have one, type `seed` to generate a new one. For the purpose of this guide we will create a new seed phrase.
 
-{% hint style="warning" %}
-`your_access_key` can be anywhere from 16 to 128 characters long, and `your_private_key` must be exactly 40 characters long.
-{% endhint %}
+![](../../.gitbook/assets/renterd-install-screenshots/macos/03-renterd-config-seed.png)
 
-Save your `renterd.yml` configuration using `ctrl-o` and close the editor with `ctrl-x`.
+Next you will be asked to create an admin password. This will be used to unlock the `renterd` web UI.
+
+![](../../.gitbook/assets/renterd-install-screenshots/macos/04-renterd-config-password.png)
+
+You will now be asked if you would like to configure `renterd`'s S3 settings. If you do not intend to use S3 you can type `no` to skip this step. For the purpose of this guide however, we will type `yes` and configure the S3 endpoint.
+
+![](../../.gitbook/assets/renterd-install-screenshots/macos/05-renterd-config-S3.png)
+
+Next you will be asked to configure the S3 address. If you would like to use something other than the default, you can enter it now. Otherwise hit enter to use the default port `8080`.
+
+![](../../.gitbook/assets/renterd-install-screenshots/macos/06-renterd-config-s3-endpoint.png)
+
+You will now be asked to generate a new key pair. Type `auto` and hit enter to have a key pair generated automatically for you.
+
+![](../../.gitbook/assets/renterd-install-screenshots/macos/07-renterd-config-s3-gen-keypair.png)
+
+Finally you will be asked if you would like to configure `renterd`'s advanced settings. Type `no` and hit enter to exit the configuration wizard.
+
+![](../../.gitbook/assets/renterd-install-screenshots/macos/08-renterd-config-advanced-settings.png)
 
 ---
 
@@ -183,33 +122,16 @@ Save your `renterd.yml` configuration using `ctrl-o` and close the editor with `
 
 Run the following command to start `renterd`.
 
-{% tabs %}
-{% tab title="Mainnet" %}
 ```console
-cd ~/renterd &&\
-./renterd
+cd ~/Library/Application\ Support/renterd
+renterd
 ```
-{% endtab %}
 
-{% tab title="Zen Testnet" %}
-```console
-cd ~/renterd_zen &&\
-./renterd
-```
-{% endtab %}
-{% endtabs %}
-
-![](../../.gitbook/assets/renterd-install-screenshots/macos/03-renterd-success.png)
+![](../../.gitbook/assets/renterd-install-screenshots/macos/09-renterd-startup.png)
 
 You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9980](http://localhost:9980/).
 
-{% hint style="warning" %}
-If you are running `renterd` on the Zen Testnet, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
-{% endhint %}
-
-![](../../.gitbook/assets/renterd-install-screenshots/renterd-success.png)
-
-Enter the API `password` you created in your `renterd.yml` to unlock the `renterd` web UI.
+![](../../.gitbook/assets/renterd-install-screenshots/macos/10-renterd-webui.png)
 
 {% hint style="success" %}
 Congratulations, you have successfully set up `renterd`.
@@ -221,72 +143,21 @@ Congratulations, you have successfully set up `renterd`.
 
 New versions of `renterd` are released regularly and contain bug fixes and performance improvements.
 
-**To update:**
+To upgrade your `renterd` to the newest version, make sure you have shut down `renterd` and then run the following:
 
-1. Stop `renterd` if it is running. This can be accomplished by pressing `ctrl+c` in the Terminal currently running `renterd`.
-
-2. Download and install the latest version of `renterd`.
-
-{% hint style="warning" %}
-Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
-{% endhint %}
-
-{% tabs %}
-{% tab title="AMD64" %}
 ```console
-curl -O https://sia.tech/downloads/latest/renterd_darwin_amd64.zip
-mkdir ~/renterd &&\
-unzip renterd_darwin_amd64.zip -d ~/renterd &&\
-rm -fr renterd_darwin_amd64.zip
+brew upgrade siafoundation/sia/renterd
 ```
-{% endtab %}
 
-{% tab title="ARM64" %}
+![](../../.gitbook/assets/renterd-install-screenshots/macos/11-renterd-upgrade.png)
+
+You can confirm you have upgraded to the latest version of `renterd` using the following command:
+
 ```console
-curl -O https://sia.tech/downloads/latest/renterd_darwin_arm64.zip
-mkdir ~/renterd &&\
-unzip renterd_darwin_arm64.zip -d ~/renterd &&\
-rm -fr renterd_darwin_arm64.zip
+renterd version
 ```
-{% endtab %}
 
-{% tab title="Zen AMD64" %}
-```console
-curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_amd64.zip
-mkdir ~/renterd_zen &&\
-unzip renterd_zen_darwin_amd64.zip -d ~/renterd_zen &&\
-rm -fr renterd_zen_darwin_amd64.zip
-```
-{% endtab %}
-
-{% tab title="Zen ARM64" %}
-```console
-curl -O https://sia.tech/downloads/latest/renterd_zen_darwin_arm64.zip
-mkdir ~/renterd_zen &&\
-unzip renterd_zen_darwin_arm64.zip -d ~/renterd_zen &&\
-rm -fr renterd_zen_darwin_arm64.zip
-```
-{% endtab %}
-{% endtabs %}
-
-3. Restart the `renterd` system service.
-{% tabs %}
-{% tab title="Mainnet" %}
-```console
-cd ~/renterd &&\
-./renterd
-```
-{% endtab %}
-
-{% tab title="Zen Testnet" %}
-```console
-cd ~/renterd_zen &&\
-./renterd
-```
-{% endtab %}
-{% endtabs %}
-
-![](../../.gitbook/assets/renterd-install-screenshots/macos/03-renterd-success.png)
+![](../../.gitbook/assets/renterd-install-screenshots/macos/12-renterd-version.png)
 
 {% hint style="success" %}
 Congratulations, you have successfully updated your version of `renterd`!

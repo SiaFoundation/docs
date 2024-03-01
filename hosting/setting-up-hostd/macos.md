@@ -123,7 +123,7 @@ Congratulations, you have successfully set up `hostd`.
 
 It is essential to keep your host up to date. New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
 
-**To upgrade:**
+To upgrade your `hostd` to the newest version, make sure you have shut down `hostd` and then run the following:
 
 ```console
 brew upgrade siafoundation/sia/hostd

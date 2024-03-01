@@ -92,19 +92,19 @@ cd ~/Library/Application\ Support/renterd
 renterd config
 ```
 
-Once the configuration wizard loads, you will first be asked to enter a seed phrase. If you do not already have one, type `seed` to generate a new one. For the purpose of this guide we will create a new seed phrase.
+Once the configuration wizard loads, you will first be asked to enter a seed phrase. If you do not already have one, type `seed` to generate a new one. For the purpose of this guide, we will create a new seed phrase.
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/03-renterd-config-seed.png)
 
-Next you will be asked to create an admin password. This will be used to unlock the `renterd` web UI.
+Next, you will be asked to create an admin password. This will be used to unlock the `renterd` web UI.
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/04-renterd-config-password.png)
 
-You will now be asked if you would like to configure `renterd`'s S3 settings. If you do not intend to use S3 you can type `no` to skip this step. For the purpose of this guide however, we will type `yes` and configure the S3 endpoint.
+You will now be asked if you would like to configure `renterd`'s S3 settings. If you do not intend to use S3, you can type `no` to skip this step. For the purpose of this guide, however, we will type `yes` and configure the S3 endpoint.
 
-![](../../.gitbook/assets/renterd-install-screenshots/macos/05-renterd-config-S3.png)
+![](../../.gitbook/assets/renterd-install-screenshots/macos/05-renterd-config-s3.png)
 
-Next you will be asked to configure the S3 address. If you would like to use something other than the default, you can enter it now. Otherwise hit enter to use the default port `8080`.
+Next, you will be asked to configure the S3 address. If you would like to use something other than the default, you can enter it now. Otherwise, hit enter to use the default port `8080`.
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/06-renterd-config-s3-endpoint.png)
 
@@ -112,7 +112,7 @@ You will now be asked to generate a new key pair. Type `auto` and hit enter to h
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/07-renterd-config-s3-gen-keypair.png)
 
-Finally you will be asked if you would like to configure `renterd`'s advanced settings. Type `no` and hit enter to exit the configuration wizard.
+Finally, you will be asked if you would like to configure `renterd`'s advanced settings. Type `no` and hit enter to exit the configuration wizard.
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/08-renterd-config-advanced-settings.png)
 

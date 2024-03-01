@@ -38,7 +38,7 @@ To ensure you will not run into any issues with running `hostd` it is recommende
 	- macOS 13: Ventura (Rome)
 	- macOS 14: Sonoma (Sunburst)
 
-* **System Updates:** Ensure that your macOS version is up to date with the latest system updates, these updates can contain important security fixes and improvements.
+* **System Updates:** Ensure that your macOS version is up to date with the latest system updates. These updates can contain important security fixes and improvements.
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
   - A dual-core CPU
@@ -51,13 +51,11 @@ Press `CMD + Space` to open Spotlight search and open a `terminal`.
 
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/00-hostd-open-terminal.png)
 
-Once the Terminal loads, download and install `hostd` to your home folder.
-
 {% hint style="warning" %}
-Before you install `hostd`, you will need to install [Homebrew](https://brew.sh).
+Before you install `hostd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to easily install and upgrade `hostd`.
 {% endhint %}
 
-Next use `brew` to install `hostd`:
+Once the Terminal loads, use `brew` to install `hostd`:
 
 ```console
 brew install siafoundation/sia/hostd
@@ -82,25 +80,25 @@ cd ~/Library/Application\ Support/hostd
 hostd config
 ```
 
-When the configuration wizard loads, you will be asked to verify the location of your data directory. If you would like to change this, you can do so now. Otherwise type `no` to keep the default.
+When the configuration wizard loads, you will be asked to verify the location of your data directory. If you would like to change this, you can do so now. Otherwise, type `no` to keep the default.
 
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/02-hostd-data-dir.png)
 
-Next you will be asked to enter a seed phrase. If you already have one that you would like to use, you can enter it now. Otherwise you can type `seed` to generate a new one. For this guide we will generate a new seed.
+Next, you will be asked to enter a seed phrase. If you already have one that you would like to use, you can enter it now. Otherwise, you can type `seed` to generate a new one. For the purpose of this guide, we will generate a new seed.
 
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/03-hostd-generate-seed.png)
 
-Next you will be prompted to enter a admin password. This is used to unlock the `hostd` web UI.
+Next, you will be prompted to enter an admin password. This is used to unlock the `hostd` web UI.
 
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/04-hostd-admin-password.png)
 
-Finally you will be asked if you want to configure advanced settings for `hostd`. Type `no` and hit enter to exit the configuration wizard.
+Finally, you will be asked if you want to configure advanced settings for `hostd`. Type `no` and hit enter to exit the configuration wizard.
 
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/05-hostd-advanced-settings.png)
 
 ## Running `hostd`
 
-Now that you have `hostd` successfully installed and configured it is time to run it. Use the following command to start `hostd`:
+Now that you have `hostd` successfully installed and configured, it is time to run it. Use the following command to start `hostd`:
 
 ```console
 cd ~/Library/Application\ Support/hostd
@@ -112,7 +110,7 @@ hostd
 Once `hostd` has successfully started, the web UI should automatically open in your web browser.
 
 {% hint style="info" %}
-If the `hostd` web UI does not open. You can access it by open your browser and going to [http://localhost:9980](http://localhost:9980/).
+If the `hostd` web UI does not open. You can access it by opening your browser and going to [http://localhost:9980](http://localhost:9980/).
 {% endhint %}
 
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/07-hostd-webui.png)
@@ -133,7 +131,11 @@ brew upgrade siafoundation/sia/hostd
 
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/08-hostd-upgrade.png)
 
-You can confirm you have upgrade to the latest version using `hostd version`.
+You can confirm you have upgraded to the latest version using the following command:
+
+```console
+hostd version
+```
 
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/09-hostd-version.png)
 

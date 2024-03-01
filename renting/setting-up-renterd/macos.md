@@ -66,10 +66,6 @@ Once the Terminal loads, download and install `renterd` to your home folder.
 Before installing `renterd` you will first need to have [Homebrew](https://brew.sh/) installed on your system.
 {% endhint %}
 
-{% hint style="warning" %}
-Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
-{% endhint %}
-
 ```console
 brew install siafoundation/sia/renterd
 ```
@@ -77,9 +73,11 @@ brew install siafoundation/sia/renterd
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/01-renterd-brew-install.png)
 
 To confirm `renterd` has been installed correctly run the following:
-```
+
+```console
 renterd version
 ``` 
+![](../../.gitbook/assets/renterd-install-screenshots/macos/12-renterd-version.png)
 
 ---
 
@@ -89,7 +87,7 @@ Once you have `renterd` installed, you can now use the built in configuration wi
 
 Use the following command to create this folder and run the configuration wizard.
 
-```
+```console
 mkdir ~/Library/Application\ Support/renterd &&\
 cd ~/Library/Application\ Support/renterd &&\
 renterd config
@@ -98,8 +96,8 @@ renterd config
 
 Once the configuration wizard loads, you will be asked to enter your seed phrase. If you do not have a seed phrase, type in `seed` to generate a new one.
 
-{% hint style="warning" %}
-Please note that for security reasons, you will not see anything you type when prompt for your seed.
+{% hint style="info" %}
+Please note that for security reasons, yoou will not see anything when you type in your seed phrase or unlock password. Press enter after typing each one.
 {% endhint %}
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/03-renterd-config-seed.png)
@@ -156,15 +154,19 @@ New versions of `renterd` are released regularly and contain bug fixes and perfo
 
 **To update:**
 
-```
+```console
 brew upgrade siafoundation/sia/renterd
 ```
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/11-renterd-upgrade.png)
 
-Once the upgrade has completed, run `renterd version` to confirm it has been upgraded successfully.
+Once the upgrade has completed, run the following to confirm it has been upgraded successfully.
 
-![](../../.gitbook/assets/renterd-install-screenshots/macos/12-renterd-confirm-upgrade.png)
+```console
+renterd version
+`````````
+
+![](../../.gitbook/assets/renterd-install-screenshots/macos/12-renterd-version.png)
 
 {% hint style="success" %}
 Congratulations, you have successfully updated your version of `renterd`!

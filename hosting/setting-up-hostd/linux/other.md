@@ -49,39 +49,39 @@ Download the latest version of `hostd` for your operating system from the [offic
 
 1. Open a terminal and download the latest version of `hostd` for your operating system.
 
-    {% tabs %}
-    {% tab title="AMD64" %}
-    ```console
-    wget https://sia.tech/downloads/latest/hostd_linux_amd64.zip
-    ```
-    {% endtab %}
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/hostd_linux_amd64.zip
+```
+{% endtab %}
 
-    {% tab title="ARM64" %}
-    ```console
-    wget https://sia.tech/downloads/latest/hostd_linux_arm64.zip
-    ```
-    {% endtab %}
-    {% endtabs %}
+{% tab title="ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/hostd_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
 
 2. Now that we have downloaded `hostd`, we can unzip and extract the `hostd` binary to our `/usr/local/bin` directory
 
-    {% tabs %}
-    {% tab title="AMD64" %}
-    ```console
-    unzip -j hostd_linux_amd64.zip hostd &&\
-    sudo mv -t /usr/local/bin hostd &&\
-    rm -rf hostd_linux_amd64.zip
-    ```
-    {% endtab %}
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+unzip -j hostd_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_linux_amd64.zip
+```
+{% endtab %}
 
-    {% tab title="ARM64" %}
-    ```console
-    unzip -j hostd_linux_amd64.zip hostd &&\
-    sudo mv -t /usr/local/bin hostd &&\
-    rm -rf hostd_linux_arm64.zip
-    ```
-    {% endtab %}
-    {% endtabs %}
+{% tab title="ARM64" %}
+```console
+unzip -j hostd_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
 
 3. Create a new folder called `hostd`. This will hold all the runtime files `hostd` generates and uses.
 
@@ -138,38 +138,38 @@ To update:
 
 1. Stop `hostd`.
 2. Download the latest version of `hostd`.
-    {% tabs %}
-    {% tab title="AMD64" %}
-    ```console
-    wget https://sia.tech/downloads/latest/hostd_linux_amd64.zip
-    ```
-    {% endtab %}
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+wget https://sia.tech/downloads/latest/hostd_linux_amd64.zip
+```
+{% endtab %}
 
-    {% tab title="ARM64" %}
-    ```console
-    wget https://sia.tech/downloads/latest/hostd_linux_arm64.zip
-    ```
-    {% endtab %}
-    {% endtabs %}
+{% tab title="ARM64" %}
+```console
+wget https://sia.tech/downloads/latest/hostd_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
 
 3. Unzip and replace `hostd` with the new version.
-    {% tabs %}
-    {% tab title="AMD64" %}
-    ```console
-    unzip -j hostd_linux_amd64.zip hostd &&\
-    sudo mv -t /usr/local/bin hostd &&\
-    rm -rf hostd_linux_amd64.zip
-    ```
-    {% endtab %}
+{% tabs %}
+{% tab title="AMD64" %}
+```console
+unzip -j hostd_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_linux_amd64.zip
+```
+{% endtab %}
 
-    {% tab title="ARM64" %}
-    ```console
-    unzip -j hostd_linux_amd64.zip hostd &&\
-    sudo mv -t /usr/local/bin hostd &&\
-    rm -rf hostd_linux_arm64.zip
-    ```
-    {% endtab %}
-    {% endtabs %}
+{% tab title="ARM64" %}
+```console
+unzip -j hostd_linux_amd64.zip hostd &&\
+sudo mv -t /usr/local/bin hostd &&\
+rm -rf hostd_linux_arm64.zip
+```
+{% endtab %}
+{% endtabs %}
 
 4. Start `hostd`.
     ```console

@@ -45,9 +45,9 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 
 ## Install `hostd`
 
-1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Linux version of `hostd`.
+Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/software/hostd). For this guide, we'll be downloading the Linux version of `hostd`.
 
-    Open the Terminal Emulator and run the following command:
+1. Open a terminal and download the latest version of `hostd` for your operating system.
 
     {% tabs %}
     {% tab title="AMD64" %}

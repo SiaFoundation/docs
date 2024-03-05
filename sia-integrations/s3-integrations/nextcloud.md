@@ -27,7 +27,7 @@ Nextcloud is an open-source content collaboration platform. It’s like your own
 This guide requires that you have a working installation of `renterd`. If you have not already installed `renterd`, you will need to do so before continuing.
 
 {% hint style="warning" %}
-Make sure to configure S3 when installing `renterd` as this will be required later on.
+Make sure to configure S3 when installing `renterd`, as this will be required later on.
 {% endhint %}
 
 {% embed url="https://docs.sia.tech/v/current/renting/setting-up-renterd" %}
@@ -63,7 +63,7 @@ Now, go to “Administration settings” from the same dropdown menu as before. 
 
 ![](../../.gitbook/assets/nextcloud-s3-integration/03-administration.png)
 
-Select “Amazon S3” and give your folder a friendly name like “Sia”. For “Authentication” select “Access key”. Fill in the bucket “default”, the hostname of your renterd instance (e.g., localhost), and the port “8080” (unless you changed the default port). Also, make sure to tick “Enable Path Style” and fill in your access key information. It’s the same as the one you specified when starting renterd. If you want to give all your Nextcloud users access to mount that folder, select “All users” as well. Finally, click the check mark on the right. If everything was configured correctly, a green check mark should appear on the left.
+Select “Amazon S3” and give your folder a friendly name like “Sia”. For “Authentication”, select “Access key”. Fill in the bucket “default”, the hostname of your renterd instance (e.g., localhost), and the port “8080” (unless you changed the default port). Also, make sure to tick “Enable Path Style” and fill in your access key information. It’s the same as the one you specified when starting renterd. If you want to give all your Nextcloud users access to mount that folder, select “All users” as well. Finally, click the check mark on the right. If everything was configured correctly, a green check mark should appear on the left.
 
 ![](../../.gitbook/assets/nextcloud-s3-integration/04-bucket-configuration.png)
 

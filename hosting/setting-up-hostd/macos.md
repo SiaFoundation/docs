@@ -31,7 +31,7 @@ This guide will walk you through setting up `hostd` on macOS. At the end of this
 
 To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
 
-* **Network Access:** `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
+* **Network Access:** `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9983` so `hostd` can properly communicate with the network and renters.
 
 * **Operating System Compatibility:** `hostd` is supported on the following macOS versions:
 	- macOS 12: Monterey (Star)
@@ -44,6 +44,8 @@ To ensure you will not run into any issues with running `hostd` it is recommende
   - A quad-core CPU
   - 8GB of RAM
   - An SSD with at least 128GB of free space.
+ 
+* **Software Requirements:** Before installing `hostd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to install and upgrade `hostd` easily.
 
 ## Installing `hostd`
 
@@ -52,7 +54,7 @@ Press `CMD + Space` to open Spotlight search and open a `terminal`.
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/00-hostd-open-terminal.png)
 
 {% hint style="warning" %}
-Before you install `hostd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to easily install and upgrade `hostd`.
+Before you install `hostd`, make sure you have the [Homebrew](https://brew.sh) package manager installed.
 {% endhint %}
 
 Once the Terminal loads, use `brew` to install `hostd`:
@@ -75,8 +77,8 @@ hostd version
 Now that you have `hostd` installed, you will need to create a seed phrase and admin password. To launch the built-in configuration wizard, run the following:
 
 ```console
-mkdir ~/Library/Application\ Support/hostd
-cd ~/Library/Application\ Support/hostd
+mkdir "~/Library/Application Support/hostd"
+cd "~/Library/Application Support/hostd"
 hostd config
 ```
 
@@ -101,7 +103,7 @@ Finally, you will be asked if you want to configure advanced settings for `hostd
 Now that you have `hostd` successfully installed and configured, it is time to run it. Use the following command to start `hostd`:
 
 ```console
-cd ~/Library/Application\ Support/hostd
+cd "~/Library/Application Support/hostd"
 hostd
 ```
 

@@ -33,6 +33,7 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 
   * **x86\_64** - `Linux AMD64`
   * **aarch64** - `Linux ARM64`
+
 * **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 * **Hardware Requirements:** Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup, such as:
@@ -95,15 +96,10 @@ rm -rf hostd_linux_arm64.zip
 `hostd` uses BIP-39 12-word recovery phrases. It does not support legacy 28/29-word `siad` seeds.
 {% endhint %}
 
-1. Before running the `hostd` configuration wizard, make sure to `cd` into the `hostd` runtime folder you created in the last section.
+1. Before running the `hostd` configuration wizard, make sure to `cd` into the `hostd` runtime folder you created in the last section. Then run the `hostd` configuration wizard. This will generate a `hostd.yml` file that is used by `hostd` on start-up.
 
     ```console
     cd /path/to/hostd/folder
-    ```
-
-2. Next, run the `hostd` configuration wizard. This will generate a `hostd.yml` file that is used by `hostd` on start-up.
-
-    ```console
     hostd config
     ```
 
@@ -112,6 +108,7 @@ rm -rf hostd_linux_arm64.zip
 1. Once you have completed the configuration wizard, you can now start `hostd`.
 
     ```console
+    cd /path/to/hostd/folder
     hostd
     ```
 
@@ -172,6 +169,7 @@ rm -rf hostd_linux_arm64.zip
 
 4. Start `hostd`.
     ```console
+    cd /path/to/hostd/folder
     hostd
     ```
 

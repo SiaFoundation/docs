@@ -31,7 +31,7 @@ This guide will walk you through setting up `renterd` on macOS. At the end of th
 To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
 
 * **Network Access:**
-  `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
+  `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9983` so `renterd` can properly communicate with the network and renters.
 
 * **Operating System Compatibility:**
   `renterd` is supported on the following macOS versions:
@@ -44,9 +44,11 @@ To ensure you will not run into any issues with running `renterd` it is recommen
 * **Hardware Requirements:**
   A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
 
-  - A dual-core CPU
-  - 16GB of RAM
+  - A quad-core CPU
+  - 8 GB of RAM
   - An SSD with at least 128GB of free space.
+ 
+* **Software Requirements:** Before installing `renterd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to install and upgrade `renterd` easily.
 
 {% hint style="warning" %}
 To ensure proper functionality, we are recommending 16GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
@@ -61,7 +63,7 @@ Press `CMD + Space` to open Spotlight search and open a `terminal`.
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/00-renterd-open-terminal.png)
 
 {% hint style="warning" %}
-Before you install `renterd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to easily install and upgrade `renterd`.
+Before you install `renterd`, make sure you have the [Homebrew](https://brew.sh) package manager installed.
 {% endhint %}
 
 Once the Terminal loads, use `brew` to install `renterd`:
@@ -87,8 +89,8 @@ renterd version
 Now that you have `renterd` installed, you will need to create a seed phrase and admin password. To launch the built-in configuration wizard, run the following:
 
 ```console
-mkdir ~/Library/Application\ Support/renterd
-cd ~/Library/Application\ Support/renterd
+mkdir "~/Library/Application Support/renterd"
+cd "~/Library/Application Support/renterd"
 renterd config
 ```
 
@@ -123,7 +125,7 @@ Finally, you will be asked if you would like to configure `renterd`'s advanced s
 Run the following command to start `renterd`.
 
 ```console
-cd ~/Library/Application\ Support/renterd
+cd "~/Library/Application Support/renterd"
 renterd
 ```
 

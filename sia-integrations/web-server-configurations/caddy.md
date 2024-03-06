@@ -122,17 +122,13 @@ yourdomain.com {
 }
 ```
 
-The `reverse_proxy` directive is set to `http://localhost:9885`, directing traffic to the `renterd` S3 API running locally on port 9985. If you are setting up a reverse proxy for something else, change the port number as needed.
+The `reverse_proxy` directive is set to `http://localhost:9885`, directing traffic to the `renterd` S3 API running locally on port 9985. If you set up a reverse proxy for something else, change the port number as needed.
 
 Once you have finished, save your `Caddyfile` and exit the editor. Then, run the following command to apply the new configuration.
 
 ```console
 caddy reload
 ```
-
-{% hint style="info" %}
-For more detailed Caddy configurations, visit our [Sia Starter Examples Repository](https://github.com/SiaFoundation/sia-starter-examples/)
-{% endhint %}
 
 ## Start Caddy
 

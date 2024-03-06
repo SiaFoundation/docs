@@ -50,6 +50,7 @@ After Caddy has finished installing, close `powershell` and open a new one to lo
 
 {% endtab %}
 {% tab title="macOS" %}
+
 Press `CMD + Space` to open Spotlight search and open a `terminal`.
 
 ![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-01.png)
@@ -71,6 +72,7 @@ curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo 
 sudo apt update
 sudo apt install caddy
 ```
+
 {% endtab %}
 {% endtabs %}
 
@@ -80,18 +82,13 @@ Caddy should now be installed. To double-check that it is, you can use the follo
 caddy version
 ```
 
-If Caddy is not running, use the following command to start the service and enable it to run on startup:
-
-
-{% endtab %}
-{% endtabs %}
-
 ## Step 2: Configure `Caddyfile`
 
 Now that Caddy is running as a service. You will need to create a new file named `Caddyfile` and configure a `reverse_proxy` using our domain name.
 
 {% tabs %}
 {% tab title="Windows" %}
+
 ```powershell
 New-Item "$env:USERPROFILE\Caddyfile" -type file ;`
 Start-Process 'C:\WINDOWS\system32\notepad.exe' "$env:USERPROFILE\Caddyfile"
@@ -102,14 +99,18 @@ This guide will create the `Caddyfile` under your home directory. If you want to
 
 {% endtab %}
 {% tab title="macOS" %}
+
 ```console
 nano ~/Caddyfile
 ```
+
 {% endtab %}
 {% tab title="Linux" %}
+
 ```console
 sudo nano /etc/caddy/Caddyfile
 ```
+
 {% endtab %}
 {% endtabs %}
 
@@ -148,13 +149,19 @@ If you created your `Caddyfile` in a location other than your home directory, re
 
 {% endtab %}
 {% tab title="macOS" %}
+
+```console
 caddy run --config "~/Caddyfile"
+```
+
 {% endtab %}
 {% tab title="Linux" %}
+
 ```console
 sudo systemctl enable --now caddy
 sudo systemctl start caddy
 ```
+
 {% endtab %}
 {% endtabs %}
 

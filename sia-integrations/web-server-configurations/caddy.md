@@ -36,17 +36,31 @@ A reverse proxy is a server that sits in front of one or more web servers, redir
 {% tabs %}
 {% tab title="Windows" %}
 
+Press `windows key + R` to open the run dialog. Type in `powershell` and press `OK` to open a Terminal.
+
+![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-win-01.png)
+
+Once the Terminal loads, run the following command to install `Caddy`.
+
 ```console
 curl.exe https://webi.ms/caddy | powershell
 ```
 
+After Caddy has finished installing, close `powershell` and open a new one to load the new environmental variables.
+
 {% endtab %}
 {% tab title="macOS" %}
+Press `CMD + Space` to open Spotlight search and open a `terminal`.
+
+![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-01.png)
+
+Once the Terminal loads, run the following command to install `caddy`.
 
 ```console
 curl -sS https://webi.sh/caddy | sh
 ```
 
+After Caddy has finished installing, close the `terminal` and open a new one to load the new environmental variables.
 {% endtab %}
 {% tab title="Linux" %}
 
@@ -60,40 +74,37 @@ sudo apt install caddy
 {% endtab %}
 {% endtabs %}
 
-Caddy should now be running. To double-check that it is, you can use the following command:
-
-{% tabs %}
-{% tab title="Windows" %}
-Windows
-{% endtab %}
-{% tab title="macOS" %}
-macOS
-{% endtab %}
-{% tab title="Linux" %}
+Caddy should now be installed. To double-check that it is, you can use the following command:
 
 ```console
-sudo systemctl status caddy
+caddy version
 ```
 
 If Caddy is not running, use the following command to start the service and enable it to run on startup:
 
-```console
-sudo systemctl enable --now caddy
-sudo systemctl start caddy
-```
+
 {% endtab %}
 {% endtabs %}
 
 ## Step 2: Configure `Caddyfile`
 
-Now that Caddy is running as a service. We will edit our `Caddyfile` and configure a `reverse_proxy` using our domain name.
+Now that Caddy is running as a service. You will need to create a new file named `Caddyfile` and configure a `reverse_proxy` using our domain name.
 
 {% tabs %}
 {% tab title="Windows" %}
+```powershell
+New-Item "$env:USERPROFILE\Caddyfile" -type file ;`
+Start-Process 'C:\WINDOWS\system32\notepad.exe' "$env:USERPROFILE\Caddyfile"
+```
+{% hint style="info" %}
+This guide will create the `Caddyfile` under your home directory. If you want to create your `Caddyfile` in a different location, replace `$env:USERPROFILE` with the directory path you want to use.
+{% endhint %}
 
 {% endtab %}
 {% tab title="macOS" %}
-
+```console
+nano ~/Caddyfile
+```
 {% endtab %}
 {% tab title="Linux" %}
 ```console
@@ -102,34 +113,47 @@ sudo nano /etc/caddy/Caddyfile
 {% endtab %}
 {% endtabs %}
 
-Once the editor loads, add the following and replace `your.domain.com` with your actual domain name.
+Once the editor loads, copy and paste the following and replace `yourdomain.com` with your actual domain name.
 
 ```console
-your.domain.com {
+yourdomain.com {
     reverse_proxy http://localhost:9985
 }
 ```
 
-{% hint style=”info” %}
-The `reverse_proxy` directive is set to `http://localhost:9885`, directing traffic to the `renterd` S3 API running locally on port 9985.
-{% endhint %}
+The `reverse_proxy` directive is set to `http://localhost:9885`, directing traffic to the `renterd` S3 API running locally on port 9985. If you are setting up a reverse proxy for something else, change the port number as needed.
 
 Once you have finished, save your `Caddyfile` and exit the editor. Then, run the following command to apply the new configuration.
+
+```console
+caddy reload
+```
 
 {% hint style="info" %}
 For more detailed Caddy configurations, visit our [Sia Starter Examples Repository](https://github.com/SiaFoundation/sia-starter-examples/)
 {% endhint %}
 
+## Start Caddy
+
 {% tabs %}
 {% tab title="Windows" %}
 
+```powershell
+caddy run --config "$env:USERPROFILE\Caddyfile"
+```
+
+{% hint style="info" %}
+If you created your `Caddyfile` in a location other than your home directory, replace `$env:USERPROFILE` with the directory path to your Caddyfile.
+{% endhint %}
+
 {% endtab %}
 {% tab title="macOS" %}
-
+caddy run --config "~/Caddyfile"
 {% endtab %}
 {% tab title="Linux" %}
 ```console
-caddy reload
+sudo systemctl enable --now caddy
+sudo systemctl start caddy
 ```
 {% endtab %}
 {% endtabs %}

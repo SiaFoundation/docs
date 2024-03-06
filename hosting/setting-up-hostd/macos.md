@@ -23,140 +23,124 @@ layout:
 This guide will walk you through setting up `hostd` on macOS. At the end of this guide, you should have the following:
 
 * Installed Sia `hostd` software
-* Functional `hostd` Node
 * Created a `hostd` wallet
+
+---
 
 ## Pre-requisites
 
-* **Network Access:** `hostd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your macOS version is compatible with the `hostd` software. Check [releases](../../miscellaneous/releases.md) supported macOS versions.
-* **System Updates:** Ensure that your macOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
+To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
+
+* **Network Access:** `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9983` so `hostd` can properly communicate with the network and renters.
+
+* **Operating System Compatibility:** `hostd` is supported on the following macOS versions:
+	- macOS 12: Monterey (Star)
+	- macOS 13: Ventura (Rome)
+	- macOS 14: Sonoma (Sunburst)
+
+* **System Updates:** Ensure that your macOS version is up to date with the latest system updates. These updates can contain important security fixes and improvements.
+
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
+  - A quad-core CPU
+  - 8GB of RAM
+  - An SSD with at least 128GB of free space.
+ 
+* **Software Requirements:** Before installing `hostd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to install and upgrade `hostd` easily.
+
+## Installing `hostd`
+
+Press `CMD + Space` to open Spotlight search and open a `terminal`.
+
+![](../../.gitbook/assets/hostd-install-screenshots/macos/00-hostd-open-terminal.png)
 
 {% hint style="warning" %}
-Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup as such
-
-* A Mac that supports macOS 12 (Monterey) or 13 (Ventura)
-* A quad-core CPU
-* 8GB of RAM
-* An SSD with at least 100GB of free space.
-* Additional storage space to rent out
+Before you install `hostd`, make sure you have the [Homebrew](https://brew.sh) package manager installed.
 {% endhint %}
 
-## Getting `hostd`
+Once the Terminal loads, use `brew` to install `hostd`:
 
-{% hint style="warning" %}
-Remember to check which version to download to ensure it works correctly with your operating system. To do this, click on the Apple icon in the top left corner of your toolbar, then click **About This Mac**. If the processor/chips says:
-
-* **Intel** - `MacOS AMD64`
-* **M1 or M2** - `MacOS ARM64`
-{% endhint %}
-
-1. Download the latest version of `hostd` for your operating system from the [official website](https://sia.tech/host). For this guide, we'll be downloading the macOS version of `hostd` .
-2. Now that we have downloaded `hostd`, you may need to unzip it.
-   * Double-click the downloaded `hostd` zip file to unzip it if it hasn't done so automatically.
-   * Click on the newly unzipped directory.
-3. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `hostd` software. It is essential to store `hostd`'s metadata on an SSD. You will need at least 80GB of space available. 50GB for the current blockchain and additional space for volume metadata. Run the following command to do so:
-
-```bash
-mkdir ~/hostd
+```console
+brew install siafoundation/sia/hostd
 ```
+
+![](../../.gitbook/assets/hostd-install-screenshots/macos/01-hostd-brew-install.png)
+
+To confirm `hostd` has been installed, run the following:
+```console
+hostd version
+```
+
+![](../../.gitbook/assets/hostd-install-screenshots/macos/09-hostd-version.png)
+
+## Configuring `hostd`
+
+Now that you have `hostd` installed, you will need to create a seed phrase and admin password. To launch the built-in configuration wizard, run the following:
+
+```console
+mkdir "~/Library/Application Support/hostd"
+cd "~/Library/Application Support/hostd"
+hostd config
+```
+
+When the configuration wizard loads, you will be asked to verify the location of your data directory. If you would like to change this, you can do so now. Otherwise, type `no` to keep the default.
+
+![](../../.gitbook/assets/hostd-install-screenshots/macos/02-hostd-data-dir.png)
+
+Next, you will be asked to enter a seed phrase. If you already have one that you would like to use, you can enter it now. Otherwise, you can type `seed` to generate a new one. For the purpose of this guide, we will generate a new seed.
+
+![](../../.gitbook/assets/hostd-install-screenshots/macos/03-hostd-generate-seed.png)
+
+Next, you will be prompted to enter an admin password. This is used to unlock the `hostd` web UI.
+
+![](../../.gitbook/assets/hostd-install-screenshots/macos/04-hostd-admin-password.png)
+
+Finally, you will be asked if you want to configure advanced settings for `hostd`. Type `no` and hit enter to exit the configuration wizard.
+
+![](../../.gitbook/assets/hostd-install-screenshots/macos/05-hostd-advanced-settings.png)
 
 ## Running `hostd`
 
-1. Click the `hostd` in the unzipped directory to start `hostd`.
+Now that you have `hostd` successfully installed and configured, it is time to run it. Use the following command to start `hostd`:
 
-{% hint style="warning" %}
-You may encounter a warning stating **Your security settings only allow installation of apps from the App Store and identified developers**.&#x20;
+```console
+cd "~/Library/Application Support/hostd"
+hostd
+```
 
-To fix this issue, click on the Apple icon in the top left corner of your toolbar, then click **System Settings**. Once your System Settings is open, go to **Privacy & Security** and scroll down to the Security section. You will see a message **"hostd" was blocked from use because the identity of the developer cannot be confirmed.** This is a false positive.
+![](../../.gitbook/assets/hostd-install-screenshots/macos/06-hostd-startup.png)
 
-Click **Open Anyway** and authenticate access either by your password or fingerprint.
-{% endhint %}
-
-You will be prompted to input both:
-
-* `password` - You choose this password, which can be anything you want. It will be used to unlock the `hostd` UI via your browser and API. This should be something easy to remember and at least 4 characters.
-* `seed phrase` - The seed phrase is the 12-word phrase. Type it carefully, with one space between each word, or copy and paste it.&#x20;
-
-If you do not have a seed phrase, type **seed** to generate one. A new 12-word recovery phrase will be generated, so please copy and store it in a safe place, as you will need this phrase to recover your wallet.&#x20;
-
-These values are not stored anywhere and will be requested every time you start `hostd`.
-
-{% hint style="warning" %}
-If you lose this phrase, you will lose access to your wallet and funds. [Read more](../../get-started-with-sia/the-importance-of-your-seed.md) about the importance of your seed.
-{% endhint %}
+Once `hostd` has successfully started, the web UI should automatically open in your web browser.
 
 {% hint style="info" %}
-You can also set the HOSTD`_SEED` and HOSTD`_API_PASSWORD` environment variables so you do not have to re-enter the values every time.
+If the `hostd` web UI does not open. You can access it by opening your browser and going to [http://localhost:9980](http://localhost:9980/).
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/running hostd and generating a seed mac.png" alt=""><figcaption><p>Running hostd and generating a seed</p></figcaption></figure>
-
-2. After entering your desired `password` and  `seed phrase`, `hostd` will start.
-
-<figure><img src="../../.gitbook/assets/starting hostd mac.png" alt=""><figcaption><p>Starting hostd</p></figcaption></figure>
-
-Your terminal will produce a range of different values you may not be familiar with, so feel free to check the tabs below to see what each of them is and why they are essential:
-
-{% tabs %}
-{% tab title="api" %}
-**api (Application Programming Interface) Component:**
-
-* "api" refers to the application programming interface, which allows different software components to communicate and interact with each other.
-* `Listening on 127.0.0.1:9980` indicates that the application's API component is actively waiting for incoming connections on the local loopback IP address `127.0.0.1` and the port `9980.`
-{% endtab %}
-
-{% tab title="p2p" %}
-**p2p (Peer-to-Peer) Component:**
-
-* "p2p" refers to the communication between different nodes or devices without relying on a central server.
-* `Listening on 127.0.0.1:9981` means that the application's p2p component is currently set to listen for incoming network connections on the local loopback IP address `127.0.0.1` (also known as `localhost`) and the port `9981`. Localhost refers to the current machine itself,
-{% endtab %}
-
-{% tab title="rhp2" %}
-**rhp2 (Remote Host Protocol - Version 2) Component:**&#x20;
-
-* "rhp2" stands for Remote Host Protocol - Version 2, which pertains to a communication protocol between remote hosts without the necessity of a central server.&#x20;
-* Being configured to listen on `127.0.0.1:9982` signifies that the application's rhp2 component is presently configured to accept incoming network connections on the local loopback IP address `127.0.0.1` (also recognized as `localhost`) and the port `9982.`
-{% endtab %}
-
-{% tab title="rhp3" %}
-**rhp3 (Remote Host Protocol - Version 3):**&#x20;
-
-* "rhp3" denotes using Remote Host Protocol - Version 3. This protocol allows remote hosts to communicate without relying on a centralized server.&#x20;
-* Listening on `127.0.0.1:9983` through TCP implies that the application's rhp3 component is actively awaiting incoming connections on the local loopback IP address `127.0.0.1` and the port `9983` using the TCP protocol.
-{% endtab %}
-
-{% tab title="rhp3" %}
-**rhp3 WebSocket (Remote Host Protocol - Version 3) over WebSocket**:&#x20;
-
-* "rhp3 WebSocket" represents the implementation of Remote Host Protocol - Version 3 over the WebSocket communication protocol. This setup facilitates communication between remote hosts, eliminating the need for a central server.&#x20;
-* Operating on `127.0.0.1:9984` via WebSocket designates that the application's rhp3 component is actively ready to accept incoming connections on the local loopback IP address `127.0.0.1` and the port `9984` using the WebSocket protocol.
-{% endtab %}
-{% endtabs %}
-
-3. You can now access the `hostd` UI by opening a browser and going to `http://localhost:9980`.&#x20;
-
-{% hint style="warning" %}
-Remember to leave the terminal window open while `hostd` is running. If you close the terminal window, `hostd`will stop.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/host_5.png" alt=""><figcaption><p>hostd Login UI</p></figcaption></figure>
-
-Enter your `API password` you created in the previous step to unlock `hostd`.
+![](../../.gitbook/assets/hostd-install-screenshots/macos/07-hostd-webui.png)
 
 {% hint style="success" %}
-Congratulations on successfully setting up `hostd` and taking a significant step towards contributing your excess storage space to the Sia network.
+Congratulations, you have successfully set up `hostd`.
 {% endhint %}
 
-## Updating
+## Upgrading `hostd`
 
-It is essential to keep your host up. New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
+It is essential to keep your host up to date. New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
 
-To update:
+To upgrade your `hostd` to the newest version, make sure you have shut down `hostd` and then run the following:
 
-1. Download the latest version of `hostd` from [https://sia.tech/software/hostd](https://sia.tech/software/hostd)
-2. Stop the `hostd` service with `Cmd+C`.
-3. Unzip and replace `hostd` with the new version
-4. Restart `hostd`.
+```console
+brew upgrade siafoundation/sia/hostd
+```
 
+![](../../.gitbook/assets/hostd-install-screenshots/macos/08-hostd-upgrade.png)
+
+You can confirm you have upgraded to the latest version using the following command:
+
+```console
+hostd version
+```
+
+![](../../.gitbook/assets/hostd-install-screenshots/macos/09-hostd-version.png)
+
+{% hint style="success" %}
+Congratulations, you have successfully updated your version of `hostd`!
+{% endhint %}

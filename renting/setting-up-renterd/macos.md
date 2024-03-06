@@ -31,7 +31,7 @@ This guide will walk you through setting up `renterd` on macOS. At the end of th
 To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
 
 * **Network Access:**
-  `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9983` so `renterd` can properly communicate with the network and renters.
+  `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
 
 * **Operating System Compatibility:**
   `renterd` is supported on the following macOS versions:

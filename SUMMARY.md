@@ -60,6 +60,8 @@
 * [Sia Ledger Nano app with CLI](sia-integrations/using-the-sia-ledger-nano-app-cli.md)
 * [S3 Integrations](sia-integrations/s3-integrations/README.md)
   * [rclone](sia-integrations/s3-integrations/rclone.md)
+* [Webserver Configurations](sia-integrations/web-server-configurations/README.md)
+  * [Caddy](sia-integrations/web-server-configurations/caddy.md)
 
 ## Siafunds
 

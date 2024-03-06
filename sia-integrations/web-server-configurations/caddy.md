@@ -34,7 +34,7 @@ A reverse proxy is a server that sits in front of one or more web servers, redir
 ## Step 1: Download and install Caddy
 
 {% tabs %}
-{% tab title="Windows"}
+{% tab title="Windows" %}
 
 ```console
 curl.exe https://webi.ms/caddy | powershell
@@ -63,11 +63,11 @@ sudo apt install caddy
 Caddy should now be running. To double-check that it is, you can use the following command:
 
 {% tabs %}
-{% tab title="Windows"}
-
+{% tab title="Windows" %}
+Windows
 {% endtab %}
 {% tab title="macOS" %}
-
+macOS
 {% endtab %}
 {% tab title="Linux" %}
 
@@ -89,7 +89,7 @@ sudo systemctl start caddy
 Now that Caddy is running as a service. We will edit our `Caddyfile` and configure a `reverse_proxy` using our domain name.
 
 {% tabs %}
-{% tab title="Windows"}
+{% tab title="Windows" %}
 
 {% endtab %}
 {% tab title="macOS" %}
@@ -121,7 +121,7 @@ For more detailed Caddy configurations, visit our [Sia Starter Examples Reposito
 {% endhint %}
 
 {% tabs %}
-{% tab title="Windows"}
+{% tab title="Windows" %}
 
 {% endtab %}
 {% tab title="macOS" %}

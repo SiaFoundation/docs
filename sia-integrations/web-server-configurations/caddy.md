@@ -19,7 +19,7 @@ layout:
 
 # Caddy Webserver
 
-## What is `Caddy`?
+## What is Caddy?
 
 Caddy is a powerful, extensible platform used to serve web content securely over HTTPS. This guide will teach you how to install and configure Caddy to create an HTTPS connection to the `renterd` S3 API using your custom domain name.
 
@@ -118,17 +118,11 @@ Once the editor loads, copy and paste the following and replace `yourdomain.com`
 
 ```console
 yourdomain.com {
-    reverse_proxy http://localhost:9985
+    reverse_proxy http://localhost:8080
 }
 ```
 
-The `reverse_proxy` directive is set to `http://localhost:9885`, directing traffic to the `renterd` S3 API running locally on port 9985. If you set up a reverse proxy for something else, change the port number as needed.
-
-Once you have finished, save your `Caddyfile` and exit the editor. Then, run the following command to apply the new configuration.
-
-```console
-caddy reload
-```
+The `reverse_proxy` directive is set to `http://localhost:8080`, directing traffic to the `renterd` S3 API running locally on port 8080. If you are setting up a reverse proxy for something else, such as the `renterd` web UI, change the port number as needed.
 
 ## Start Caddy
 

@@ -64,6 +64,13 @@ curl -sS https://webi.sh/caddy | sh
 After Caddy has finished installing, close the `terminal` and open a new one to load the new environmental variables.
 {% endtab %}
 {% tab title="Linux" %}
+Open a Terminal using `Crtl + Alt + T`.
+
+{% hint style="info" %}
+If you cannot open a `Terminal` using the above method, try one of the other methods [listed here](https://www.geeksforgeeks.org/how-to-open-terminal-in-linux/).
+{% endhint %}
+
+Once the Terminal loads, run the following command to download and install the latest version of `caddy`.
 
 ```console
 sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl

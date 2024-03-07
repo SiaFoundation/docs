@@ -29,7 +29,7 @@ A reverse proxy is a server that sits in front of one or more web servers, redir
 
 ## **Pre-Requisites**
 
-- A registered domain name with a DNS `A` record pointing to your server’s IP address.
+- A registered domain name with a DNS `A` record pointing to your machine's public IP address.
 
 ## Step 1: Download and install Caddy
 

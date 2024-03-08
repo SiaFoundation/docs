@@ -191,11 +191,7 @@ While there are many options for configuring your public gateway, Caddy offers a
 
 First, you need to download and install Caddy for your system.
 
-{% embed url="https://caddyserver.com/download" %}
-
-{% hint style="warning" %}
-Before configuring Caddy, you will need a domain name configured with an `A` record pointing to your `IP`.
-{% endhint %}
+{% embed url="../web-server-configurations/caddy.md" %}
 
 Next, you will need to configure your `Caddyfile` as follows.
 

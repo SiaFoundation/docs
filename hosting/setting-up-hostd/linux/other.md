@@ -160,7 +160,7 @@ rm -rf hostd_linux_amd64.zip
 
 {% tab title="ARM64" %}
 ```console
-unzip -j hostd_linux_amd64.zip hostd &&\
+unzip -j hostd_linux_arm64.zip hostd &&\
 sudo mv -t /usr/local/bin hostd &&\
 rm -rf hostd_linux_arm64.zip
 ```

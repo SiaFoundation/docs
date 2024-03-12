@@ -105,11 +105,24 @@ sudo systemctl enable --now hostd
 
 ## Updating `hostd`
 
-To update `hostd` to the latest version, you can run the following command:
+New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
 
+**To update:**
+
+1. Stop the `hostd` service.
+```sh
+sudo systemctl stop hostd
+```
+
+2. Upgrade `hostd` using the `apt` package manager.
 ```sh
 sudo apt update
 sudo apt upgrade hostd
+```
+
+3. Start `hostd` service.
+```sh
+sudo systemctl start hostd
 ```
 
 ## Next Steps

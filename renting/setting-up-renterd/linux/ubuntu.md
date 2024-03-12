@@ -127,7 +127,7 @@ sudo apt upgrade renterd
 
 3. Start `renterd` service.
 ```sh
-sudo systemctl stop renterd
+sudo systemctl start renterd
 ```
 
 ## Next Steps

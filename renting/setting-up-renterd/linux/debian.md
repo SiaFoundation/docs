@@ -42,11 +42,11 @@ To ensure you will not run into any issues with running `renterd` it is recommen
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
   - A dual-core CPU
-  - 16GB of RAM
+  - 8 GB of RAM
   - An SSD with at least 128GB of free space.
 
 {% hint style="warning" %}
-To ensure proper functionality, we are recommending 16GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
+To ensure proper functionality, we are recommending 8 GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
 {% endhint %}
 
 ## Install `renterd` Using the `apt` repository
@@ -118,11 +118,24 @@ sudo systemctl start renterd
 
 ## Updating `renterd`
 
-To update `renterd` to the latest version, you can run the following command:
+New versions of `renterd` are released regularly and contain bug fixes and performance improvements.
 
+**To update:**
+
+1. Stop the `renterd` service.
+```sh
+sudo systemctl stop renterd
+```
+
+2. Upgrade `renterd` using the `apt` package manager.
 ```sh
 sudo apt update
 sudo apt upgrade renterd
+```
+
+3. Start `renterd` service.
+```sh
+sudo systemctl start renterd
 ```
 
 ## Next Steps

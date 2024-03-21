@@ -41,7 +41,7 @@ To ensure you will not run into any issues with running `renterd` it is recommen
 * **System Updates:** Ensure that Debian is up to date with the latest system updates, these updates can contain important security fixes and improvements.
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
-  - A dual-core CPU
+  - A quad-core CPU
   - 8 GB of RAM
   - An SSD with at least 128GB of free space.
 
@@ -57,6 +57,7 @@ Before you install `renterd` for the first time on a new machine, you need to se
 
 ```sh
 sudo curl -fsSL https://linux.sia.tech/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/siafoundation.gpg
+sudo chmod 644 /usr/share/keyrings/siafoundation.gpg
 echo "deb [signed-by=/usr/share/keyrings/siafoundation.gpg] https://linux.sia.tech/debian $(. /etc/os-release && echo "$VERSION_CODENAME") main" | sudo tee /etc/apt/sources.list.d/siafoundation.list
 sudo apt update
 ```

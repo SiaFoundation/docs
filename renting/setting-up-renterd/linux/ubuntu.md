@@ -59,6 +59,7 @@ Before you install `renterd` for the first time on a new machine, you need to se
 
 ```sh
 sudo curl -fsSL https://linux.sia.tech/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/siafoundation.gpg
+sudo chmod 644 /usr/share/keyrings/siafoundation.gpg
 echo "deb [signed-by=/usr/share/keyrings/siafoundation.gpg] https://linux.sia.tech/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") main" | sudo tee /etc/apt/sources.list.d/siafoundation.list
 sudo apt update
 ```

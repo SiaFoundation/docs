@@ -77,7 +77,7 @@ Download and install the Jellyfin server for your system.
 
 {% embed url="https://jellyfin.org/downloads/server" %}
 
-## Step 5: Configuring `Jellyfin` Server
+## Step 5: Configure `Jellyfin` Server
 
 Once you have installed the Jellyfin Server for your system, you can visit `http://localhost:8096` in your browser and follow the onscreen setup wizard to complete setting up your Jellyfin Server.
 

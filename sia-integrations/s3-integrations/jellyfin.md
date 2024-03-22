@@ -63,10 +63,6 @@ Install rclone and configure a new S3 remote using renterd for your storage back
 
 {% embed url="https://docs.sia.tech/sia-integrations/s3-integrations/rclone" %}
 
-{% hint style="info" %}
-It is recommended to keep your media sorted under its own private bucket. This will help keep any unwanted media from being accidentally shared. For simplicity of this guide, I will be using the `/default` bucket.
-{% endhint %}
-
 ## Step 3: Uploading Media
 
 Once your renterd remote has been mounted on your system, you can begin uploading media. For the best experience, following the Jellyfin naming and sorting conventions is recommended. Doing so will help Jellyfin automatically obtain detailed metadata from various online databases. This includes cover art, media description, date, rating, related media, etc.

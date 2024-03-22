@@ -80,7 +80,7 @@ Create a `Username` and `Password`, then click “Next”.
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/03-jellyfin-user-setup.png)
 
-On the next screen, you will be asked to set up your media libraries. Since this guide uses two media types in our `renterd` bucket, TV Shows and movies, we will create a separate library for each. Click the “Add Media Library” card you see on the screen.
+On the next screen, you will be asked to set up your media libraries. Since this guide uses two media types in our `renterd` bucket, TV Shows and movies, we will create a separate library for each. Click the `Add Media Library` card you see on the screen.
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/04-jellyfin-media-libraries.png)
 

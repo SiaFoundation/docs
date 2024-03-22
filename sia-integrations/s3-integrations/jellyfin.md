@@ -63,7 +63,7 @@ Install rclone and configure a new S3 remote using renterd for your storage back
 
 {% embed url="https://docs.sia.tech/sia-integrations/s3-integrations/rclone" %}
 
-## Step 3: Uploading Media
+## Step 3: Upload media
 
 Once your renterd remote has been mounted on your system, you can begin uploading media. For the best experience, following the Jellyfin naming and sorting conventions is recommended. Doing so will help Jellyfin automatically obtain detailed metadata from various online databases. This includes cover art, media description, date, rating, related media, etc.
 
@@ -131,9 +131,13 @@ Congratulations! You have completed setting up your Jellyfin server. You can now
 
 ## Step 6: Accessing your media collection
 
-Once you have your Jellyfin server up and running, you can access your media collection from any device on your network using one of the available [Jellyfin Clients](https://jellyfin.org/downloads/clients/all).
+### Install a Jellyfin client
+
+Once you have your Jellyfin server up and running, you can access your media collection from any device on your network using one of the available [Jellyfin clients](https://jellyfin.org/downloads/clients/all).
 
 {% embed url="https://jellyfin.org/downloads/clients/all" %}
+
+### Connect to your Jellyfin server
 
 After you have installed a Jellyfin client on your device, run the client app and follow the onscreen instructions to connect to your Jellyfin server.
 

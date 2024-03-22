@@ -27,10 +27,9 @@ Jellyfin stands out as a free, open-source media server, offering a compelling a
 
 ### Software:
 
-* [**renterd**](https://sia.tech/software/renterd) — renterd is the next-generation Sia renter, which will function as a gateway to the Sia storage backend. With its powerful and user-friendly UI, we will use renterd to interface with the Sia network to store and retrieve our media files.
-* [**rclone**](https://rclone.org/) — Rclone is a command-line program for managing files on cloud storage, supporting over 70 cloud storage products, including S3 object stores. Rclone will be used to integrate renterd with Jellyfin, facilitating the transfer and management of media files between the Sia network and the Jellyfin server.
+* [**renterd**](https://sia.tech/software/renterd) — `renterd` is the next-generation Sia renter, which will function as a gateway to the Sia storage backend. With its powerful and user-friendly UI, we will use `renterd` to interface with the Sia network to store and retrieve our media files.
+* [**rclone**](https://rclone.org/) — Rclone is a command-line program for managing files on cloud storage, supporting over 70 cloud storage products, including S3 object stores. Rclone will be used to integrate `renterd` with Jellyfin, facilitating the transfer and management of media files between the Sia network and the Jellyfin server.
 * [**Jellyfin**](https://jellyfin.org/) — Jellyfin is a volunteer-built media solution that gives users control over their media content. Serving as the front-end media system, Jellyfin will allow us to stream and manage our media collection stored on the Sia network.
-* [**Caddy Server (Optional)**](https://caddyserver.com/) — Caddy sports a flexible and powerful HTTP reverse proxy, an on-line configuration API, and a robust, production-ready static file server, and it serves all sites over HTTPS by default with automatic TLS certificates.
 
 ### Recommended System Requirements:
 
@@ -59,15 +58,15 @@ Make sure to configure S3 when installing `renterd`, as this will be required la
 
 ## Step 2: Install `rclone`
 
-Install rclone and configure a new S3 remote using renterd for your storage backend.
+Install rclone and configure a new S3 remote using `renterd` for your storage backend.
 
 {% embed url="https://docs.sia.tech/sia-integrations/s3-integrations/rclone" %}
 
 ## Step 3: Upload media
 
-Once your renterd remote has been mounted on your system, you can begin uploading media. For the best experience, following the Jellyfin naming and sorting conventions is recommended. Doing so will help Jellyfin automatically obtain detailed metadata from various online databases. This includes cover art, media description, date, rating, related media, etc.
+Once your `renterd` remote has been mounted on your system, you can begin uploading media. For the best experience, following the Jellyfin naming and sorting conventions is recommended. Doing so will help Jellyfin automatically obtain detailed metadata from various online databases. This includes cover art, media description, date, rating, related media, etc.
 
-Below is an example of a properly structured file system following Jellyfin’s TV Shows and Movies standards.
+Below is an example of a properly structured file system following Jellyfin’s [TV Shows](https://jellyfin.org/docs/general/server/media/shows) and [Movies](https://jellyfin.org/docs/general/server/media/movies/) standards.
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/01-folder-structure.png)
 
@@ -79,7 +78,7 @@ Download and install the Jellyfin server for your system.
 
 ## Step 5: Configure `Jellyfin` Server
 
-Once you have installed the Jellyfin Server for your system, you can visit `http://localhost:8096` in your browser and follow the onscreen setup wizard to complete setting up your Jellyfin Server.
+Once you have installed the Jellyfin Server for your system, you can visit [`http://localhost:8096`](http://localhost:8096/) in your browser and follow the onscreen setup wizard to complete setting up your Jellyfin Server.
 
 Select your preferred display language and click “Next”.
 
@@ -89,7 +88,7 @@ Create a `Username` and `Password`, then click “Next”.
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/03-jellyfin-user-setup.png)
 
-On the next screen, you will be asked to set up your media libraries. Since this guide uses two media types in our renterd bucket, TV Shows and movies, we will create a separate library for each. Click the “Add Media Library” card you see on the screen.
+On the next screen, you will be asked to set up your media libraries. Since this guide uses two media types in our `renterd` bucket, TV Shows and movies, we will create a separate library for each. Click the “Add Media Library” card you see on the screen.
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/04-jellyfin-media-libraries.png)
 
@@ -97,7 +96,7 @@ You will next be asked to select a `Content type`. We will begin by adding our T
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/05-jellyfin-content-type.png)
 
-Next, enter a Display name and click the + to add your media.
+Next, enter a Display name and click the `+` to add your media.
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/06-jellyfin-add-folder.png)
 
@@ -117,10 +116,10 @@ Select the `Language` and `Country` you would like to use as the default for dow
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/10-jellyfin-language.png)
 
-Configure Remote Access to your Server. If you are planning on accessing your libraries from another device on your network, you will need to have `Allow remote connections to this server` selected. You can then access your libraries using a Jellyfin client and the local IP of your Jellyfin server. Click “Next” when ready.
+Configure Remote Access to your Server. If you are planning on accessing your libraries from another device on your network, you will need to have `Allow remote connections to this server` selected. Click “Next” when ready.
 
 {% hint style="warning" %}
-If you would like to access your Jellyfin libraries from outside your network, you should only do so using a secure `HTTPS` connection using [Caddy Server](https://caddyserver.com/).
+If you would like to access your Jellyfin libraries from outside your network, you should only do so using a secure `HTTPS` connection. This can be easily set up using [Caddy](https://caddyserver.com/).
 {% endhint %}
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/11-jellyfin-remote-access.png)
@@ -145,7 +144,7 @@ Click "Add Server".
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/13-jellyfin-client-connect.png)
 
-Type in your server’s IP address, followed by port `8096` then click "Connect".
+Type in your server’s IP address, followed by port `8096`, then click "Connect".
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/14-jellyfin-host-address.png)
 

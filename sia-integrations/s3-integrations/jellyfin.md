@@ -42,7 +42,7 @@ Jellyfin stands out as a free, open-source media server, offering a compelling a
 
 * **Network:** Stable, high-speed internet connection for effective streaming and data transfers.
 
-* Operating System:
+* **Operating System:**
 
   * Windows 10 or later
   * MacOS 12 or later

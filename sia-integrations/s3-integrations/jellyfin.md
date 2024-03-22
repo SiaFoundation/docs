@@ -23,15 +23,7 @@ layout:
 
 Jellyfin stands out as a free, open-source media server, offering a compelling alternative to proprietary platforms like Emby and Plex. It’s designed to give you complete control over organizing, managing, and streaming your media collection, which includes movies, TV shows, music, and photos. Its client/server model ensures cross-platform compatibility, enabling access to various devices, including desktops, smartphones, and smart TVs. The main allure of setting up Jellyfin is the autonomy it offers: you have complete control over your media, free from hidden fees or data tracking. Its user-friendly interface and robust community support make it highly customizable and continuously evolving. Jellyfin is ideal for creating a personal media hub, akin to having your own private Netflix, where your entire media library is organized and easily streamable to your chosen devices anywhere in the world. This combination of features makes Jellyfin not just a media server but a customizable, privacy-respecting solution that adapts to your growing media needs.
 
-## Pre-Requisites
-
-### Software:
-
-* [**renterd**](https://sia.tech/software/renterd) — `renterd` is the next-generation Sia renter, which will function as a gateway to the Sia storage backend. With its powerful and user-friendly UI, we will use `renterd` to interface with the Sia network to store and retrieve our media files.
-* [**rclone**](https://rclone.org/) — Rclone is a command-line program for managing files on cloud storage, supporting over 70 cloud storage products, including S3 object stores. Rclone will be used to integrate `renterd` with Jellyfin, facilitating the transfer and management of media files between the Sia network and the Jellyfin server.
-* [**Jellyfin**](https://jellyfin.org/) — Jellyfin is a volunteer-built media solution that gives users control over their media content. Serving as the front-end media system, Jellyfin will allow us to stream and manage our media collection stored on the Sia network.
-
-### Recommended System Requirements:
+## Recommended System Requirements:
 
 * **Processor:** A modern quad-core processor (Intel i5/i7 or equivalent AMD processor) or better.
 

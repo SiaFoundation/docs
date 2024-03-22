@@ -64,7 +64,7 @@ Install rclone and configure a new S3 remote using renterd for your storage back
 {% embed url="https://docs.sia.tech/sia-integrations/s3-integrations/rclone" %}
 
 {% hint style="info" %}
-It is recommended to keep your media sorted under its own private bucket. This will help keep any unwanted media from being accidentally shared. For simplicity of this guide, I will be using the /default bucket.
+It is recommended to keep your media sorted under its own private bucket. This will help keep any unwanted media from being accidentally shared. For simplicity of this guide, I will be using the `/default` bucket.
 {% endhint %}
 
 ## Step 3: Uploading Media
@@ -85,49 +85,49 @@ Download and install the Jellyfin server for your system.
 
 Once you have installed the Jellyfin Server for your system, you can visit `http://localhost:8096` in your browser and follow the onscreen setup wizard to complete setting up your Jellyfin Server.
 
-1. Select your preferred display language and click “Next”.
+Select your preferred display language and click “Next”.
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/02-jellyfin-welcome.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/02-jellyfin-welcome.png)
 
-2. Create a `Username` and `Password`, then click “Next”.
+Create a `Username` and `Password`, then click “Next”.
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/03-jellyfin-user-setup.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/03-jellyfin-user-setup.png)
 
-3. On the next screen, you will be asked to set up your media libraries. Since this guide uses two media types in our renterd bucket, TV Shows and movies, we will create a separate library for each. Click the “Add Media Library” card you see on the screen.
+On the next screen, you will be asked to set up your media libraries. Since this guide uses two media types in our renterd bucket, TV Shows and movies, we will create a separate library for each. Click the “Add Media Library” card you see on the screen.
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/04-jellyfin-media-libraries.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/04-jellyfin-media-libraries.png)
 
-4. You will next be asked to select a `Content type`. We will begin by adding our TV Shows first. Select shows from the drop-down menu.
+You will next be asked to select a `Content type`. We will begin by adding our TV Shows first. Select shows from the drop-down menu.
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/05-jellyfin-content-type.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/05-jellyfin-content-type.png)
 
-5. Next, enter a Display name and click the + to add your media.
+Next, enter a Display name and click the + to add your media.
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/06-jellyfin-add-folder.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/06-jellyfin-add-folder.png)
 
-6. Enter the folder path to where your TV Shows are stored on your mounted `renterd` remote and click “Ok”.
+Enter the folder path to where your TV Shows are stored on your mounted `renterd` remote and click “Ok”.
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/07-jellyfin-folder-path.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/07-jellyfin-folder-path.png)
 
-7. Finish configuring the rest of the `Library Settings` to your preferences, then click “Ok”.
+Finish configuring the rest of the `Library Settings` to your preferences, then click “Ok”.
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/08-jellyfin-library-settings.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/08-jellyfin-library-settings.png)
 
-8. You will now see your TV Shows added to your media libraries. Repeat the process to add your Movies library and any others you might have. Then click “Next”.
+You will now see your TV Shows added to your media libraries. Repeat the process to add your Movies library and any others you might have. Then click “Next”.
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/09-jellyfin-add-other-libraries.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/09-jellyfin-add-other-libraries.png)
 
-9. Select the `Language` and `Country` you would like to use as the default for downloading your library’s metadata. Then click “Next”.
+Select the `Language` and `Country` you would like to use as the default for downloading your library’s metadata. Then click “Next”.
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/10-jellyfin-language.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/10-jellyfin-language.png)
 
-10. Configure Remote Access to your Server. If you are planning on accessing your libraries from another device on your network, you will need to have `Allow remote connections to this server` selected. You can then access your libraries using a Jellyfin client and the local IP of your Jellyfin server. Click “Next” when ready.
+Configure Remote Access to your Server. If you are planning on accessing your libraries from another device on your network, you will need to have `Allow remote connections to this server` selected. You can then access your libraries using a Jellyfin client and the local IP of your Jellyfin server. Click “Next” when ready.
 
-    {% hint style="warning" %}
-    If you would like to access your Jellyfin libraries from outside of your network, you should only do so using a secure `HTTPS` connection using [Caddy Server](https://caddyserver.com/).
-    {% endhint %}
+{% hint style="warning" %}
+If you would like to access your Jellyfin libraries from outside of your network, you should only do so using a secure `HTTPS` connection using [Caddy Server](https://caddyserver.com/).
+{% endhint %}
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/11-jellyfin-remote-access.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/11-jellyfin-remote-access.png)
 
 11. Congratulations! You have completed setting up your Jellyfin server. You can now click “Finish” and log in using the account you created initially.
 
@@ -141,17 +141,17 @@ Once you have your Jellyfin server up and running, you can access your media col
 
 After you have installed a Jellyfin client on your device, run the client app and follow the onscreen instructions to connect to your Jellyfin server.
 
-1. Click "Add Server".
+Click "Add Server".
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/13-jellyfin-client-connect.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/13-jellyfin-client-connect.png)
 
-2. Type in your server’s IP address, followed by port `8096` then click "Connect".
+Type in your server’s IP address, followed by port `8096` then click "Connect".
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/14-jellyfin-host-address.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/14-jellyfin-host-address.png)
 
-3. Next, enter your username and password, then click "Sign In.
+Next, enter your `User` name and `Password`, then click "Sign In.
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/15-jellyfin-signin.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/15-jellyfin-signin.png)
 
 ## All done.
 

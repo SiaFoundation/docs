@@ -1,6 +1,6 @@
 ---
 description: >-
-  A step-by-step guide for setting up Nextcloud with renterd.
+  A step-by-step guide for setting up Jellyfin with renterd.
 layout:
   cover:
     visible: true
@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# Nextcloud
+# Jellyfin
 
 ## What is `Jellyfin`?
 
@@ -30,15 +30,15 @@ Jellyfin stands out as a free, open-source media server, offering a compelling a
 * [**renterd**](https://sia.tech/software/renterd) — renterd is the next-generation Sia renter, which will function as a gateway to the Sia storage backend. With its powerful and user-friendly UI, we will use renterd to interface with the Sia network to store and retrieve our media files.
 * [**rclone**](https://rclone.org/) — Rclone is a command-line program for managing files on cloud storage, supporting over 70 cloud storage products, including S3 object stores. Rclone will be used to integrate renterd with Jellyfin, facilitating the transfer and management of media files between the Sia network and the Jellyfin server.
 * [**Jellyfin**](https://jellyfin.org/) — Jellyfin is a volunteer-built media solution that gives users control over their media content. Serving as the front-end media system, Jellyfin will allow us to stream and manage our media collection stored on the Sia network.
-* [**Caddy Server (Optional)**](https://caddyserver.com/) — Caddy sports a flexible and powerful HTTP reverse proxy, an on-line configuration API, and a robust, production-ready static file server, and it serves all sites over HTTPS by default with automagic TLS certificates.
+* [**Caddy Server (Optional)**](https://caddyserver.com/) — Caddy sports a flexible and powerful HTTP reverse proxy, an on-line configuration API, and a robust, production-ready static file server, and it serves all sites over HTTPS by default with automatic TLS certificates.
 
 ### Recommended System Requirements:
 
 * **Processor:** A modern quad-core processor (Intel i5/i7 or equivalent AMD processor) or better.
 
-* **Memory:** 16GB of RAM or more if handling high-quality media or numerous streams.
+* **Memory:** 16GB of RAM. More if handling high-quality media or numerous streams.
 
-* **Storage:** SSD for the operating system and applications, with additional HDD or SSD storage for cached media files, depending on collection size.
+* **Storage:** SSD for the operating system and applications, with additional HDD or SSD storage for cached media files.
 
 * **Network:** Stable, high-speed internet connection for effective streaming and data transfers.
 
@@ -124,14 +124,14 @@ Select the `Language` and `Country` you would like to use as the default for dow
 Configure Remote Access to your Server. If you are planning on accessing your libraries from another device on your network, you will need to have `Allow remote connections to this server` selected. You can then access your libraries using a Jellyfin client and the local IP of your Jellyfin server. Click “Next” when ready.
 
 {% hint style="warning" %}
-If you would like to access your Jellyfin libraries from outside of your network, you should only do so using a secure `HTTPS` connection using [Caddy Server](https://caddyserver.com/).
+If you would like to access your Jellyfin libraries from outside your network, you should only do so using a secure `HTTPS` connection using [Caddy Server](https://caddyserver.com/).
 {% endhint %}
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/11-jellyfin-remote-access.png)
 
-11. Congratulations! You have completed setting up your Jellyfin server. You can now click “Finish” and log in using the account you created initially.
+Congratulations! You have completed setting up your Jellyfin server. You can now click “Finish” and log in using the account you created initially.
 
-    ![](../../.gitbook/assets/jellyfin-s3-integration/12-jellyfin-setup-complete.png)
+![](../../.gitbook/assets/jellyfin-s3-integration/12-jellyfin-setup-complete.png)
 
 ## Step 6: Accessing your media collection
 
@@ -155,6 +155,6 @@ Next, enter your `User` name and `Password`, then click "Sign In.
 
 ## All done.
 
-Congratulations! You have successfully set up Jellyfin to stream your media collection from the Sia network. 
+Congratulations! You have successfully set up Jellyfin to stream your media collection from the Sia network.
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/16-jellyfin-success.png)

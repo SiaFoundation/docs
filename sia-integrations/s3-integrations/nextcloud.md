@@ -27,10 +27,10 @@ Nextcloud is an open-source content collaboration platform. It’s like your own
 This guide requires that you have a working installation of `renterd`. If you have not already installed `renterd`, you will need to do so before continuing.
 
 {% hint style="warning" %}
-Make sure to configure S3 when installing `renterd`, as this will be required later on.
+Make sure to configure S3 when installing `renterd`, as this will be required later.
 {% endhint %}
 
-{% embed url="https://docs.sia.tech/v/current/renting/setting-up-renterd" %}
+{% embed url="https://docs.sia.tech/renting/setting-up-renterd" %}
 
 
 ## Step 2: Install `Nextcloud`

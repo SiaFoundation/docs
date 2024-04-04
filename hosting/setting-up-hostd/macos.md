@@ -77,8 +77,8 @@ hostd version
 Now that you have `hostd` installed, you will need to create a seed phrase and admin password. To launch the built-in configuration wizard, run the following:
 
 ```console
-mkdir "~/Library/Application Support/hostd"
-cd "~/Library/Application Support/hostd"
+mkdir "$HOME/Library/Application Support/hostd"
+cd "$HOME/Library/Application Support/hostd"
 hostd config
 ```
 
@@ -103,7 +103,7 @@ Finally, you will be asked if you want to configure advanced settings for `hostd
 Now that you have `hostd` successfully installed and configured, it is time to run it. Use the following command to start `hostd`:
 
 ```console
-cd "~/Library/Application Support/hostd"
+cd "$HOME/Library/Application Support/hostd"
 hostd
 ```
 

@@ -70,7 +70,6 @@
 
 ## Miscellaneous
 
-* [Releases](miscellaneous/releases.md)
 * [Brand Guidelines](miscellaneous/sia-brand-guidelines.md)
 * [Get Involved](miscellaneous/get-involved.md)
 * [Glossary](miscellaneous/glossary.md)

@@ -25,7 +25,7 @@ Welcome to the Sia Docs, your gateway to the remarkable world of decentralized c
 
 Our documentation aims to provide a comprehensive source of information and serve as a beacon of knowledge for anyone interested in harnessing the power of decentralized cloud storage.
 
-The information in these docs has been taken from several sources, primarily the previous Sia Support Center and community-driven sites like the [Sia Wiki](https://web.archive.org/web/20180921135627/https://siawiki.tech/index), [SiaStats](https://siastats.info), and [SiaSetup](https://siasetup.info), and we aim to educate our community about what Sia has to offer!
+The information in these docs has been taken from several sources, primarily the previous Sia Support Center and community-driven sites like the [Sia Docs](https://docs.sia.tech), [Sia API](https://api.sia.tech), and [SiaSetup](https://siasetup.info), and we aim to educate our community about what Sia has to offer!
 
 ## Submitting your edits
 
@@ -65,7 +65,7 @@ Toggle the **Preview** button to see how the markdown will be formatted on the G
 {% hint style="info" %}
 ### Further assistance
 
-If you can't find your answer here in our documentation, join the `#help` channel in the [Sia Discord](https://discord.com/invite/sia), where a vast community loves helping users with their issues.
+If you can't find your answer here in our documentation, join the `#help` channel in the [Sia Discord](https://sia.tech/discord), where a vast community loves helping users with their issues.
 
 You can also [send us an email.](mailto:hello@sia.tech) We'll respond as soon as we can.
 {% endhint %}

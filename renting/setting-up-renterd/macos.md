@@ -89,8 +89,8 @@ renterd version
 Now that you have `renterd` installed, you will need to create a seed phrase and admin password. To launch the built-in configuration wizard, run the following:
 
 ```console
-mkdir "~/Library/Application Support/renterd"
-cd "~/Library/Application Support/renterd"
+mkdir "$HOME/Library/Application Support/renterd"
+cd "$HOME/Library/Application Support/renterd"
 renterd config
 ```
 
@@ -125,7 +125,7 @@ Finally, you will be asked if you would like to configure `renterd`'s advanced s
 Run the following command to start `renterd`.
 
 ```console
-cd "~/Library/Application Support/renterd"
+cd "$HOME/Library/Application Support/renterd"
 renterd
 ```
 

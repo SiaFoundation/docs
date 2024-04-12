@@ -96,7 +96,7 @@ This is how many Siacoins you're willing to lose if you don't fulfill the rental
 You should normally set your collateral to around **2-3x your base storage price** as a starting point in order to maximize your host score in this area. For example, if you've priced your storage at 50 SC/TB, you should set your collateral at 100-150 SC/TB.
 
 * If you set your collateral **too low**, your host score will be reduced, because renters will have no reason to trust you as a host if you have little or nothing to lose by going offline.
-* If you set your collateral **too high**, this can also decrease your host score. Renters pay a fee based on a percentage of your collateral that goes towards [Siafunds](broken-reference) - if your collateral is set very high, the fee a renter pays, as a result, will be very high, which can decrease your host score.
+* If you set your collateral **too high**, this can also decrease your host score. Renters pay a fee based on a percentage of your collateral that goes towards [Siafunds](https://docs.sia.tech/siafunds/learn-about-siafunds) - if your collateral is set very high, the fee a renter pays, as a result, will be very high, which can decrease your host score.
 
 **Monitoring Your Collateral**
 

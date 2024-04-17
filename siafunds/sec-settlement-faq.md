@@ -61,8 +61,8 @@ It's important to note that the SEC classified Siafunds as securities under U.S.
 {% hint style="info" %}
 For more detailed information, please visit the following links:
 
-* [SEC Settlement](https://chat.openai.com/URL)
-* [SEC Administrative Summary](https://chat.openai.com/URL)
-* [SEC Waiver](https://chat.openai.com/URL)
-* [Waiver Request Letter](https://chat.openai.com/URL)
+* [SEC Settlement](https://www.sec.gov/litigation/admin/2019/33-10715.pdf)
+* [SEC Administrative Summary](https://www.sec.gov/enforce/33-10715-s)
+* [SEC Waiver](https://www.sec.gov/rules/other/2019/33-10716.pdf)
+* [Waiver Request Letter](https://www.sec.gov/divisions/corpfin/cf-noaction/2019/nebulous-093019-506.pdf)
 {% endhint %}

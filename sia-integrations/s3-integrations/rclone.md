@@ -239,7 +239,7 @@ Before you can use `rclone mount` on Windows, you will need to download and inst
 Once you have installed `WinFsp`, you can then mount your `renterd` remote and assign it the drive letter `X:` using the following command.
 
 ```shell-session
-rclone mount renterd:/default X: --s3-chunk-size 128MiB --fast-list --vfs-cache-mode full
+rclone mount renterd:/default X: --s3-chunk-size 120MiB --fast-list --vfs-cache-mode full
 ```
 
 {% hint style="info" %}
@@ -469,7 +469,7 @@ Once you have installed MacFUSE, you will then need to create an empty directory
 Next, we will mount our `renterd` remote using the folder we just created. Adding the `--daemon` flag allows `rclone` to maintain the mount point while running in the background.
 
 ```shell-session
-rclone mount renterd:/default ~/renterd_files/ --s3-chunk-size 128MiB --fast-list --vfs-cache-mode full --daemon
+rclone mount renterd:/default ~/renterd_files/ --s3-chunk-size 120MiB --fast-list --vfs-cache-mode full --daemon
 ```
 
 ![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-04.png)
@@ -690,7 +690,7 @@ Start by creating an empty directory on your filesystem that we will use as the 
 Next, we will mount our `renterd` remote using the folder we just created. Adding the `--daemon` flag allows `rclone` to maintain the mount point while running in the background.
 
 ```shell-session
-rclone mount renterd:/default ~/renterd_files/ --s3-chunk-size 128MiB --fast-list --vfs-cache-mode full --daemon
+rclone mount renterd:/default ~/renterd_files/ --s3-chunk-size 120MiB --fast-list --vfs-cache-mode full --daemon
 ```
 
 ![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-linux-03.png)

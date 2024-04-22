@@ -44,25 +44,11 @@ For the purpose of this guide, we will start by uploading a file to the Sia Netw
 
 ## Step 1: Enable `renterd` S3 API
 
-Before setting up `rclone`, we will need to enable `renterd`'s S3 interface if you have not done so already. This is done by editing your `renterd.yml` file. If you are unsure where your `renterd.yml` is installed, please refer to the correct [installation guide](https://docs.sia.tech/v/current/renting/setting-up-renterd) for your system.
-
-Once you have located your `renterd.yml` file, open it with your preferred text editor and add the following:
-
-```yaml
-s3:
-  enabled: true
-  address: localhost:9985
-  keypairsV4:
-    your_renterd_access_key: your_renterd_secret_key
-```
-
-Make sure to replace `your_renterd_access_key` and `your_renterd_secret_key` with unique passphrases. They can be anything you want but must be at least 40 characters in length, and your secret key should always be kept private. Keep these values on hand. You will need them for Step 3.
+Before setting up `rclone`, we will need to enable `renterd`'s S3 interface if you have not done so already. Please refer to the [`renterd` installation guide](https://docs.sia.tech/renting/setting-up-renterd/windows) on configuring your S3 settings if you have not done so already.
 
 {% hint style="warning" %}
-If you are running `renterd` in a docker container, you will need to override the address via docker: `command: -s3.address :9985`
+If you are running `renterd` in a docker container, you will need to override the address via docker: `command: -s3.address :8080`
 {% endhint %}
-
-
 
 ***
 
@@ -179,7 +165,7 @@ Option endpoint.
 Endpoint for S3 API.
 Required when using an S3 clone.
 Enter a value. Press Enter to leave empty.
-endpoint> http://localhost:9985
+endpoint> http://localhost:8080
 ```
 
 When asked for a `Location constraint` press `Enter` to leave it empty.
@@ -227,7 +213,7 @@ Options:
 - provider: other
 - access_key_id: your_renterd_access_key
 - secret_access_key: your_renterd_secret_key
-- endpoint: localhost:9985
+- endpoint: localhost:8080
 - acl: private
 Keep this "renterd" remote?
 y) Yes this is OK (default)
@@ -253,7 +239,7 @@ Before you can use `rclone mount` on Windows, you will need to download and inst
 Once you have installed `WinFsp`, you can then mount your `renterd` remote and assign it the drive letter `X:` using the following command.
 
 ```shell-session
-rclone mount renterd:/default X: --vfs-cache-mode full
+rclone mount renterd:/default X: --s3-chunk-size 128MiB --fast-list --vfs-cache-mode full
 ```
 
 {% hint style="info" %}
@@ -282,25 +268,11 @@ For the purpose of this guide, we will start by uploading a file to the Sia Netw
 
 ## Step 1: Enable `renterd` S3 API
 
-Before setting up `rclone`, we will need to enable `renterd`'s S3 interface if you have not done so already. This is done by editing your `renterd.yml` file. If you are unsure where your `renterd.yml` is installed, please refer to the correct [installation guide](https://docs.sia.tech/v/current/renting/setting-up-renterd) for your system.
-
-Once you have located your `renterd.yml` file, open it with your preferred text editor and add the following:
-
-```yaml
-s3:
-  enabled: true
-  address: localhost:9985
-  keypairsV4:
-    your_renterd_access_key: your_renterd_secret_key
-```
-
-Make sure to replace `your_renterd_access_key` and `your_renterd_secret_key` with unique passphrases. They can be anything you want but must be at least 40 characters in length, and your secret key should always be kept private. Keep these values on hand. You will need them for Step 3.
+Before setting up `rclone`, we will need to enable `renterd`'s S3 interface if you have not done so already. Please refer to the [`renterd` installation guide](https://docs.sia.tech/renting/setting-up-renterd/macos) on configuring your S3 settings if you have not done so already.
 
 {% hint style="warning" %}
-If you are running `renterd` in a docker container, you will need to override the address via docker: `command: -s3.address:9985`
+If you are running `renterd` in a docker container, you will need to override the address via docker: `command: -s3.address :8080`
 {% endhint %}
-
-&#x20;
 
 ***
 
@@ -419,7 +391,7 @@ Option endpoint.
 Endpoint for S3 API.
 Required when using an S3 clone.
 Enter a value. Press Enter to leave empty.
-endpoint> http://localhost:9985
+endpoint> http://localhost:8080
 ```
 
 When asked for a `Location constraint` press `Enter` to leave it empty.
@@ -467,7 +439,7 @@ Options:
 - provider: other
 - access_key_id: your_renterd_access_key
 - secret_access_key: your_renterd_secret_key
-- endpoint: localhost:9985
+- endpoint: localhost:8080
 - acl: private
 Keep this "renterd" remote?
 y) Yes this is OK (default)
@@ -497,7 +469,7 @@ Once you have installed MacFUSE, you will then need to create an empty directory
 Next, we will mount our `renterd` remote using the folder we just created. Adding the `--daemon` flag allows `rclone` to maintain the mount point while running in the background.
 
 ```shell-session
-rclone mount renterd:/default ~/renterd_files/ --vfs-cache-mode full --daemon
+rclone mount renterd:/default ~/renterd_files/ --s3-chunk-size 128MiB --fast-list --vfs-cache-mode full --daemon
 ```
 
 ![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-04.png)
@@ -524,25 +496,11 @@ For the purpose of this guide, we will start by uploading a file to the Sia Netw
 
 ## Step 1: Enable `renterd` S3 API
 
-Before setting up `rclone`, we will need to enable `renterd`'s S3 interface if you have not done so already. This is done by editing your `renterd.yml` file. If you are unsure where your `renterd.yml` is installed, please refer to the correct [installation guide](https://docs.sia.tech/v/current/renting/setting-up-renterd) for your system.
-
-Once you have located your `renterd.yml` file, open it with your preferred text editor and add the following:
-
-```yaml
-s3:
-  enabled: true
-  address: localhost:9985
-  keypairsV4:
-    your_renterd_access_key: your_renterd_secret_key
-```
-
-Make sure to replace `your_renterd_access_key` and `your_renterd_secret_key` with unique passphrases. They can be anything you want but must be at least 40 characters in length, and your secret key should always be kept private. Keep these values on hand. You will need them for Step 3.
+Before setting up `rclone`, we will need to enable `renterd`'s S3 interface if you have not done so already. Please refer to the [`renterd` installation guide](https://docs.sia.tech/renting/setting-up-renterd/linux) on configuring your S3 settings if you have not done so already.
 
 {% hint style="warning" %}
-If you are running `renterd` in a docker container, you will need to override the address via docker: `command: -s3.address:9985`
+If you are running `renterd` in a docker container, you will need to override the address via docker: `command: -s3.address :8080`
 {% endhint %}
-
-
 
 ***
 
@@ -658,7 +616,7 @@ Option endpoint.
 Endpoint for S3 API.
 Required when using an S3 clone.
 Enter a value. Press Enter to leave empty.
-endpoint> http://localhost:9985
+endpoint> http://localhost:8080
 ```
 
 When asked for a `Location constraint` press `Enter` to leave it empty.
@@ -706,7 +664,7 @@ Options:
 - provider: other
 - access_key_id: your_renterd_access_key
 - secret_access_key: your_renterd_secret_key
-- endpoint: localhost:9985
+- endpoint: localhost:8080
 - acl: private
 Keep this "renterd" remote?
 y) Yes this is OK (default)
@@ -732,7 +690,7 @@ Start by creating an empty directory on your filesystem that we will use as the 
 Next, we will mount our `renterd` remote using the folder we just created. Adding the `--daemon` flag allows `rclone` to maintain the mount point while running in the background.
 
 ```shell-session
-rclone mount renterd:/default ~/renterd_files/ --vfs-cache-mode full --daemon
+rclone mount renterd:/default ~/renterd_files/ --s3-chunk-size 128MiB --fast-list --vfs-cache-mode full --daemon
 ```
 
 ![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-linux-03.png)

@@ -151,7 +151,7 @@ There are three main parts to a transaction:
 
 Start by collecting everything you need to construct the transaction:
 
-* Identify an output to spend. You can find outputs by searching [https://siastats.info/navigator](https://siastats.info/navigator) for an address you generated on your device. Make note of the Output ID field and its value.
+* Identify an output to spend. You can find outputs by searching [https://siascan.com](https://siascan.com) for an address you generated on your device. Make note of the Output ID field and its value.
 * Generate the public key of the address that owns the output. To do so, run `./sialedger pubkey n` (where n is the same key index you used to generate the address). Confirm the pubkey generation on the device by pressing the right button.
 
 ![](../.gitbook/assets/ledger-11.jpg)

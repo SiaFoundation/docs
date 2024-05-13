@@ -59,6 +59,7 @@
 * [Sia Ledger app with Sia Central](sia-integrations/using-the-sia-ledger-nano-app-sia-central.md)
 * [Sia Ledger Nano app with CLI](sia-integrations/using-the-sia-ledger-nano-app-cli.md)
 * [S3 Integrations](sia-integrations/s3-integrations/README.md)
+  * [Jellyfin](sia-integrations/s3-integrations/jellyfin.md)
   * [Nextcloud](sia-integrations/s3-integrations/nextcloud.md)
   * [rclone](sia-integrations/s3-integrations/rclone.md)
 

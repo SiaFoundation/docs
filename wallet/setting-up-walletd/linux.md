@@ -69,7 +69,7 @@ mkdir ~/walletd
 You will be prompted to input a `API password`. You choose this password, which can be anything you want. It will be used to unlock the `walletd` UI, via your browser, should be something secure and easy to remember. This value is not stored anywhere; you will need to re-enter it every time you start `walletd`.
 
 {% hint style="info" %}
-You can also set the SIA`_API_PASSWORD` environment variables so you do not have to re-enter the values every time.
+You can also set the `WALLETD_API_PASSWORD` environment variables so you do not have to re-enter the values every time.
 {% endhint %}
 
 2. After entering your desired `API password`, `walletd` will start.&#x20;

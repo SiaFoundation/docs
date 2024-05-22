@@ -39,11 +39,11 @@ Make sure to configure S3 when installing `renterd`, as this will be required la
 
 ## Step 2: Install `rclone`
 
-Install `rclone` for your system using the official [`rclone` install guide](https://rclone.org/install/).
-
 {% hint style="danger" %}
 Please note that only `rclone` versions 1.56.0 and above are supported.
 {% endhint %}
+
+Install `rclone` for your system using the official [`rclone` install guide](https://rclone.org/install/).
 
 {% embed url="https://rclone.org/install/" %}
 

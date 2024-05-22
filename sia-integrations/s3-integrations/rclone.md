@@ -28,15 +28,12 @@ Rclone is a command-line program to manage files on cloud storage. Rclone is ver
 
 Rclone [mounts](https://rclone.org/commands/rclone\_mount/) any local, cloud, or virtual filesystem as a disk on Windows, Mac OS, Linux, and FreeBSD and serves these over [SFTP](https://rclone.org/commands/rclone\_serve\_sftp/), [HTTP](https://rclone.org/commands/rclone\_serve\_http/), [WebDAV](https://rclone.org/commands/rclone\_serve\_webdav/), [FTP](https://rclone.org/commands/rclone\_serve\_ftp/), and [DLNA](https://rclone.org/commands/rclone\_serve\_dlna/). The mount lets us interact with our Sia `renterd` storage as a regular filesystem. We can mount `renterd` storage to a server’s filesystem or even a local laptop’s filesystem.
 
+## Step 1: Install `renterd` and configure S3
+This guide requires that you have a working installation of `renterd`. If you have not already installed `renterd`, you will need to do so before continuing.
+
 {% hint style="warning" %}
-This guide requires a working installation of `renterd`. If you have not already installed `renterd`, you will need to do so before continuing.
-
-[**📖 `renterd` Installation Guide**](https://docs.sia.tech/v/current/renting/setting-up-renterd)
+Make sure to configure S3 when installing `renterd`, as this will be required later.
 {% endhint %}
-
-## Step 1: Enable `renterd` S3 API
-
-Before setting up `rclone`, make sure to enable `renterd`'s S3 interface. Instructions can be found in the [`renterd` installation guide](https://docs.sia.tech/renting/setting-up-renterd/).
 
 {% embed url="https://docs.sia.tech/renting/setting-up-renterd/" %}
 

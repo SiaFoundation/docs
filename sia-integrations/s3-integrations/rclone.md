@@ -217,7 +217,7 @@ rclone mount renterd:/default /path/to/mount/point/ --s3-chunk-size 120MiB --fas
 ## All done.
 
 {% hint style="success" %}
-`renterd` should now be successfully mounted on your computer's filesystem. For more details and system-specific instructions, visit the official [`rclone` documentation](https://rclone.org/commands/rclone\_mount/)
+`renterd` should now be successfully mounted on your computer's filesystem. For more details and system-specific instructions, visit the official [`rclone` documentation](https://rclone.org/commands/rclone_mount/)
 
-{% embed url="https://rclone.org/commands/rclone\_mount/" %}
+{% embed url="https://rclone.org/commands/rclone_mount/" %}
 {% endhint %}

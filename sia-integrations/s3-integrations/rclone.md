@@ -36,17 +36,17 @@ This guide requires a working installation of `renterd`. If you have not already
 
 ## Step 1: Enable `renterd` S3 API
 
-Before setting up `rclone`, make sure to enable `renterd`'s S3 interface if you have not done so already. Refer to the [`renterd` installation guide](https://docs.sia.tech/renting/setting-up-renterd/) for instructions on how to do so.
+Before setting up `rclone`, make sure to enable `renterd`'s S3 interface. Instructions can be found in the [`renterd` installation guide](https://docs.sia.tech/renting/setting-up-renterd/).
 
 {% embed url="https://docs.sia.tech/renting/setting-up-renterd/" %}
 
 ## Step 2: Install `rclone`
 
-Install `rclone` for your system.
-
 {% hint style="warning" %}
-Please note that only `rclone` version v1.56.0 and above is supported.
+Please note that only `rclone` versions 1.56.0 and above are supported.
 {% endhint %}
+
+Install `rclone` for your system using the official [`rclone` install guide](https://rclone.org/install/).
 
 {% embed url="https://rclone.org/install/" %}
 
@@ -204,98 +204,20 @@ You have now successfully created a remote for `renterd`. You can now type in `q
 
 ## Step 4: Mount the filesystem
 
-Now that your `renterd` remote has been configured, it can be mounted on the local filesystem.
-
-{% tabs %}
-{% tab title="Windows" %}
-{% hint style="warning" %}
-Before you can use `rclone mount` on Windows, you will need to download and install [WinFsp](https://winfsp.dev/rel/).
-{% endhint %}
-
-Once you have installed `WinFsp`, you can then mount your `renterd` remote and assign it the drive letter `X:` using the following command.
+Now that your `renterd` remote has been configured, it can be mounted on your computer's filesystem.
 
 ```shell-session
-rclone mount renterd:/default X: --s3-chunk-size 120MiB --fast-list --vfs-cache-mode full
+rclone mount renterd:/default /path/to/mount/point/ --s3-chunk-size 120MiB --fast-list --vfs-cache-mode full --daemon
 ```
 
 {% hint style="info" %}
-On Windows, you can run `rclone mount` in the foreground only. The `--daemon` flag is ignored if used.
-{% endhint %}
 
-If you have configured everything properly, you should see a confirmation that `rclone` has successfully started.
-
-![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-win-03.png)
-
-To confirm you have mounted your Sia storage correctly, you should see a new `X:` drive on your filesystem.
-
-![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-win-04.png)
-
-You can now access your files on Sia directly from your File Explorer.
-
-![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-win-05.png)
-{% endtab %}
-
-{% tab title="Mac OS" %}
-{% hint style="warning" %}
-Before you can use `rclone mount` on Mac OS, you will need to download and install [MacFUSE](https://github.com/osxfuse/osxfuse/releases/latest).
-{% endhint %}
-
-Once you have installed MacFUSE, you will then need to create an empty directory on your filesystem that we will use as the mount point. Once the mount is set up, this is where all the files will appear.
-
-![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-03.png)
-
-Next, we will mount our `renterd` remote using the folder we just created. Adding the `--daemon` flag allows `rclone` to maintain the mount point while running in the background.
-
-```shell-session
-rclone mount renterd:/default ~/renterd_files/ --s3-chunk-size 120MiB --fast-list --vfs-cache-mode full --daemon
-```
-
-![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-04.png)
-
-To confirm you have mounted your Sia storage correctly, you should now be able to access your files using the `Finder` app.
-
-![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-05.png)
-
-![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-macos-06.png)
-
-To later unmount the remote, you can use `umount` as follows.
-
-```shell-session
-umount ~/renterd_files/
-```
-{% endtab %}
-
-{% tab title="Linux" %}
-Start by creating an empty directory on your filesystem that we will use as the mount point. Once the mount is set up, this is where all the files will appear.
-
-![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-linux-02.png)
-
-Next, we will mount our `renterd` remote using the folder we just created. Adding the `--daemon` flag allows `rclone` to maintain the mount point while running in the background.
-
-```shell-session
-rclone mount renterd:/default ~/renterd_files/ --s3-chunk-size 120MiB --fast-list --vfs-cache-mode full --daemon
-```
-
-![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-linux-03.png)
-
-To confirm you have mounted your Sia storage correctly, you should now be able to access your files using the `Files` app. It should also appear as a mounted directory in your sidebar.
-
-![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-linux-04.png)
-
-![](../../.gitbook/assets/rclone-s3-integration/rclone-new-config-linux-05.png)
-
-To later unmount the remote, you can use `fusermount` as follows.
-
-```shell-session
-fusermount -u ~/renterd_files
-```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="info" %}
-For more details and system-specific instructions, visit the official rclone mount documentation: [https://rclone.org/commands/rclone\_mount](https://rclone.org/commands/rclone\_mount/)
 {% endhint %}
 
 ## All done.
 
-We successfully used `renterd` and rclone to mount our Sia storage as a filesystem. This is a great way to use Sia for your files, especially for use cases such as large video or media libraries that take up many terabytes of space but you would still like available for streaming at any moment. If this guide has been engaging, check out our website to read more about Sia and `renterd`, and join our Discord, where the team and community can answer your questions!
+{% hint style="success" %}
+`renterd` should now be successfully mounted on your computer's filesystem. For more details and system-specific instructions, visit the official [`rclone` documentation](https://rclone.org/commands/rclone\_mount/)
+
+{% embed url="https://rclone.org/commands/rclone\_mount/" %}
+{% endhint %}

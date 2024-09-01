@@ -62,3 +62,8 @@ Health assessments can only be conducted if `renterd` when it's actively running
 Downloading files occurs directly within the app as well. A small download icon accompanies each file in your list. Downloading necessitates Siacoins because you are billed for the bandwidth consumed.
 
 <figure><img src="../../.gitbook/assets/renterd_8.png" alt=""><figcaption><p>Downloading files in renterd</p></figcaption></figure>
+
+## Metadata Backup
+
+On the Sia network, `renterd` serves a critical role in managing uploads, downloads, and file contracts. Acting as a renter's gateway to the network, `renterd` maintains a database of vital information containing the locations of file shards, contract details, and status updates for any storage and retrieval operations. Known as metadata, this information is crucial for the recovery of data stored on the network. Without it, any information a renter has uploaded is as good as lost. For this reason, having a recent backup of `renterd`'s database is essential in the event of system failure or data corruption.
+

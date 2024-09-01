@@ -70,9 +70,9 @@ Remove-Item -LiteralPath "$HOME\sia\renterd\bin" -Recurse
 When you paste multi-line commands into PowerShell, you will be prompted with a warning. Make sure you have copied the entire command and click `Paste anyway` to proceed.
 {% endhint %}
 
-![Click `Paste anyway` to proceed with installation.](../../.gitbook/assets/renterd-install-screenshots/windows/01-renterd-multiline-warn.png)
+![](../../.gitbook/assets/renterd-install-screenshots/windows/01-renterd-multiline-warn.png)
 
-![Installation of renterd completed successfully.](../../.gitbook/assets/renterd-install-screenshots/windows/02-renterd-download-and-install.png)
+![](../../.gitbook/assets/renterd-install-screenshots/windows/02-renterd-download-and-install.png)
 
 ---
 
@@ -163,7 +163,7 @@ cd $HOME\sia\renterd; `
 ```
 {% endtab %}
 
-![Starting renterd](../../.gitbook/assets/renterd-install-screenshots/windows/04-renterd-success.png)
+![](../../.gitbook/assets/renterd-install-screenshots/windows/04-renterd-running.png)
 
 {% hint style="success" %}
 Congratulations, you have successfully updated your version of `renterd`!

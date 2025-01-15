@@ -5,7 +5,7 @@
 ## Navigating the V2 Hardfork
 
 * [Things to Know](v2/README.md)
-* [Exchange Upgrade Guide](v2/exchanges.md)
+* [How to Upgrade: Exchanges](v2/exchanges.md)
 
 ## Get Started with Sia
 

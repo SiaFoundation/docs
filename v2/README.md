@@ -64,7 +64,7 @@ If you store Siacoins on an exchange, you don't have to do anything. The exchang
 
 ### ...for miners?
 
-We've carefully designed Sia v2 to preserve to layout of block headers, so all mining hardware will remain compatible. You should, however, check in with your mining pool to make sure they've updated.
+We've carefully designed Sia v2 to preserve the layout of block headers, so all mining hardware will remain compatible. You should, however, check in with your mining pool to make sure they've updated.
 
 ### ...for exchanges?
 

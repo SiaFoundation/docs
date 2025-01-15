@@ -70,21 +70,19 @@ To confirm `hostd` has been installed, run the following:
 hostd version
 ```
 
-![](../../.gitbook/assets/hostd-install-screenshots/macos/09-hostd-version.png)
+![](../../.gitbook/assets/hostd-install-screenshots/macos/hostd_version.gif)
 
 ## Configuring `hostd`
 
 Now that you have `hostd` installed, you will need to create a seed phrase and admin password. To launch the built-in configuration wizard, run the following:
 
 ```console
-mkdir "$HOME/Library/Application Support/hostd"
-cd "$HOME/Library/Application Support/hostd"
 hostd config
 ```
 
 When the configuration wizard loads, you will be asked to verify the location of your data directory. If you would like to change this, you can do so now. Otherwise, type `no` to keep the default.
 
-![](../../.gitbook/assets/hostd-install-screenshots/macos/02-hostd-data-dir.png)
+![](../../.gitbook/assets/hostd-install-screenshots/macos/hostd_config.gif)
 
 Next, you will be asked to enter a seed phrase. If you already have one that you would like to use, you can enter it now. Otherwise, you can type `seed` to generate a new one. For the purpose of this guide, we will generate a new seed.
 
@@ -103,7 +101,6 @@ Finally, you will be asked if you want to configure advanced settings for `hostd
 Now that you have `hostd` successfully installed and configured, it is time to run it. Use the following command to start `hostd`:
 
 ```console
-cd "$HOME/Library/Application Support/hostd"
 hostd
 ```
 

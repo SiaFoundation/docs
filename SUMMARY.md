@@ -2,6 +2,11 @@
 
 * [Introduction](README.md)
 
+## Navigating the V2 Hardfork
+
+* [Things to Know](v2/README.md)
+* [Exchange Upgrade Guide](v2/exchanges.md)
+
 ## Get Started with Sia
 
 * [Learn about Sia](get-started-with-sia/sia101.md)
@@ -31,6 +36,7 @@
     * [Debian](hosting/setting-up-hostd/linux/debian.md)
     * [Ubuntu](hosting/setting-up-hostd/linux/ubuntu.md)
     * [Other](hosting/setting-up-hostd/linux/other.md)
+  * [Docker](hosting/setting-up-hostd/docker.md)
   * [macOS](hosting/setting-up-hostd/macos.md)
   * [Windows](hosting/setting-up-hostd/windows.md)
 * [Transferring Siacoins](hosting/transferring-siacoins.md)

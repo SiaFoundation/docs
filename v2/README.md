@@ -1,4 +1,23 @@
-# Navigating the V2 Hardfork
+---
+cover: https://sia.tech/assets/previews/nate-snow.png
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
+# Things to Know
 
 The Sia network is implementing a mandatory hardfork to radically update Sia's consensus code, bringing huge benefits to performance, scalability, and functionality.
 

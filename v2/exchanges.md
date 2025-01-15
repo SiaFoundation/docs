@@ -1,3 +1,22 @@
+---
+cover: https://sia.tech/assets/previews/nate-snow.png
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # How to Upgrade: Exchanges
 
 This guide is for exchanges that are currently using `siad` to track and manage Siacoin deposits. Exchanges should upgrade to `walletd` before the V2 hardfork to continue supporting the Sia network.

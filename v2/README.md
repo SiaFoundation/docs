@@ -17,65 +17,62 @@ layout:
     visible: true
 ---
 
-The Sia network is implementing a mandatory hardfork to radically update Sia's consensus code, bringing huge benefits to performance, scalability, and functionality.
+The Sia network is hardforking to radically update Sia's consensus code, bringing huge benefits to performance, scalability, and functionality. Given the significance of this hardfork, we've come to refer to it as **Sia v2**.
 
-The hardfork requires Sia v2 and is necessary to send or store coins, rent, or host after the fork. Every user, exchange, mining pool, wallet, and integration should upgrade on the timelines found below.
+Upgrading to Sia v2 will be necessary to send or store coins, rent, or host after the fork. Every user, exchange, mining pool, wallet, and integration should upgrade on the timelines found below.
 
 ## Step 1: Software release
 
 The hardfork is multi-stage. First, hardfork-compatible software will release. Downloading this update means you're ready for the fork, even if the fork has not happened yet.
 
-- For renters and hosts, the hardfork-compatible renterd and hostd will release in late December 2024.
-- For Siacoin holders, the hardfork-compatible walletd will release in January 2025.
+- For renters and hosts, the hardfork-compatible `renterd` and `hostd` will release in late December 2024.
+- For Siacoin holders, miners, and exchanges, the hardfork-compatible walletd will release in January 2025.
 
 You'll have from these dates until hardfork activation in mid-2025 to update, but we recommend doing it as soon as possible.
 
 {% hint style="info" %}
-If you haven't checked in for a while, in 2024 we split Sia into three distinct apps - renterd for renters who upload files, hostd for hosts who store those files, and walletd for Siacoin holders. You'll need to download and install each app if you use the associated function.
+If you haven't checked in for a while, in 2024 we split Sia into three distinct apps - `renterd` for renters who upload files, `hostd` for hosts who store those files, and `walletd` for Siacoin holders. You'll need to download and install each app if you use the associated function.
 
-There are two versions of each app: The Desktop application, suitable for most users, and the Terminal application for advanced users. When the hardfork hits, your updated v2 version of Sia will instantly give you access to the new chain
+There are two versions of each app: The Desktop application, suitable for most users, and the Terminal application for advanced users. When the hardfork hits, your updated v2 version of Sia will instantly give you access to the new chain.
 {% endhint %}
 
 ## Step 2:
 
-The actual hardfork occurs later in 2025. The Sia ecosystem is large, so we need to make sure that not only our users, but exchanges, miners and pools, web wallets, and other integrations have plenty of time to update.
+The actual hardfork -- the point at which you *must* be running a v2 node -- occurs later in 2025. The Sia ecosystem is large, so we need to make sure that not only our users, but exchanges, miners and pools, web wallets, and other integrations have plenty of time to update.
 
-- The hardfork activates on March 10, 2025 at a block height of **513,400**. This will enable most of the new v2 features, but doesn't break the old versions yet. We heavily recommend that all users are updated by this time...
-- ...but you technically have until June 6th, 2025 at a block height of **526,000**. **You must be updated by this date to continue using or supporting Sia.**
+- The hardfork activates on June 6th, 2025 at a block height of **526,000**. After this height, blocks may contain v2 transactions, so if you are not running an updated node, **you will not be able to sync**. This will enable most of the new v2 features, but v1 blocks are still allowed, giving any stragglers a grace period to submit their transactions to miners.
+- This grace period ends on July 6th, 2025 at a block height of **530,000**. **You must update by this date to continue using Sia.**
 
-## So what does the hardfork do...
+## So how does the hardfork benefit...
 
-### ...for renters and hosts?
+### ...renters and hosts?
 
-It activates an awesome set of new features for Sia, making it faster and more efficient in almost every measurable way. Here's some highlights:
-- Reduces the size of the blockchain on disk
-- Atomic swaps with HTLC support
+Sia v2 includes an update to the renter-host protocol that is faster and more efficient in almost every measurable way. Here are some highlights:
 - Many more options and flexibility for your contracts
-- Faster uploads and downloads
-- Concurrent uploads
-- Decentralized uploads and downloads in a browser without downloading software
+- Faster uploads and downloads, including concurrent uploads to the same host
+- Enables decentralized uploads and downloads in a browser, no plugins or daemons necessary
 
-**Renters and hosts should upgrade to v2 by March 10th.**
+It's important for renters and hosts to upgrade before June 6th so that they can enjoy the benefits of v2 and the new renter-host protocol as soon as possible.
 
-### ...for Siacoin holders?
+### ...Siacoin holders?
 
-First, one important thing. You'll have the exact same amount of Siacoins after the fork. If keeping your Siacoins safe is all you need, nothing much changes beyond that. Except the app will look a lot nicer.
+First, to be absolutely clear: Your Siacoins are cryptographically owned by you, and Sia v2 doesn't change that. `walletd` is backwards-compatible, so you don't need to move your Siacoins to a new address in order to use them. That said, Sia v2 supports a new type of address that enables more flexible multisig scenarios and atomic swaps.
 
-We recommend that Siacoin holders upgrade to walletd v2 by March 10th. If you don't upgrade by the mandatory date of June 6th, you won't be able to send or receive coins on the new fork until you do. You never lose your coins. Once you update to the new chain, your coins will be available to you.​
+We recommend that Siacoin holders upgrade to `walletd` v2 by June 6th. If you don't, you'll still be able to broadcast transactions during the grace period, but you won't be able to sync new blocks. Regardless of your decision, your Siacoins are never at risk: they'll be available to spend again as soon as you update.
 
-If you store Siacoins on an exchange, you don't have to do anything... provided that exchange also updates to the new fork software. When an exchange updates their wallet, you'll now have the same amount of coins on the new Sia chain. These coins are usable to trade with exchanges once they have upgraded and to buy storage from hosts who also use the new chain.
+If you store Siacoins on an exchange, you don't have to do anything. The exchange is responsible for updating their nodes and ensuring that you can continue to deposit and withdraw Siacoins.
 
 ### ...for miners?
 
-Nothing will change. You should check in with your mining pool to make sure they've updated.
+We've carefully designed Sia v2 to preserve to layout of block headers, so all mining hardware will remain compatible. You should, however, check in with your mining pool to make sure they've updated.
 
 ### ...for exchanges?
 
 Sia v2 will enable highly increased performance and usability for your exchange. You'll have more control over your Siacoin treasury and the ways you interact with it.
 
-The hardfork is mandatory as of block **526,000** on June 6th, so exchanges should upgrade to walletd v2 as soon as possible to ensure an issue-free transition. Due to the volume of users you serve, you should leave time for a proper upgrade. Once you do, your exchange will be able to support the fork once it takes effect.
+Exchanges should upgrade to `walletd` v2 as soon as possible to ensure an issue-free transition. Due to the volume of users you serve, you should leave time for a proper upgrade. Once you do, your exchange will be able to support the fork once it takes effect.
 
-Transactions created before the fork block but not confirmed yet will not be valid anymore after the fork block. We recommend that you pause withdrawals and don't send any transactions for the 6 hours leading up to the fork, and the 2 hours following the fork. This will prevent you from having your transactions become invalid.
+Unconfirmed transactions as of block 526,000 will remain mineable until block 530,000, so normal operations can continue throughout the hardfork activation. If you are manually constructing your transactions, you have a choice of when to switch from using v1 transactions to v2 transactions; we recommend waiting at least 6 blocks into the grace period before switching. This minimizes the likelihood of v2 transactions being invalidated by a reorg.
 
 # More questions?
 

@@ -17,8 +17,6 @@ layout:
     visible: true
 ---
 
-# How to Upgrade: Exchanges
-
 This guide is for exchanges that are currently using `siad` to track and manage Siacoin deposits. Exchanges should upgrade to `walletd` before the V2 hardfork to continue supporting the Sia network.
 
 `walletd` is the new reference wallet for exchanges. It is designed to be more secure, reliable, and scalable than `siad`. `walletd` also has a more robust API, supports

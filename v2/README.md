@@ -17,8 +17,6 @@ layout:
     visible: true
 ---
 
-# Things to Know
-
 The Sia network is implementing a mandatory hardfork to radically update Sia's consensus code, bringing huge benefits to performance, scalability, and functionality.
 
 The hardfork requires Sia v2 and is necessary to send or store coins, rent, or host after the fork. Every user, exchange, mining pool, wallet, and integration should upgrade on the timelines found below.

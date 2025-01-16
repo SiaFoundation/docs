@@ -36,7 +36,7 @@ If you haven't checked in for a while, in 2024 we split Sia into three distinct 
 There are two versions of each app: The Desktop application, suitable for most users, and the Terminal application for advanced users. When the hardfork hits, your updated v2 version of Sia will instantly give you access to the new chain.
 {% endhint %}
 
-## Step 2:
+## Step 2: Hardfork activation
 
 The actual hardfork -- the point at which you *must* be running a v2 node -- occurs later in 2025. The Sia ecosystem is large, so we need to make sure that not only our users, but exchanges, miners and pools, web wallets, and other integrations have plenty of time to update.
 

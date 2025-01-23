@@ -76,4 +76,4 @@ Unconfirmed transactions as of block 526,000 will remain mineable until block 53
 
 # More questions?
 
-Let us know! Send us an [email](mailto://hello@sia.tech), or [reach out to the community on Discord](https://discord.gg/sia).
+Let us know! Send us an [email](mailto:hello@sia.tech), or [reach out to the community on Discord](https://discord.gg/sia).

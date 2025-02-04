@@ -61,7 +61,7 @@ Toggle the **Preview** button to see how the markdown will be formatted on the G
 4. Once you're satisfied, click **Commit Changes** to submit your proposal
 
 {% hint style="info" %}
-### Further assistance
+#### Further assistance
 
 If you can't find your answer here in our documentation, join the `#help` channel in the [Sia Discord](https://discord.com/invite/sia), where a vast community loves helping users with their issues.
 

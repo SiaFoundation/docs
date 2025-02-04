@@ -25,33 +25,29 @@ This guide will walk you through setting up `hostd` on macOS. At the end of this
 * Installed Sia `hostd` software
 * Created a `hostd` wallet
 
----
+***
 
 ## Pre-requisites
 
 To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
 
 * **Network Access:** `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9983` so `hostd` can properly communicate with the network and renters.
-
 * **Operating System Compatibility:** `hostd` is supported on the following macOS versions:
-	- macOS 12: Monterey (Star)
-	- macOS 13: Ventura (Rome)
-	- macOS 14: Sonoma (Sunburst)
-
+  * macOS 12: Monterey (Star)
+  * macOS 13: Ventura (Rome)
+  * macOS 14: Sonoma (Sunburst)
 * **System Updates:** Ensure that your macOS version is up to date with the latest system updates. These updates can contain important security fixes and improvements.
-
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
-  - A quad-core CPU
-  - 8GB of RAM
-  - An SSD with at least 128GB of free space.
- 
+  * A quad-core CPU
+  * 8GB of RAM
+  * An SSD with at least 128GB of free space.
 * **Software Requirements:** Before installing `hostd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to install and upgrade `hostd` easily.
 
 ## Installing `hostd`
 
 Press `CMD + Space` to open Spotlight search and open a `terminal`.
 
-![](../../.gitbook/assets/hostd-install-screenshots/macos/00-hostd-open-terminal.png)
+![](<../../.gitbook/assets/hostd-install-screenshots/macos/00-hostd-open-terminal (1).png>)
 
 {% hint style="warning" %}
 Before you install `hostd`, make sure you have the [Homebrew](https://brew.sh) package manager installed.
@@ -66,6 +62,7 @@ brew install siafoundation/sia/hostd
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/01-hostd-brew-install.png)
 
 To confirm `hostd` has been installed, run the following:
+
 ```console
 hostd version
 ```

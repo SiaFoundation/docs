@@ -23,7 +23,7 @@ layout:
 
 Your Sia Seed also holds the key to your Siacoin (SC) balance access to your files. It is the cornerstone of your Sia journey and the most critical information in your entire Sia experience.
 
-* Sia is using BIP 39 with 128 bits of entropy and is made up of 12 words to generate your Seed.&#x20;
+* Sia is using BIP 39 with 128 bits of entropy and is made up of 12 words to generate your Seed.
 * Your Seed is generated when you first create your Siacoin wallet in `renterd`, `hostd` or `walletd`.
 * You can always recover your Siacoin balance using your Sia Seed.
 
@@ -42,7 +42,7 @@ An incorrectly written word or mistyped letter renders the entire Seed invalid, 
 {% endhint %}
 
 {% hint style="danger" %}
-### Lost or Stolen
+#### Lost or Stolen
 
 If you lose your Seed, your Siacoin balance will become **permanently** inaccessible since Sia operates as a fully decentralized platform.
 

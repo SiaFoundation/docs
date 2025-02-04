@@ -34,10 +34,7 @@ Utilizing `walletd` prioritizes user convenience and security within the network
 Whether you prefer the command-line interface's flexibility or the web-based interface's ease of use, `walletd` ensures top-notch Siacoin management and security. Discover the best-in-class Siacoin management and protection with `walletd`, the official wallet solution developed by the creators of the Sia network.
 
 {% hint style="info" %}
-## **Getting Started with `walletd`**
+### **Getting Started with `walletd`**
 
 Start storing your Siacoins on Sia by downloading the official [`walletd` software](https://sia.tech/software/walletd) and exploring our step-by-step [Setting up walletd](setting-up-walletd/) guide.
 {% endhint %}
-
-
-

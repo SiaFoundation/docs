@@ -21,6 +21,10 @@ layout:
 
 This guide is for exchanges that are currently using `siad` to track and manage Siacoin deposits. Exchanges should upgrade to `walletd` before the V2 hardfork to continue supporting the Sia network.
 
+{% hint style="info" %}
+The hardfork activates on June 6th, 2025 at a block height of **526,000 at 06:00 UTC**.
+{% endhint %}
+
 `walletd` is the new reference wallet for exchanges. It is designed to be more secure, reliable, and scalable than `siad`. `walletd` also has a more robust API, supports multiple wallets simultaneously, and provides easier support for secure key management setups.
 
 ### Differences from `siad`
@@ -39,7 +43,7 @@ Another difference is that `walletd` does not need to rescan the blockchain when
 
 ### How to run `walletd`
 
-`walletd` can be installed as a standalone binary or as a Docker container. The Docker container is the recommended way to run `walletd` in a production environment. For exchanges, running `wallted` in "Full" index mode. This mode is designed for exchanges and wallet integrators that need to track all addresses and transactions on the Sia network.
+`walletd` can be installed as a standalone binary or as a Docker container. The Docker container is the recommended way to run `walletd` in a production environment. For exchanges, we recommend running `walletd` in "full" index mode. This mode is designed for exchanges and wallet integrators that need to track all addresses and transactions on the Sia network.
 
 It is also possible to disable HTTP authentication on endpoints that are safe to expose to the public using the `--http.public` flag.
 
@@ -57,8 +61,7 @@ services:
 
 ## Wallets
 
-`walletd` supports multiple wallets. Each wallet has its own set of addresses and transactions. Wallets can be created and updated using the `wallets` API. When
-running in "full" index mode, it is not required to group addresses into wallets. However, it is recommended to do so for easier indexing.
+`walletd` supports multiple wallets. Each wallet has its own set of addresses and transactions. Wallets can be created and updated using the `wallets` API. When running in "full" index mode, it is not required to group addresses into wallets. However, it is recommended to do so for easier indexing.
 
 ### Creating a wallet
 
@@ -651,10 +654,11 @@ After June 6th, 2025 at block height 526,000 at 06:00 UTC, `siad` will no longer
 This example uses our Go SDK, but you can also use the `walletd` API directly. It is not required to create a wallet to send transactions, but it does simplify transaction creation.
 
 #### Changes from V1
-- The miner fee is no longer an array of `Currency` but a single `Currency` value.
-- There is a slightly different structure to siacoin inputs
-- The input signature has moved to the siacoin input instead of in a separate signatures array.
-- The sig hash is calculated using the `InputSigHash` method on the consensus state instead of `WholeSigHash` or `PartialSigHash`.
+
+* The miner fee is no longer an array of `Currency` but a single `Currency` value.
+* There is a slightly different structure to siacoin inputs
+* The input signature has moved to the siacoin input instead of in a separate signatures array.
+* The sig hash is calculated using the `InputSigHash` method on the consensus state instead of `WholeSigHash` or `PartialSigHash`.
 
 #### With a wallet
 
@@ -833,6 +837,6 @@ To test your integration with `walletd` without risking real Siacoin, you can us
 
 Let us know!
 
-- Send us an [email](mailto://hello@sia.tech)
-- [Reach out to the community on Discord](https://discord.gg/sia)
-- [Open an Issue](https://github.com/SiaFoundation/walletd)
+* Send us an [email](mailto://hello@sia.tech)
+* [Reach out to the community on Discord](https://discord.gg/sia)
+* [Open an Issue](https://github.com/SiaFoundation/walletd)

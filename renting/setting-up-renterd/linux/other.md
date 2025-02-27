@@ -212,11 +212,6 @@ http:
   password: your_api_password
 autopilot:
   heartbeat: 5m
-s3:
-  enabled: true
-  disableAuth: false
-  keypairsV4:
-    your_access_key: your_private_key
 ```
 
 Once you have added your recovery phrase and password, save the file with `ctrl+s` and exit with `ctrl+x`.
@@ -314,7 +309,7 @@ On newer versions of Linux (Ubuntu 22.04+), `sudo systemctl enable renterd` may 
 {% endhint %}
 
 Your `renterd` service should now be running. You can check the status of the service by running the following command:
-  
+
 {% tabs %}
 {% tab title="Mainnet" %}
 ```console

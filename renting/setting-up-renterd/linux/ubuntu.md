@@ -88,8 +88,6 @@ renterd version
 After installing `renterd`, you will need to configure it with a wallet seed and a password to unlock the web interface. There is an interactive configuration process that you can start by running the following command.
 
 ```sh
-sudo mkdir /var/lib/renterd
-cd /var/lib/renterd
 sudo renterd config
 ```
 

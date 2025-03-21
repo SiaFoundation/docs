@@ -55,6 +55,10 @@ To ensure proper functionality, we are recommending 8 GB RAM. This is because `r
 
 Before you install `renterd` for the first time on a new machine, you need to set up the Sia `apt` repository. Afterward, you can install and update `renterd` using `apt`.
 
+{% hint style="warning" %}
+Your system will need to have `curl` installed as well. You can check if it is installed by running `curl --version`.
+{% endhint %}
+
 **1. Set up the Sia `apt` repository by copying and pasting the following commands into your terminal:**
 
 ```sh
@@ -64,14 +68,14 @@ echo "deb [signed-by=/usr/share/keyrings/siafoundation.gpg] https://linux.sia.te
 sudo apt update
 ```
 
-![](../../../.gitbook/assets/renterd-install-screenshots/linux/debian/01-renterd-debian-apt-repo.png)
+![](../../../.gitbook/assets/renterd-screenshots/install/linux/ubuntu/01-renterd-ubuntu-apt-repo.png)
 
 **2. Install `renterd`**
 ```sh
 sudo apt install renterd
 ```
 
-![asdd](../../../.gitbook/assets/renterd-install-screenshots/linux/debian/02-renterd-debian-apt-install.png)
+![asdd](../../../.gitbook/assets/renterd-screenshots/install/linux/ubuntu/02-renterd-ubuntu-apt-install.png)
 
 **3. Verify `renterd` was installed successfully**
 
@@ -81,7 +85,7 @@ Run the following command to see the version of `renterd` that was installed:
 renterd version
 ```
 
-![](../../../.gitbook/assets/renterd-install-screenshots/linux/debian/03-renterd-debian-version.png)
+![](../../../.gitbook/assets/renterd-screenshots/install/linux/ubuntu/03-renterd-ubuntu-version.png)
 
 ## Configure `renterd`
 
@@ -97,7 +101,7 @@ This will start an interactive configuration process. You will be asked to gener
 You will not see anything when you type in your seed phrase or unlock password. Press enter after typing each one.
 {% endhint %}
 
-![](../../../.gitbook/assets/renterd-install-screenshots/linux/debian/04-renterd-debian-config.png)
+![](../../../.gitbook/assets/renterd-screenshots/install/linux/ubuntu/04-renterd-ubuntu-config.png)
 
 ## Start `renterd`
 
@@ -106,6 +110,16 @@ Now that you have installed and configured `renterd`, you can start it by runnin
 ```sh
 sudo systemctl enable --now renterd
 ```
+
+## Verify `renterd` has started successfully
+
+Run the following command to verify the `renterd` service has started successfully:
+
+```sh
+sudo systemctl status renterd
+```
+
+![](../../../.gitbook/assets/renterd-screenshots/install/linux/ubuntu/05-renterd-ubuntu-status.png)
 
 ## Updating `renterd`
 
@@ -132,6 +146,8 @@ sudo systemctl start renterd
 ## Next Steps
 
 Now that you have `renterd` installed and running, you can start using it to store and retrieve data on the Sia network. You can access the web interface by navigating to `http://127.0.0.1:9980` in your web browser. If you installed `renterd` on a remote machine or a server, you will need to create an SSH tunnel to access the web interface.
+
+![](../../../.gitbook/assets/renterd-screenshots/install/linux/ubuntu/06-renterd-ubuntu-success.png)
 
 - [About Renting](../../about-renting.md)
 - [Transferring Siacoins](../../transferring-siacoins.md)

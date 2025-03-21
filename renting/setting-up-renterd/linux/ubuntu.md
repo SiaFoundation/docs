@@ -56,7 +56,7 @@ To ensure proper functionality, we are recommending 8 GB RAM. This is because `r
 Before you install `renterd` for the first time on a new machine, you need to set up the Sia `apt` repository. Afterward, you can install and update `renterd` using `apt`.
 
 {% hint style="warning" %}
-Your system will need to have `curl` installed as well. You can check if it is installed by running `curl --version`.
+Your system will need to have `curl` installed as well. You can check if it is installed by running `curl --version`. If it is not installed, you can install it by running `sudo apt update && sudo apt install curl`
 {% endhint %}
 
 **1. Set up the Sia `apt` repository by copying and pasting the following commands into your terminal:**
@@ -147,7 +147,7 @@ sudo systemctl start renterd
 
 Now that you have `renterd` installed and running, you can start using it to store and retrieve data on the Sia network. You can access the web interface by navigating to `http://127.0.0.1:9980` in your web browser. If you installed `renterd` on a remote machine or a server, you will need to create an SSH tunnel to access the web interface.
 
-![](../../../.gitbook/assets/renterd-screenshots/install/linux/ubuntu/06-renterd-ubuntu-success.png)
+![](../../../.gitbook/assets/renterd-screenshots\ui\01-renterd-login.png)
 
 - [About Renting](../../about-renting.md)
 - [Transferring Siacoins](../../transferring-siacoins.md)

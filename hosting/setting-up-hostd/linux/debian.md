@@ -150,7 +150,7 @@ sudo systemctl start hostd
 
 Now that you have `hostd` installed and running, you can start using it to store and retrieve data on the Sia network. You can access the web interface by navigating to [http://127.0.0.1:9980](http://127.0.0.1:9980) in your web browser. If you installed `hostd` on a remote machine or a server, you will need to create an SSH tunnel to access the web interface.
 
-![](../../../.gitbook/assets/hostd-screenshots\ui\01-hostd-login.png)
+![](../../../.gitbook/assets/hostd-screenshots/ui/01-hostd-login.png)
 
 - [About Hosting on Sia](../../about-hosting-on-sia.md)
 - [Adding Storage to `hostd`](../../adding-storage.md)

@@ -79,7 +79,7 @@ Replace this part with the codename of the corresponding Debian release, such as
 sudo apt install hostd
 ```
 
-![asdd](../../../.gitbook/assets/hostd-screenshots/install/linux/debian/02-hostd-debian-apt-install.png)
+![](../../../.gitbook/assets/hostd-screenshots/install/linux/debian/02-hostd-debian-apt-install.png)
 
 **3. Verify `hostd` was installed successfully**
 
@@ -89,7 +89,7 @@ Run the following command to see the version of `hostd` that was installed:
 hostd version
 ```
 
-![](../../../.gitbook/assets/hostd-screenshots/install/linux/debian/03-hostd-version.png)
+![](../../../.gitbook/assets/hostd-screenshots/install/linux/debian/03-hostd-debian-version.png)
 
 ## Configure `hostd`
 
@@ -124,6 +124,7 @@ sudo systemctl status hostd
 ```
 
 ![](../../../.gitbook/assets/hostd-screenshots/install/linux/debian/05-hostd-debian-status.png)
+
 ## Updating `hostd`
 
 New versions of `hostd` are released regularly and contain bug fixes and performance improvements.

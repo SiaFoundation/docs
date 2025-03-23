@@ -24,8 +24,6 @@ This guide will walk you through setting up `renterd` on Windows. At the end of 
 * Installed Sia `renterd` software
 * Created a `renterd` wallet
 
----
-
 ## Pre-requisites
 
 To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
@@ -47,155 +45,74 @@ To ensure you will not run into any issues with running `renterd` it is recommen
 To ensure proper functionality, we are recommending 16GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
 {% endhint %}
 
----
-
 ## Installing `renterd`
 
 Press `windows key + R` to open the run dialog. Type in `powershell` and press `OK` to open a Terminal.
 
-![](../../.gitbook/assets/renterd-install-screenshots/windows/00-renterd-run-powershell.png)
+![](../../.gitbook/assets/renterd-screenshots/install/windows/01-renterd-windows-run-powershell.png)
 
 Once the Terminal loads, run the following command to download and install the latest version of `renterd`.
 
-{% tabs %}
-{% tab title="Mainnet" %}
 ```powershell
 wget https://sia.tech/downloads/latest/renterd_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_windows_amd64.zip"; `
 Expand-Archive "$HOME\Downloads\renterd_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd"; `
-Move-Item -Path "$HOME\sia\renterd\bin\renterd.exe" -Destination "$HOME\sia\renterd\renterd.exe" -Force; `
-Remove-Item -LiteralPath "$HOME\sia\renterd\bin" -Recurse
+Remove-Item -LiteralPath "$HOME\Downloads\renterd_windows_amd64.zip" -Recurse
 ```
-{% endtab %}
-
-{% tab title="Zen Testnet" %}
-```powershell
-wget https://sia.tech/downloads/latest/renterd_zen_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_zen_windows_amd64.zip"; `
-Expand-Archive "$HOME\Downloads\renterd_zen_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd_zen"; `
-Move-Item -Path "$HOME\sia\renterd_zen\bin\renterd.exe" -Destination "$HOME\sia\renterd_zen\renterd.exe" -Force; `
-Remove-Item -LiteralPath "$HOME\sia\renterd_zen\bin" -Recurse
-```
-{% endtab %}
-{% endtabs %}
 
 {% hint style="warning" %}
 When you paste multi-line commands into PowerShell, you will be prompted with a warning. Make sure you have copied the entire command and click `Paste anyway` to proceed.
 {% endhint %}
 
-![Click `Paste anyway` to proceed with installation.](../../.gitbook/assets/renterd-install-screenshots/windows/01-renterd-multiline-warn.png)
+![Click `Paste anyway` to proceed with installation.](../../.gitbook/assets/renterd-screenshots/install/windows/02-renterd-windows-multiline-warn.png)
 
-![Installation of renterd completed successfully.](../../.gitbook/assets/renterd-install-screenshots/windows/02-renterd-download-and-install.png)
+![Installation of renterd completed successfully.](../../.gitbook/assets/renterd-screenshots/install/windows/03-renterd-windows-download-and-install.png)
 
----
+## Verify `renterd` was installed successfully
 
-## Creating a wallet
+Run the following command to see the version of `renterd` that was installed:
 
-`renterd` uses BIP-39 12-word recovery phrases. To generate a new wallet recovery phrase, run the following command:
-
-{% tabs %}
-{% tab title="Mainnet" %}
 ```powershell
-cd $HOME\sia\renterd\; `
-.\renterd.exe seed
+cd $HOME\sia\renterd; `
+.\renterd.exe version
 ```
-{% endtab %}
 
-{% tab title="Zen Testnet" %}
+![](../../.gitbook/assets/renterd-screenshots/install/windows/04-renterd-windows-version.png)
+
+## Configure `renterd`
+
+After installing `renterd`, you will need to configure it with a wallet seed and a password to unlock the web interface. There is an interactive configuration process that you can start by running the following command.
+
 ```powershell
-cd $HOME\sia\renterd_zen\; `
-.\renterd.exe seed
-```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="warning" %}
-A new 12-word recovery phrase will be generated. Make sure to store it in a safe place, as you will need this phrase to recover your wallet.
-{% endhint %}
-
-![](../../.gitbook/assets/renterd-install-screenshots/windows/03-renterd-seed.png)
-
----
-
-## Configure your `renterd.yml` file
-
-Under `$HOME\sia\renterd\bin` create a new text document named `renterd.yml`.
-
-{% tabs %}
-{% tab title="Mainnet" %}
-```powershell
-New-Item -Path "$HOME\sia\renterd" -Name "renterd.yml" -ItemType "file"; `
-Start-Process "C:\WINDOWS\system32\notepad.exe" "$HOME\sia\renterd\renterd.yml"
-```
-{% endtab %}
-
-{% tab title="Zen Testnet" %}
-```powershell
-New-Item -Path "$HOME\sia\renterd_zen" -Name "renterd.yml" -ItemType "file"; `
-Start-Process "C:\WINDOWS\system32\notepad.exe" "$HOME\sia\renterd_zen\renterd.yml"
-```
-{% endtab %}
-{% endtabs %}
-
-Once Notepad loads, enter the following and configure it as needed.
-
-```yaml
-seed: your seed phrase goes here
-http:
-  password: your_api_password
-autopilot:
-  heartbeat: 5m
+cd $HOME\sia\renterd; `
+.\renterd.exe config
 ```
 
-Make sure to add your wallet seed and create an API password. The recovery phrase is the 12-word seed phrase you generated in the previous step. Type it carefully, with one space between each word, or copy it from the previous step. The password is used to unlock the `renterd` web UI; it should be something secure and easy to remember.
-
-{% hint style="warning" %}
-`your_access_key` can be anywhere from 16 to 128 characters long, and `your_private_key` must be exactly 40 characters long.
-{% endhint %}
-
-Save your `renterd.yml` configuration using `ctrl+s` and close Notepad.
-
----
+![](../../.gitbook/assets/renterd-screenshots/install/windows/05-renterd-windows-config.png)
 
 ## Running `renterd`
 
 Run the following command to start `renterd`.
 
-{% tabs %}
-{% tab title="Mainnet" %}
 ```powershell
 cd $HOME\sia\renterd; `
 .\renterd.exe
 ```
-{% endtab %}
-
-{% tab title="Zen Testnet" %}
-```powershell
-cd $HOME\sia\renterd_zen; `
-.\renterd.exe
-```
-{% endtab %}
-{% endtabs %}
 
 {% hint style="warning" %}
 Remember to leave the PowerShell open while `renterd` is running. If you close the command prompt window, `renterd` will stop.
 {% endhint %}
 
-![](../../.gitbook/assets/renterd-install-screenshots/windows/04-renterd-success.png)
+![](../../.gitbook/assets/renterd-screenshots/install/windows/06-renterd-windows-running.png)
 
 You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9980](http://localhost:9980/).
 
-{% hint style="warning" %}
-If you are running `renterd` on the Zen Testnet, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
-{% endhint %}
-
-![](../../.gitbook/assets/renterd-install-screenshots/renterd-success.png)
+![](../../.gitbook/assets/renterd-screenshots\ui\01-renterd-login.png)
 
 Enter the API `password` you created in your `renterd.yml` to unlock the `renterd` web UI.
 
 {% hint style="success" %}
 Congratulations, you have successfully set up `renterd`.
 {% endhint %}
-
----
 
 ## Updating
 
@@ -207,42 +124,18 @@ New versions of `renterd` are released regularly and contain bug fixes and perfo
 
 2. Download and install the latest version of `renterd`.
 
-{% tabs %}
-{% tab title="Mainnet" %}
 ```powershell
 wget https://sia.tech/downloads/latest/renterd_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_windows_amd64.zip"; `
 Expand-Archive "$HOME\Downloads\renterd_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd"; `
-Move-Item -Path "$HOME\sia\renterd\bin\renterd.exe" -Destination "$HOME\sia\renterd\renterd.exe" -Force; `
-Remove-Item -LiteralPath "$HOME\sia\renterd\bin" -Recurse
+Remove-Item -LiteralPath "$HOME\Downloads\renterd_windows_amd64.zip" -Recurse
 ```
-{% endtab %}
-
-{% tab title="Zen Testnet" %}
-```powershell
-wget https://sia.tech/downloads/latest/renterd_zen_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_zen_windows_amd64.zip"; `
-Expand-Archive "$HOME\Downloads\renterd_zen_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd_zen"; `
-Move-Item -Path "$HOME\sia\renterd_zen\bin\renterd.exe" -Destination "$HOME\sia\renterd_zen\renterd.exe" -Force; `
-Remove-Item -LiteralPath "$HOME\sia\renterd_zen\bin" -Recurse
-```
-{% endtab %}
-{% endtabs %}
 
 3. Restart the `renterd` system service.
-{% tabs %}
-{% tab title="Mainnet" %}
+
 ```powershell
 cd $HOME\sia\renterd; `
 .\renterd.exe
 ```
-{% endtab %}
-
-{% tab title="Zen Testnet" %}
-```powershell
-cd $HOME\sia\renterd_zen; `
-.\renterd.exe
-```
-{% endtab %}
-{% endtabs %}
 
 ![Starting renterd](../../.gitbook/assets/renterd-install-screenshots/windows/04-renterd-success.png)
 

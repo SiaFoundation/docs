@@ -59,11 +59,14 @@ It's important for renters and hosts to upgrade before June 6th so that they can
 
 #### ...Siacoin holders?
 
-First, to be absolutely clear: Your Siacoins are cryptographically owned by you, and Sia v2 doesn't change that. `walletd` is backwards-compatible, so you don't need to move your Siacoins to a new address in order to use them. That said, Sia v2 supports a new type of address that enables more flexible multisig scenarios and atomic swaps.
+First, to be absolutely clear: Your Siacoins are cryptographically controlled by your seed, and Sia v2 doesn't change that. `walletd` is backwards-compatible with the existing blockchain data, so you don't need to move your Siacoins in order to prevent them from getting "lost". That said, Sia v2 software is deprecating support for old seeds and, instead, supports a new industry standard type of address that enables more flexible multisig scenarios and atomic swaps.
 
-We recommend that Siacoin holders upgrade to `walletd` v2 by June 6th. If you don't, you'll still be able to broadcast transactions during the grace period, but you won't be able to sync new blocks. Regardless of your decision, your Siacoins are never at risk: they'll be available to spend again as soon as you update.
+`walletd` does not support the legacy 28 or 29-word seeds format. It only support a new 12-word seed format. To ensure easy access to your coins, we **strongly recommend** that you generate a new 12-word Sia Seed and transfer your tokens from your old 28/29-word seed over. The easiest way to do this is to use the [SiaCentral Web Wallet](https://wallet.siacentral.com/) to generate the 12-word seed, then create (and save) a Deposit Address. Afterwards, if have a synced Sia-UI instance you should **first** transfer a small number of coins (~10) to the new address, confirm the transaction was successfully recieved, and then transfer all of your coins to the new address (you may need to transfer all-but-1 to be able to pay the network fee).
+If you do NOT have a synced Sia-UI instance, then you can log into SiaCentral with a 28/29-word seed and transfer coins that way, too. SiaCentral will continue to support the "old" Sia seed format along side the new one, but official apps will only support the new 12-word seed format.
 
-If you store Siacoins on an exchange, you don't have to do anything. The exchange is responsible for updating their nodes and ensuring that you can continue to deposit and withdraw Siacoins.
+We recommend that Siacoin holders upgrade to `walletd` by June 6th. If you don't, you'll still be able to broadcast transactions during the 1-month grace period, but you won't be able to sync new blocks. In order to process transactions after July 6th, you must to use software that supports signing v2 transactions. Currently, that is only `walletd` and SiaCentral's Web Wallet; Sia-UI will not be updated.
+
+If you store Siacoin on an exchange, ensure that your exchange has committed to supporting the fork. We will be reaching out to exchanges to notify them of the fork and offer support, but ultimately the exchange is responsible for updating their nodes and ensuring that you can continue to deposit and withdraw Siacoins. To be sure that your tokens will be accessible after the fork, we **strongly recommend** withdrawing them to a privately owned address as we are not responsible for how exchanges handle tokens.
 
 #### ...for miners?
 

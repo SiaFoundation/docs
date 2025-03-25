@@ -43,7 +43,7 @@ There are two versions of each app: The Desktop application, suitable for most u
 The actual hardfork -- the point at which you _must_ be running a v2 node -- occurs later in 2025. The Sia ecosystem is large, so we need to make sure that not only our users, but exchanges, miners and pools, web wallets, and other integrations have plenty of time to update.
 
 * The hardfork activates on June 6th, 2025 at a block height of **526,000 at 06:00 UTC**. After this height, blocks may contain v2 transactions, so if you are not running an updated node, **you will not be able to sync**. This will enable most of the new v2 features, but v1 blocks are still allowed, giving any stragglers a grace period to submit their transactions to miners.
-* This grace period ends on July 6th, 2025 at a block height of **530,000 at 02:00 UTC**. **You must update by this date to continue using Sia.**
+* This grace period ends on July 4th, 2025 at a block height of **530,000 at 02:00 UTC**. **You must update by this date to continue using Sia.**
 
 ### So how does the hardfork benefit...
 

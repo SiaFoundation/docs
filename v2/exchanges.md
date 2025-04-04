@@ -833,6 +833,74 @@ To test your integration with `walletd` without risking real Siacoin, you can us
 * To test V2 transactions, you can use the Anagami testnet. Pass the `--network=anagami` CLI flag to `walletd` to connect to the Anagami testnet.
 * To test V1 transactions, you can use the Zen testnet. Pass the `--network=zen` CLI flag to `walletd` to connect to the Zen testnet.
 
+### Importing siad seed into Vaultd
+
+If you are using `siad` to store your private keys instead of running your own
+key store, you can use [vaultd](https://github.com/siafoundation/vaultd). Just
+follow the link to the repo for instructions on how to set it up and configure
+it.
+
+Once it's running, you can use the following code to import your seed and
+generate keys which you can use for transaction signing. If you are not using
+Go, check out the [vaultd API documentation](https://sia.tech/docs/api/vaultd)
+for more information on the API.
+```Go
+package main
+
+import (
+	"context"
+	"log"
+
+	"go.sia.tech/vaultd/api"
+)
+
+const (
+	// api address of your vaultd
+	vaultdAPIAddress = "http://localhost:9980"
+
+	// api password of your vaultd
+	vaultdAPIPassword = "change me"
+
+	// number of keys to generate and import into vaultd. Make sure this is
+	// large enough. You can always generate more keys by calling GenerateKeys
+	// again.
+	keysToGenerate = 100
+
+	// your siad seed to import
+	phrase = "touchy inroads aptitude perfect seventh tycoon zinger madness firm cause diode owls meant knife nuisance skirting umpire sapling reruns batch molten urchins jaded nodes"
+)
+
+func main() {
+	client := api.NewClient(vaultdAPIAddress, vaultdAPIPassword)
+
+	// add seed to store
+	meta, err := client.AddSeed(context.Background(), phrase)
+	if err != nil {
+		panic(err)
+	}
+
+	// add keys to store
+	resp, err := client.GenerateKeys(context.Background(), meta.ID, keysToGenerate)
+	if err != nil {
+		panic(err)
+	}
+	for _, resp := range resp {
+		log.Printf("generated address: %v", resp.StandardAddress)
+	}
+}
+```
+
+#### Signing transactions
+
+To sign transactions after constructing them, you can use `vaultd`s
+`client.Sign` and `client.SignV2` methods which correspond to the `POST /sign`
+and `POST /v2/sign` endpoints. Afterwards you can broadcast the transaction.
+
+For examples on how to construct a transaction and broadcast it, check out the
+previous sections on [Sending Transactions](#sending-transactions) and [Sending
+V2 transactions](#sending-v2-transactions).
+
+
 ## More questions?
 
 Let us know!

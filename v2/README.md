@@ -42,8 +42,8 @@ There are two versions of each app: The Desktop application, suitable for most u
 
 The actual hardfork -- the point at which you _must_ be running a v2 node -- occurs later in 2025. The Sia ecosystem is large, so we need to make sure that not only our users, but exchanges, miners and pools, web wallets, and other integrations have plenty of time to update.
 
-* The hardfork activates on June 6th, 2025 at a block height of **526,000 at 06:00 UTC**. After this height, blocks may contain v2 transactions, so if you are not running an updated node, **you will not be able to sync**. This will enable most of the new v2 features, but v1 blocks are still allowed, giving any stragglers a grace period to submit their transactions to miners.
-* This grace period ends on July 4th, 2025 at a block height of **530,000 at 02:00 UTC**. **You must update by this date to continue using Sia.**
+* The hardfork activates at block height **526,000** on or around **June 6th, 2025 06:00 UTC**. After this height, blocks may contain v2 transactions, so if you are not running an updated node, **you will not be able to sync**. This will enable most of the new v2 features, but v1 blocks are still allowed, giving any stragglers a grace period to submit their transactions to miners.
+* This grace period ends at block height of **530,000** on or around **July 4th, 2025 02:00 UTC**. **You must update by this date to continue using Sia.**
 
 ### So how does the hardfork benefit...
 
@@ -55,7 +55,7 @@ Sia v2 includes an update to the renter-host protocol that is faster and more ef
 * Faster uploads and downloads, including concurrent uploads to the same host
 * Enables decentralized uploads and downloads in a browser, no plugins or daemons necessary
 
-It's important for renters and hosts to upgrade before June 6th so that they can enjoy the benefits of v2 and the new renter-host protocol as soon as possible.
+It's important for renters and hosts to upgrade before **June 6th** so that they can enjoy the benefits of v2 and the new renter-host protocol as soon as possible.
 
 #### ...Siacoin holders?
 
@@ -64,7 +64,7 @@ First, to be absolutely clear: Your Siacoins are cryptographically controlled by
 `walletd` does not support the legacy 28 or 29-word seeds format. It only support a new 12-word seed format. To ensure easy access to your coins, we **strongly recommend** that you generate a new 12-word Sia Seed and transfer your tokens from your old 28/29-word seed over. The easiest way to do this is to use the [SiaCentral Web Wallet](https://wallet.siacentral.com/) to generate the 12-word seed, then create (and save) a Deposit Address. Afterwards, if have a synced Sia-UI instance you should **first** transfer a small number of coins (~10) to the new address, confirm the transaction was successfully recieved, and then transfer all of your coins to the new address (you may need to transfer all-but-1 to be able to pay the network fee).
 If you do NOT have a synced Sia-UI instance, then you can log into SiaCentral with a 28/29-word seed and transfer coins that way, too. SiaCentral will continue to support the "old" Sia seed format along side the new one, but official apps will only support the new 12-word seed format.
 
-We recommend that Siacoin holders upgrade to `walletd` by June 6th. If you don't, you'll still be able to broadcast transactions during the 1-month grace period, but you won't be able to sync new blocks. In order to process transactions after July 4th, you must use software that supports signing v2 transactions. Currently, that is only `walletd` and SiaCentral's Web Wallet; Sia-UI will not be updated.
+We recommend that Siacoin holders upgrade to `walletd` by **June 6th**. If you don't, you'll still be able to broadcast transactions during the 1-month grace period, but you won't be able to sync new blocks. In order to process transactions after **July 4th**, you must use software that supports signing v2 transactions. Currently, that is only `walletd` and SiaCentral's Web Wallet; Sia-UI will not be updated.
 
 If you store Siacoin on an exchange, ensure that your exchange has committed to supporting the fork. We will be reaching out to exchanges to notify them of the fork and offer support, but ultimately the exchange is responsible for updating their nodes and ensuring that you can continue to deposit and withdraw Siacoins. To be sure that your tokens will be accessible after the fork, we **strongly recommend** withdrawing them to a privately owned address as we are not responsible for how exchanges handle tokens.
 

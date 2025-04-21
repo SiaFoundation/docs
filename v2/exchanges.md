@@ -29,7 +29,7 @@ The hardfork activates at a block height of **526,000** on or around **June 6th,
 
 ### Differences from `siad`
 
-The most important difference between `siad` and `walletd` is that `walletd` is a watch-only server. That means that it does not store any private keys. This makes `walletd` more secure, but also means that transactions must be signed by an external service with access to the private keys. Either a hardware security device, like a YubiKey, Hashicorp Vault, or an offline signing node. This can be more complex than with `siad`, but it provides significantly more flexibility and security.
+The most important difference between `siad` and `walletd` is that `walletd` is a watch-only server. That means that it does not store any private keys. This makes `walletd` more secure, but also means that transactions must be signed by an external service with access to the private keys. Either a hardware security device, like a YubiKey, Hashicorp Vault, `vaultd`, or any other offline signing node with ed25519 support. This can be more complex than with `siad`, but it provides significantly more flexibility and security.
 
 Another difference is that `walletd` does not need to rescan the blockchain when adding new addresses to a wallet. This makes managing deposit addresses significantly easier than with `siad`.
 
@@ -828,10 +828,7 @@ func main() {
 
 ## Signing transactions with `vaultd`
 
-`vaultd` is an optional replacement for `siad`'s secure private key storage. Like `siad`, `vaultd` supports 
-importing 28/29 word seed phrases, generating addresses, and offline signing of transactions using a secure API.
-If you are running your own keystore, you do not need to use vaultd and can sign transactions using your existing
-infrastructure.
+`vaultd` is an optional replacement for `siad`'s secure private key storage. Like `siad`, `vaultd` supports importing 28/29 word seed phrases, generating addresses, and offline signing of transactions using a secure API. If you are running your own keystore, you do not need to use vaultd and can sign transactions using your existing infrastructure.
 
 API documentation can be found here: https://api.sia.tech/vaultd
 

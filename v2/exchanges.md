@@ -900,8 +900,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	for _, resp := range resp {
-		log.Printf("generated address: %v", resp.StandardAddress)
+	for _, addr := range resp {
+		log.Printf("generated address: %v", addr.Address)
 	}
 }
 ```
@@ -972,10 +972,10 @@ func main() {
 	}
 
 	// add the new addresses to the wallet
-	for _, resp := range resp {
+	for _, addr := range resp {
 		mywalletClient.AddAddress(wallet.Address{
-			Address:     resp.Address,
-			SpendPolicy: &resp.SpendPolicy,
+			Address:     addr.Address,
+			SpendPolicy: &addr.SpendPolicy,
 		})
 	}
 
@@ -1078,10 +1078,10 @@ func main() {
 	}
 
 	// add the new addresses to the wallet
-	for _, resp := range resp {
+	for _, addr := range resp {
 		mywalletClient.AddAddress(wallet.Address{
-			Address:     resp.Address,
-			SpendPolicy: &resp.SpendPolicy,
+			Address:     addr.Address,
+			SpendPolicy: &addr.SpendPolicy,
 		})
 	}
 

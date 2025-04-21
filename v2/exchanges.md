@@ -161,8 +161,8 @@ package main
 
 import (
 	"go.sia.tech/core/types"
-	"go.sia.tech/walletd/api"
-	"go.sia.tech/walletd/wallet"
+	"go.sia.tech/walletd/v2/api"
+	"go.sia.tech/walletd/v2/wallet"
 )
 
 const (
@@ -547,7 +547,7 @@ curl http://localhost:9980/api/consensus/updates/0::0000000000000000000000000000
 }
 ```
 
-## Sending Transactions
+### Sending Transactions
 
 If you do not want to use a wallet to construct a transaction, you can manually select UTXOs and build the transaction yourself. This is more complex than using a wallet, but it provides more control over the transaction construction process. It is required to use this method if you are using multi-sig addresses.
 
@@ -556,7 +556,7 @@ package main
 
 import (
 	"go.sia.tech/core/types"
-	"go.sia.tech/walletd/api"
+	"go.sia.tech/walletd/v2/api"
 )
 
 const (
@@ -645,7 +645,7 @@ func main() {
 }
 ```
 
-### How to Support V2?
+## How to Support V2?
 
 After block height **526,000** (estimated **June 6th, 2025 06:00 UTC**), `siad` will no longer be able to send or receive Siacoins. To continue supporting the Sia network, exchanges must upgrade to `walletd`. In addition to upgrading to `walletd`, exchanges will need to start sending V2 transactions and using the new V2 API endpoints.
 
@@ -669,8 +669,8 @@ package main
 
 import (
 	"go.sia.tech/core/types"
-	"go.sia.tech/walletd/api"
-	"go.sia.tech/walletd/wallet"
+	"go.sia.tech/walletd/v2/api"
+	"go.sia.tech/walletd/v2/wallet"
 )
 
 const (
@@ -744,7 +744,7 @@ package main
 
 import (
 	"go.sia.tech/core/types"
-	"go.sia.tech/walletd/api"
+	"go.sia.tech/walletd/v2/api"
 )
 
 const (
@@ -826,24 +826,40 @@ func main() {
 }
 ```
 
-### How Can I Test?
+## Signing transactions with `vaultd`
 
-To test your integration with `walletd` without risking real Siacoin, you can use one of our two testnets.
+`vaultd` is an optional replacement for `siad`'s secure private key storage. Like `siad`, `vaultd` supports 
+importing 28/29 word seed phrases, generating addresses, and offline signing of transactions using a secure API.
+If you are running your own keystore, you do not need to use vaultd and can sign transactions using your existing
+infrastructure.
 
-* To test V2 transactions, you can use the Anagami testnet. Pass the `--network=anagami` CLI flag to `walletd` to connect to the Anagami testnet.
-* To test V1 transactions, you can use the Zen testnet. Pass the `--network=zen` CLI flag to `walletd` to connect to the Zen testnet.
+API documentation can be found here: https://api.sia.tech/vaultd
 
-### Importing siad seed into Vaultd
+We recommend running `vaultd` in a Docker container, but binaries and setup instructions are also provided on [GitHub](https://github.com/siafoundation/vaultd).
 
-If you are using `siad` to store your private keys instead of running your own
-key store, you can use [vaultd](https://github.com/siafoundation/vaultd). Just
-follow the link to the repo for instructions on how to set it up and configure
-it.
+### Running `vaultd`
 
-Once it's running, you can use the following code to import your seed and
-generate keys which you can use for transaction signing. If you are not using
-Go, check out the [vaultd API documentation](https://sia.tech/docs/api/vaultd)
-for more information on the API.
+```yml
+services:
+  vaultd:
+    image: ghcr.io/siafoundation/vaultd:latest
+    ports:
+      - 127.0.0.1:9980:9980/tcp
+    volumes:
+      - vaultd-data:/data
+    environment:
+      VAULTD_API_PASSWORD: my auth password
+      VAULTD_SECRET: my encryption secret
+    restart: unless-stopped
+
+volumes:
+  vaultd-data:
+```
+
+### Importing a seed into `vaultd`
+
+Seeds can be imported using the [`[GET] /seeds`](https://api.sia.tech/vaultd#d9f9962b-a82e-4991-b2d7-59d3a80c5a90) endpoint. An example using the Go SDK client can be found below:
+
 ```Go
 package main
 
@@ -890,16 +906,224 @@ func main() {
 }
 ```
 
-#### Signing transactions
+### Signing V1 Transactions
 
-To sign transactions after constructing them, you can use `vaultd`s
-`client.Sign` and `client.SignV2` methods which correspond to the `POST /sign`
-and `POST /v2/sign` endpoints. Afterwards you can broadcast the transaction.
+Once you have imported your keys, you can sign legacy transactions using the [`[POST] /sign`](https://api.sia.tech/vaultd#6d7949f0-790e-4cd3-b85e-76ae01a631d1) endpoint.
 
-For examples on how to construct a transaction and broadcast it, check out the
-previous sections on [Sending Transactions](#sending-transactions) and [Sending
-V2 transactions](#sending-v2-transactions).
+#### Example
 
+```Go
+package main
+
+import (
+	"context"
+
+	"go.sia.tech/core/types"
+	vaultd "go.sia.tech/vaultd/api"
+	walletd "go.sia.tech/walletd/v2/api"
+	"go.sia.tech/walletd/v2/wallet"
+)
+
+const (
+	// api address of your vaultd
+	vaultdAPIAddress = "http://localhost:9980"
+
+	// api password of your vaultd
+	vaultdAPIPassword = "change me"
+
+	walletdAPIAddress = "http://localhost:9880"
+
+	walletdAPIPassword = "change me"
+
+	// number of keys to generate and import into vaultd. Make sure this is
+	// large enough. You can always generate more keys by calling GenerateKeys
+	// again.
+	keysToGenerate = 100
+
+	// your siad seed to import
+	phrase = "touchy inroads aptitude perfect seventh tycoon zinger madness firm cause diode owls meant knife nuisance skirting umpire sapling reruns batch molten urchins jaded nodes"
+)
+
+func main() {
+	vclient := vaultd.NewClient(vaultdAPIAddress, vaultdAPIPassword)
+	wclient := walletd.NewClient(walletdAPIAddress, walletdAPIPassword)
+
+	// create a new walletd wallet. This should not be necessary if you
+	// already have a wallet.
+	mywallet, err := wclient.AddWallet(walletd.WalletUpdateRequest{
+		Name: "test",
+	})
+	if err != nil {
+		panic(err)
+	}
+	mywalletClient := wclient.Wallet(mywallet.ID)
+
+	// import seed to vaultd
+	meta, err := vclient.AddSeed(context.Background(), phrase)
+	if err != nil {
+		panic(err)
+	}
+
+	// Generate keysToGenerate keys, returning the address and spend policy
+	// for each key. Each call will result in n new addresses being generated
+	resp, err := vclient.GenerateKeys(context.Background(), meta.ID, keysToGenerate)
+	if err != nil {
+		panic(err)
+	}
+
+	// add the new addresses to the wallet
+	for _, resp := range resp {
+		mywalletClient.AddAddress(wallet.Address{
+			Address:     resp.Address,
+			SpendPolicy: &resp.SpendPolicy,
+		})
+	}
+
+	addrResp, err := mywalletClient.Addresses()
+	if err != nil {
+		panic(err)
+	}
+
+	// construct a transaction to send 1 SC to a recipient
+	txnResp, err := mywalletClient.Construct([]types.SiacoinOutput{
+		{Address: types.VoidAddress, Value: types.Siacoins(1)},
+	}, nil, addrResp[0].Address)
+	if err != nil {
+		panic(err)
+	}
+
+	cs, err := wclient.ConsensusTipState()
+	if err != nil {
+		panic(err)
+	}
+
+	// sign the transaction
+	signedTxn, ok, err := vclient.Sign(context.Background(), cs, txnResp.Transaction)
+	if err != nil {
+		panic(err)
+	} else if !ok {
+		panic("transaction not signed")
+	}
+
+	// broadcast the signed transaction
+	if err := wclient.TxpoolBroadcast(txnResp.Basis, []types.Transaction{signedTxn}, nil); err != nil {
+		panic(err)
+	}
+}
+```
+
+### Signing V2 Transactions
+
+Once you have imported your keys, you can sign V2 transactions using the [`[POST] /v2/sign`](https://api.sia.tech/vaultd#6d7949f0-790e-4cd3-b85e-76ae01a631d1) endpoint.
+
+#### Example
+
+```Go
+package main
+
+import (
+	"context"
+
+	"go.sia.tech/core/types"
+	vaultd "go.sia.tech/vaultd/api"
+	walletd "go.sia.tech/walletd/v2/api"
+	"go.sia.tech/walletd/v2/wallet"
+)
+
+const (
+	// api address of your vaultd
+	vaultdAPIAddress = "http://localhost:9980"
+
+	// api password of your vaultd
+	vaultdAPIPassword = "change me"
+
+	walletdAPIAddress = "http://localhost:9880"
+
+	walletdAPIPassword = "change me"
+
+	// number of keys to generate and import into vaultd. Make sure this is
+	// large enough. You can always generate more keys by calling GenerateKeys
+	// again.
+	keysToGenerate = 100
+
+	// your siad seed to import
+	phrase = "touchy inroads aptitude perfect seventh tycoon zinger madness firm cause diode owls meant knife nuisance skirting umpire sapling reruns batch molten urchins jaded nodes"
+)
+
+func main() {
+	vclient := vaultd.NewClient(vaultdAPIAddress, vaultdAPIPassword)
+	wclient := walletd.NewClient(walletdAPIAddress, walletdAPIPassword)
+
+	// create a new walletd wallet. This should not be necessary if you
+	// already have a wallet.
+	mywallet, err := wclient.AddWallet(walletd.WalletUpdateRequest{
+		Name: "test",
+	})
+	if err != nil {
+		panic(err)
+	}
+	mywalletClient := wclient.Wallet(mywallet.ID)
+
+	// import seed to vaultd
+	meta, err := vclient.AddSeed(context.Background(), phrase)
+	if err != nil {
+		panic(err)
+	}
+
+	// Generate keysToGenerate keys, returning the address and spend policy
+	// for each key. Each call will result in n new addresses being generated
+	resp, err := vclient.GenerateKeys(context.Background(), meta.ID, keysToGenerate)
+	if err != nil {
+		panic(err)
+	}
+
+	// add the new addresses to the wallet
+	for _, resp := range resp {
+		mywalletClient.AddAddress(wallet.Address{
+			Address:     resp.Address,
+			SpendPolicy: &resp.SpendPolicy,
+		})
+	}
+
+	addrResp, err := mywalletClient.Addresses()
+	if err != nil {
+		panic(err)
+	}
+
+	// construct a transaction to send 1 SC to a recipient
+	txnResp, err := mywalletClient.ConstructV2([]types.SiacoinOutput{
+		{Address: types.VoidAddress, Value: types.Siacoins(1)},
+	}, nil, addrResp[0].Address)
+	if err != nil {
+		panic(err)
+	}
+
+	cs, err := wclient.ConsensusTipState()
+	if err != nil {
+		panic(err)
+	}
+
+	// sign the transaction
+	signedTxn, ok, err := vclient.SignV2(context.Background(), cs, txnResp.Transaction)
+	if err != nil {
+		panic(err)
+	} else if !ok {
+		panic("transaction not signed")
+	}
+
+	// broadcast the signed transaction
+	if err := wclient.TxpoolBroadcast(txnResp.Basis, nil, []types.V2Transaction{signedTxn}); err != nil {
+		panic(err)
+	}
+}
+```
+
+## How Can I Test?
+
+To test your integration with `walletd` without risking real Siacoin, you can use one of our two testnets.
+
+* To test V2 transactions, you can use the Anagami testnet. Pass the `--network=anagami` CLI flag to `walletd` to connect to the Anagami testnet.
+* To test V1 transactions, you can use the Zen testnet. Pass the `--network=zen` CLI flag to `walletd` to connect to the Zen testnet.
 
 ## More questions?
 

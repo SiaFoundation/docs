@@ -34,6 +34,15 @@ renterd --network=zen
 hostd --network=zen
 walletd --network=zen
 ```
+
+Windows users can run the executable with a similar flag:
+
+```
+renterd -network=zen
+hostd -network=zen
+walletd -network=zen
+```
+
 ## Funding your testnet address
 
 With the availability of zSC, the [Zen Testnet faucet](https://zen.siascan.com/faucet) provides a convenient way to acquire zSC by simply providing your Sia wallet's address.

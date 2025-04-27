@@ -25,12 +25,15 @@ The Zen Testnet offers a secure environment to experiment with `renterd`, `hostd
 
 ## Running testnet
 
-Running the testnet version for our software is similar to running it on the mainnet and follows the exact instructions for setting up [renterd](../renting/setting-up-renterd/), [hostd](../hosting/setting-up-hostd/) and [walletd](../wallet/setting-up-walletd/).
+Running our software on the testnet is similar to running it on the mainnet. First, download the binary for [renterd](https://sia.tech/rent), [hostd](https://sia.tech/host), or [walletd](https://sia.tech/wallet) from our official website. Then, follow the same setup instructions for [renterd](../renting/setting-up-renterd/), [hostd](../hosting/setting-up-hostd/) or [walletd](../wallet/setting-up-walletd/), up until the point of running the software.
 
-{% hint style="warning" %}
-Please ensure that you have downloaded the **testnet** binary for either`renterd`, `hostd` or `walletd` compatible with your operating system from our [official website](https://sia.tech).&#x20;
-{% endhint %}
+For Linux or macOS users, then simply run the software with the testnet runtime flag:
 
+```
+renterd --network=zen
+hostd --network=zen
+walletd --network=zen
+```
 ## Funding your testnet address
 
 With the availability of zSC, the [Zen Testnet faucet](https://zen.siascan.com/faucet) provides a convenient way to acquire zSC by simply providing your Sia wallet's address.

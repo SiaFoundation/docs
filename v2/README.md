@@ -59,7 +59,7 @@ It's important for renters and hosts to upgrade before **June 6th** so that they
 
 #### ...Siacoin holders?
 
-Your Siacoins are secured by your seed, and doesn’t change with Sia v2. `walletd` fully compatible with the existing blockchain data, so you're not required to move your coins to prevent loss. However, Sia v2 is deprecating support for legacy 28- and 29-word seeds in favor of a new industry-standard address format that supports more flexible multisig and atomic swaps.
+Your Siacoins remain secured by your seed and don’t change with Sia v2. `walletd` is fully compatible with the existing blockchain data, so you're not required to move your coins to prevent loss. However, Sia v2 is deprecating support for legacy 28- and 29-word seeds in favor of a new industry-standard address format that supports more flexible multisig and atomic swaps.
 
 `walletd` only supports the new 12-word seed format and does **not** support legacy 28- or 29-word seeds. To ensure continued access to your coins, we **strongly recommend** generating a new 12-word seed and transferring your balance. Use the [SiaCentral Web Wallet](https://wallet.siacentral.com/) to create your new seed and Deposit Address.
 

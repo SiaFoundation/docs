@@ -1119,8 +1119,7 @@ func main() {
 
 To test your integration with `walletd` without risking real Siacoin, you can use one of our two testnets.
 
-* To test V2 transactions, you can use the Anagami testnet. Pass the `--network=anagami` CLI flag to `walletd` to connect to the Anagami testnet.
-* To test V1 transactions, you can use the Zen testnet. Pass the `--network=zen` CLI flag to `walletd` to connect to the Zen testnet.
+* To test V2 transactions, you can use the Zen testnet. Pass the `--network=zen` CLI flag to `walletd` to connect to the Zen testnet.
 
 ## More questions?
 

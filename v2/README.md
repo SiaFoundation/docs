@@ -59,7 +59,7 @@ It's important for renters and hosts to upgrade before **June 6th** so that they
 
 #### ...Siacoin holders?
 
-Your Siacoins remain secured by your seed and don’t change with Sia v2. `walletd` is fully compatible with the existing blockchain data, so you're not required to move your coins to prevent loss. However, Sia v2 is deprecating support for legacy 28- and 29-word seeds in favor of a new industry-standard address format that supports more flexible multisig and atomic swaps.
+Your Siacoins remain secured by your seed and don’t change with Sia v2. `walletd` is fully compatible with the existing blockchain data, so you're not required to move your coins to prevent loss. However, Sia v2 is deprecating support for legacy 28- and 29-word seeds in favor of industry standard BIP39 12-word seed phrases.
 
 `walletd` only supports the new 12-word seed format and does **not** support legacy 28- or 29-word seeds. To ensure continued access to your coins, we **strongly recommend** generating a new 12-word seed and transferring your balance. Use the [SiaCentral Web Wallet](https://wallet.siacentral.com/) to create your new seed and Deposit Address.
 
@@ -71,7 +71,7 @@ Your Siacoins remain secured by your seed and don’t change with Sia v2. `walle
 
 We recommend all Siacoin holders upgrade to `walletd` by **June 6th**. After that, you'll have a 1-month grace period to broadcast transactions, but syncing new blocks won't be possible. Starting **July 4th**, only software that supports v2 transaction signing—currently `walletd` and the SiaCentral Web Wallet—will work. Sia-UI will not be updated.
 
-If you store Siacoins on an exchange, confirm that the exchange will support the fork. While we’ll notify and assist exchanges, it’s their responsibility to upgrade their nodes. To ensure access to your tokens, we **strongly recommend** withdrawing them to a privately owned wallet before the fork.
+If you store Siacoins on an exchange, confirm that the exchange will support the fork. To ensure access to your tokens, we **strongly recommend** withdrawing them to a privately owned wallet before the fork.
 
 #### ...for miners?
 

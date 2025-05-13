@@ -59,14 +59,19 @@ It's important for renters and hosts to upgrade before **June 6th** so that they
 
 #### ...Siacoin holders?
 
-First, to be absolutely clear: Your Siacoins are cryptographically controlled by your seed, and Sia v2 doesn't change that. `walletd` is backwards-compatible with the existing blockchain data, so you don't need to move your Siacoins in order to prevent them from getting "lost". That said, Sia v2 software is deprecating support for old seeds and, instead, supports a new industry standard type of address that enables more flexible multisig scenarios and atomic swaps.
+Your Siacoins remain secured by your seed and don’t change with Sia v2. `walletd` is fully compatible with the existing blockchain data, so you're not required to move your coins to prevent loss. However, Sia v2 is deprecating support for legacy 28- and 29-word seeds in favor of industry standard BIP39 12-word seed phrases.
 
-`walletd` does not support the legacy 28 or 29-word seeds format. It only support a new 12-word seed format. To ensure easy access to your coins, we **strongly recommend** that you generate a new 12-word Sia Seed and transfer your tokens from your old 28/29-word seed over. The easiest way to do this is to use the [SiaCentral Web Wallet](https://wallet.siacentral.com/) to generate the 12-word seed, then create (and save) a Deposit Address. Afterwards, if have a synced Sia-UI instance you should **first** transfer a small number of coins (~10) to the new address, confirm the transaction was successfully recieved, and then transfer all of your coins to the new address (you may need to transfer all-but-1 to be able to pay the network fee).
-If you do NOT have a synced Sia-UI instance, then you can log into SiaCentral with a 28/29-word seed and transfer coins that way, too. SiaCentral will continue to support the "old" Sia seed format along side the new one, but official apps will only support the new 12-word seed format.
+`walletd` only supports the new 12-word seed format and does **not** support legacy 28- or 29-word seeds. To ensure continued access to your coins, we **strongly recommend** generating a new 12-word seed and transferring your balance. Use the [SiaCentral Web Wallet](https://wallet.siacentral.com/) to create your new seed and Deposit Address.
 
-We recommend that Siacoin holders upgrade to `walletd` by **June 6th**. If you don't, you'll still be able to broadcast transactions during the 1-month grace period, but you won't be able to sync new blocks. In order to process transactions after **July 4th**, you must use software that supports signing v2 transactions. Currently, that is only `walletd` and SiaCentral's Web Wallet; Sia-UI will not be updated.
+- **If you're using a synced Sia-UI wallet:**  
+  First send a small test amount (~10 SC) to the new address to confirm it’s received. Then transfer the rest, leaving 1 SC behind if needed to cover the network fee.
 
-If you store Siacoin on an exchange, ensure that your exchange has committed to supporting the fork. We will be reaching out to exchanges to notify them of the fork and offer support, but ultimately the exchange is responsible for updating their nodes and ensuring that you can continue to deposit and withdraw Siacoins. To be sure that your tokens will be accessible after the fork, we **strongly recommend** withdrawing them to a privately owned address as we are not responsible for how exchanges handle tokens.
+- **If you don’t have a synced Sia-UI wallet:**  
+  Log into SiaCentral with your 28/29-word seed and transfer your coins from there. SiaCentral will continue to support both old and new seed formats, but official apps will only support the new 12-word format.
+
+We recommend all Siacoin holders upgrade to `walletd` by **June 6th**. After that, you'll have a 1-month grace period to broadcast transactions, but syncing new blocks won't be possible. Starting **July 4th**, only software that supports v2 transaction signing—currently `walletd` and the SiaCentral Web Wallet—will work. Sia-UI will not be updated.
+
+If you store Siacoins on an exchange, confirm that the exchange will support the fork. To ensure access to your tokens, we **strongly recommend** withdrawing them to a privately owned wallet before the fork.
 
 #### ...for miners?
 

@@ -1,6 +1,6 @@
 # Sia Ecosystem Fork Compliance
 
-This list shows which exchanges and mining pools we have actively reached out to and their current status with regards to supporting the upcoming [Sia network hardfork](https://docs.sia.tech/navigating-the-v2-hardfork/v2).
+We are actively reaching out to exchanges and mining pools that **already support Sia** to assess their readiness for the upcoming [v2 hardfork](broken-reference). The support status of these ecosystem partners is detailed below. _Please note that this list does not include platforms that we are in contact with but do not currently support Sia._
 
 Some quick notes about this process:
 

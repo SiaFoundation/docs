@@ -31,7 +31,7 @@ This guide will walk you through setting up `hostd` on macOS. At the end of this
 
 To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
 
-* **Network Access:** `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9983` so `hostd` can properly communicate with the network and renters.
+* **Network Access:** `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9984` so `hostd` can properly communicate with the network and renters.
 * **Operating System Compatibility:** `hostd` is supported on the following macOS versions:
   * macOS 12: Monterey (Star)
   * macOS 13: Ventura (Rome)

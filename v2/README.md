@@ -23,20 +23,41 @@ The Sia network is hardforking to radically update Sia's consensus code, bringin
 
 Upgrading to Sia v2 will be necessary to send or store coins, rent, or host after the fork. Every user, exchange, mining pool, wallet, and integration should upgrade on the timelines found below.
 
+## How can I be ready for the fork?
+
+### If you are a host
+
+Upgrade to `hostd` v2.1.0+.
+
+### If you are a renter
+
+Upgrade to `renterd` v2.1.0+.
+
+### If you are using Sia-UI or siad
+
+Upgrade to `walletd` v2.4.1+.
+
+### If you are using Sia Central's lite wallet
+
+You do not need to do anything to support the fork.
+
+### If you are holding tokens on an exchange
+
+We recommend moving your Siacoin to a self-custodial wallet until after the hardfork activates to ensure uninterupted access to your Siacoin.
+
+### If you are an exchange or mining pool
+
+Upgrade to `walletd` v2.4.1+. Read our upgrade [guide](exchanges.md) for exchanges
+
+## How does it work?
+
 ### Step 1: Software release
 
-The hardfork is multi-stage. First, hardfork-compatible software will release. Downloading this update means you're ready for the fork, even if the fork has not happened yet.
-
-* For renters and hosts, the hardfork-compatible `renterd` and `hostd` will release in late December 2024.
-* For Siacoin holders, miners, and exchanges, the hardfork-compatible walletd will release in January 2025.
-
-You'll have from these dates until hardfork activation in mid-2025 to update, but we recommend doing it as soon as possible.
-
 {% hint style="info" %}
-If you haven't checked in for a while, in 2024 we split Sia into three distinct apps - `renterd` for renters who upload files, `hostd` for hosts who store those files, and `walletd` for Siacoin holders. You'll need to download and install each app if you use the associated function.
-
-There are two versions of each app: The Desktop application, suitable for most users, and the Terminal application for advanced users. When the hardfork hits, your updated v2 version of Sia will instantly give you access to the new chain.
+If you haven't checked in for a while, in 2024 we split Sia into three distinct apps - `renterd` for renters who upload files, `hostd` for hosts who store those files, and `walletd` for Siacoin holders. You'll need to download and install each app if you use the associated function. Sia-UI and `siad` are deprecated and will not be updated.
 {% endhint %}
+
+The hardfork is multi-stage. First, users must signal support for the hardfork by updating to a hardfork-compatible version. Downloading this update means you're ready for the fork, even if the fork has not happened yet.
 
 ### Step 2: Hardfork activation
 
@@ -63,10 +84,9 @@ Your Siacoins remain secured by your seed and don’t change with Sia v2. `walle
 
 `walletd` only supports the new 12-word seed format and does **not** support legacy 28- or 29-word seeds. To ensure continued access to your coins, we **strongly recommend** generating a new 12-word seed and transferring your balance. Use the [SiaCentral Web Wallet](https://wallet.siacentral.com/) to create your new seed and Deposit Address.
 
-- **If you're using a synced Sia-UI wallet:**  
-  First send a small test amount (~10 SC) to the new address to confirm it’s received. Then transfer the rest, leaving 1 SC behind if needed to cover the network fee.
-
-- **If you don’t have a synced Sia-UI wallet:**  
+* **If you're using a synced Sia-UI wallet:**\
+  First send a small test amount (\~10 SC) to the new address to confirm it’s received. Then transfer the rest, leaving 1 SC behind if needed to cover the network fee.
+* **If you don’t have a synced Sia-UI wallet:**\
   Log into SiaCentral with your 28/29-word seed and transfer your coins from there. SiaCentral will continue to support both old and new seed formats, but official apps will only support the new 12-word format.
 
 We recommend all Siacoin holders upgrade to `walletd` by **June 6th**. After that, you'll have a 1-month grace period to broadcast transactions, but syncing new blocks won't be possible. Starting **July 4th**, only software that supports v2 transaction signing—currently `walletd` and the SiaCentral Web Wallet—will work. Sia-UI will not be updated.

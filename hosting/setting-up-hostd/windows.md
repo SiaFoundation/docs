@@ -28,7 +28,7 @@ This guide will walk you through setting up `hostd` on Windows. At the end of th
 
 ## Pre-requisites
 
-* **Network Access:** `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9983` so `hostd` can properly communicate with the network and renters.
+* **Network Access:** `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9984` so `hostd` can properly communicate with the network and renters.
 * **Operating System Compatibility:** Ensure your Windows version is compatible with the `hostd` software. Check [releases](../../miscellaneous/releases.md) supported by Windows versions.
 * **System Updates:** Ensure that your Windows is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 

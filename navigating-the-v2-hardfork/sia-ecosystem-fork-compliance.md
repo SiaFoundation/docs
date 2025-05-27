@@ -19,35 +19,35 @@ We're using the following statuses and their definitions:
 * **Dev discussion.** Our devs are actively discussing technical aspects of the upgrade.
 * **Committed.** The project has committed to upgrade.
 
-Last updated: May 13, 2025. Daily volume may not add to 100% as some values are taken on different days.
+Last updated: May 27, 2025. Average daily volume may not add to 100% as some values are taken on different days.
 
 ## Mining Pools
 
-| Mining Pool | Average Daily Volume | Status    | First Contacted  |
-| ----------- | -------------------- | --------- | ---------------- |
-| f2pool      | 79.5%                | Committed | January 15, 2025 |
-| DxPool      | 13.2%                | Committed | January 16, 2025 |
-| Luxor       | 7.3%                 | Committed | January 15, 2025 |
+| Mining Pool | Average Daily Volume | Status         | First Contacted  |
+| ----------- | -------------------- | -------------- | ---------------- |
+| f2pool      | 79.5%                | Committed      | January 15, 2025 |
+| DxPool      | 13.2%                | Committed      | January 16, 2025 |
+| Luxor       | 7.3%                 | Dev discussion | January 15, 2025 |
 
 ## Exchanges
 
 | Exchange   | Average Daily Volume | Status         | First Contacted   | Announcement                                                 |
 | ---------- | -------------------- | -------------- | ----------------- | ------------------------------------------------------------ |
-| Kraken     | .25%                 | Committed      | October 23, 2024  |                                                              |
 | Poloniex   | 75%                  | Committed      | February 28, 2025 |                                                              |
-| HTX        | 5%                   | Committed      | February 25, 2025 |                                                              |
 | Binance    | 4.5%                 | Committed      | February 11, 2025 |                                                              |
 | Upbit      | 4.5%                 | Committed      | February 11, 2025 | [Link](https://www.panewslab.com/en/articles/fvx2ilom)       |
-| BitMart    | 4%                   | Notified       | March 5, 2025     |                                                              |
 | MEXC       | 2%                   | Committed      | February 19, 2025 | [Link](https://www.mexc.com/support/articles/17827791524227) |
-| SuperEx    | 1.25%                | Notified       | March 24, 2025    |                                                              |
-| Bybit      | 1%                   | Dev discussion | March 24, 2025    |                                                              |
-| BYDFi      | 1%                   | Notified       | March 24, 2025    |                                                              |
-| Gate.io    | .75%                 | Notified       | April 25, 2025    |                                                              |
 | OKX        | .75%                 | Committed      | February 11, 2025 |                                                              |
+| Kraken     | .25%                 | Committed      | October 23, 2024  |                                                              |
+| HTX        | 5%                   | Dev discussion | February 25, 2025 |                                                              |
+| Bybit      | 1%                   | Dev discussion | March 24, 2025    |                                                              |
+| Gate.io    | .75%                 | Dev discussion | April 25, 2025    |                                                              |
+| Bithumb    | .25%                 | Dev discussion | March 5, 2025     |                                                              |
+| BitMart    | 4%                   | Notified       | March 5, 2025     |                                                              |
+| SuperEx    | 1.25%                | Notified       | March 24, 2025    |                                                              |
+| BYDFi      | 1%                   | Notified       | March 24, 2025    |                                                              |
 | Digifinex  | .6%                  | Notified       | May 9, 2025       |                                                              |
 | BitKan     | .5%                  | Notified       | April 25, 2025    |                                                              |
 | CoinW      | .5%                  | Notified       | April 25, 2025    |                                                              |
 | BigONE     | .3%                  | Notified       | April 8, 2025     |                                                              |
-| Bithumb    | .25%                 | Dev discussion | March 5, 2025     |                                                              |
 | Crypto.com | .003%                | Notified       | April 25, 2025    |                                                              |

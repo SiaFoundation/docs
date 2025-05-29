@@ -27,15 +27,15 @@ Upgrading to Sia v2 will be necessary to send or store coins, rent, or host afte
 
 ### If you are a host
 
-Upgrade to `hostd` v2.1.0+.
+Upgrade to `hostd` v2.2.0+.
 
 ### If you are a renter
 
-Upgrade to `renterd` v2.1.0+.
+Upgrade to `renterd` v2.2.0+.
 
 ### If you are using Sia-UI or siad
 
-Upgrade to `walletd` v2.4.1+.
+Upgrade to `walletd` v2.8.0+.
 
 ### If you are using Sia Central's lite wallet
 

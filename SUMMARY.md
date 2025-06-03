@@ -1,7 +1,5 @@
 # Table of contents
 
-* [Introduction](README.md)
-
 ## Navigating the V2 Hardfork
 
 * [Things to Know About Sia's Upcoming Fork](v2/README.md)

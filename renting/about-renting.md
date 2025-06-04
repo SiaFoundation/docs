@@ -12,6 +12,8 @@ layout:
     visible: true
 ---
 
+# About Renting on Sia
+
 {% hint style="danger" %}
 Terminal app users must [upgrade to `renterd v2.2.0+`](http://sia.tech/rent) by **July 4, 2025**.
 
@@ -19,8 +21,6 @@ This grace period ends at block height of 530,000 on or around **July 4th, 2025 
 
 **You must update by this date to continue using Sia.**
 {% endhint %}
-
-# About Renting on Sia
 
 **Renting** on Sia means you upload files on the Sia storage network to other users who have made their space available, called **hosts**. The term **renter** is used to describe an individual or entity that creates storage contracts with **hosts**:
 

@@ -22,7 +22,7 @@ layout:
 This guide is for exchanges that are currently using `siad` to track and manage Siacoin deposits. Exchanges should upgrade to `walletd` before the V2 hardfork to continue supporting the Sia network.
 
 {% hint style="info" %}
-The hardfork activates at a block height of **526,000** on or around **June 6th, 2025 06:00 UTC**.
+The hardfork activated at the block height of **526,000** on or around **June 6th, 2025 06:00 UTC**.
 {% endhint %}
 
 `walletd` is the new reference wallet for exchanges. It is designed to be more secure, reliable, and scalable than `siad`. `walletd` also has a more robust API, supports multiple wallets simultaneously, and provides easier support for secure key management setups.
@@ -647,7 +647,7 @@ func main() {
 
 ## How to Support V2?
 
-After block height **526,000** (estimated **June 6th, 2025 06:00 UTC**), `siad` will no longer be able to send or receive Siacoins. To continue supporting the Sia network, exchanges must upgrade to `walletd`. In addition to upgrading to `walletd`, exchanges will need to start sending V2 transactions and using the new V2 API endpoints.
+After the block height **526,000** (estimated **June 6th, 2025 06:00 UTC**), `siad` is no longer be able to send or receive Siacoins. To continue supporting the Sia network, exchanges must upgrade to `walletd`. In addition to upgrading to `walletd`, exchanges will need to start sending V2 transactions and using the new V2 API endpoints.
 
 ### Sending V2 transactions
 

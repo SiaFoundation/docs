@@ -17,6 +17,8 @@ layout:
     visible: true
 ---
 
+# Your Sia Wallet
+
 {% hint style="danger" %}
 Terminal app users must [upgrade to `walletd v2.8.0+`](http://sia.tech/wallet) by **July 4, 2025**.
 
@@ -24,8 +26,6 @@ This grace period ends at block height of 530,000 on or around **July 4th, 2025 
 
 **You must update by this date to continue using Sia.**
 {% endhint %}
-
-# Your Sia Wallet
 
 \
 The Sia Wallet is the official cryptocurrency wallet designed exclusively for Siacoins (SC). This secure and user-friendly platform allows you to store, send, receive, and manage your Siacoin holdings.

@@ -17,6 +17,14 @@ layout:
     visible: true
 ---
 
+{% hint style="danger" %}
+Terminal app users must [upgrade to `walletd v2.8.0+`](http://sia.tech/wallet) by **July 4, 2025**.
+
+This grace period ends at block height of 530,000 on or around **July 4th, 2025 02:00 UTC**.
+
+**You must update by this date to continue using Sia.**
+{% endhint %}
+
 # Your Sia Wallet
 
 \

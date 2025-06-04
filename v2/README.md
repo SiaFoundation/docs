@@ -58,7 +58,7 @@ The hardfork is multi-stage. First, users must signal support for the hardfork b
 
 The actual hardfork -- the point at which you _must_ be running a v2 node -- occurs later in 2025. The Sia ecosystem is large, so we need to make sure that not only our users, but exchanges, miners and pools, web wallets, and other integrations have plenty of time to update.
 
-* The hardfork activates at block height **526,000** on or around **June 6th, 2025 06:00 UTC**. After this height, blocks may contain v2 transactions, so if you are not running an updated node, **you will not be able to sync**. This will enable most of the new v2 features, but v1 blocks are still allowed, giving any stragglers a grace period to submit their transactions to miners.
+* The hardfork activated at block height **526,000** on or around **June 6th, 2025 06:00 UTC**. After this height, blocks may contain v2 transactions, so if you are not running an updated node, **you will not be able to sync**. This will enable most of the new v2 features, but v1 blocks are still allowed, giving any stragglers a grace period to submit their transactions to miners.
 * This grace period ends at block height of **530,000** on or around **July 4th, 2025 02:00 UTC**. **You must update by this date to continue using Sia.**
 
 ### So how does the hardfork benefit...
@@ -71,20 +71,20 @@ Sia v2 includes an update to the renter-host protocol that is faster and more ef
 * Faster uploads and downloads, including concurrent uploads to the same host
 * Enables decentralized uploads and downloads in a browser, no plugins or daemons necessary
 
-It's important for renters and hosts to upgrade before **June 6th** so that they can enjoy the benefits of v2 and the new renter-host protocol as soon as possible.
+It's important for renters and hosts to upgrade if they have not already so that they can enjoy the benefits of v2 and the new renter-host protocol as soon as possible.
 
 #### ...Siacoin holders?
 
-Your Siacoins remain secured by your seed and don’t change with Sia v2. `walletd` is fully compatible with the existing blockchain data, so you're not required to move your coins to prevent loss. However, Sia v2 is deprecating support for legacy 28- and 29-word seeds in favor of industry standard BIP39 12-word seed phrases.
+Your Siacoins remain secured by your seed and don’t change with Sia v2. `walletd` is fully compatible with the existing blockchain data, so you're not required to move your coins to prevent loss. However, Sia v2 is deprecating support for legacy 28-word and 29-word seeds in favor of industry standard BIP39 12-word seed phrases.
 
-`walletd` only supports the new 12-word seed format and does **not** support legacy 28- or 29-word seeds. To ensure continued access to your coins, we **strongly recommend** generating a new 12-word seed and transferring your balance. Use the [SiaCentral Web Wallet](https://wallet.siacentral.com/) to create your new seed and Deposit Address.
+`walletd` only supports the new 12-word seed format and does **not** support legacy 28-word or 29-word seeds. To ensure continued access to your coins, we **strongly recommend** generating a new 12-word seed and transferring your balance. Use the [SiaCentral Web Wallet](https://wallet.siacentral.com/) to create your new seed and Deposit Address.
 
 * **If you're using a synced Sia-UI wallet:**\
   First send a small test amount (\~10 SC) to the new address to confirm it’s received. Then transfer the rest, leaving 1 SC behind if needed to cover the network fee.
 * **If you don’t have a synced Sia-UI wallet:**\
   Log into SiaCentral with your 28/29-word seed and transfer your coins from there. SiaCentral will continue to support both old and new seed formats, but official apps will only support the new 12-word format.
 
-We recommend all Siacoin holders upgrade to `walletd` by **June 6th**. After that, you'll have a 1-month grace period to broadcast transactions, but syncing new blocks won't be possible. Starting **July 4th**, only software that supports v2 transaction signing—currently `walletd` and the SiaCentral Web Wallet—will work. Sia-UI will not be updated.
+We recommend that all Siacoin holders who have not upgraded to `walletd` to do so immediately. After that, you'll have a 1-month grace period to broadcast transactions, but syncing new blocks won't be possible. Starting **July 4th**, only software that supports v2 transaction signing—currently `walletd` and the SiaCentral Web Wallet—will work. Sia-UI will not be updated.
 
 If you store Siacoins on an exchange, confirm that the exchange will support the fork. To ensure access to your tokens, we **strongly recommend** withdrawing them to a privately owned wallet before the fork.
 

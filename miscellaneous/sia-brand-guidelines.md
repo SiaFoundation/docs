@@ -35,7 +35,13 @@ The Sia Foundation strictly owns the trademark in the US and advises against usi
 
 The following is an example of an acceptable change. The SiaStats logo resembles the Sia logo, but is styled significantly so as not to be confused with our trademarked version. Only projects with direct relevance may style their logo based on the Sia logo.
 
-<figure><img src="../.gitbook/assets/v2-brand-assets/Primary logo_dark.png" alt="" width="300"><figcaption><p>Original Sia Logo and wordmark</p></figcaption></figure>
+<div data-full-width="false">
+
+<figure><img src="../.gitbook/assets/v2-brand-assets/primary_logo_dark.png" alt="" width="300"><figcaption><p>Sia Wordmark Logo</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/v2-brand-assets/shorthand_dark.png" alt="" width="164"><figcaption><p>Sia Shorthand Logo</p></figcaption></figure>
+
+</div>
 
 {% hint style="warning" %}
 The logo can be similar but **must** be differentiated from the original Sia logo and wordmark by color and design.
@@ -47,7 +53,7 @@ Sia's trademark name is pronounced _"sigh-uh,_ not _"see-ya."_
 
 ### Direct relevance
 
-If your project directly relates to the Sia ecosystem, or wouldn't exist outside of Sia, it's probably ok to use the term **Sia** in your project's name. Good examples of this are **SiaStats**, **Siasync**, **SiaWiki**, and **Siamining**. These projects all had straight-line relevance to the ecosystem and directly serviced the Sia network.
+If your project directly relates to the Sia ecosystem, or wouldn't exist outside of Sia, it's probably ok to use the term **Sia** in your project's name. Good examples of this are **Siascan**, **SiaGraph** and **Dartsia**. These projects all have straight-line relevance to the ecosystem and directly serviced the Sia network.
 
 Check with the team if you're not sure. If you do qualify, there are two restrictions:
 
@@ -58,7 +64,7 @@ Check with the team if you're not sure. If you do qualify, there are two restric
 
 If you're building a project on the Sia network, but could just as easily swap out Sia with another storage backend, don't use the term Sia in your project's name. Grant projects commonly fall into this trap.
 
-For example, if you are building a file transfer service with Sia as your storage location, don't call it SiaSend. Now would be the time to craft a unique name that reflects your project's identity and your creative efforts. Illustrative instances of such custom names include **Pixeldrain**, **Filebase**, and **Roadie**.
+For example, if you are building a file transfer service with Sia as your storage location, don't call it SiaSend. Now would be the time to craft a unique name that reflects your project's identity and your creative efforts.
 
 {% hint style="info" %}
 We're eagerly anticipating what you'll create! If you have any questions regarding our Sia branding guidelines, please don't hesitate to reach out via [email](mailto:hello@sia.tech) or [Discord](https://sia.tech/discord).

@@ -19,7 +19,7 @@ We're using the following statuses and their definitions:
 * **Dev discussion.** Our devs are actively discussing technical aspects of the upgrade.
 * **Committed.** The project has committed to upgrade.
 
-Last updated: May 27, 2025. Average daily volume may not add to 100% as some values are taken on different days.
+Last updated: June 5th, 2025. Average daily volume may not add to 100% as some values are taken on different days.
 
 ## Mining Pools
 

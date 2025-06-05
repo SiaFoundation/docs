@@ -3,9 +3,6 @@ description: >-
   A step-by-step guide for setting up rclone with renterd for Windows, Mac OS,
   and Linux.
 layout:
-  cover:
-    visible: true
-    size: hero
   title:
     visible: true
   description:

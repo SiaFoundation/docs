@@ -1,5 +1,5 @@
 ---
-cover: https://sia.tech/assets/previews/mountain.png
+cover: https://sia.tech/api/media/file/sia-banner-docs.png
 coverY: 0
 layout:
   cover:

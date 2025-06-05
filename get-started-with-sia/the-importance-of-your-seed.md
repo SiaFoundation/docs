@@ -1,10 +1,5 @@
 ---
-cover: https://sia.tech/assets/previews/waterfall.png
-coverY: 0
 layout:
-  cover:
-    visible: true
-    size: hero
   title:
     visible: true
   description:

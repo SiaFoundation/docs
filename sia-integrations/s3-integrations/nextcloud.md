@@ -2,9 +2,6 @@
 description: >-
   A step-by-step guide for setting up Nextcloud with renterd.
 layout:
-  cover:
-    visible: true
-    size: hero
   title:
     visible: true
   description:

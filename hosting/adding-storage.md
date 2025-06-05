@@ -1,10 +1,5 @@
 ---
-cover: https://sia.tech/assets/previews/nate-trickle.png
-coverY: 0
 layout:
-  cover:
-    visible: true
-    size: hero
   title:
     visible: true
   description:

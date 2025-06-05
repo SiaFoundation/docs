@@ -1,11 +1,6 @@
 ---
 description: Setup a new host on Linux
-cover: https://sia.tech/assets/previews/hostd.png
-coverY: 0
 layout:
-  cover:
-    visible: true
-    size: hero
   title:
     visible: true
   description:

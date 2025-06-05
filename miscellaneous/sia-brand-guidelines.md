@@ -33,17 +33,9 @@ These Sia brand guidelines will assist those developing their project by ensurin
 
 The Sia Foundation strictly owns the trademark in the US and advises against using the Sia logo and wordmark directly in any capacity, such as third-party projects. Users can only style the original logo and wordmark to prevent confusion and misrepresentation.
 
-The following is an example of an acceptable change. The SiaStats logo resembles the Sia logo, but is styled significantly so as not to be confused with our trademarked version. Only projects with direct relevance (see below) may style their logo based on the Sia logo.
+The following is an example of an acceptable change. The SiaStats logo resembles the Sia logo, but is styled significantly so as not to be confused with our trademarked version. Only projects with direct relevance may style their logo based on the Sia logo.
 
-<div data-full-width="false">
-
-<figure><img src="../.gitbook/assets/sia_original.png" alt="" width="300"><figcaption><p>Original Sia Logo and wordmark</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/siastats.png" alt="" width="375"><figcaption><p>Example of styling of the original (Siastats logo)</p></figcaption></figure>
-
-</div>
+<figure><img src="../.gitbook/assets/v2-brand-assets/Primary logo_dark.png" alt="" width="300"><figcaption><p>Original Sia Logo and wordmark</p></figcaption></figure>
 
 {% hint style="warning" %}
 The logo can be similar but **must** be differentiated from the original Sia logo and wordmark by color and design.

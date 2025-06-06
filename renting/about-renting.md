@@ -52,7 +52,7 @@ The allowance tells Sia how much Siacoin you're willing to spend on storage spac
 Setting your allowance happens before uploading files, and Sia automatically forms the contracts it needs with new hosts so that you can upload when you're ready. You might see multiple transactions hit your wallet right after setting your allowance – this is your Siacoins getting set aside with each host. Don't worry - you'll get whatever Siacoins you don't spend back at the end of the contract. With Sia, you only ever pay for what you use.
 
 {% hint style="info" %}
-### **Getting Started with `renterd`**
+#### **Getting Started with `renterd`**
 
 Start renting on Sia by downloading the official [renterd software](https://sia.tech/rent) and exploring our step-by-step [Setting up renterd](setting-up-renterd/) guide.
 {% endhint %}

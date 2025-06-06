@@ -149,7 +149,7 @@ These benchmarks differ from the core Sia protocol but are still helpful and may
 Once you've started hosting, you'll probably want to keep an eye on your host score and see how you might be able to improve your host ranking.
 
 {% hint style="info" %}
-### **Getting Started with `hostd`**
+#### **Getting Started with `hostd`**
 
 Contributing your storage space couldn't be any simpler by using Sia's `hostd` software!
 

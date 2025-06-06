@@ -39,7 +39,7 @@ You must have a GitHub account to submit an edit proposal. If you haven't alread
 
 1. To edit and submit a proposal via GitHub pull request, click the **Page actions** (ellipsis) in the upper right corner of any page and click **Edit on GitHub**.
 
-<figure><img src=".gitbook/assets/introduction_1.png" alt=""><figcaption><p>Selecting the page actions, and edit on Github</p></figcaption></figure>
+<figure><img src=".gitbook/assets/introduction-images/docs_screenshot.png" alt=""><figcaption><p>Selecting the page actions, and edit on Github</p></figcaption></figure>
 
 After clicking **Edit on GitHub**, you'll be taken directly to the corresponding page on GitHub.
 

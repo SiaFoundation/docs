@@ -14,14 +14,6 @@ layout:
 
 # About Hosting on Sia
 
-{% hint style="danger" %}
-Terminal app users must [upgrade to `hostd v2.2.0+`](http://sia.tech/host) by **July 4, 2025**.
-
-This grace period ends at block height of 530,000 on or around **July 4th, 2025 02:00 UTC**.
-
-**You must update by this date to continue using Sia.**
-{% endhint %}
-
 **Hosting** on Sia means contributing your excess storage space to the Sia network. You're helping to keep data where it belongs – safely in the hands of those who uploaded it, the **renters**.
 
 You also earn Siacoins, the cryptocurrency that powers the Sia network. Siacoins can be used to purchase your storage space or converted to other cryptocurrencies or fiat on crypto exchanges.

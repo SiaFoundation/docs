@@ -12,25 +12,23 @@ layout:
     visible: true
 ---
 
-# Things to Know About Sia's Upcoming Fork
+# Sia's June 2025 Hardfork
 
-The Sia network is hardforking to radically update Sia's consensus code, bringing huge benefits to performance, scalability, and functionality. Given the significance of this hardfork, we've come to refer to it as **Sia v2**.
+The Sia network hardfork activated at block 526,000 on June 6th, 2025. All major ecosystem pools and exchanges supported the upgrade. We're still working with a small number of third parties to ensure full compliance.
 
-Upgrading to Sia v2 will be necessary to send or store coins, rent, or host after the fork. Every user, exchange, mining pool, wallet, and integration should upgrade on the timelines found below.
+## Details of the fork
 
-## How can I be ready for the fork?
+The Sia network forked to radically update Sia's consensus code, bringing huge benefits to performance, scalability, and functionality. Given the significance of this hardfork, we've come to refer to it as **Sia v2**.
 
-### If you are a host
+Upgrading to Sia v2 is necessary to send or store coins, rent, or host after the fork. Every user, exchange, mining pool, wallet, and integration must upgrade.
 
-Upgrade to `hostd` v2.2.0+.
+## What do I need to do?
 
-### If you are a renter
+If you use Sia and have not upgraded yet, now's the time. Renters, hosts, and wallet users should [update to the latest releases](https://sia.tech/upgrade-your-software) to get the most recent fork-compliant versions.
 
-Upgrade to `renterd` v2.2.0+.
-
-### If you are using Sia-UI or siad
-
-Upgrade to `walletd` v2.8.0+.
+{% hint style="info" %}
+If you haven't checked in for a while, in 2024 we split Sia into three distinct apps - `renterd` for renters who upload files, `hostd` for hosts who store those files, and `walletd` for Siacoin holders. You'll need to download and install each app if you use the associated function. Sia-UI and `siad` are deprecated and will not be updated.
+{% endhint %}
 
 ### If you are using Sia Central's lite wallet
 
@@ -38,28 +36,23 @@ You do not need to do anything to support the fork.
 
 ### If you are holding tokens on an exchange
 
-We recommend moving your Siacoin to a self-custodial wallet until after the hardfork activates to ensure uninterupted access to your Siacoin.
+All exchanges that we are aware of have updated to support the fork, so your coins should be good to go. As always, we recommend never storing your tokens on an exchange long-term. You know the old saying: not your keys, not your coins.
 
-### If you are an exchange or mining pool
+### If you _are_ an exchange or mining pool
 
-Upgrade to `walletd` v2.4.1+. Read our upgrade [guide](exchanges.md) for exchanges
+Upgrade to the latest version of `walletd`. Read our [upgrade guide](exchanges.md) for exchanges.
 
-## How does it work?
+## How did it work?
 
 ### Step 1: Software release
 
-{% hint style="info" %}
-If you haven't checked in for a while, in 2024 we split Sia into three distinct apps - `renterd` for renters who upload files, `hostd` for hosts who store those files, and `walletd` for Siacoin holders. You'll need to download and install each app if you use the associated function. Sia-UI and `siad` are deprecated and will not be updated.
-{% endhint %}
-
-The hardfork is multi-stage. First, users must signal support for the hardfork by updating to a hardfork-compatible version. Downloading this update means you're ready for the fork, even if the fork has not happened yet.
+The hardfork was multi-stage. First, users signaled support for the hardfork by updating to hardfork-compatible versions.
 
 ### Step 2: Hardfork activation
 
-The actual hardfork -- the point at which you _must_ be running a v2 node -- occurs later in 2025. The Sia ecosystem is large, so we need to make sure that not only our users, but exchanges, miners and pools, web wallets, and other integrations have plenty of time to update.
+The actual hardfork -- the point at which you _must_ be running a v2 node -- occured at block 526,000 on June 6th, 2025. The Sia ecosystem is large, so we made sure that not only our users, but exchanges, miners and pools, web wallets, and other integrations had plenty of time to update.
 
-* The hardfork activated at block height **526,000** on or around **June 6th, 2025 06:00 UTC**. After this height, blocks may contain v2 transactions, so if you are not running an updated node, **you will not be able to sync**. This will enable most of the new v2 features, but v1 blocks are still allowed, giving any stragglers a grace period to submit their transactions to miners.
-* This grace period ends at block height of **530,000** on or around **July 4th, 2025 02:00 UTC**. **You must update by this date to continue using Sia.**
+* The hardfork activated at block height **526,000** on **June 6th, 2025**. After this height, blocks contained v2 transactions, so if you are not running an updated node, **you will not be able to sync**. This will enable most of the new v2 features.
 
 ### So how does the hardfork benefit...
 
@@ -84,9 +77,7 @@ Your Siacoins remain secured by your seed and don’t change with Sia v2. `walle
 * **If you don’t have a synced Sia-UI wallet:**\
   Log into SiaCentral with your 28/29-word seed and transfer your coins from there. SiaCentral will continue to support both old and new seed formats, but official apps will only support the new 12-word format.
 
-We recommend that all Siacoin holders who have not upgraded to `walletd` to do so immediately. After that, you'll have a 1-month grace period to broadcast transactions, but syncing new blocks won't be possible. Starting **July 4th**, only software that supports v2 transaction signing—currently `walletd` and the SiaCentral Web Wallet—will work. Sia-UI will not be updated.
-
-If you store Siacoins on an exchange, confirm that the exchange will support the fork. To ensure access to your tokens, we **strongly recommend** withdrawing them to a privately owned wallet before the fork.
+We recommend that all Siacoin holders who have not upgraded to `walletd` to do so immediately.
 
 #### ...for miners?
 
@@ -97,8 +88,6 @@ We've carefully designed Sia v2 to preserve the layout of block headers, so all 
 Sia v2 will enable highly increased performance and usability for your exchange. You'll have more control over your Siacoin treasury and the ways you interact with it.
 
 Exchanges should upgrade to `walletd` v2 as soon as possible to ensure an issue-free transition. Due to the volume of users you serve, you should leave time for a proper upgrade. Once you do, your exchange will be able to support the fork once it takes effect.
-
-Unconfirmed transactions as of block 526,000 will remain mineable until block 530,000, so normal operations can continue throughout the hardfork activation. If you are manually constructing your transactions, you have a choice of when to switch from using v1 transactions to v2 transactions; we recommend waiting at least 6 blocks into the grace period before switching. This minimizes the likelihood of v2 transactions being invalidated by a reorg.
 
 ## More questions?
 

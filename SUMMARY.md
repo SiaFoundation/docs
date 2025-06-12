@@ -4,9 +4,9 @@
 
 ## Navigating the V2 Hardfork
 
-* [Things to Know About Sia's Upcoming Fork](v2/README.md)
+* [Sia's June 2025 Hardfork](v2/README.md)
 * [How to Upgrade: Exchanges](v2/exchanges.md)
-* [Sia Ecosystem Fork Compliance](navigating-the-v2-hardfork/sia-ecosystem-fork-compliance.md)
+* [Sia Ecosystem Fork Status](navigating-the-v2-hardfork/sia-ecosystem-fork-compliance.md)
 
 ## Get Started with Sia
 

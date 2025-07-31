@@ -32,6 +32,6 @@ Siafunds are typically bought and sold through the `#siafunds` channel on the Si
 
 Siafunds are stored in `walletd`, right next to your Siacoins.
 
-![Sia-UI Balance ](../.gitbook/assets/walletd-screenshots/walletd-balance-display.png)
+![](../.gitbook/assets/walletd-screenshots/walletd-balance-display.png)
 
 You can also send and receive Siafunds to and from standard Siacoin addresses, and they can be recovered using your Siacoin balance as long as you possess your Sia seed.

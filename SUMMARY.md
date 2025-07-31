@@ -70,10 +70,6 @@
   * [Nextcloud](sia-integrations/s3-integrations/nextcloud.md)
   * [rclone](sia-integrations/s3-integrations/rclone.md)
 
-## Siafunds
-
-
-
 ## Miscellaneous
 * [Siafunds](/siafunds/learn-about-siafunds.md)
   * [Withdrawing Siafunds](siafunds/how-to-cash-out-siafunds.md)

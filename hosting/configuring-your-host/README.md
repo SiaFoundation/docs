@@ -20,6 +20,14 @@ Go to `hostd`. If you're asked to unlock the UI, use your custom password if you
 
 ## Host
 
+### Port Forwarding
+
+`hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the following ports so `hostd` can properly communicate with the network and renters.
+
+ * 9981/TCP (Sia Consensus)
+ * 9984/TCP (RHP4 - SiaMux)
+ * 9984/UDP (RHP4 - QUIC)
+
 ### Accepting contracts
 
 The **Accepting Contracts** setting determines whether your host will accept new contracts. Most hosts will always have this toggled on. However, if you want to exit the network, you can toggle this off to stop accepting new contracts. You must still fulfill any existing contracts before entirely shutting down your host.

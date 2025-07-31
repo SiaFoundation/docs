@@ -39,7 +39,7 @@ The following is an example of an acceptable change. The SiaStats logo resembles
 </div>
 
 {% hint style="warning" %}
-The logo can be similar but **must** be differentiated from the original Sia logo and wordmark by color and design.
+There are no publicly available logos or branding assets for Sia or the Sia Foundation. Please do not use the name "Sia", as we encourage you to develop your own distinct name and branding.
 {% endhint %}
 
 ## Naming

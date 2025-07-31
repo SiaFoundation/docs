@@ -26,12 +26,12 @@ Siafunds are typically unavailable on mainstream exchanges due to their classifi
 **We strongly advise researching the relevant securities regulations in your country before considering buying or selling Siafunds and seeking legal counsel for guidance in this matter.**
 {% endhint %}
 
-Siafunds are typically bought and sold through the `#siafunds` channel on the Sia [Discord](https://sia.tech/discord) server, where over-the-counter trades are safely facilitated with the assistance of [Embarcadero](https://blog.sia.tech/escrowless-siafund-swaps-da418ed50df0), an escrowless Siafund/Siacoin swap developed by the Foundation.
+Siafunds are typically bought and sold through the `#siafunds` channel on the Sia [Discord](https://sia.tech/discord) server, where over-the-counter trades are facilitated.
 
 ## How to store Siafunds
 
-Siafunds are stored in your Sia-UI wallet, right next to your Siacoins.
+Siafunds are stored in `walletd`, right next to your Siacoins.
 
-![Sia-UI Balance ](../.gitbook/assets/siafunds-close.png)
+![Sia-UI Balance ](../.gitbook/assets/walletd-screenshots/walletd-balance-display.png)
 
 You can also send and receive Siafunds to and from standard Siacoin addresses, and they can be recovered using your Siacoin balance as long as you possess your Sia seed.

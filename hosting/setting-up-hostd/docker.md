@@ -26,11 +26,11 @@ This guide will walk you through setting up `hostd` using Docker compose. At the
 
 To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
 
-* **Network Access:** `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9984` so `hostd` can properly communicate with the network and renters.
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
   - A quad-core CPU
   - 8GB of RAM
   - An SSD with at least 128GB of free space.
+  
 * **Software Requirements:** Before installing `hostd`, you will need to install [Docker](https://www.docker.com/get-started/).
 
 ## Create the compose file

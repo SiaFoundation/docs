@@ -70,14 +70,10 @@
   * [Nextcloud](sia-integrations/s3-integrations/nextcloud.md)
   * [rclone](sia-integrations/s3-integrations/rclone.md)
 
-## Siafunds
-
-* [Learn about Siafunds](siafunds/learn-about-siafunds.md)
-* [Withdrawing Siafunds](siafunds/how-to-cash-out-siafunds.md)
-* [SEC Settlement](siafunds/sec-settlement-faq.md)
-
 ## Miscellaneous
-
+* [Siafunds](/siafunds/learn-about-siafunds.md)
+  * [Withdrawing Siafunds](siafunds/how-to-cash-out-siafunds.md)
+  * [SEC Settlement](siafunds/sec-settlement-faq.md)
 * [Brand Guidelines](miscellaneous/sia-brand-guidelines.md)
 * [Get Involved](miscellaneous/get-involved.md)
 * [Glossary](miscellaneous/glossary.md)

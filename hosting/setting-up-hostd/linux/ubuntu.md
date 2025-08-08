@@ -30,7 +30,6 @@ To ensure you will not run into any issues with running `hostd` it is recommende
 	- Noble (Ubuntu 24.04)
 	- Mantic (Ubuntu 23.10)
 	- Jammiy (Ubuntu 22.04)
-	- Focal (Ubuntu 20.04)
 
 * **System Updates:** Ensure that ubuntu is up to date with the latest system updates, these updates can contain important security fixes and improvements.
 

@@ -29,7 +29,6 @@ To ensure you will not run into any issues with running `hostd` it is recommende
 * **Operating System Compatibility:** `hostd` is supported on the following Debian versions:
 	- Bookworm (Debian 12)
 	- Bullseye (Debian 11)
-	- Buster (Debian 10)
 
 * **System Updates:** Ensure that Debian is up to date with the latest system updates, these updates can contain important security fixes and improvements.
 

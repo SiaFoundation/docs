@@ -37,6 +37,19 @@ To ensure you will not run into any issues with running `hostd` it is recommende
   - 8GB of RAM
   - An SSD with at least 128GB of free space.
 
+## Adjust sysctl (OPTIONAL)
+
+These changes to sysctl are optional and may increase performance
+
+```sh
+echo "net.core.rmem_max=7500000
+net.core.wmem_max=7500000
+net.ipv4.tcp_congestion_control = bbr
+net.core.default_qdisc = pfifo_fast
+net.ipv4.tcp_shrink_window = 1" | sudo tee /etc/sysctl.d/50-hostd.conf
+sudo sysctl --system
+```
+
 ## Install `hostd` Using the `apt` repository
 
 Before you install `hostd` for the first time on a new machine, you need to set up the Sia `apt` repository. Afterward, you can install and update `hostd` using `apt`.

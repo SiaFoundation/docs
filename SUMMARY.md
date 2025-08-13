@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Zen Testnet](zen-testnet.md)
 
 ## Navigating the V2 Hardfork
 
@@ -56,10 +57,6 @@
   * [Windows](wallet/setting-up-walletd/windows.md)
   * [Linux](wallet/setting-up-walletd/linux.md)
 * [Transferring Siacoins](wallet/transferring-siacoins.md)
-
-## Testnet
-
-* [Zen Testnet](testnet/zen-testnet.md)
 
 ## Sia Integrations
 

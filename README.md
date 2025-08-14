@@ -60,7 +60,6 @@ Toggle the **Preview** button to see how the markdown will be formatted on the G
 
 4. Once you're satisfied, click **Commit Changes** to submit your proposal
 
-{% hint style="info" %}
 
 # Get Involved
 
@@ -74,12 +73,13 @@ While a distinct development and operations team exists, dozens of individuals h
 
 ## Join us!
 
-We have a wonderful community, and we hope you'll find your place there! Check the `#contributors` channel in [Discord](https://discord.com) to say "Hi," ask questions, or get opinions on your Sia-related code or app.
+We have a wonderful community, and we hope you'll find your place there! Check the `#contributors` channel in [Discord](https://discord.com/invite/sia) to say "Hi," ask questions, or get opinions on your Sia-related code or app.
 
 Join our socials to become a part of our thriving community, where you can actively engage with our ecosystem and fellow members while staying updated with the latest content, news, and developments!
 
-&#x20;
+&#x20;s
 
+{% hint style="info" %}
 **Further assistance**
 
 If you can't find your answer here in our documentation, join the `#help` channel in the [Sia Discord](https://discord.com/invite/sia), where a vast community loves helping users with their issues.

@@ -24,7 +24,7 @@ We aim for users to discern between core and non-core projects for several reaso
 
 These Sia brand guidelines will assist those developing their project by ensuring clarity, consistency, and distinction between other projects and core Sia offerings.
 
-## Logo and Wordmark
+## Logo and Branding Usage
 
 The Sia Foundation exclusively owns the Sia trademark in the United States and prohibits the direct use of the Sia logo or wordmark in any third-party project. Do not copy, modify, or style the Sia logo or wordmark in a way that could cause confusion or misrepresentation.
 
@@ -37,23 +37,19 @@ The Sia Foundation exclusively owns the Sia trademark in the United States and p
 
 </div>
 
-{% hint style="warning" %}
-There are no publicly available logos or branding assets for Sia or the Sia Foundation. Do not use the name **"Sia"** in your project’s name, branding, or marketing. You are expected to develop your own distinct name and branding.
-{% endhint %}
+### Referencing Sia in Content
 
-## Naming
+You may use the name **“Sia”** in plain text when accurately referring to the project in articles, reviews, presentations, or other informational materials.  
+- Do not alter, recreate, or style the official Sia logo.  
+- Do not imply any official endorsement or partnership unless you have prior written permission from the Sia Foundation.
 
-Sia's trademark name is pronounced _"sigh-uh,_ not _"see-ya."_
+### Branding Your Own Project
 
-Do not use the name **"Sia"** in your project without explicit written approval from the Sia Foundation. If approval is granted, the following restrictions apply:
-
-* Do not call your project just **"Sia"**.
-* Do not append a term directly related to our business, such as **Cloud**, **Storage**, or **Backup**.  
-* Do not append a term already in use by the Foundation, such as **renterd**, **hostd**, or **walletd**.  
-* Your final name must be substantially different from current Foundation offerings.
-
-If your project could function with another storage backend besides Sia, you must not use the name **Sia** in your project’s name. For example, if you are building a file transfer service that happens to use Sia as a storage location, do **not** call it “SiaSend.” Choose a unique name that reflects your project’s identity and creative direction.
-
+You may **not** use the name **“Sia”** or the official logo in your project’s name, branding, or marketing in a way that could cause confusion or suggest affiliation.  
+- Develop your own distinct name, logo, and branding.  
+- Avoid names that are similar to “Sia” or that incorporate it as part of the name.  
+- Sia's trademark name is pronounced _"sigh-uh,"_ not _"see-ya."_  
+- Do not use the name **"Sia"** in your project without explicit written approval from the Sia Foundation.
 
 {% hint style="info" %}
 We're eagerly anticipating what you'll create! If you have any questions regarding our Sia branding guidelines, please don't hesitate to reach out via [email](mailto:hello@sia.tech) or [Discord](https://sia.tech/discord).

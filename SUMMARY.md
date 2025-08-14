@@ -63,9 +63,8 @@
 
 ## Miscellaneous
 * [Navigating the V2 Hardfork](v2/README.md)
-  * [Sia's June 2025 Hardfork](v2/README.md)
+  * [Sia's June 2025 Hardfork](v2/june-2025-hardfork.md)
   * [How to Upgrade: Exchanges](v2/exchanges.md)
-  * [Sia Ecosystem Fork Status](v2/sia-ecosystem-fork-compliance.md)
 
 * [Siafunds](/siafunds/learn-about-siafunds.md)
   * [Withdrawing Siafunds](siafunds/how-to-cash-out-siafunds.md)

@@ -77,8 +77,6 @@ We have a wonderful community, and we hope you'll find your place there! Check t
 
 Join our socials to become a part of our thriving community, where you can actively engage with our ecosystem and fellow members while staying updated with the latest content, news, and developments!
 
-&#x20;s
-
 {% hint style="info" %}
 **Further assistance**
 

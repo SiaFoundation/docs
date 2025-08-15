@@ -11,10 +11,7 @@
 
 ## Get Started with Sia
 
-* [Learn about Sia](get-started-with-sia/sia101.md)
-* [Learn about Siacoins](get-started-with-sia/learn-about-siacoins.md)
 * [Your Sia Seed](get-started-with-sia/the-importance-of-your-seed.md)
-* [Siacoin Total Supply](get-started-with-sia/siacoin-total-supply.md)
 
 ## Renting
 
@@ -74,3 +71,4 @@
 * [Brand Guidelines](miscellaneous/sia-brand-guidelines.md)
 * [Get Involved](miscellaneous/get-involved.md)
 * [Glossary](miscellaneous/glossary.md)
+* [Siacoin Total Supply](get-started-with-sia/siacoin-total-supply.md)

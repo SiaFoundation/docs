@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Zen Testnet](zen-testnet.md)
+* [Zen Testnet](testnet/zen-testnet.md)
 
 ## Navigating the V2 Hardfork
 

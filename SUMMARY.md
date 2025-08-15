@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Zen Testnet](testnet/zen-testnet.md)
 
 ## Get Started with Sia
 
@@ -51,10 +52,6 @@
   * [Linux](wallet/setting-up-walletd/linux.md)
 * [Transferring Siacoins](wallet/transferring-siacoins.md)
 
-## Testnet
-
-* [Zen Testnet](testnet/zen-testnet.md)
-
 ## Sia Integrations
 
 * [Sia Ledger app with Sia Central](sia-integrations/using-the-sia-ledger-nano-app-sia-central.md)
@@ -63,14 +60,6 @@
   * [Jellyfin](sia-integrations/s3-integrations/jellyfin.md)
   * [Nextcloud](sia-integrations/s3-integrations/nextcloud.md)
   * [rclone](sia-integrations/s3-integrations/rclone.md)
-
-## Siafunds
-
-* [Learn about Siafunds](siafunds/learn-about-siafunds.md)
-* [Withdrawing Siafunds](siafunds/how-to-cash-out-siafunds.md)
-* [SEC Settlement](siafunds/sec-settlement-faq.md)
-
-## Miscellaneous
 
 ## Miscellaneous
 

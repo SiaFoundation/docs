@@ -23,7 +23,8 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 
 ## Pre-requisites
 
-* **Network Access:** `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9984` so `hostd` can properly communicate with the network and renters.
+To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
+
 * **Operating System Compatibility:** Ensure your Linux version is compatible with the `hostd` software. To do this, run  `uname -m` in your Terminal Emulator.
 
   * **x86\_64** - `Linux AMD64`

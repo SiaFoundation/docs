@@ -26,13 +26,11 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 
 To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
 
-* **Network Access:** `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the ports `9981-9984` so `hostd` can properly communicate with the network and renters.
-
 * **Operating System Compatibility:** `hostd` is supported on the following Ubuntu versions:
+	- Plucky (Ubuntu 25.04)
 	- Noble (Ubuntu 24.04)
 	- Mantic (Ubuntu 23.10)
-	- Jammiy (Ubuntu 22.04)
-	- Focal (Ubuntu 20.04)
+	- Jammy (Ubuntu 22.04)
 
 * **System Updates:** Ensure that ubuntu is up to date with the latest system updates, these updates can contain important security fixes and improvements.
 
@@ -40,6 +38,19 @@ To ensure you will not run into any issues with running `hostd` it is recommende
   - A quad-core CPU
   - 8GB of RAM
   - An SSD with at least 128GB of free space.
+
+## Adjust sysctl (OPTIONAL)
+
+These changes to sysctl are optional and may increase performance
+
+```sh
+echo "net.core.rmem_max=7500000
+net.core.wmem_max=7500000
+net.ipv4.tcp_congestion_control = bbr
+net.core.default_qdisc = pfifo_fast
+net.ipv4.tcp_shrink_window = 1" | sudo tee /etc/sysctl.d/50-hostd.conf
+sudo sysctl --system
+```
 
 ## Install `hostd` Using the `apt` repository
 

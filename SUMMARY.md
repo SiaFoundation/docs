@@ -52,9 +52,10 @@
 
 * [Your Sia Wallet](wallet/wallet-overview.md)
 * [Setting up walletd](wallet/setting-up-walletd/README.md)
+  * [Linux](wallet/setting-up-walletd/linux.md)
+  * [Docker](wallet/setting-up-walletd/docker.md)
   * [macOS](wallet/setting-up-walletd/macos.md)
   * [Windows](wallet/setting-up-walletd/windows.md)
-  * [Linux](wallet/setting-up-walletd/linux.md)
 * [Transferring Siacoins](wallet/transferring-siacoins.md)
 
 ## Testnet

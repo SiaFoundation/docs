@@ -32,7 +32,7 @@
 
 ## Hosting
 
-* [About Hosting on Sia](hosting/about-hosting-on-sia.md)
+* [About Providing Storage on Sia](hosting/about-hosting-on-sia.md)
 * [Installing hostd](hosting/setting-up-hostd/README.md)
   * [Linux](hosting/setting-up-hostd/linux/README.md)
     * [Debian](hosting/setting-up-hostd/linux/debian.md)

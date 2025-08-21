@@ -43,7 +43,7 @@ As a storage provider, you earn Siacoin for the storage space that you sell. But
 
 Having collateral incentivizes storage providers to be online and to keep their renter data intact. Storage providers that go offline or lose data lose their collateral, and hosts that stay online and keep data safe get their collateral back.
 
-## Storage provider Scoring
+## Storage Provider Scoring
 
 Your storage provider score is one of the most critical factors determining how you'll fare as a storage provider. This is based on several metrics – some that you can directly affect, some that improve or diminish over time based on your performance.
 
@@ -53,7 +53,7 @@ Sia is a decentralized network - the code to evaluate these scoring metrics is c
 
 {% tabs %}
 {% tab title="Storage Provider Uptime" %}
-Collateral to storage Provider uptime is a vital metric. It would be best if you were online when people try to get their data, and since that might be any time, you should be online all the time. You're allowed negligible downtime to address minor maintenance issues like restarting for updates, which could include approximately 14 hours per month.
+Collateral to storage provider uptime is a vital metric. It would be best if you were online when people try to get their data, and since that might be any time, you should be online all the time. You're allowed negligible downtime to address minor maintenance issues like restarting for updates, which could include approximately 14 hours per month.
 
 In general, you should plan for your storage node computer to be turned on and online 24/7. If you can't commit to this, you shouldn't try to provide storage on the Sia network.
 
@@ -98,6 +98,8 @@ You should normally set your collateral to around **2-3x your base storage price
 You can view information on your collateral through the `hostd` dashboard.
 
 ![](../.gitbook/assets/hostd-screenshots/ui/hostd-dashboard-collateral.png)
+
+With this information, you can determine how much collateral has been tied up in the hosting process, and adjust your collateral settings accordingly if necessary.
 {% endtab %}
 
 {% tab title="Storage Remaining" %}

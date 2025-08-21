@@ -40,7 +40,7 @@
     * [Other](hosting/setting-up-hostd/linux/other.md)
   * [Docker](hosting/setting-up-hostd/docker.md)
   * [macOS](hosting/setting-up-hostd/macos.md)
-  * [Windows](hosting/setting-up-hostd/windows.md)
+  * [Windows](hosting/setting-up-hostd/download.md)
 * [Transferring Siacoins](hosting/transferring-siacoins.md)
 * [Adding Storage](hosting/adding-storage.md)
 * [Configuring your Host](hosting/configuring-your-host/README.md)

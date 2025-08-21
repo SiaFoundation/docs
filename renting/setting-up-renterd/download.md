@@ -26,10 +26,7 @@ To run `renterd` on Windows, your system should meet the following specification
 * **Network Access:**
   `renterd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
 
-* **System Requirements:**
-  - Quad-core processor
-  - 8GB RAM
-  - Minimum of 256GB SDD for consensus data.
+* **System Requirements:** Quad-core processor, 8GB RAM, and a minimum of 256GB SDD for consensus data.
 
 {% hint style="warning" %}
 We recommend 8GB of RAM, as `renterd` keeps full 120MB slabs in memory during uploads (often 2–3 at once). It can run with less, but performance depends on your use case.

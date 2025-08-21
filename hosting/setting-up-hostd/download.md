@@ -48,6 +48,23 @@ After downloading the `hostd` desktop application:
 **Success!** `hostd` is now running on your Windows system, and you’re ready to start providing storage on the Sia network.
 {% endhint %}
 
+## Configure
+
+`hostd` can be customized by double-clicking the app, giving you full control over its behavior. Here’s what each setting means:
+
+| Field | Description |
+|------|-------------|
+| Name | Your node's name |
+| Recovery Phrase | Your wallet recovery seed |
+| Password | Set or update your wallet password |
+| Automatically open the Web UI on startup | Enable this to launch the interface when hostd starts |
+| Data Directory | Where hostd stores its data and config files |
+| HTTP Address | Local address for the Web UI |
+| Log Level | Amount of detail in logs |
+| Syncer Address | Address used by the storage provider to synchronize with the network |
+| RHP2 Address | Address for storage providing contracts using the RHP2 protocol |
+| RHP3 TCP Address | TCP address for storage providing contracts using the RHP3 protocol |
+
 ## Update
 
 `hostd` updates regularly with bug fixes, performance improvements, and new features. Updating your node ensures stability and compatibility with the Sia network. 

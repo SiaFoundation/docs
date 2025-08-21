@@ -58,25 +58,20 @@ After downloading the `renterd` desktop application:
 
 ## Configure
 
-`renterd` can be customized by double-clicking the app, giving you full control over its behavior. Here’s what each setting means:"
+`renterd` can be customized by double-clicking the app, giving you full control over its behavior. Here’s what each setting means:
 
-**Key Settings**
-- Recovery Phrase: Your wallet recovery seed.
-- Password: Set or update your wallet password.
-- Automatically open the Web UI on startup: Enable this to launch the interface when renterd starts.
-
-**Directories & Addresses**
-- Data Directory: Where renterd stores its data and config files.
-- HTTP Address: Local address for the Web UI
-- Log Level: Amount of detail in logs
-
-**S3 Settings**
-
-- S3 Address: Local address and port for the S3 interface.
-- S3 Interface: Local address and port for the S3 interface.
-- S3 Disable Auth: Turn authentication on or off for S3.
-- S3 Host Bucket: Optional default bucket name for S3 storage.
-
+| Field | Description |
+|------|-------------|
+| Recovery Phrase | Your wallet recovery seed |
+| Password | Set or update your wallet password |
+| Automatically open the Web UI on startup | Enable this to launch the interface when renterd starts |
+| Data Directory | Where renterd stores its data and config files |
+| HTTP Address | Local address for the Web UI |
+| Log Level | Amount of detail in logs |
+| S3 Address | Local address and port for the S3 interface |
+| S3 Interface | Local address and port for the S3 interface |
+| S3 Disable Auth | Enable or disable authentication for S3 |
+| S3 Host Bucket | Optional default bucket name for S3 storage |
 
 ## Update
 

@@ -28,7 +28,7 @@ This guide will walk you through setting up `hostd` on Windows. At the end of th
 * **System Updates:** Ensure that your Windows is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 {% hint style="warning" %}
-Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup as such:
+Your machine must meet the minimum requirements for providing storage on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Being a storage provider on Sia is a commitment that requires some technical knowledge and a stable setup as such:
 
 * Windows 10 or 11
 * A quad-core CPU

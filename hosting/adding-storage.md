@@ -14,7 +14,7 @@ layout:
 
 # Adding Storage
 
-When Hosting on Sia, you must allocate a location on your disk that `hostd` will store any uploaded data from renters. This is referred to as **volume**.&#x20;
+When providing storage on Sia, you must allocate a location on your disk that `hostd` will store any uploaded data from renters. This is referred to as **volume**.&#x20;
 
 **Volume** can be located anywhere on the local or external drives, and you can create multiple volumes to combine storage from multiple drives.
 

@@ -145,7 +145,7 @@ These benchmarks differ from the core Sia protocol but are still helpful and may
 
 Once you've started providing storage, you'll probably want to keep an eye on your storage node score and see how you might be able to improve your node's ranking.
 
-{% hint style="info" %}
+{% hint style="success" %}
 #### **Getting Started with `hostd`**
 
 Contributing your storage space couldn't be any simpler by using Sia's `hostd` software!

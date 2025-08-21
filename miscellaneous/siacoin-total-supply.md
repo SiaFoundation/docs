@@ -16,13 +16,13 @@ layout:
 
 The total supply of Siacoins (SC) is unlimited; there will never be a cap on the number of Siacoins generated. Humans produce an extensive amount of data, making it practically limitless. When Sia becomes the industry-standard storage layer of the internet, the network will require a significant quantity of Siacoins to fulfill all the associated contracts.&#x20;
 
-As of March 23, 2021, approximately 47.3 billion coins have been created, with the new coin introduction slowing down as each new block is produced. By 2022, an estimated 50 billion coins should be in circulation.&#x20;
+As of June 6, 2025, approximately 60.5 billion coins have been created, with the new coin introduction slowing down as each new block is produced.&#x20;
 
 Additionally, miners would lose their incentive to continue providing services to the network if the block reward were to cease.
 
 ## Creation of new Siacoins
 
-New Siacoins are created through proof-of-work mining. Over 40 billion Siacoins are circulating, which will continue to increase. Sia is poised to become the foundational storage layer of the internet, necessitating billions of Siacoins to accommodate the petabytes and exabytes of data that will be stored on our platform.
+New Siacoins are created through proof-of-work mining. Over 56 billion Siacoins are circulating, which will continue to increase. Sia is poised to become the foundational storage layer of the internet, necessitating billions of Siacoins to accommodate the petabytes and exabytes of data that will be stored on our platform.
 
 {% hint style="info" %}
 The number of Siacoins created for each block is 300,000 minus the height. This means a block with a block height of 200,000 has created 100,000 Siacoins. After a height of 270,000, the block reward won't get lower, and all blocks will have a reward of 30,000 Siacoins.

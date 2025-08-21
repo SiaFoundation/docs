@@ -3,12 +3,6 @@
 * [Introduction](README.md)
 * [Zen Testnet](testnet/zen-testnet.md)
 
-## Navigating the V2 Hardfork
-
-* [Sia's June 2025 Hardfork](v2/README.md)
-* [How to Upgrade: Exchanges](v2/exchanges.md)
-* [Sia Ecosystem Fork Status](navigating-the-v2-hardfork/sia-ecosystem-fork-compliance.md)
-
 ## Get Started with Sia
 
 * [Learn about Sia](get-started-with-sia/sia101.md)
@@ -68,6 +62,10 @@
   * [rclone](sia-integrations/s3-integrations/rclone.md)
 
 ## Miscellaneous
+
+* [V2 Hardfork - June 2025](v2/README.md)
+  * [How to Upgrade: Exchanges](v2/exchanges.md)
+  * [Sia Ecosystem Fork Status](navigating-the-v2-hardfork/sia-ecosystem-fork-compliance.md)
 * [Siafunds](/siafunds/learn-about-siafunds.md)
   * [Withdrawing Siafunds](siafunds/how-to-cash-out-siafunds.md)
   * [SEC Settlement](siafunds/sec-settlement-faq.md)

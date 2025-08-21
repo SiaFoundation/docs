@@ -10,9 +10,9 @@
 * [Your Sia Seed](get-started-with-sia/the-importance-of-your-seed.md)
 * [Siacoin Total Supply](get-started-with-sia/siacoin-total-supply.md)
 
-## Renting
+## Store Your Data
 
-* [About Renting on Sia](renting/about-renting.md)
+* [About Storing Your Data](renting/about-renting.md)
 * [Installing renterd](renting/setting-up-renterd/README.md)
   * [Linux](renting/setting-up-renterd/linux/README.md)
     * [Debian](renting/setting-up-renterd/linux/debian.md)
@@ -24,9 +24,9 @@
 * [Renting Storage](renting/renting-storage/README.md)
   * [Managing your Files](renting/renting-storage/managing-your-files.md)
 
-## Hosting
+## Provide Storage
 
-* [About Providing Storage on Sia](hosting/about-hosting-on-sia.md)
+* [About Providing Storage](hosting/about-hosting-on-sia.md)
 * [Installing hostd](hosting/setting-up-hostd/README.md)
   * [Linux](hosting/setting-up-hostd/linux/README.md)
     * [Debian](hosting/setting-up-hostd/linux/debian.md)
@@ -70,5 +70,3 @@
   * [Withdrawing Siafunds](siafunds/how-to-cash-out-siafunds.md)
   * [SEC Settlement](siafunds/sec-settlement-faq.md)
 * [Brand Guidelines](miscellaneous/sia-brand-guidelines.md)
-* [Get Involved](miscellaneous/get-involved.md)
-* [Glossary](miscellaneous/glossary.md)

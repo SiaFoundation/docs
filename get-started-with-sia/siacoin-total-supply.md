@@ -36,7 +36,7 @@ Consequently, this resulted in a slight, temporary increase in the inflation sch
 
 ## Siacoin inflation
 
-Inflation is an inherent feature of Siacoin designed to accommodate various factors that lead to the gradual reduction of coins in circulation. These factors include the coins locked in contracts as collateral, lost coins, coins burnt due to failed hosting contracts. Over time, this inflation diminishes significantly, yet it plays a crucial role in safeguarding the network by offering block rewards to miners.
+Inflation is an inherent feature of Siacoin designed to accommodate various factors that lead to the gradual reduction of coins in circulation. These factors include the coins locked in contracts as collateral, lost coins, coins burnt due to failed storage contracts. Over time, this inflation diminishes significantly, yet it plays a crucial role in safeguarding the network by offering block rewards to miners.
 
 | Year                | % Growth in total Siacoins |
 | ------------------- | -------------------------- |

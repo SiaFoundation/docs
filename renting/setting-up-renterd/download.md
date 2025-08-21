@@ -23,8 +23,7 @@ The `renterd` desktop app provides a user-friendly web UI to start storing data 
 
 To run `renterd` on Windows, your system should meet the following specifications:
 
-* **Network Access:**
-  `renterd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
+* **Network Access:** `renterd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
 
 * **System Requirements:** Quad-core processor, 8GB RAM, and a minimum of 256GB SDD for consensus data.
 
@@ -46,7 +45,7 @@ Before proceeding, please read our [Terms of Service](https://sia.tech/terms-of-
 
 After downloading the `renterd` desktop application:
 
-1. Locate the application in your **Downloads** folder. We recommend moving it to a convenient location.
+1. Locate the `.exe` in your **Downloads** folder. We recommend moving it to a convenient location.
 
 2. Double-click the application. The web UI will open automatically, or you can access it at http://localhost:9980. `renterd` runs in the background.
 

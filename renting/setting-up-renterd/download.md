@@ -93,4 +93,3 @@ You can always check for the latest version at the bottom of the app interface.
 {% hint style="warning" %}
 On Linux, automatic updates are currently __not__ supported, so you must update by downloading the latest version or using your package manager.
 {% endhint%}
-

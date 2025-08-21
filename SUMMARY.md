@@ -43,11 +43,11 @@
   * [Windows](hosting/setting-up-hostd/windows.md)
 * [Transferring Siacoins](hosting/transferring-siacoins.md)
 * [Adding Storage](hosting/adding-storage.md)
-* [Configuring your Host](hosting/configuring-your-host/README.md)
+* [Configuring your Storage Node](hosting/configuring-your-host/README.md)
   * [Dynamic DNS](hosting/configuring-your-host/dynamic-dns/README.md)
     * [DuckDNS](hosting/configuring-your-host/dynamic-dns/duckdns.md)
     * [Cloudflare](hosting/configuring-your-host/dynamic-dns/cloudflare-advanced.md)
-* [Announcing your Host](hosting/announcing-your-host.md)
+* [Announcing your Storage Node](hosting/announcing-your-host.md)
 
 ## Wallet
 

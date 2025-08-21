@@ -27,7 +27,7 @@ When adding the site, you will be asked which plan you would like. At the very b
 
 <figure><img src="../../../.gitbook/assets/hostd_ddns_cloudflare_free_plan.png" alt=""><figcaption><p>Select Free plan</p></figcaption></figure>
 
-Add DNS records for your host. We will be using `myfamoushost.sia.tools` for this guide.
+Add DNS records for your storage node. We will be using `myfamoushost.sia.tools` for this guide.
 
 1. &#x20;For IPv4, add an "A" record.&#x20;
 2. For IPv6, add an "AAAA" record. &#x20;

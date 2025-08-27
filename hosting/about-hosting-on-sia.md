@@ -152,3 +152,5 @@ Contributing your storage space couldn't be any simpler by using Sia's `hostd` s
 
 Start providing storage on Sia with the official [`hostd` software](https://sia.tech/software/hostd) and exploring our step-by-step [Setting up hostd ](setting-up-hostd/)guide.
 {% endhint %}
+
+Do not merge

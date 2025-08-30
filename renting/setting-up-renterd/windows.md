@@ -91,6 +91,10 @@ There are several configurable settings in `renterd`. Below is a breakdown of wh
 | S3 Disable Auth | Enable or disable authentication for S3 |
 | S3 Host Bucket | Optional default bucket name for S3 storage |
 
+{% hint style="warning" %}
+Always **save and restart daemon** after making configuration changes to ensure they are applied.
+{% endhint %}
+
 You can monitor your node’s activity and track changes by checking the logs. These provide detailed information about the system, network connections, API endpoints, S3 interface, and autopilot operations, helping you understand what your node is doing at any given time.
 
 ![](../../.gitbook/assets/windows-renterd-app/config-logs.png)

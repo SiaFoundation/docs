@@ -25,7 +25,7 @@
     * [Debian](renting/setting-up-renterd/linux/debian.md)
     * [Ubuntu](renting/setting-up-renterd/linux/ubuntu.md)
     * [Other](renting/setting-up-renterd/linux/other.md)
-  * [Windows](renting/setting-up-renterd/download.md)
+  * [Windows](renting/setting-up-renterd/windows.md)
 * [Transferring Siacoins](renting/transferring-siacoins.md)
 * [Renting Storage](renting/renting-storage/README.md)
   * [Managing your Files](renting/renting-storage/managing-your-files.md)

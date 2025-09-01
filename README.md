@@ -19,11 +19,6 @@ layout:
 
 Sia is the world's safest cloud storage, by design. A purely decentralized peer-to-peer network with, **no central access point**, **no gatekeepers**, and **no insanely expensive hardware requirements**. It offers a radically new level of **privacy**, **security**, **performance** and **pricing** — all through a unique **nonprofit model**.
 
-<div style="text-align: center;">
-  <img src=".gitbook/assets/app-icon.png" alt="App Icon" width="50">
-</div>
-<br><br>
-
 So whether you’re a developer looking to build on a open-source and decentralized cloud platform, or a user ready to take control of your data, you’re in the right place!
 
 Our documentation is your comprehensive guide and single source of truth for learning how to interact with the Sia Network.
@@ -63,7 +58,7 @@ Our core team of engineers at The Sia Foundation believes that principles are ev
 
 Check out our [GitHub](https://github.com/SiaFoundation) to follow along or contribute code to help further our mission.
 
-## Join Our Community
+## Join our Community
 
 Join our [Discord](https://discord.com/invite/sia)—a hub for developers, users, and anyone curious about decentralized cloud storage, privacy, and security. It’s the place for support, collaboration, and updates. Want to contribute? Head to `#contributors` to say hi, ask questions, or share your Sia-related code or app.
 

@@ -22,10 +22,6 @@ The `hostd` desktop app provides a user-friendly web UI to start providing stora
 
 ## Pre-requisites
 
-{% hint style="warning" %}
-Your machine must meet Sia’s minimum requirements. Failing to do so may prevent contracts or incur penalties. Running a Sia storage node requires technical knowledge and a stable setup.
-{% endhint %}
-
 To run `hostd` on Windows, your system should meet the following specifications:
 
 * **Network Access:** `hostd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
@@ -33,7 +29,9 @@ To run `hostd` on Windows, your system should meet the following specifications:
 * **System Requirements:** Quad-core processor, 8GB RAM, and a minimum of 256GB SSD for consensus data, 4TB HDD for stored data.
 
 {% hint style="warning" %}
-We recommend 8GB of RAM, as `hostd` keeps full 120MB slabs in memory during uploads (often 2–3 at once). It can run with less, but performance depends on your use case.
+Your machine must meet the minimum requirements to run a Sia storage provider node. Failure may cause contract issues or penalties. A stable, technically sound setup is required.
+
+We recommend 8GB RAM since hostd holds 120MB slabs in memory (often 2–3 at once). It can run with less, but performance varies by use case.
 {% endhint %}
 
 ## Download
@@ -71,11 +69,7 @@ After downloading the `hostd` desktop application:
 4. **Access the Web UI *(first-time users only)*:** Click **save and start daemon** It will open automatically, or if not, you can access it at http://localhost:9980 while `hostd` runs in the background.
 
 {% hint style="warning" %}
-If this is your first time running `hostd`, Windows Security may display a prompt:
-
-*Do you want to allow public and private networks to access this app?*
-
-This appears because Windows Firewall restricts network activity for security reasons. It is safe to select **Allow** access so that hostd can function properly.
+When you first run `hostd`, Windows Security may ask to allow public and private network access. This is normal—select **Allow** so `hostd` can communicate properly through the firewall.
 {% endhint %}
 
 ![](../../.gitbook/assets/windows-hostd-app/web-ui.png)
@@ -113,7 +107,7 @@ You can monitor your node’s activity and track changes by checking the logs. T
 
 ![](../../.gitbook/assets/windows-hostd-app/config-logs.png)
 
-{% hint style="warning" %}
+{% hint style="info" %}
 You can always check for version of the software at the bottom of the app interface.
 {% endhint %}
 

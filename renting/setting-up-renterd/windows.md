@@ -99,6 +99,10 @@ You can monitor your node’s activity and track changes by checking the logs. T
 
 ![](../../.gitbook/assets/windows-renterd-app/config-logs.png)
 
+{% hint style="info" %}
+You can always check for version of the software at the bottom of the app interface.
+{% endhint %}
+
 ## Update
 
 `renterd` updates regularly with bug fixes, performance improvements, and new features. Updating your node ensures stability and compatibility with the Sia network. 

@@ -34,7 +34,7 @@ Our documentation is your comprehensive guide and single source of truth for lea
 
 Keeping our docs up to date is important, and we welcome community contributions—whether suggesting edits or adding new articles.
 
-1. To submit a edits via GitHub, click dropdown in the top-right corner and select **Edit on GitHub**. You’ll be taken directly to the corresponding page on GitHub.
+1. To submit edits via GitHub, click dropdown in the top-right corner and select **Edit on GitHub**. You’ll be taken directly to the corresponding page on GitHub.
 
 2. Next, click **Edit the file** to edit the markdown file.
 
@@ -72,5 +72,5 @@ Join our [Discord](https://discord.com/invite/sia)—a hub for developers, users
 
 Join the `#help` channel on our [Discord](https://discord.com/invite/sia), where the community is always ready to help.
 
-You can also [email us](mailto:hello@sia.tech)email us, and we’ll get back to you as soon as possible.
+You can also [email us](mailto:hello@sia.tech), and we’ll get back to you as soon as possible.
 {% endhint %}

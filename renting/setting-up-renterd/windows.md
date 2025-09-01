@@ -33,7 +33,7 @@ We recommend 8GB of RAM, as `renterd` keeps full 120MB slabs in memory during up
 
 ## Download
 
-1. Go to [Sia Software Downloads](https://sia.tech/software-downloads). Here can find the latest software downloads for all our daemons.
+1. Go to [Sia Software Downloads](https://sia.tech/software-downloads). Here you can find the latest software downloads for all our daemons.
 
 ![](../../.gitbook/assets/windows-renterd-app/sia-tech-website-download.png)
 
@@ -87,7 +87,7 @@ There are several configurable settings in `renterd`. Below is a breakdown of wh
 | HTTP Address | Local address for the Web UI |
 | Log Level | Amount of detail in logs |
 | S3 Address | Local address and port for the S3 interface |
-| S3 Interface | Local address and port for the S3 interface |
+| S3 Interface | Enable or disable the S3 interface |
 | S3 Disable Auth | Enable or disable authentication for S3 |
 | S3 Host Bucket | Optional default bucket name for S3 storage |
 
@@ -106,5 +106,5 @@ You can monitor your node’s activity and track changes by checking the logs. T
 On Windows, the app downloads updates automatically and notifies you when they’re ready. Simply restart the app to run the latest version. 
 
 {% hint style="warning" %}
-You can always check for version of the software at the bottom of the app interface.
+You can always check for the version of the software at the bottom of the app interface.
 {% endhint %}

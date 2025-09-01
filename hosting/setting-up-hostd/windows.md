@@ -38,7 +38,7 @@ We recommend 8GB of RAM, as `hostd` keeps full 120MB slabs in memory during uplo
 
 ## Download
 
-1. Go to [Sia Software Downloads](https://sia.tech/software-downloads). Here can find the latest software downloads for all our daemons.
+1. Go to [Sia Software Downloads](https://sia.tech/software-downloads). Here you can find the latest software downloads for all our daemons.
 
 ![](../../.gitbook/assets/windows-hostd-app/sia-tech-website-download.png)
 
@@ -102,7 +102,7 @@ There are several configurable settings in `hostd`. Below is a breakdown of what
 | Data Directory | Where `hostd` stores its data and config files |
 | Log Level | Amount of detail in logs |
 | HTTP Address | Local address for the Web UI |
-| Syncer Address | Peer address `hostd` uses to sync the blockchain and find other peers.|
+| Syncer Address | Peer address `hostd` uses to sync the blockchain and find other peers |
 | RHP4 port | Listening port for incoming storage traffic |
 
 {% hint style="warning" %}

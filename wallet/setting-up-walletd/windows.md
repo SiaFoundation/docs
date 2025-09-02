@@ -65,7 +65,7 @@ When you first run `walletd`, Windows Security may ask to allow public and priva
 
 ## Configure
 
-You can customize `walletd` through the desktop app, which provides full control over all available settings, from wallet security to network and S3 configurations.
+You can customize `walletd` through the desktop app, which provides full control over all available settings, from wallet indexing to batch sizing and more.
 
 On **Windows**, you can access the `walletd` configurations by going to the taskbar, expanding the up arrow to see hidden icons, and double-clicking the `walletd` app. This will open the configuration window and let you customize its behavior.
 

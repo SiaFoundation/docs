@@ -43,7 +43,7 @@ services:
     image: ghcr.io/siafoundation/walletd:latest
     restart: unless-stopped
     ports:
-      - 127.0.0.1:9990:9980/tcp
+      - 127.0.0.1:9980:9980/tcp
       - 9991:9981/tcp
     volumes:
       - walletd-data:/data

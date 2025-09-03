@@ -118,7 +118,7 @@ To check the status of the container run:
 docker ps -a
 ```
 
-If the container is not running, it will show in the `STATUS` column
+If the container is not running, it will show as `Exited` in the `STATUS` column.
 
 ![](../../.gitbook/assets/renterd-install-screenshots/docker/07-renterd-docker-status.png)
 

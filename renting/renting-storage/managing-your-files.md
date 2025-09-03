@@ -36,7 +36,7 @@ The allowance will refill automatically when you open `renterd`.
 
 Your storage contracts will renew automatically at the end of the contract period. By default, Sia will attempt to renew your contract within about one month of the contract expiration date.&#x20;
 
-If you started renting at the beginning of January, your 3-month contracts would expire around the end of March. Sia would attempt to renew contracts around the beginning of March.&#x20;
+If you started storing data on the network at the beginning of January, your 3-month contracts would expire around the end of March. Sia would attempt to renew contracts around the beginning of March.&#x20;
 
 {% hint style="info" %}
 Your contracts renew automatically when you open `renterd`.

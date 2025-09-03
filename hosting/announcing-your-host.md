@@ -14,7 +14,7 @@ layout:
 
 # Announcing your Storage Node
 
-Now that your storage node has been configured and finished syncing, you can announce your node to the network.&#x20;
+Now that your storage node has been configured and finished syncing, you can announce your node to the network.
 
 Announcing your storage node serves as the bridge between your fully prepared node and potential renters seeking storage solutions. This process publishes information about your storage node, including its network address and public key, onto the blockchain, allowing renters to discover your node and establish contracts.
 
@@ -36,7 +36,7 @@ Congratulation! Your storage node has been successfully announced to the network
 
 ## Check your storage node's status
 
-Once the announcement is confirmed, you can check if your storage node is visible on the network by going [here](https://troubleshoot.siacentral.com).&#x20;
+Once the announcement is confirmed, you can check if your storage node is visible on the network by going [here](https://troubleshoot.siacentral.com).
 
 <figure><img src="../.gitbook/assets/siacentral.png" alt=""><figcaption><p>SiaCentral Troubleshooter</p></figcaption></figure>
 

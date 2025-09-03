@@ -29,8 +29,8 @@ When adding the site, you will be asked which plan you would like. At the very b
 
 Add DNS records for your storage node. We will be using `myfamoushost.sia.tools` for this guide.
 
-1. &#x20;For IPv4, add an "A" record.&#x20;
-2. For IPv6, add an "AAAA" record. &#x20;
+1. For IPv4, add an "A" record.
+2. For IPv6, add an "AAAA" record. 
 3. Toggle "Proxy" off. Sia uses a custom TCP protocol that cannot be proxied by Cloudflare.
 4. Click "Save"
 
@@ -52,7 +52,7 @@ On the website Dashboard in the right-hand column is your domain's "Zone ID." Co
 
 Next, we need to create an API token for Cloudflare. An API token allows `hostd` to access your Cloudflare DNS without needing your email or password.
 
-1. Click the account icon in the top right corner of the page.&#x20;
+1. Click the account icon in the top right corner of the page.
 2. Click "My Profile" in the dropdown.
 3. Click "API Tokens" in the sidebar on the left
 4. Click "Create Token"
@@ -73,7 +73,7 @@ Once you have set the permissions, click "Continue to summary." On the summary s
 
 ## Configure hostd
 
-It's finally time to configure `hostd` and enable DDNS.&#x20;
+It's finally time to configure `hostd` and enable DDNS.
 
 1. Access the `hostd` UI, `http://localhost:9980` by default
 2. Click the "Configuration" icon in the sidebar

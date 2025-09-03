@@ -16,7 +16,7 @@ layout:
 
 The Sia Foundation has made a test environment available for users wishing to test hardforks, software developments, and integration within the Sia ecosystem via the Zen Testnet.
 
-The Zen Testnet offers a secure environment to experiment with `renterd`, `hostd`, and `walletd`and explore the capabilities of Siacoin without the risk of losing real Siacoins, but also with no real-world value.&#x20;
+The Zen Testnet offers a secure environment to experiment with `renterd`, `hostd`, and `walletd`and explore the capabilities of Siacoin without the risk of losing real Siacoins, but also with no real-world value.
 
 ## Running testnet
 
@@ -42,7 +42,7 @@ walletd -network=zen
 
 With the availability of zSC, the [Zen Testnet faucet](https://zen.siascan.com/faucet) provides a convenient way to acquire zSC by simply providing your Sia wallet's address.
 
-Once on the page, enter a Sia wallet address of either  `renterd`, `hostd`, or `walletd` , then enter the amount of Zen Siacoins (zSC) you wish to fund that address with.&#x20;
+Once on the page, enter a Sia wallet address of either  `renterd`, `hostd`, or `walletd` , then enter the amount of Zen Siacoins (zSC) you wish to fund that address with.
 
 <figure><img src="../.gitbook/assets/zen faucet funding.png" alt=""><figcaption><p>Zen Testnet Faucet funding</p></figcaption></figure>
 
@@ -50,11 +50,11 @@ Once on the page, enter a Sia wallet address of either  `renterd`, `hostd`, or `
 It might take a minute or two for your wallet to be funded and for the transaction to appear in its transactions list.
 {% endhint %}
 
-## Block Explorer&#x20;
+## Block Explorer
 
-Our web-based block explorer and analytics tool is tailored for the Sia network. This comprehensive platform offers users a wide range of insights into the intricacies of the Siacoin network.&#x20;
+Our web-based block explorer and analytics tool is tailored for the Sia network. This comprehensive platform offers users a wide range of insights into the intricacies of the Siacoin network.
 
-Visit [SiaScan Zen](https://zen.siascan.com), our block explorer, to gain valuable insights into the testnet's activity, view transaction history, and monitor block confirmations.&#x20;
+Visit [SiaScan Zen](https://zen.siascan.com), our block explorer, to gain valuable insights into the testnet's activity, view transaction history, and monitor block confirmations.
 
 <figure><img src="../.gitbook/assets/siascan.png" alt=""><figcaption><p>Siascan Zen</p></figcaption></figure>
 

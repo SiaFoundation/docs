@@ -17,7 +17,7 @@ layout:
 
 The `hostd` desktop app provides a user-friendly web UI to start providing storage on the Sia network. By the end of this guide, you will have:
 
-* Installed `hostd` desktop application.
+* Installed the `hostd` desktop application.
 * Created a `hostd` wallet
 
 ## Pre-requisites
@@ -66,7 +66,7 @@ After downloading the `hostd` desktop application:
 
 ![](../../.gitbook/assets/windows-hostd-app/welcome-ui.png)
 
-4. **Access the Web UI *(first-time users only)*:** Click **save and start daemon** It will open automatically, or if not, you can access it at http://localhost:9980 while `hostd` runs in the background.
+4. **Access the Web UI *(first-time users only)*:** Click **save and start daemon**. It will open automatically, or if not, you can access it at http://localhost:9980 while `hostd` runs in the background.
 
 {% hint style="warning" %}
 When you first run `hostd`, Windows Security may ask to allow public and private network access. This is normal—select **Allow** so `hostd` can communicate properly through the firewall.
@@ -107,16 +107,12 @@ You can monitor your node’s activity and track changes by checking the logs. T
 
 ![](../../.gitbook/assets/windows-hostd-app/config-logs.png)
 
-{% hint style="info" %}
-You can always check for version of the software at the bottom of the app interface.
-{% endhint %}
-
 ## Update
 
 `hostd` updates regularly with bug fixes, performance improvements, and new features. Updating your node ensures stability and compatibility with the Sia network. 
 
 On Windows, the app downloads updates automatically and notifies you when they’re ready. Simply restart the app to run the latest version. 
 
-{% hint style="warning" %}
-You can always check for version of the software at the bottom of the app interface.
+{% hint style="info" %}
+You can always check for the version of the software at the bottom of the app interface.
 {% endhint %}

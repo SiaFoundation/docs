@@ -16,7 +16,7 @@ layout:
 
 The `walletd` desktop app provides a user-friendly web UI to start storing data on the Sia network. By the end of this guide, you will have:
 
-* Installed `walletd` desktop application.
+* Installed the `walletd` desktop application.
 * Created a `walletd` wallet
 
 ## Pre-requisites
@@ -46,11 +46,11 @@ After downloading the `walletd` desktop application:
 
 1. **Install the app:** Double-click the installer (e.g., `walletd.<version>.Setup.exe`) and follow the prompts. The app installs to the default location.
 2. **Launch the app:** After installation, you can delete the installer, and launch `walletd` from the Start Menu like any other program.
-3. **Initial setup *(first-time users only)*:** On first launch, the Welcome to `walletd` window will guide set a password to access web UI.
+3. **Initial setup *(first-time users only)*:** On first launch, the Welcome to `walletd` window will guide you to set a password to access web UI.
 
 ![](../../.gitbook/assets/windows-walletd-app/welcome-ui.png)
 
-4. **Access the Web UI *(first-time users only)*:** Click **save and start daemon** It will open automatically, or if not, you can access it at http://localhost:9980 while `walletd` runs in the background.
+4. **Access the Web UI *(first-time users only)*:** Click **save and start daemon**. It will open automatically, or if not, you can access it at http://localhost:9980 while `walletd` runs in the background.
 
 {% hint style="warning" %}
 When you first run `walletd`, Windows Security may ask to allow public and private network access. This is normal—select **Allow** so `walletd` can communicate properly through the firewall.
@@ -94,10 +94,6 @@ Always **save and restart daemon** after making configuration changes to ensure 
 You can monitor your node’s activity and track changes by checking the logs. These provide detailed information about the system, network connections, API endpoints, S3 interface, and autopilot operations, helping you understand what your node is doing at any given time.
 
 ![](../../.gitbook/assets/windows-walletd-app/config-logs.png)
-
-{% hint style="info" %}
-You can always check for version of the software at the bottom of the app interface.
-{% endhint %}
 
 ## Update
 

@@ -101,7 +101,7 @@ You can monitor your node’s activity and track changes by checking the logs. T
 
 On Windows, the app downloads updates automatically and notifies you when they’re ready. Simply restart the app to run the latest version. 
 
-{% hint style="warning" %}
+{% hint style="info" %}
 You can always check for the version of the software at the bottom of the app interface.
 {% endhint %}
 

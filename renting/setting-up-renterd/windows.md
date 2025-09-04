@@ -16,7 +16,7 @@ layout:
 
 The `renterd` desktop app provides a user-friendly web UI to start storing data on the Sia network. By the end of this guide, you will have:
 
-* Installed `renterd` desktop application.
+* Installed the `renterd` desktop application.
 * Created a `renterd` wallet
 
 ## Pre-requisites
@@ -53,12 +53,11 @@ After downloading the `renterd` desktop application:
 
 1. **Install the app:** Double-click the installer (e.g., `renterd.<version>.Setup.exe`) and follow the prompts. The app installs to the default location.
 2. **Launch the app:** After installation, you can delete the installer, and launch `renterd` from the Start Menu like any other program.
-
 3. **Initial setup *(first-time users only)*:** On first launch, the Welcome to `renterd` window will guide you to generate a recovery phrase (which you can copy and lock) and set a password to access web UI.
 
 ![](../../.gitbook/assets/windows-renterd-app/welcome-ui.png)
 
-4. **Access the Web UI *(first-time users only)*:** Click **save and start daemon** It will open automatically, or if not, you can access it at http://localhost:9980 while `renterd` runs in the background.
+4. **Access the Web UI *(first-time users only)*:** Click **save and start daemon**. It will open automatically, or if not, you can access it at http://localhost:9980 while `renterd` runs in the background.
 
 {% hint style="warning" %} 
 When you first run `renterd`, Windows Security may ask to allow public and private network access. This is normal—select Allow so walletd can communicate properly through the firewall. 
@@ -102,16 +101,12 @@ You can monitor your node’s activity and track changes by checking the logs. T
 
 ![](../../.gitbook/assets/windows-renterd-app/config-logs.png)
 
-{% hint style="info" %}
-You can always check for version of the software at the bottom of the app interface.
-{% endhint %}
-
 ## Update
 
 `renterd` updates regularly with bug fixes, performance improvements, and new features. Updating your node ensures stability and compatibility with the Sia network. 
 
 On Windows, the app downloads updates automatically and notifies you when they’re ready. Simply restart the app to run the latest version. 
 
-{% hint style="warning" %}
+{% hint style="info" %}
 You can always check for the version of the software at the bottom of the app interface.
 {% endhint %}

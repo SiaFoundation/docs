@@ -12,7 +12,7 @@
 
 ## Store Your Data
 
-* [About Storing Your Data](renting/about-renting.md)
+* [About Storing Data on Sia](renting/about-renting.md)
 * [Installing renterd](renting/setting-up-renterd/README.md)
   * [Linux](renting/setting-up-renterd/linux/README.md)
     * [Debian](renting/setting-up-renterd/linux/debian.md)
@@ -21,12 +21,12 @@
   * [macOS](renting/setting-up-renterd/macos.md)
   * [Windows](renting/setting-up-renterd/windows.md)
 * [Transferring Siacoins](renting/transferring-siacoins.md)
-* [Renting Storage](renting/renting-storage/README.md)
+* [Storing Your Data](renting/renting-storage/README.md)
   * [Managing your Files](renting/renting-storage/managing-your-files.md)
 
 ## Provide Storage
 
-* [About Providing Storage](hosting/about-hosting-on-sia.md)
+* [About Providing Storage on Sia](hosting/about-hosting-on-sia.md)
 * [Installing hostd](hosting/setting-up-hostd/README.md)
   * [Linux](hosting/setting-up-hostd/linux/README.md)
     * [Debian](hosting/setting-up-hostd/linux/debian.md)

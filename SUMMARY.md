@@ -52,7 +52,7 @@
   * [Linux](wallet/setting-up-walletd/linux.md)
 * [Transferring Siacoins](wallet/transferring-siacoins.md)
 
-## Sia Integrations
+## Integrations
 
 * [Sia Ledger app with Sia Central](sia-integrations/using-the-sia-ledger-nano-app-sia-central.md)
 * [Sia Ledger Nano app with CLI](sia-integrations/using-the-sia-ledger-nano-app-cli.md)

@@ -8,7 +8,6 @@
 * [Learn about Sia](get-started-with-sia/sia101.md)
 * [Learn about Siacoins](get-started-with-sia/learn-about-siacoins.md)
 * [Your Sia Seed](get-started-with-sia/the-importance-of-your-seed.md)
-* [Siacoin Total Supply](get-started-with-sia/siacoin-total-supply.md)
 
 ## Store Your Data
 
@@ -66,6 +65,7 @@
 * [V2 Hardfork - June 2025](v2/README.md)
   * [How to Upgrade: Exchanges](v2/exchanges.md)
   * [Sia Ecosystem Fork Status](navigating-the-v2-hardfork/sia-ecosystem-fork-compliance.md)
+* [Siacoin Total Supply](miscellaneous/siacoin-total-supply.md)
 * [Siafunds](/siafunds/learn-about-siafunds.md)
   * [Withdrawing Siafunds](siafunds/how-to-cash-out-siafunds.md)
   * [SEC Settlement](siafunds/sec-settlement-faq.md)

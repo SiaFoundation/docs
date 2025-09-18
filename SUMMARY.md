@@ -13,11 +13,11 @@
 
 * [About Storing Data on Sia](renting/about-renting.md)
 * [Installing renterd](renting/setting-up-renterd/README.md)
+  * [macOS](renting/setting-up-renterd/macos.md)
   * [Linux](renting/setting-up-renterd/linux/README.md)
     * [Debian](renting/setting-up-renterd/linux/debian.md)
     * [Ubuntu](renting/setting-up-renterd/linux/ubuntu.md)
     * [Other](renting/setting-up-renterd/linux/other.md)
-  * [macOS](renting/setting-up-renterd/macos.md)
   * [Windows](renting/setting-up-renterd/windows.md)
 * [Transferring Siacoins](renting/transferring-siacoins.md)
 * [Storing Your Data](renting/renting-storage/README.md)

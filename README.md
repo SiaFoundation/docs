@@ -44,7 +44,7 @@ You can toggle the **Preview** button to see how the markdown will be formatted.
 - Add a clear commit title.
 - Briefly describe your changes in the extended description, including relevant links if applicable.
 
-<figure><img src=".gitbook/assets/introduction_3.png" alt=""><figcaption><p></p></figcaption></figure>
+<figure><img src=".gitbook/assets/introduction_3.png" alt=""><figcaption><p>Committing your changes on GitHub</p></figcaption></figure>
 
 4. Once you're satisfied, click **Commit Changes** to submit your edits.
 

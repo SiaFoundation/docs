@@ -19,7 +19,7 @@ layout:
 
 Sia is the world's safest cloud storage, by design. A purely decentralized peer-to-peer network with, **no central access point**, **no gatekeepers**, and **no insanely expensive hardware requirements**. It offers a radically new level of **privacy**, **security**, **performance** and **pricing** — all through a unique **nonprofit model**.
 
-So whether you’re a developer looking to build on a open-source and decentralized cloud platform, or a user ready to take control of your data, you’re in the right place!
+So whether you’re a developer looking to build on an open-source and decentralized cloud platform, or a user ready to take control of your data, you’re in the right place!
 
 Our documentation is your comprehensive guide and single source of truth for learning how to interact with the Sia Network.
 

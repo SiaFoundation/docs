@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Welcome to Sia](README.md)
 * [Zen Testnet](testnet/zen-testnet.md)
 
 ## Get Started with Sia

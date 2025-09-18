@@ -69,7 +69,7 @@ After downloading the `hostd` desktop application:
 4. **Access the Web UI *(first-time users only)*:** Click **save and start daemon**. It will open automatically, or if not, you can access it at http://localhost:9980 while `hostd` runs in the background.
 
 {% hint style="warning" %}
-When you first run `hostd`, Windows Security may ask to allow public and private network access. This is normal—select **Allow** so `hostd` can communicate properly through the firewall.
+When you first run `hostd`, Windows Security may ask to allow public and private network access. This is normal - select **Allow** so `hostd` can communicate properly through the firewall.
 {% endhint %}
 
 ![](../../.gitbook/assets/windows-hostd-app/web-ui.png)

@@ -85,7 +85,7 @@ There are several configurable settings in `walletd`. Below is a breakdown of wh
 | Consensus Network | Connect to either `mainnet` (live network) or `zen` (test network) |
 | Syncer Gateway Address | Address for connecting to a gateway node for syncing (optional) |
 | Syncer Bootstrap | Enable for discovering and syncing with the network |
-| Syncer Enable UPnP | Enable your router for Universal Plug and Play to automatically open ports for incoming connections |
+| Syncer Enable UPnP | Enable Universal Plug and Play (UPnP) to automatically configure router port forwarding for incoming connections |
 
 {% hint style="warning" %}
 Always **save and restart daemon** after making configuration changes to ensure they are applied.

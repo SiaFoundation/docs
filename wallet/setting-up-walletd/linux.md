@@ -82,7 +82,7 @@ Remember to leave the Terminal Emulator open while `walletd` it is running. If y
 Enter your `API password` you created in the previous step to unlock `walletd`.
 
 {% hint style="success" %}
-Congratulations on successfully setting up `walletd` and taking a significant step towards renting storage space on the Sia network.
+Congratulations on successfully setting up `walletd` and taking a significant step towards storing data on the Sia network.
 {% endhint %}
 
 ## Updating

@@ -152,6 +152,6 @@ Now that you have `renterd` installed and running, you can start using it to sto
 
 ![](../../../.gitbook/assets/renterd-screenshots\ui\01-renterd-login.png)
 
-- [About Renting](../../about-renting.md)
+- [About Storing Your Data](../../about-renting.md)
 - [Transferring Siacoins](../../transferring-siacoins.md)
 - [Managing Your Files](../../renting-storage/managing-your-files.md)

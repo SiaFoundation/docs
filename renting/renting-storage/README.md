@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Renting Storage
+# Storing Your Data
 
 Uploading files on `renterd` is remarkably straightforward, making it accessible even to those new to the Sia network. With just a few simple steps, you can securely store your files and data on Sia's decentralized cloud storage platform, where a network of hosts ensures the redundancy and reliability of your files. `renterd` provides an intuitive interface for effortlessly transferring your files to the Sia network.
 

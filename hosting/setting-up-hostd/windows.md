@@ -31,7 +31,7 @@ To run `hostd` on Windows, your system should meet the following specifications:
 {% hint style="warning" %}
 Your machine must meet the minimum requirements to run a Sia storage provider node. Failure to meet these requirements may cause contract issues or penalties. A stable, technically sound setup is required.
 
-We recommend 8GB RAM since hostd holds 120MB slabs in memory (often 2–3 at once). It can run with less, but performance varies by use case.
+We recommend 8GB RAM since hostd holds 120MB slabs in memory (often 2-3 at once). It can run with less, but performance varies by use case.
 {% endhint %}
 
 ## Download

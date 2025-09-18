@@ -83,7 +83,7 @@ There are several configurable settings in `walletd`. Below is a breakdown of wh
 | Index Mode | Indexing scope of either `personal` (your addresses), `full` (entire chain), or `none` (read-only). |
 | Index Batch Size | Number of blocks processed per batch during indexing |
 | Consensus Network | Connect to either `mainnet` (live network) or `zen` (test network) |
-| Syncer Gateway Address | Optional default bucket name for S3 storage |
+| Syncer Gateway Address | Address for connecting to a gateway node for syncing (optional) |
 | Syncer Bootstrap | Enable for discovering and syncing with the network |
 | Syncer Enable UPnP | Enable your router for Universal Plug and Play to automatically open ports for incoming connections |
 

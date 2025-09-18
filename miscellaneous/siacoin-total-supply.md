@@ -14,9 +14,9 @@ layout:
 
 # Siacoin Total Supply
 
-The total supply of Siacoins (SC) is unlimited; there will never be a cap on the number of Siacoins generated. Humans produce an extensive amount of data, making it practically limitless. When Sia becomes the industry-standard storage layer of the internet, the network will require a significant quantity of Siacoins to fulfill all the associated contracts.&#x20;
+The total supply of Siacoins (SC) is unlimited; there will never be a cap on the number of Siacoins generated. Humans produce an extensive amount of data, making it practically limitless. When Sia becomes the industry-standard storage layer of the internet, the network will require a significant quantity of Siacoins to fulfill all the associated contracts.
 
-As of June 6, 2025, approximately 60.5 billion coins have been created, with the new coin introduction slowing down as each new block is produced.&#x20;
+As of June 6, 2025, approximately 60.5 billion coins have been created, with the new coin introduction slowing down as each new block is produced.
 
 Additionally, miners would lose their incentive to continue providing services to the network if the block reward were to cease.
 

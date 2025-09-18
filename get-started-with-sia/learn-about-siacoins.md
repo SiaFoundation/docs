@@ -40,7 +40,7 @@ Some exchanges support direct fiat (local currency) to Siacoin purchases, but ot
 For those new to cryptocurrency purchases, it's advisable to begin with a modest amount until you feel confident and familiar with the process.
 {% endhint %}
 
-Exchange wallets may not always be the ideal choice for storing cryptocurrencies and will not serve the intended purpose of using Sia effectively. Now that you have Siacoins, you're able to transfer them to either [`renterd`](../renting/transferring-siacoins.md), [`hostd`](../hosting/transferring-siacoins.md) or [`walletd`](../wallet/transferring-siacoins.md) Sia wallet address.&#x20;
+Exchange wallets may not always be the ideal choice for storing cryptocurrencies and will not serve the intended purpose of using Sia effectively. Now that you have Siacoins, you're able to transfer them to either [`renterd`](../renting/transferring-siacoins.md), [`hostd`](../hosting/transferring-siacoins.md) or [`walletd`](../wallet/transferring-siacoins.md) Sia wallet address.
 
 ### Receiving from others
 

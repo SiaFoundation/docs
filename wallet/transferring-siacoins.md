@@ -18,7 +18,7 @@ layout:
 
 Whether you're sending Siacoins (SC) to an exchange or a friend, it's easy and can be done right. You can check the transaction status by`walletd`.
 
-Go to `walletd`. If you're asked to unlock the wallet, use your seed or a custom password if you've set one. If you haven't got a wallet set up, visit our[ Setting up `walletd`](setting-up-walletd/) guide; otherwise, choose from the **Dashboard** a wallet you wish to send Siacoins from.&#x20;
+Go to `walletd`. If you're asked to unlock the wallet, use your seed or a custom password if you've set one. If you haven't got a wallet set up, visit our[ Setting up `walletd`](setting-up-walletd/) guide; otherwise, choose from the **Dashboard** a wallet you wish to send Siacoins from.
 
 ### Setup your transaction
 
@@ -62,7 +62,7 @@ Once it's in a block, you can check the status and see a new transaction type of
 
 At some point, you'll need to receive Siacoins. You might be receiving them from an exchange wallet, another Sia wallet you own, or requesting Siacoins from a friend. No matter the reason, it's easy to generate or retrieve your address in `walletd` to receive Siacoins.
 
-Go to the `walletd`. If you're asked to unlock the wallet, use your seed or a custom password if you've set one. If you haven't got a wallet set up, visit our [Setting up walletd](setting-up-walletd/) guide; otherwise, choose from the **Dashboard** a wallet you wish to receive Siacoins from.&#x20;
+Go to the `walletd`. If you're asked to unlock the wallet, use your seed or a custom password if you've set one. If you haven't got a wallet set up, visit our [Setting up walletd](setting-up-walletd/) guide; otherwise, choose from the **Dashboard** a wallet you wish to receive Siacoins from.
 
 Click on the **Addresses** in the top right corner, and you'll be presented with the wallet address.
 

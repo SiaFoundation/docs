@@ -76,7 +76,7 @@ Sia Central's web wallet is a lite, non-custodial wallet that allows you to send
     ![Sia Central create Ledger wallet](../.gitbook/assets/lite-wallet-create-ledger.png)
 4.  Click **Ledger Wallet** to add a new Ledger wallet.
 
-    You will now need to connect your device and import an address to send Siacoins to. When connecting you can choose either USB or Bluetooth depending on your browser's support.&#x20;
+    You will now need to connect your device and import an address to send Siacoins to. When connecting you can choose either USB or Bluetooth depending on your browser's support.
 
     <figure><img src="../.gitbook/assets/lite-wallet-import-connect.png" alt=""><figcaption><p>Sia Central connect Ledger</p></figcaption></figure>
 5. Connect and unlock your device, then open the Sia app.

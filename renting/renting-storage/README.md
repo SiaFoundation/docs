@@ -14,11 +14,11 @@ layout:
 
 # Storing Your Data
 
-Uploading files on `renterd` is remarkably straightforward, making it accessible even to those new to the Sia network. With just a few simple steps, you can securely store your files and data on Sia's decentralized cloud storage platform, where a network of hosts ensures the redundancy and reliability of your files. `renterd` provides an intuitive interface for effortlessly transferring your files to the Sia network.&#x20;
+Uploading files on `renterd` is remarkably straightforward, making it accessible even to those new to the Sia network. With just a few simple steps, you can securely store your files and data on Sia's decentralized cloud storage platform, where a network of hosts ensures the redundancy and reliability of your files. `renterd` provides an intuitive interface for effortlessly transferring your files to the Sia network.
 
 ## Before you begin...
 
-* **Install `renterd`**: Make sure you have the latest version of `renterd` installed on your machine.&#x20;
+* **Install `renterd`**: Make sure you have the latest version of `renterd` installed on your machine.
 * **Create a Wallet**: If you haven't already, create a Sia wallet to store your Siacoins.
 * **Fund Your Wallet**: Transfer Siacoins (SC) to your Sia wallet from an exchange or another source. You'll need these coins to pay for storage.
 
@@ -42,7 +42,7 @@ Once you've chosen the file(s) to upload, it will be classed as active upload; g
 Congratulations on successfully uploading your file(s) using `renterd`! Your data is now securely stored on the Sia network, benefiting from the reliability and resilience of decentralized storage.
 {% endhint %}
 
-## File processing&#x20;
+## File processing
 
 When you begin to upload a file to Sia, it undergoes processing on your local machine to ensure optimal redundancy and security within the network. Initially, the file is divided into manageable chunks. Subsequently, each chunk undergoes a procedure that generates 30 distinct pieces, each encrypted before being dispatched to separate hosts. It's worth noting that only 10 of the 30 pieces are required for reconstructing a chunk, and no single host can access more than one piece.
 
@@ -53,6 +53,6 @@ For the more technical readers, here is what happens behind the scenes:
 
 * Files are chunked into 40MB chunks (if a file is smaller, it is padded to 40MB so that data looks identical as it moves across networks)
 * Each chunk is then erasure-coded using [Reed-Solomon](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon\_error\_correction) encoding. After processing, each chunk has 30 unique 4MB pieces.
-* Each piece is then encrypted using [ChaCha20](https://en.wikipedia.org/wiki/ChaCha20-Poly1305) and uploaded to a distinct host.&#x20;
+* Each piece is then encrypted using [ChaCha20](https://en.wikipedia.org/wiki/ChaCha20-Poly1305) and uploaded to a distinct host.
 * As Reed-Solomon encoding is done with 10 data and 20 parity shards, 10 pieces are sufficient for rebuilding the file.
 {% endhint %}

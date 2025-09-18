@@ -1,6 +1,6 @@
 # SEC Settlement
 
-## **Overview**&#x20;
+## **Overview**
 
 In October 2019, Nebulous settled with the SEC regarding a claim related to the unregistered offering and sale of Sianotes in May 2014 and the conversion of Sianotes into Siafunds in June 2015. It's important to note that, as outlined in the settled order, the SEC did not take any enforcement action concerning the Siacoin (SC) token or any ongoing activities on the Sia network. Furthermore, the order does not require Nebulous to register the Siacoin token as a security with the SEC.
 
@@ -28,11 +28,11 @@ While we appropriately registered our 2018 offering of Siafunds in response to t
 
 ## **Impact on the Sia Ecosystem**
 
-### **Sia Network**&#x20;
+### **Sia Network**
 
 The SEC settlement has no impact on the Sia network. As indicated in the settlement terms, the SEC took no enforcement action regarding the Siacoin token or ongoing Sia network activities. Nebulous is not obliged to register the Siacoin token as a security with the SEC. After an extensive SEC investigation, no changes or restrictions were imposed on the Sia network.
 
-### **Sia Project**&#x20;
+### **Sia Project**
 
 The SEC did not pursue enforcement actions against the Siacoin token or ongoing Sia network activities. There were no criminal charges brought against Nebulous or the Sia core developers. The cryptocurrency community may see the settlement as a reinforcement for the Sia project, given the SEC's decision not to take any enforcement action related to the Siacoin token.
 
@@ -40,11 +40,11 @@ The SEC did not pursue enforcement actions against the Siacoin token or ongoing 
 
 The settlement does not impact our decision to conduct future offerings of Siafunds. Similar to our 2018 offering, we will classify future Siafunds offerings as securities unless there are changes in regulatory guidance.
 
-### **Exchanges**&#x20;
+### **Exchanges**
 
 The listing of Siacoin on exchanges remains unaffected. The SEC did not initiate enforcement actions concerning the Siacoin token or ongoing Sia network activities. Nebulous is not required to register the Siacoin token as a security with the SEC, and the SEC had comprehensive information about Siacoins, including their trading on various global exchanges. We are ready to provide any exchange with a legal opinion regarding Siacoin's status under U.S. securities law.
 
-### **Community**&#x20;
+### **Community**
 
 The recent settlement does not impact users or holders of Siacoins for cloud storage rentals. The SEC refrained from taking enforcement actions regarding Siacoins despite understanding how they are created and used. You can continue using Siacoins on the Sia network if you rent cloud storage. Siacoin holders can store them in wallets or trade them on supported exchanges.
 

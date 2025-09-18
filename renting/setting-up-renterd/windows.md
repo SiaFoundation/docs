@@ -27,6 +27,7 @@ To run `renterd` on Windows, your system should meet the following specification
 
 * **System Requirements:** Quad-core processor, 8GB RAM, and a minimum of 256GB SSD for consensus data.
 
+> **Note:** The system requirements for the `renterd` desktop app differ from the CLI version (which previously required a dual-core CPU, 16GB RAM, and 128GB SSD). The desktop app is optimized for a user-friendly experience and may require less RAM, but a faster processor and more storage are recommended for best performance. If you are running the CLI version, please refer to its documentation for specific requirements.
 {% hint style="warning" %}
 We recommend 8GB of RAM, as `renterd` keeps full 120MB slabs in memory during uploads (often 2–3 at once). It can run with less, but performance depends on your use case.
 {% endhint %}

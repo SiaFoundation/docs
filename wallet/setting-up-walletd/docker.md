@@ -125,7 +125,7 @@ docker compose logs walletd
 
 ## Upgrading `walletd`
 
-It is essential to keep your walletd up to date. New versions of `walletd` are released regularly and contain bug fixes and performance improvements.
+It is essential to keep your `walletd` up to date. New versions of `walletd` are released regularly and contain bug fixes and performance improvements.
 
 To upgrade your `walletd` to the newest version, make sure you have shut down `walletd` and then run the following:
 

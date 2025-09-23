@@ -17,7 +17,7 @@ layout:
 The `walletd` desktop app provides a user-friendly web UI to start storing data on the Sia network. By the end of this guide, you will have:
 
 * Installed the `walletd` desktop application.
-* Created a `walletd` wallet
+* Created a `walletd` wallet.
 
 ## Pre-requisites
 

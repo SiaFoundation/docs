@@ -44,7 +44,7 @@ services:
     restart: unless-stopped
     ports:
       - 127.0.0.1:9980:9980/tcp
-      - 9991:9981/tcp
+      - 9981:9981/tcp
     volumes:
       - walletd-data:/data
 

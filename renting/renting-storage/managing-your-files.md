@@ -44,7 +44,7 @@ Your contracts renew automatically when you open `renterd`.
 
 ### **Boosting file health**
 
-In `renterd`Your files' health is quantified as a percentage, representing the number of available shards that comprise each file. Ideally, it would help if you strive for a perfect health rating of 100%, indicating that all 30 file shards are securely distributed among various hosts.
+In `renterd` your files' health is quantified as a percentage, representing the number of available shards that comprise each file. Ideally, it would help if you strive for a perfect health rating of 100%, indicating that all 30 file shards are securely distributed among various hosts.
 
 <figure><img src="../../.gitbook/assets/renter_7.png" alt=""><figcaption><p>File health check in renterd</p></figcaption></figure>
 

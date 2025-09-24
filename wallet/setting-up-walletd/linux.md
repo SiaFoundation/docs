@@ -67,11 +67,11 @@ You will be prompted to input a `API password`. You choose this password, which 
 You can also set the `WALLETD_API_PASSWORD` environment variables so you do not have to re-enter the values every time.
 {% endhint %}
 
-2. After entering your desired `API password`, `walletd` will start.&#x20;
+2. After entering your desired `API password`, `walletd` will start.
 
 <figure><img src="../../.gitbook/assets/starting walletd.png" alt=""><figcaption><p>Starting walletd</p></figcaption></figure>
 
-3. &#x20;You can now access the `walletd` UI by opening a browser and going to `http://localhost:9980`.&#x20;
+3. You can now access the `walletd` UI by opening a browser and going to `http://localhost:9980`.
 
 {% hint style="warning" %}
 Remember to leave the Terminal Emulator open while `walletd` it is running. If you close the command prompt window, `walletd` stop.

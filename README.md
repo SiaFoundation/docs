@@ -54,7 +54,7 @@ Congratulations! You’ve successfully submitted your edits via GitHub. Your edi
 
 ## Contribute to Sia
 
-Our core team of engineers at The Sia Foundation believes that principles are everything—in **Systems Creativity**, **Technical Integrity**, and **Personal Agency**. As a 100% open-source project, we've had countless individuals contribute to the core code or to apps built on top of the network, which **invests in and strengthens the Sia cloud storage network, engages the Sia community, and educates the public about the urgency of data privacy and ownership**.
+Our core team of engineers at The Sia Foundation believes that principles are everything—in **Systems Creativity**, **Technical Integrity**, and **Personal Agency**. As a 100% open-source project, we've had countless individuals contribute to the core code and to apps built on top of the network. These contributions **invest in and strengthen the Sia cloud storage network, engage the Sia community, and educate the public about the urgency of data privacy and ownership**.
 
 Check out our [GitHub](https://github.com/SiaFoundation) to follow along or contribute code to help further our mission.
 

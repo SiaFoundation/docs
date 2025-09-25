@@ -33,7 +33,7 @@ Keeping our docs up to date is important, and we welcome community contributions
 
 2. Next, click **Edit the file** to edit the markdown file.
 
-<figure><img src=".gitbook/assets/introduction_2.png" alt=""><figcaption><p>Editing the markdown file via Github</p></figcaption></figure>
+![Editing the markdown file via Github](.gitbook/assets/introduction_2.png)
 
 {% hint style="info" %}
 You can toggle the **Preview** button to see how the markdown will be formatted.
@@ -44,7 +44,7 @@ You can toggle the **Preview** button to see how the markdown will be formatted.
 - Add a clear commit title.
 - Briefly describe your changes in the extended description, including relevant links if applicable.
 
-<figure><img src=".gitbook/assets/introduction_3.png" alt=""><figcaption><p>Committing your changes on GitHub</p></figcaption></figure>
+![Committing your changes on GitHub](.gitbook/assets/introduction_3.png)
 
 4. Once you're satisfied, click **Commit Changes** to submit your edits.
 

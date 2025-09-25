@@ -17,70 +17,55 @@ layout:
     visible: true
 ---
 
-# Introduction
+Sia is the world's safest cloud storage, by design—a purely decentralized peer-to-peer network with **no central access point**, **no gatekeepers**, and **no insanely expensive hardware requirements**. It offers a radically new level of **privacy**, **security**, **performance** and **pricing** — all through a unique **nonprofit model**.
 
-## Welcome to the Sia Docs!
+So whether you’re a developer looking to build on an open-source and decentralized cloud platform, or a user ready to take control of your data, you’re in the right place!
 
-Welcome to the Sia Docs, your gateway to the remarkable world of decentralized cloud storage. Whether you're a tech-savvy enthusiast or want to explore the potential of decentralizing cloud storage and enhancing data security, you've come to the right place!
-
-Our documentation aims to provide a comprehensive source of information and serve as a beacon of knowledge for anyone interested in harnessing the power of decentralized cloud storage.
-
-## Submitting your edits
-
-Keeping our documentation current is a substantial undertaking, and with GitBook, we've opened the door for community members to actively contribute their ideas. Whether you want to suggest edits to existing content or create entirely new articles, you can do so.
-
-{% hint style="warning" %}
-Please note that all submissions undergo a review and approval process by a member of the team, which means your commit won't be merged immediately.
-{% endhint %}
-
-{% hint style="warning" %}
-You must have a GitHub account to submit an edit proposal. If you haven't already, please log in or create a GitHub account before you proceed.
-{% endhint %}
-
-1. To edit and submit a proposal via GitHub pull request, click the **Page actions** (ellipsis) in the upper right corner of any page and click **Edit on GitHub**.
-
-<figure><img src=".gitbook/assets/introduction-images/docs_screenshot.png" alt=""><figcaption><p>Selecting the page actions, and edit on Github</p></figcaption></figure>
-
-After clicking **Edit on GitHub**, you'll be taken directly to the corresponding page on GitHub.
-
-2. Next, click **Edit the file** (pencil icon) to edit the markdown file.
-
-<figure><img src=".gitbook/assets/introduction_2.png" alt=""><figcaption><p>Editing the markdown file via Github</p></figcaption></figure>
-
-{% hint style="info" %}
-Toggle the **Preview** button to see how the markdown will be formatted on the GitBook documentation.
-{% endhint %}
-
-3. Once you make your changes or additions to the markdown, click the **Commit Changes** button in the top right corner. Remember to do the following:
-   * Select the **Create a new branch for the commit, and start a pull request** option.
-   * Add a reasonable title for this commit change(s) in the commit message textbox.
-   * In the extended description section, briefly describe the changes or additions made in this commit. Include any links to resources that influenced your decision to contribute, if possible.
-
-<figure><img src=".gitbook/assets/introduction_3.png" alt=""><figcaption><p>Committing changes and edits via Github</p></figcaption></figure>
-
-4. Once you're satisfied, click **Commit Changes** to submit your proposal
-
+Our documentation is your comprehensive guide and single source of truth for learning how to interact with the Sia Network.
 
 # Get Involved
 
-## Contribute to Sia
+## Contribute to Docs
 
-If you've got some dev skills and free time, Sia is here for you!
+Keeping our docs up to date is important, and we welcome community contributions—whether suggesting edits or adding new articles.
 
-Sia is 100% open source. The US and EU-based Sia Foundation team have been the core developers of Sia, but hundreds of individuals have contributed either to the core code or apps built on top of the network.
+1. To submit edits via GitHub, click dropdown in the top-right corner and select **Edit on GitHub**. You’ll be taken directly to the corresponding page on GitHub.
 
-While a distinct development and operations team exists, dozens of individuals have contributed to the core code or apps built on top of the network. Check out our [GitHub repositories](https://github.com/SiaFoundation) if you're interested in following along or writing code for Sia and further decentralizing the project!
+2. Next, click **Edit the file** to edit the markdown file.
 
-## Join us!
-
-We have a wonderful community, and we hope you'll find your place there! Check the `#contributors` channel in [Discord](https://discord.com/invite/sia) to say "Hi," ask questions, or get opinions on your Sia-related code or app.
-
-Join our socials to become a part of our thriving community, where you can actively engage with our ecosystem and fellow members while staying updated with the latest content, news, and developments!
+![Editing the markdown file via Github](.gitbook/assets/introduction_2.png)
 
 {% hint style="info" %}
-**Further assistance**
+You can toggle the **Preview** button to see how the markdown will be formatted.
+{% endhint %}
 
-If you can't find your answer here in our documentation, join the `#help` channel in the [Sia Discord](https://discord.com/invite/sia), where a vast community loves helping users with their issues.
+3. After editing the markdown, click Commit Changes (top right) and:
+- Choose **Create a new branch for the commit, and start a pull request**.
+- Add a clear commit title.
+- Briefly describe your changes in the extended description, including relevant links if applicable.
 
-You can also [send us an email.](mailto:hello@sia.tech) We'll respond as soon as we can.
+![Committing your changes on GitHub](.gitbook/assets/introduction_3.png)
+
+4. Once you're satisfied, click **Commit Changes** to submit your edits.
+
+{% hint style="success" %}
+Congratulations! You’ve successfully submitted your edits via GitHub. Your edits will be reviewed by The Sia Foundation.
+{% endhint %}
+
+## Contribute to Sia
+
+Our core team of engineers at The Sia Foundation believes that principles are everything—in **Systems Creativity**, **Technical Integrity**, and **Personal Agency**. As a 100% open-source project, we've had countless individuals contribute to the core code and to apps built on top of the network. These contributions **invest in and strengthen the Sia cloud storage network, engage the Sia community, and educate the public about the urgency of data privacy and ownership**.
+
+Check out our [GitHub](https://github.com/SiaFoundation) to follow along or contribute code to help further our mission.
+
+## Join our Community
+
+Join our [Discord](https://discord.com/invite/sia)—a hub for developers, users, and anyone curious about decentralized cloud storage, privacy, and security. It’s the place for support, collaboration, and updates. Want to contribute? Head to `#contributors` to say hi, ask questions, or share your Sia-related code or app.
+
+{% hint style="info" %}
+**Need Assistance?**
+
+Join the `#help` channel on our [Discord](https://discord.com/invite/sia), where the community is always ready to help.
+
+You can also [email us](mailto:hello@sia.tech), and we’ll get back to you as soon as possible.
 {% endhint %}

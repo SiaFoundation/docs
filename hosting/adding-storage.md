@@ -14,7 +14,7 @@ layout:
 
 # Adding Storage
 
-When providing storage on Sia, you must allocate a location on your disk that `hostd` will store any uploaded data from renters. This is referred to as **volume**.&#x20;
+When providing storage on Sia, you must allocate a location on your disk that `hostd` will store any uploaded data from renters. This is referred to as **volume**.
 
 **Volume** can be located anywhere on the local or external drives, and you can create multiple volumes to combine storage from multiple drives.
 
@@ -26,7 +26,7 @@ Click on the **Create Volume** button in the top right-hand corner.
 
 1. Enter a name for the volume. We recommend something simple, like _hostdata1.dat_ or _data1.dat._
 2. Now select a folder to store the volume file.
-3. Lastly, enter a maximum size for the volume. This is the maximum amount of data stored in the volume.&#x20;
+3. Lastly, enter a maximum size for the volume. This is the maximum amount of data stored in the volume.
 
 <figure><img src="../.gitbook/assets/adding_volume.png" alt=""><figcaption><p>Creating volume on hostd</p></figcaption></figure>
 

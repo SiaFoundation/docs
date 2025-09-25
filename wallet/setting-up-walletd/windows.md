@@ -44,18 +44,16 @@ Before proceeding with downloading, please read our [Terms of Service](https://s
 
 After downloading the `walletd` desktop application:
 
-1. **Install the app:** Double-click the installer (e.g., `walletd.<version>.Setup.exe`) and follow the prompts. The app installs to the default location.
-2. **Launch the app:** After installation, you can delete the installer, and launch `walletd` from the Start Menu like any other program.
-3. **Initial setup *(first-time users only)*:** On first launch, the Welcome to `walletd` window will guide you to set a password to access web UI.
+1. **Install the app:** Double-click the installer (e.g., `walletd.<version>.Setup.exe`) and follow the prompts. The app installs to the default location.  
+2. **Launch the app:** After installation, you can delete the installer, and launch `walletd` from the Start Menu like any other program.  
+3. **Initial setup *(first-time users only)*:** On first launch, the Welcome to `walletd` window will guide you to set a password to access the web UI. After entering your desired `API password`, `walletd` will start.  
+4. **Access the Web UI:** Click **save and start daemon**. It will open automatically, or if not, you can access it at [http://localhost:9980](http://localhost:9980) while `walletd` runs in the background.  
 
 ![](../../.gitbook/assets/windows-walletd-app/welcome-ui.png)
-
-4. **Access the Web UI *(first-time users only)*:** Click **save and start daemon**. It will open automatically, or if not, you can access it at http://localhost:9980 while `walletd` runs in the background.
 
 {% hint style="warning" %}
 When you first run `walletd`, Windows Security may ask to allow public and private network access. This is normal—select **Allow** so `walletd` can communicate properly through the firewall.
 {% endhint %}
-
 
 ![](../../.gitbook/assets/windows-walletd-app/web-ui.png)
 

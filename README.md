@@ -49,7 +49,7 @@ You can toggle the **Preview** button to see how the markdown will be formatted.
 4. Once you're satisfied, click **Commit Changes** to submit your edits.
 
 {% hint style="success" %}
-Congratulations! You’ve successfully submitted your edits via GitHub and will be reviewed by The Sia Foundation.
+Congratulations! You’ve successfully submitted your edits via GitHub. Your edits will be reviewed by The Sia Foundation.
 {% endhint %}
 
 ## Contribute to Sia

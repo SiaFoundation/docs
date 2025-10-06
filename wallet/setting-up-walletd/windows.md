@@ -12,75 +12,94 @@ layout:
     visible: true
 ---
 
-# Windows
+# Windows Desktop App: `walletd`
 
-This guide will walk you through setting up `walletd` on Windows. At the end of this guide, you should have:
+The `walletd` desktop app provides a user-friendly web UI to start storing data on the Sia network. By the end of this guide, you will have:
 
-* Installed Sia `walletd` software
-* Created a `walletd` wallet
+* Installed the `walletd` desktop application.
+* Created a `walletd` wallet.
 
 ## Pre-requisites
 
-* **Network Access:** `walletd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your Windows version is compatible with the `walletd` software. Check [releases](../../miscellaneous/releases.md) supported by Windows versions.
-* **System Updates:** Ensure that your Windows is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
+To run `walletd` on Windows, your system should meet the following specifications:
 
-## Getting `walletd`
+* **Network Access:** `walletd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
+* **System Requirements:** Quad-core processor, 8GB RAM, and a minimum of 256GB SSD for consensus data.
 
-{% hint style="info" %}
-You may need to run this step in administrative mode, so right-click Command Prompt and select **Run as administrator**.
-{% endhint %}
+## Download
 
-1. Download the latest version of `walletd` for your operating system from the [official website](https://sia.tech/software/walletd). For this guide, we'll be downloading the Windows version of `walletd` .
-2. Now that we have downloaded `walletd`, you may need to unzip it.
-   * Right-click the downloaded `walletd` zip file and select **Extract All** to unzip it if it hasn't done so automatically. Select an accessible destination to extract the file.
-   * Click on the newly unzipped directory.
-3. Finally, for good practice, create a folder on the home drive. This folder will be utilized specifically to store data related to the `walletd` software. Open the Command Prompt and run the following command:
+1. Go to [Sia Software Downloads](https://sia.tech/software-downloads). Here you can find the latest software downloads for all our daemons.
 
-```bash
-mkdir C:\Users\<your_username>\walletd
-```
+![](../../.gitbook/assets/windows-walletd-app/sia-tech-website-download.png)
 
-## Running `walletd`
+2. From the dropdown menu, select **Windows AMD64**.
 
-1. Run the following in your Command Prompt to start `walletd`:
-
-```bash
- walletd
-```
-
-You will be prompted to input a `API password`. You choose this password, which can be anything you want. It will be used to unlock the `walletd` UI, via your browser, should be something secure and easy to remember. This value is not stored anywhere; you will need to re-enter it every time you start `walletd`.
-
-{% hint style="info" %}
-You can also set the SIA`_API_PASSWORD` environment variables so you do not have to re-enter the values every time.
-{% endhint %}
-
-2. After entering your desired `API password`, `walletd` will start.
-
-<figure><img src="../../.gitbook/assets/Starting walletd (1).png" alt=""><figcaption><p>Starting walletd</p></figcaption></figure>
-
-3. You can now access the `walletd` UI by opening a browser and going to `http://localhost:9980`.
+![](../../.gitbook/assets/windows-walletd-app/walletd-download-website.png)
 
 {% hint style="warning" %}
-Remember to leave the Command Prompt open while `walletd` it is running. If you close the command prompt window, `walletd` stop.
+Before proceeding with downloading, please read our [Terms of Service](https://sia.tech/terms-of-service). Once you have reviewed and are satisfied, check the box to agree.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/walletd Login UI.png" alt=""><figcaption><p>walletd Login UI</p></figcaption></figure>
+## Run
 
-Enter your `API password` you created in the previous step to unlock `walletd`.
+After downloading the `walletd` desktop application:
+
+1. **Install the app:** Double-click the installer (e.g., `walletd.<version>.Setup.exe`) and follow the prompts. The app installs to the default location.  
+2. **Launch the app:** After installation, you can delete the installer, and launch `walletd` from the Start Menu like any other program.  
+3. **Initial setup *(first-time users only)*:** On first launch, the Welcome to `walletd` window will guide you to set a password to access the web UI. After entering your desired `API password`, `walletd` will start.  
+4. **Access the Web UI:** Click **save and start daemon**. It will open automatically, or if not, you can access it at [http://localhost:9980](http://localhost:9980) while `walletd` runs in the background.  
+
+![](../../.gitbook/assets/windows-walletd-app/welcome-ui.png)
+
+{% hint style="warning" %}
+When you first run `walletd`, Windows Security may ask to allow public and private network access. This is normal—select **Allow** so `walletd` can communicate properly through the firewall.
+{% endhint %}
+
+![](../../.gitbook/assets/windows-walletd-app/web-ui.png)
 
 {% hint style="success" %}
-Congratulations on successfully setting up `walletd` and taking a significant step towards storing data on the Sia network.
+**Success!** `walletd` is now running on your Windows system, and you’re ready to start storing your data on the Sia network.
 {% endhint %}
 
-## Updating
+## Configure
 
-It is essential to keep your host up to date. New versions of `walletd` are released regularly and contain bug fixes and performance improvements.
+You can customize `walletd` through the desktop app, which provides full control over all available settings, from wallet indexing to batch sizing and more.
 
-To update:
+On **Windows**, you can access the `walletd` configurations by going to the taskbar, expanding the up arrow to see hidden icons, and double-clicking the `walletd` app. This will open the configuration window and let you customize its behavior.
 
-1. Download the latest version of `walletd` from the [official website](https://sia.tech/wallet).
-2. Stop the `walletd` service with `Crtl+C`.
-3. Unzip and replace `walletd` with the new version.
-4. Restart `walletd`.
+![](../../.gitbook/assets/windows-walletd-app/configuring.png)
+
+There are several configurable settings in `walletd`. Below is a breakdown of what each setting does:
+
+| Field | Description |
+|------|-------------|
+| Password | Set or update your wallet password |
+| Automatically open the Web UI on startup | Enable this to launch the interface when `walletd` starts |
+| Data Directory | Where `walletd` stores its data and config files |
+| HTTP Address | Local address for the Web UI |
+| Log Level | Amount of detail in logs |
+| Index Mode | Indexing scope of either `personal` (your addresses), `full` (entire chain), or `none` (read-only). |
+| Index Batch Size | Number of blocks processed per batch during indexing |
+| Consensus Network | Connect to either `mainnet` (live network) or `zen` (test network) |
+| Syncer Gateway Address | Address for connecting to a gateway node for syncing (optional) |
+| Syncer Bootstrap | Enable for discovering and syncing with the network |
+| Syncer Enable UPnP | Enable Universal Plug and Play (UPnP) to automatically configure router port forwarding for incoming connections |
+
+{% hint style="warning" %}
+Always **save and restart daemon** after making configuration changes to ensure they are applied.
+{% endhint %}
+
+You can monitor your node’s activity and track changes by checking the logs. These provide detailed information about the system, network connections, API endpoints, S3 interface, and autopilot operations, helping you understand what your node is doing at any given time.
+
+![](../../.gitbook/assets/windows-walletd-app/config-logs.png)
+
+## Update
+
+`walletd` updates regularly with bug fixes, performance improvements, and new features. Updating your node ensures stability and compatibility with the Sia network. 
+
+On Windows, the app downloads updates automatically and notifies you when they’re ready. Simply restart the app to run the latest version. 
+
+{% hint style="info" %}
+You can always check for the version of the software at the bottom of the app interface.
+{% endhint %}
 

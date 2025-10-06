@@ -17,6 +17,7 @@
     * [Debian](renting/setting-up-renterd/linux/debian.md)
     * [Ubuntu](renting/setting-up-renterd/linux/ubuntu.md)
     * [Other](renting/setting-up-renterd/linux/other.md)
+  * [Docker](renting/setting-up-renterd/docker.md)
   * [macOS](renting/setting-up-renterd/macos.md)
   * [Windows](renting/setting-up-renterd/windows.md)
 * [Transferring Siacoins](renting/transferring-siacoins.md)

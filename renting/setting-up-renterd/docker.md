@@ -135,7 +135,7 @@ docker compose logs renterd
 
 It is essential to keep your host up to date. New versions of `renterd` are released regularly and contain bug fixes and performance improvements.
 
-To upgrade your `renterd` to the newest version, make sure you have shut down `renterd` and then run the following:
+To upgrade your `renterd` to the newest version, simply run the following command:
 
 ```console
 docker compose pull && docker compose up -d

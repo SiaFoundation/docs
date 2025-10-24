@@ -28,7 +28,7 @@ To run `renterd` on Windows, your system should meet the following specification
 * **System Requirements:** Quad-core processor, 8GB RAM, and a minimum of 256GB SSD for consensus data.
 
 {% hint style="warning" %}
-`renterd` keeps full 120MB slabs in memory during uploads, so more RAM can improve performance depending on your use case.
+`renterd` keeps full slabs in memory during uploads, so more RAM can improve performance depending on your use case.
 {% endhint %}
 
 ## Download

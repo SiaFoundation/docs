@@ -14,6 +14,8 @@ layout:
 
 # Announcing your Storage Node
 
+:middle_finger_emoji:
+
 Now that your storage node has been configured and finished syncing, you can announce your node to the network.
 
 Announcing your storage node serves as the bridge between your fully prepared node and potential renters seeking storage solutions. This process publishes information about your storage node, including its network address and public key, onto the blockchain, allowing renters to discover your node and establish contracts.

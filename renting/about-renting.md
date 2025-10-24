@@ -12,9 +12,9 @@ layout:
     visible: true
 ---
 
-# About Renting on Sia
+# About Storing Your Data
 
-**Renting** on Sia means you upload files on the Sia storage network to other users who have made their space available, called **hosts**. The term **renter** is used to describe an individual or entity that creates storage contracts with **hosts**:
+Storing data on Sia means you upload files on the Sia storage network to other users who have made their space available, called **hosts**. The term **renter** is used to describe an individual or entity that creates storage contracts with **hosts**:
 
 * To store a certain amount of data.
 * For a certain period.
@@ -38,14 +38,14 @@ By default, storage contracts last three months and automatically form when you 
 
 ## **Fees**
 
-As a renter, you pay for the cost of renting storage space. There are also some other fees that you're responsible for, such as:
+As a renter, you pay for the cost of storing data on the network. There are also some other fees that you're responsible for, such as:
 
 * **Contract Formation Fees** – Creating storage contracts on the blockchain requires a transaction, and minimal fees are associated with this. Contract formation fees are one-time per contract and usually cost only a handful of Siacoins.
 * **Bandwidth Fees** – You pay for the bandwidth you use to upload or download files. This can also include wear and tear fees set by the host to help pay for their physical storage devices.
 
 ## **Autopilot and your Allowance**
 
-By default, the Sia rentering software `renterd` runs with a module called `autopilot` enabled. `autopilot` is the software agent that automatically forms contracts based on your configured parameters. The most important parameter is your allowance; setting your allowance is the first thing you'll do when starting renting.
+By default, the Sia rentering software `renterd` runs with a module called `autopilot` enabled. `autopilot` is the software agent that automatically forms contracts based on your configured parameters. The most important parameter is your allowance; setting your allowance is the first thing you'll do when starting to store data on Sia.
 
 The allowance tells Sia how much Siacoin you're willing to spend on storage space and makes sure more than this amount is not deducted from your wallet. Setting your allowance too low might mean that Sia can't upload all your data or cannot form contracts with enough hosts. You can raise or lower your allowance at any time.
 
@@ -54,5 +54,5 @@ Setting your allowance happens before uploading files, and Sia automatically for
 {% hint style="info" %}
 #### **Getting Started with `renterd`**
 
-Start renting on Sia by downloading the official [renterd software](https://sia.tech/rent) and exploring our step-by-step [Setting up renterd](setting-up-renterd/) guide.
+Start storing data on Sia by downloading the official [renterd software](https://sia.tech/rent) and exploring our step-by-step [Setting up renterd](setting-up-renterd/) guide.
 {% endhint %}

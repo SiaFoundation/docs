@@ -1120,6 +1120,6 @@ To test your integration with `walletd` without risking real Siacoin, you can us
 
 Let us know!
 
-* Send us an [email](mailto://hello@sia.tech)
+* Send us an [email](mailto:hello@sia.tech)
 * [Reach out to the community on Discord](https://discord.gg/sia)
 * [Open an Issue](https://github.com/SiaFoundation/walletd)

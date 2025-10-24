@@ -12,128 +12,101 @@ layout:
     visible: true
 ---
 
-# Windows
+# Windows Desktop App: `renterd`
 
-This guide will walk you through setting up `renterd` on Windows. At the end of this guide, you should have:
+The `renterd` desktop app provides a user-friendly web UI to start storing data on the Sia network. By the end of this guide, you will have:
 
-* Installed Sia `renterd` software
+* Installed the `renterd` desktop application.
 * Created a `renterd` wallet
 
 ## Pre-requisites
 
-To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
+To run `renterd` on Windows, your system should meet the following specifications:
 
-* **Network Access:**
-  `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
+* **Network Access:** `renterd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
 
-* **Operating System Compatibility:**
-  `renterd` is only compatible with Windows 64bit systems.
-
-* **Hardware Requirements:**
-  A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
-
-  - A dual-core CPU
-  - 16GB of RAM
-  - An SSD with at least 128GB of free space.
+* **System Requirements:** Quad-core processor, 8GB RAM, and a minimum of 256GB SSD for consensus data.
 
 {% hint style="warning" %}
-To ensure proper functionality, we are recommending 16GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
+`renterd` keeps full slabs in memory during uploads, so more RAM can improve performance depending on your use case.
 {% endhint %}
 
-## Installing `renterd`
+## Download
 
-Press `windows key + R` to open the run dialog. Type in `powershell` and press `OK` to open a Terminal.
+1. Go to [Sia Software Downloads](https://sia.tech/software-downloads). Here you can find the latest software downloads for all our daemons.
 
-![](../../.gitbook/assets/renterd-screenshots/install/windows/01-renterd-windows-run-powershell.png)
+![](../../.gitbook/assets/windows-renterd-app/sia-tech-website-download.png)
 
-Once the Terminal loads, run the following command to download and install the latest version of `renterd`.
+2. From the dropdown menu, select **Windows AMD64**.
 
-```powershell
-wget https://sia.tech/downloads/latest/renterd_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_windows_amd64.zip"; `
-Expand-Archive "$HOME\Downloads\renterd_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd"; `
-Remove-Item -LiteralPath "$HOME\Downloads\renterd_windows_amd64.zip" -Recurse
-```
+![](../../.gitbook/assets/windows-renterd-app/renterd-download-website.png)
 
 {% hint style="warning" %}
-When you paste multi-line commands into PowerShell, you will be prompted with a warning. Make sure you have copied the entire command and click `Paste anyway` to proceed.
+Before proceeding with downloading, please read our [Terms of Service](https://sia.tech/terms-of-service). Once you have reviewed and are satisfied, check the box to agree.
 {% endhint %}
 
-![Click `Paste anyway` to proceed with installation.](../../.gitbook/assets/renterd-screenshots/install/windows/02-renterd-windows-multiline-warn.png)
+3. Click **Download** to get the latest `renterd` version for your operating system.
 
-![Installation of renterd completed successfully.](../../.gitbook/assets/renterd-screenshots/install/windows/03-renterd-windows-download-and-install.png)
+## Run
 
-## Verify `renterd` was installed successfully
+After downloading the `renterd` desktop application:
 
-Run the following command to see the version of `renterd` that was installed:
+1. **Install the app:** Double-click the installer (e.g., `renterd.<version>.Setup.exe`) and follow the prompts. The app installs to the default location.
+2. **Launch the app:** After installation, you can delete the installer, and launch `renterd` from the Start Menu like any other program.
+3. **Initial setup *(first-time users only)*:** On first launch, the Welcome to `renterd` window will guide you to generate a recovery phrase (which you can copy and lock) and set a password to access web UI.
 
-```powershell
-cd $HOME\sia\renterd; `
-.\renterd.exe version
-```
+![](../../.gitbook/assets/windows-renterd-app/welcome-ui.png)
 
-![](../../.gitbook/assets/renterd-screenshots/install/windows/04-renterd-windows-version.png)
+4. **Access the Web UI *(first-time users only)*:** Click **save and start daemon**. It will open automatically, or if not, you can access it at http://localhost:9980 while `renterd` runs in the background.
 
-## Configure `renterd`
-
-After installing `renterd`, you will need to configure it with a wallet seed and a password to unlock the web interface. There is an interactive configuration process that you can start by running the following command.
-
-```powershell
-cd $HOME\sia\renterd; `
-.\renterd.exe config
-```
-
-![](../../.gitbook/assets/renterd-screenshots/install/windows/05-renterd-windows-config.png)
-
-## Running `renterd`
-
-Run the following command to start `renterd`.
-
-```powershell
-cd $HOME\sia\renterd; `
-.\renterd.exe
-```
-
-{% hint style="warning" %}
-Remember to leave the PowerShell open while `renterd` is running. If you close the command prompt window, `renterd` will stop.
+{% hint style="warning" %} 
+When you first run `renterd`, Windows Security may ask to allow public and private network access. This is normal—select Allow so `renterd` can communicate properly through the firewall. 
 {% endhint %}
 
-![](../../.gitbook/assets/renterd-screenshots/install/windows/06-renterd-windows-running.png)
-
-You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9980](http://localhost:9980/).
-
-![](../../.gitbook/assets/renterd-screenshots\ui\01-renterd-login.png)
-
-Enter the API `password` you created in your `renterd.yml` to unlock the `renterd` web UI.
+![](../../.gitbook/assets/windows-renterd-app/web-ui.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully set up `renterd`.
+**Success!** `renterd` is now running on your Windows system, and you’re ready to start storing your data on the Sia network.
 {% endhint %}
 
-## Updating
 
-New versions of `renterd` are released regularly and contain bug fixes and performance improvements.
+## Configure
 
-**To update:**
+You can customize `renterd` through the desktop app, which provides full control over all available settings, from wallet security to network and S3 configurations.
 
-1. Stop `renterd` if it is running. This can be accomplished by pressing `ctrl+c` in the PowerShell currently running `renterd`.
+On **Windows**, you can access the `renterd` configurations by going to the taskbar, expanding the up arrow to see hidden icons, and double-clicking the `renterd` app. This will open the configuration window and let you customize its behavior.
 
-2. Download and install the latest version of `renterd`.
+![](../../.gitbook/assets/windows-renterd-app/configuring.png)
 
-```powershell
-wget https://sia.tech/downloads/latest/renterd_windows_amd64.zip -OutFile "$HOME\Downloads\renterd_windows_amd64.zip"; `
-Expand-Archive "$HOME\Downloads\renterd_windows_amd64.zip" -DestinationPath "$HOME\sia\renterd"; `
-Remove-Item -LiteralPath "$HOME\Downloads\renterd_windows_amd64.zip" -Recurse
-```
+There are several configurable settings in `renterd`. Below is a breakdown of what each setting does:
 
-3. Restart the `renterd` system service.
+| Field | Description |
+|------|-------------|
+| Recovery Phrase | Your wallet recovery seed |
+| Password | Set or update your wallet password |
+| Automatically open the Web UI on startup | Enable this to launch the interface when `renterd` starts |
+| Data Directory | Where `renterd` stores its data and config files |
+| HTTP Address | Local address for the Web UI |
+| Log Level | Amount of detail in logs |
+| S3 Address | Local address and port for the S3 interface |
+| S3 Interface | Enable or disable the S3 interface |
+| S3 Disable Auth | Enable or disable authentication for S3 |
+| S3 Host Bucket | Optional default bucket name for S3 storage |
 
-```powershell
-cd $HOME\sia\renterd; `
-.\renterd.exe
-```
+{% hint style="warning" %}
+Always **save and restart daemon** after making configuration changes to ensure they are applied.
+{% endhint %}
 
-![Starting renterd](../../.gitbook/assets/renterd-install-screenshots/windows/04-renterd-success.png)
+You can monitor your node’s activity and track changes by checking the logs. These provide detailed information about the system, network connections, API endpoints, S3 interface, and autopilot operations, helping you understand what your node is doing at any given time.
 
-{% hint style="success" %}
-Congratulations, you have successfully updated your version of `renterd`!
+![](../../.gitbook/assets/windows-renterd-app/config-logs.png)
+
+## Update
+
+`renterd` updates regularly with bug fixes, performance improvements, and new features. Updating your node ensures stability and compatibility with the Sia network. 
+
+On Windows, the app downloads updates automatically and notifies you when they’re ready. Simply restart the app to run the latest version. 
+
+{% hint style="info" %}
+You can always check for the version of the software at the bottom of the app interface.
 {% endhint %}

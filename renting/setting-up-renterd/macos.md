@@ -28,20 +28,14 @@ To ensure you will not run into any issues with running `renterd` it is recommen
 * **Network Access:**
   `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
 
-* **Operating System Compatibility:**
-  `renterd` is supported on the following macOS versions:
-  - macOS 12: Monterey (Star)
-  - macOS 13: Ventura (Rome)
-  - macOS 14: Sonoma (Sunburst)
-
 * **System Updates:** Ensure that your macOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 * **Hardware Requirements:**
   A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
 
-  - A quad-core CPU
-  - 8 GB of RAM
-  - An SSD with at least 128GB of free space.
+  - Quad-core processor
+  - 8GB RAM
+  - 256GB SSD for consensus data
  
 * **Software Requirements:** Before installing `renterd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to install and upgrade `renterd` easily.
 

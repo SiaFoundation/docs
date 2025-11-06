@@ -71,7 +71,7 @@ We recommend around **$50 worth of Siacoin** to start providing storage. Storage
 You can still transfer funds to your wallet, but please note that they won't be accessible until the wallet is completely synced.
 {% endhint %}
 
-Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up in `hostd`, visit our [Setting up `hostd`](setting-up-hostd/)and choose from the **sidebar** a **Wallet**.
+Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up in `hostd`, visit our [Setting up `hostd`](setting-up-hostd/) and choose from the **sidebar** a **Wallet**.
 
 ### Sharing the address or QR
 

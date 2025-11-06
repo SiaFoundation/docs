@@ -12,13 +12,11 @@ layout:
     visible: true
 ---
 
-# Configuring your Storage Node
+# Storage Node Configuration
 
 Setting up your storage node on Sia also involves configuring essential parameters such as storage, bandwidth, and other critical variables. These configurations are vital to maintaining your storage node's health, ensuring it can effectively provide storage services to renters, and determining how much you earn from providing storage on the network.
 
 Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](../setting-up-hostd/) guide; otherwise, choose from the sidebar **Configuration**.
-
-## Configuring your Storage Node
 
 ### Port Forwarding
 

@@ -26,17 +26,13 @@ This guide will walk you through setting up `hostd` on macOS. At the end of this
 
 To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
 
-* **Operating System Compatibility:** `hostd` is supported on the following macOS versions:
-  * macOS 12: Monterey (Star)
-  * macOS 13: Ventura (Rome)
-  * macOS 14: Sonoma (Sunburst)
-
 * **System Updates:** Ensure that your macOS version is up to date with the latest system updates. These updates can contain important security fixes and improvements.
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
-  * A quad-core CPU
-  * 8GB of RAM
-  * An SSD with at least 128GB of free space.
+  * Quad-core processor
+  * 8GB RAM
+  * 256GB SSD for consensus data
+  * 4TB HDD for stored data
   
 * **Software Requirements:** Before installing `hostd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to install and upgrade `hostd` easily.
 

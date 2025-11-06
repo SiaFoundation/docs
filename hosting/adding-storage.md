@@ -20,7 +20,7 @@ When providing storage on Sia, you must allocate a location on your disk that `h
 
 ## Creating volume
 
-Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](setting-up-hostd/) guide; otherwise, choose from the sidebar **Volume**.
+Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up in `hostd`, visit our [Setting up `hostd`](setting-up-hostd/) guide; otherwise, choose from the sidebar **Volume**.
 
 Click on the **Create Volume** button in the top right-hand corner.
 

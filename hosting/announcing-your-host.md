@@ -40,4 +40,4 @@ Once the announcement is confirmed, you can check if your storage node is visibl
 
 <figure><img src="../.gitbook/assets/siacentral.png" alt=""><figcaption><p>SiaCentral Troubleshooter</p></figcaption></figure>
 
-Enter your storage nodes's network address and click **Check Host**. This tool will connect to your storage node and notify you of any issues.
+Enter your storage node's network address and click **Check Host**. This tool will connect to your storage node and notify you of any issues.

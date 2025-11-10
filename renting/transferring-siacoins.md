@@ -18,7 +18,7 @@ Whether you're sending Siacoins to an exchange or receiving from a friend, `rent
 
 ## Sending Siacoins
 
-Go to `renterd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up in `renterd`, visit our [Setting up `renterd`](setting-up-renterd/) guide; otherwise, choose from the sidebar **Wallet**.
+Go to `renterd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up in `renterd`, visit our [Setting up `renterd`](setting-up-renterd/) guide; otherwise, choose from the **sidebar** a **Wallet**.
 
 ### Setup your transaction
 
@@ -58,7 +58,7 @@ Once it's in a block, you can check the status and see a new transaction type of
 
 ## Receiving Siacoins
 
-Go to `renterd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up in `renterd`, visit our [Setting up renterd](setting-up-renterd/); otherwise, choose from the sidebar **Wallet**.
+Go to `renterd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up in `renterd`, visit our [Setting up renterd](setting-up-renterd/); otherwise, choose from the **sidebar** a **Wallet**.
 
 ### Sharing the address or QR
 

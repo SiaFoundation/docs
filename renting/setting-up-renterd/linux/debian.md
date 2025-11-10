@@ -78,7 +78,7 @@ Replace this part with the codename of the corresponding Debian release, such as
 sudo apt install renterd
 ```
 
-![](../../../.gitbook/assets/renterd-screenshots/install/linux/debian/02-renterd-debian-apt-install.png)
+![Installing renterd using apt install command on Debian](../../../.gitbook/assets/renterd-screenshots/install/linux/debian/02-renterd-debian-apt-install.png)
 
 **3. Verify `renterd` was installed successfully**
 

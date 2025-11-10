@@ -16,7 +16,7 @@ layout:
 
 ## Sending Siacoins
 
-Whether you're sending Siacoins (SC) to an exchange or a friend, it's easy and can be done right. You can check the transaction status by`walletd`.
+Whether you're sending Siacoins (SC) to an exchange or a friend, it's easy and can be done right. You can check the transaction status in `walletd`.
 
 Go to `walletd`. If you're asked to unlock the wallet, use your seed or a custom password if you've set one. If you haven't got a wallet set up, visit our[ Setting up `walletd`](setting-up-walletd/) guide; otherwise, choose from the **Dashboard** a wallet you wish to send Siacoins from.
 

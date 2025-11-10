@@ -18,6 +18,7 @@ Setting up your storage node on Sia also involves configuring essential paramete
 
 Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up `hostd`, visit our [Setting up `hostd`](../setting-up-hostd/) guide; otherwise, choose from the sidebar **Configuration**.
 
+## Configuration Settings
 ### Port Forwarding
 
 `hostd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network. You will also need to forward the following ports so `hostd` can properly communicate with the network and renters.

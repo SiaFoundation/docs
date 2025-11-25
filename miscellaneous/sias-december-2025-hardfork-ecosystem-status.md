@@ -54,4 +54,4 @@ Pool | Status
 --|--
 f2pool | Upgrade complete
 DxPool | Upgrade complete
-Luxor | Committed
+Luxor | Upgrade complete

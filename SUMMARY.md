@@ -64,6 +64,7 @@
 
 ## Miscellaneous
 
+* [V2: The Final Cut - Network Upgrade (December 2025)](miscellaneous/sias-december-2025-hardfork-ecosystem-status.md)
 * [V2 Hardfork - June 2025](v2/README.md)
   * [How to Upgrade: Exchanges](v2/exchanges.md)
   * [Sia Ecosystem Fork Status](navigating-the-v2-hardfork/sia-ecosystem-fork-compliance.md)

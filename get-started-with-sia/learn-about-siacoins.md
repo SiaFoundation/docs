@@ -30,7 +30,7 @@ Whether you want to upload files to the decentralized cloud or lend extra storag
 
 ### Buy from an exchange
 
-Siacoins are listed on several prominent, and you can access the complete list of exchanges where Siacoins are available on our [official website](https://sia.tech/community?category=exchanges). Purchasing Siacoins from an exchange typically offers competitive prices but may involve a relatively steep learning curve for new users.
+Siacoins are listed on several prominent exchanges, and you can access the complete list of exchanges where Siacoins are available on our [official website](https://sia.tech/community?category=exchanges). Purchasing Siacoins from an exchange typically offers competitive prices but may involve a relatively steep learning curve for new users.
 
 {% hint style="info" %}
 Some exchanges support direct fiat (local currency) to Siacoin purchases, but others require you to buy Bitcoins, Ethereum, or other cryptos to make your purchase. Please visit the exchange's official website to find out more.

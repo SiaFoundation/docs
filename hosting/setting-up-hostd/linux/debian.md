@@ -35,7 +35,9 @@ To ensure you will not run into any issues with running `hostd` it is recommende
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
   - A quad-core CPU
   - 8GB of RAM
-  - An SSD with at least 128GB of free space.
+  - 256 GB SSD for `hostd`
+    - 10 GB per 1 TB hosted for database storage
+  - At least 4TB of HDD storage for renter data
 
 ## Adjust sysctl (OPTIONAL)
 

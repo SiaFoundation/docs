@@ -25,20 +25,22 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 
 To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
 
-* **Operating System Compatibility:** Ensure your Linux version is compatible with the `hostd` software. To do this, run  `uname -m` in your Terminal Emulator.
-
-  * **x86\_64** - `Linux AMD64`
-  * **aarch64** - `Linux ARM64`
+* **Operating System Compatibility:** `hostd` is supported on the following Linux versions:
+	- Bookworm (Debian 12)
+	- Bullseye (Debian 11)
+	- Plucky (Ubuntu 25.04)
+	- Noble (Ubuntu 24.04)
+	- Mantic (Ubuntu 23.10)
+	- Jammy (Ubuntu 22.04)
 
 * **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
-* **Hardware Requirements:** Your machine must meet the minimum requirements for hosting on Sia. Not meeting these requirements may result in not receiving contracts from renters or risk losing Siacoins as a penalty. Hosting on Sia is a commitment that requires some technical knowledge and a stable setup, such as:
-
-  * A Linux distro (Ubuntu, Debian, Fedora, Arch, etc)
-  * A quad-core CPU
-  * 8GB of RAM
-  * An SSD with at least 128GB of free space.
-  * Additional storage space to rent out
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
+  - A quad-core CPU
+  - 8GB of RAM
+  - 256 GB SSD for `hostd`
+    - 10 GB per 1 TB hosted for database storage
+  - At least 4TB of HDD storage for renter data
 
 ## Install `hostd`
 

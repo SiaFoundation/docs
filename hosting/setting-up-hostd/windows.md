@@ -24,7 +24,9 @@ The `hostd` desktop app provides a user-friendly web UI to start providing stora
 
 To run `hostd` on Windows, your system should meet the following specifications:
 
-* **Network Access:** `hostd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
+* **Operating System Compatibility:** `hostd` is only supported by `64-bit` versions of Windows.
+
+* **System Updates:** Ensure that your Windows version is up to date with the latest system updates. These updates can contain important security fixes and improvements.
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in fewer contracts from renters or the loss of collateral.
   - A quad-core CPU

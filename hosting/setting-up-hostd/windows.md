@@ -26,7 +26,7 @@ To run `hostd` on Windows, your system should meet the following specifications:
 
 * **Network Access:** `hostd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
 
-* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in fewer contracts from renters or the loss of collateral.
   - A quad-core CPU
   - 8GB of RAM
   - 256 GB SSD for `hostd`

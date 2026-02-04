@@ -26,7 +26,7 @@ This guide will walk you through setting up `hostd` using Docker compose. At the
 
 To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
 
-* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in fewer contracts from renters or the loss of collateral.
   - A quad-core CPU
   - 8GB of RAM
   - 256 GB SSD for `hostd`

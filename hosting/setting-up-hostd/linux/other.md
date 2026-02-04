@@ -35,7 +35,7 @@ To ensure you will not run into any issues with running `hostd` it is recommende
 
 * **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
-* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in fewer contracts from renters or the loss of collateral.
   - A quad-core CPU
   - 8GB of RAM
   - 256 GB SSD for `hostd`

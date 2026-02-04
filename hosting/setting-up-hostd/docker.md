@@ -32,6 +32,8 @@ To ensure you will not run into any issues with running `hostd` it is recommende
   - 256 GB SSD for `hostd`
     - 10 GB per 1 TB hosted for database storage
   - At least 4TB of HDD storage for renter data
+
+* **Network Access:** `hostd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
   
 * **Software Requirements:** Before installing `hostd`, you will need to install [Docker](https://www.docker.com/get-started/).
 

@@ -35,6 +35,8 @@ To run `hostd` on Windows, your system should meet the following specifications:
     - 10 GB per 1 TB hosted for database storage
   - At least 4TB of HDD storage for renter data
 
+* **Network Access:** `hostd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
+
 ## Download
 
 1. Go to [Sia Software Downloads](https://sia.tech/software-downloads). Here you can find the latest software downloads for all our daemons.

@@ -29,7 +29,6 @@ To ensure you will not run into any issues with running `hostd` it is recommende
 * **Operating System Compatibility:** `hostd` is supported on the following Ubuntu versions:
 	- Plucky (Ubuntu 25.04)
 	- Noble (Ubuntu 24.04)
-	- Mantic (Ubuntu 23.10)
 	- Jammy (Ubuntu 22.04)
 
 * **System Updates:** Ensure that ubuntu is up to date with the latest system updates, these updates can contain important security fixes and improvements.

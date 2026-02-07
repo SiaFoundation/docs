@@ -12,22 +12,25 @@ layout:
     visible: true
 ---
 
-# macOS
+# MacOS
 
 This guide will walk you through setting up `walletd` on macOS. At the end of this guide, you should have the following:
 
 * Installed Sia `walletd` software
-* Functional Sia Wallet
+* Created a `walletd` wallet
 
 ## Pre-requisites
 
-* **Network Access:** `walletd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your macOS version is compatible with the `walletd` software. Check [releases](../../miscellaneous/releases.md) supported macOS versions.
+To run `walletd` on Linux, your system should meet the following specifications:
+
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
+  - A quad-core CPU
+  - 8GB of RAM
+  - 256 GB SSD for `walletd`
+
 * **System Updates:** Ensure that your macOS is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
-* **Hardware Requirements:** A stable setup that meets the following specifications is recommended.
-  * Quad-core processor
-  * 8GB RAM
-  * 256GB SSD for consensus data
+
+* **Network Access:** `walletd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
 
 ## Getting `walletd`
 

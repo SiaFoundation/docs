@@ -16,15 +16,23 @@ layout:
 
 The `walletd` desktop app provides a user-friendly web UI to start storing data on the Sia network. By the end of this guide, you will have:
 
-* Installed the `walletd` desktop application.
-* Created a `walletd` wallet.
+* Installed Sia `walletd` software
+* Created a `walletd` wallet
 
 ## Pre-requisites
 
-To run `walletd` on Windows, your system should meet the following specifications:
+To run `walletd` on Linux, your system should meet the following specifications:
 
-* **Network Access:** `walletd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
-* **System Requirements:** Quad-core processor, 8GB RAM, and a minimum of 256GB SSD for consensus data.
+* **Operating System Compatibility:** `renterd` is only supported by `64-bit` versions of Windows.
+
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
+  - A quad-core CPU
+  - 8GB of RAM
+  - 256 GB SSD for `walletd`
+
+* **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
+
+* **Network Access:** `walletd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
 
 ## Download
 

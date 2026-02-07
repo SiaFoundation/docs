@@ -21,18 +21,26 @@ This guide will walk you through setting up `walletd` on Linux. At the end of th
 
 ## Pre-requisites
 
-* **Network Access:** `walletd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
-* **Operating System Compatibility:** Ensure your Linux version is compatible with the `walletd` software. Check [releases](../../miscellaneous/releases.md) supported by Linux versions.
+To run `walletd` on Linux, your system should meet the following specifications:
+
+* **Operating System Compatibility:** `walletd` is supported on the following Linux versions:
+  - Trixie (Debian 13)
+	- Bookworm (Debian 12)
+	- Bullseye (Debian 11)
+	- Plucky (Ubuntu 25.04)
+	- Noble (Ubuntu 24.04)
+	- Jammy (Ubuntu 22.04)
+
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
+  - A quad-core CPU
+  - 8GB of RAM
+  - 256 GB SSD for `walletd`
+
 * **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
+* **Network Access:** `walletd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
+
 ## Getting `walletd`
-
-{% hint style="warning" %}
-Remember to check which version to download to ensure it works correctly with your operating system. To do this, run  `uname -m` in your Terminal Emulator.
-
-* **x86\_64** - `Linux AMD64`
-* **aarch64** - `Linux ARM64`
-{% endhint %}
 
 1. Download the latest version of `walletd` for your operating system from the [official website](https://sia.tech/software/walletd). For this guide, we'll be downloading the Linux version of `walletd` .
 2. Now that we have downloaded `walletd`, it's recommended to unzip the `walletd` binary to `/usr/local/bin`. Right-click the unzip file, select **Open Terminal Here** to open your Terminal Emulator, and run the following commands:

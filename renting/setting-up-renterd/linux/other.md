@@ -27,23 +27,26 @@ This guide will walk you through setting up `renterd` on Linux. At the end of th
 
 To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
 
-* **Network Access:** `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
-
-* **Operating System Compatibility:** You must download the correct `renterd` binary for your version of Linux. If you are not sure which version you are on, you can run `uname -m` in a terminal to find out.
-  - **x86_64** — `Linux AMD64`
-  - **aarch64** — `Linux ARM64`
+* **Operating System Compatibility:** `renterd` is supported on the following Linux versions:
+  - Trixie (Debian 13)
+	- Bookworm (Debian 12)
+	- Bullseye (Debian 11)
+	- Plucky (Ubuntu 25.04)
+	- Noble (Ubuntu 24.04)
+	- Jammy (Ubuntu 22.04)
 
 * **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
-  - A Linux distro with `systemd` (Ubuntu, Debian, Fedora, Arch, etc)
-  - A dual-core CPU
-  - 16GB of RAM
-  - An SSD with at least 128GB of free space.
+  - A quad-core CPU
+  - 8GB of RAM
+  - 256 GB SSD for `renterd`
 
-  {% hint style="warning" %}
-  To ensure proper functionality, we are recommending 16GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
-  {% endhint %}
+* **Network Access:** `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
+
+{% hint style="warning" %}
+To ensure proper functionality, we are recommending a minimum of 8 GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
+{% endhint %}
 
 ---
 

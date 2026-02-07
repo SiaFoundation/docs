@@ -21,29 +21,26 @@ This guide will walk you through setting up `renterd` on Linux. At the end of th
 
 ---
 
-
 ## Pre-requisites
 
 To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
 
-* **Network Access:** `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
-
 * **Operating System Compatibility:** `renterd` is supported on the following Ubuntu versions:
+	- Plucky (Ubuntu 25.04)
 	- Noble (Ubuntu 24.04)
-	- Mantic (Ubuntu 23.10)
-	- Jammiy (Ubuntu 22.04)
-	- Focal (Ubuntu 20.04)
-	
+	- Jammy (Ubuntu 22.04)
 
 * **System Updates:** Ensure that Ubuntu is up to date with the latest system updates, these updates can contain important security fixes and improvements.
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
   - A quad-core CPU
-  - 8 GB of RAM
-  - An SSD with at least 128GB of free space.
+  - 8GB of RAM
+  - 256 GB SSD for `renterd`
+
+* **Network Access:** `renterd` needs a stable internet connection and open network access in order to store and retrieve data on the Sia network.
 
 {% hint style="warning" %}
-To ensure proper functionality, we are recommending 8 GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
+To ensure proper functionality, we are recommending a minimum of 8 GB RAM. This is because `renterd` will keep full slabs in memory when uploading. A full slab is 120MB, and a single upload may hold two or three slabs in memory. However, it is possible to run `renterd` with less RAM than this, and it may work fine depending on the use case.
 {% endhint %}
 
 ## Install `renterd` Using the `apt` repository

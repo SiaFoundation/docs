@@ -30,7 +30,7 @@ To run `walletd` on Windows, your system should meet the following specification
   - 8GB of RAM
   - 256 GB SSD for `walletd`
 
-* **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
+* **System Updates:** Ensure that Windows is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 * **Network Access:** `walletd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
 

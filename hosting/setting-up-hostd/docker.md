@@ -13,7 +13,7 @@ layout:
     visible: true
 ---
 
-# Docker
+# Docker Compose
 
 This guide will walk you through setting up `hostd` using Docker compose. At the end of this guide, you should have the following:
 

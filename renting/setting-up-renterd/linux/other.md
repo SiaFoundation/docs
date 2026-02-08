@@ -12,8 +12,6 @@ layout:
     visible: true
 ---
 
-**TODO: Install without apt**
-
 # Linux
 
 This guide will walk you through setting up `renterd` on Linux. At the end of this guide, you should have the following:

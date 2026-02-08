@@ -13,7 +13,7 @@ layout:
     visible: true
 ---
 
-# MacOS
+# macOS
 
 This guide will walk you through setting up `hostd` on macOS. At the end of this guide, you should have the following:
 

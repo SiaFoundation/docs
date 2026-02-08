@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# MacOS
+# macOS
 
 This guide will walk you through setting up `renterd` on macOS. At the end of this guide, you should have:
 

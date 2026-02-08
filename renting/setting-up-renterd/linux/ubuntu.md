@@ -26,9 +26,9 @@ This guide will walk you through setting up `renterd` on Linux. At the end of th
 To ensure you will not run into any issues with running `renterd` it is recommended your system meets the following requirements:
 
 * **Operating System Compatibility:** `renterd` is supported on the following Ubuntu versions:
-	- Plucky (Ubuntu 25.04)
-	- Noble (Ubuntu 24.04)
-	- Jammy (Ubuntu 22.04)
+  - Plucky (Ubuntu 25.04)
+  - Noble (Ubuntu 24.04)
+  - Jammy (Ubuntu 22.04)
 
 * **System Updates:** Ensure that Ubuntu is up to date with the latest system updates, these updates can contain important security fixes and improvements.
 

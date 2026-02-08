@@ -29,11 +29,11 @@ To ensure you will not run into any issues with running `renterd` it is recommen
 
 * **Operating System Compatibility:** `renterd` is supported on the following Linux versions:
   - Trixie (Debian 13)
-	- Bookworm (Debian 12)
-	- Bullseye (Debian 11)
-	- Plucky (Ubuntu 25.04)
-	- Noble (Ubuntu 24.04)
-	- Jammy (Ubuntu 22.04)
+  - Bookworm (Debian 12)
+  - Bullseye (Debian 11)
+  - Plucky (Ubuntu 25.04)
+  - Noble (Ubuntu 24.04)
+  - Jammy (Ubuntu 22.04)
 
 * **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 

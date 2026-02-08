@@ -21,7 +21,7 @@ The `walletd` desktop app provides a user-friendly web UI to start storing data 
 
 ## Pre-requisites
 
-To run `walletd` on Linux, your system should meet the following specifications:
+To run `walletd` on Windows, your system should meet the following specifications:
 
 * **Operating System Compatibility:** `renterd` is only supported by `64-bit` versions of Windows.
 

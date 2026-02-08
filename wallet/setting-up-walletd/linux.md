@@ -25,11 +25,11 @@ To run `walletd` on Linux, your system should meet the following specifications:
 
 * **Operating System Compatibility:** `walletd` is supported on the following Linux versions:
   - Trixie (Debian 13)
-	- Bookworm (Debian 12)
-	- Bullseye (Debian 11)
-	- Plucky (Ubuntu 25.04)
-	- Noble (Ubuntu 24.04)
-	- Jammy (Ubuntu 22.04)
+  - Bookworm (Debian 12)
+  - Bullseye (Debian 11)
+  - Plucky (Ubuntu 25.04)
+  - Noble (Ubuntu 24.04)
+  - Jammy (Ubuntu 22.04)
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended.
   - A quad-core CPU
@@ -38,7 +38,7 @@ To run `walletd` on Linux, your system should meet the following specifications:
 
 * **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
-* **Network Access:** `walletd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
+* **Network Access:** `walletd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
 
 ## Getting `walletd`
 

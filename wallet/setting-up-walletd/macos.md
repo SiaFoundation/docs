@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# MacOS
+# macOS
 
 This guide will walk you through setting up `walletd` on macOS. At the end of this guide, you should have the following:
 
@@ -21,7 +21,7 @@ This guide will walk you through setting up `walletd` on macOS. At the end of th
 
 ## Pre-requisites
 
-To run `walletd` on Linux, your system should meet the following specifications:
+To run `walletd` on macOS, your system should meet the following specifications:
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended.
   - A quad-core CPU

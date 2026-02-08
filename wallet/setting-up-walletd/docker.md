@@ -24,7 +24,7 @@ This guide will walk you through setting up `walletd` using Docker compose. At t
 
 ## Pre-requisites
 
-To run `walletd` on Linux, your system should meet the following specifications:
+To run `walletd` with Docker Compose, your system should meet the following specifications:
   
 * **Software Requirements:** Before installing `walletd`, you will need to install [Docker](https://www.docker.com/get-started/).
 

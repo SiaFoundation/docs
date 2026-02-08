@@ -33,7 +33,7 @@ To ensure you will not run into any issues with running `hostd` it is recommende
   - Noble (Ubuntu 24.04)
   - Jammy (Ubuntu 22.04)
 
-* **System Updates:** Ensure that your Linux is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
+* **System Updates:** Ensure that your Linux system is up to date with the latest system updates, as these updates can contain important security fixes and improvements.
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in fewer contracts from renters or the loss of collateral.
   - A quad-core CPU

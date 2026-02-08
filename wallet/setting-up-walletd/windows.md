@@ -23,7 +23,7 @@ The `walletd` desktop app provides a user-friendly web UI to start storing data 
 
 To run `walletd` on Windows, your system should meet the following specifications:
 
-* **Operating System Compatibility:** `renterd` is only supported by `64-bit` versions of Windows.
+* **Operating System Compatibility:** `walletd` is only supported by `64-bit` versions of Windows.
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended.
   - A quad-core CPU

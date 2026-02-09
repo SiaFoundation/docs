@@ -58,10 +58,6 @@ If you cannot open a `Terminal` using the above method, try one of the other met
 
 Once the Terminal loads, run one of the following commands to download and install the latest version of `renterd` to your `/usr/local/bin` directory.
 
-{% hint style="warning" %}
-Make sure to install the correct version for your system. If you are unsure which version you should pick, refer to the [Pre-requisites](#pre-requisites) section of this guide for instructions.
-{% endhint %}
-
 {% tabs %}
 {% tab title="AMD64" %}
 ```console

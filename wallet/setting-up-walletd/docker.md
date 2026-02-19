@@ -18,19 +18,22 @@ layout:
 This guide will walk you through setting up `walletd` using Docker compose. At the end of this guide, you should have the following:
 
 * Installed Sia `walletd` software
+* Created a `walletd` wallet
 
 ---
 
 ## Pre-requisites
 
-To ensure you will not run into any issues with running `walletd` it is recommended your system meets the following requirements:
-
-* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
-  - A quad-core CPU
-  - 8GB of RAM
-  - An SSD with at least 256GB of free space.
+To run `walletd` with Docker Compose, your system should meet the following specifications:
   
 * **Software Requirements:** Before installing `walletd`, you will need to install [Docker](https://www.docker.com/get-started/).
+
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended.
+  - A quad-core CPU
+  - 8GB of RAM
+  - 256 GB SSD for `walletd`
+
+* **Network Access:** `walletd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
 
 ## Create the compose file
 

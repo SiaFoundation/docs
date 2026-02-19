@@ -27,17 +27,20 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
 
 * **Operating System Compatibility:** `hostd` is supported on the following Ubuntu versions:
-	- Plucky (Ubuntu 25.04)
-	- Noble (Ubuntu 24.04)
-	- Mantic (Ubuntu 23.10)
-	- Jammy (Ubuntu 22.04)
+  - Plucky (Ubuntu 25.04)
+  - Noble (Ubuntu 24.04)
+  - Jammy (Ubuntu 22.04)
 
 * **System Updates:** Ensure that ubuntu is up to date with the latest system updates, these updates can contain important security fixes and improvements.
 
-* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in fewer contracts from renters or the loss of collateral.
   - A quad-core CPU
   - 8GB of RAM
-  - An SSD with at least 128GB of free space.
+  - 256 GB SSD for `hostd`
+    - 10 GB per 1 TB hosted for database storage
+  - At least 4TB of HDD storage for renter data
+
+* **Network Access:** `hostd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
 
 ## Adjust sysctl (OPTIONAL)
 

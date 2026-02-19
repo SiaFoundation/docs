@@ -24,14 +24,18 @@ The `hostd` desktop app provides a user-friendly web UI to start providing stora
 
 To run `hostd` on Windows, your system should meet the following specifications:
 
+* **Operating System Compatibility:** `hostd` is only supported by `64-bit` versions of Windows.
+
+* **System Updates:** Ensure that your Windows version is up to date with the latest system updates. These updates can contain important security fixes and improvements.
+
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in fewer contracts from renters or the loss of collateral.
+  - A quad-core CPU
+  - 8GB of RAM
+  - 256 GB SSD for `hostd`
+    - 10 GB per 1 TB hosted for database storage
+  - At least 4TB of HDD storage for renter data
+
 * **Network Access:** `hostd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
-
-* **System Requirements:** Quad-core processor, 8GB RAM, and a minimum of 256GB SSD for consensus data, 4TB HDD for stored data.
-
-{% hint style="warning" %}
-Your machine must meet the minimum requirements to run a Sia storage provider node. Failure to meet these requirements may cause contract issues or penalties. A stable, technically sound setup is required.
-
-{% endhint %}
 
 ## Download
 

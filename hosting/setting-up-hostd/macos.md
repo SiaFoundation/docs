@@ -28,11 +28,14 @@ To ensure you will not run into any issues with running `hostd` it is recommende
 
 * **System Updates:** Ensure that your macOS version is up to date with the latest system updates. These updates can contain important security fixes and improvements.
 
-* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in preventing slabs from uploading and can lead to a loss of data.
-    * Quad-core processor
-    * 8GB RAM
-    * 256GB SSD for consensus data
-    * 4TB HDD for stored data
+* **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in fewer contracts from renters or the loss of collateral.
+  - A quad-core CPU
+  - 8GB of RAM
+  - 256 GB SSD for `hostd`
+    - 10 GB per 1 TB hosted for database storage
+  - At least 4TB of HDD storage for renter data
+
+* **Network Access:** `hostd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
   
 * **Software Requirements:** Before installing `hostd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to install and upgrade `hostd` easily.
 

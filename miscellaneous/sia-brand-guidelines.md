@@ -51,6 +51,23 @@ You may **not** use the name **“Sia”** or the official logo in your project�
 - Sia's trademark name is pronounced _"sigh-uh,"_ not _"see-ya."_  
 - Do not use the name **"Sia"** in your project without explicit written approval from the Sia Foundation.
 
+#### Built on Sia Assets
+
+If you would like to showcase Sia's integration with our project, you can add any one of the following `Built on Sia` assets to your project.
+
+|Color | Primary Version | Text Only | Type |
+|:---------:|:---------------:|:---------:|:----:|
+| Dark | ![Dark](../.gitbook/assets/v2-brand-assets/built-on-sia/primary/Dark/Built-on-sia-text-primary-dark.jpg) | ![Dark](../.gitbook/assets/v2-brand-assets/built-on-sia/text-only/Dark/Built-on-sia-text-dark.jpg) | .jpg |
+| Dark | ![Dark](../.gitbook/assets/v2-brand-assets/built-on-sia/primary/Dark/Built-on-sia-text-primary-dark.png) | ![Dark](../.gitbook/assets/v2-brand-assets/built-on-sia/text-only/Dark/Built-on-sia-text-dark.png) | .png |
+| Dark | ![Dark](../.gitbook/assets/v2-brand-assets/built-on-sia/primary/Dark/Built-on-sia-text-primary-dark.svg) | ![Dark](../.gitbook/assets/v2-brand-assets/built-on-sia/text-only/Dark/Built-on-sia-text-dark.svg) | .svg |
+| Dark 50% | ![Dark 50%](../.gitbook/assets/v2-brand-assets/built-on-sia/primary/Dark%2050%20percent/Built-on-sia-text-primary-dark-50-percent.jpg) |  | .jpg |
+| Dark 50% | ![Dark 50%](../.gitbook/assets/v2-brand-assets/built-on-sia/primary/Dark%2050%20percent/Built-on-sia-text-primary-dark-50-percent.png) |  | .png |
+| Dark 50% | ![Dark 50%](../.gitbook/assets/v2-brand-assets/built-on-sia/primary/Dark%2050%20percent/Built-on-sia-text-primary-dark-50-percent.svg) |  | .svg |
+| Light | ![Light](../.gitbook/assets/v2-brand-assets/built-on-sia/primary/Light/Built-on-sia-text-primary-light.png) | ![Light](../.gitbook/assets/v2-brand-assets/built-on-sia/text-only/Light/Built-on-sia-text-light.png) | .png |
+| Light | ![Light](../.gitbook/assets/v2-brand-assets/built-on-sia/primary/Light/Built-on-sia-text-primary-light.svg) | ![Light](../.gitbook/assets/v2-brand-assets/built-on-sia/text-only/Light/Built-on-sia-text-light.svg) | .svg |
+| Light 50% | ![Light 50%](../.gitbook/assets/v2-brand-assets/built-on-sia/primary/Light%2050%20Percent/Built-on-sia-text-primary-light-50-percent.png) |  | .png |
+| Light 50% | ![Light 50%](../.gitbook/assets/v2-brand-assets/built-on-sia/primary/Light%2050%20Percent/Built-on-sia-text-primary-light-50-percent.svg) |  | .svg |
+
 {% hint style="info" %}
 We're eagerly anticipating what you'll create! If you have any questions regarding our Sia branding guidelines, please don't hesitate to reach out via [email](mailto:hello@sia.tech) or [Discord](https://sia.tech/discord).
 {% endhint %}

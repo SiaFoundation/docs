@@ -53,7 +53,7 @@ You may **not** use the name **“Sia”** or the official logo in your project�
 
 #### Built on Sia Assets
 
-If you would like to showcase Sia's integration with our project, you can add any one of the following `Built on Sia` assets to your project.
+If you would like to showcase your project's integration with Sia, you can add any one of the following `Built on Sia` assets to your project.
 
 |Color | Primary Version | Text Only | Type |
 |:---------:|:---------------:|:---------:|:----:|

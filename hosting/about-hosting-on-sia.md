@@ -20,6 +20,10 @@ You also earn Siacoins, the cryptocurrency that powers the Sia network. Siacoins
 
 Storage providers are a critical part of the ecosystem. You are contributing to the decentralized network that is the heart of Sia. Providing storage is also a more technical process than renting, and while anyone can reasonably easily set it up, there's a lot you'll want to know to maximize your setup.
 
+## Earn Siacoins
+
+As a storage provider, you're part of a marketplace where you compete with other storage providers for renter contracts. Competition should drive prices down, and demand should drive prices up. The goal is a market where people can upload their data with maximum security, minimum cost, and at fair rates that provide revenue to the storage providers.
+
 ## Pricing
 
 As a host, you set your prices. There are a lot of specific price points you can control:
@@ -29,36 +33,72 @@ As a host, you set your prices. There are a lot of specific price points you can
 * **Upload/Download Bandwidth Price:** Your price for upload or download bandwidth to and from your host per TB.
 * **Collateral:** The amount of Siacoins you will lose if you don't fulfill the rental contract per TB/month.
 
-## Contracts
-
-Storage contracts are one of the most essential features of the Sia network. They allow the entire Sia ecosystem to work trustlessly – they form blockchain-enforced contracts between you and the people who rent your storage space that is automatically fulfilled.
-
-## Earn Siacoins
-
-As a storage provider, you're part of a marketplace where you compete with other storage providers for renter contracts. Competition should drive prices down, and demand should drive prices up. The goal is a market where people can upload their data with maximum security, minimum cost, and at fair rates that provide revenue to the storage providers.
-
-## Fees
+## Collateral
 
 As a storage provider, you earn Siacoin for the storage space that you sell. But you also put up collateral to create additional incentives for storage providers to be good and sustain a reliable network.
 
 Having collateral incentivizes storage providers to be online and to keep their renter data intact. Storage providers that go offline or lose data lose their collateral, and hosts that stay online and keep data safe get their collateral back.
 
+## Contracts
+
+Storage contracts are one of the most essential features of the Sia network. They allow the entire Sia ecosystem to work trustlessly – they form blockchain-enforced contracts between you and the people who rent your storage space that are automatically fulfilled.
+
+### Contract Formation
+
+When a renter wants to store data on your host, a **file contract** is created on the Sia blockchain. Both parties lock funds into the contract:
+
+* **Renter funds:** The renter deposits Siacoins to pay for storage and bandwidth over the contract duration.
+* **Host collateral:** You deposit Siacoins as a guarantee that you will store the renter's data reliably for the full contract period.
+
+These funds are held on-chain and can't be spent by either party until the contract resolves. The contract duration is set by the renter.
+
+### During the Contract
+
+As the renter uploads, downloads, and stores data, they pay you through the contract. Over time, the contract tracks three balances:
+
+* **Renter funds:** The remaining balance the renter can spend on storage and bandwidth.
+* **Host revenue:** The Siacoins you have earned so far from storing data and serving bandwidth.
+* **Host collateral:** The collateral you locked at formation.
+
+Your `hostd` dashboard shows **potential revenue** — this is the revenue accumulating in active contracts that have not yet resolved.
+
+### Storage Proofs and Contract Resolution
+
+When a contract's duration ends, a **proof window** opens. During this window, your host must submit a **storage proof** to the Sia blockchain — a cryptographic proof that you still have the renter's data. Your `hostd` software handles this automatically as long as your host is online, the data is intact, and your wallet has enough Siacoins to cover the transaction fee for broadcasting the proof.
+
+* **Successful proof:** If a valid storage proof is submitted within the proof window, you receive your earned revenue and your collateral is returned. This revenue appears as **earned revenue** on your `hostd` dashboard.
+* **Failed proof:** If you fail to submit a valid proof — because you lost the data, went offline, or missed the proof window — you **lose your collateral and any earned revenue** from that contract. The lost Siacoins are burned. This appears as **lost revenue** on your `hostd` dashboard.
+
+{% hint style="warning" %}
+Your host submits storage proofs automatically, but only if it is **online**, the **renter's data is intact**, and your **wallet has funds** to pay the transaction fee. Make sure your wallet always has a small Siacoin balance — if you can't pay the fee to broadcast a proof, you'll miss the proof window and lose your collateral and revenue.
+{% endhint %}
+
+### Siafund Fee
+
+A **3.9% fee** is deducted from the total contract payout and distributed to [Siafund](../siafunds/learn-about-siafunds.md) holders. This fee applies to both the host's revenue and the host's collateral. This is why setting your collateral too high can hurt your score — it increases the total fee that renters must pay when forming a contract with you.
+
+### Payout Timeline
+
+Contract payouts are not instant. After a successful storage proof, there is a **24-hour maturity delay** before the funds become spendable. During this time, the payout will show as **immature** in your `hostd` wallet. Once matured, the Siacoins appear in your wallet balance and can be spent freely.
+
+Because contracts resolve periodically rather than paying out continuously, your revenue arrives in lump sums as each contract completes its proof window. With many active contracts, you will see a steady stream of payouts as contracts resolve at different times.
+
 ## Storage Provider Scoring
 
 Your storage provider score is one of the most critical factors determining how you'll fare as a storage provider. This is based on several metrics – some that you can directly affect, some that improve or diminish over time based on your performance.
 
-Sia is a decentralized network - the code to evaluate these scoring metrics is contained within each renter's Sia instance. For that reason, each Sia renter you encounter scores storage providers independantly, so you may be scored differently among different renters. As a storage provider, you do not have one overall score across the Sia network but many scores with many renters based on the metrics described below. Any website or service that benchmarks your storage node can only show you a score based on their own metrics, which may differ from what a renter comes up with.
+Sia is a decentralized network - the code to evaluate these scoring metrics is contained within each renter's Sia instance. For that reason, each Sia renter you encounter scores storage providers independently, so you may be scored differently among different renters. As a storage provider, you do not have one overall score across the Sia network but many scores with many renters based on the metrics described below. Any website or service that benchmarks your storage node can only show you a score based on their own metrics, which may differ from what a renter comes up with.
 
 ### Specific Metrics
 
 {% tabs %}
 {% tab title="Storage Provider Uptime" %}
-Collateral to storage provider uptime is a vital metric. It would be best if you were online when people try to get their data, and since that might be any time, you should be online all the time. You're allowed negligible downtime to address minor maintenance issues like restarting for updates, which could include approximately 14 hours per month.
+Storage provider uptime is a vital metric. You should be online when people try to get their data, and since that might be any time, you should be online all the time. You're allowed negligible downtime to address minor maintenance issues like restarting for updates, which could include approximately 14 hours per month.
 
 In general, you should plan for your storage node computer to be turned on and online 24/7. If you can't commit to this, you shouldn't try to provide storage on the Sia network.
 
 {% hint style="danger" %}
-Warning: If you go offline for too long (less than 80% uptime) or lose renter data (by deleting it or experiencing a hardware failure), you can lose money by losing your collateral for active contracts. You can also become responsible for SiaFund fees for each contract.
+Warning: If you go offline for too long (less than 80% uptime) or lose renter data (by deleting it or experiencing a hardware failure), you can lose money by losing your collateral for active contracts. You can also become responsible for Siafund fees for each contract.
 {% endhint %}
 
 Below are the exact amounts your score will change based on your uptime percentage. Greater than 98% uptime results in no penalty, the 14 hours a month explained above (2% of 720 hours in a month = 14 hours).

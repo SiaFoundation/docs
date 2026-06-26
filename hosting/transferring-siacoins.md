@@ -14,7 +14,7 @@ layout:
 
 # Transferring Siacoins
 
-Whether you're sending Siacoins to an exchange or receiving from a friend, `hostd` facilitates the transfer of Siacoins (SC). You can check the transaction status, easily achieved via the UI.
+Whether you're sending Siacoins to an exchange or receiving from a friend, `hostd` can transfer Siacoins (SC). You can also check the transaction status via the UI.
 
 ## Sending Siacoins
 
@@ -42,7 +42,7 @@ Click **Setup** to change something. If it's all good, click **Broadcast transac
 
 <figure><img src="../.gitbook/assets/hostd r 2.png" alt=""><figcaption><p>Confirmation of a successful transaction broadcasted</p></figcaption></figure>
 
-You'll immediately get a confirmation that your transaction has been successfully broadcasted.
+You'll get a confirmation that your transaction has been broadcast.
 
 ### Checking the status
 

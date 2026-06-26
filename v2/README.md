@@ -18,7 +18,7 @@ The Sia network hardfork activated at block 526,000 on June 6th, 2025. All major
 
 ## Details of the fork
 
-The Sia network forked to radically update Sia's consensus code, bringing huge benefits to performance, scalability, and functionality. Given the significance of this hardfork, we've come to refer to it as **Sia v2**.
+The Sia network forked to update Sia's consensus code, improving performance, scalability, and functionality. Given the scope of this hardfork, we refer to it as **Sia v2**.
 
 Upgrading to Sia v2 is necessary to send or store coins, rent, or host after the fork. Every user, exchange, mining pool, wallet, and integration must upgrade.
 
@@ -58,13 +58,13 @@ The actual hardfork -- the point at which you _must_ be running a v2 node -- occ
 
 #### ...renters and hosts?
 
-Sia v2 includes an update to the renter-host protocol that is faster and more efficient in almost every measurable way. Here are some highlights:
+Sia v2 includes an update to the renter-host protocol that is faster and more efficient. Notable changes:
 
 * Many more options and flexibility for your contracts
 * Faster uploads and downloads, including concurrent uploads to the same host
 * Enables decentralized uploads and downloads in a browser, no plugins or daemons necessary
 
-It's important for renters and hosts to upgrade if they have not already so that they can enjoy the benefits of v2 and the new renter-host protocol as soon as possible.
+Renters and hosts who have not yet upgraded should do so to use v2 and the new renter-host protocol.
 
 #### ...Siacoin holders?
 
@@ -81,13 +81,13 @@ We recommend that all Siacoin holders who have not upgraded to `walletd` to do s
 
 #### ...for miners?
 
-We've carefully designed Sia v2 to preserve the layout of block headers, so all mining hardware will remain compatible. You should, however, check in with your mining pool to make sure they've updated.
+Sia v2 preserves the layout of block headers, so all mining hardware remains compatible. You should, however, check in with your mining pool to make sure they've updated.
 
 #### ...for exchanges?
 
-Sia v2 will enable highly increased performance and usability for your exchange. You'll have more control over your Siacoin treasury and the ways you interact with it.
+Sia v2 gives you more control over your Siacoin treasury and the ways you interact with it.
 
-Exchanges should upgrade to `walletd` v2 as soon as possible to ensure an issue-free transition. Due to the volume of users you serve, you should leave time for a proper upgrade. Once you do, your exchange will be able to support the fork once it takes effect.
+Exchanges should upgrade to `walletd` v2 as soon as possible. Due to the volume of users you serve, leave time for a proper upgrade. Once you do, your exchange will be able to support the fork once it takes effect.
 
 ## More questions?
 

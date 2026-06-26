@@ -14,8 +14,8 @@ layout:
 
 # Linux
 
-{% hint style="warning" %}
-**`renterd` is deprecated.** It has been replaced by [`indexd`](../../setting-up-indexd/), the indexer that now handles contract management for the Sia storage stack. Most people don't need to run anything at all — [Sia Storage](https://sia.storage) gives you 50 GB free with nothing to install or maintain.
+{% hint style="info" %}
+**`renterd` is no longer the preferred way to store data on Sia.** For most users, [Sia Storage](https://sia.storage) (50 GB free, nothing to run) or a self-hosted [`indexd`](../../setting-up-indexd/) is a better starting point. `renterd` still works, and these guides remain for existing users.
 {% endhint %}
 
 This guide will walk you through setting up `renterd` on Linux. At the end of this guide, you should have the following:
@@ -104,7 +104,7 @@ rm -fr renterd_zen_linux_arm64.zip
 You’ll be prompted to authorize this action by providing your system password. You will not see anything when you type this in. Press `Enter` once you have entered your password.
 {% endhint %}
 
-![](../../.gitbook/assets/renterd-install-screenshots/linux/01-renterd-download-and-install.png)
+![](../../../.gitbook/assets/renterd-install-screenshots/linux/01-renterd-download-and-install.png)
 
 ---
 
@@ -130,7 +130,7 @@ renterd_zen seed
 A new 12-word recovery phrase will be generated. Make sure to store it in a safe place, as you will need this phrase to recover your wallet.
 {% endhint %}
 
-![](../../.gitbook/assets/renterd-install-screenshots/linux/debian/01-renterd-debian-apt-install.png)
+![](../../../.gitbook/assets/renterd-install-screenshots/linux/02-renterd-seed.png)
 
 ---
 
@@ -326,7 +326,7 @@ If the service was set up correctly, it should say “active (running).”
 If for some reason your `renterd` service will not start, use the command `journalctl -fu renterd` to view the console output for more information.
 {% endhint %}
 
-![](../../.gitbook/assets/renterd-install-screenshots/linux/03-renterd-success.png)
+![](../../../.gitbook/assets/renterd-install-screenshots/linux/03-renterd-success.png)
 
 You can now access the Sia network using the `renterd` web UI by opening a browser and going to [http://localhost:9980](http://localhost:9980/).
 
@@ -334,12 +334,12 @@ You can now access the Sia network using the `renterd` web UI by opening a brows
 If you are running `renterd` on the Zen Testnet, you will need to access the web UI on port `9880` by going to [http://localhost:9880](http://localhost:9880).
 {% endhint %}
 
-![](../../.gitbook/assets/renterd-install-screenshots/renterd-success.png)
+![](../../../.gitbook/assets/renterd-install-screenshots/renterd-success.png)
 
 Enter the API `password` you created in your `renterd.yml` to unlock the `renterd` web UI.
 
 {% hint style="success" %}
-Congratulations, you have successfully set up `renterd`.
+You have set up `renterd`.
 {% endhint %}
 
 ---
@@ -447,8 +447,8 @@ sudo systemctl status renterd_zen
 If, for some reason, the `renterd` service will not start, use the command `journalctl -fu renterd` to view the console output for more information.
 {% endhint %}
 
-![Starting renterd](../../.gitbook/assets/renterd-success.png)
+![Starting renterd](../../../.gitbook/assets/renterd-success.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully updated your version of `renterd`!
+Your version of `renterd` has been updated.
 {% endhint %}

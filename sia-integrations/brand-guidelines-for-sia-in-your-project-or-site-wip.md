@@ -12,7 +12,7 @@ In an effort to promote these goals, please use the following as guidelines when
 
 ## Official Sia assets
 
-[Get them here](https://gitlab.com/NebulousLabs/Sia/-/tree/master/doc/assets/community/sia). It includes our logo and wordmark in a variety of high-quality formats, as well as the built with Sia logo for third-party projects.
+[Get them here](https://gitlab.com/NebulousLabs/Sia/-/tree/master/doc/assets/community/sia). It includes our logo and wordmark in a variety of formats, as well as the built with Sia logo for third-party projects.
 
 ## `built with Sia`
 
@@ -31,7 +31,7 @@ Current examples of good naming in the community are: SiaStats, Siasync, SiaWiki
 
 Just remember, if you’re trying to make a play on words, we pronounce Sia like “sigh-uh” and not “see-ya”.
 
-You can also create a wonderfully custom name that represents you or your work. Some examples are projects like Pixeldrain, Filebase, and roadie.
+You can also create a custom name that represents you or your work. Some examples are projects like Pixeldrain, Filebase, and roadie.
 
 ## Logo and Wordmark
 

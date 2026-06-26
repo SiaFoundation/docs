@@ -20,7 +20,7 @@ Coordinating all of that (finding providers, forming contracts, placing data, an
 
 ## How storage works on Sia
 
-Modern Sia storage is built from a few distinct pieces, each with a single job. Together they replace the older all-in-one `renterd` renter.
+Modern Sia storage is built from a few distinct pieces, each with a single job. This is the preferred approach for new projects; the older all-in-one `renterd` renter still works, but it is no longer the recommended starting point.
 
 * **Storage providers (`hostd`)** — the nodes that actually store data. They run Sia's hosting software, contribute disk space and bandwidth, and earn Siacoin (SC) by storing encrypted **shards** and proving over time that the data is still available. They never see filenames, object IDs, or anything about the data they hold.
 
@@ -133,5 +133,5 @@ As a renter, you pay for the cost of storing data on the network. There are also
 {% hint style="info" %}
 #### Getting Started
 
-The easiest way to start storing data on Sia is [Sia Storage](https://sia.storage) — 50 GB free, with nothing to run. To operate your own indexer, see [Setting up indexd](setting-up-indexd/). Developers building applications can find the SDKs and guides in the [Sia Developer Portal](https://devs.sia.storage).
+For most people, the simplest way to start is the Sia Storage app with a free [Sia Storage](https://sia.storage) account (50 GB). To run the indexer yourself, see [Setting up indexd](setting-up-indexd/). Developers building applications can find the SDKs and guides in the [Sia Developer Portal](https://devs.sia.storage).
 {% endhint %}

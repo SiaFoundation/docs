@@ -17,17 +17,23 @@ layout:
     visible: true
 ---
 
-Sia is the world's safest cloud storage, by design—a purely decentralized peer-to-peer network with **no central access point**, **no gatekeepers**, and **no insanely expensive hardware requirements**. It offers a radically new level of **privacy**, **security**, **performance** and **pricing** — all through a unique **nonprofit model**.
+Sia is decentralized, peer-to-peer cloud storage with no central provider and no gatekeepers. Files are encrypted on your own device before upload, so no storage provider can read your data, and you hold the keys. The network is developed by a non-profit and runs on open-source software.
 
-So whether you’re a developer looking to build on an open-source and decentralized cloud platform, or a user ready to take control of your data, you’re in the right place!
+Whether you're a developer building on Sia or a user storing your own data, these docs cover how to use the network.
 
-Our documentation is your comprehensive guide and single source of truth for learning how to interact with the Sia Network.
+# Where to start
+
+* **Store your data** — the simplest way to start is the [Sia Storage app with a free Sia Storage account](renting/using-sia-storage.md) (50 GB). For how it works, see [About Storing Your Data](renting/about-renting.md).
+* **Provide storage and earn Siacoin** — set up [`hostd`](hosting/about-hosting-on-sia.md).
+* **Hold and manage Siacoin** — use [`walletd`](wallet/wallet-overview.md).
+* **Build an application on Sia** — see the [Sia Developer Portal](https://devs.sia.storage).
+* **Not sure which software you need?** — [Which Sia software do I need?](get-started-with-sia/sia-software-overview.md)
 
 # Get Involved
 
 ## Contribute to Docs
 
-Keeping our docs up to date is important, and we welcome community contributions—whether suggesting edits or adding new articles.
+We welcome community contributions to the docs—whether suggesting edits or adding new articles.
 
 1. To submit edits via GitHub, click dropdown in the top-right corner and select **Edit on GitHub**. You’ll be taken directly to the corresponding page on GitHub.
 
@@ -49,23 +55,23 @@ You can toggle the **Preview** button to see how the markdown will be formatted.
 4. Once you're satisfied, click **Commit Changes** to submit your edits.
 
 {% hint style="success" %}
-Congratulations! You’ve successfully submitted your edits via GitHub. Your edits will be reviewed by The Sia Foundation.
+You’ve submitted your edits via GitHub. Your edits will be reviewed by The Sia Foundation.
 {% endhint %}
 
 ## Contribute to Sia
 
-Our core team of engineers at The Sia Foundation believes that principles are everything—in **Systems Creativity**, **Technical Integrity**, and **Personal Agency**. As a 100% open-source project, we've had countless individuals contribute to the core code and to apps built on top of the network. These contributions **invest in and strengthen the Sia cloud storage network, engage the Sia community, and educate the public about the urgency of data privacy and ownership**.
+Our core team of engineers at The Sia Foundation works according to three principles: **Systems Creativity**, **Technical Integrity**, and **Personal Agency**. As a fully open-source project, we've had many individuals contribute to the core code and to apps built on top of the network.
 
-Check out our [GitHub](https://github.com/SiaFoundation) to follow along or contribute code to help further our mission.
+Check out our [GitHub](https://github.com/SiaFoundation) to follow along or contribute code.
 
 ## Join our Community
 
-Join our [Discord](https://discord.com/invite/sia)—a hub for developers, users, and anyone curious about decentralized cloud storage, privacy, and security. It’s the place for support, collaboration, and updates. Want to contribute? Head to `#contributors` to say hi, ask questions, or share your Sia-related code or app.
+Join our [Discord](https://discord.com/invite/sia) for developers, users, and anyone curious about decentralized cloud storage, privacy, and security. It's where you can find support and updates. Want to contribute? Head to `#contributors` to say hi, ask questions, or share your Sia-related code or app.
 
 {% hint style="info" %}
 **Need Assistance?**
 
-Join the `#help` channel on our [Discord](https://discord.com/invite/sia), where the community is always ready to help.
+Join the `#help` channel on our [Discord](https://discord.com/invite/sia), where the community can help.
 
 You can also [email us](mailto:hello@sia.tech), and we’ll get back to you as soon as possible.
 {% endhint %}

@@ -24,7 +24,7 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 
 ## Pre-requisites
 
-To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
+The following requirements are recommended for running `hostd`:
 
 * **Operating System Compatibility:** `hostd` is supported on the following Ubuntu versions:
   - Plucky (Ubuntu 25.04)
@@ -89,7 +89,7 @@ Run the following command to see the version of `hostd` that was installed:
 hostd version
 ```
 
-![](../../../.gitbook/assets/hostd-screenshots/install/linux/ubuntu/03-hostd-version.png)
+![](../../../.gitbook/assets/hostd-screenshots/install/linux/ubuntu/03-hostd-ubuntu-version.png)
 
 ## Configure `hostd`
 

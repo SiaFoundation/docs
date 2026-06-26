@@ -124,7 +124,7 @@ If you do not have a desktop environment:
 
 ## Updating
 
-It is important to keep your node up to date. New versions of `walletd` are released regularly and contain bug fixes and performance improvements.
+Keep your node up to date. New versions of `walletd` are released regularly and contain bug fixes and performance improvements.
 
 **To update:**
 
@@ -170,5 +170,5 @@ rm -rf walletd_linux_arm64.zip
     ```
 
 {% hint style="success" %}
-Congratulations, you have successfully updated your version of `walletd`!
+You have updated your version of `walletd`.
 {% endhint %}

@@ -14,7 +14,7 @@ layout:
 
 # Transferring Siacoins
 
-Whether you're funding your node's wallet or sending Siacoins to an exchange, transferring Siacoins (SC) is easily done through the UI. Funding the wallet is a required step when self-hosting [`indexd`](setting-up-indexd/), whose wallet pays storage providers for the contracts it forms on your behalf.
+Whether you're funding your node's wallet or sending Siacoins to an exchange, you can transfer Siacoins (SC) through the UI. Funding the wallet is a required step when self-hosting [`indexd`](setting-up-indexd/), whose wallet pays storage providers for the contracts it forms on your behalf.
 
 {% hint style="info" %}
 The screenshots below show the `renterd` UI, but the wallet send and receive flow is the same in the `indexd` and `walletd` UIs.

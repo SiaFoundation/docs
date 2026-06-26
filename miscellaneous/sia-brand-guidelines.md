@@ -14,15 +14,15 @@ layout:
 
 # Brand Guidelines
 
-Third-party projects constitute an integral part of the Sia ecosystem. They broaden the range of applications on Sia and enhance the network through solutions that are not actively being developed by our team.
+Third-party projects are an important part of the Sia ecosystem. They broaden the range of applications on Sia and add solutions that are not developed by our team.
 
 We aim for users to discern between core and non-core projects for several reasons:
 
 * Non-core projects often involve some level of centralization, which is entirely acceptable. Users benefit from having choices, and centralization allows for the implementation of features that are more accessible to achieve compared to those on Sia's core infrastructure.
 * There's the potential for confusion where users might mistake your project for something created by the core team. We want to ensure that users know where to go for help.
-* Acknowledge your dedication to your project; we desire to give it the recognition it deserves, allowing it to stand out prominently.
+* We want your project to get credit for your work and to stand on its own.
 
-These Sia brand guidelines will assist those developing their project by ensuring clarity, consistency, and distinction between other projects and core Sia offerings.
+These guidelines help developers keep their projects clear and distinct from core Sia projects.
 
 ## Logo and Branding Usage
 
@@ -69,5 +69,5 @@ If you would like to showcase your project's integration with Sia, you can add a
 | Light 50% | ![Light 50%](../.gitbook/assets/v2-brand-assets/built-on-sia/primary/Light%2050%20Percent/Built-on-sia-text-primary-light-50-percent.svg) | N/A | .svg |
 
 {% hint style="info" %}
-We're eagerly anticipating what you'll create! If you have any questions regarding our Sia branding guidelines, please don't hesitate to reach out via [email](mailto:hello@sia.tech) or [Discord](https://sia.tech/discord).
+If you have any questions about these branding guidelines, reach out via [email](mailto:hello@sia.tech) or [Discord](https://sia.tech/discord).
 {% endhint %}

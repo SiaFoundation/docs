@@ -18,7 +18,7 @@ layout:
 
 ## What is `Nextcloud`?
 
-Nextcloud is an open-source content collaboration platform. It’s like your own Cloud service that runs on your own hardware. You can use it for storing and sharing files through a web interface, mobile app, or desktop client, and even to collaborate with others or as a communication platform. There is almost no limit to what it can do with its open plugin store.
+Nextcloud is an open-source content collaboration platform. It’s like your own Cloud service that runs on your own hardware. You can use it for storing and sharing files through a web interface, mobile app, or desktop client, and even to collaborate with others or as a communication platform. Its open plugin store adds further functionality.
 
 ## Step 1: Install `renterd` and configure S3
 This guide requires that you have a working installation of `renterd`. If you have not already installed `renterd`, you will need to do so before continuing.
@@ -66,7 +66,7 @@ Select “Amazon S3” and give your folder a friendly name like “Sia”. For 
 
 ## All done.
 
-Congratulations! You successfully configured Sia as a backend for your `Nextcloud` instance. If you click the “Files” tab on the top and then “External storage” in the menu on the left, you should see the folder as shown below.
+You have configured Sia as a backend for your `Nextcloud` instance. If you click the “Files” tab on the top and then “External storage” in the menu on the left, you should see the folder as shown below.
 
 ![](../../.gitbook/assets/nextcloud-s3-integration/05-success.png)
 

@@ -24,7 +24,7 @@ This guide will walk you through setting up `hostd` using Docker compose. At the
 
 ## Pre-requisites
 
-To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
+The following requirements are recommended for running `hostd`:
 
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended. Not meeting these requirements may result in fewer contracts from renters or the loss of collateral.
   - A quad-core CPU
@@ -94,7 +94,7 @@ Finally, you will be asked if you want to configure advanced settings for `hostd
 
 ## Running `hostd`
 
-Now that you have `hostd` successfully installed and configured, it is time to run it. Use the following command to start `hostd`:
+Now that you have `hostd` installed and configured, you can run it. Use the following command to start `hostd`:
 
 ```console
 docker compose up -d
@@ -107,7 +107,7 @@ Once `hostd` has successfully started, you can access the web UI by opening your
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/07-hostd-webui.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully set up `hostd`.
+`hostd` is now set up.
 {% endhint %}
 
 ## Checking the container status
@@ -132,7 +132,7 @@ docker compose logs hostd
 
 ## Upgrading `hostd`
 
-It is essential to keep your host up to date. New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
+Keep your host up to date. New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
 
 To upgrade your `hostd` to the newest version, make sure you have shut down `hostd` and then run the following:
 
@@ -141,5 +141,5 @@ docker compose pull && docker compose up -d
 ```
 
 {% hint style="success" %}
-Congratulations, you have successfully updated your version of `hostd`!
+`hostd` is now updated to the latest version.
 {% endhint %}

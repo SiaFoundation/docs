@@ -14,8 +14,8 @@ layout:
 
 # macOS
 
-{% hint style="warning" %}
-**`renterd` is deprecated.** It has been replaced by [`indexd`](../setting-up-indexd/), the indexer that now handles contract management for the Sia storage stack. Most people don't need to run anything at all — [Sia Storage](https://sia.storage) gives you 50 GB free with nothing to install or maintain.
+{% hint style="info" %}
+**`renterd` is no longer the preferred way to store data on Sia.** For most users, [Sia Storage](https://sia.storage) (50 GB free, nothing to run) or a self-hosted [`indexd`](../setting-up-indexd/) is a better starting point. `renterd` still works, and these guides remain for existing users.
 {% endhint %}
 
 This guide will walk you through setting up `renterd` on macOS. At the end of this guide, you should have:
@@ -127,7 +127,7 @@ You can now access the Sia network using the `renterd` web UI by opening a brows
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/10-renterd-webui.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully set up `renterd`.
+You have set up `renterd`.
 {% endhint %}
 
 ---
@@ -153,5 +153,5 @@ renterd version
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/12-renterd-version.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully updated your version of `renterd`!
+Your version of `renterd` has been updated.
 {% endhint %}

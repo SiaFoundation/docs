@@ -18,7 +18,7 @@ layout:
 
 ## What is `Jellyfin`?
 
-Jellyfin stands out as a free, open-source media server, offering a compelling alternative to proprietary platforms like Emby and Plex. It’s designed to give you complete control over organizing, managing, and streaming your media collection, which includes movies, TV shows, music, and photos. Its client/server model ensures cross-platform compatibility, enabling access to various devices, including desktops, smartphones, and smart TVs. The main allure of setting up Jellyfin is the autonomy it offers: you have complete control over your media, free from hidden fees or data tracking. Its user-friendly interface and robust community support make it highly customizable and continuously evolving. Jellyfin is ideal for creating a personal media hub, akin to having your own private Netflix, where your entire media library is organized and easily streamable to your chosen devices anywhere in the world. This combination of features makes Jellyfin not just a media server but a customizable, privacy-respecting solution that adapts to your growing media needs.
+Jellyfin is a free, open-source media server and an alternative to proprietary platforms like Emby and Plex. It lets you organize, manage, and stream your media collection, including movies, TV shows, music, and photos. Its client/server model works across platforms, including desktops, smartphones, and smart TVs. You keep control over your media, with no fees or data tracking.
 
 ## Recommended System Requirements:
 
@@ -28,7 +28,7 @@ Jellyfin stands out as a free, open-source media server, offering a compelling a
 
 * **Storage:** SSD for the operating system and applications, with additional HDD or SSD storage for cached media files.
 
-* **Network:** Stable, high-speed internet connection for effective streaming and data transfers.
+* **Network:** Stable, high-speed internet connection for streaming and data transfers.
 
 * **Operating System:**
 
@@ -53,7 +53,7 @@ Install rclone and configure a new S3 remote using `renterd` for your storage ba
 
 ## Step 3: Upload media
 
-Once your `renterd` remote has been mounted on your system, you can begin uploading media. For the best experience, following the Jellyfin naming and sorting conventions is recommended. Doing so will help Jellyfin automatically obtain detailed metadata from various online databases. This includes cover art, media description, date, rating, related media, etc.
+Once your `renterd` remote has been mounted on your system, you can begin uploading media. Following the Jellyfin naming and sorting conventions is recommended. Doing so will help Jellyfin automatically obtain metadata from online databases, including cover art, media description, date, rating, related media, etc.
 
 Below is an example of a properly structured file system following Jellyfin’s [TV Shows](https://jellyfin.org/docs/general/server/media/shows) and [Movies](https://jellyfin.org/docs/general/server/media/movies/) standards.
 
@@ -108,12 +108,12 @@ Select the `Language` and `Country` you would like to use as the default for dow
 Configure Remote Access to your Server. If you are planning on accessing your libraries from another device on your network, you will need to have `Allow remote connections to this server` selected. Click “Next” when ready.
 
 {% hint style="warning" %}
-If you would like to access your Jellyfin libraries from outside your network, you should only do so using a secure `HTTPS` connection. This can be easily set up using [Caddy](https://caddyserver.com/).
+If you would like to access your Jellyfin libraries from outside your network, you should only do so using a secure `HTTPS` connection. This can be set up using [Caddy](https://caddyserver.com/).
 {% endhint %}
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/11-jellyfin-remote-access.png)
 
-Congratulations! You have completed setting up your Jellyfin server. You can now click “Finish” and log in using the account you created initially.
+You have completed setting up your Jellyfin server. You can now click “Finish” and log in using the account you created initially.
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/12-jellyfin-setup-complete.png)
 
@@ -143,6 +143,6 @@ Next, enter your `User` name and `Password`, then click "Sign In.
 
 ## All done.
 
-Congratulations! You have successfully set up Jellyfin to stream your media collection from the Sia network.
+You have set up Jellyfin to stream your media collection from the Sia network.
 
 ![](../../.gitbook/assets/jellyfin-s3-integration/16-jellyfin-success.png)

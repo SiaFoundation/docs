@@ -150,12 +150,12 @@ docker compose up -d
 
 ![](../../.gitbook/assets/indexd-screenshots/install/docker/03-indexd-docker-started.png)
 
-Once `indexd` has successfully started, you can access the admin UI by opening your browser and going to [http://localhost:9980](http://localhost:9980/).
+Once `indexd` has started, you can access the admin UI by opening your browser and going to [http://localhost:9980](http://localhost:9980/).
 
 ![](../../.gitbook/assets/indexd-screenshots/indexd-ui.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully set up `indexd`.
+`indexd` is now set up.
 {% endhint %}
 
 ## Fund your wallet
@@ -189,5 +189,5 @@ docker compose pull && docker compose up -d
 ```
 
 {% hint style="success" %}
-Congratulations, you have successfully updated your version of `indexd`!
+`indexd` is now updated to the latest version.
 {% endhint %}

@@ -23,7 +23,7 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 
 ## Pre-requisites
 
-To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
+The following requirements are recommended for running `hostd`:
 
 * **Operating System Compatibility:** `hostd` is supported on the following Linux versions:
   - Trixie (Debian 13)
@@ -128,7 +128,7 @@ If you do not have a desktop environment:
 
 ## Updating
 
-It is very important to keep your host up to date. New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
+Keep your host up to date. New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
 
 **To update:**
 
@@ -174,5 +174,5 @@ rm -rf hostd_linux_arm64.zip
     ```
 
 {% hint style="success" %}
-Congratulations, you have successfully updated your version of `hostd`!
+`hostd` is now updated to the latest version.
 {% endhint %}

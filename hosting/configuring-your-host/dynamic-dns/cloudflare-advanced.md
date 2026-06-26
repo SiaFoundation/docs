@@ -4,7 +4,7 @@ description: Learn how to set up dynamic DNS in hostd with Cloudflare
 
 # Cloudflare (Advanced)
 
-Cloudflare DNS is a globally distributed, fast, secure, and free Domain Name System (DNS) service that offers top-level domain resolution with robust security features and increased site performance. This guide will walk you through setting up Cloudflare for DDNS in `hostd`.
+Cloudflare DNS is a free Domain Name System (DNS) service. This guide walks you through setting up Cloudflare for DDNS in `hostd`.
 
 ## Things you'll need
 
@@ -73,7 +73,7 @@ Once you have set the permissions, click "Continue to summary." On the summary s
 
 ## Configure hostd
 
-It's finally time to configure `hostd` and enable DDNS.
+Now configure `hostd` and enable DDNS.
 
 1. Access the `hostd` UI, `http://localhost:9980` by default
 2. Click the "Configuration" icon in the sidebar

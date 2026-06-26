@@ -15,7 +15,7 @@ layout:
 
 # macOS Desktop App: `walletd`
 
-The `walletd` desktop app provides a user-friendly web UI to manage your Sia wallets. By the end of this guide, you will have:
+The `walletd` desktop app provides a web UI to manage your Sia wallets. By the end of this guide, you will have:
 
 * Installed the `walletd` desktop application.
 * Created a `walletd` wallet
@@ -70,20 +70,20 @@ After downloading the `walletd` desktop application:
 4. **Access the Web UI:** Click **save and start daemon**. It will open automatically, or if not, you can access it at [http://localhost:9980](http://localhost:9980) while `walletd` runs in the background.
 
 {% hint style="warning" %}
-When you first run `walletd`, macOS may ask to allow incoming network connections. This is normal — select **Allow** so `walletd` can communicate properly.
+When you first run `walletd`, macOS may ask to allow incoming network connections. Select **Allow** so `walletd` can communicate.
 {% endhint %}
 
 ![](../../.gitbook/assets/macos-walletd-app/web-ui.png)
 
 {% hint style="success" %}
-**Success!** `walletd` is now running on your Mac, and you’re ready to start managing your wallets on the Sia network.
+`walletd` is now running on your Mac, and you can start managing your wallets on the Sia network.
 {% endhint %}
 
 ## Configure
 
-You can customize `walletd` through the desktop app, which provides full control over all available settings, from wallet indexing to batch sizing and more.
+You can configure `walletd` through the desktop app, which exposes all available settings, from wallet indexing to batch sizing.
 
-On **macOS**, you can access the `walletd` configurations by clicking the `walletd` icon in the menu bar at the top of your screen. This will open the configuration window and let you customize its behavior.
+On **macOS**, you can access the `walletd` configurations by clicking the `walletd` icon in the menu bar at the top of your screen. This will open the configuration window.
 
 ![](../../.gitbook/assets/macos-walletd-app/menu-bar.png)
 
@@ -107,13 +107,13 @@ There are several configurable settings in `walletd`. Below is a breakdown of wh
 Always **save and restart daemon** after making configuration changes to ensure they are applied.
 {% endhint %}
 
-You can monitor your node’s activity and track changes by checking the logs. These provide detailed information about the system, network connections, and API endpoints, helping you understand what your node is doing at any given time.
+You can monitor your node’s activity by checking the logs. These provide information about the system, network connections, and API endpoints.
 
 ## Update
 
-`walletd` updates regularly with bug fixes, performance improvements, and new features. Updating your node ensures stability and compatibility with the Sia network.
+`walletd` updates regularly with bug fixes, performance improvements, and new features. Updating your node keeps it compatible with the Sia network.
 
-On macOS, the app downloads updates automatically and notifies you when they’re ready. Simply restart the app to run the latest version.
+On macOS, the app downloads updates automatically and notifies you when they’re ready. Restart the app to run the latest version.
 
 {% hint style="info" %}
 You can always check for the version of the software at the bottom of the app interface.

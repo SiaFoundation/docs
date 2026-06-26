@@ -14,7 +14,7 @@ layout:
 
 # Windows Desktop App: `walletd`
 
-The `walletd` desktop app provides a user-friendly web UI to start storing data on the Sia network. By the end of this guide, you will have:
+The `walletd` desktop app provides a web UI to manage your Sia wallets. By the end of this guide, you will have:
 
 * Installed Sia `walletd` software
 * Created a `walletd` wallet
@@ -60,20 +60,20 @@ After downloading the `walletd` desktop application:
 ![](../../.gitbook/assets/windows-walletd-app/welcome-ui.png)
 
 {% hint style="warning" %}
-When you first run `walletd`, Windows Security may ask to allow public and private network access. This is normal—select **Allow** so `walletd` can communicate properly through the firewall.
+When you first run `walletd`, Windows Security may ask to allow public and private network access. Select **Allow** so `walletd` can communicate through the firewall.
 {% endhint %}
 
 ![](../../.gitbook/assets/windows-walletd-app/web-ui.png)
 
 {% hint style="success" %}
-**Success!** `walletd` is now running on your Windows system, and you’re ready to start storing your data on the Sia network.
+`walletd` is now running on your Windows system, and you can start managing your wallets on the Sia network.
 {% endhint %}
 
 ## Configure
 
-You can customize `walletd` through the desktop app, which provides full control over all available settings, from wallet indexing to batch sizing and more.
+You can configure `walletd` through the desktop app, which exposes all available settings, from wallet indexing to batch sizing.
 
-On **Windows**, you can access the `walletd` configurations by going to the taskbar, expanding the up arrow to see hidden icons, and double-clicking the `walletd` app. This will open the configuration window and let you customize its behavior.
+On **Windows**, you can access the `walletd` configurations by going to the taskbar, expanding the up arrow to see hidden icons, and double-clicking the `walletd` app. This will open the configuration window.
 
 ![](../../.gitbook/assets/windows-walletd-app/configuring.png)
 
@@ -97,15 +97,15 @@ There are several configurable settings in `walletd`. Below is a breakdown of wh
 Always **save and restart daemon** after making configuration changes to ensure they are applied.
 {% endhint %}
 
-You can monitor your node’s activity and track changes by checking the logs. These provide detailed information about the system, network connections, API endpoints, S3 interface, and autopilot operations, helping you understand what your node is doing at any given time.
+You can monitor your node’s activity by checking the logs. These provide information about the system, network connections, API endpoints, S3 interface, and autopilot operations.
 
 ![](../../.gitbook/assets/windows-walletd-app/config-logs.png)
 
 ## Update
 
-`walletd` updates regularly with bug fixes, performance improvements, and new features. Updating your node ensures stability and compatibility with the Sia network. 
+`walletd` updates regularly with bug fixes, performance improvements, and new features. Updating your node keeps it compatible with the Sia network.
 
-On Windows, the app downloads updates automatically and notifies you when they’re ready. Simply restart the app to run the latest version. 
+On Windows, the app downloads updates automatically and notifies you when they’re ready. Restart the app to run the latest version.
 
 {% hint style="info" %}
 You can always check for the version of the software at the bottom of the app interface.

@@ -6,15 +6,18 @@
 ## Get Started with Sia
 
 * [Learn about Sia](get-started-with-sia/sia101.md)
+* [Which Sia software do I need?](get-started-with-sia/sia-software-overview.md)
 * [Learn about Siacoins](get-started-with-sia/learn-about-siacoins.md)
 * [Your Sia Seed](get-started-with-sia/the-importance-of-your-seed.md)
 
 ## Store Your Data
 
 * [About Storing Data on Sia](renting/about-renting.md)
+* [Using Sia Storage](renting/using-sia-storage.md)
 * [Setting up indexd](renting/setting-up-indexd/README.md)
   * [Docker](renting/setting-up-indexd/docker.md)
-* [Installing renterd (deprecated)](renting/setting-up-renterd/README.md)
+* [Transferring Siacoins](renting/transferring-siacoins.md)
+* [Installing renterd](renting/setting-up-renterd/README.md)
   * [macOS](renting/setting-up-renterd/macos.md)
   * [Linux](renting/setting-up-renterd/linux/README.md)
     * [Debian](renting/setting-up-renterd/linux/debian.md)
@@ -22,9 +25,13 @@
     * [Other](renting/setting-up-renterd/linux/other.md)
   * [Docker](renting/setting-up-renterd/docker.md)
   * [Windows](renting/setting-up-renterd/windows.md)
-* [Transferring Siacoins](renting/transferring-siacoins.md)
-* [Storing Your Data](renting/renting-storage/README.md)
+  * [Storing Your Data](renting/renting-storage/README.md)
   * [Managing Your Files](renting/renting-storage/managing-your-files.md)
+
+## Build on Sia
+
+* [Sia Developer Portal](https://devs.sia.storage)
+* [SDK Quickstart](https://devs.sia.storage/docs/quickstart)
 
 ## Provide Storage
 
@@ -61,7 +68,6 @@
 ## Integrations
 
 * [Sia Ledger app with Sia Central](sia-integrations/using-the-sia-ledger-nano-app-sia-central.md)
-* [Sia Ledger Nano app with CLI](sia-integrations/using-the-sia-ledger-nano-app-cli.md)
 * [S3 Integrations](sia-integrations/s3-integrations/README.md)
   * [Jellyfin](sia-integrations/s3-integrations/jellyfin.md)
   * [Nextcloud](sia-integrations/s3-integrations/nextcloud.md)
@@ -72,9 +78,5 @@
 * [V2: The Final Cut - Network Upgrade (December 2025)](miscellaneous/sias-december-2025-hardfork-ecosystem-status.md)
 * [V2 Hardfork - June 2025](v2/README.md)
   * [How to Upgrade: Exchanges](v2/exchanges.md)
-  * [Sia Ecosystem Fork Status](navigating-the-v2-hardfork/sia-ecosystem-fork-compliance.md)
 * [Siacoin Total Supply](miscellaneous/siacoin-total-supply.md)
-* [Siafunds](/siafunds/learn-about-siafunds.md)
-  * [Withdrawing Siafunds](siafunds/how-to-cash-out-siafunds.md)
-  * [SEC Settlement](siafunds/sec-settlement-faq.md)
 * [Brand Guidelines](miscellaneous/sia-brand-guidelines.md)

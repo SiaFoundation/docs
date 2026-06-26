@@ -2,9 +2,9 @@
 
 ## What is the Ledger Nano S?
 
-The Nano S is a hardware wallet created by Ledger. A hardware wallet stores the private keys to cryptocurrency on a separate device, making it much harder for malicious parties to steal them. In fact, the private keys never leave the Nano S itself, so they will remain secure even if the device is connected to a compromised computer. As long as you follow best practices when using your Nano S, it is virtually impossible for an attacker to steal your funds.
+The Nano S is a hardware wallet created by Ledger. A hardware wallet stores the private keys to cryptocurrency on a separate device, making it harder for malicious parties to steal them. The private keys never leave the Nano S itself, so they remain secure even if the device is connected to a compromised computer. As long as you follow best practices when using your Nano S, it is very difficult for an attacker to steal your funds.
 
-Hardware wallets are an important part of the crypto ecosystem, and they're one of the best ways to personally secure your coins. We're happy to be working with Ledger to offer our official Sia app for use on the Ledger Nano S.
+Hardware wallets are a common way to personally secure your coins. We're working with Ledger to offer our official Sia app for use on the Ledger Nano S.
 
 ## Things you'll need
 
@@ -17,7 +17,7 @@ Using Sia on the Ledger Nano S requires a few things. You will need:
 * Familiarity with your computer's command-line interface \(CLI\).
 
 {% hint style="warning" %}
-The current process for using the Sia app is more easily followed by advanced users. If you're not comfortable using the command-line, don't worry. We're working on integrating the Sia Ledger Nano S app with Sia-UI, our official GUI app, to make the process much simpler.
+The current process for using the Sia app is intended for advanced users. We're working on integrating the Sia Ledger Nano S app with Sia-UI, our official GUI app, to simplify the process.
 {% endhint %}
 
 ## Set up your Ledger Nano S
@@ -127,7 +127,7 @@ It is crucial that you verify every character in the address. A compromised comp
 
 * Once you've verified the address, press both buttons to return to the main Sia app screen.
 
-Your address is now ready to use! Send your existing siacoins to this address for safekeeping, or give this address to someone else to securely transfer coins to you.
+Your address is now ready to use. Send your existing siacoins to this address for safekeeping, or give this address to someone else to transfer coins to you.
 
 ## Sending Siacoins using the Ledger Nano S
 
@@ -219,7 +219,7 @@ Note: the following are example values and may not match the values seen in earl
    }]
 ```
 
-The transaction is now valid. To broadcast it to the Sia network, simply move txn.json to the folder you run Sia commands from, and run:
+The transaction is now valid. To broadcast it to the Sia network, move txn.json to the folder you run Sia commands from, and run:
 
 `siac wallet broadcast txn.json`
 

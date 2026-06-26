@@ -20,7 +20,7 @@ This guide is for exchanges that are currently using `siad` to track and manage 
 The hardfork activated at the block height of **526,000** on or around **June 6th, 2025 06:00 UTC**.
 {% endhint %}
 
-`walletd` is the new reference wallet for exchanges. It is designed to be more secure, reliable, and scalable than `siad`. `walletd` also has a more robust API, supports multiple wallets simultaneously, and provides easier support for secure key management setups.
+`walletd` is the new reference wallet for exchanges. It supports multiple wallets simultaneously and provides easier support for secure key management setups.
 
 ### Differences from `siad`
 

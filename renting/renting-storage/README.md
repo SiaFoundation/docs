@@ -14,11 +14,11 @@ layout:
 
 # Storing Your Data
 
-{% hint style="warning" %}
-**`renterd` is deprecated.** It has been replaced by [`indexd`](../setting-up-indexd/), the indexer that now handles contract management for the Sia storage stack. Most people don't need to run anything at all — [Sia Storage](https://sia.storage) gives you 50 GB free with nothing to install or maintain.
+{% hint style="info" %}
+**`renterd` is no longer the preferred way to store data on Sia.** For most users, [Sia Storage](https://sia.storage) (50 GB free, nothing to run) or a self-hosted [`indexd`](../setting-up-indexd/) is a better starting point. `renterd` still works, and these guides remain for existing users.
 {% endhint %}
 
-Uploading files on `renterd` is remarkably straightforward, making it accessible even to those new to the Sia network. With just a few simple steps, you can securely store your files and data on Sia's decentralized cloud storage platform, where a network of hosts ensures the redundancy and reliability of your files. `renterd` provides an intuitive interface for effortlessly transferring your files to the Sia network.
+This guide walks you through uploading files with `renterd`. Your files are stored on Sia's decentralized storage network, where data is spread across a network of hosts for redundancy.
 
 ## Before you begin...
 
@@ -29,28 +29,28 @@ Uploading files on `renterd` is remarkably straightforward, making it accessible
 ## Uploading your files in renterd
 
 {% hint style="warning" %}
-Uploading files and data with `renterd` is a very straightforward process, assuming you have completed all the steps of the `renterd` setup guide. Visit the [renterd](../setting-up-renterd/) guides to ensure everything is set up correctly before proceeding.
+Uploading files with `renterd` assumes you have completed all the steps of the `renterd` setup guide. Visit the [renterd](../setting-up-renterd/) guides to ensure everything is set up correctly before proceeding.
 {% endhint %}
 
 1. Access the `rentered` UI from your local host address. Enter your `API password` you created to unlock `renterd`.
 
 <figure><img src="../../.gitbook/assets/renterd_5.png" alt=""><figcaption><p>renterd Login UI</p></figcaption></figure>
 
-2. Drag-and-drop files, or click the Upload Files button in the top right corner to begin uploading files. It's that simple!
+2. Drag-and-drop files, or click the Upload Files button in the top right corner to begin uploading files.
 
 <figure><img src="../../.gitbook/assets/renterd_6.png" alt=""><figcaption><p>File upload UI</p></figcaption></figure>
 
 Once you've chosen the file(s) to upload, it will be classed as active upload; give it a few seconds.
 
 {% hint style="success" %}
-Congratulations on successfully uploading your file(s) using `renterd`! Your data is now securely stored on the Sia network, benefiting from the reliability and resilience of decentralized storage.
+You have uploaded your file(s) using `renterd`. Your data is now stored on the Sia network.
 {% endhint %}
 
 ## File processing
 
-When you begin to upload a file to Sia, it undergoes processing on your local machine to ensure optimal redundancy and security within the network. Initially, the file is divided into manageable chunks. Subsequently, each chunk undergoes a procedure that generates 30 distinct pieces, each encrypted before being dispatched to separate hosts. It's worth noting that only 10 of the 30 pieces are required for reconstructing a chunk, and no single host can access more than one piece.
+When you upload a file to Sia, it is processed on your local machine before being sent to the network. The file is divided into chunks. Each chunk is then split into 30 distinct pieces, each encrypted before being sent to a separate host. Only 10 of the 30 pieces are required to reconstruct a chunk, and no single host holds more than one piece.
 
-This arrangement ensures that up to 20 hosts could become disconnected from the network for each section of your original file, yet your data would remain safe and secure.
+This means up to 20 hosts can become disconnected from the network for each section of your original file, and your data remains recoverable.
 
 {% hint style="info" %}
 For the more technical readers, here is what happens behind the scenes:

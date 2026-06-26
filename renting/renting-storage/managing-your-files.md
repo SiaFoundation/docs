@@ -14,13 +14,13 @@ layout:
 
 # Managing your Files
 
-{% hint style="warning" %}
-**`renterd` is deprecated.** It has been replaced by [`indexd`](../setting-up-indexd/), the indexer that now handles contract management for the Sia storage stack. Most people don't need to run anything at all — [Sia Storage](https://sia.storage) gives you 50 GB free with nothing to install or maintain.
+{% hint style="info" %}
+**`renterd` is no longer the preferred way to store data on Sia.** For most users, [Sia Storage](https://sia.storage) (50 GB free, nothing to run) or a self-hosted [`indexd`](../setting-up-indexd/) is a better starting point. `renterd` still works, and these guides remain for existing users.
 {% endhint %}
 
 ## Maintaining your Data
 
-To ensure the constant availability of your data, you should perform a few crucial tasks periodically.
+To keep your data available, you should perform a few tasks periodically.
 
 {% hint style="warning" %}
 `renterd` **MUST** be running with your wallet unlocked for any actions to occur; therefore, it is advisable to open it at least once a month and let it run overnight to perform various essential housekeeping tasks.
@@ -48,13 +48,13 @@ Your contracts renew automatically when you open `renterd`.
 
 ### **Boosting file health**
 
-In `renterd` your files' health is quantified as a percentage, representing the number of available shards that comprise each file. Ideally, it would help if you strive for a perfect health rating of 100%, indicating that all 30 file shards are securely distributed among various hosts.
+In `renterd` your files' health is shown as a percentage, representing the number of available shards that make up each file. A health of 100% indicates that all 30 file shards are distributed among hosts.
 
 <figure><img src="../../.gitbook/assets/renter_7.png" alt=""><figcaption><p>File health check in renterd</p></figcaption></figure>
 
-`renterd` incorporates an intelligent redundancy system that swiftly replicates any missing shards onto a new host in case one becomes unavailable during its next active check.
+`renterd` automatically replicates any missing shards onto a new host if one becomes unavailable during its next health check.
 
-Health assessments can only be conducted if `renterd` when it's actively running. To ensure the ongoing integrity of your data, it's advisable to periodically launch and operate Sia, allowing it to refresh the health status of your files and sustain their redundancy at optimal levels.
+Health checks only run while `renterd` is running. To maintain your data, periodically launch and run `renterd` so it can refresh the health status of your files and restore their redundancy.
 
 ## Downloading
 

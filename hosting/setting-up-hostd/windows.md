@@ -15,7 +15,7 @@ layout:
 
 # Windows Desktop App: `hostd`
 
-The `hostd` desktop app provides a user-friendly web UI to start providing storage on the Sia network. By the end of this guide, you will have:
+The `hostd` desktop app provides a web UI to start providing storage on the Sia network. By the end of this guide, you will have:
 
 * Installed the `hostd` desktop application.
 * Created a `hostd` wallet
@@ -78,12 +78,12 @@ When you first run `hostd`, Windows Security may ask to allow public and private
 ![](../../.gitbook/assets/windows-hostd-app/web-ui.png)
 
 {% hint style="success" %}
-**Success!** `hostd` is now running on your Windows system, and you’re ready to start providing storage on the Sia network.
+`hostd` is now running on your Windows system, and you can start providing storage on the Sia network.
 {% endhint %}
 
 ## Configure
 
-You can customize `hostd` through the desktop app, which provides full control over all available settings.
+You can configure `hostd` through the desktop app, which exposes all available settings.
 
 On **Windows**, you can access the `hostd` configurations by going to the taskbar, expanding the up arrow to see hidden icons, and double-clicking the `hostd` app. This will open the configuration window and let you customize its behavior.
 
@@ -103,18 +103,18 @@ There are several configurable settings in `hostd`. Below is a breakdown of what
 | RHP4 port | Listening port for incoming storage traffic |
 
 {% hint style="warning" %}
-Always **save and restart daemon** after making configuration changes to ensure they are applied.
+Always **save and restart daemon** after making configuration changes so they are applied.
 {% endhint %}
 
-You can monitor your node’s activity and track changes by checking the logs. These provide detailed information about the system, network connections, API endpoints, S3 interface, and autopilot operations, helping you understand what your node is doing at any given time.
+You can monitor your node’s activity and track changes by checking the logs. These provide information about the system, network connections, API endpoints, S3 interface, and autopilot operations.
 
 ![](../../.gitbook/assets/windows-hostd-app/config-logs.png)
 
 ## Update
 
-`hostd` updates regularly with bug fixes, performance improvements, and new features. Updating your node ensures stability and compatibility with the Sia network. 
+`hostd` updates regularly with bug fixes, performance improvements, and new features. Updating your node keeps it compatible with the Sia network. 
 
-On Windows, the app downloads updates automatically and notifies you when they’re ready. Simply restart the app to run the latest version. 
+On Windows, the app downloads updates automatically and notifies you when they’re ready. Restart the app to run the latest version. 
 
 {% hint style="info" %}
 You can always check for the version of the software at the bottom of the app interface.

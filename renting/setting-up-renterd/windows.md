@@ -14,7 +14,11 @@ layout:
 
 # Windows Desktop App: `renterd`
 
-The `renterd` desktop app provides a user-friendly web UI to start storing data on the Sia network. By the end of this guide, you will have:
+{% hint style="info" %}
+**`renterd` is no longer the preferred way to store data on Sia.** For most users, [Sia Storage](https://sia.storage) (50 GB free, nothing to run) or a self-hosted [`indexd`](../setting-up-indexd/) is a better starting point. `renterd` still works, and these guides remain for existing users.
+{% endhint %}
+
+The `renterd` desktop app provides a web UI to start storing data on the Sia network. By the end of this guide, you will have:
 
 * Installed the `renterd` desktop application.
 * Created a `renterd` wallet
@@ -38,7 +42,7 @@ To ensure proper functionality, we are recommending a minimum of 8 GB RAM. This 
 
 ## Download
 
-1. Go to [Sia Software Downloads](https://sia.tech/software-downloads). Here you can find the latest software downloads for all our daemons.
+1. Go to [Sia Software Downloads](https://sia.tech/software-downloads). Here you can find the latest downloads for all Sia daemons.
 
 ![](../../.gitbook/assets/windows-renterd-app/sia-tech-website-download.png)
 
@@ -58,7 +62,7 @@ After downloading the `renterd` desktop application:
 
 1. **Install the app:** Double-click the installer (e.g., `renterd.<version>.Setup.exe`) and follow the prompts. The app installs to the default location.
 2. **Launch the app:** After installation, you can delete the installer, and launch `renterd` from the Start Menu like any other program.
-3. **Initial setup *(first-time users only)*:** On first launch, the Welcome to `renterd` window will guide you to generate a recovery phrase (which you can copy and lock) and set a password to access web UI.
+3. **Initial setup *(first-time users only)*:** On first launch, the Welcome to `renterd` window prompts you to generate a recovery phrase (which you can copy and lock) and set a password to access the web UI.
 
 ![](../../.gitbook/assets/windows-renterd-app/welcome-ui.png)
 
@@ -71,15 +75,15 @@ When you first run `renterd`, Windows Security may ask to allow public and priv
 ![](../../.gitbook/assets/windows-renterd-app/web-ui.png)
 
 {% hint style="success" %}
-**Success!** `renterd` is now running on your Windows system, and you’re ready to start storing your data on the Sia network.
+`renterd` is now running on your Windows system, and you can start storing your data on the Sia network.
 {% endhint %}
 
 
 ## Configure
 
-You can customize `renterd` through the desktop app, which provides full control over all available settings, from wallet security to network and S3 configurations.
+You can configure `renterd` through the desktop app, which exposes its settings, from wallet security to network and S3 configurations.
 
-On **Windows**, you can access the `renterd` configurations by going to the taskbar, expanding the up arrow to see hidden icons, and double-clicking the `renterd` app. This will open the configuration window and let you customize its behavior.
+On **Windows**, you can access the `renterd` configurations by going to the taskbar, expanding the up arrow to see hidden icons, and double-clicking the `renterd` app. This opens the configuration window.
 
 ![](../../.gitbook/assets/windows-renterd-app/configuring.png)
 
@@ -102,15 +106,15 @@ There are several configurable settings in `renterd`. Below is a breakdown of wh
 Always **save and restart daemon** after making configuration changes to ensure they are applied.
 {% endhint %}
 
-You can monitor your node’s activity and track changes by checking the logs. These provide detailed information about the system, network connections, API endpoints, S3 interface, and autopilot operations, helping you understand what your node is doing at any given time.
+You can monitor your node’s activity by checking the logs. These provide information about the system, network connections, API endpoints, S3 interface, and autopilot operations.
 
 ![](../../.gitbook/assets/windows-renterd-app/config-logs.png)
 
 ## Update
 
-`renterd` updates regularly with bug fixes, performance improvements, and new features. Updating your node ensures stability and compatibility with the Sia network. 
+`renterd` updates regularly with bug fixes, performance improvements, and new features. Updating your node keeps it compatible with the Sia network. 
 
-On Windows, the app downloads updates automatically and notifies you when they’re ready. Simply restart the app to run the latest version. 
+On Windows, the app downloads updates automatically and notifies you when they’re ready. Restart the app to run the latest version. 
 
 {% hint style="info" %}
 You can always check for the version of the software at the bottom of the app interface.

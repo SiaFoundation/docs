@@ -15,6 +15,10 @@ layout:
 
 # Docker Compose
 
+{% hint style="info" %}
+**`renterd` is no longer the preferred way to store data on Sia.** For most users, [Sia Storage](https://sia.storage) (50 GB free, nothing to run) or a self-hosted [`indexd`](../setting-up-indexd/) is a better starting point. `renterd` still works, and these guides remain for existing users.
+{% endhint %}
+
 This guide will walk you through setting up `renterd` using Docker compose. At the end of this guide, you should have the following:
 
 * Installed Sia `renterd` software
@@ -99,7 +103,7 @@ Finally, you will be asked if you want to configure advanced settings for `rente
 
 ## Running `renterd`
 
-Now that you have `renterd` successfully installed and configured, it is time to run it. Use the following command to start `renterd`:
+Now that you have `renterd` installed and configured, use the following command to start it:
 
 ```console
 docker compose up -d
@@ -107,14 +111,12 @@ docker compose up -d
 
 ![](../../.gitbook/assets/renterd-install-screenshots/docker/06-renterd-docker-started.png)
 
-![](../../.gitbook/assets/renterd-install-screenshots/macos/06-renterd-startup.png)
-
 Once `renterd` has successfully started, you can access the web UI by opening your browser and going to [http://localhost:9980](http://localhost:9980/).
 
 ![](../../.gitbook/assets/renterd-install-screenshots/renterd-success.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully set up `renterd`.
+You have set up `renterd`.
 {% endhint %}
 
 ## Checking the container status
@@ -139,9 +141,9 @@ docker compose logs renterd
 
 ## Upgrading `renterd`
 
-It is essential to keep your host up to date. New versions of `renterd` are released regularly and contain bug fixes and performance improvements.
+New versions of `renterd` are released regularly and contain bug fixes and performance improvements.
 
-To upgrade your `renterd` to the newest version, simply run the following command:
+To upgrade your `renterd` to the newest version, run the following command:
 
 ```console
 docker compose pull && docker compose up -d
@@ -150,5 +152,5 @@ docker compose pull && docker compose up -d
 ![](../../.gitbook/assets/renterd-install-screenshots/docker/09-renterd-docker-upgrade.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully updated your version of `renterd`!
+Your version of `renterd` has been updated.
 {% endhint %}

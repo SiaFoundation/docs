@@ -15,18 +15,16 @@ layout:
 # Your Sia Wallet
 
 \
-The Sia Wallet is the official cryptocurrency wallet designed exclusively for Siacoins (SC). This secure and user-friendly platform allows you to store, send, receive, and manage your Siacoin holdings.
+`walletd` is the Sia Foundation's standalone wallet for Siacoin (SC) and Siafunds. It can manage multiple wallets and supports Ledger hardware wallets, through either a command-line interface or a web interface.
 
-While `renterd` and `hostd` have their respective Sia Wallets, it's important to highlight `walletd` as Sia's primary solution for securing your Siacoins. With `walletd` seamlessly integrated into the Sia network and ecosystem, it makes it the inclusive choice for managing your Siacoins.
+`renterd`, `hostd`, and `indexd` each include a built-in wallet for the coins they spend. `walletd` is the separate, general-purpose wallet for holding and moving your own Siacoin, independent of those services.
 
-Utilizing `walletd` prioritizes user convenience and security within the network, offering an official web application as the ultimate hub for Siacoin management and transactions. Some key features include:
+`walletd` can index either just your own addresses or the entire chain, and it can hold your seed to send and receive or run watch-only — tracking addresses without access to private keys. Some of its features:
 
-* Securely send, receive, and store Siacoins and Siafunds.
-* Stay informed by monitoring the blockchain for events relevant to specific addresses.
-* Easily track your wallet balance and transaction history.
-* Seamlessly integrate with Ledger hardware wallets.
-
-Whether you prefer the command-line interface's flexibility or the web-based interface's ease of use, `walletd` ensures top-notch Siacoin management and security. Discover the best-in-class Siacoin management and protection with `walletd`, the official wallet solution developed by the creators of the Sia network.
+* Send, receive, and store Siacoins and Siafunds.
+* Manage multiple wallets, including watch-only and Ledger hardware wallets.
+* Track wallet balances and transaction history.
+* Monitor the blockchain for activity on specific addresses.
 
 {% hint style="info" %}
 #### **Getting Started with `walletd`**

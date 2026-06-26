@@ -19,7 +19,7 @@ layout:
 
 ## What is rclone?
 
-Rclone is a command-line program to manage files on cloud storage. Rclone is very feature-rich and integrates with dozens of cloud storage providers, including any S3-compatible object stores like Sia `renterd`.
+Rclone is a command-line program to manage files on cloud storage. It integrates with dozens of cloud storage providers, including any S3-compatible object stores like Sia `renterd`.
 
 > Users call rclone _"The Swiss army knife of cloud storage"_, and _"Technology indistinguishable from magic"_.
 

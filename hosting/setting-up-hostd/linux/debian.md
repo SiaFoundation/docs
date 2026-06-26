@@ -23,7 +23,7 @@ This guide will walk you through setting up `hostd` on Linux. At the end of this
 
 ## Pre-requisites
 
-To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
+The following requirements are recommended for running `hostd`:
 
 * **Operating System Compatibility:** `hostd` is supported on the following Debian versions:
   - Trixie (Debian 13)

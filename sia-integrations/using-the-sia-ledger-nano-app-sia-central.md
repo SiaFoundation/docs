@@ -2,9 +2,9 @@
 
 ## What is a Ledger Nano?
 
-The Ledger Nano X and Ledger Nano S are hardware wallets created by Ledger. A hardware wallet stores the private keys to cryptocurrency on a separate device, making it much harder for malicious parties to steal them. In fact, the private keys never leave the hardware wallet, so they will remain secure even if the device is connected to a compromised computer. As long as you follow best practices when using your hardware wallet, it is virtually impossible for an attacker to steal your funds.
+The Ledger Nano X and Ledger Nano S are hardware wallets created by Ledger. A hardware wallet stores the private keys to cryptocurrency on a separate device, making it harder for malicious parties to steal them. The private keys never leave the hardware wallet, so they remain secure even if the device is connected to a compromised computer. As long as you follow best practices when using your hardware wallet, it is very difficult for an attacker to steal your funds.
 
-Hardware wallets are an important part of the crypto ecosystem, and they're one of the best ways to personally secure your coins. We're happy to be working with Ledger to offer our official Sia app for use on both the Ledger Nano X and Ledger Nano S.
+Hardware wallets are a common way to personally secure your coins. We're working with Ledger to offer our official Sia app for use on both the Ledger Nano X and Ledger Nano S.
 
 To send and receive Siacoin on a Ledger device we will be using Sia Central's web wallet through the latest version of Google Chrome desktop. Sia Central's web wallet only supports Siacoin, sending and claiming Siafund dividends are not yet supported. The web wallet should always be accessed from https://wallet.siacentral.com. This article will be using a Ledger Nano X with bluetooth, but the steps are similar for USB or the Ledger Nano S.
 

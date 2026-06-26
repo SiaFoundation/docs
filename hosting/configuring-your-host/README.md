@@ -14,7 +14,7 @@ layout:
 
 # Storage Node Configuration
 
-Setting up your storage node on Sia also involves configuring essential parameters such as storage, bandwidth, and other critical variables. These configurations are vital to maintaining your storage node's health, ensuring it can effectively provide storage services to renters, and determining how much you earn from providing storage on the network.
+Setting up your storage node on Sia involves configuring parameters such as storage, bandwidth, and other variables. These configurations affect your storage node's health, its ability to provide storage to renters, and how much you earn from providing storage on the network.
 
 Go to `hostd`. If you're asked to unlock the UI, use your custom password if you've set one. If you haven't got a wallet set up in `hostd`, visit our [Setting up `hostd`](../setting-up-hostd/) guide; otherwise, choose from the sidebar **Configuration**.
 
@@ -36,7 +36,7 @@ The **Accepting Contracts** setting determines whether your storage node will ac
 Setting your storage node's network **Address** is essential because it's published to the blockchain and used by renters to connect to your node. Some users use their public IP address, but we recommend setting up a domain.
 
 {% hint style="info" %}
-You have several options for setting up Dynamic DNS. We recommend utilizing straightforward, no-cost services like [DuckDNS](dynamic-dns/duckdns.md) or [Cloudflare](dynamic-dns/cloudflare-advanced.md). Additionally, you can choose to purchase a custom domain from a registrar.
+You have several options for setting up Dynamic DNS. We recommend free services like [DuckDNS](dynamic-dns/duckdns.md) or [Cloudflare](dynamic-dns/cloudflare-advanced.md). You can also purchase a custom domain from a registrar.
 
 Alternatively, you can set up a public IP address by clicking [here](https://icanhazip.com), which will display the public IP address that you can then copy to your clipboard.
 {% endhint %}
@@ -58,7 +58,7 @@ The prices you select will determine how much you earn from providing storage.
 
 When setting your prices, you are in direct competition with other storage providers on the network. Should your prices be excessively high, renters may opt for alternative storage providers. Conversely, if your prices are exceedingly low, you may not generate sufficient earnings to offset your operational expenses.
 
-Storage providers are encouraged to explore various pricing options and adjust as needed to achieve the optimal balance between earnings and utilization. Nevertheless, we have provided the pricing recommendations table below for guidance.
+Storage providers are encouraged to try various pricing options and adjust as needed to balance earnings and utilization. The pricing recommendations table below is provided for guidance.
 
 {% hint style="warning" %}
 Please be aware that these recommendations are only suggestions, and you can modify your pricing anytime.

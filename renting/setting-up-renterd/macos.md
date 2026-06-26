@@ -14,6 +14,10 @@ layout:
 
 # macOS
 
+{% hint style="info" %}
+**`renterd` is no longer the preferred way to store data on Sia.** For most users, [Sia Storage](https://sia.storage) (50 GB free, nothing to run) or a self-hosted [`indexd`](../setting-up-indexd/) is a better starting point. `renterd` still works, and these guides remain for existing users.
+{% endhint %}
+
 This guide will walk you through setting up `renterd` on macOS. At the end of this guide, you should have:
 
 * Installed Sia `renterd` software
@@ -97,10 +101,6 @@ Next, you will be asked to configure the S3 address. If you would like to use so
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/06-renterd-config-s3-endpoint.png)
 
-You will now be asked to generate a new key pair. Type `auto` and hit enter to have a key pair generated automatically for you.
-
-![](../../.gitbook/assets/renterd-install-screenshots/macos/07-renterd-config-s3-gen-keypair.png)
-
 Finally, you will be asked if you would like to configure `renterd`'s advanced settings. Type `no` and hit enter to exit the configuration wizard.
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/08-renterd-config-advanced-settings.png)
@@ -123,7 +123,7 @@ You can now access the Sia network using the `renterd` web UI by opening a brows
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/10-renterd-webui.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully set up `renterd`.
+You have set up `renterd`.
 {% endhint %}
 
 ---
@@ -149,5 +149,5 @@ renterd version
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/12-renterd-version.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully updated your version of `renterd`!
+Your version of `renterd` has been updated.
 {% endhint %}

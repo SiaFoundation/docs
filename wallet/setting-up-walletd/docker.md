@@ -68,7 +68,7 @@ docker compose pull
 
 ## Configuring `walletd`
 
-Now that you have the latest `walletd` image downloaded, you will need to create a seed phrase and admin password. To launch the built-in configuration wizard, run the following:
+Now that you have the latest `walletd` image downloaded, you will need to set an admin password to unlock the web UI. To launch the built-in configuration wizard, run the following:
 
 ```console
 docker compose run --rm -it walletd config
@@ -90,7 +90,7 @@ Finally, you will be asked if you want to configure advanced settings for `walle
 
 ## Running `walletd`
 
-Now that you have `walletd` successfully installed and configured, it is time to run it. Use the following command to start `walletd`:
+Now that you have `walletd` installed and configured, use the following command to start it:
 
 ```console
 docker compose up -d
@@ -98,12 +98,12 @@ docker compose up -d
 
 ![](../../.gitbook/assets/walletd-screenshots/install/docker/05-walletd-docker-started.png)
 
-Once `walletd` has successfully started, you can access the web UI by opening your browser and going to [http://localhost:9980](http://localhost:9980/).
+Once `walletd` has started, you can access the web UI by opening your browser and going to [http://localhost:9980](http://localhost:9980/).
 
 ![](../../.gitbook/assets/walletd-screenshots/walletd-login.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully set up `walletd`.
+You have set up `walletd`.
 {% endhint %}
 
 ## Checking the container status
@@ -128,7 +128,7 @@ docker compose logs walletd
 
 ## Upgrading `walletd`
 
-It is essential to keep your `walletd` up to date. New versions of `walletd` are released regularly and contain bug fixes and performance improvements.
+Keep your `walletd` up to date. New versions of `walletd` are released regularly and contain bug fixes and performance improvements.
 
 To upgrade your `walletd` to the newest version, make sure you have shut down `walletd` and then run the following:
 
@@ -139,5 +139,5 @@ docker compose pull && docker compose up -d
 ![](../../.gitbook/assets/walletd-screenshots/install/docker/08-walletd-docker-upgrade.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully updated your version of `walletd`!
+You have updated your version of `walletd`.
 {% endhint %}

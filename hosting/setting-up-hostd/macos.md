@@ -24,7 +24,7 @@ This guide will walk you through setting up `hostd` on macOS. At the end of this
 
 ## Pre-requisites
 
-To ensure you will not run into any issues with running `hostd` it is recommended your system meets the following requirements:
+The following requirements are recommended for running `hostd`:
 
 * **System Updates:** Ensure that your macOS version is up to date with the latest system updates. These updates can contain important security fixes and improvements.
 
@@ -37,7 +37,7 @@ To ensure you will not run into any issues with running `hostd` it is recommende
 
 * **Network Access:** `hostd` requires a stable internet connection and open network access to store and retrieve data on the Sia network.
   
-* **Software Requirements:** Before installing `hostd`, you will need to install the [Homebrew](https://brew.sh) package manager. This will allow you to install and upgrade `hostd` easily.
+* **Software Requirements:** Before installing `hostd`, you will need to install the [Homebrew](https://brew.sh) package manager. This is used to install and upgrade `hostd`.
 
 ## Installing `hostd`
 
@@ -91,7 +91,7 @@ Finally, you will be asked if you want to configure advanced settings for `hostd
 
 ## Running `hostd`
 
-Now that you have `hostd` successfully installed and configured, it is time to run it. Use the following command to start `hostd`:
+Now that you have `hostd` installed and configured, you can run it. Use the following command to start `hostd`:
 
 ```console
 hostd
@@ -108,12 +108,12 @@ If the `hostd` web UI does not open. You can access it by opening your browser a
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/07-hostd-webui.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully set up `hostd`.
+`hostd` is now set up.
 {% endhint %}
 
 ## Upgrading `hostd`
 
-It is essential to keep your host up to date. New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
+Keep your host up to date. New versions of `hostd` are released regularly and contain bug fixes and performance improvements.
 
 To upgrade your `hostd` to the newest version, make sure you have shut down `hostd` and then run the following:
 
@@ -132,5 +132,5 @@ hostd version
 ![](../../.gitbook/assets/hostd-install-screenshots/macos/09-hostd-version.png)
 
 {% hint style="success" %}
-Congratulations, you have successfully updated your version of `hostd`!
+`hostd` is now updated to the latest version.
 {% endhint %}

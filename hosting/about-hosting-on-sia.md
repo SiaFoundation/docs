@@ -18,7 +18,7 @@ layout:
 
 You also earn Siacoins, the cryptocurrency that powers the Sia network. Siacoins can be used to purchase your storage space or converted to other cryptocurrencies or fiat on crypto exchanges.
 
-Storage providers are a critical part of the ecosystem. You are contributing to the decentralized network that is the heart of Sia. Providing storage is also a more technical process than renting, and while anyone can reasonably easily set it up, there's a lot you'll want to know to maximize your setup.
+Storage providers are an important part of the ecosystem. You are contributing to the decentralized Sia network. Providing storage is also a more technical process than renting, and while anyone can set it up, there's a lot you'll want to know to get the most out of your setup.
 
 ## Earn Siacoins
 
@@ -41,7 +41,7 @@ Having collateral incentivizes storage providers to be online and to keep their 
 
 ## Contracts
 
-Storage contracts are one of the most essential features of the Sia network. They allow the entire Sia ecosystem to work trustlessly – they form blockchain-enforced contracts between you and the people who rent your storage space that are automatically fulfilled.
+Storage contracts allow the Sia ecosystem to work trustlessly – they form blockchain-enforced contracts between you and the people who rent your storage space that are automatically fulfilled.
 
 ### Contract Formation
 
@@ -75,7 +75,7 @@ Your host submits storage proofs automatically, but only if it is **online**, th
 
 ### Siafund Fee
 
-A **3.9% fee** is deducted from the total contract payout and distributed to [Siafund](../siafunds/learn-about-siafunds.md) holders. This fee applies to both the host's revenue and the host's collateral. This is why setting your collateral too high can hurt your score — it increases the total fee that renters must pay when forming a contract with you.
+A **3.9% fee** is deducted from the total contract payout and distributed to Siafund holders. This fee applies to both the host's revenue and the host's collateral. This is why setting your collateral too high can hurt your score — it increases the total fee that renters must pay when forming a contract with you.
 
 ### Payout Timeline
 
@@ -85,7 +85,7 @@ Because contracts resolve periodically rather than paying out continuously, your
 
 ## Storage Provider Scoring
 
-Your storage provider score is one of the most critical factors determining how you'll fare as a storage provider. This is based on several metrics – some that you can directly affect, some that improve or diminish over time based on your performance.
+Your storage provider score is a key factor determining how you'll fare as a storage provider. This is based on several metrics – some that you can directly affect, some that improve or diminish over time based on your performance.
 
 Sia is a decentralized network - the code to evaluate these scoring metrics is contained within each renter's Sia instance. For that reason, each Sia renter you encounter scores storage providers independently, so you may be scored differently among different renters. As a storage provider, you do not have one overall score across the Sia network but many scores with many renters based on the metrics described below. Any website or service that benchmarks your storage node can only show you a score based on their own metrics, which may differ from what a renter comes up with.
 
@@ -131,7 +131,7 @@ This is how many Siacoins you're willing to lose if you don't fulfill the rental
 You should normally set your collateral to around **2-3x your base storage price** as a starting point in order to maximize your storage node's score in this area. For example, if you've priced your storage at 50 SC/TB, you should set your collateral at 100-150 SC/TB.
 
 * If you set your collateral **too low**, your storage node's score will be reduced, because renters will have no reason to trust you as a storage provider if you have little or nothing to lose by going offline.
-* If you set your collateral **too high**, this can also decrease your storage node's score. Renters pay a fee based on a percentage of your collateral that goes towards [Siafunds](https://docs.sia.tech/siafunds/learn-about-siafunds) - if your collateral is set very high, the fee a renter pays, as a result, will be very high, which can decrease your storage node's score.
+* If you set your collateral **too high**, this can also decrease your storage node's score. Renters pay a fee based on a percentage of your collateral that goes towards Siafunds - if your collateral is set very high, the fee a renter pays, as a result, will be very high, which can decrease your storage node's score.
 
 **Monitoring Your Collateral**
 
@@ -179,7 +179,7 @@ Stay updated. Your storage node score drops if you're not running the latest ver
 
 ## Third-Party Storage Provider Scoring
 
-We have an incredible community building on Sia. Third-party sites can develop their methods for scoring storage providers based on various metrics. For example, Sia Central has developed a [Host Browser](https://hosts.siacentral.com/), which allows you to browse and compare storage providers.
+Third-party sites can develop their own methods for scoring storage providers based on various metrics. For example, Sia Central has developed a [Host Browser](https://hosts.siacentral.com/), which allows you to browse and compare storage providers.
 
 These benchmarks differ from the core Sia protocol but are still helpful and may be used to help monitor and improve your storage node over time.
 
@@ -188,7 +188,7 @@ Once you've started providing storage, you'll probably want to keep an eye on yo
 {% hint style="success" %}
 #### **Getting Started with `hostd`**
 
-Contributing your storage space couldn't be any simpler by using Sia's `hostd` software!
+You can contribute your storage space using Sia's `hostd` software.
 
-Start providing storage on Sia with the official [`hostd` software](https://sia.tech/software/hostd) and exploring our step-by-step [Setting up hostd ](setting-up-hostd/)guide.
+Start providing storage on Sia with the official [`hostd` software](https://sia.tech/software/hostd) and our step-by-step [Setting up hostd ](setting-up-hostd/)guide.
 {% endhint %}

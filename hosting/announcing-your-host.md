@@ -16,7 +16,7 @@ layout:
 
 Now that your storage node has been configured and finished syncing, you can announce your node to the network.
 
-Announcing your storage node serves as the bridge between your fully prepared node and potential renters seeking storage solutions. This process publishes information about your storage node, including its network address and public key, onto the blockchain, allowing renters to discover your node and establish contracts.
+Announcing publishes information about your storage node, including its network address and public key, onto the blockchain, allowing renters to discover your node and establish contracts.
 
 {% hint style="warning" %}
 An announcement transaction incurs a small fee in Siacoins (SC), which will be deducted from your wallet. Ensure your `hostd` wallet is funded by checking out [Transferring Siacoins](transferring-siacoins.md).
@@ -31,7 +31,7 @@ Click on the **Announce** button in the top right-hand corner.
 Finally, check the announcement fee and click **Announce** in the dialog to confirm.
 
 {% hint style="success" %}
-Congratulation! Your storage node has been successfully announced to the network and is now ready to be discovered by renters and establish contracts.
+Your storage node has been announced to the network and can now be discovered by renters and establish contracts.
 {% endhint %}
 
 ## Check your storage node's status

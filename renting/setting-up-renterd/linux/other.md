@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Linux
+# Other Linux Distributions
 
 {% hint style="info" %}
 **`renterd` is no longer the preferred way to store data on Sia.** For most users, [Sia Storage](https://sia.storage) (50 GB free, nothing to run) or a self-hosted [`indexd`](../../setting-up-indexd/) is a better starting point. `renterd` still works, and these guides remain for existing users.
@@ -129,7 +129,7 @@ sudo chmod o-rwx /var/lib/renterd
 
 ## Configure your `renterd.yml` file
 
-To begin, create a file name `renterd.yml` file under `/var/lib/renterd/`
+To begin, create a `renterd.yml` file under `/var/lib/renterd/`
 
 ```console
 sudo nano /var/lib/renterd/renterd.yml

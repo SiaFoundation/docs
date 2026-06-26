@@ -16,8 +16,8 @@
 * [Using Sia Storage](renting/using-sia-storage.md)
 * [Setting up indexd](renting/setting-up-indexd/README.md)
   * [Docker](renting/setting-up-indexd/docker.md)
-* [Transferring Siacoins](renting/transferring-siacoins.md)
-* [Installing renterd](renting/setting-up-renterd/README.md)
+  * [Transferring Siacoins](renting/transferring-siacoins.md)
+* [Setting up renterd](renting/setting-up-renterd/README.md)
   * [macOS](renting/setting-up-renterd/macos.md)
   * [Linux](renting/setting-up-renterd/linux/README.md)
     * [Debian](renting/setting-up-renterd/linux/debian.md)
@@ -36,7 +36,7 @@
 ## Provide Storage
 
 * [About Providing Storage on Sia](hosting/about-hosting-on-sia.md)
-* [Installing hostd](hosting/setting-up-hostd/README.md)
+* [Setting up hostd](hosting/setting-up-hostd/README.md)
   * [Linux](hosting/setting-up-hostd/linux/README.md)
     * [Debian](hosting/setting-up-hostd/linux/debian.md)
     * [Ubuntu](hosting/setting-up-hostd/linux/ubuntu.md)

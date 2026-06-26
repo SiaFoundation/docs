@@ -31,22 +31,61 @@ Your files are still encrypted on your own device and erasure-coded across indep
 * **Decentralized.** Your data is stored across many independent storage providers, not in one company's data center, so no single operator or outage can read it or take it offline.
 * **No infrastructure to run.** Sia Storage operates the indexer and manages contracts for you, so you can use the Sia network without running a server or database.
 
-## Get started
+## Store your first file
 
-1. Go to [sia.storage](https://sia.storage) and create an account. The free tier includes **50 GB** and up to **3 connected apps**.
-2. Install a client and connect it to your account:
-   * the **Sia Storage app** for desktop or mobile, or
-   * **`s3d`** if you want an S3-compatible interface.
-3. Use the client to upload and download your files.
+Getting started takes three steps: sign up, install the app, and upload.
 
-<!-- SCREENSHOT NEEDED: Sia Storage sign-up / dashboard at sia.storage -->
+### 1. Create your Sia Storage account
+
+Go to [sia.storage](https://sia.storage) and select **Get Started** to create a free account. The free plan includes **50 GB of storage**, up to **3 connected apps**, and transfer speeds up to 524 Mbps — with no Siacoin to buy and no server to run.
+
+![](../.gitbook/assets/sia-storage-screenshots/01-sia-storage-signup.png)
+
+### 2. Install the Sia Storage app
+
+The app is how you upload and browse your files. Install it for your device:
+
+* **iOS** — [App Store](https://apps.apple.com/us/app/sia-storage/id6753593109)
+* **Android** — [Google Play](https://play.google.com/store/apps/details?id=sia.storage)
+* **Desktop (macOS, Windows, Linux)** — download from [sia.storage](https://sia.storage)
+
+### 3. Connect the app and set your recovery phrase
+
+The first time you open the app, connect it to your Sia Storage account:
+
+1. Tap **Sign In** and approve the connection request on sia.storage. This authorizes the app to use your account. If you don't have an account yet, one is created for you.
+2. Back in the app, enter your **recovery phrase** — the 12-word secret that derives the keys used to encrypt your files. If you don't already have one, the app generates a new one for you.
+
+Once connected, the app is ready to store files. Your encryption keys stay on your device, so neither Sia Storage nor the storage providers can read your data.
+
+![](../.gitbook/assets/sia-storage-screenshots/02-sia-storage-app-signin.png)
+
+![](../.gitbook/assets/sia-storage-screenshots/03-sia-storage-app-connect.png)
+
+{% hint style="danger" %}
+**Write down your recovery phrase and store it somewhere safe.** It derives the keys that encrypt your files and identify you to your account. If you lose it, your files cannot be decrypted or recovered; if someone else gets it, they can access your data. Never share it, and don't rely on the app alone to keep it. See [Your Sia Seed](../get-started-with-sia/the-importance-of-your-seed.md) for more.
+{% endhint %}
+
+### 4. Upload a file
+
+Choose **Upload** in the app (or drag and drop on desktop) and pick a file. The app encrypts it on your device, splits it into redundant pieces, and distributes those across storage providers. When it finishes, the file appears in your list.
+
+### 5. Access your files
+
+Your files are available from any device where you sign in to your account. Select a file to download it — it's retrieved from the storage providers and decrypted on your device.
+
+![](../.gitbook/assets/sia-storage-screenshots/04-sia-storage-app-files.png)
+
+{% hint style="success" %}
+Your file is now stored on the decentralized Sia network — encrypted, redundant, and under your control.
+{% endhint %}
+
+## Other ways to use it
+
+* **S3-compatible access.** [`s3d`](https://github.com/SiaFoundation/s3d) is a gateway that exposes an S3-compatible API backed by your Sia Storage account, so existing S3 tools such as Rclone and Cyberduck can use Sia — see our [S3 integration guides](../sia-integrations/s3-integrations/).
+* **Build your own app.** Use the [Sia Storage SDKs](https://devs.sia.storage) to store and retrieve data from your own software — see [For developers](#for-developers) below.
 
 Paid plans are available at [sia.storage](https://sia.storage) if you need more storage or connected apps.
-
-## Ways to use it
-
-* **Sia Storage app.** Apps for desktop (macOS, Linux, Windows) and mobile (iOS, Android) for storing and browsing your files.
-* **S3-compatible access.** [`s3d`](https://github.com/SiaFoundation/s3d) is a gateway that exposes an S3-compatible API backed by your Sia Storage account, so existing S3 tools such as Rclone and Cyberduck can use Sia — see our [S3 integration guides](../sia-integrations/s3-integrations/).
 
 ## For developers
 

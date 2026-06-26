@@ -13,7 +13,7 @@ layout:
     visible: true
 ---
 
-# Linux
+# Other Linux Distributions
 
 This guide will walk you through setting up `hostd` on Linux. At the end of this guide, you should have the following:
 

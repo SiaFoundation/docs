@@ -12,7 +12,9 @@
 ## Store Your Data
 
 * [About Storing Data on Sia](renting/about-renting.md)
-* [Installing renterd](renting/setting-up-renterd/README.md)
+* [Setting up indexd](renting/setting-up-indexd/README.md)
+  * [Docker](renting/setting-up-indexd/docker.md)
+* [Installing renterd (deprecated)](renting/setting-up-renterd/README.md)
   * [macOS](renting/setting-up-renterd/macos.md)
   * [Linux](renting/setting-up-renterd/linux/README.md)
     * [Debian](renting/setting-up-renterd/linux/debian.md)

@@ -14,6 +14,10 @@ layout:
 
 # Windows Desktop App: `renterd`
 
+{% hint style="warning" %}
+**`renterd` is deprecated.** It has been replaced by [`indexd`](../setting-up-indexd/), the indexer that now handles contract management for the Sia storage stack. Most people don't need to run anything at all — [Sia Storage](https://sia.storage) gives you 50 GB free with nothing to install or maintain.
+{% endhint %}
+
 The `renterd` desktop app provides a user-friendly web UI to start storing data on the Sia network. By the end of this guide, you will have:
 
 * Installed the `renterd` desktop application.

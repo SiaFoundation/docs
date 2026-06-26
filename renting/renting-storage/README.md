@@ -14,6 +14,10 @@ layout:
 
 # Storing Your Data
 
+{% hint style="warning" %}
+**`renterd` is deprecated.** It has been replaced by [`indexd`](../setting-up-indexd/), the indexer that now handles contract management for the Sia storage stack. Most people don't need to run anything at all — [Sia Storage](https://sia.storage) gives you 50 GB free with nothing to install or maintain.
+{% endhint %}
+
 Uploading files on `renterd` is remarkably straightforward, making it accessible even to those new to the Sia network. With just a few simple steps, you can securely store your files and data on Sia's decentralized cloud storage platform, where a network of hosts ensures the redundancy and reliability of your files. `renterd` provides an intuitive interface for effortlessly transferring your files to the Sia network.
 
 ## Before you begin...

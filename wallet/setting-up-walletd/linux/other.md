@@ -94,11 +94,11 @@ rm -rf walletd_linux_arm64.zip
 `walletd` can manage multiple wallets, so the configuration wizard does not prompt for a seed. You create or import wallets from the web interface after `walletd` is running.
 {% endhint %}
 
-1. Before running the `walletd` configuration wizard, make sure to `cd` into the `walletd` runtime folder you created in the last section. Then run the `walletd` configuration wizard. This will generate a `walletd.yml` file that is used by `walletd` on start-up. You will be asked to set a password to unlock the web interface and optionally configure advanced settings such as the index mode.
+1. Run the `walletd` configuration wizard from your `walletd` folder. Setting `WALLETD_CONFIG_FILE` tells the wizard to write `walletd.yml` into this folder; otherwise, on Linux it would be saved to `/etc/walletd/walletd.yml`, which requires root. This `walletd.yml` is used by `walletd` on start-up. You will be asked to set a password to unlock the web interface and optionally configure advanced settings such as the index mode.
 
     ```console
     cd /path/to/walletd/folder
-    walletd config
+    WALLETD_CONFIG_FILE=walletd.yml walletd config
     ```
 
 ## Start `walletd`

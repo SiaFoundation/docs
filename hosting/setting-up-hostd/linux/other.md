@@ -96,11 +96,11 @@ rm -rf hostd_linux_arm64.zip
 `hostd` uses BIP-39 12-word recovery phrases. It does not support legacy 28/29-word `siad` seeds.
 {% endhint %}
 
-1. Before running the `hostd` configuration wizard, make sure to `cd` into the `hostd` runtime folder you created in the last section. Then run the `hostd` configuration wizard. This will generate a `hostd.yml` file that is used by `hostd` on start-up.
+1. Run the `hostd` configuration wizard from your `hostd` folder. Setting `HOSTD_CONFIG_FILE` tells the wizard to write `hostd.yml` into this folder; otherwise, on Linux it would be saved to `/etc/hostd/hostd.yml`, which requires root. This `hostd.yml` is used by `hostd` on start-up.
 
     ```console
     cd /path/to/hostd/folder
-    hostd config
+    HOSTD_CONFIG_FILE=hostd.yml hostd config
     ```
 
 ## Start `hostd`

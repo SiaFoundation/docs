@@ -97,7 +97,7 @@ There are several configurable settings in `walletd`. Below is a breakdown of wh
 Always **save and restart daemon** after making configuration changes to ensure they are applied.
 {% endhint %}
 
-You can monitor your node’s activity by checking the logs. These provide information about the system, network connections, API endpoints, S3 interface, and autopilot operations.
+You can monitor your node’s activity by checking the logs. These provide information about the system, network connections, and API endpoints.
 
 ![](../../.gitbook/assets/windows-walletd-app/config-logs.png)
 

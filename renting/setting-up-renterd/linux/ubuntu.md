@@ -71,7 +71,7 @@ sudo apt update
 sudo apt install renterd
 ```
 
-![asdd](../../../.gitbook/assets/renterd-screenshots/install/linux/ubuntu/02-renterd-ubuntu-apt-install.png)
+![](../../../.gitbook/assets/renterd-screenshots/install/linux/ubuntu/02-renterd-ubuntu-apt-install.png)
 
 **3. Verify `renterd` was installed successfully**
 

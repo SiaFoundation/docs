@@ -68,7 +68,7 @@ docker compose pull
 
 ## Configuring `walletd`
 
-Now that you have the latest `walletd` image downloaded, you will need to create a seed phrase and admin password. To launch the built-in configuration wizard, run the following:
+Now that you have the latest `walletd` image downloaded, you will need to set an admin password to unlock the web UI. To launch the built-in configuration wizard, run the following:
 
 ```console
 docker compose run --rm -it walletd config

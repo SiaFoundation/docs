@@ -79,7 +79,7 @@ sudo apt update
 sudo apt install hostd
 ```
 
-![asdd](../../../.gitbook/assets/hostd-screenshots/install/linux/ubuntu/02-hostd-ubuntu-apt-install.png)
+![](../../../.gitbook/assets/hostd-screenshots/install/linux/ubuntu/02-hostd-ubuntu-apt-install.png)
 
 **3. Verify `hostd` was installed successfully**
 

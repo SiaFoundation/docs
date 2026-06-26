@@ -101,10 +101,6 @@ Next, you will be asked to configure the S3 address. If you would like to use so
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/06-renterd-config-s3-endpoint.png)
 
-You will now be asked to generate a new key pair. Type `auto` and hit enter to have a key pair generated automatically for you.
-
-![](../../.gitbook/assets/renterd-install-screenshots/macos/07-renterd-config-s3-gen-keypair.png)
-
 Finally, you will be asked if you would like to configure `renterd`'s advanced settings. Type `no` and hit enter to exit the configuration wizard.
 
 ![](../../.gitbook/assets/renterd-install-screenshots/macos/08-renterd-config-advanced-settings.png)

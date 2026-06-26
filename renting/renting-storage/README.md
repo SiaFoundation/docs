@@ -32,7 +32,7 @@ This guide walks you through uploading files with `renterd`. Your files are stor
 Uploading files with `renterd` assumes you have completed all the steps of the `renterd` setup guide. Visit the [renterd](../setting-up-renterd/) guides to ensure everything is set up correctly before proceeding.
 {% endhint %}
 
-1. Access the `rentered` UI from your local host address. Enter your `API password` you created to unlock `renterd`.
+1. Access the `renterd` UI from your local host address. Enter your `API password` you created to unlock `renterd`.
 
 <figure><img src="../../.gitbook/assets/renterd_5.png" alt=""><figcaption><p>renterd Login UI</p></figcaption></figure>
 

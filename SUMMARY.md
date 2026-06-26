@@ -47,7 +47,10 @@
 
 * [Your Sia Wallet](wallet/wallet-overview.md)
 * [Setting up walletd](wallet/setting-up-walletd/README.md)
-  * [Linux](wallet/setting-up-walletd/linux.md)
+  * [Linux](wallet/setting-up-walletd/linux/README.md)
+    * [Debian](wallet/setting-up-walletd/linux/debian.md)
+    * [Ubuntu](wallet/setting-up-walletd/linux/ubuntu.md)
+    * [Other](wallet/setting-up-walletd/linux/other.md)
   * [Docker](wallet/setting-up-walletd/docker.md)
   * [macOS](wallet/setting-up-walletd/macos.md)
   * [Windows](wallet/setting-up-walletd/windows.md)

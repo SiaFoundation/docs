@@ -47,7 +47,6 @@ The app is how you upload and browse your files. Install it for your device:
 
 * **iOS** — [App Store](https://apps.apple.com/us/app/sia-storage/id6753593109)
 * **Android** — [Google Play](https://play.google.com/store/apps/details?id=sia.storage)
-* **Desktop (macOS, Windows, Linux)** — download from [sia.storage](https://sia.storage)
 
 ### 3. Connect the app and set your recovery phrase
 

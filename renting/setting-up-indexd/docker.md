@@ -1,5 +1,5 @@
 ---
-description: Run indexd and PostgreSQL together using Docker Compose
+description: Run indexd, PostgreSQL, and Caddy using Docker Compose
 layout:
   title:
     visible: true
@@ -15,7 +15,7 @@ layout:
 
 # Docker Compose
 
-This guide will walk you through setting up `indexd` using Docker Compose. Because `indexd` requires a PostgreSQL database, this is the **recommended** way to self-host: Docker Compose runs `indexd` and PostgreSQL together, so you don't have to install or manage a database separately.
+This guide will walk you through setting up `indexd` using Docker Compose. This is the **recommended** way to self-host: Compose runs `indexd`, PostgreSQL, and a Caddy HTTPS reverse proxy together.
 
 {% hint style="success" %}
 If you just want to store files, you don't need to run `indexd` at all — [Sia Storage](https://sia.storage) gives you 50 GB free with nothing to run.
@@ -26,24 +26,39 @@ If you just want to store files, you don't need to run `indexd` at all — [Sia 
 ## Pre-requisites
 
 * **Software Requirements:** Before installing `indexd`, you will need to install [Docker](https://www.docker.com/get-started/).
-
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended.
   - A quad-core CPU
   - 8GB of RAM
   - 256 GB SSD for `indexd` and its PostgreSQL database
-
 * **Network Access:** `indexd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
+* A domain to use for the public App API 
 
 {% hint style="info" %}
-PostgreSQL is provided automatically by the Compose file below, so you do **not** need to install it yourself for this method.
+PostgreSQL and Caddy are provided by the Compose file below, so you do **not** need to install them separately.
 {% endhint %}
 
 ## Create the compose file
 
-Create a new file named `docker-compose.yml`. You can use the following as a template. The `postgres` service stores the `indexd` index, and the `indexd-data` volume holds the consensus data and config file.
+Create a new file named `docker-compose.yml`. You can use the following as a template. PostgreSQL stores the `indexd` index, and Caddy exposes the application API over HTTPS.
 
 ```yml
 services:
+  caddy:
+    depends_on:
+      - indexd
+    image: caddy:2
+    restart: unless-stopped
+    environment:
+      INDEXD_DOMAIN: ${INDEXD_DOMAIN}
+    ports:
+      - 80:80/tcp
+      - 443:443/tcp
+      - 443:443/udp
+    volumes:
+      - ./caddy:/etc/caddy:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
   postgres:
     image: postgres:18
     restart: unless-stopped
@@ -70,32 +85,48 @@ services:
     ports:
       - 127.0.0.1:9980:9980/tcp # admin UI and API (kept local)
       - 9981:9981/tcp # public syncer
-      - 9982:9982/tcp # application API (use an HTTPS reverse proxy for internet access)
+    expose:
+      - 9982/tcp # application API (available only to Caddy)
     volumes:
       - indexd-data:/data
 
 volumes:
+  caddy-data:
+  caddy-config:
   indexd-data:
   postgres:
 ```
 
 {% hint style="warning" %}
-Keep port `9980`, which serves the admin UI and API, bound to `127.0.0.1`. Port `9981` should be publicly reachable by the Sia network. The application API on port `9982` must be reachable by your applications; use an HTTPS reverse proxy rather than exposing it directly to the internet.
+Port `9980` is bound to `127.0.0.1` for the private admin UI and API. Port `9982` is not published on the host; only Caddy can reach it through the Compose network. Applications connect to Caddy on port `443`. Port `9981` should be publicly reachable by the Sia network.
 {% endhint %}
 
-## Set the database password
+### Create the Caddyfile
 
-Create a file named `.env` in the same directory as your `docker-compose.yml` and set a password for the PostgreSQL database:
+Create a directory named `caddy` beside `docker-compose.yml`, then create `caddy/Caddyfile` with the following contents:
+
+```caddyfile
+{$INDEXD_DOMAIN} {
+  reverse_proxy indexd:9982
+}
+```
+
+Caddy uses the domain from `.env`, obtains and renews its HTTPS certificate, and forwards application API requests to `indexd` over the private Compose network. Before starting the stack, point the domain's DNS records to this server and allow inbound TCP ports `80` and `443`. UDP port `443` enables HTTP/3.
+
+## Set the environment variables
+
+Create a file named `.env` in the same directory as your `docker-compose.yml`. Set the PostgreSQL password and the public domain Caddy will use for the application API:
 
 ```sh
 POSTGRES_PASSWORD=your-secure-database-password
+INDEXD_DOMAIN=indexd.example.com
 ```
 
-You will enter this same password during the `indexd` configuration step so the indexer can connect to the database.
+You will enter the same database password during the `indexd` configuration step. For the application API advertise URL, enter the domain as a complete HTTPS URL, such as `https://indexd.example.com`.
 
-## Getting the `indexd` image
+## Get the container images
 
-To get the latest `indexd` image run the following command:
+Download the container images:
 ```console
 docker compose pull
 ```

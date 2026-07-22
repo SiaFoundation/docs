@@ -41,3 +41,8 @@ The only reason to run your own `indexd` is to retain full control over the infr
 {% hint style="info" %}
 You can also run the `indexd` binary directly against your own PostgreSQL server. The binaries are available on the [official website](https://sia.tech/software/indexd), and configuration options are documented in the [indexd repository](https://github.com/SiaFoundation/indexd).
 {% endhint %}
+
+## Next steps
+
+* Configure [**backups and recovery**](operations.md) before storing production data.
+* [**Connect an application**](connect-application.md) using a connect key.

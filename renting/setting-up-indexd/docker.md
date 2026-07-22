@@ -1,5 +1,5 @@
 ---
-description: Run indexd and PostgreSQL together using Docker Compose
+description: Run indexd, PostgreSQL, and Caddy using Docker Compose
 layout:
   title:
     visible: true
@@ -15,7 +15,7 @@ layout:
 
 # Docker Compose
 
-This guide will walk you through setting up `indexd` using Docker Compose. Because `indexd` requires a PostgreSQL database, this is the **recommended** way to self-host: Docker Compose runs `indexd` and PostgreSQL together, so you don't have to install or manage a database separately.
+This guide will walk you through setting up `indexd` using Docker Compose. This is the **recommended** way to self-host: Compose runs `indexd`, PostgreSQL, and a Caddy HTTPS reverse proxy together.
 
 {% hint style="success" %}
 If you just want to store files, you don't need to run `indexd` at all — [Sia Storage](https://sia.storage) gives you 50 GB free with nothing to run.
@@ -26,24 +26,39 @@ If you just want to store files, you don't need to run `indexd` at all — [Sia 
 ## Pre-requisites
 
 * **Software Requirements:** Before installing `indexd`, you will need to install [Docker](https://www.docker.com/get-started/).
-
 * **Hardware Requirements:** A stable setup that meets the following specifications is recommended.
   - A quad-core CPU
   - 8GB of RAM
   - 256 GB SSD for `indexd` and its PostgreSQL database
-
 * **Network Access:** `indexd` interacts with the Sia network, so you need a stable internet connection and open network access to connect to the Sia blockchain.
+* A domain to use for the public App API 
 
 {% hint style="info" %}
-PostgreSQL is provided automatically by the Compose file below, so you do **not** need to install it yourself for this method.
+PostgreSQL and Caddy are provided by the Compose file below, so you do **not** need to install them separately.
 {% endhint %}
 
 ## Create the compose file
 
-Create a new file named `docker-compose.yml`. You can use the following as a template. The `postgres` service stores the `indexd` index, and the `indexd-data` volume holds the consensus data and config file.
+Create a new file named `docker-compose.yml`. You can use the following as a template. PostgreSQL stores the `indexd` index, and Caddy exposes the application API over HTTPS.
 
 ```yml
 services:
+  caddy:
+    depends_on:
+      - indexd
+    image: caddy:2
+    restart: unless-stopped
+    environment:
+      INDEXD_DOMAIN: ${INDEXD_DOMAIN}
+    ports:
+      - 80:80/tcp
+      - 443:443/tcp
+      - 443:443/udp
+    volumes:
+      - ./caddy:/etc/caddy:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
   postgres:
     image: postgres:18
     restart: unless-stopped
@@ -70,32 +85,48 @@ services:
     ports:
       - 127.0.0.1:9980:9980/tcp # admin UI and API (kept local)
       - 9981:9981/tcp # public syncer
-      - 9982:9982/tcp # public application API
+    expose:
+      - 9982/tcp # application API (available only to Caddy)
     volumes:
       - indexd-data:/data
 
 volumes:
+  caddy-data:
+  caddy-config:
   indexd-data:
   postgres:
 ```
 
 {% hint style="warning" %}
-Be careful with port 9980 (the admin UI and API) as Docker will expose it publicly by default. It is recommended to bind it to `127.0.0.1` to prevent unauthorized access. Ports 9981 (syncer) and 9982 (application API) are meant to be reachable by the network and your applications.
+Port `9980` is bound to `127.0.0.1` for the private admin UI and API. Port `9982` is not published on the host; only Caddy can reach it through the Compose network. Applications connect to Caddy on port `443`. Port `9981` should be publicly reachable by the Sia network.
 {% endhint %}
 
-## Set the database password
+### Create the Caddyfile
 
-Create a file named `.env` in the same directory as your `docker-compose.yml` and set a password for the PostgreSQL database:
+Create a directory named `caddy` beside `docker-compose.yml`, then create `caddy/Caddyfile` with the following contents:
+
+```caddyfile
+{$INDEXD_DOMAIN} {
+  reverse_proxy indexd:9982
+}
+```
+
+Caddy uses the domain from `.env`, obtains and renews its HTTPS certificate, and forwards application API requests to `indexd` over the private Compose network. Before starting the stack, point the domain's DNS records to this server and allow inbound TCP ports `80` and `443`. UDP port `443` enables HTTP/3.
+
+## Set the environment variables
+
+Create a file named `.env` in the same directory as your `docker-compose.yml`. Set the PostgreSQL password and the public domain Caddy will use for the application API:
 
 ```sh
 POSTGRES_PASSWORD=your-secure-database-password
+INDEXD_DOMAIN=indexd.example.com
 ```
 
-You will enter this same password during the `indexd` configuration step so the indexer can connect to the database.
+You will enter the same database password during the `indexd` configuration step. For the application API advertise URL, enter the domain as a complete HTTPS URL, such as `https://indexd.example.com`.
 
-## Getting the `indexd` image
+## Get the container images
 
-To get the latest `indexd` image run the following command:
+Download the container images:
 ```console
 docker compose pull
 ```
@@ -127,7 +158,7 @@ The wizard will ask you for:
 * Your **wallet recovery phrase** (use the one you generated above).
 * An **admin password** used to unlock the `indexd` admin UI.
 * A **database password** — enter the same value you set in `.env`.
-* An **application API advertise URL** — the public URL applications will use to reach this indexer.
+* An **application API advertise URL** — the exact base URL applications will use to reach this indexer, described below.
 
 When asked whether to configure **advanced settings**, answer `yes` and set the database connection so `indexd` can reach the PostgreSQL container:
 
@@ -139,6 +170,34 @@ When asked whether to configure **advanced settings**, answer `yes` and set the 
 | SSL mode | `disable` |
 
 ![](../../.gitbook/assets/indexd-screenshots/install/docker/02-indexd-docker-config.png)
+
+### Choose the application API advertise URL
+
+The advertise URL is not the address `indexd` listens on. It is the external base URL that an application uses to reach the application API. `indexd` puts this URL into the application-approval flow and uses its hostname when verifying signed requests, so an incorrect value can break application authentication even when `indexd` itself is running.
+
+For an indexer reached through an HTTPS reverse proxy, a typical configuration is:
+
+```yml
+applicationAPI:
+  address: :9982
+  advertiseURL: https://indexd.example.com
+```
+
+In this example, `indexd` listens on port `9982`, while applications connect to `https://indexd.example.com`. The reverse proxy terminates HTTPS and forwards requests to port `9982`.
+
+The advertise URL must:
+
+* Include the scheme, such as `https://`.
+* Use the public hostname and port, if a non-standard port is required, that applications can actually reach.
+* Use `https://` when a reverse proxy provides HTTPS, even if the proxy connects to `indexd` over HTTP.
+* Be the same base URL entered in the application.
+* Omit a trailing slash and API endpoint paths such as `/api` or `/auth/connect`.
+
+Do not use `0.0.0.0`, a Docker service name, or another internal address. Use `localhost` or `127.0.0.1` only when the application runs on the same machine as `indexd`; on a phone or another computer, `localhost` refers to that device instead of the indexer.
+
+{% hint style="warning" %}
+The admin UI URL is not the advertise URL. Port `9980` serves the private admin API; applications connect to the application API on port `9982` or its HTTPS reverse-proxy URL.
+{% endhint %}
 
 ## Running `indexd`
 
@@ -157,6 +216,23 @@ Once `indexd` has started, you can access the admin UI by opening your browser a
 {% hint style="success" %}
 `indexd` is now set up.
 {% endhint %}
+
+### Verify the advertise URL
+
+From the device or network where the application will run, test the advertise URL you configured:
+
+```console
+curl -i https://indexd.example.com/auth/check
+```
+
+An unsigned request should reach `indexd` and return `401 Unauthorized` with a message about missing query parameters. A timeout, certificate error, or proxy error means the public URL is not ready.
+
+To correct the URL, run the configuration wizard again, choose to change the existing value, and restart `indexd`:
+
+```console
+docker compose run --rm -it indexd config
+docker compose restart indexd
+```
 
 ## Fund your wallet
 
@@ -191,3 +267,7 @@ docker compose pull && docker compose up -d
 {% hint style="success" %}
 `indexd` is now updated to the latest version.
 {% endhint %}
+
+## Next steps
+
+Configure [backups and recovery](operations.md), then connect an [application](connect-application.md).

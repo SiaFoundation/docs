@@ -26,7 +26,7 @@ Modern Sia storage is built from a few distinct pieces, each with a single job. 
 
 * **Indexers (`indexd`) — contract management.** An indexer sits between applications and storage providers. It forms and maintains the **storage contracts** with providers, tracks where each object's shards live, monitors their health, and repairs data in the background when redundancy drops. It also enforces a simple access model so multiple apps can share one indexer safely. An indexer only ever sees encrypted metadata and the storage layout — never your plaintext data. This is the "renter" role in the new architecture.
 
-* **SDKs — data storage and retrieval.** The [Sia Storage SDKs](https://devs.sia.storage) (available for Rust, Go, Python, and JavaScript) run inside your application. They encrypt your data and metadata, [erasure-code](https://devs.sia.storage/docs/core-concepts/erasure-coding) it into redundant shards, and upload or download those shards **directly** to and from storage providers, using the layout and access information supplied by the indexer. Encryption keys stay with you; neither the indexer nor the providers can read your data.
+* **SDKs — data storage and retrieval.** The [Sia Storage SDKs](https://devs.sia.storage) (available for Rust, Go, Python, and JavaScript) run inside your application. They encrypt your data and metadata, [erasure-code](https://devs.sia.storage/docs/core-concepts/erasure-coding) it into redundant shards, and upload or download those shards **directly** to and from storage providers. Encryption keys stay with you; neither the indexer nor the providers can read your data.
 
 * **Apps — built on the SDKs.** Applications use an SDK to talk to an indexer and storage providers. The indexer deliberately stays narrow (objects, metadata, health, access), so anything higher-level — filenames, folders, search, sharing, version history — is built at the app layer on top of the SDK.
 
@@ -68,8 +68,8 @@ npm install @siafoundation/sia-storage
 
 Everything that touches your data happens locally, inside the SDK:
 
-* **On upload**, the SDK encrypts your file and its metadata, [erasure-codes](https://devs.sia.storage/docs/core-concepts/erasure-coding) the data into many redundant shards, and uploads those encrypted shards directly to storage providers using the contracts and layout the indexer provides. It then *pins* the resulting object to the indexer so the object becomes listable and can be repaired over time.
-* **On download**, the SDK asks the indexer where an object's shards live, fetches enough of them from storage providers, verifies their integrity, and decrypts the data locally before streaming it back to your application.
+* **On upload**, the SDK encrypts your file and its metadata, [erasure-codes](https://devs.sia.storage/docs/core-concepts/erasure-coding) the data into many redundant shards, and uploads those encrypted shards directly to storage providers using provider information already loaded into the SDK. The upload returns an object containing the keys and slab layout; the application then *pins* that object to the indexer so it becomes listable and can be repaired over time.
+* **On download**, the application passes an object to the SDK. The SDK uses that object's encryption key and slab layout to fetch enough shards from storage providers, verify their integrity, and decrypt the data locally. If the object is stored locally and the SDK has provider connection information, the application can download it while `indexd` is offline.
 
 Data is addressed by a content-derived **object ID** rather than a file path, and objects are immutable — changing the data produces a new object. Object metadata is opaque, application-defined, and encrypted, so the indexer stores it but can't read it. Because every encryption key stays inside your app, neither the indexer nor the storage providers can ever see your data, your metadata, or even your filenames.
 
@@ -82,11 +82,15 @@ In the Sia ecosystem, an **app** is the cryptographic identity of software actin
 An app's identity is built from two parts:
 
 * **App ID** — a 32-byte identifier you (the developer) choose once and ship with your software. It's the same across every install of your app, and because it's an input to key derivation, it must never change after release.
-* **App Key** — a per-user signing key derived from the user's **recovery phrase** and your App ID. It's unique to each (user, app) pair, stored securely by your app, and used to sign and authorize every request to the indexer. The recovery phrase itself is never stored or transmitted by the app — only the derived key is kept.
+* **App Key** — a per-user signing key derived from the user's **recovery phrase**, your App ID, and a secret issued by the indexer during approval. It's unique to each (user, app, indexer approval), stored securely by your app, and used to sign and authorize every request to the indexer. The recovery phrase itself is never stored or transmitted by the app — only the derived key is kept.
 
-Because the App Key is derived from both the recovery phrase *and* the App ID, two apps from the same user produce different keys and **cannot see or modify each other's data**. This sandboxing is structural — enforced by cryptography, not by server-side rules. Before an app can act for a user it must be explicitly approved once, and approval can be revoked at any time, immediately cutting off that app's access.
+Because the App Key is derived from the recovery phrase, App ID, and indexer-issued secret, two apps from the same user produce different keys and **cannot see or modify each other's data**. This sandboxing is structural — enforced by cryptography, not by server-side rules. Before an app can act for a user it must be explicitly approved once, and approval can be revoked at any time, immediately cutting off that app's access.
 
 Indexers deliberately stay narrow: they track objects, metadata, health, and access, and nothing more. The higher-level features your users expect — filenames, folders, search, sharing links, version history — are all built at the app layer on top of the SDK's simple, object-centric interface.
+
+{% hint style="info" %}
+**Design apps for portability and recovery.** Keep a current, usable cache of complete object records locally, and store the metadata needed to rebuild local app state on the indexer. After normal reauthorization, a surviving indexer plus the app's recovery phrase can rebuild the app; if the indexer is lost, a surviving local cache provides a last-resort way to seed a replacement without re-uploading object data. This fallback does not replace indexer backups, and losing both copies makes the object metadata unrecoverable.
+{% endhint %}
 
 {% hint style="info" %}
 #### Building on Sia
@@ -100,11 +104,11 @@ Many services marketed as "decentralized" still place a company-operated gateway
 
 * **Your data never flows through a central server.** The SDK uploads and downloads encrypted shards **directly** to and from independent storage providers. The indexer coordinates *where* data lives and keeps it healthy, but it is never in the data path — it only ever handles encrypted metadata and the storage layout. There is no gateway that can see, meter, or gate your traffic.
 
-* **You hold the keys, so you own the data.** Encryption and erasure coding happen on your own device before anything leaves it, and the keys are derived from your recovery phrase. Neither the indexer nor the storage providers can read your files, your metadata, or even your filenames. Even the apps you use are walled off from one another — each app's key is derived from both your recovery phrase and its own identity, so one app can never read another app's data, even though both act on your behalf. Ownership is cryptographic — not a permission a provider grants you and can revoke.
+* **You hold the keys, so you own the data.** Encryption and erasure coding happen on your own device before anything leaves it. Neither the indexer nor the storage providers can read your files, your metadata, or even your filenames. Even the apps you use are walled off from one another — each app has a distinct key derived during its approval, so one app cannot read another app's data even though both act on your behalf. Ownership is cryptographic — not a permission a provider grants you and can revoke.
 
 * **No single operator can hold your data hostage.** Each object is erasure-coded into redundant shards spread across many unrelated storage providers worldwide, and only a subset is needed to reconstruct it. No one provider — and no outage, business failure, or demand against a single party — can read your data or take it offline.
 
-* **You are never locked in.** The indexer is a swappable coordinator, not the owner of your data. You decide where your index lives — a hosted indexer like Sia Storage, or one you run yourself — and applications connect to whichever you choose. Because your data lives on contracts with storage providers and is recoverable with your recovery phrase, moving between indexers does not require downloading and reuploading your data or handing your data to a new gatekeeper.
+* **You choose your indexer.** A well-designed app can move its cached metadata to another indexer while the encrypted sectors remain on their storage providers. Self-hosted operators should still maintain tested [`indexd` backups](setting-up-indexd/operations.md) for quick recovery of the indexer's operational state.
 
 The result is storage that is genuinely distributed, private, and yours: no proxy in the middle, no operator that can read your data, and no provider that owns your access to it.
 

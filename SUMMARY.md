@@ -16,6 +16,8 @@
 * [Using Sia Storage](renting/using-sia-storage.md)
 * [Setting up indexd](renting/setting-up-indexd/README.md)
   * [Docker](renting/setting-up-indexd/docker.md)
+  * [Backups and recovery](renting/setting-up-indexd/operations.md)
+  * [Connect an application](renting/setting-up-indexd/connect-application.md)
   * [Transferring Siacoins](renting/transferring-siacoins.md)
 * [Setting up renterd](renting/setting-up-renterd/README.md)
   * [macOS](renting/setting-up-renterd/macos.md)

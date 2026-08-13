@@ -179,7 +179,7 @@ Stay updated. Your storage node score drops if you're not running the latest ver
 
 ## Third-Party Storage Provider Scoring
 
-Third-party sites can develop their own methods for scoring storage providers based on various metrics. For example, Sia Central has developed a [Host Browser](https://hosts.siacentral.com/), which allows you to browse and compare storage providers.
+Third-party sites can develop their own methods for scoring storage providers based on various metrics. For example, [SiaGraph Host Explorer](https://siagraph.info/host_explorer) and [HostScore](https://hostscore.info/) allow you to browse and compare storage providers.
 
 These benchmarks differ from the core Sia protocol but are still helpful and may be used to help monitor and improve your storage node over time.
 

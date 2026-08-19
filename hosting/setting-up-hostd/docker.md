@@ -48,7 +48,8 @@ services:
     restart: unless-stopped
     ports:
       - 127.0.0.1:9980:9980/tcp
-      - 9981-9984:9981-9984/tcp
+      - 9981:9981/tcp
+      - 9984:9984/tcp
       - 9984:9984/udp
     volumes:
       - hostd-data:/data
